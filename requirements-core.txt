@@ -1,4 +1,4 @@
-# Main encoder, public-data adapters and the 15 quick tests.
+# Main encoder, public-data adapters and audio-free implementation/evidence checks.
 # Full recorded environment: outputs/acr_repro/requirements.txt
 numpy==2.5.3
 scipy==1.18.1

@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use SD-RR, cite this dataset and the associated POLARIS paper."
+title: "SD-RR: Song Describer Real Re-recording Benchmark"
+type: dataset
+authors:
+  - family-names: Li
+    given-names: Jiheng
+version: 1.0.0
+keywords:
+  - audio fingerprinting
+  - music identification
+  - acoustic re-recording
+  - smartphone recording
+  - benchmark
+doi: 10.5281/zenodo.22169646

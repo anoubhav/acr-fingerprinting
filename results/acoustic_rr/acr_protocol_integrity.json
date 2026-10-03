@@ -1,0 +1,24 @@
+{
+  "sdrr_native_protocol.json": {
+    "query_ids_unique": true,
+    "known_targets_enrolled": true,
+    "unknown_targets_absent": true,
+    "calibration_test_sources_disjoint": true,
+    "calibration_test_sessions_disjoint": true,
+    "unknown_creators_not_enrolled": true,
+    "all_native_queries10s": true,
+    "all_qc_non_top1_retained": true,
+    "all_query_groundtruth_intervals_fit_reference": true
+  },
+  "sdrr_session_open_protocol.json": {
+    "query_ids_unique": true,
+    "known_targets_enrolled": true,
+    "unknown_targets_absent": true,
+    "calibration_test_sources_disjoint": true,
+    "calibration_test_sessions_disjoint": true,
+    "unknown_creators_not_enrolled": true,
+    "all_native_queries10s": true,
+    "all_qc_non_top1_retained": true,
+    "all_query_groundtruth_intervals_fit_reference": true
+  }
+}

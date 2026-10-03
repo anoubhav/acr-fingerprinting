@@ -1,0 +1,30 @@
+{
+  "model": "PeakNetFP",
+  "native_durations_s": [
+    10,
+    5
+  ],
+  "density_controls_durations_s": [
+    5
+  ],
+  "open_protocol_duration_s": 5,
+  "factors": [
+    1,
+    2,
+    4
+  ],
+  "top_k": 20,
+  "settings_from_previous_PEX_control": true,
+  "model_refit": false,
+  "test_selected_settings": false,
+  "oracle_tempo": false,
+  "exact_IndexFlatIP": true,
+  "physical_native_protocol_sha256": "64754a1f1374630c010a3e6e96465e3c09247382fe6b79c70bc818b5cbbc261a",
+  "session_open_protocol_sha256": "cf6644dff657a84a4d1aabd632c0ec5a7f538c4bf2b79d34a013901e3ca8ded8",
+  "cache_index_sha256": "31467ef2e21fefa5058f9f959c920474f698707d68dd8f05e4899bbe9ba6a4b6",
+  "exposure_audit_sha256": "e07e05036de2c460ebd811bb04eeb5cb05482ebb5c54f92997393a2c202f89e5",
+  "runner_sha256": "8e9aad7f7e316deb36b6140911abb8cd490fe9cab21e450dd01862aac7bf3d8e",
+  "density_matcher_sha256": "f4def5e0ca35e0cc54cee7f955c72682a110d1110ad812d2d4c11ce08ebd34ca",
+  "timing_claims": false,
+  "declared_before_acoustic_evaluation": true
+}

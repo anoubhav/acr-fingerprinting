@@ -1,0 +1,81 @@
+{
+  "scope": "Exploratory post-hoc channel-response diagnostic; corrected parameters/gate fitted only from calibration; paired141 heldoutknown clips.",
+  "baseline_sha256": "7b996ba109719c6ca309c796de7b8e2feea1015e68551107afc965ef2f1ea2cb",
+  "gain_result_sha256": "24ea1d780403587592f94b3a17dbdf779213c8c7dbc9e1ca19af09747ba855e3",
+  "query_count": 141,
+  "source_count": 47,
+  "differences": {
+    "raw_correct_difference": {
+      "count": 15,
+      "rate": 0.10638297872340426,
+      "source_cluster_ci95": {
+        "estimate": 0.10638297872340426,
+        "ci95": [
+          0.014184397163120567,
+          0.198758865248226
+        ],
+        "n_queries": 141,
+        "n_source_clusters": 47,
+        "successes": 15
+      },
+      "creator_cluster_ci95": {
+        "estimate": 0.10638297872340426,
+        "ci95": [
+          0.0,
+          0.1933387096774193
+        ],
+        "n_queries": 141,
+        "n_source_clusters": 24,
+        "successes": 15
+      },
+      "source_session_crossed_ci95": {
+        "estimate": 0.10638297872340426,
+        "ci95": [
+          -0.2516666666666666,
+          0.31450034940600974
+        ],
+        "n_queries": 141,
+        "n_source_clusters": 47,
+        "n_montage_clusters": 3,
+        "successes": 15,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      }
+    },
+    "accepted_correct_difference": {
+      "count": 8,
+      "rate": 0.05673758865248227,
+      "source_cluster_ci95": {
+        "estimate": 0.05673758865248227,
+        "ci95": [
+          0.02127659574468085,
+          0.09929078014184398
+        ],
+        "n_queries": 141,
+        "n_source_clusters": 47,
+        "successes": 8
+      },
+      "creator_cluster_ci95": {
+        "estimate": 0.05673758865248227,
+        "ci95": [
+          0.020510204081632653,
+          0.11667792792792787
+        ],
+        "n_queries": 141,
+        "n_source_clusters": 24,
+        "successes": 8
+      },
+      "source_session_crossed_ci95": {
+        "estimate": 0.05673758865248227,
+        "ci95": [
+          0.0,
+          0.15631127450980387
+        ],
+        "n_queries": 141,
+        "n_source_clusters": 47,
+        "n_montage_clusters": 3,
+        "successes": 8,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      }
+    }
+  }
+}

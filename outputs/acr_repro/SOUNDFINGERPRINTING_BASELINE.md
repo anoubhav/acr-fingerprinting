@@ -104,3 +104,54 @@ work/dotnet/dotnet work/soundfingerprinting_build/SoundFingerprintingBridge.dll 
 The driver rejects PCM prepared for a different frozen protocol SHA. Reference
 fingerprints are cached as the upstream protobuf type. Input audio, PCM caches,
 SDKs, and model snapshots are not redistributed in the research deliverable.
+
+## Reference-only density controls
+
+`--reference-factor` defaults to 1, preserving historical matching behavior.
+Factors 2 and 4 retain original upstream HashedFingerprint objects whose original
+`SequenceNumber` is divisible by the factor. Original sequence numbers are never
+renumbered, and `StartsAt`, hash bins, original point, full media duration and
+metadata remain unchanged. The extractor still uses its native 512-sample stride;
+the index contains every second/fourth original record. Dense query extraction,
+native four-vote qualification, normalization and path/coverage parameters stay
+fixed. These are explicit index controls, not claimed native library defaults.
+
+At pinned source `9f882368258c76ac1776e192817d8f60eaa6f22b`, `UIntModelReferenceTracker`
+inserts original SequenceNumber/StartsAt into subfingerprints. Query paths sort by
+original sequence number but assess gaps in physical query/track seconds. Coverage
+uses physical match positions, native fingerprint support and full track/query
+duration. No density-specific path setting is required; changing those settings
+would be a different variant. Separate snapshot directory prefixes prevent sparse
+indexes from overwriting the dense one. The dense protobuf extraction cache is
+retained as an acquisition/cache cost, separate from the thinned serving snapshot.
+
+Factor 1 was rerun on all 835 original music queries: candidate IDs, offsets,
+raw/canonical confidence, similarity, coverage and query fingerprint counts are
+exactly equal to the historical dense result. Factors 2/4 use only cached native
+reference hashes and the existing exactly decoded query PCM. The full 5,835-query
+expanded run also contains the original 835 with the same ordered 659-track gallery;
+the summarizer verifies identical inputs before exporting those original subsets.
+Each population recalibrates only its own declared calibration unknowns.
+
+```sh
+DOTNET_CLI_HOME="$PWD/work/dotnet_home" DOTNET_PROCESSOR_COUNT=2 \
+work/dotnet/dotnet work/soundfingerprinting_build/SoundFingerprintingBridge.dll \
+  --protocol work/benchmarks/extended_unknown_protocol.json \
+  --pcm-manifest work/benchmarks/soundfingerprinting_extended_pcm.json \
+  --cache work/benchmarks/soundfingerprinting_cache \
+  --native-output-dir work/benchmarks/soundfingerprinting_density_factor2_extended \
+  --calibrated-output-dir work/benchmarks/soundfingerprinting_density_unused \
+  --durations 5 --votes 4 --reference-factor 2
+```
+
+Repeat with factor 4 and a separate output directory, then run
+`summarize_soundfingerprinting_density.py --help` for the paired original/expanded
+derivation. Measured hash payload is 1.899229 MB/audio-hour at factor 2 and 0.949973
+at factor 4. These numbers exclude metadata and runtime allocation, which are
+recorded separately. They support matched-budget comparison rather than a claim
+that the library itself recommends regular decimation.
+
+Do not infer query bandwidth from reference FPS. The native query configuration
+produces 50 fingerprints for the supported 5 s music crops (one pre-existing silent
+expanded clip has zero) and 127 for the 10 s SD-RR phone inputs. Those actual counts
+and the fresh-window boundary effects are retained in results.

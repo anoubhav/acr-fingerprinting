@@ -1,0 +1,3886 @@
+{
+  "method": "ACR-PCA32 + compact IVF512 factor8/query-stride4/nprobe16",
+  "common_input_sha256": "6babcce373d2715523dee8a850193c4eff6887a2218e1e55a41f223430511164",
+  "input_manifest_sha256": "be1a6cde2c533bf8c2383980234dc0aa9998cb6650c85ec8f23816a63cfaabc5",
+  "input_count": 50,
+  "input_duration_s": 5.0,
+  "sample_rate": 8000,
+  "model_setup": {
+    "wall_ms": 10.501417,
+    "cpu_ms": 3.853
+  },
+  "index_setup": {
+    "wall_ms": 35.266875,
+    "cpu_ms": 26.128
+  },
+  "first_5s_pipeline_call": {
+    "encoder_wall_ms": 2.491791,
+    "matcher_wall_ms": 10.31775,
+    "end_to_end_wall_ms": 12.809541,
+    "encoder_cpu_ms": 2.107,
+    "matcher_cpu_ms": 10.588,
+    "end_to_end_cpu_ms": 12.695,
+    "encoder_fingerprints": 185,
+    "searched_fingerprints": 47,
+    "reference_id": "025283",
+    "score": 0.025142190714269704
+  },
+  "warmups_per_query": 2,
+  "repeats_per_query": 5,
+  "per_query_median_distributions": {
+    "encoder_wall_ms": {
+      "median": 1.6148755000000001,
+      "p95": 1.8517143999999999,
+      "min": 1.331917,
+      "max": 1.911334
+    },
+    "matcher_wall_ms": {
+      "median": 4.213749999999999,
+      "p95": 5.0119519,
+      "min": 2.55375,
+      "max": 5.638792
+    },
+    "end_to_end_wall_ms": {
+      "median": 5.7870415,
+      "p95": 6.772552199999999,
+      "min": 4.15825,
+      "max": 7.286708
+    },
+    "encoder_cpu_ms": {
+      "median": 1.615,
+      "p95": 1.8512499999999998,
+      "min": 1.332,
+      "max": 1.9
+    },
+    "matcher_cpu_ms": {
+      "median": 7.936999999999999,
+      "p95": 10.016099999999998,
+      "min": 4.928,
+      "max": 10.16
+    },
+    "end_to_end_cpu_ms": {
+      "median": 9.649000000000001,
+      "p95": 11.59845,
+      "min": 6.605,
+      "max": 11.843
+    }
+  },
+  "all_repeat_distributions": {
+    "encoder_wall_ms": {
+      "median": 1.6188755000000001,
+      "p95": 2.0028266,
+      "min": 1.220334,
+      "max": 2.241667
+    },
+    "matcher_wall_ms": {
+      "median": 4.150792,
+      "p95": 5.17313385,
+      "min": 2.292083,
+      "max": 5.693125
+    },
+    "end_to_end_wall_ms": {
+      "median": 5.767479,
+      "p95": 6.8749705,
+      "min": 3.792208,
+      "max": 7.397375
+    },
+    "encoder_cpu_ms": {
+      "median": 1.619,
+      "p95": 2.0,
+      "min": 1.22,
+      "max": 2.239
+    },
+    "matcher_cpu_ms": {
+      "median": 7.981,
+      "p95": 10.04495,
+      "min": 4.84,
+      "max": 10.779
+    },
+    "end_to_end_cpu_ms": {
+      "median": 9.649000000000001,
+      "p95": 11.6968,
+      "min": 6.349,
+      "max": 12.449
+    }
+  },
+  "configuration": {
+    "reference_factor": 8,
+    "query_stride": 4,
+    "nprobe": 16,
+    "nlist": 512,
+    "faiss_threads": 4,
+    "top_k": 5,
+    "tolerance_sec": 0.12
+  },
+  "scope": "Encoder includes preprocessing, STFT, mel, mean/delta normalization, silence gate and PCA. Matcher includes original-grid query thinning, ANN and temporal aggregation. End-to-end is a single timed encoder\u2192matcher call.",
+  "exclusions": "File I/O/decoding, model/index setup, network and display are outside per-query timing.",
+  "quiet_window": "Coordinated serial benchmark slot; all heavy inference/scoring jobs held, other encoder profiles idle.",
+  "environment": {
+    "platform": "macOS-14.6.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "cpu_brand": "Apple M2 Max",
+    "numpy": "2.5.3",
+    "faiss": "1.15.1"
+  },
+  "peak_process_rss_platform_units": 229588992,
+  "memory_note": "Process RSS includes the server index/libraries; not device encoder RAM.",
+  "reference_layout": "One FAISS vector store plus uint32 original frames, int64 track boundaries and content lookup; no duplicate matrix or norm cache.",
+  "compact_metadata_bytes": 3181118,
+  "model_sha256": "7f946bdbfd27b48f01074b5369df24b8fdce391236fe212ee88be9f9ec980dcd",
+  "index_sha256": "6c5d693993f810fa636a9f93c865645badb8d0b63ddbcf51b5a4d8fe9d6ff0fa",
+  "metadata_sha256": "0f47da5faa770e80675f1441b3e591b4c0a11eb5caf703c55a92d4ef822c052e",
+  "runner_sha256": "d13620a0cee3f6ddb7b523bc2f23479d991e70f265d36dd7ed94c6ee4d15c736",
+  "store_source_sha256": "3aac7bda34901d86d75db9ec287b263377a136ba0a45f2691d4b9df389739de8",
+  "records": [
+    {
+      "query_id": "pexafb_hard_medium:chunk0209@5",
+      "source_id": "025283",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.767916,
+          "matcher_wall_ms": 2.55375,
+          "end_to_end_wall_ms": 4.321666,
+          "encoder_cpu_ms": 1.762,
+          "matcher_cpu_ms": 5.481,
+          "end_to_end_cpu_ms": 7.243,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "025283",
+          "score": 0.025142190714269704
+        },
+        {
+          "encoder_wall_ms": 1.500125,
+          "matcher_wall_ms": 2.292083,
+          "end_to_end_wall_ms": 3.792208,
+          "encoder_cpu_ms": 1.501,
+          "matcher_cpu_ms": 5.39,
+          "end_to_end_cpu_ms": 6.891,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "025283",
+          "score": 0.025142190714269704
+        },
+        {
+          "encoder_wall_ms": 1.377042,
+          "matcher_wall_ms": 2.711042,
+          "end_to_end_wall_ms": 4.088084,
+          "encoder_cpu_ms": 1.377,
+          "matcher_cpu_ms": 5.753,
+          "end_to_end_cpu_ms": 7.13,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "025283",
+          "score": 0.025142190714269704
+        },
+        {
+          "encoder_wall_ms": 2.159917,
+          "matcher_wall_ms": 2.713166,
+          "end_to_end_wall_ms": 4.873083,
+          "encoder_cpu_ms": 2.15,
+          "matcher_cpu_ms": 5.664,
+          "end_to_end_cpu_ms": 7.814,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "025283",
+          "score": 0.025142190714269704
+        },
+        {
+          "encoder_wall_ms": 1.82025,
+          "matcher_wall_ms": 2.338,
+          "end_to_end_wall_ms": 4.15825,
+          "encoder_cpu_ms": 1.82,
+          "matcher_cpu_ms": 5.317,
+          "end_to_end_cpu_ms": 7.137,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "025283",
+          "score": 0.025142190714269704
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.767916,
+        "matcher_wall_ms": 2.55375,
+        "end_to_end_wall_ms": 4.15825,
+        "encoder_cpu_ms": 1.762,
+        "matcher_cpu_ms": 5.481,
+        "end_to_end_cpu_ms": 7.137
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0612@5",
+      "source_id": "059129",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.823333,
+          "matcher_wall_ms": 3.75475,
+          "end_to_end_wall_ms": 5.578083,
+          "encoder_cpu_ms": 1.82,
+          "matcher_cpu_ms": 7.04,
+          "end_to_end_cpu_ms": 8.86,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "059129",
+          "score": 0.5153589709934074
+        },
+        {
+          "encoder_wall_ms": 1.528375,
+          "matcher_wall_ms": 3.796208,
+          "end_to_end_wall_ms": 5.324583,
+          "encoder_cpu_ms": 1.528,
+          "matcher_cpu_ms": 7.143,
+          "end_to_end_cpu_ms": 8.671,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "059129",
+          "score": 0.5153589709934074
+        },
+        {
+          "encoder_wall_ms": 1.610167,
+          "matcher_wall_ms": 3.6685,
+          "end_to_end_wall_ms": 5.278667,
+          "encoder_cpu_ms": 1.61,
+          "matcher_cpu_ms": 7.056,
+          "end_to_end_cpu_ms": 8.666,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "059129",
+          "score": 0.5153589709934074
+        },
+        {
+          "encoder_wall_ms": 1.526583,
+          "matcher_wall_ms": 4.244792,
+          "end_to_end_wall_ms": 5.771375,
+          "encoder_cpu_ms": 1.527,
+          "matcher_cpu_ms": 7.552,
+          "end_to_end_cpu_ms": 9.079,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "059129",
+          "score": 0.5153589709934074
+        },
+        {
+          "encoder_wall_ms": 1.983416,
+          "matcher_wall_ms": 3.576584,
+          "end_to_end_wall_ms": 5.56,
+          "encoder_cpu_ms": 1.982,
+          "matcher_cpu_ms": 6.891,
+          "end_to_end_cpu_ms": 8.873,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "059129",
+          "score": 0.5153589709934074
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.610167,
+        "matcher_wall_ms": 3.75475,
+        "end_to_end_wall_ms": 5.56,
+        "encoder_cpu_ms": 1.61,
+        "matcher_cpu_ms": 7.056,
+        "end_to_end_cpu_ms": 8.86
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0303@5",
+      "source_id": "059141",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.498958,
+          "matcher_wall_ms": 3.637459,
+          "end_to_end_wall_ms": 5.136417,
+          "encoder_cpu_ms": 1.499,
+          "matcher_cpu_ms": 7.737,
+          "end_to_end_cpu_ms": 9.236,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "059141",
+          "score": 0.09298006940840081
+        },
+        {
+          "encoder_wall_ms": 1.482833,
+          "matcher_wall_ms": 3.466542,
+          "end_to_end_wall_ms": 4.949375,
+          "encoder_cpu_ms": 1.483,
+          "matcher_cpu_ms": 7.361,
+          "end_to_end_cpu_ms": 8.844,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "059141",
+          "score": 0.09298006940840081
+        },
+        {
+          "encoder_wall_ms": 1.461291,
+          "matcher_wall_ms": 3.498417,
+          "end_to_end_wall_ms": 4.959708,
+          "encoder_cpu_ms": 1.461,
+          "matcher_cpu_ms": 7.289,
+          "end_to_end_cpu_ms": 8.75,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "059141",
+          "score": 0.09298006940840081
+        },
+        {
+          "encoder_wall_ms": 1.579458,
+          "matcher_wall_ms": 3.930667,
+          "end_to_end_wall_ms": 5.510125,
+          "encoder_cpu_ms": 1.58,
+          "matcher_cpu_ms": 7.786,
+          "end_to_end_cpu_ms": 9.366,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "059141",
+          "score": 0.09298006940840081
+        },
+        {
+          "encoder_wall_ms": 1.945166,
+          "matcher_wall_ms": 3.560084,
+          "end_to_end_wall_ms": 5.50525,
+          "encoder_cpu_ms": 1.945,
+          "matcher_cpu_ms": 7.531,
+          "end_to_end_cpu_ms": 9.476,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "059141",
+          "score": 0.09298006940840081
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.498958,
+        "matcher_wall_ms": 3.560084,
+        "end_to_end_wall_ms": 5.136417,
+        "encoder_cpu_ms": 1.499,
+        "matcher_cpu_ms": 7.531,
+        "end_to_end_cpu_ms": 9.236
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0397@5",
+      "source_id": "139958",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.408458,
+          "matcher_wall_ms": 4.3645,
+          "end_to_end_wall_ms": 5.772958,
+          "encoder_cpu_ms": 1.408,
+          "matcher_cpu_ms": 7.187,
+          "end_to_end_cpu_ms": 8.595,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "139958",
+          "score": 0.09014744545237473
+        },
+        {
+          "encoder_wall_ms": 1.797042,
+          "matcher_wall_ms": 3.702583,
+          "end_to_end_wall_ms": 5.499625,
+          "encoder_cpu_ms": 1.798,
+          "matcher_cpu_ms": 6.623,
+          "end_to_end_cpu_ms": 8.421,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "139958",
+          "score": 0.09014744545237473
+        },
+        {
+          "encoder_wall_ms": 1.506,
+          "matcher_wall_ms": 4.344708,
+          "end_to_end_wall_ms": 5.850708,
+          "encoder_cpu_ms": 1.506,
+          "matcher_cpu_ms": 7.275,
+          "end_to_end_cpu_ms": 8.781,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "139958",
+          "score": 0.09014744545237473
+        },
+        {
+          "encoder_wall_ms": 2.036834,
+          "matcher_wall_ms": 3.74175,
+          "end_to_end_wall_ms": 5.778584,
+          "encoder_cpu_ms": 2.037,
+          "matcher_cpu_ms": 6.677,
+          "end_to_end_cpu_ms": 8.714,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "139958",
+          "score": 0.09014744545237473
+        },
+        {
+          "encoder_wall_ms": 1.477458,
+          "matcher_wall_ms": 4.279792,
+          "end_to_end_wall_ms": 5.75725,
+          "encoder_cpu_ms": 1.478,
+          "matcher_cpu_ms": 7.188,
+          "end_to_end_cpu_ms": 8.666,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "139958",
+          "score": 0.09014744545237473
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.506,
+        "matcher_wall_ms": 4.279792,
+        "end_to_end_wall_ms": 5.772958,
+        "encoder_cpu_ms": 1.506,
+        "matcher_cpu_ms": 7.187,
+        "end_to_end_cpu_ms": 8.666
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0065@5",
+      "source_id": "005284",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.871334,
+          "matcher_wall_ms": 4.035,
+          "end_to_end_wall_ms": 5.906334,
+          "encoder_cpu_ms": 1.872,
+          "matcher_cpu_ms": 7.87,
+          "end_to_end_cpu_ms": 9.742,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "005284",
+          "score": 0.4541149014734657
+        },
+        {
+          "encoder_wall_ms": 1.462167,
+          "matcher_wall_ms": 4.61475,
+          "end_to_end_wall_ms": 6.076917,
+          "encoder_cpu_ms": 1.462,
+          "matcher_cpu_ms": 8.1,
+          "end_to_end_cpu_ms": 9.562,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "005284",
+          "score": 0.4541149014734657
+        },
+        {
+          "encoder_wall_ms": 1.999292,
+          "matcher_wall_ms": 3.98975,
+          "end_to_end_wall_ms": 5.989042,
+          "encoder_cpu_ms": 2.0,
+          "matcher_cpu_ms": 7.65,
+          "end_to_end_cpu_ms": 9.65,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "005284",
+          "score": 0.4541149014734657
+        },
+        {
+          "encoder_wall_ms": 1.39925,
+          "matcher_wall_ms": 4.719458,
+          "end_to_end_wall_ms": 6.118708,
+          "encoder_cpu_ms": 1.4,
+          "matcher_cpu_ms": 8.304,
+          "end_to_end_cpu_ms": 9.704,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "005284",
+          "score": 0.4541149014734657
+        },
+        {
+          "encoder_wall_ms": 1.80875,
+          "matcher_wall_ms": 4.348417,
+          "end_to_end_wall_ms": 6.157167,
+          "encoder_cpu_ms": 1.797,
+          "matcher_cpu_ms": 7.791,
+          "end_to_end_cpu_ms": 9.588,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "005284",
+          "score": 0.4541149014734657
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.80875,
+        "matcher_wall_ms": 4.348417,
+        "end_to_end_wall_ms": 6.076917,
+        "encoder_cpu_ms": 1.797,
+        "matcher_cpu_ms": 7.87,
+        "end_to_end_cpu_ms": 9.65
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0391@5",
+      "source_id": "114246",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.697,
+          "matcher_wall_ms": 4.974041,
+          "end_to_end_wall_ms": 6.671041,
+          "encoder_cpu_ms": 1.694,
+          "matcher_cpu_ms": 9.959,
+          "end_to_end_cpu_ms": 11.653,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "114246",
+          "score": 0.1717344148212259
+        },
+        {
+          "encoder_wall_ms": 1.760875,
+          "matcher_wall_ms": 4.745333,
+          "end_to_end_wall_ms": 6.506208,
+          "encoder_cpu_ms": 1.761,
+          "matcher_cpu_ms": 10.335,
+          "end_to_end_cpu_ms": 12.096,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "114246",
+          "score": 0.1717344148212259
+        },
+        {
+          "encoder_wall_ms": 1.607708,
+          "matcher_wall_ms": 4.88725,
+          "end_to_end_wall_ms": 6.494958,
+          "encoder_cpu_ms": 1.608,
+          "matcher_cpu_ms": 10.779,
+          "end_to_end_cpu_ms": 12.387,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "114246",
+          "score": 0.1717344148212259
+        },
+        {
+          "encoder_wall_ms": 1.5615,
+          "matcher_wall_ms": 4.387334,
+          "end_to_end_wall_ms": 5.948834,
+          "encoder_cpu_ms": 1.561,
+          "matcher_cpu_ms": 9.475,
+          "end_to_end_cpu_ms": 11.036,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "114246",
+          "score": 0.1717344148212259
+        },
+        {
+          "encoder_wall_ms": 1.529,
+          "matcher_wall_ms": 5.163417,
+          "end_to_end_wall_ms": 6.692417,
+          "encoder_cpu_ms": 1.528,
+          "matcher_cpu_ms": 10.16,
+          "end_to_end_cpu_ms": 11.688,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "114246",
+          "score": 0.1717344148212259
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.607708,
+        "matcher_wall_ms": 4.88725,
+        "end_to_end_wall_ms": 6.506208,
+        "encoder_cpu_ms": 1.608,
+        "matcher_cpu_ms": 10.16,
+        "end_to_end_cpu_ms": 11.688
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0624@5",
+      "source_id": "010699",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.502666,
+          "matcher_wall_ms": 3.151417,
+          "end_to_end_wall_ms": 4.654083,
+          "encoder_cpu_ms": 1.502,
+          "matcher_cpu_ms": 6.923,
+          "end_to_end_cpu_ms": 8.425,
+          "encoder_fingerprints": 171,
+          "searched_fingerprints": 43,
+          "reference_id": "010699",
+          "score": 0.4373700483429991
+        },
+        {
+          "encoder_wall_ms": 1.506458,
+          "matcher_wall_ms": 3.773333,
+          "end_to_end_wall_ms": 5.279791,
+          "encoder_cpu_ms": 1.507,
+          "matcher_cpu_ms": 7.374,
+          "end_to_end_cpu_ms": 8.881,
+          "encoder_fingerprints": 171,
+          "searched_fingerprints": 43,
+          "reference_id": "010699",
+          "score": 0.4373700483429991
+        },
+        {
+          "encoder_wall_ms": 2.012791,
+          "matcher_wall_ms": 3.506042,
+          "end_to_end_wall_ms": 5.518833,
+          "encoder_cpu_ms": 2.013,
+          "matcher_cpu_ms": 7.126,
+          "end_to_end_cpu_ms": 9.139,
+          "encoder_fingerprints": 171,
+          "searched_fingerprints": 43,
+          "reference_id": "010699",
+          "score": 0.4373700483429991
+        },
+        {
+          "encoder_wall_ms": 1.911334,
+          "matcher_wall_ms": 3.490875,
+          "end_to_end_wall_ms": 5.402209,
+          "encoder_cpu_ms": 1.9,
+          "matcher_cpu_ms": 7.081,
+          "end_to_end_cpu_ms": 8.981,
+          "encoder_fingerprints": 171,
+          "searched_fingerprints": 43,
+          "reference_id": "010699",
+          "score": 0.4373700483429991
+        },
+        {
+          "encoder_wall_ms": 2.0085,
+          "matcher_wall_ms": 3.196375,
+          "end_to_end_wall_ms": 5.204875,
+          "encoder_cpu_ms": 2.0,
+          "matcher_cpu_ms": 6.922,
+          "end_to_end_cpu_ms": 8.922,
+          "encoder_fingerprints": 171,
+          "searched_fingerprints": 43,
+          "reference_id": "010699",
+          "score": 0.4373700483429991
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.911334,
+        "matcher_wall_ms": 3.490875,
+        "end_to_end_wall_ms": 5.279791,
+        "encoder_cpu_ms": 1.9,
+        "matcher_cpu_ms": 7.081,
+        "end_to_end_cpu_ms": 8.922
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0796@5",
+      "source_id": "092158",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.552333,
+          "matcher_wall_ms": 5.151458,
+          "end_to_end_wall_ms": 6.703791,
+          "encoder_cpu_ms": 1.552,
+          "matcher_cpu_ms": 9.494,
+          "end_to_end_cpu_ms": 11.046,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "135710",
+          "score": 0.016985710431895548
+        },
+        {
+          "encoder_wall_ms": 1.779333,
+          "matcher_wall_ms": 5.116125,
+          "end_to_end_wall_ms": 6.895458,
+          "encoder_cpu_ms": 1.78,
+          "matcher_cpu_ms": 9.104,
+          "end_to_end_cpu_ms": 10.884,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "135710",
+          "score": 0.016985710431895548
+        },
+        {
+          "encoder_wall_ms": 1.857125,
+          "matcher_wall_ms": 4.423958,
+          "end_to_end_wall_ms": 6.281083,
+          "encoder_cpu_ms": 1.848,
+          "matcher_cpu_ms": 8.573,
+          "end_to_end_cpu_ms": 10.421,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "135710",
+          "score": 0.016985710431895548
+        },
+        {
+          "encoder_wall_ms": 1.618459,
+          "matcher_wall_ms": 4.339916,
+          "end_to_end_wall_ms": 5.958375,
+          "encoder_cpu_ms": 1.619,
+          "matcher_cpu_ms": 8.366,
+          "end_to_end_cpu_ms": 9.985,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "135710",
+          "score": 0.016985710431895548
+        },
+        {
+          "encoder_wall_ms": 1.448458,
+          "matcher_wall_ms": 4.442584,
+          "end_to_end_wall_ms": 5.891042,
+          "encoder_cpu_ms": 1.448,
+          "matcher_cpu_ms": 8.592,
+          "end_to_end_cpu_ms": 10.04,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "135710",
+          "score": 0.016985710431895548
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.618459,
+        "matcher_wall_ms": 4.442584,
+        "end_to_end_wall_ms": 6.281083,
+        "encoder_cpu_ms": 1.619,
+        "matcher_cpu_ms": 8.592,
+        "end_to_end_cpu_ms": 10.421
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0230@5",
+      "source_id": "115762",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.546167,
+          "matcher_wall_ms": 3.379083,
+          "end_to_end_wall_ms": 4.92525,
+          "encoder_cpu_ms": 1.546,
+          "matcher_cpu_ms": 6.32,
+          "end_to_end_cpu_ms": 7.866,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "115762",
+          "score": 0.053800913347946976
+        },
+        {
+          "encoder_wall_ms": 1.490167,
+          "matcher_wall_ms": 3.284625,
+          "end_to_end_wall_ms": 4.774792,
+          "encoder_cpu_ms": 1.49,
+          "matcher_cpu_ms": 6.312,
+          "end_to_end_cpu_ms": 7.802,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "115762",
+          "score": 0.053800913347946976
+        },
+        {
+          "encoder_wall_ms": 1.703625,
+          "matcher_wall_ms": 3.342708,
+          "end_to_end_wall_ms": 5.046333,
+          "encoder_cpu_ms": 1.696,
+          "matcher_cpu_ms": 6.117,
+          "end_to_end_cpu_ms": 7.813,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "115762",
+          "score": 0.053800913347946976
+        },
+        {
+          "encoder_wall_ms": 1.813792,
+          "matcher_wall_ms": 3.392291,
+          "end_to_end_wall_ms": 5.206083,
+          "encoder_cpu_ms": 1.811,
+          "matcher_cpu_ms": 6.358,
+          "end_to_end_cpu_ms": 8.169,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "115762",
+          "score": 0.053800913347946976
+        },
+        {
+          "encoder_wall_ms": 1.462417,
+          "matcher_wall_ms": 3.446167,
+          "end_to_end_wall_ms": 4.908584,
+          "encoder_cpu_ms": 1.462,
+          "matcher_cpu_ms": 6.357,
+          "end_to_end_cpu_ms": 7.819,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "115762",
+          "score": 0.053800913347946976
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.546167,
+        "matcher_wall_ms": 3.379083,
+        "end_to_end_wall_ms": 4.92525,
+        "encoder_cpu_ms": 1.546,
+        "matcher_cpu_ms": 6.32,
+        "end_to_end_cpu_ms": 7.819
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0987@5",
+      "source_id": "133677",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.425917,
+          "matcher_wall_ms": 4.666042,
+          "end_to_end_wall_ms": 6.091959,
+          "encoder_cpu_ms": 1.427,
+          "matcher_cpu_ms": 9.661,
+          "end_to_end_cpu_ms": 11.088,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "137050",
+          "score": 0.01816555759928627
+        },
+        {
+          "encoder_wall_ms": 1.963917,
+          "matcher_wall_ms": 4.702,
+          "end_to_end_wall_ms": 6.665917,
+          "encoder_cpu_ms": 1.96,
+          "matcher_cpu_ms": 9.709,
+          "end_to_end_cpu_ms": 11.669,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "137050",
+          "score": 0.01816555759928627
+        },
+        {
+          "encoder_wall_ms": 1.619292,
+          "matcher_wall_ms": 4.534292,
+          "end_to_end_wall_ms": 6.153584,
+          "encoder_cpu_ms": 1.619,
+          "matcher_cpu_ms": 9.663,
+          "end_to_end_cpu_ms": 11.282,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "137050",
+          "score": 0.01816555759928627
+        },
+        {
+          "encoder_wall_ms": 1.577959,
+          "matcher_wall_ms": 4.220958,
+          "end_to_end_wall_ms": 5.798917,
+          "encoder_cpu_ms": 1.578,
+          "matcher_cpu_ms": 9.839,
+          "end_to_end_cpu_ms": 11.417,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "137050",
+          "score": 0.01816555759928627
+        },
+        {
+          "encoder_wall_ms": 1.44,
+          "matcher_wall_ms": 4.08525,
+          "end_to_end_wall_ms": 5.52525,
+          "encoder_cpu_ms": 1.44,
+          "matcher_cpu_ms": 9.11,
+          "end_to_end_cpu_ms": 10.55,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "137050",
+          "score": 0.01816555759928627
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.577959,
+        "matcher_wall_ms": 4.534292,
+        "end_to_end_wall_ms": 6.091959,
+        "encoder_cpu_ms": 1.578,
+        "matcher_cpu_ms": 9.663,
+        "end_to_end_cpu_ms": 11.282
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0565@5",
+      "source_id": "104648",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.553333,
+          "matcher_wall_ms": 4.7395,
+          "end_to_end_wall_ms": 6.292833,
+          "encoder_cpu_ms": 1.553,
+          "matcher_cpu_ms": 9.098,
+          "end_to_end_cpu_ms": 10.651,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "147409",
+          "score": 0.011264819785158984
+        },
+        {
+          "encoder_wall_ms": 1.677958,
+          "matcher_wall_ms": 4.436167,
+          "end_to_end_wall_ms": 6.114125,
+          "encoder_cpu_ms": 1.654,
+          "matcher_cpu_ms": 8.833,
+          "end_to_end_cpu_ms": 10.487,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "147409",
+          "score": 0.011264819785158984
+        },
+        {
+          "encoder_wall_ms": 1.513625,
+          "matcher_wall_ms": 4.238208,
+          "end_to_end_wall_ms": 5.751833,
+          "encoder_cpu_ms": 1.515,
+          "matcher_cpu_ms": 8.594,
+          "end_to_end_cpu_ms": 10.109,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "147409",
+          "score": 0.011264819785158984
+        },
+        {
+          "encoder_wall_ms": 1.568958,
+          "matcher_wall_ms": 4.68175,
+          "end_to_end_wall_ms": 6.250708,
+          "encoder_cpu_ms": 1.57,
+          "matcher_cpu_ms": 9.276,
+          "end_to_end_cpu_ms": 10.846,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "147409",
+          "score": 0.011264819785158984
+        },
+        {
+          "encoder_wall_ms": 1.971459,
+          "matcher_wall_ms": 4.513458,
+          "end_to_end_wall_ms": 6.484917,
+          "encoder_cpu_ms": 1.958,
+          "matcher_cpu_ms": 8.957,
+          "end_to_end_cpu_ms": 10.915,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "147409",
+          "score": 0.011264819785158984
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.568958,
+        "matcher_wall_ms": 4.513458,
+        "end_to_end_wall_ms": 6.250708,
+        "encoder_cpu_ms": 1.57,
+        "matcher_cpu_ms": 8.957,
+        "end_to_end_cpu_ms": 10.651
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0468@5",
+      "source_id": "147302",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.495416,
+          "matcher_wall_ms": 3.998042,
+          "end_to_end_wall_ms": 5.493458,
+          "encoder_cpu_ms": 1.495,
+          "matcher_cpu_ms": 8.114,
+          "end_to_end_cpu_ms": 9.609,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "147302",
+          "score": 0.6054754019627154
+        },
+        {
+          "encoder_wall_ms": 1.561709,
+          "matcher_wall_ms": 4.525625,
+          "end_to_end_wall_ms": 6.087334,
+          "encoder_cpu_ms": 1.561,
+          "matcher_cpu_ms": 8.38,
+          "end_to_end_cpu_ms": 9.941,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "147302",
+          "score": 0.6054754019627154
+        },
+        {
+          "encoder_wall_ms": 1.833125,
+          "matcher_wall_ms": 4.477416,
+          "end_to_end_wall_ms": 6.310541,
+          "encoder_cpu_ms": 1.831,
+          "matcher_cpu_ms": 8.479,
+          "end_to_end_cpu_ms": 10.31,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "147302",
+          "score": 0.6054754019627154
+        },
+        {
+          "encoder_wall_ms": 1.611292,
+          "matcher_wall_ms": 4.670375,
+          "end_to_end_wall_ms": 6.281667,
+          "encoder_cpu_ms": 1.611,
+          "matcher_cpu_ms": 8.939,
+          "end_to_end_cpu_ms": 10.55,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "147302",
+          "score": 0.6054754019627154
+        },
+        {
+          "encoder_wall_ms": 1.73425,
+          "matcher_wall_ms": 4.466708,
+          "end_to_end_wall_ms": 6.200958,
+          "encoder_cpu_ms": 1.73,
+          "matcher_cpu_ms": 8.478,
+          "end_to_end_cpu_ms": 10.208,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "147302",
+          "score": 0.6054754019627154
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.611292,
+        "matcher_wall_ms": 4.477416,
+        "end_to_end_wall_ms": 6.200958,
+        "encoder_cpu_ms": 1.611,
+        "matcher_cpu_ms": 8.478,
+        "end_to_end_cpu_ms": 10.208
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0073@5",
+      "source_id": "041404",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.440167,
+          "matcher_wall_ms": 3.932291,
+          "end_to_end_wall_ms": 5.372458,
+          "encoder_cpu_ms": 1.44,
+          "matcher_cpu_ms": 7.551,
+          "end_to_end_cpu_ms": 8.991,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "041404",
+          "score": 0.17847542111449322
+        },
+        {
+          "encoder_wall_ms": 1.54525,
+          "matcher_wall_ms": 4.533333,
+          "end_to_end_wall_ms": 6.078583,
+          "encoder_cpu_ms": 1.546,
+          "matcher_cpu_ms": 7.974,
+          "end_to_end_cpu_ms": 9.52,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "041404",
+          "score": 0.17847542111449322
+        },
+        {
+          "encoder_wall_ms": 2.021,
+          "matcher_wall_ms": 4.408292,
+          "end_to_end_wall_ms": 6.429292,
+          "encoder_cpu_ms": 2.005,
+          "matcher_cpu_ms": 8.194,
+          "end_to_end_cpu_ms": 10.199,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "041404",
+          "score": 0.17847542111449322
+        },
+        {
+          "encoder_wall_ms": 1.742541,
+          "matcher_wall_ms": 4.718167,
+          "end_to_end_wall_ms": 6.460708,
+          "encoder_cpu_ms": 1.742,
+          "matcher_cpu_ms": 8.454,
+          "end_to_end_cpu_ms": 10.196,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "041404",
+          "score": 0.17847542111449322
+        },
+        {
+          "encoder_wall_ms": 1.6435,
+          "matcher_wall_ms": 4.5615,
+          "end_to_end_wall_ms": 6.205,
+          "encoder_cpu_ms": 1.644,
+          "matcher_cpu_ms": 8.004,
+          "end_to_end_cpu_ms": 9.648,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "041404",
+          "score": 0.17847542111449322
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.6435,
+        "matcher_wall_ms": 4.533333,
+        "end_to_end_wall_ms": 6.205,
+        "encoder_cpu_ms": 1.644,
+        "matcher_cpu_ms": 8.004,
+        "end_to_end_cpu_ms": 9.648
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0848@5",
+      "source_id": "123373",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.858208,
+          "matcher_wall_ms": 4.241125,
+          "end_to_end_wall_ms": 6.099333,
+          "encoder_cpu_ms": 1.858,
+          "matcher_cpu_ms": 7.14,
+          "end_to_end_cpu_ms": 8.998,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "123373",
+          "score": 0.552306254665178
+        },
+        {
+          "encoder_wall_ms": 1.442083,
+          "matcher_wall_ms": 4.304708,
+          "end_to_end_wall_ms": 5.746791,
+          "encoder_cpu_ms": 1.442,
+          "matcher_cpu_ms": 7.118,
+          "end_to_end_cpu_ms": 8.56,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "123373",
+          "score": 0.552306254665178
+        },
+        {
+          "encoder_wall_ms": 1.57375,
+          "matcher_wall_ms": 5.07575,
+          "end_to_end_wall_ms": 6.6495,
+          "encoder_cpu_ms": 1.573,
+          "matcher_cpu_ms": 7.933,
+          "end_to_end_cpu_ms": 9.506,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "123373",
+          "score": 0.552306254665178
+        },
+        {
+          "encoder_wall_ms": 2.072916,
+          "matcher_wall_ms": 4.775167,
+          "end_to_end_wall_ms": 6.848083,
+          "encoder_cpu_ms": 2.065,
+          "matcher_cpu_ms": 7.691,
+          "end_to_end_cpu_ms": 9.756,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "123373",
+          "score": 0.552306254665178
+        },
+        {
+          "encoder_wall_ms": 1.777792,
+          "matcher_wall_ms": 5.100666,
+          "end_to_end_wall_ms": 6.878458,
+          "encoder_cpu_ms": 1.778,
+          "matcher_cpu_ms": 8.015,
+          "end_to_end_cpu_ms": 9.793,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "123373",
+          "score": 0.552306254665178
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.777792,
+        "matcher_wall_ms": 4.775167,
+        "end_to_end_wall_ms": 6.6495,
+        "encoder_cpu_ms": 1.778,
+        "matcher_cpu_ms": 7.691,
+        "end_to_end_cpu_ms": 9.506
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0030@5",
+      "source_id": "141295",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.828541,
+          "matcher_wall_ms": 3.659834,
+          "end_to_end_wall_ms": 5.488375,
+          "encoder_cpu_ms": 1.816,
+          "matcher_cpu_ms": 8.92,
+          "end_to_end_cpu_ms": 10.736,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "141295",
+          "score": 0.5480871247703932
+        },
+        {
+          "encoder_wall_ms": 1.561333,
+          "matcher_wall_ms": 4.239792,
+          "end_to_end_wall_ms": 5.801125,
+          "encoder_cpu_ms": 1.565,
+          "matcher_cpu_ms": 9.433,
+          "end_to_end_cpu_ms": 10.998,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "141295",
+          "score": 0.5480871247703932
+        },
+        {
+          "encoder_wall_ms": 1.812333,
+          "matcher_wall_ms": 4.068167,
+          "end_to_end_wall_ms": 5.8805,
+          "encoder_cpu_ms": 1.814,
+          "matcher_cpu_ms": 9.092,
+          "end_to_end_cpu_ms": 10.906,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "141295",
+          "score": 0.5480871247703932
+        },
+        {
+          "encoder_wall_ms": 1.871833,
+          "matcher_wall_ms": 4.129583,
+          "end_to_end_wall_ms": 6.001416,
+          "encoder_cpu_ms": 1.865,
+          "matcher_cpu_ms": 9.103,
+          "end_to_end_cpu_ms": 10.968,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "141295",
+          "score": 0.5480871247703932
+        },
+        {
+          "encoder_wall_ms": 1.810875,
+          "matcher_wall_ms": 3.675458,
+          "end_to_end_wall_ms": 5.486333,
+          "encoder_cpu_ms": 1.808,
+          "matcher_cpu_ms": 8.936,
+          "end_to_end_cpu_ms": 10.744,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "141295",
+          "score": 0.5480871247703932
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.812333,
+        "matcher_wall_ms": 4.068167,
+        "end_to_end_wall_ms": 5.801125,
+        "encoder_cpu_ms": 1.814,
+        "matcher_cpu_ms": 9.092,
+        "end_to_end_cpu_ms": 10.906
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0095@5",
+      "source_id": "144600",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.28875,
+          "matcher_wall_ms": 4.957458,
+          "end_to_end_wall_ms": 6.246208,
+          "encoder_cpu_ms": 1.289,
+          "matcher_cpu_ms": 9.599,
+          "end_to_end_cpu_ms": 10.888,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "144600",
+          "score": 0.7863009273212012
+        },
+        {
+          "encoder_wall_ms": 1.864541,
+          "matcher_wall_ms": 4.9325,
+          "end_to_end_wall_ms": 6.797041,
+          "encoder_cpu_ms": 1.864,
+          "matcher_cpu_ms": 9.577,
+          "end_to_end_cpu_ms": 11.441,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "144600",
+          "score": 0.7863009273212012
+        },
+        {
+          "encoder_wall_ms": 1.821625,
+          "matcher_wall_ms": 4.417875,
+          "end_to_end_wall_ms": 6.2395,
+          "encoder_cpu_ms": 1.821,
+          "matcher_cpu_ms": 9.002,
+          "end_to_end_cpu_ms": 10.823,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "144600",
+          "score": 0.7863009273212012
+        },
+        {
+          "encoder_wall_ms": 1.574875,
+          "matcher_wall_ms": 4.926375,
+          "end_to_end_wall_ms": 6.50125,
+          "encoder_cpu_ms": 1.575,
+          "matcher_cpu_ms": 9.419,
+          "end_to_end_cpu_ms": 10.994,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "144600",
+          "score": 0.7863009273212012
+        },
+        {
+          "encoder_wall_ms": 2.001291,
+          "matcher_wall_ms": 5.016,
+          "end_to_end_wall_ms": 7.017291,
+          "encoder_cpu_ms": 1.987,
+          "matcher_cpu_ms": 9.561,
+          "end_to_end_cpu_ms": 11.548,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "144600",
+          "score": 0.7863009273212012
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.821625,
+        "matcher_wall_ms": 4.9325,
+        "end_to_end_wall_ms": 6.50125,
+        "encoder_cpu_ms": 1.821,
+        "matcher_cpu_ms": 9.561,
+        "end_to_end_cpu_ms": 10.994
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0568@5",
+      "source_id": "046339",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.8345,
+          "matcher_wall_ms": 4.598791,
+          "end_to_end_wall_ms": 6.433291,
+          "encoder_cpu_ms": 1.825,
+          "matcher_cpu_ms": 9.302,
+          "end_to_end_cpu_ms": 11.127,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "046339",
+          "score": 0.36475777542114574
+        },
+        {
+          "encoder_wall_ms": 1.501625,
+          "matcher_wall_ms": 5.433,
+          "end_to_end_wall_ms": 6.934625,
+          "encoder_cpu_ms": 1.502,
+          "matcher_cpu_ms": 10.058,
+          "end_to_end_cpu_ms": 11.56,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "046339",
+          "score": 0.36475777542114574
+        },
+        {
+          "encoder_wall_ms": 1.469083,
+          "matcher_wall_ms": 5.401625,
+          "end_to_end_wall_ms": 6.870708,
+          "encoder_cpu_ms": 1.47,
+          "matcher_cpu_ms": 10.019,
+          "end_to_end_cpu_ms": 11.489,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "046339",
+          "score": 0.36475777542114574
+        },
+        {
+          "encoder_wall_ms": 2.118,
+          "matcher_wall_ms": 4.7845,
+          "end_to_end_wall_ms": 6.9025,
+          "encoder_cpu_ms": 2.109,
+          "matcher_cpu_ms": 9.767,
+          "end_to_end_cpu_ms": 11.876,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "046339",
+          "score": 0.36475777542114574
+        },
+        {
+          "encoder_wall_ms": 1.527625,
+          "matcher_wall_ms": 4.680625,
+          "end_to_end_wall_ms": 6.20825,
+          "encoder_cpu_ms": 1.527,
+          "matcher_cpu_ms": 9.542,
+          "end_to_end_cpu_ms": 11.069,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "046339",
+          "score": 0.36475777542114574
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.527625,
+        "matcher_wall_ms": 4.7845,
+        "end_to_end_wall_ms": 6.870708,
+        "encoder_cpu_ms": 1.527,
+        "matcher_cpu_ms": 9.767,
+        "end_to_end_cpu_ms": 11.489
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0963@5",
+      "source_id": "113225",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.829708,
+          "matcher_wall_ms": 3.057209,
+          "end_to_end_wall_ms": 4.886917,
+          "encoder_cpu_ms": 1.83,
+          "matcher_cpu_ms": 6.582,
+          "end_to_end_cpu_ms": 8.412,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "037978",
+          "score": 0.008652180517182766
+        },
+        {
+          "encoder_wall_ms": 1.5055,
+          "matcher_wall_ms": 3.400292,
+          "end_to_end_wall_ms": 4.905792,
+          "encoder_cpu_ms": 1.506,
+          "matcher_cpu_ms": 6.977,
+          "end_to_end_cpu_ms": 8.483,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "037978",
+          "score": 0.008652180517182766
+        },
+        {
+          "encoder_wall_ms": 1.84125,
+          "matcher_wall_ms": 3.253833,
+          "end_to_end_wall_ms": 5.095083,
+          "encoder_cpu_ms": 1.831,
+          "matcher_cpu_ms": 6.902,
+          "end_to_end_cpu_ms": 8.733,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "037978",
+          "score": 0.008652180517182766
+        },
+        {
+          "encoder_wall_ms": 1.638042,
+          "matcher_wall_ms": 3.271,
+          "end_to_end_wall_ms": 4.909042,
+          "encoder_cpu_ms": 1.638,
+          "matcher_cpu_ms": 6.839,
+          "end_to_end_cpu_ms": 8.477,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "037978",
+          "score": 0.008652180517182766
+        },
+        {
+          "encoder_wall_ms": 1.560375,
+          "matcher_wall_ms": 3.163375,
+          "end_to_end_wall_ms": 4.72375,
+          "encoder_cpu_ms": 1.559,
+          "matcher_cpu_ms": 6.686,
+          "end_to_end_cpu_ms": 8.245,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "037978",
+          "score": 0.008652180517182766
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.638042,
+        "matcher_wall_ms": 3.253833,
+        "end_to_end_wall_ms": 4.905792,
+        "encoder_cpu_ms": 1.638,
+        "matcher_cpu_ms": 6.839,
+        "end_to_end_cpu_ms": 8.477
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0775@5",
+      "source_id": "011722",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.549458,
+          "matcher_wall_ms": 4.466459,
+          "end_to_end_wall_ms": 6.015917,
+          "encoder_cpu_ms": 1.55,
+          "matcher_cpu_ms": 9.055,
+          "end_to_end_cpu_ms": 10.605,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "011722",
+          "score": 0.4881590440504255
+        },
+        {
+          "encoder_wall_ms": 1.704209,
+          "matcher_wall_ms": 5.056041,
+          "end_to_end_wall_ms": 6.76025,
+          "encoder_cpu_ms": 1.688,
+          "matcher_cpu_ms": 9.757,
+          "end_to_end_cpu_ms": 11.445,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "011722",
+          "score": 0.4881590440504255
+        },
+        {
+          "encoder_wall_ms": 1.846125,
+          "matcher_wall_ms": 4.230458,
+          "end_to_end_wall_ms": 6.076583,
+          "encoder_cpu_ms": 1.846,
+          "matcher_cpu_ms": 8.832,
+          "end_to_end_cpu_ms": 10.678,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "011722",
+          "score": 0.4881590440504255
+        },
+        {
+          "encoder_wall_ms": 1.5825,
+          "matcher_wall_ms": 4.85525,
+          "end_to_end_wall_ms": 6.43775,
+          "encoder_cpu_ms": 1.584,
+          "matcher_cpu_ms": 9.484,
+          "end_to_end_cpu_ms": 11.068,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "011722",
+          "score": 0.4881590440504255
+        },
+        {
+          "encoder_wall_ms": 1.571875,
+          "matcher_wall_ms": 4.307334,
+          "end_to_end_wall_ms": 5.879209,
+          "encoder_cpu_ms": 1.571,
+          "matcher_cpu_ms": 9.114,
+          "end_to_end_cpu_ms": 10.685,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "011722",
+          "score": 0.4881590440504255
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.5825,
+        "matcher_wall_ms": 4.466459,
+        "end_to_end_wall_ms": 6.076583,
+        "encoder_cpu_ms": 1.584,
+        "matcher_cpu_ms": 9.114,
+        "end_to_end_cpu_ms": 10.685
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0130@5",
+      "source_id": "114489",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 2.241667,
+          "matcher_wall_ms": 3.626708,
+          "end_to_end_wall_ms": 5.868375,
+          "encoder_cpu_ms": 2.239,
+          "matcher_cpu_ms": 7.042,
+          "end_to_end_cpu_ms": 9.281,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "114489",
+          "score": 0.3717373321595456
+        },
+        {
+          "encoder_wall_ms": 1.907,
+          "matcher_wall_ms": 3.644208,
+          "end_to_end_wall_ms": 5.551208,
+          "encoder_cpu_ms": 1.903,
+          "matcher_cpu_ms": 6.994,
+          "end_to_end_cpu_ms": 8.897,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "114489",
+          "score": 0.3717373321595456
+        },
+        {
+          "encoder_wall_ms": 1.652917,
+          "matcher_wall_ms": 3.501375,
+          "end_to_end_wall_ms": 5.154292,
+          "encoder_cpu_ms": 1.653,
+          "matcher_cpu_ms": 6.849,
+          "end_to_end_cpu_ms": 8.502,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "114489",
+          "score": 0.3717373321595456
+        },
+        {
+          "encoder_wall_ms": 1.89525,
+          "matcher_wall_ms": 3.093417,
+          "end_to_end_wall_ms": 4.988667,
+          "encoder_cpu_ms": 1.886,
+          "matcher_cpu_ms": 6.546,
+          "end_to_end_cpu_ms": 8.432,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "114489",
+          "score": 0.3717373321595456
+        },
+        {
+          "encoder_wall_ms": 1.507708,
+          "matcher_wall_ms": 3.69825,
+          "end_to_end_wall_ms": 5.205958,
+          "encoder_cpu_ms": 1.508,
+          "matcher_cpu_ms": 7.239,
+          "end_to_end_cpu_ms": 8.747,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "114489",
+          "score": 0.3717373321595456
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.89525,
+        "matcher_wall_ms": 3.626708,
+        "end_to_end_wall_ms": 5.205958,
+        "encoder_cpu_ms": 1.886,
+        "matcher_cpu_ms": 6.994,
+        "end_to_end_cpu_ms": 8.747
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0999@5",
+      "source_id": "074914",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.677584,
+          "matcher_wall_ms": 2.786041,
+          "end_to_end_wall_ms": 4.463625,
+          "encoder_cpu_ms": 1.677,
+          "matcher_cpu_ms": 4.928,
+          "end_to_end_cpu_ms": 6.605,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "074914",
+          "score": 0.03590545848760749
+        },
+        {
+          "encoder_wall_ms": 1.509708,
+          "matcher_wall_ms": 2.762709,
+          "end_to_end_wall_ms": 4.272417,
+          "encoder_cpu_ms": 1.509,
+          "matcher_cpu_ms": 4.84,
+          "end_to_end_cpu_ms": 6.349,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "074914",
+          "score": 0.03590545848760749
+        },
+        {
+          "encoder_wall_ms": 1.527417,
+          "matcher_wall_ms": 3.367041,
+          "end_to_end_wall_ms": 4.894458,
+          "encoder_cpu_ms": 1.527,
+          "matcher_cpu_ms": 5.428,
+          "end_to_end_cpu_ms": 6.955,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "074914",
+          "score": 0.03590545848760749
+        },
+        {
+          "encoder_wall_ms": 1.907042,
+          "matcher_wall_ms": 2.755917,
+          "end_to_end_wall_ms": 4.662959,
+          "encoder_cpu_ms": 1.903,
+          "matcher_cpu_ms": 4.918,
+          "end_to_end_cpu_ms": 6.821,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "074914",
+          "score": 0.03590545848760749
+        },
+        {
+          "encoder_wall_ms": 1.43875,
+          "matcher_wall_ms": 2.795792,
+          "end_to_end_wall_ms": 4.234542,
+          "encoder_cpu_ms": 1.438,
+          "matcher_cpu_ms": 4.951,
+          "end_to_end_cpu_ms": 6.389,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "074914",
+          "score": 0.03590545848760749
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.527417,
+        "matcher_wall_ms": 2.786041,
+        "end_to_end_wall_ms": 4.463625,
+        "encoder_cpu_ms": 1.527,
+        "matcher_cpu_ms": 4.928,
+        "end_to_end_cpu_ms": 6.605
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0740@5",
+      "source_id": "135165",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 2.008958,
+          "matcher_wall_ms": 3.663667,
+          "end_to_end_wall_ms": 5.672625,
+          "encoder_cpu_ms": 2.008,
+          "matcher_cpu_ms": 6.871,
+          "end_to_end_cpu_ms": 8.879,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "135165",
+          "score": 0.08036000136720889
+        },
+        {
+          "encoder_wall_ms": 1.725833,
+          "matcher_wall_ms": 3.067292,
+          "end_to_end_wall_ms": 4.793125,
+          "encoder_cpu_ms": 1.726,
+          "matcher_cpu_ms": 6.298,
+          "end_to_end_cpu_ms": 8.024,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "135165",
+          "score": 0.08036000136720889
+        },
+        {
+          "encoder_wall_ms": 1.493875,
+          "matcher_wall_ms": 3.146875,
+          "end_to_end_wall_ms": 4.64075,
+          "encoder_cpu_ms": 1.495,
+          "matcher_cpu_ms": 6.349,
+          "end_to_end_cpu_ms": 7.844,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "135165",
+          "score": 0.08036000136720889
+        },
+        {
+          "encoder_wall_ms": 1.510125,
+          "matcher_wall_ms": 3.738834,
+          "end_to_end_wall_ms": 5.248959,
+          "encoder_cpu_ms": 1.51,
+          "matcher_cpu_ms": 6.811,
+          "end_to_end_cpu_ms": 8.321,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "135165",
+          "score": 0.08036000136720889
+        },
+        {
+          "encoder_wall_ms": 1.586791,
+          "matcher_wall_ms": 3.119834,
+          "end_to_end_wall_ms": 4.706625,
+          "encoder_cpu_ms": 1.581,
+          "matcher_cpu_ms": 6.409,
+          "end_to_end_cpu_ms": 7.99,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "135165",
+          "score": 0.08036000136720889
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.586791,
+        "matcher_wall_ms": 3.146875,
+        "end_to_end_wall_ms": 4.793125,
+        "encoder_cpu_ms": 1.581,
+        "matcher_cpu_ms": 6.409,
+        "end_to_end_cpu_ms": 8.024
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0132@5",
+      "source_id": "131151",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.470917,
+          "matcher_wall_ms": 4.19175,
+          "end_to_end_wall_ms": 5.662667,
+          "encoder_cpu_ms": 1.471,
+          "matcher_cpu_ms": 7.154,
+          "end_to_end_cpu_ms": 8.625,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "131151",
+          "score": 0.07716634914745434
+        },
+        {
+          "encoder_wall_ms": 1.423417,
+          "matcher_wall_ms": 4.065166,
+          "end_to_end_wall_ms": 5.488583,
+          "encoder_cpu_ms": 1.423,
+          "matcher_cpu_ms": 7.171,
+          "end_to_end_cpu_ms": 8.594,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "131151",
+          "score": 0.07716634914745434
+        },
+        {
+          "encoder_wall_ms": 1.53825,
+          "matcher_wall_ms": 4.667916,
+          "end_to_end_wall_ms": 6.206166,
+          "encoder_cpu_ms": 1.539,
+          "matcher_cpu_ms": 7.567,
+          "end_to_end_cpu_ms": 9.106,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "131151",
+          "score": 0.07716634914745434
+        },
+        {
+          "encoder_wall_ms": 1.930667,
+          "matcher_wall_ms": 4.372458,
+          "end_to_end_wall_ms": 6.303125,
+          "encoder_cpu_ms": 1.927,
+          "matcher_cpu_ms": 7.241,
+          "end_to_end_cpu_ms": 9.168,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "131151",
+          "score": 0.07716634914745434
+        },
+        {
+          "encoder_wall_ms": 1.636167,
+          "matcher_wall_ms": 4.452875,
+          "end_to_end_wall_ms": 6.089042,
+          "encoder_cpu_ms": 1.633,
+          "matcher_cpu_ms": 7.411,
+          "end_to_end_cpu_ms": 9.044,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "131151",
+          "score": 0.07716634914745434
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.53825,
+        "matcher_wall_ms": 4.372458,
+        "end_to_end_wall_ms": 6.089042,
+        "encoder_cpu_ms": 1.539,
+        "matcher_cpu_ms": 7.241,
+        "end_to_end_cpu_ms": 9.044
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0117@5",
+      "source_id": "122694",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.478459,
+          "matcher_wall_ms": 4.362625,
+          "end_to_end_wall_ms": 5.841084,
+          "encoder_cpu_ms": 1.478,
+          "matcher_cpu_ms": 8.698,
+          "end_to_end_cpu_ms": 10.176,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "122694",
+          "score": 0.2940779764788325
+        },
+        {
+          "encoder_wall_ms": 1.379625,
+          "matcher_wall_ms": 4.216333,
+          "end_to_end_wall_ms": 5.595958,
+          "encoder_cpu_ms": 1.38,
+          "matcher_cpu_ms": 8.64,
+          "end_to_end_cpu_ms": 10.02,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "122694",
+          "score": 0.2940779764788325
+        },
+        {
+          "encoder_wall_ms": 1.528042,
+          "matcher_wall_ms": 4.135416,
+          "end_to_end_wall_ms": 5.663458,
+          "encoder_cpu_ms": 1.528,
+          "matcher_cpu_ms": 8.49,
+          "end_to_end_cpu_ms": 10.018,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "122694",
+          "score": 0.2940779764788325
+        },
+        {
+          "encoder_wall_ms": 1.464875,
+          "matcher_wall_ms": 4.994792,
+          "end_to_end_wall_ms": 6.459667,
+          "encoder_cpu_ms": 1.466,
+          "matcher_cpu_ms": 9.421,
+          "end_to_end_cpu_ms": 10.887,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "122694",
+          "score": 0.2940779764788325
+        },
+        {
+          "encoder_wall_ms": 1.783042,
+          "matcher_wall_ms": 4.986458,
+          "end_to_end_wall_ms": 6.7695,
+          "encoder_cpu_ms": 1.778,
+          "matcher_cpu_ms": 9.223,
+          "end_to_end_cpu_ms": 11.001,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "122694",
+          "score": 0.2940779764788325
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.478459,
+        "matcher_wall_ms": 4.362625,
+        "end_to_end_wall_ms": 5.841084,
+        "encoder_cpu_ms": 1.478,
+        "matcher_cpu_ms": 8.698,
+        "end_to_end_cpu_ms": 10.176
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0219@5",
+      "source_id": "025151",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.915834,
+          "matcher_wall_ms": 3.444458,
+          "end_to_end_wall_ms": 5.360292,
+          "encoder_cpu_ms": 1.91,
+          "matcher_cpu_ms": 7.064,
+          "end_to_end_cpu_ms": 8.974,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "134273",
+          "score": 0.054789202535746845
+        },
+        {
+          "encoder_wall_ms": 1.4675,
+          "matcher_wall_ms": 3.497959,
+          "end_to_end_wall_ms": 4.965459,
+          "encoder_cpu_ms": 1.467,
+          "matcher_cpu_ms": 7.016,
+          "end_to_end_cpu_ms": 8.483,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "134273",
+          "score": 0.054789202535746845
+        },
+        {
+          "encoder_wall_ms": 1.558083,
+          "matcher_wall_ms": 3.366542,
+          "end_to_end_wall_ms": 4.924625,
+          "encoder_cpu_ms": 1.558,
+          "matcher_cpu_ms": 7.043,
+          "end_to_end_cpu_ms": 8.601,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "134273",
+          "score": 0.054789202535746845
+        },
+        {
+          "encoder_wall_ms": 1.580583,
+          "matcher_wall_ms": 4.018333,
+          "end_to_end_wall_ms": 5.598916,
+          "encoder_cpu_ms": 1.58,
+          "matcher_cpu_ms": 7.641,
+          "end_to_end_cpu_ms": 9.221,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "134273",
+          "score": 0.054789202535746845
+        },
+        {
+          "encoder_wall_ms": 1.988291,
+          "matcher_wall_ms": 3.927542,
+          "end_to_end_wall_ms": 5.915833,
+          "encoder_cpu_ms": 1.986,
+          "matcher_cpu_ms": 7.557,
+          "end_to_end_cpu_ms": 9.543,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "134273",
+          "score": 0.054789202535746845
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.580583,
+        "matcher_wall_ms": 3.497959,
+        "end_to_end_wall_ms": 5.360292,
+        "encoder_cpu_ms": 1.58,
+        "matcher_cpu_ms": 7.064,
+        "end_to_end_cpu_ms": 8.974
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0606@5",
+      "source_id": "144016",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.775792,
+          "matcher_wall_ms": 3.922166,
+          "end_to_end_wall_ms": 5.697958,
+          "encoder_cpu_ms": 1.776,
+          "matcher_cpu_ms": 6.795,
+          "end_to_end_cpu_ms": 8.571,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "144016",
+          "score": 0.5406028186771825
+        },
+        {
+          "encoder_wall_ms": 1.557041,
+          "matcher_wall_ms": 4.302584,
+          "end_to_end_wall_ms": 5.859625,
+          "encoder_cpu_ms": 1.558,
+          "matcher_cpu_ms": 6.907,
+          "end_to_end_cpu_ms": 8.465,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "144016",
+          "score": 0.5406028186771825
+        },
+        {
+          "encoder_wall_ms": 1.504958,
+          "matcher_wall_ms": 4.543167,
+          "end_to_end_wall_ms": 6.048125,
+          "encoder_cpu_ms": 1.505,
+          "matcher_cpu_ms": 7.074,
+          "end_to_end_cpu_ms": 8.579,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "144016",
+          "score": 0.5406028186771825
+        },
+        {
+          "encoder_wall_ms": 1.897,
+          "matcher_wall_ms": 4.246083,
+          "end_to_end_wall_ms": 6.143083,
+          "encoder_cpu_ms": 1.881,
+          "matcher_cpu_ms": 6.886,
+          "end_to_end_cpu_ms": 8.767,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "144016",
+          "score": 0.5406028186771825
+        },
+        {
+          "encoder_wall_ms": 1.666708,
+          "matcher_wall_ms": 3.806958,
+          "end_to_end_wall_ms": 5.473666,
+          "encoder_cpu_ms": 1.667,
+          "matcher_cpu_ms": 6.439,
+          "end_to_end_cpu_ms": 8.106,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "144016",
+          "score": 0.5406028186771825
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.666708,
+        "matcher_wall_ms": 4.246083,
+        "end_to_end_wall_ms": 5.859625,
+        "encoder_cpu_ms": 1.667,
+        "matcher_cpu_ms": 6.886,
+        "end_to_end_cpu_ms": 8.571
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0980@5",
+      "source_id": "122716",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.461708,
+          "matcher_wall_ms": 3.962375,
+          "end_to_end_wall_ms": 5.424083,
+          "encoder_cpu_ms": 1.462,
+          "matcher_cpu_ms": 6.94,
+          "end_to_end_cpu_ms": 8.402,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "122716",
+          "score": 0.13024336080575558
+        },
+        {
+          "encoder_wall_ms": 1.860083,
+          "matcher_wall_ms": 3.910125,
+          "end_to_end_wall_ms": 5.770208,
+          "encoder_cpu_ms": 1.861,
+          "matcher_cpu_ms": 7.235,
+          "end_to_end_cpu_ms": 9.096,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "122716",
+          "score": 0.13024336080575558
+        },
+        {
+          "encoder_wall_ms": 1.726958,
+          "matcher_wall_ms": 3.914292,
+          "end_to_end_wall_ms": 5.64125,
+          "encoder_cpu_ms": 1.727,
+          "matcher_cpu_ms": 7.078,
+          "end_to_end_cpu_ms": 8.805,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "122716",
+          "score": 0.13024336080575558
+        },
+        {
+          "encoder_wall_ms": 1.582041,
+          "matcher_wall_ms": 3.823709,
+          "end_to_end_wall_ms": 5.40575,
+          "encoder_cpu_ms": 1.582,
+          "matcher_cpu_ms": 7.022,
+          "end_to_end_cpu_ms": 8.604,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "122716",
+          "score": 0.13024336080575558
+        },
+        {
+          "encoder_wall_ms": 1.66625,
+          "matcher_wall_ms": 3.470209,
+          "end_to_end_wall_ms": 5.136459,
+          "encoder_cpu_ms": 1.648,
+          "matcher_cpu_ms": 6.628,
+          "end_to_end_cpu_ms": 8.276,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "122716",
+          "score": 0.13024336080575558
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.66625,
+        "matcher_wall_ms": 3.910125,
+        "end_to_end_wall_ms": 5.424083,
+        "encoder_cpu_ms": 1.648,
+        "matcher_cpu_ms": 7.022,
+        "end_to_end_cpu_ms": 8.604
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0846@5",
+      "source_id": "037978",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.35,
+          "matcher_wall_ms": 5.031792,
+          "end_to_end_wall_ms": 6.381792,
+          "encoder_cpu_ms": 1.35,
+          "matcher_cpu_ms": 9.513,
+          "end_to_end_cpu_ms": 10.863,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "037978",
+          "score": 0.19113406138889294
+        },
+        {
+          "encoder_wall_ms": 1.769875,
+          "matcher_wall_ms": 4.422792,
+          "end_to_end_wall_ms": 6.192667,
+          "encoder_cpu_ms": 1.765,
+          "matcher_cpu_ms": 8.968,
+          "end_to_end_cpu_ms": 10.733,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "037978",
+          "score": 0.19113406138889294
+        },
+        {
+          "encoder_wall_ms": 1.593125,
+          "matcher_wall_ms": 4.608708,
+          "end_to_end_wall_ms": 6.201833,
+          "encoder_cpu_ms": 1.593,
+          "matcher_cpu_ms": 9.558,
+          "end_to_end_cpu_ms": 11.151,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "037978",
+          "score": 0.19113406138889294
+        },
+        {
+          "encoder_wall_ms": 1.451917,
+          "matcher_wall_ms": 5.121791,
+          "end_to_end_wall_ms": 6.573708,
+          "encoder_cpu_ms": 1.452,
+          "matcher_cpu_ms": 9.671,
+          "end_to_end_cpu_ms": 11.123,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "037978",
+          "score": 0.19113406138889294
+        },
+        {
+          "encoder_wall_ms": 1.9805,
+          "matcher_wall_ms": 4.373125,
+          "end_to_end_wall_ms": 6.353625,
+          "encoder_cpu_ms": 1.98,
+          "matcher_cpu_ms": 8.92,
+          "end_to_end_cpu_ms": 10.9,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "037978",
+          "score": 0.19113406138889294
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.593125,
+        "matcher_wall_ms": 4.608708,
+        "end_to_end_wall_ms": 6.353625,
+        "encoder_cpu_ms": 1.593,
+        "matcher_cpu_ms": 9.513,
+        "end_to_end_cpu_ms": 10.9
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0010@5",
+      "source_id": "022473",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.693541,
+          "matcher_wall_ms": 4.785625,
+          "end_to_end_wall_ms": 6.479166,
+          "encoder_cpu_ms": 1.695,
+          "matcher_cpu_ms": 10.029,
+          "end_to_end_cpu_ms": 11.724,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "022473",
+          "score": 0.3551159400555455
+        },
+        {
+          "encoder_wall_ms": 1.533792,
+          "matcher_wall_ms": 5.433,
+          "end_to_end_wall_ms": 6.966792,
+          "encoder_cpu_ms": 1.534,
+          "matcher_cpu_ms": 10.549,
+          "end_to_end_cpu_ms": 12.083,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "022473",
+          "score": 0.3551159400555455
+        },
+        {
+          "encoder_wall_ms": 1.80275,
+          "matcher_wall_ms": 5.360792,
+          "end_to_end_wall_ms": 7.163542,
+          "encoder_cpu_ms": 1.803,
+          "matcher_cpu_ms": 10.646,
+          "end_to_end_cpu_ms": 12.449,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "022473",
+          "score": 0.3551159400555455
+        },
+        {
+          "encoder_wall_ms": 1.817583,
+          "matcher_wall_ms": 5.181084,
+          "end_to_end_wall_ms": 6.998667,
+          "encoder_cpu_ms": 1.812,
+          "matcher_cpu_ms": 10.009,
+          "end_to_end_cpu_ms": 11.821,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "022473",
+          "score": 0.3551159400555455
+        },
+        {
+          "encoder_wall_ms": 1.393334,
+          "matcher_wall_ms": 5.116791,
+          "end_to_end_wall_ms": 6.510125,
+          "encoder_cpu_ms": 1.393,
+          "matcher_cpu_ms": 10.12,
+          "end_to_end_cpu_ms": 11.513,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "022473",
+          "score": 0.3551159400555455
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.693541,
+        "matcher_wall_ms": 5.181084,
+        "end_to_end_wall_ms": 6.966792,
+        "encoder_cpu_ms": 1.695,
+        "matcher_cpu_ms": 10.12,
+        "end_to_end_cpu_ms": 11.821
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0229@5",
+      "source_id": "019604",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.916708,
+          "matcher_wall_ms": 4.001083,
+          "end_to_end_wall_ms": 5.917791,
+          "encoder_cpu_ms": 1.917,
+          "matcher_cpu_ms": 7.229,
+          "end_to_end_cpu_ms": 9.146,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "019604",
+          "score": 0.6627330606275424
+        },
+        {
+          "encoder_wall_ms": 1.703542,
+          "matcher_wall_ms": 3.960042,
+          "end_to_end_wall_ms": 5.663584,
+          "encoder_cpu_ms": 1.7,
+          "matcher_cpu_ms": 7.157,
+          "end_to_end_cpu_ms": 8.857,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "019604",
+          "score": 0.6627330606275424
+        },
+        {
+          "encoder_wall_ms": 1.876333,
+          "matcher_wall_ms": 3.684792,
+          "end_to_end_wall_ms": 5.561125,
+          "encoder_cpu_ms": 1.876,
+          "matcher_cpu_ms": 6.972,
+          "end_to_end_cpu_ms": 8.848,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "019604",
+          "score": 0.6627330606275424
+        },
+        {
+          "encoder_wall_ms": 1.37275,
+          "matcher_wall_ms": 4.03325,
+          "end_to_end_wall_ms": 5.406,
+          "encoder_cpu_ms": 1.374,
+          "matcher_cpu_ms": 7.176,
+          "end_to_end_cpu_ms": 8.55,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "019604",
+          "score": 0.6627330606275424
+        },
+        {
+          "encoder_wall_ms": 1.904125,
+          "matcher_wall_ms": 4.013125,
+          "end_to_end_wall_ms": 5.91725,
+          "encoder_cpu_ms": 1.88,
+          "matcher_cpu_ms": 7.313,
+          "end_to_end_cpu_ms": 9.193,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "019604",
+          "score": 0.6627330606275424
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.876333,
+        "matcher_wall_ms": 4.001083,
+        "end_to_end_wall_ms": 5.663584,
+        "encoder_cpu_ms": 1.876,
+        "matcher_cpu_ms": 7.176,
+        "end_to_end_cpu_ms": 8.857
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0575@5",
+      "source_id": "131072",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.825625,
+          "matcher_wall_ms": 3.942792,
+          "end_to_end_wall_ms": 5.768417,
+          "encoder_cpu_ms": 1.822,
+          "matcher_cpu_ms": 9.934,
+          "end_to_end_cpu_ms": 11.756,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "034318",
+          "score": 0.054702335683582674
+        },
+        {
+          "encoder_wall_ms": 1.375958,
+          "matcher_wall_ms": 4.237083,
+          "end_to_end_wall_ms": 5.613041,
+          "encoder_cpu_ms": 1.377,
+          "matcher_cpu_ms": 9.987,
+          "end_to_end_cpu_ms": 11.364,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "034318",
+          "score": 0.054702335683582674
+        },
+        {
+          "encoder_wall_ms": 1.843667,
+          "matcher_wall_ms": 3.746416,
+          "end_to_end_wall_ms": 5.590083,
+          "encoder_cpu_ms": 1.844,
+          "matcher_cpu_ms": 9.151,
+          "end_to_end_cpu_ms": 10.995,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "034318",
+          "score": 0.054702335683582674
+        },
+        {
+          "encoder_wall_ms": 1.321542,
+          "matcher_wall_ms": 4.175375,
+          "end_to_end_wall_ms": 5.496917,
+          "encoder_cpu_ms": 1.323,
+          "matcher_cpu_ms": 9.512,
+          "end_to_end_cpu_ms": 10.835,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "034318",
+          "score": 0.054702335683582674
+        },
+        {
+          "encoder_wall_ms": 1.539458,
+          "matcher_wall_ms": 4.204709,
+          "end_to_end_wall_ms": 5.744167,
+          "encoder_cpu_ms": 1.54,
+          "matcher_cpu_ms": 9.576,
+          "end_to_end_cpu_ms": 11.116,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "034318",
+          "score": 0.054702335683582674
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.539458,
+        "matcher_wall_ms": 4.175375,
+        "end_to_end_wall_ms": 5.613041,
+        "encoder_cpu_ms": 1.54,
+        "matcher_cpu_ms": 9.576,
+        "end_to_end_cpu_ms": 11.116
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0196@5",
+      "source_id": "052675",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 2.169625,
+          "matcher_wall_ms": 4.170917,
+          "end_to_end_wall_ms": 6.340542,
+          "encoder_cpu_ms": 2.161,
+          "matcher_cpu_ms": 8.253,
+          "end_to_end_cpu_ms": 10.414,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "052675",
+          "score": 0.5467926884228494
+        },
+        {
+          "encoder_wall_ms": 1.568958,
+          "matcher_wall_ms": 4.213042,
+          "end_to_end_wall_ms": 5.782,
+          "encoder_cpu_ms": 1.57,
+          "matcher_cpu_ms": 8.386,
+          "end_to_end_cpu_ms": 9.956,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "052675",
+          "score": 0.5467926884228494
+        },
+        {
+          "encoder_wall_ms": 1.286833,
+          "matcher_wall_ms": 4.845417,
+          "end_to_end_wall_ms": 6.13225,
+          "encoder_cpu_ms": 1.287,
+          "matcher_cpu_ms": 8.794,
+          "end_to_end_cpu_ms": 10.081,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "052675",
+          "score": 0.5467926884228494
+        },
+        {
+          "encoder_wall_ms": 1.828875,
+          "matcher_wall_ms": 4.782,
+          "end_to_end_wall_ms": 6.610875,
+          "encoder_cpu_ms": 1.829,
+          "matcher_cpu_ms": 8.838,
+          "end_to_end_cpu_ms": 10.667,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "052675",
+          "score": 0.5467926884228494
+        },
+        {
+          "encoder_wall_ms": 1.777833,
+          "matcher_wall_ms": 4.159417,
+          "end_to_end_wall_ms": 5.93725,
+          "encoder_cpu_ms": 1.779,
+          "matcher_cpu_ms": 8.077,
+          "end_to_end_cpu_ms": 9.856,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "052675",
+          "score": 0.5467926884228494
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.777833,
+        "matcher_wall_ms": 4.213042,
+        "end_to_end_wall_ms": 6.13225,
+        "encoder_cpu_ms": 1.779,
+        "matcher_cpu_ms": 8.386,
+        "end_to_end_cpu_ms": 10.081
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0920@5",
+      "source_id": "154932",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.725875,
+          "matcher_wall_ms": 4.594792,
+          "end_to_end_wall_ms": 6.320667,
+          "encoder_cpu_ms": 1.698,
+          "matcher_cpu_ms": 8.778,
+          "end_to_end_cpu_ms": 10.476,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "154932",
+          "score": 0.49244971042791763
+        },
+        {
+          "encoder_wall_ms": 1.331917,
+          "matcher_wall_ms": 4.808041,
+          "end_to_end_wall_ms": 6.139958,
+          "encoder_cpu_ms": 1.332,
+          "matcher_cpu_ms": 9.073,
+          "end_to_end_cpu_ms": 10.405,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "154932",
+          "score": 0.49244971042791763
+        },
+        {
+          "encoder_wall_ms": 1.881375,
+          "matcher_wall_ms": 4.303625,
+          "end_to_end_wall_ms": 6.185,
+          "encoder_cpu_ms": 1.881,
+          "matcher_cpu_ms": 8.597,
+          "end_to_end_cpu_ms": 10.478,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "154932",
+          "score": 0.49244971042791763
+        },
+        {
+          "encoder_wall_ms": 1.294292,
+          "matcher_wall_ms": 4.693916,
+          "end_to_end_wall_ms": 5.988208,
+          "encoder_cpu_ms": 1.295,
+          "matcher_cpu_ms": 8.915,
+          "end_to_end_cpu_ms": 10.21,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "154932",
+          "score": 0.49244971042791763
+        },
+        {
+          "encoder_wall_ms": 1.220334,
+          "matcher_wall_ms": 4.672458,
+          "end_to_end_wall_ms": 5.892792,
+          "encoder_cpu_ms": 1.22,
+          "matcher_cpu_ms": 8.955,
+          "end_to_end_cpu_ms": 10.175,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "154932",
+          "score": 0.49244971042791763
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.331917,
+        "matcher_wall_ms": 4.672458,
+        "end_to_end_wall_ms": 6.139958,
+        "encoder_cpu_ms": 1.332,
+        "matcher_cpu_ms": 8.915,
+        "end_to_end_cpu_ms": 10.405
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0751@5",
+      "source_id": "114246",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.713792,
+          "matcher_wall_ms": 3.676375,
+          "end_to_end_wall_ms": 5.390167,
+          "encoder_cpu_ms": 1.714,
+          "matcher_cpu_ms": 8.061,
+          "end_to_end_cpu_ms": 9.775,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "114246",
+          "score": 0.1314867353824775
+        },
+        {
+          "encoder_wall_ms": 1.322958,
+          "matcher_wall_ms": 4.142167,
+          "end_to_end_wall_ms": 5.465125,
+          "encoder_cpu_ms": 1.323,
+          "matcher_cpu_ms": 8.618,
+          "end_to_end_cpu_ms": 9.941,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "114246",
+          "score": 0.1314867353824775
+        },
+        {
+          "encoder_wall_ms": 1.737042,
+          "matcher_wall_ms": 3.982542,
+          "end_to_end_wall_ms": 5.719584,
+          "encoder_cpu_ms": 1.737,
+          "matcher_cpu_ms": 8.298,
+          "end_to_end_cpu_ms": 10.035,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "114246",
+          "score": 0.1314867353824775
+        },
+        {
+          "encoder_wall_ms": 1.751958,
+          "matcher_wall_ms": 4.257667,
+          "end_to_end_wall_ms": 6.009625,
+          "encoder_cpu_ms": 1.753,
+          "matcher_cpu_ms": 8.555,
+          "end_to_end_cpu_ms": 10.308,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "114246",
+          "score": 0.1314867353824775
+        },
+        {
+          "encoder_wall_ms": 1.734958,
+          "matcher_wall_ms": 3.73775,
+          "end_to_end_wall_ms": 5.472708,
+          "encoder_cpu_ms": 1.723,
+          "matcher_cpu_ms": 8.298,
+          "end_to_end_cpu_ms": 10.021,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "114246",
+          "score": 0.1314867353824775
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.734958,
+        "matcher_wall_ms": 3.982542,
+        "end_to_end_wall_ms": 5.472708,
+        "encoder_cpu_ms": 1.723,
+        "matcher_cpu_ms": 8.298,
+        "end_to_end_cpu_ms": 10.021
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0430@5",
+      "source_id": "075211",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.8745,
+          "matcher_wall_ms": 3.873625,
+          "end_to_end_wall_ms": 5.748125,
+          "encoder_cpu_ms": 1.863,
+          "matcher_cpu_ms": 7.748,
+          "end_to_end_cpu_ms": 9.611,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "147303",
+          "score": 0.006565425595341638
+        },
+        {
+          "encoder_wall_ms": 1.726166,
+          "matcher_wall_ms": 3.87025,
+          "end_to_end_wall_ms": 5.596416,
+          "encoder_cpu_ms": 1.726,
+          "matcher_cpu_ms": 7.717,
+          "end_to_end_cpu_ms": 9.443,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "147303",
+          "score": 0.006565425595341638
+        },
+        {
+          "encoder_wall_ms": 1.637666,
+          "matcher_wall_ms": 3.798292,
+          "end_to_end_wall_ms": 5.435958,
+          "encoder_cpu_ms": 1.638,
+          "matcher_cpu_ms": 7.744,
+          "end_to_end_cpu_ms": 9.382,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "147303",
+          "score": 0.006565425595341638
+        },
+        {
+          "encoder_wall_ms": 1.759791,
+          "matcher_wall_ms": 3.631209,
+          "end_to_end_wall_ms": 5.391,
+          "encoder_cpu_ms": 1.749,
+          "matcher_cpu_ms": 7.592,
+          "end_to_end_cpu_ms": 9.341,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "147303",
+          "score": 0.006565425595341638
+        },
+        {
+          "encoder_wall_ms": 1.576834,
+          "matcher_wall_ms": 3.97925,
+          "end_to_end_wall_ms": 5.556084,
+          "encoder_cpu_ms": 1.577,
+          "matcher_cpu_ms": 7.906,
+          "end_to_end_cpu_ms": 9.483,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "147303",
+          "score": 0.006565425595341638
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.726166,
+        "matcher_wall_ms": 3.87025,
+        "end_to_end_wall_ms": 5.556084,
+        "encoder_cpu_ms": 1.726,
+        "matcher_cpu_ms": 7.744,
+        "end_to_end_cpu_ms": 9.443
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0003@5",
+      "source_id": "111086",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.614,
+          "matcher_wall_ms": 3.267875,
+          "end_to_end_wall_ms": 4.881875,
+          "encoder_cpu_ms": 1.614,
+          "matcher_cpu_ms": 6.605,
+          "end_to_end_cpu_ms": 8.219,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "111086",
+          "score": 0.41385461948263436
+        },
+        {
+          "encoder_wall_ms": 1.460125,
+          "matcher_wall_ms": 3.655125,
+          "end_to_end_wall_ms": 5.11525,
+          "encoder_cpu_ms": 1.46,
+          "matcher_cpu_ms": 6.911,
+          "end_to_end_cpu_ms": 8.371,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "111086",
+          "score": 0.41385461948263436
+        },
+        {
+          "encoder_wall_ms": 1.736416,
+          "matcher_wall_ms": 3.320792,
+          "end_to_end_wall_ms": 5.057208,
+          "encoder_cpu_ms": 1.736,
+          "matcher_cpu_ms": 6.718,
+          "end_to_end_cpu_ms": 8.454,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "111086",
+          "score": 0.41385461948263436
+        },
+        {
+          "encoder_wall_ms": 1.441167,
+          "matcher_wall_ms": 3.396583,
+          "end_to_end_wall_ms": 4.83775,
+          "encoder_cpu_ms": 1.441,
+          "matcher_cpu_ms": 6.797,
+          "end_to_end_cpu_ms": 8.238,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "111086",
+          "score": 0.41385461948263436
+        },
+        {
+          "encoder_wall_ms": 1.346625,
+          "matcher_wall_ms": 3.849375,
+          "end_to_end_wall_ms": 5.196,
+          "encoder_cpu_ms": 1.347,
+          "matcher_cpu_ms": 7.278,
+          "end_to_end_cpu_ms": 8.625,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "111086",
+          "score": 0.41385461948263436
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.460125,
+        "matcher_wall_ms": 3.396583,
+        "end_to_end_wall_ms": 5.057208,
+        "encoder_cpu_ms": 1.46,
+        "matcher_cpu_ms": 6.797,
+        "end_to_end_cpu_ms": 8.371
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0413@5",
+      "source_id": "065664",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.519125,
+          "matcher_wall_ms": 3.395125,
+          "end_to_end_wall_ms": 4.91425,
+          "encoder_cpu_ms": 1.519,
+          "matcher_cpu_ms": 7.142,
+          "end_to_end_cpu_ms": 8.661,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "065664",
+          "score": 0.3730554482182268
+        },
+        {
+          "encoder_wall_ms": 1.376875,
+          "matcher_wall_ms": 3.426916,
+          "end_to_end_wall_ms": 4.803791,
+          "encoder_cpu_ms": 1.377,
+          "matcher_cpu_ms": 7.231,
+          "end_to_end_cpu_ms": 8.608,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "065664",
+          "score": 0.3730554482182268
+        },
+        {
+          "encoder_wall_ms": 1.410166,
+          "matcher_wall_ms": 3.423834,
+          "end_to_end_wall_ms": 4.834,
+          "encoder_cpu_ms": 1.411,
+          "matcher_cpu_ms": 7.262,
+          "end_to_end_cpu_ms": 8.673,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "065664",
+          "score": 0.3730554482182268
+        },
+        {
+          "encoder_wall_ms": 1.466375,
+          "matcher_wall_ms": 3.414833,
+          "end_to_end_wall_ms": 4.881208,
+          "encoder_cpu_ms": 1.466,
+          "matcher_cpu_ms": 7.19,
+          "end_to_end_cpu_ms": 8.656,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "065664",
+          "score": 0.3730554482182268
+        },
+        {
+          "encoder_wall_ms": 1.41775,
+          "matcher_wall_ms": 3.407542,
+          "end_to_end_wall_ms": 4.825292,
+          "encoder_cpu_ms": 1.417,
+          "matcher_cpu_ms": 7.119,
+          "end_to_end_cpu_ms": 8.536,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "065664",
+          "score": 0.3730554482182268
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.41775,
+        "matcher_wall_ms": 3.414833,
+        "end_to_end_wall_ms": 4.834,
+        "encoder_cpu_ms": 1.417,
+        "matcher_cpu_ms": 7.19,
+        "end_to_end_cpu_ms": 8.656
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0956@5",
+      "source_id": "154773",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.477416,
+          "matcher_wall_ms": 3.948625,
+          "end_to_end_wall_ms": 5.426041,
+          "encoder_cpu_ms": 1.477,
+          "matcher_cpu_ms": 8.448,
+          "end_to_end_cpu_ms": 9.925,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "154773",
+          "score": 0.558925511169702
+        },
+        {
+          "encoder_wall_ms": 1.690083,
+          "matcher_wall_ms": 3.494417,
+          "end_to_end_wall_ms": 5.1845,
+          "encoder_cpu_ms": 1.68,
+          "matcher_cpu_ms": 8.342,
+          "end_to_end_cpu_ms": 10.022,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "154773",
+          "score": 0.558925511169702
+        },
+        {
+          "encoder_wall_ms": 1.336584,
+          "matcher_wall_ms": 3.957583,
+          "end_to_end_wall_ms": 5.294167,
+          "encoder_cpu_ms": 1.336,
+          "matcher_cpu_ms": 8.583,
+          "end_to_end_cpu_ms": 9.919,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "154773",
+          "score": 0.558925511169702
+        },
+        {
+          "encoder_wall_ms": 1.946,
+          "matcher_wall_ms": 3.815708,
+          "end_to_end_wall_ms": 5.761708,
+          "encoder_cpu_ms": 1.946,
+          "matcher_cpu_ms": 8.376,
+          "end_to_end_cpu_ms": 10.322,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "154773",
+          "score": 0.558925511169702
+        },
+        {
+          "encoder_wall_ms": 1.790875,
+          "matcher_wall_ms": 3.402583,
+          "end_to_end_wall_ms": 5.193458,
+          "encoder_cpu_ms": 1.791,
+          "matcher_cpu_ms": 7.875,
+          "end_to_end_cpu_ms": 9.666,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "154773",
+          "score": 0.558925511169702
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.690083,
+        "matcher_wall_ms": 3.815708,
+        "end_to_end_wall_ms": 5.294167,
+        "encoder_cpu_ms": 1.68,
+        "matcher_cpu_ms": 8.376,
+        "end_to_end_cpu_ms": 9.925
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0623@5",
+      "source_id": "143226",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.3835,
+          "matcher_wall_ms": 5.693125,
+          "end_to_end_wall_ms": 7.076625,
+          "encoder_cpu_ms": 1.384,
+          "matcher_cpu_ms": 10.32,
+          "end_to_end_cpu_ms": 11.704,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "143226",
+          "score": 0.8713617547671247
+        },
+        {
+          "encoder_wall_ms": 1.7395,
+          "matcher_wall_ms": 5.653667,
+          "end_to_end_wall_ms": 7.393167,
+          "encoder_cpu_ms": 1.736,
+          "matcher_cpu_ms": 10.107,
+          "end_to_end_cpu_ms": 11.843,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "143226",
+          "score": 0.8713617547671247
+        },
+        {
+          "encoder_wall_ms": 1.758583,
+          "matcher_wall_ms": 5.638792,
+          "end_to_end_wall_ms": 7.397375,
+          "encoder_cpu_ms": 1.755,
+          "matcher_cpu_ms": 10.097,
+          "end_to_end_cpu_ms": 11.852,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "143226",
+          "score": 0.8713617547671247
+        },
+        {
+          "encoder_wall_ms": 1.720166,
+          "matcher_wall_ms": 5.566542,
+          "end_to_end_wall_ms": 7.286708,
+          "encoder_cpu_ms": 1.716,
+          "matcher_cpu_ms": 10.333,
+          "end_to_end_cpu_ms": 12.049,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "143226",
+          "score": 0.8713617547671247
+        },
+        {
+          "encoder_wall_ms": 1.585542,
+          "matcher_wall_ms": 5.224333,
+          "end_to_end_wall_ms": 6.809875,
+          "encoder_cpu_ms": 1.585,
+          "matcher_cpu_ms": 9.666,
+          "end_to_end_cpu_ms": 11.251,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "143226",
+          "score": 0.8713617547671247
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.720166,
+        "matcher_wall_ms": 5.638792,
+        "end_to_end_wall_ms": 7.286708,
+        "encoder_cpu_ms": 1.716,
+        "matcher_cpu_ms": 10.107,
+        "end_to_end_cpu_ms": 11.843
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0717@5",
+      "source_id": "020126",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.809625,
+          "matcher_wall_ms": 4.013958,
+          "end_to_end_wall_ms": 5.823583,
+          "encoder_cpu_ms": 1.81,
+          "matcher_cpu_ms": 6.282,
+          "end_to_end_cpu_ms": 8.092,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "020126",
+          "score": 0.42662966900707716
+        },
+        {
+          "encoder_wall_ms": 1.527375,
+          "matcher_wall_ms": 3.705875,
+          "end_to_end_wall_ms": 5.23325,
+          "encoder_cpu_ms": 1.527,
+          "matcher_cpu_ms": 5.971,
+          "end_to_end_cpu_ms": 7.498,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "020126",
+          "score": 0.42662966900707716
+        },
+        {
+          "encoder_wall_ms": 1.498208,
+          "matcher_wall_ms": 4.268333,
+          "end_to_end_wall_ms": 5.766541,
+          "encoder_cpu_ms": 1.498,
+          "matcher_cpu_ms": 6.436,
+          "end_to_end_cpu_ms": 7.934,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "020126",
+          "score": 0.42662966900707716
+        },
+        {
+          "encoder_wall_ms": 1.899292,
+          "matcher_wall_ms": 3.710625,
+          "end_to_end_wall_ms": 5.609917,
+          "encoder_cpu_ms": 1.899,
+          "matcher_cpu_ms": 5.838,
+          "end_to_end_cpu_ms": 7.737,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "020126",
+          "score": 0.42662966900707716
+        },
+        {
+          "encoder_wall_ms": 1.300417,
+          "matcher_wall_ms": 3.687375,
+          "end_to_end_wall_ms": 4.987792,
+          "encoder_cpu_ms": 1.301,
+          "matcher_cpu_ms": 5.906,
+          "end_to_end_cpu_ms": 7.207,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "020126",
+          "score": 0.42662966900707716
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.527375,
+        "matcher_wall_ms": 3.710625,
+        "end_to_end_wall_ms": 5.609917,
+        "encoder_cpu_ms": 1.527,
+        "matcher_cpu_ms": 5.971,
+        "end_to_end_cpu_ms": 7.737
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0266@5",
+      "source_id": "152563",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.269084,
+          "matcher_wall_ms": 5.218833,
+          "end_to_end_wall_ms": 6.487917,
+          "encoder_cpu_ms": 1.269,
+          "matcher_cpu_ms": 10.169,
+          "end_to_end_cpu_ms": 11.438,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "152563",
+          "score": 0.4817797588714306
+        },
+        {
+          "encoder_wall_ms": 1.81625,
+          "matcher_wall_ms": 4.462709,
+          "end_to_end_wall_ms": 6.278959,
+          "encoder_cpu_ms": 1.817,
+          "matcher_cpu_ms": 9.508,
+          "end_to_end_cpu_ms": 11.325,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "152563",
+          "score": 0.4817797588714306
+        },
+        {
+          "encoder_wall_ms": 1.507,
+          "matcher_wall_ms": 5.201042,
+          "end_to_end_wall_ms": 6.708042,
+          "encoder_cpu_ms": 1.508,
+          "matcher_cpu_ms": 10.126,
+          "end_to_end_cpu_ms": 11.634,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "152563",
+          "score": 0.4817797588714306
+        },
+        {
+          "encoder_wall_ms": 1.974958,
+          "matcher_wall_ms": 4.829,
+          "end_to_end_wall_ms": 6.803958,
+          "encoder_cpu_ms": 1.966,
+          "matcher_cpu_ms": 9.905,
+          "end_to_end_cpu_ms": 11.871,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "152563",
+          "score": 0.4817797588714306
+        },
+        {
+          "encoder_wall_ms": 1.621125,
+          "matcher_wall_ms": 4.498416,
+          "end_to_end_wall_ms": 6.119541,
+          "encoder_cpu_ms": 1.621,
+          "matcher_cpu_ms": 9.563,
+          "end_to_end_cpu_ms": 11.184,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "152563",
+          "score": 0.4817797588714306
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.621125,
+        "matcher_wall_ms": 4.829,
+        "end_to_end_wall_ms": 6.487917,
+        "encoder_cpu_ms": 1.621,
+        "matcher_cpu_ms": 9.905,
+        "end_to_end_cpu_ms": 11.438
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0985@5",
+      "source_id": "154932",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.518958,
+          "matcher_wall_ms": 4.065792,
+          "end_to_end_wall_ms": 5.58475,
+          "encoder_cpu_ms": 1.509,
+          "matcher_cpu_ms": 7.855,
+          "end_to_end_cpu_ms": 9.364,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "131050",
+          "score": 0.005928739052975359
+        },
+        {
+          "encoder_wall_ms": 1.481833,
+          "matcher_wall_ms": 4.580292,
+          "end_to_end_wall_ms": 6.062125,
+          "encoder_cpu_ms": 1.482,
+          "matcher_cpu_ms": 8.259,
+          "end_to_end_cpu_ms": 9.741,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "131050",
+          "score": 0.005928739052975359
+        },
+        {
+          "encoder_wall_ms": 2.00575,
+          "matcher_wall_ms": 4.36675,
+          "end_to_end_wall_ms": 6.3725,
+          "encoder_cpu_ms": 2.006,
+          "matcher_cpu_ms": 7.988,
+          "end_to_end_cpu_ms": 9.994,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "131050",
+          "score": 0.005928739052975359
+        },
+        {
+          "encoder_wall_ms": 1.346042,
+          "matcher_wall_ms": 3.965541,
+          "end_to_end_wall_ms": 5.311583,
+          "encoder_cpu_ms": 1.346,
+          "matcher_cpu_ms": 7.523,
+          "end_to_end_cpu_ms": 8.869,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "131050",
+          "score": 0.005928739052975359
+        },
+        {
+          "encoder_wall_ms": 1.350791,
+          "matcher_wall_ms": 3.919667,
+          "end_to_end_wall_ms": 5.270458,
+          "encoder_cpu_ms": 1.35,
+          "matcher_cpu_ms": 7.512,
+          "end_to_end_cpu_ms": 8.862,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "131050",
+          "score": 0.005928739052975359
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.481833,
+        "matcher_wall_ms": 4.065792,
+        "end_to_end_wall_ms": 5.58475,
+        "encoder_cpu_ms": 1.482,
+        "matcher_cpu_ms": 7.855,
+        "end_to_end_cpu_ms": 9.364
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0750@5",
+      "source_id": "113798",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.382084,
+          "matcher_wall_ms": 4.0505,
+          "end_to_end_wall_ms": 5.432584,
+          "encoder_cpu_ms": 1.382,
+          "matcher_cpu_ms": 8.738,
+          "end_to_end_cpu_ms": 10.12,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "071112",
+          "score": 0.0655559425502109
+        },
+        {
+          "encoder_wall_ms": 1.603791,
+          "matcher_wall_ms": 3.909334,
+          "end_to_end_wall_ms": 5.513125,
+          "encoder_cpu_ms": 1.605,
+          "matcher_cpu_ms": 8.681,
+          "end_to_end_cpu_ms": 10.286,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "071112",
+          "score": 0.0655559425502109
+        },
+        {
+          "encoder_wall_ms": 1.837333,
+          "matcher_wall_ms": 3.827625,
+          "end_to_end_wall_ms": 5.664958,
+          "encoder_cpu_ms": 1.838,
+          "matcher_cpu_ms": 8.694,
+          "end_to_end_cpu_ms": 10.532,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "071112",
+          "score": 0.0655559425502109
+        },
+        {
+          "encoder_wall_ms": 1.63725,
+          "matcher_wall_ms": 3.904875,
+          "end_to_end_wall_ms": 5.542125,
+          "encoder_cpu_ms": 1.638,
+          "matcher_cpu_ms": 8.633,
+          "end_to_end_cpu_ms": 10.271,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "071112",
+          "score": 0.0655559425502109
+        },
+        {
+          "encoder_wall_ms": 1.784417,
+          "matcher_wall_ms": 3.853916,
+          "end_to_end_wall_ms": 5.638333,
+          "encoder_cpu_ms": 1.784,
+          "matcher_cpu_ms": 8.484,
+          "end_to_end_cpu_ms": 10.268,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "071112",
+          "score": 0.0655559425502109
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.63725,
+        "matcher_wall_ms": 3.904875,
+        "end_to_end_wall_ms": 5.542125,
+        "encoder_cpu_ms": 1.638,
+        "matcher_cpu_ms": 8.681,
+        "end_to_end_cpu_ms": 10.271
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0393@5",
+      "source_id": "139194",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.787125,
+          "matcher_wall_ms": 4.879833,
+          "end_to_end_wall_ms": 6.666958,
+          "encoder_cpu_ms": 1.788,
+          "matcher_cpu_ms": 9.262,
+          "end_to_end_cpu_ms": 11.05,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "139194",
+          "score": 0.5126781470216218
+        },
+        {
+          "encoder_wall_ms": 1.605917,
+          "matcher_wall_ms": 4.112833,
+          "end_to_end_wall_ms": 5.71875,
+          "encoder_cpu_ms": 1.606,
+          "matcher_cpu_ms": 8.543,
+          "end_to_end_cpu_ms": 10.149,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "139194",
+          "score": 0.5126781470216218
+        },
+        {
+          "encoder_wall_ms": 1.682292,
+          "matcher_wall_ms": 4.7785,
+          "end_to_end_wall_ms": 6.460792,
+          "encoder_cpu_ms": 1.675,
+          "matcher_cpu_ms": 8.916,
+          "end_to_end_cpu_ms": 10.591,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "139194",
+          "score": 0.5126781470216218
+        },
+        {
+          "encoder_wall_ms": 1.746542,
+          "matcher_wall_ms": 4.717583,
+          "end_to_end_wall_ms": 6.464125,
+          "encoder_cpu_ms": 1.734,
+          "matcher_cpu_ms": 8.933,
+          "end_to_end_cpu_ms": 10.667,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "139194",
+          "score": 0.5126781470216218
+        },
+        {
+          "encoder_wall_ms": 1.921084,
+          "matcher_wall_ms": 4.230583,
+          "end_to_end_wall_ms": 6.151667,
+          "encoder_cpu_ms": 1.92,
+          "matcher_cpu_ms": 8.719,
+          "end_to_end_cpu_ms": 10.639,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "139194",
+          "score": 0.5126781470216218
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.746542,
+        "matcher_wall_ms": 4.717583,
+        "end_to_end_wall_ms": 6.460792,
+        "encoder_cpu_ms": 1.734,
+        "matcher_cpu_ms": 8.916,
+        "end_to_end_cpu_ms": 10.639
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0328@5",
+      "source_id": "096703",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.972375,
+          "matcher_wall_ms": 3.305084,
+          "end_to_end_wall_ms": 5.277459,
+          "encoder_cpu_ms": 1.973,
+          "matcher_cpu_ms": 6.743,
+          "end_to_end_cpu_ms": 8.716,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "096703",
+          "score": 0.057276517582603687
+        },
+        {
+          "encoder_wall_ms": 1.300958,
+          "matcher_wall_ms": 3.197458,
+          "end_to_end_wall_ms": 4.498416,
+          "encoder_cpu_ms": 1.3,
+          "matcher_cpu_ms": 6.403,
+          "end_to_end_cpu_ms": 7.703,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "096703",
+          "score": 0.057276517582603687
+        },
+        {
+          "encoder_wall_ms": 1.5095,
+          "matcher_wall_ms": 3.343041,
+          "end_to_end_wall_ms": 4.852541,
+          "encoder_cpu_ms": 1.509,
+          "matcher_cpu_ms": 6.73,
+          "end_to_end_cpu_ms": 8.239,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "096703",
+          "score": 0.057276517582603687
+        },
+        {
+          "encoder_wall_ms": 1.402959,
+          "matcher_wall_ms": 3.846416,
+          "end_to_end_wall_ms": 5.249375,
+          "encoder_cpu_ms": 1.403,
+          "matcher_cpu_ms": 6.997,
+          "end_to_end_cpu_ms": 8.4,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "096703",
+          "score": 0.057276517582603687
+        },
+        {
+          "encoder_wall_ms": 2.004083,
+          "matcher_wall_ms": 3.700584,
+          "end_to_end_wall_ms": 5.704667,
+          "encoder_cpu_ms": 2.002,
+          "matcher_cpu_ms": 6.935,
+          "end_to_end_cpu_ms": 8.937,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "096703",
+          "score": 0.057276517582603687
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.5095,
+        "matcher_wall_ms": 3.343041,
+        "end_to_end_wall_ms": 5.249375,
+        "encoder_cpu_ms": 1.509,
+        "matcher_cpu_ms": 6.743,
+        "end_to_end_cpu_ms": 8.4
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0727@5",
+      "source_id": "113025",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.362709,
+          "matcher_wall_ms": 4.218833,
+          "end_to_end_wall_ms": 5.581542,
+          "encoder_cpu_ms": 1.364,
+          "matcher_cpu_ms": 7.195,
+          "end_to_end_cpu_ms": 8.559,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "113025",
+          "score": 0.44385581032996
+        },
+        {
+          "encoder_wall_ms": 1.706958,
+          "matcher_wall_ms": 3.711917,
+          "end_to_end_wall_ms": 5.418875,
+          "encoder_cpu_ms": 1.706,
+          "matcher_cpu_ms": 6.79,
+          "end_to_end_cpu_ms": 8.496,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "113025",
+          "score": 0.44385581032996
+        },
+        {
+          "encoder_wall_ms": 1.535959,
+          "matcher_wall_ms": 4.102791,
+          "end_to_end_wall_ms": 5.63875,
+          "encoder_cpu_ms": 1.536,
+          "matcher_cpu_ms": 7.196,
+          "end_to_end_cpu_ms": 8.732,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "113025",
+          "score": 0.44385581032996
+        },
+        {
+          "encoder_wall_ms": 1.351208,
+          "matcher_wall_ms": 4.381958,
+          "end_to_end_wall_ms": 5.733166,
+          "encoder_cpu_ms": 1.351,
+          "matcher_cpu_ms": 7.413,
+          "end_to_end_cpu_ms": 8.764,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "113025",
+          "score": 0.44385581032996
+        },
+        {
+          "encoder_wall_ms": 1.749417,
+          "matcher_wall_ms": 4.214458,
+          "end_to_end_wall_ms": 5.963875,
+          "encoder_cpu_ms": 1.741,
+          "matcher_cpu_ms": 7.2,
+          "end_to_end_cpu_ms": 8.941,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "113025",
+          "score": 0.44385581032996
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.535959,
+        "matcher_wall_ms": 4.214458,
+        "end_to_end_wall_ms": 5.63875,
+        "encoder_cpu_ms": 1.536,
+        "matcher_cpu_ms": 7.196,
+        "end_to_end_cpu_ms": 8.732
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0540@5",
+      "source_id": "115596",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.792875,
+          "matcher_wall_ms": 3.54925,
+          "end_to_end_wall_ms": 5.342125,
+          "encoder_cpu_ms": 1.787,
+          "matcher_cpu_ms": 6.81,
+          "end_to_end_cpu_ms": 8.597,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "115596",
+          "score": 0.09791792200825883
+        },
+        {
+          "encoder_wall_ms": 1.440417,
+          "matcher_wall_ms": 3.485041,
+          "end_to_end_wall_ms": 4.925458,
+          "encoder_cpu_ms": 1.441,
+          "matcher_cpu_ms": 6.69,
+          "end_to_end_cpu_ms": 8.131,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "115596",
+          "score": 0.09791792200825883
+        },
+        {
+          "encoder_wall_ms": 1.427625,
+          "matcher_wall_ms": 4.028834,
+          "end_to_end_wall_ms": 5.456459,
+          "encoder_cpu_ms": 1.428,
+          "matcher_cpu_ms": 7.138,
+          "end_to_end_cpu_ms": 8.566,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "115596",
+          "score": 0.09791792200825883
+        },
+        {
+          "encoder_wall_ms": 1.902292,
+          "matcher_wall_ms": 3.931792,
+          "end_to_end_wall_ms": 5.834084,
+          "encoder_cpu_ms": 1.898,
+          "matcher_cpu_ms": 7.099,
+          "end_to_end_cpu_ms": 8.997,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "115596",
+          "score": 0.09791792200825883
+        },
+        {
+          "encoder_wall_ms": 1.842,
+          "matcher_wall_ms": 3.950583,
+          "end_to_end_wall_ms": 5.792583,
+          "encoder_cpu_ms": 1.832,
+          "matcher_cpu_ms": 7.065,
+          "end_to_end_cpu_ms": 8.897,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "115596",
+          "score": 0.09791792200825883
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.792875,
+        "matcher_wall_ms": 3.931792,
+        "end_to_end_wall_ms": 5.456459,
+        "encoder_cpu_ms": 1.787,
+        "matcher_cpu_ms": 7.065,
+        "end_to_end_cpu_ms": 8.597
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0864@5",
+      "source_id": "142241",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.369709,
+          "matcher_wall_ms": 5.282875,
+          "end_to_end_wall_ms": 6.652584,
+          "encoder_cpu_ms": 1.37,
+          "matcher_cpu_ms": 9.405,
+          "end_to_end_cpu_ms": 10.775,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "142241",
+          "score": 0.43643448527167517
+        },
+        {
+          "encoder_wall_ms": 1.764417,
+          "matcher_wall_ms": 5.137167,
+          "end_to_end_wall_ms": 6.901584,
+          "encoder_cpu_ms": 1.764,
+          "matcher_cpu_ms": 9.213,
+          "end_to_end_cpu_ms": 10.977,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "142241",
+          "score": 0.43643448527167517
+        },
+        {
+          "encoder_wall_ms": 1.776875,
+          "matcher_wall_ms": 5.076958,
+          "end_to_end_wall_ms": 6.853833,
+          "encoder_cpu_ms": 1.777,
+          "matcher_cpu_ms": 9.321,
+          "end_to_end_cpu_ms": 11.098,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "142241",
+          "score": 0.43643448527167517
+        },
+        {
+          "encoder_wall_ms": 1.799375,
+          "matcher_wall_ms": 4.579334,
+          "end_to_end_wall_ms": 6.378709,
+          "encoder_cpu_ms": 1.797,
+          "matcher_cpu_ms": 8.657,
+          "end_to_end_cpu_ms": 10.454,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "142241",
+          "score": 0.43643448527167517
+        },
+        {
+          "encoder_wall_ms": 1.396209,
+          "matcher_wall_ms": 4.716041,
+          "end_to_end_wall_ms": 6.11225,
+          "encoder_cpu_ms": 1.397,
+          "matcher_cpu_ms": 9.49,
+          "end_to_end_cpu_ms": 10.887,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "142241",
+          "score": 0.43643448527167517
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.764417,
+        "matcher_wall_ms": 5.076958,
+        "end_to_end_wall_ms": 6.652584,
+        "encoder_cpu_ms": 1.764,
+        "matcher_cpu_ms": 9.321,
+        "end_to_end_cpu_ms": 10.887
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0492@5",
+      "source_id": "003951",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.258542,
+          "matcher_wall_ms": 4.616167,
+          "end_to_end_wall_ms": 5.874709,
+          "encoder_cpu_ms": 1.259,
+          "matcher_cpu_ms": 8.942,
+          "end_to_end_cpu_ms": 10.201,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "003951",
+          "score": 0.38370339334248765
+        },
+        {
+          "encoder_wall_ms": 1.983917,
+          "matcher_wall_ms": 4.64425,
+          "end_to_end_wall_ms": 6.628167,
+          "encoder_cpu_ms": 1.972,
+          "matcher_cpu_ms": 8.482,
+          "end_to_end_cpu_ms": 10.454,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "003951",
+          "score": 0.38370339334248765
+        },
+        {
+          "encoder_wall_ms": 2.026708,
+          "matcher_wall_ms": 4.266333,
+          "end_to_end_wall_ms": 6.293041,
+          "encoder_cpu_ms": 2.021,
+          "matcher_cpu_ms": 8.191,
+          "end_to_end_cpu_ms": 10.212,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "003951",
+          "score": 0.38370339334248765
+        },
+        {
+          "encoder_wall_ms": 1.351333,
+          "matcher_wall_ms": 4.18425,
+          "end_to_end_wall_ms": 5.535583,
+          "encoder_cpu_ms": 1.352,
+          "matcher_cpu_ms": 8.163,
+          "end_to_end_cpu_ms": 9.515,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "003951",
+          "score": 0.38370339334248765
+        },
+        {
+          "encoder_wall_ms": 1.297375,
+          "matcher_wall_ms": 4.210709,
+          "end_to_end_wall_ms": 5.508084,
+          "encoder_cpu_ms": 1.298,
+          "matcher_cpu_ms": 8.681,
+          "end_to_end_cpu_ms": 9.979,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "003951",
+          "score": 0.38370339334248765
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.351333,
+        "matcher_wall_ms": 4.266333,
+        "end_to_end_wall_ms": 5.874709,
+        "encoder_cpu_ms": 1.352,
+        "matcher_cpu_ms": 8.482,
+        "end_to_end_cpu_ms": 10.201
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0889@5",
+      "source_id": "120056",
+      "duration_s": 5.0,
+      "repetitions": [
+        {
+          "encoder_wall_ms": 1.902541,
+          "matcher_wall_ms": 4.812125,
+          "end_to_end_wall_ms": 6.714666,
+          "encoder_cpu_ms": 1.902,
+          "matcher_cpu_ms": 8.079,
+          "end_to_end_cpu_ms": 9.981,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "120056",
+          "score": 0.36230036107775077
+        },
+        {
+          "encoder_wall_ms": 1.786458,
+          "matcher_wall_ms": 4.685917,
+          "end_to_end_wall_ms": 6.472375,
+          "encoder_cpu_ms": 1.764,
+          "matcher_cpu_ms": 8.054,
+          "end_to_end_cpu_ms": 9.818,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "120056",
+          "score": 0.36230036107775077
+        },
+        {
+          "encoder_wall_ms": 1.956833,
+          "matcher_wall_ms": 4.709834,
+          "end_to_end_wall_ms": 6.666667,
+          "encoder_cpu_ms": 1.942,
+          "matcher_cpu_ms": 8.109,
+          "end_to_end_cpu_ms": 10.051,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "120056",
+          "score": 0.36230036107775077
+        },
+        {
+          "encoder_wall_ms": 1.772375,
+          "matcher_wall_ms": 4.269375,
+          "end_to_end_wall_ms": 6.04175,
+          "encoder_cpu_ms": 1.772,
+          "matcher_cpu_ms": 7.742,
+          "end_to_end_cpu_ms": 9.514,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "120056",
+          "score": 0.36230036107775077
+        },
+        {
+          "encoder_wall_ms": 1.340542,
+          "matcher_wall_ms": 4.175541,
+          "end_to_end_wall_ms": 5.516083,
+          "encoder_cpu_ms": 1.341,
+          "matcher_cpu_ms": 7.522,
+          "end_to_end_cpu_ms": 8.863,
+          "encoder_fingerprints": 185,
+          "searched_fingerprints": 47,
+          "reference_id": "120056",
+          "score": 0.36230036107775077
+        }
+      ],
+      "per_query_medians": {
+        "encoder_wall_ms": 1.786458,
+        "matcher_wall_ms": 4.685917,
+        "end_to_end_wall_ms": 6.472375,
+        "encoder_cpu_ms": 1.772,
+        "matcher_cpu_ms": 8.054,
+        "end_to_end_cpu_ms": 9.818
+      }
+    }
+  ]
+}

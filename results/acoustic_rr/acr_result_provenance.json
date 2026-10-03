@@ -1,0 +1,27 @@
+{
+  "result_sha256": {
+    "acr_native/acr_exact_d8_qs1_10s.json": "8ae8f596e2fa71b12424b2865b6bd02b82fc9eb1901227c563d8140993625400",
+    "acr_native/acr_exact_d8_qs1_5s.json": "e9fcb862e2078fc789996690c0baed6b2198e249915d7cd5dfecb35738e06ac1",
+    "acr_native/acr_ivf_d8_qs4_5s.json": "d3dc7733d7a72510431e66865b76045ce95e8ec6cd35c9cbc7c01a730bdb6f61",
+    "acr_native/acr_exact_d1_qs1_5s.json": "8f734327bff3bc9605bb5f86483ac6b8177b0a47494117c544682ab566aa9584",
+    "acr_native/acr_ivf_d8_qs4_10s.json": "775fa0f25d9b7a5187b8a5bd78705f4ff917041d3c56649abcc0e48e35a46b83",
+    "acr_session_open/acr_exact_d8_qs1_5s.json": "7b996ba109719c6ca309c796de7b8e2feea1015e68551107afc965ef2f1ea2cb",
+    "acr_session_open/acr_ivf_d8_qs4_5s.json": "4a07e79d53fba203bd262895c27ad68f909ae98b3e10ab80eae6c66d452010f3",
+    "acr_session_open/acr_exact_d1_qs1_5s.json": "f1b707c12405ad132e28463cdf887d69bbf1140ce56eb036073edda6593614dc",
+    "acr_channel_calibration/acr_gain_diagnostic_5s.json": "24ea1d780403587592f94b3a17dbdf779213c8c7dbc9e1ca19af09747ba855e3"
+  },
+  "code_sha256": {
+    "run_sdrr_frozen.py": "3ba02e47d74af1e75c591e4e8e8c6a0d938fad33772b26acce9d5f36f57f218b",
+    "qa_sdrr_transfer.py": "9c5d58b8b6c2ea2e88ab4be9b18871d797357cfc23a4ff240b473ad3fde0c7cf",
+    "calibrate_sdrr_channel.py": "d2df44023466365d07584f64f8ee4c31e26d7ccd7bc89e49812cb409ca18d1f5",
+    "test_sdrr_summary.py": "b3b514d44aea10e8e8e9a9f9e86aec98170fefbbaed2c6b8b2c28f193a8b7795",
+    "test_channel_gain.py": "bd9f5a727633767202cb4d4e3244c652dcc2f8ab05d9576bb35585b7bb02d9ce",
+    "SDRR.md": "73d927182b6bc0e548d73d53ee4ef7b9bc1ba9e2c85657e69e3b0b6c7eccb8d0"
+  },
+  "frozen_model_sha256": "7f946bdbfd27b48f01074b5369df24b8fdce391236fe212ee88be9f9ec980dcd",
+  "native_protocol_sha256": "64754a1f1374630c010a3e6e96465e3c09247382fe6b79c70bc818b5cbbc261a",
+  "session_protocol_sha256": "cf6644dff657a84a4d1aabd632c0ec5a7f538c4bf2b79d34a013901e3ca8ded8",
+  "original_frozen_results_replaced_by_gain_diagnostic": false,
+  "tests_passed": 19,
+  "gain_gate_file_precedes_all309_corrected_test_cache_files": true
+}

@@ -1,0 +1,1560 @@
+{
+  "basis": "Outcome-independent catalog-prefix invariance in track-local physical grids; source regression tests retained",
+  "historical_outputs_exported_as_primary": false,
+  "audit_only": true,
+  "canonical_results": [
+    {
+      "canonical_result_path": "peaknet_primary_results/peaknet_native_5s.json",
+      "canonical_result_sha256": "5c91ac67485a7c65ad95ae9b802057b6702e78ca4cfa46d278d6f453c25f6aa0",
+      "historical_source_sha256": "cc1dcdc53e04fc45678ffd546b1ebfa7fec130e61d33e9d3f3c2b5aaeed2549a",
+      "query_count": 835,
+      "changed_query_count": 3,
+      "changes": [
+        {
+          "query_id": "pexafb_hard_medium:chunk0189@5",
+          "historical": {
+            "reference_id": "155093",
+            "score": 0.4783860445022583,
+            "offset_s": 133.0
+          },
+          "current": {
+            "reference_id": "117122",
+            "score": 0.47865384817123413,
+            "offset_s": 12.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "pexafb_hard_medium:chunk0498@5",
+          "historical": {
+            "reference_id": "120056",
+            "score": 0.4492466151714325,
+            "offset_s": 59.0
+          },
+          "current": {
+            "reference_id": "120056",
+            "score": 0.44510623812675476,
+            "offset_s": 59.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "pexafb_hard_medium:chunk0923@5",
+          "historical": {
+            "reference_id": "121328",
+            "score": 0.45254993438720703,
+            "offset_s": 9.0
+          },
+          "current": {
+            "reference_id": "107273",
+            "score": 0.4720568060874939,
+            "offset_s": 91.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        }
+      ]
+    },
+    {
+      "canonical_result_path": "peaknet_extended_results/peaknet_native_5s.json",
+      "canonical_result_sha256": "6fab5b16817cc12d313af1eae77305e667bb203f03dd8ba4bc7c43260579d6cc",
+      "historical_source_sha256": "1711a8b69ac53fac3bf150e976ef29b6d740af54a9e5302be95eb229916a3500",
+      "query_count": 5835,
+      "changed_query_count": 53,
+      "changes": [
+        {
+          "query_id": "pexafb_hard_medium:chunk0189@5",
+          "historical": {
+            "reference_id": "155093",
+            "score": 0.4783860445022583,
+            "offset_s": 133.0
+          },
+          "current": {
+            "reference_id": "117122",
+            "score": 0.47865384817123413,
+            "offset_s": 12.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "pexafb_hard_medium:chunk0498@5",
+          "historical": {
+            "reference_id": "120056",
+            "score": 0.4492466151714325,
+            "offset_s": 59.0
+          },
+          "current": {
+            "reference_id": "120056",
+            "score": 0.44510623812675476,
+            "offset_s": 59.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "pexafb_hard_medium:chunk0923@5",
+          "historical": {
+            "reference_id": "121328",
+            "score": 0.45254993438720703,
+            "offset_s": 9.0
+          },
+          "current": {
+            "reference_id": "107273",
+            "score": 0.4720568060874939,
+            "offset_s": 91.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:099084@5",
+          "historical": {
+            "reference_id": "128705",
+            "score": 0.4451981782913208,
+            "offset_s": 152.5
+          },
+          "current": {
+            "reference_id": "128705",
+            "score": 0.43663084506988525,
+            "offset_s": 152.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:043293@5",
+          "historical": {
+            "reference_id": "062427",
+            "score": 0.46718108654022217,
+            "offset_s": 157.0
+          },
+          "current": {
+            "reference_id": "131072",
+            "score": 0.4511502981185913,
+            "offset_s": 303.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:139106@5",
+          "historical": {
+            "reference_id": "121624",
+            "score": 0.5753851532936096,
+            "offset_s": 70.0
+          },
+          "current": {
+            "reference_id": "043685",
+            "score": 0.5455472469329834,
+            "offset_s": 79.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:087696@5",
+          "historical": {
+            "reference_id": "105352",
+            "score": 0.412704735994339,
+            "offset_s": 105.5
+          },
+          "current": {
+            "reference_id": "105352",
+            "score": 0.4173851013183594,
+            "offset_s": 105.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:071224@5",
+          "historical": {
+            "reference_id": "039584",
+            "score": 0.4520087242126465,
+            "offset_s": 47.5
+          },
+          "current": {
+            "reference_id": "039584",
+            "score": 0.441127210855484,
+            "offset_s": 47.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:004108@5",
+          "historical": {
+            "reference_id": "118395",
+            "score": 0.392153799533844,
+            "offset_s": 58.5
+          },
+          "current": {
+            "reference_id": "143781",
+            "score": 0.3955172002315521,
+            "offset_s": 113.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:132020@5",
+          "historical": {
+            "reference_id": "112198",
+            "score": 0.5045667886734009,
+            "offset_s": 265.5
+          },
+          "current": {
+            "reference_id": "086156",
+            "score": 0.4871882200241089,
+            "offset_s": 234.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:123485@5",
+          "historical": {
+            "reference_id": "115504",
+            "score": 0.5692750215530396,
+            "offset_s": 4.5
+          },
+          "current": {
+            "reference_id": "115504",
+            "score": 0.5899420976638794,
+            "offset_s": 4.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:057395@5",
+          "historical": {
+            "reference_id": "145677",
+            "score": 0.5155705213546753,
+            "offset_s": 99.5
+          },
+          "current": {
+            "reference_id": "145677",
+            "score": 0.5358784794807434,
+            "offset_s": 99.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:098947@5",
+          "historical": {
+            "reference_id": "036534",
+            "score": 0.6082032322883606,
+            "offset_s": 53.0
+          },
+          "current": {
+            "reference_id": "036534",
+            "score": 0.6156492233276367,
+            "offset_s": 52.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:145514@5",
+          "historical": {
+            "reference_id": "075786",
+            "score": 0.5254020690917969,
+            "offset_s": 18.5
+          },
+          "current": {
+            "reference_id": "075786",
+            "score": 0.5156261324882507,
+            "offset_s": 19.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:047010@5",
+          "historical": {
+            "reference_id": "143226",
+            "score": 0.5649880170822144,
+            "offset_s": 43.0
+          },
+          "current": {
+            "reference_id": "136258",
+            "score": 0.5410555601119995,
+            "offset_s": 147.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:021416@5",
+          "historical": {
+            "reference_id": "056185",
+            "score": 0.4592136740684509,
+            "offset_s": 113.5
+          },
+          "current": {
+            "reference_id": "056185",
+            "score": 0.4806388318538666,
+            "offset_s": 114.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:052380@5",
+          "historical": {
+            "reference_id": "008639",
+            "score": 0.45464959740638733,
+            "offset_s": 208.0
+          },
+          "current": {
+            "reference_id": "008639",
+            "score": 0.4551181197166443,
+            "offset_s": 208.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:118484@5",
+          "historical": {
+            "reference_id": "092158",
+            "score": 0.4643586575984955,
+            "offset_s": 60.5
+          },
+          "current": {
+            "reference_id": "092158",
+            "score": 0.4569650888442993,
+            "offset_s": 60.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:020181@5",
+          "historical": {
+            "reference_id": "129797",
+            "score": 0.4839770495891571,
+            "offset_s": 127.0
+          },
+          "current": {
+            "reference_id": "129797",
+            "score": 0.48200103640556335,
+            "offset_s": 127.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:016392@5",
+          "historical": {
+            "reference_id": "060280",
+            "score": 0.4449481964111328,
+            "offset_s": 91.0
+          },
+          "current": {
+            "reference_id": "060280",
+            "score": 0.47711700201034546,
+            "offset_s": 91.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:102209@5",
+          "historical": {
+            "reference_id": "036705",
+            "score": 0.43690919876098633,
+            "offset_s": 110.5
+          },
+          "current": {
+            "reference_id": "036705",
+            "score": 0.4659980237483978,
+            "offset_s": 110.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:073366@5",
+          "historical": {
+            "reference_id": "075786",
+            "score": 0.6189420223236084,
+            "offset_s": 89.0
+          },
+          "current": {
+            "reference_id": "075786",
+            "score": 0.6138618588447571,
+            "offset_s": 89.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:138416@5",
+          "historical": {
+            "reference_id": "140627",
+            "score": 0.48675522208213806,
+            "offset_s": 510.0
+          },
+          "current": {
+            "reference_id": "140627",
+            "score": 0.4990479052066803,
+            "offset_s": 510.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:144723@5",
+          "historical": {
+            "reference_id": "046160",
+            "score": 0.50095534324646,
+            "offset_s": 115.5
+          },
+          "current": {
+            "reference_id": "046160",
+            "score": 0.4768611192703247,
+            "offset_s": 115.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:014348@5",
+          "historical": {
+            "reference_id": "137050",
+            "score": 0.48776543140411377,
+            "offset_s": 32.0
+          },
+          "current": {
+            "reference_id": "137050",
+            "score": 0.4693775177001953,
+            "offset_s": 32.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:042436@5",
+          "historical": {
+            "reference_id": "151864",
+            "score": 0.5202832221984863,
+            "offset_s": 595.0
+          },
+          "current": {
+            "reference_id": "151864",
+            "score": 0.5368835926055908,
+            "offset_s": 595.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:030702@5",
+          "historical": {
+            "reference_id": "155303",
+            "score": 0.51515793800354,
+            "offset_s": 191.5
+          },
+          "current": {
+            "reference_id": "155303",
+            "score": 0.49678754806518555,
+            "offset_s": 191.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:057640@5",
+          "historical": {
+            "reference_id": "155063",
+            "score": 0.39979374408721924,
+            "offset_s": 222.0
+          },
+          "current": {
+            "reference_id": "060048",
+            "score": 0.4060189425945282,
+            "offset_s": 282.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:086484@5",
+          "historical": {
+            "reference_id": "027129",
+            "score": 0.544689953327179,
+            "offset_s": 475.0
+          },
+          "current": {
+            "reference_id": "027129",
+            "score": 0.5225645899772644,
+            "offset_s": 475.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:057960@5",
+          "historical": {
+            "reference_id": "135710",
+            "score": 0.48836538195610046,
+            "offset_s": 312.0
+          },
+          "current": {
+            "reference_id": "135710",
+            "score": 0.47517237067222595,
+            "offset_s": 312.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:071416@5",
+          "historical": {
+            "reference_id": "111110",
+            "score": 0.4949573874473572,
+            "offset_s": 307.5
+          },
+          "current": {
+            "reference_id": "111110",
+            "score": 0.48028692603111267,
+            "offset_s": 307.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:097532@5",
+          "historical": {
+            "reference_id": "124918",
+            "score": 0.5035591125488281,
+            "offset_s": 60.0
+          },
+          "current": {
+            "reference_id": "124918",
+            "score": 0.5464922785758972,
+            "offset_s": 60.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:020485@5",
+          "historical": {
+            "reference_id": "079709",
+            "score": 0.4281679391860962,
+            "offset_s": 44.5
+          },
+          "current": {
+            "reference_id": "079709",
+            "score": 0.4027263820171356,
+            "offset_s": 44.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:128475@5",
+          "historical": {
+            "reference_id": "134360",
+            "score": 0.5182769298553467,
+            "offset_s": 7.5
+          },
+          "current": {
+            "reference_id": "134360",
+            "score": 0.5092551708221436,
+            "offset_s": 7.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:017130@5",
+          "historical": {
+            "reference_id": "035539",
+            "score": 0.38119664788246155,
+            "offset_s": 114.5
+          },
+          "current": {
+            "reference_id": "035539",
+            "score": 0.39204704761505127,
+            "offset_s": 114.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:086155@5",
+          "historical": {
+            "reference_id": "143226",
+            "score": 0.4733385443687439,
+            "offset_s": 65.0
+          },
+          "current": {
+            "reference_id": "144960",
+            "score": 0.47599685192108154,
+            "offset_s": 57.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:132778@5",
+          "historical": {
+            "reference_id": "126223",
+            "score": 0.48378288745880127,
+            "offset_s": 442.5
+          },
+          "current": {
+            "reference_id": "126223",
+            "score": 0.473432332277298,
+            "offset_s": 442.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:035198@5",
+          "historical": {
+            "reference_id": "155302",
+            "score": 0.47689497470855713,
+            "offset_s": 176.0
+          },
+          "current": {
+            "reference_id": "118923",
+            "score": 0.46129310131073,
+            "offset_s": 8.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:090150@5",
+          "historical": {
+            "reference_id": "079709",
+            "score": 0.5411441326141357,
+            "offset_s": 137.0
+          },
+          "current": {
+            "reference_id": "079709",
+            "score": 0.532204270362854,
+            "offset_s": 137.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:025996@5",
+          "historical": {
+            "reference_id": "071096",
+            "score": 0.38782450556755066,
+            "offset_s": 211.5
+          },
+          "current": {
+            "reference_id": "071096",
+            "score": 0.38607192039489746,
+            "offset_s": 211.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:094631@5",
+          "historical": {
+            "reference_id": "137922",
+            "score": 0.46253353357315063,
+            "offset_s": 436.0
+          },
+          "current": {
+            "reference_id": "129643",
+            "score": 0.45874083042144775,
+            "offset_s": 157.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:073482@5",
+          "historical": {
+            "reference_id": "148478",
+            "score": 0.4450781047344208,
+            "offset_s": 32.5
+          },
+          "current": {
+            "reference_id": "017260",
+            "score": 0.42440569400787354,
+            "offset_s": 1198.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:047077@5",
+          "historical": {
+            "reference_id": "124152",
+            "score": 0.5225314497947693,
+            "offset_s": 64.5
+          },
+          "current": {
+            "reference_id": "120033",
+            "score": 0.5163958072662354,
+            "offset_s": 89.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:071153@5",
+          "historical": {
+            "reference_id": "129019",
+            "score": 0.397453635931015,
+            "offset_s": 230.5
+          },
+          "current": {
+            "reference_id": "129019",
+            "score": 0.39461004734039307,
+            "offset_s": 227.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:097793@5",
+          "historical": {
+            "reference_id": "138367",
+            "score": 0.49362313747406006,
+            "offset_s": 140.5
+          },
+          "current": {
+            "reference_id": "138367",
+            "score": 0.46275627613067627,
+            "offset_s": 140.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:116752@5",
+          "historical": {
+            "reference_id": "010700",
+            "score": 0.5587959885597229,
+            "offset_s": 159.0
+          },
+          "current": {
+            "reference_id": "010700",
+            "score": 0.5630841851234436,
+            "offset_s": 159.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:107386@5",
+          "historical": {
+            "reference_id": "154715",
+            "score": 0.44480767846107483,
+            "offset_s": 147.5
+          },
+          "current": {
+            "reference_id": "154715",
+            "score": 0.46879565715789795,
+            "offset_s": 147.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:027604@5",
+          "historical": {
+            "reference_id": "079884",
+            "score": 0.5127472281455994,
+            "offset_s": 312.0
+          },
+          "current": {
+            "reference_id": "142475",
+            "score": 0.4878935217857361,
+            "offset_s": 137.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:129046@5",
+          "historical": {
+            "reference_id": "150498",
+            "score": 0.4372442960739136,
+            "offset_s": 365.0
+          },
+          "current": {
+            "reference_id": "150498",
+            "score": 0.4221354126930237,
+            "offset_s": 365.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:001089@5",
+          "historical": {
+            "reference_id": "034318",
+            "score": 0.44959756731987,
+            "offset_s": 397.0
+          },
+          "current": {
+            "reference_id": "034318",
+            "score": 0.4558241665363312,
+            "offset_s": 397.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:141228@5",
+          "historical": {
+            "reference_id": "147303",
+            "score": 0.44291338324546814,
+            "offset_s": 158.5
+          },
+          "current": {
+            "reference_id": "147303",
+            "score": 0.45335763692855835,
+            "offset_s": 158.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:010056@5",
+          "historical": {
+            "reference_id": "075211",
+            "score": 0.4346006214618683,
+            "offset_s": 17.5
+          },
+          "current": {
+            "reference_id": "075211",
+            "score": 0.45448556542396545,
+            "offset_s": 17.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:000706@5",
+          "historical": {
+            "reference_id": "020072",
+            "score": 0.38941100239753723,
+            "offset_s": 68.5
+          },
+          "current": {
+            "reference_id": "115762",
+            "score": 0.3873639404773712,
+            "offset_s": 19.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        }
+      ]
+    },
+    {
+      "canonical_result_path": "peaknet_ivf_extended_results/peaknet_native_ivf1024_p16_5s.json",
+      "canonical_result_sha256": "7c22770a263e88c80a873c2b7cc87accb4891618a50e7da630d882b8f1624899",
+      "historical_source_sha256": "5068f8cb3590a610b697b2834ca7e89df11e079cfbf8b23a70a4190c4c0d263c",
+      "query_count": 5835,
+      "changed_query_count": 53,
+      "changes": [
+        {
+          "query_id": "pexafb_hard_medium:chunk0057@5",
+          "historical": {
+            "reference_id": "074914",
+            "score": 0.4866947531700134,
+            "offset_s": 64.5
+          },
+          "current": {
+            "reference_id": "074914",
+            "score": 0.4840925931930542,
+            "offset_s": 64.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "pexafb_hard_medium:chunk0189@5",
+          "historical": {
+            "reference_id": "155093",
+            "score": 0.4783860445022583,
+            "offset_s": 133.0
+          },
+          "current": {
+            "reference_id": "117122",
+            "score": 0.47865384817123413,
+            "offset_s": 12.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "pexafb_hard_medium:chunk0498@5",
+          "historical": {
+            "reference_id": "120056",
+            "score": 0.4492466151714325,
+            "offset_s": 59.0
+          },
+          "current": {
+            "reference_id": "120056",
+            "score": 0.44510623812675476,
+            "offset_s": 59.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "pexafb_hard_medium:chunk0517@5",
+          "historical": {
+            "reference_id": "031134",
+            "score": 0.4440933167934418,
+            "offset_s": 134.5
+          },
+          "current": {
+            "reference_id": "147490",
+            "score": 0.44372376799583435,
+            "offset_s": 205.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "pexafb_hard_medium:chunk0922@5",
+          "historical": {
+            "reference_id": "137922",
+            "score": 0.4960567057132721,
+            "offset_s": 359.5
+          },
+          "current": {
+            "reference_id": "137922",
+            "score": 0.5015601515769958,
+            "offset_s": 359.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:043019@5",
+          "historical": {
+            "reference_id": "043625",
+            "score": 0.5260550379753113,
+            "offset_s": 1.5
+          },
+          "current": {
+            "reference_id": "155093",
+            "score": 0.5017024874687195,
+            "offset_s": 2.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:137436@5",
+          "historical": {
+            "reference_id": "107273",
+            "score": 0.4734417498111725,
+            "offset_s": 40.5
+          },
+          "current": {
+            "reference_id": "107273",
+            "score": 0.46230220794677734,
+            "offset_s": 40.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:068542@5",
+          "historical": {
+            "reference_id": "090278",
+            "score": 0.6149132251739502,
+            "offset_s": 58.5
+          },
+          "current": {
+            "reference_id": "114246",
+            "score": 0.6172821521759033,
+            "offset_s": 263.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:043293@5",
+          "historical": {
+            "reference_id": "062427",
+            "score": 0.46718108654022217,
+            "offset_s": 157.0
+          },
+          "current": {
+            "reference_id": "131072",
+            "score": 0.4511502981185913,
+            "offset_s": 303.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:139106@5",
+          "historical": {
+            "reference_id": "121624",
+            "score": 0.5753851532936096,
+            "offset_s": 70.0
+          },
+          "current": {
+            "reference_id": "043685",
+            "score": 0.5455472469329834,
+            "offset_s": 79.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:016402@5",
+          "historical": {
+            "reference_id": "135710",
+            "score": 0.5455642938613892,
+            "offset_s": 331.5
+          },
+          "current": {
+            "reference_id": "135710",
+            "score": 0.533905029296875,
+            "offset_s": 331.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:087696@5",
+          "historical": {
+            "reference_id": "105352",
+            "score": 0.412704735994339,
+            "offset_s": 105.5
+          },
+          "current": {
+            "reference_id": "105352",
+            "score": 0.4173851013183594,
+            "offset_s": 105.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:076295@5",
+          "historical": {
+            "reference_id": "134360",
+            "score": 0.4462263286113739,
+            "offset_s": 83.0
+          },
+          "current": {
+            "reference_id": "134360",
+            "score": 0.4469545781612396,
+            "offset_s": 83.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:132020@5",
+          "historical": {
+            "reference_id": "112198",
+            "score": 0.5045667886734009,
+            "offset_s": 265.5
+          },
+          "current": {
+            "reference_id": "086156",
+            "score": 0.4871882200241089,
+            "offset_s": 234.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:145773@5",
+          "historical": {
+            "reference_id": "104648",
+            "score": 0.45862966775894165,
+            "offset_s": 142.0
+          },
+          "current": {
+            "reference_id": "104648",
+            "score": 0.4525521695613861,
+            "offset_s": 142.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:057395@5",
+          "historical": {
+            "reference_id": "145677",
+            "score": 0.5155705213546753,
+            "offset_s": 99.5
+          },
+          "current": {
+            "reference_id": "145677",
+            "score": 0.5358784794807434,
+            "offset_s": 99.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:098947@5",
+          "historical": {
+            "reference_id": "036534",
+            "score": 0.6082032322883606,
+            "offset_s": 53.0
+          },
+          "current": {
+            "reference_id": "036534",
+            "score": 0.6156492233276367,
+            "offset_s": 52.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:082060@5",
+          "historical": {
+            "reference_id": "128705",
+            "score": 0.4003842771053314,
+            "offset_s": 5.5
+          },
+          "current": {
+            "reference_id": "128705",
+            "score": 0.3829021453857422,
+            "offset_s": 5.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:047010@5",
+          "historical": {
+            "reference_id": "143226",
+            "score": 0.5649880170822144,
+            "offset_s": 43.0
+          },
+          "current": {
+            "reference_id": "136258",
+            "score": 0.5410555601119995,
+            "offset_s": 147.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:052380@5",
+          "historical": {
+            "reference_id": "008639",
+            "score": 0.45464959740638733,
+            "offset_s": 208.0
+          },
+          "current": {
+            "reference_id": "008639",
+            "score": 0.4551181197166443,
+            "offset_s": 208.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:040521@5",
+          "historical": {
+            "reference_id": "137050",
+            "score": 0.4444900155067444,
+            "offset_s": 45.5
+          },
+          "current": {
+            "reference_id": "141454",
+            "score": 0.43714389204978943,
+            "offset_s": 99.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:020181@5",
+          "historical": {
+            "reference_id": "129797",
+            "score": 0.4839770495891571,
+            "offset_s": 127.0
+          },
+          "current": {
+            "reference_id": "129797",
+            "score": 0.48200103640556335,
+            "offset_s": 127.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:016392@5",
+          "historical": {
+            "reference_id": "060280",
+            "score": 0.4449481964111328,
+            "offset_s": 91.0
+          },
+          "current": {
+            "reference_id": "060280",
+            "score": 0.47711700201034546,
+            "offset_s": 91.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:129881@5",
+          "historical": {
+            "reference_id": "129961",
+            "score": 0.40081652998924255,
+            "offset_s": 8.0
+          },
+          "current": {
+            "reference_id": "154376",
+            "score": 0.4063147008419037,
+            "offset_s": 82.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:102209@5",
+          "historical": {
+            "reference_id": "036705",
+            "score": 0.43690919876098633,
+            "offset_s": 110.5
+          },
+          "current": {
+            "reference_id": "036705",
+            "score": 0.4659980237483978,
+            "offset_s": 110.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:073366@5",
+          "historical": {
+            "reference_id": "075786",
+            "score": 0.6189420223236084,
+            "offset_s": 89.0
+          },
+          "current": {
+            "reference_id": "075786",
+            "score": 0.6138618588447571,
+            "offset_s": 89.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:045519@5",
+          "historical": {
+            "reference_id": "027129",
+            "score": 0.5256221890449524,
+            "offset_s": 293.5
+          },
+          "current": {
+            "reference_id": "027129",
+            "score": 0.5163242816925049,
+            "offset_s": 294.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:144723@5",
+          "historical": {
+            "reference_id": "046160",
+            "score": 0.50095534324646,
+            "offset_s": 115.5
+          },
+          "current": {
+            "reference_id": "046160",
+            "score": 0.4768611192703247,
+            "offset_s": 115.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:014348@5",
+          "historical": {
+            "reference_id": "137050",
+            "score": 0.48776543140411377,
+            "offset_s": 32.0
+          },
+          "current": {
+            "reference_id": "137050",
+            "score": 0.4693775177001953,
+            "offset_s": 32.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:030702@5",
+          "historical": {
+            "reference_id": "155303",
+            "score": 0.51515793800354,
+            "offset_s": 191.5
+          },
+          "current": {
+            "reference_id": "155303",
+            "score": 0.49678754806518555,
+            "offset_s": 191.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:057640@5",
+          "historical": {
+            "reference_id": "155063",
+            "score": 0.39979374408721924,
+            "offset_s": 222.0
+          },
+          "current": {
+            "reference_id": "060048",
+            "score": 0.4060189425945282,
+            "offset_s": 282.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:086484@5",
+          "historical": {
+            "reference_id": "027129",
+            "score": 0.544689953327179,
+            "offset_s": 475.0
+          },
+          "current": {
+            "reference_id": "027129",
+            "score": 0.5225645899772644,
+            "offset_s": 475.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:036460@5",
+          "historical": {
+            "reference_id": "079684",
+            "score": 0.4658312201499939,
+            "offset_s": 195.5
+          },
+          "current": {
+            "reference_id": "043685",
+            "score": 0.47611284255981445,
+            "offset_s": 1073.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:013540@5",
+          "historical": {
+            "reference_id": "153178",
+            "score": 0.5289444923400879,
+            "offset_s": 67.0
+          },
+          "current": {
+            "reference_id": "153178",
+            "score": 0.5009524822235107,
+            "offset_s": 67.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:057960@5",
+          "historical": {
+            "reference_id": "135710",
+            "score": 0.48836538195610046,
+            "offset_s": 312.0
+          },
+          "current": {
+            "reference_id": "135710",
+            "score": 0.47517237067222595,
+            "offset_s": 312.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:071416@5",
+          "historical": {
+            "reference_id": "111110",
+            "score": 0.4949573874473572,
+            "offset_s": 307.5
+          },
+          "current": {
+            "reference_id": "111110",
+            "score": 0.48028692603111267,
+            "offset_s": 307.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:070272@5",
+          "historical": {
+            "reference_id": "071113",
+            "score": 0.5555145740509033,
+            "offset_s": 162.0
+          },
+          "current": {
+            "reference_id": "071113",
+            "score": 0.557175874710083,
+            "offset_s": 162.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:086715@5",
+          "historical": {
+            "reference_id": "151864",
+            "score": 0.3860810101032257,
+            "offset_s": 53.5
+          },
+          "current": {
+            "reference_id": "151864",
+            "score": 0.4325161874294281,
+            "offset_s": 53.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:020485@5",
+          "historical": {
+            "reference_id": "079709",
+            "score": 0.4281679391860962,
+            "offset_s": 44.5
+          },
+          "current": {
+            "reference_id": "079709",
+            "score": 0.4027263820171356,
+            "offset_s": 44.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:128475@5",
+          "historical": {
+            "reference_id": "134360",
+            "score": 0.5182769298553467,
+            "offset_s": 7.5
+          },
+          "current": {
+            "reference_id": "134360",
+            "score": 0.5092551708221436,
+            "offset_s": 7.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:017130@5",
+          "historical": {
+            "reference_id": "035539",
+            "score": 0.38119664788246155,
+            "offset_s": 114.5
+          },
+          "current": {
+            "reference_id": "035539",
+            "score": 0.39204704761505127,
+            "offset_s": 114.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:107954@5",
+          "historical": {
+            "reference_id": "011553",
+            "score": 0.4019775688648224,
+            "offset_s": 18.5
+          },
+          "current": {
+            "reference_id": "011553",
+            "score": 0.3947744071483612,
+            "offset_s": 18.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:025996@5",
+          "historical": {
+            "reference_id": "071096",
+            "score": 0.38782450556755066,
+            "offset_s": 211.5
+          },
+          "current": {
+            "reference_id": "071096",
+            "score": 0.38607192039489746,
+            "offset_s": 211.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:060533@5",
+          "historical": {
+            "reference_id": "011553",
+            "score": 0.3981591463088989,
+            "offset_s": 85.0
+          },
+          "current": {
+            "reference_id": "005223",
+            "score": 0.4117812514305115,
+            "offset_s": 116.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:073482@5",
+          "historical": {
+            "reference_id": "148478",
+            "score": 0.4450781047344208,
+            "offset_s": 32.5
+          },
+          "current": {
+            "reference_id": "017260",
+            "score": 0.42440569400787354,
+            "offset_s": 1198.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:097793@5",
+          "historical": {
+            "reference_id": "138367",
+            "score": 0.49362313747406006,
+            "offset_s": 140.5
+          },
+          "current": {
+            "reference_id": "125456",
+            "score": 0.4662056565284729,
+            "offset_s": 189.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:055108@5",
+          "historical": {
+            "reference_id": "132852",
+            "score": 0.45637136697769165,
+            "offset_s": 109.5
+          },
+          "current": {
+            "reference_id": "132852",
+            "score": 0.47356367111206055,
+            "offset_s": 109.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:116752@5",
+          "historical": {
+            "reference_id": "010700",
+            "score": 0.5587959885597229,
+            "offset_s": 159.0
+          },
+          "current": {
+            "reference_id": "010700",
+            "score": 0.5630841851234436,
+            "offset_s": 159.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:107386@5",
+          "historical": {
+            "reference_id": "154715",
+            "score": 0.44480767846107483,
+            "offset_s": 147.5
+          },
+          "current": {
+            "reference_id": "154715",
+            "score": 0.46879565715789795,
+            "offset_s": 147.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:029244@5",
+          "historical": {
+            "reference_id": "043685",
+            "score": 0.4757160544395447,
+            "offset_s": 702.5
+          },
+          "current": {
+            "reference_id": "043685",
+            "score": 0.5038474798202515,
+            "offset_s": 700.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:099486@5",
+          "historical": {
+            "reference_id": "154715",
+            "score": 0.4830818176269531,
+            "offset_s": 169.0
+          },
+          "current": {
+            "reference_id": "042788",
+            "score": 0.4866882860660553,
+            "offset_s": 59.5
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:041954@5",
+          "historical": {
+            "reference_id": "025151",
+            "score": 0.5054089426994324,
+            "offset_s": 129.0
+          },
+          "current": {
+            "reference_id": "025151",
+            "score": 0.4858468472957611,
+            "offset_s": 129.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        },
+        {
+          "query_id": "fma_medium_unknown:075226@5",
+          "historical": {
+            "reference_id": "038569",
+            "score": 0.4262632429599762,
+            "offset_s": 139.5
+          },
+          "current": {
+            "reference_id": "140266",
+            "score": 0.42873603105545044,
+            "offset_s": 372.0
+          },
+          "status": "compatibility delta, historical fields are not primary predictions"
+        }
+      ]
+    }
+  ]
+}

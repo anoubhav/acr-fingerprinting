@@ -80,7 +80,40 @@ internal static class Program
             .From(audio).WithFingerprintConfig(Config(query)).Hash();
     }
 
-    static object Configuration(int votes) => new
+    static (AVHashes Hashes, object Audit) ThinReference(AVHashes hashes, string id, int factor)
+    {
+        var audio = hashes.Audio ?? throw new InvalidDataException("Audio reference hashes missing");
+        var original = audio.ToArray();
+        if (original.Select(h => h.SequenceNumber).Distinct().Count() != original.Length)
+            throw new InvalidDataException("Reference contains duplicate original sequence numbers");
+        var retained = factor == 1 ? original : original.Where(h => h.SequenceNumber % factor == 0).ToArray();
+        var bySequence = original.ToDictionary(h => h.SequenceNumber);
+        foreach (var hash in retained)
+        {
+            // Keep the original immutable record, rather than reconstructing or
+            // renumbering sparse rows. Identity also preserves all hash values.
+            if (!ReferenceEquals(hash, bySequence[hash.SequenceNumber]) || !float.IsFinite(hash.StartsAt))
+                throw new InvalidDataException("Reference signature/time preservation failed");
+        }
+        AVHashes selected = hashes;
+        if (factor != 1)
+        {
+            var reduced = new Hashes(retained, audio.DurationInSeconds, audio.MediaType,
+                audio.RelativeTo, audio.Origins, audio.StreamId,
+                audio.Properties.ToDictionary(p => p.Key, p => p.Value), audio.TimeOffset);
+            selected = new AVHashes(reduced, hashes.Video, hashes.FingerprintingTime);
+        }
+        return (selected, new { reference_id = id, reference_thinning_factor = factor,
+            original_count = original.Length, retained_count = retained.Length,
+            original_records_and_physical_timestamps_preserved = true,
+            duration_preserved_s = audio.DurationInSeconds, time_offset_preserved_s = audio.TimeOffset,
+            retained_first_sequence = retained.Length == 0 ? (uint?)null : retained[0].SequenceNumber,
+            retained_last_sequence = retained.Length == 0 ? (uint?)null : retained[^1].SequenceNumber,
+            retained_first_time_s = retained.Length == 0 ? (float?)null : retained[0].StartsAt,
+            retained_last_time_s = retained.Length == 0 ? (float?)null : retained[^1].StartsAt });
+    }
+
+    static object Configuration(int votes, int referenceFactor = 1) => new
     {
         package = "SoundFingerprinting", package_version = PackageVersion,
         upstream_revision = UpstreamRevision, decoder = "FFmpeg mono float32",
@@ -88,6 +121,8 @@ internal static class Program
         log_frequency_bins = 32, image_length_frames = 128, top_haar_wavelets = 200,
         minhash_permutations = 100, lsh_tables = 25, minhash_per_table = 4,
         raw_hash_payload_bytes_per_fingerprint = 100, reference_stride_samples = 512,
+        reference_thinning_factor = referenceFactor, effective_reference_index_stride_samples = 512 * referenceFactor,
+        reference_thinning_rule = "Original SequenceNumber modulo factor; keep original StartsAt, hash values and full duration",
         query_stride_min_samples = 256, query_stride_max_exclusive_samples = 512,
         query_stride_seed = Seed, threshold_votes = votes, max_tracks_to_return = 25,
         nominal_fingerprint_length_s = 8192.0 / SampleRate,
@@ -99,7 +134,7 @@ internal static class Program
         ,confidence_canonicalization_decimal_places = 12
     };
 
-    static async Task WarmTiming(InMemoryModelService service, string inputs, string output, object setupStats)
+    static async Task WarmTiming(InMemoryModelService service, string inputs, string output, object setupStats, int referenceFactor = 1)
     {
         using var metadata = JsonDocument.Parse(await File.ReadAllTextAsync(inputs));
         var clips = metadata.RootElement.GetProperty("soundfingerprinting_inputs").EnumerateArray().ToArray();
@@ -136,7 +171,7 @@ internal static class Program
                 process_cpu_s = cpu, first_actual_shape_pipeline_s = firstActualShapeSeconds,
                 fingerprint_count = count, sample_rate = SampleRate, sample_count = source.Length });
         }
-        var outData = new { method = "SoundFingerprinting native votes4 warmed CPU", config = Configuration(4),
+        var outData = new { method = "SoundFingerprinting native votes4 warmed CPU", config = Configuration(4, referenceFactor),
             common_input_sha256 = metadata.RootElement.GetProperty("common_input_sha256").GetString(),
             queries = rows, repeats = 5, warmups = 2, index_setup = setupStats,
             runtime_version = Environment.Version.ToString(), processor_count = Environment.ProcessorCount,
@@ -153,7 +188,7 @@ internal static class Program
         {
             Console.WriteLine("SoundFingerprinting 15.14.1 public benchmark bridge (native library unchanged).");
             Console.WriteLine("Required: --protocol FILE --cache DIR --native-output-dir DIR --calibrated-output-dir DIR");
-            Console.WriteLine("Optional: --pcm-manifest FILE --durations 5[,2,3,10] --votes 4[,1] --query-limit N");
+            Console.WriteLine("Optional: --pcm-manifest FILE --durations 5[,2,3,10] --votes 4[,1] --query-limit N --reference-factor INTEGER (default1)");
             Console.WriteLine("Warm profile: --warm-inputs FILE --warm-output FILE (after gallery setup; no benchmark rerun)");
             Console.WriteLine("Native full support is 1.846 s; no external query context/padding is added.");
             return;
@@ -168,6 +203,8 @@ internal static class Program
         int limit = int.Parse(options.GetValueOrDefault("--query-limit", int.MaxValue.ToString()));
         int[] requestedVotes = options.GetValueOrDefault("--votes", "4,1").Split(',').Select(int.Parse).ToArray();
         if (requestedVotes.Any(v => v != 4 && v != 1)) throw new ArgumentException("Supported vote variants are 4 and 1");
+        int referenceFactor = int.Parse(options.GetValueOrDefault("--reference-factor", "1"));
+        if (referenceFactor < 1) throw new ArgumentException("Reference thinning factor must be positive");
         Directory.CreateDirectory(cache); Directory.CreateDirectory(nativeDirectory); Directory.CreateDirectory(candidateDirectory);
         using var document = JsonDocument.Parse(await File.ReadAllTextAsync(protocolPath));
         using var pcmDocument = options.TryGetValue("--pcm-manifest", out var pcmManifest) ?
@@ -186,10 +223,11 @@ internal static class Program
         long before = GC.GetTotalMemory(true);
         var service = new InMemoryModelService();
         var buildClock = Stopwatch.StartNew();
-        long fingerprints = 0, payload = 0, featureCacheBytes = 0;
+        long fingerprints = 0, originalFingerprints = 0, payload = 0, featureCacheBytes = 0;
         double referenceSeconds = 0, referenceExtractionSeconds = 0, referenceDecodeSeconds = 0;
         int cacheHits = 0;
         var warnings = new List<object>();
+        var thinningAudit = new List<object>();
         for (int i = 0; i < references.Length; i++)
         {
             var reference = references[i];
@@ -215,6 +253,10 @@ internal static class Program
                 using var stream = File.Create(file);
                 Serializer.Serialize(stream, hashes.Audio);
             }
+            originalFingerprints += hashes.Audio!.Count;
+            var thinned = ThinReference(hashes, id, referenceFactor);
+            hashes = thinned.Hashes;
+            thinningAudit.Add(thinned.Audit);
             service.Insert(new TrackInfo(id, reference.TryGetProperty("track_title", out var title) ? title.GetString()! : id,
                 reference.TryGetProperty("artist_name", out var artist) ? artist.GetString()! : ""), hashes);
             fingerprints += hashes.Audio!.Count;
@@ -225,12 +267,17 @@ internal static class Program
         }
         double indexBuildSeconds = buildClock.Elapsed.TotalSeconds;
         long after = GC.GetTotalMemory(true);
-        string snapshot = Path.Combine(cache, "snapshot_" + Hash(string.Join('|', references.Select(r => Text(r, "reference_id")))));
+        string snapshotPrefix = referenceFactor == 1 ? "snapshot_" : $"snapshot_refFactor{referenceFactor}_";
+        string snapshot = Path.Combine(cache, snapshotPrefix + Hash(string.Join('|', references.Select(r => Text(r, "reference_id")))));
         service.Snapshot(snapshot);
         long snapshotBytes = Directory.EnumerateFiles(snapshot, "*", SearchOption.AllDirectories).Sum(f => new FileInfo(f).Length);
         var stats = new { reference_count = references.Length, reference_fingerprint_count = fingerprints,
+            original_dense_reference_fingerprint_count = originalFingerprints, reference_thinning_factor = referenceFactor,
+            reference_thinning_audit = thinningAudit,
             reference_audio_duration_s = referenceSeconds, reference_feature_hash_payload_bytes = payload,
-            reference_protobuf_cache_bytes = featureCacheBytes, index_snapshot_bytes = snapshotBytes,
+            reference_protobuf_cache_bytes = featureCacheBytes,
+            reference_protobuf_cache_note = "Full dense upstream extraction cache retained; thinned serving snapshot is separately measured",
+            index_snapshot_bytes = snapshotBytes,
             managed_index_memory_delta_bytes = Math.Max(0, after - before),
             index_build_wall_s = indexBuildSeconds, reference_extraction_work_s = referenceExtractionSeconds,
             reference_decode_s = referenceDecodeSeconds, reference_cache_hits = cacheHits,
@@ -239,7 +286,7 @@ internal static class Program
 
         if (options.TryGetValue("--warm-inputs", out var warmInputs))
         {
-            await WarmTiming(service, warmInputs, options["--warm-output"], stats);
+            await WarmTiming(service, warmInputs, options["--warm-output"], stats, referenceFactor);
             return;
         }
 
@@ -302,7 +349,8 @@ internal static class Program
             foreach (var variant in new[] { (native, 4, nativeDirectory, "SoundFingerprinting"), (candidate, 1, candidateDirectory, "SoundFingerprinting_calibrated") })
             {
                 if (!requestedVotes.Contains(variant.Item2)) continue;
-                var result = new { method = variant.Item4, config = Configuration(variant.Item2), stats,
+                var result = new { method = variant.Item4, factor = referenceFactor,
+                    config = Configuration(variant.Item2, referenceFactor), stats,
                     protocol_sha256 = protocolHash, protocol = root.GetProperty("protocol"), duration_s_requested = requested,
                     pcm_preparation_metadata = pcmDocument == null ? null : new {
                         prepare_wall_s = pcmDocument.RootElement.GetProperty("prepare_wall_s").GetDouble(),

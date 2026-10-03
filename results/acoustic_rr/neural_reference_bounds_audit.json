@@ -1,0 +1,6 @@
+{
+  "query_count": 1488,
+  "annotated_end_exceeds_physical_reference_duration": [],
+  "native10s_expected_offset_cannot_form_complete19_frame_sequence": [],
+  "depends_only_on_annotations_not_predictions": true
+}

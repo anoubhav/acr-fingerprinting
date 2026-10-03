@@ -6,7 +6,10 @@ from pathlib import Path
 PATH_KEYS={'path','root','cache_dir','cache_path','upstream_path','model_dir','source_path',
            'input_path','output_path','reference_cache','query_cache','protocol_path',
            'pcm_path','audio_path','audfprint_audio','result_path','model_path',
-           'pca_model_path','profile_path','inputs_path','manifest_path','index_path'}
+           'pca_model_path','profile_path','inputs_path','manifest_path','index_path',
+           'fit_protocol_path','results_path','source_result_path','model_config_path',
+           'checkpoint_path','frame_json_path','frames_json_path','frame_index_path',
+           'query_manifest_path','audio_manifest_path','native_parity_report'}
 
 def portable(value,workspace):
     prefix=str(Path(workspace).resolve())
@@ -30,7 +33,8 @@ def _portable(value,prefix):
 def materialize(value,workspace,key=None):
     if isinstance(value,dict):return {k:materialize(v,workspace,k) for k,v in value.items()}
     if isinstance(value,list):return [materialize(x,workspace,key) for x in value]
-    if isinstance(value,str) and key in PATH_KEYS and not value.startswith(('http://','https://','/')):
+    relative_workspace_path=isinstance(value,str) and value.startswith(('work/','outputs/','results/')) and not any(c in value for c in ('\n','\t'))
+    if isinstance(value,str) and (key in PATH_KEYS or relative_workspace_path) and not value.startswith(('http://','https://','/')):
         return str((Path(workspace)/value).resolve())
     return value
 

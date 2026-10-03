@@ -4,6 +4,13 @@ from pathlib import Path
 import numpy as np
 from neural_baseline import NMFPExtractor,NMFPSequenceIndex
 
+def per_query_distribution(rows,key):
+    ids=sorted({r['query_id'] for r in rows})
+    values=np.array([np.median([r[key] for r in rows if r['query_id']==query_id]) for query_id in ids])
+    return {'median':float(np.median(values)),'p95':float(np.quantile(values,.95)),
+            'p99':float(np.quantile(values,.99)),
+            'aggregation':'quantiles of per-query medians across repeats','n_queries':len(ids)}
+
 def run(args):
     manifest=json.loads(args.inputs.read_text());audio=np.load(manifest['audio_path'],allow_pickle=False)
     args.output.mkdir(parents=True,exist_ok=True)
@@ -58,10 +65,7 @@ def run(args):
                           'nlist':1024 if variant=='ivf' else None,
                           'nprobe':16 if variant=='ivf' else None}
         for key in ('encoder_s','matching_s','pipeline_s'):
-            samples=np.array([r[key] for r in rows])
-            variants[variant][key]={'median':float(np.median(samples)),
-                                  'p95':float(np.quantile(samples,.95)),
-                                  'p99':float(np.quantile(samples,.99))}
+            variants[variant][key]=per_query_distribution(rows,key)
     values=np.array([t['encoder_s'] for t in timing])
     weights_bytes=sum(int(np.prod(v.shape))*np.dtype(v.dtype.as_numpy_dtype).itemsize for v in extractor.model.variables)
     result={'method':extractor.provenance['method'],'inputs':manifest,'provenance':extractor.provenance,

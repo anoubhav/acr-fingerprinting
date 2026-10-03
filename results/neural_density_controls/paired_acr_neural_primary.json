@@ -1,0 +1,593 @@
+{
+  "comparison": "ACR exact factor8 minus neural sparse controls",
+  "protocol_sha256": "aae834db35736f2a1ff8e9ccb53fefcdb1140e5dd122502fbc65b93296b6b132",
+  "acr_result_sha256": "0416178dff7526c354f7bc93290fdc4b5f42ebb05b083b7dae56b1a48a32cdb8",
+  "overlap_audit_sha256": "787f7f27008c6a8ce632d27f259acb5d022cb0426a6c1e54a147d0c2943eae3a",
+  "note": "Paired crossed source/montage bootstrap with2000 fixed-seed replicates. Raw/localization are unthresholded; acceptance uses each original74-negative calibration gate. Held-out FPRs need not match. The conservative source slice changes neither galleries nor global thresholds.",
+  "acr_original_unknown_test": {
+    "false_accepts": 0,
+    "n": 71,
+    "fpr": 0.0,
+    "wilson_ci95": [
+      0.0,
+      0.05132795219689034
+    ],
+    "source_cluster_interval": {
+      "estimate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "n_queries": 71,
+      "n_source_clusters": 71,
+      "successes": 0
+    },
+    "n_source_clusters": 71
+  },
+  "rows": [
+    {
+      "method": "NMFP-Triplet (density control r2/q2)",
+      "results_sha256": "d8085f4c79f17599ad637fcac4a4e251d200566e351ebc4f97e74470c59fff5a",
+      "original_threshold": 0.5467501282691957,
+      "original_unknown_test": {
+        "false_accepts": 2,
+        "n": 71,
+        "fpr": 0.028169014084507043,
+        "wilson_ci95": [
+          0.007759263582683522,
+          0.0970150011664947
+        ],
+        "source_cluster_interval": {
+          "estimate": 0.028169014084507043,
+          "ci95": [
+            0.0,
+            0.07042253521126761
+          ],
+          "n_queries": 71,
+          "n_source_clusters": 71,
+          "successes": 2
+        },
+        "n_source_clusters": 71
+      },
+      "differences": {
+        "correct_reference": {
+          "estimate": -0.03314917127071823,
+          "ci95": [
+            -0.06613302218804339,
+            -0.0019944636838508754
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "n_montage_clusters": 207,
+          "resampling": "source IDs and montage IDs independently; product weights",
+          "net_query_difference": -18
+        },
+        "localized_correct": {
+          "estimate": 0.02578268876611418,
+          "ci95": [
+            -0.024345711153740752,
+            0.07402177097447535
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "n_montage_clusters": 207,
+          "resampling": "source IDs and montage IDs independently; product weights",
+          "net_query_difference": 14
+        },
+        "accepted_correct": {
+          "estimate": -0.06445672191528545,
+          "ci95": [
+            -0.11000096525096525,
+            -0.023122557665580194
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "n_montage_clusters": 207,
+          "resampling": "source IDs and montage IDs independently; product weights",
+          "net_query_difference": -35
+        },
+        "accepted_localized": {
+          "estimate": 0.003683241252302026,
+          "ci95": [
+            -0.054103831286392325,
+            0.05902809809348093
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "n_montage_clusters": 207,
+          "resampling": "source IDs and montage IDs independently; product weights",
+          "net_query_difference": 2
+        }
+      },
+      "conservative_unseen": {
+        "global_threshold_unchanged": true,
+        "gallery_unchanged": true,
+        "differences": {
+          "correct_reference": {
+            "estimate": -0.030848329048843187,
+            "ci95": [
+              -0.07207375285733494,
+              0.0024332383834787244
+            ],
+            "n_queries": 389,
+            "n_source_clusters": 368,
+            "n_montage_clusters": 185,
+            "resampling": "source IDs and montage IDs independently; product weights",
+            "net_query_difference": -12
+          },
+          "localized_correct": {
+            "estimate": 0.02313624678663239,
+            "ci95": [
+              -0.03621439700000675,
+              0.08421608109984721
+            ],
+            "n_queries": 389,
+            "n_source_clusters": 368,
+            "n_montage_clusters": 185,
+            "resampling": "source IDs and montage IDs independently; product weights",
+            "net_query_difference": 9
+          },
+          "accepted_correct": {
+            "estimate": -0.061696658097686374,
+            "ci95": [
+              -0.11868999399939995,
+              -0.008169495333062812
+            ],
+            "n_queries": 389,
+            "n_source_clusters": 368,
+            "n_montage_clusters": 185,
+            "resampling": "source IDs and montage IDs independently; product weights",
+            "net_query_difference": -24
+          },
+          "accepted_localized": {
+            "estimate": 0.005141388174807198,
+            "ci95": [
+              -0.06650323636891152,
+              0.07294691535150642
+            ],
+            "n_queries": 389,
+            "n_source_clusters": 368,
+            "n_montage_clusters": 185,
+            "resampling": "source IDs and montage IDs independently; product weights",
+            "net_query_difference": 2
+          }
+        },
+        "acr_counts": {
+          "correct_reference": 324,
+          "localized_correct": 315,
+          "accepted_correct": 294,
+          "accepted_localized": 291
+        },
+        "neural_counts": {
+          "correct_reference": 336,
+          "localized_correct": 306,
+          "accepted_correct": 318,
+          "accepted_localized": 289
+        }
+      }
+    },
+    {
+      "method": "NMFP-Triplet (density control r4/q4)",
+      "results_sha256": "ca920652b3c5225a5f967433b24c1d1941227da750ffa34d31861ce2237c254c",
+      "original_threshold": 0.5569152832031251,
+      "original_unknown_test": {
+        "false_accepts": 1,
+        "n": 71,
+        "fpr": 0.014084507042253521,
+        "wilson_ci95": [
+          0.002490603270544213,
+          0.07556050520249005
+        ],
+        "source_cluster_interval": {
+          "estimate": 0.014084507042253521,
+          "ci95": [
+            0.0,
+            0.04225352112676056
+          ],
+          "n_queries": 71,
+          "n_source_clusters": 71,
+          "successes": 1
+        },
+        "n_source_clusters": 71
+      },
+      "differences": {
+        "correct_reference": {
+          "estimate": -0.022099447513812154,
+          "ci95": [
+            -0.05583827241017497,
+            0.009110408727038074
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "n_montage_clusters": 207,
+          "resampling": "source IDs and montage IDs independently; product weights",
+          "net_query_difference": -12
+        },
+        "localized_correct": {
+          "estimate": 0.16574585635359115,
+          "ci95": [
+            0.10032608695652175,
+            0.23122503180306642
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "n_montage_clusters": 207,
+          "resampling": "source IDs and montage IDs independently; product weights",
+          "net_query_difference": 90
+        },
+        "accepted_correct": {
+          "estimate": 0.04419889502762431,
+          "ci95": [
+            -0.012346771550311372,
+            0.10490179037024158
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "n_montage_clusters": 207,
+          "resampling": "source IDs and montage IDs independently; product weights",
+          "net_query_difference": 24
+        },
+        "accepted_localized": {
+          "estimate": 0.19889502762430938,
+          "ci95": [
+            0.12419459507340594,
+            0.27605651285046723
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "n_montage_clusters": 207,
+          "resampling": "source IDs and montage IDs independently; product weights",
+          "net_query_difference": 108
+        }
+      },
+      "conservative_unseen": {
+        "global_threshold_unchanged": true,
+        "gallery_unchanged": true,
+        "differences": {
+          "correct_reference": {
+            "estimate": -0.015424164524421594,
+            "ci95": [
+              -0.056849623915879964,
+              0.019831790058207534
+            ],
+            "n_queries": 389,
+            "n_source_clusters": 368,
+            "n_montage_clusters": 185,
+            "resampling": "source IDs and montage IDs independently; product weights",
+            "net_query_difference": -6
+          },
+          "localized_correct": {
+            "estimate": 0.15938303341902313,
+            "ci95": [
+              0.08705223880597016,
+              0.2354435899322932
+            ],
+            "n_queries": 389,
+            "n_source_clusters": 368,
+            "n_montage_clusters": 185,
+            "resampling": "source IDs and montage IDs independently; product weights",
+            "net_query_difference": 62
+          },
+          "accepted_correct": {
+            "estimate": 0.05398457583547558,
+            "ci95": [
+              -0.013588812663340461,
+              0.1237767824401487
+            ],
+            "n_queries": 389,
+            "n_source_clusters": 368,
+            "n_montage_clusters": 185,
+            "resampling": "source IDs and montage IDs independently; product weights",
+            "net_query_difference": 21
+          },
+          "accepted_localized": {
+            "estimate": 0.20308483290488433,
+            "ci95": [
+              0.12068224180293147,
+              0.29188780853199126
+            ],
+            "n_queries": 389,
+            "n_source_clusters": 368,
+            "n_montage_clusters": 185,
+            "resampling": "source IDs and montage IDs independently; product weights",
+            "net_query_difference": 79
+          }
+        },
+        "acr_counts": {
+          "correct_reference": 324,
+          "localized_correct": 315,
+          "accepted_correct": 294,
+          "accepted_localized": 291
+        },
+        "neural_counts": {
+          "correct_reference": 330,
+          "localized_correct": 253,
+          "accepted_correct": 273,
+          "accepted_localized": 212
+        }
+      }
+    },
+    {
+      "method": "PeakNetFP (density control r2/q1)",
+      "results_sha256": "a4a656ce8c3c30d6dd851a9cd1700d59c39b5da86e3f99333eb27b0545143ad1",
+      "original_threshold": 0.6559509038925172,
+      "original_unknown_test": {
+        "false_accepts": 2,
+        "n": 71,
+        "fpr": 0.028169014084507043,
+        "wilson_ci95": [
+          0.007759263582683522,
+          0.0970150011664947
+        ],
+        "source_cluster_interval": {
+          "estimate": 0.028169014084507043,
+          "ci95": [
+            0.0,
+            0.07042253521126761
+          ],
+          "n_queries": 71,
+          "n_source_clusters": 71,
+          "successes": 2
+        },
+        "n_source_clusters": 71
+      },
+      "differences": {
+        "correct_reference": {
+          "estimate": -0.003683241252302026,
+          "ci95": [
+            -0.04340144230769231,
+            0.036405494164114816
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "n_montage_clusters": 207,
+          "resampling": "source IDs and montage IDs independently; product weights",
+          "net_query_difference": -2
+        },
+        "localized_correct": {
+          "estimate": 0.08287292817679558,
+          "ci95": [
+            0.02866991700396582,
+            0.13865707947100825
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "n_montage_clusters": 207,
+          "resampling": "source IDs and montage IDs independently; product weights",
+          "net_query_difference": 45
+        },
+        "accepted_correct": {
+          "estimate": 0.22099447513812154,
+          "ci95": [
+            0.15583406231074626,
+            0.2865666931643371
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "n_montage_clusters": 207,
+          "resampling": "source IDs and montage IDs independently; product weights",
+          "net_query_difference": 120
+        },
+        "accepted_localized": {
+          "estimate": 0.26335174953959484,
+          "ci95": [
+            0.19761178007028404,
+            0.33276713124274093
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "n_montage_clusters": 207,
+          "resampling": "source IDs and montage IDs independently; product weights",
+          "net_query_difference": 143
+        }
+      },
+      "conservative_unseen": {
+        "global_threshold_unchanged": true,
+        "gallery_unchanged": true,
+        "differences": {
+          "correct_reference": {
+            "estimate": 0.005141388174807198,
+            "ci95": [
+              -0.04213079699758379,
+              0.05517431891788911
+            ],
+            "n_queries": 389,
+            "n_source_clusters": 368,
+            "n_montage_clusters": 185,
+            "resampling": "source IDs and montage IDs independently; product weights",
+            "net_query_difference": 2
+          },
+          "localized_correct": {
+            "estimate": 0.09768637532133675,
+            "ci95": [
+              0.03053276521959781,
+              0.1653764826711238
+            ],
+            "n_queries": 389,
+            "n_source_clusters": 368,
+            "n_montage_clusters": 185,
+            "resampling": "source IDs and montage IDs independently; product weights",
+            "net_query_difference": 38
+          },
+          "accepted_correct": {
+            "estimate": 0.20565552699228792,
+            "ci95": [
+              0.13141519521824963,
+              0.28536866359447
+            ],
+            "n_queries": 389,
+            "n_source_clusters": 368,
+            "n_montage_clusters": 185,
+            "resampling": "source IDs and montage IDs independently; product weights",
+            "net_query_difference": 80
+          },
+          "accepted_localized": {
+            "estimate": 0.2570694087403599,
+            "ci95": [
+              0.17568941415681788,
+              0.3384198767582914
+            ],
+            "n_queries": 389,
+            "n_source_clusters": 368,
+            "n_montage_clusters": 185,
+            "resampling": "source IDs and montage IDs independently; product weights",
+            "net_query_difference": 100
+          }
+        },
+        "acr_counts": {
+          "correct_reference": 324,
+          "localized_correct": 315,
+          "accepted_correct": 294,
+          "accepted_localized": 291
+        },
+        "neural_counts": {
+          "correct_reference": 322,
+          "localized_correct": 277,
+          "accepted_correct": 214,
+          "accepted_localized": 191
+        }
+      }
+    },
+    {
+      "method": "PeakNetFP (density control r4/q1)",
+      "results_sha256": "832b53b4cba1abe6c38d45ca59a7e6147d93aa2f6d04f712a763aaba3c37d0da",
+      "original_threshold": 0.6597227454185487,
+      "original_unknown_test": {
+        "false_accepts": 1,
+        "n": 71,
+        "fpr": 0.014084507042253521,
+        "wilson_ci95": [
+          0.002490603270544213,
+          0.07556050520249005
+        ],
+        "source_cluster_interval": {
+          "estimate": 0.014084507042253521,
+          "ci95": [
+            0.0,
+            0.04225352112676056
+          ],
+          "n_queries": 71,
+          "n_source_clusters": 71,
+          "successes": 1
+        },
+        "n_source_clusters": 71
+      },
+      "differences": {
+        "correct_reference": {
+          "estimate": 0.029465930018416207,
+          "ci95": [
+            -0.015680813089349675,
+            0.07787865288667137
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "n_montage_clusters": 207,
+          "resampling": "source IDs and montage IDs independently; product weights",
+          "net_query_difference": 16
+        },
+        "localized_correct": {
+          "estimate": 0.16574585635359115,
+          "ci95": [
+            0.10235955752486599,
+            0.23359567514857615
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "n_montage_clusters": 207,
+          "resampling": "source IDs and montage IDs independently; product weights",
+          "net_query_difference": 90
+        },
+        "accepted_correct": {
+          "estimate": 0.43462246777163904,
+          "ci95": [
+            0.3558262145397182,
+            0.5118829981718465
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "n_montage_clusters": 207,
+          "resampling": "source IDs and montage IDs independently; product weights",
+          "net_query_difference": 236
+        },
+        "accepted_localized": {
+          "estimate": 0.47697974217311234,
+          "ci95": [
+            0.39542965231793664,
+            0.5512639899892213
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "n_montage_clusters": 207,
+          "resampling": "source IDs and montage IDs independently; product weights",
+          "net_query_difference": 259
+        }
+      },
+      "conservative_unseen": {
+        "global_threshold_unchanged": true,
+        "gallery_unchanged": true,
+        "differences": {
+          "correct_reference": {
+            "estimate": 0.04113110539845758,
+            "ci95": [
+              -0.00801613832853026,
+              0.09660995536090286
+            ],
+            "n_queries": 389,
+            "n_source_clusters": 368,
+            "n_montage_clusters": 185,
+            "resampling": "source IDs and montage IDs independently; product weights",
+            "net_query_difference": 16
+          },
+          "localized_correct": {
+            "estimate": 0.18251928020565553,
+            "ci95": [
+              0.10696166792152,
+              0.259393148755103
+            ],
+            "n_queries": 389,
+            "n_source_clusters": 368,
+            "n_montage_clusters": 185,
+            "resampling": "source IDs and montage IDs independently; product weights",
+            "net_query_difference": 71
+          },
+          "accepted_correct": {
+            "estimate": 0.4318766066838046,
+            "ci95": [
+              0.34292822637232145,
+              0.5231646454236138
+            ],
+            "n_queries": 389,
+            "n_source_clusters": 368,
+            "n_montage_clusters": 185,
+            "resampling": "source IDs and montage IDs independently; product weights",
+            "net_query_difference": 168
+          },
+          "accepted_localized": {
+            "estimate": 0.4781491002570694,
+            "ci95": [
+              0.38769701660568534,
+              0.5703787878787879
+            ],
+            "n_queries": 389,
+            "n_source_clusters": 368,
+            "n_montage_clusters": 185,
+            "resampling": "source IDs and montage IDs independently; product weights",
+            "net_query_difference": 186
+          }
+        },
+        "acr_counts": {
+          "correct_reference": 324,
+          "localized_correct": 315,
+          "accepted_correct": 294,
+          "accepted_localized": 291
+        },
+        "neural_counts": {
+          "correct_reference": 308,
+          "localized_correct": 244,
+          "accepted_correct": 126,
+          "accepted_localized": 105
+        }
+      }
+    }
+  ]
+}

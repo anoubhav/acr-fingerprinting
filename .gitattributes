@@ -1,2 +1,3 @@
 results/** linguist-generated=true
 results/**/*.npz binary
+results/streaming_index/streaming_store.pdf binary

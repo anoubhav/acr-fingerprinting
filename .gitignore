@@ -29,6 +29,9 @@
 *.pdf
 *.tex
 
+# Standalone public memory-scaling figure; manuscript PDFs remain excluded.
+!results/streaming_index/streaming_store.pdf
+
 # Download archives, large arrays/indexes and executable dependencies
 *.zip
 *.tar

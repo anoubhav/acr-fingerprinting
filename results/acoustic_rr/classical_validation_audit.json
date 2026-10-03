@@ -1,0 +1,51 @@
+{
+  "full_native_result_rows": 1488,
+  "native_protocol_sha256": "64754a1f1374630c010a3e6e96465e3c09247382fe6b79c70bc818b5cbbc261a",
+  "session_protocol_sha256": "cf6644dff657a84a4d1aabd632c0ec5a7f538c4bf2b79d34a013901e3ca8ded8",
+  "aud_floor5_and1_parameters_unchanged": true,
+  "soundfp_native4_parameters_unchanged": true,
+  "phone_groundtruth_frames_scored_for_tuning": false,
+  "benchmark_queries_excluded": 0,
+  "public_audio_redistributed": false,
+  "isolated_timing_claim": false,
+  "acquisition_checks": {
+    "audio_sha256_count": 1984,
+    "decoded_query_frame_counts": {
+      "80000": 1488
+    }
+  },
+  "native_minHash_no_candidates": {
+    "10": {
+      "no_candidate_count": 1432,
+      "empty_features": 0,
+      "unsupported_duration_count": 0,
+      "fingerprint_count_values": [
+        127
+      ]
+    },
+    "5": {
+      "no_candidate_count": 1461,
+      "empty_features": 0,
+      "unsupported_duration_count": 0,
+      "fingerprint_count_values": [
+        50
+      ]
+    }
+  },
+  "native_minHash_clean_fixed_position_control": {
+    "10": {
+      "n": 20,
+      "source_correct": 20,
+      "offset_0_1_s_correct": 18,
+      "phone_benchmark_groundtruth_frames_used": false,
+      "control_scope": "First20referenceIDs, fixed10s source position, same496gallery/native4 parameters"
+    },
+    "5": {
+      "n": 20,
+      "source_correct": 20,
+      "offset_0_1_s_correct": 19,
+      "phone_benchmark_groundtruth_frames_used": false,
+      "control_scope": "First20referenceIDs, fixed10s source position, same496gallery/native4 parameters"
+    }
+  }
+}

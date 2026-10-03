@@ -1,0 +1,72 @@
+{
+  "neural_models": [
+    "NMFP-Triplet",
+    "PeakNetFP"
+  ],
+  "canonical_clock_policy": "PeakNet rounding in track-local physical coordinates at every density; no unrelated catalog-row parity",
+  "compatibility_archives": "work/audit/peaknet_catalog_rounding",
+  "code_sha256": {
+    "neural_baseline.py": "dfd7ce5a011c68f1355c3b86fe1498a054a1e8e093e0ce038e09a7a46884cb0e",
+    "peaknet_baseline.py": "0fcaf9b63db8b54cb116e98954d5273dffb6382b4ef5d1aadae82ce65b93ef70",
+    "neural_density_controls.py": "84a05e3de3c2f10c0a32e4c6ea951d0339d55ad15ce43475613e543cc48dc2cd",
+    "run_neural_acoustic.py": "8e9aad7f7e316deb36b6140911abb8cd490fe9cab21e450dd01862aac7bf3d8e",
+    "summarize_acoustic_rr.py": "c3341d9abed372f2a4a18ca50a60e49d2590c54ddfe075fe84d1c80a076941b0",
+    "audit_neural_clean_source.py": "76b90816b2c3d527d5a90385eb44ebb27c51797de2971cd48f9b255c0cfefce0",
+    "test_neural_acoustic.py": "f425dbd0d4ee1d92481de4664f7f3fa6092f382f62799dc0a3bdb881c96cc2ef",
+    "test_peaknet_sparse_clocks.py": "0a35dabe833fa0ebac6f2cedba9e5c32cde8736ac39c5848be7f4576045bb5e0"
+  },
+  "files_sha256": {
+    "sdrr_native_protocol.json": "64754a1f1374630c010a3e6e96465e3c09247382fe6b79c70bc818b5cbbc261a",
+    "sdrr_session_open_protocol.json": "cf6644dff657a84a4d1aabd632c0ec5a7f538c4bf2b79d34a013901e3ca8ded8",
+    "source_overlap_audit.json": "e07e05036de2c460ebd811bb04eeb5cb05482ebb5c54f92997393a2c202f89e5",
+    "neural_origin_grid_audit.json": "9c48d9ec15c2f557773817783e8720bebbd42ce06d850f095979e1f665002eec",
+    "neural_reference_bounds_audit.json": "b4f9b79090b8abe11bb827dd9fb0e798797406fbef42ba3e604c66715c770717",
+    "nmfp_clean_source_audit.json": "fa504eacc236e87b445a45420b177b9c51d281f1dbaee564d0a863dd4746f7d6",
+    "peaknet_clean_source_audit.json": "196dc3d37fec71071586d0749b049339ea2c1976d1b52aef1e0b1d36e8186be2",
+    "nmfp_results/summary.json": "e300bfd64147205e4442bf9aeabe70cece777f4abdae4ec67f40564b1fcd3584",
+    "nmfp_results/nmfp_session_open_r2_q2_5s.json": "328a6df374910d7125b27315895d302d4962d4b22705600a9e510520ab914ee1",
+    "nmfp_results/nmfp_native_r1_q1_10s.json": "dd9c043c2e77b951d5dc8d9142c33771a4bac9c12205000ec3653d733e934b6b",
+    "nmfp_results/nmfp_session_open_r4_q4_5s.json": "79409fde0c9a13e4ad027911b1599e509915316b1afc26e88d9c6a67e0fad84c",
+    "nmfp_results/nmfp_gate_r1_q1_5s.json": "449370028f4c9a45f8385d3a2a6b820a38c92f96ac762c546d20345c6dcb1f90",
+    "nmfp_results/declaration.json": "92c64116e50558e46d9f62a772ed0e8fcdbd57d8e0839eac6e1acc6b1d6964d1",
+    "nmfp_results/nmfp_native_r1_q1_5s.json": "bb47393f9f02961a72a158787731496f97a398065222d6d8f0d38b39d293d74d",
+    "nmfp_results/nmfp_session_open_r1_q1_5s.json": "27052f2b5fb049555638cc9b5f0fbe6fce3123eecb1639fc76cf24167eb8bee6",
+    "nmfp_results/nmfp_gate_r4_q4_5s.json": "f89b9d502bc2952a37ded41101bdf4514f7c1dbbf69b1f2bb9867a987413c2cc",
+    "nmfp_results/nmfp_native_r4_q4_5s.json": "d22a776bbde01cb417074ccc2b21e151548179bba7779517081ae2b347ddbb18",
+    "nmfp_results/nmfp_native_r2_q2_5s.json": "58714a74d58d5d6f5e66a54fabdcede889742082ba4f4bfc67d56fa65fc119a2",
+    "nmfp_results/nmfp_gate_r2_q2_5s.json": "071f528e9d11334f3ac6b0fe03ffde520991466eb7e18cc602f6e14e8a50149a",
+    "nmfp_cache/cache_index.json": "3e6253111fbe2a3526c5fe050570159d17bdee21cfe70682fef6074953fb38b9",
+    "peaknet_results/peaknet_native_r1_q1_10s.json": "d6ca85dfaaccdb447089ada2a03ed0a701e7334c1aa23f0c198880e1346185d0",
+    "peaknet_results/summary.json": "32a7c8b79d49bc4ddd6501d5ddfd917fda51e20722f86e95b37818e86f7b5caf",
+    "peaknet_results/peaknet_native_r2_q1_5s.json": "9c22cd6a3005716543c265f8005c04b1d16fa669521c81438b43593476f0937c",
+    "peaknet_results/peaknet_gate_r2_q1_5s.json": "60a27c24f1a413f1a883f22b811dcedd81ec8051543a4ec8894d32b7f395ce5a",
+    "peaknet_results/peaknet_session_open_r2_q1_5s.json": "47edecad85e3645bb46e5333672c2b10569f769aaa4695f44842473e6efe7dcd",
+    "peaknet_results/declaration.json": "2ff5b5d37cfd8132b15ffda651362282997c103e365996184e1e5bbcdb6157f6",
+    "peaknet_results/peaknet_session_open_r1_q1_5s.json": "aa9b7e5e01f1cedd42ee4265fac899495ea54ef92da48aca4ef121c488e656fc",
+    "peaknet_results/peaknet_gate_r4_q1_5s.json": "4ec264c6c326dacc27d86420b78da0e88f2880d88894684c9e1fd5762d5d79cc",
+    "peaknet_results/peaknet_gate_r1_q1_5s.json": "f618f00f184fd6c59fad61492540a4d22549858596982a10c6becf7fbbaf8d50",
+    "peaknet_results/peaknet_session_open_r4_q1_5s.json": "87a9b97700076fa035100b2b8d097ac27c8b66aeff5cc3244d69ad715a35bfe8",
+    "peaknet_results/peaknet_native_r1_q1_5s.json": "79897cdf74bbc683730c70caa94312bb0b9de035dce7a5b791665e75adca8051",
+    "peaknet_results/peaknet_native_r4_q1_5s.json": "2db757b52a15594611a90121d77a11ec4115ee5f437524c26749615007a49c22",
+    "peaknet_cache/cache_index.json": "31467ef2e21fefa5058f9f959c920474f698707d68dd8f05e4899bbe9ba6a4b6"
+  },
+  "no_model_retraining": true,
+  "no_test_selected_settings": true,
+  "no_acoustic_timing_claim": true,
+  "actual_helper_source_snapshots": {
+    "nmfp": {
+      "path": "work/audit/peaknet_catalog_rounding/neural_density_controls_sparse_only_repair.py",
+      "sha256": "61028dd750606735c235dc9e0426da38665ca14727395245a421f306350ad9a5",
+      "scope": "Exact captured helper source hash; NMFP uses unchanged NMFPSequenceIndex, Peak uses repaired track-local PhysicalPeakNetIndex. Later helper changes only add declaration/metadata code digests."
+    },
+    "peaknet": {
+      "path": "work/audit/peaknet_catalog_rounding/neural_density_controls_at_final_acoustic_scoring.py",
+      "sha256": "f4def5e0ca35e0cc54cee7f955c72682a110d1110ad812d2d4c11ce08ebd34ca",
+      "scope": "Exact captured helper source hash; NMFP uses unchanged NMFPSequenceIndex, Peak uses repaired track-local PhysicalPeakNetIndex. Later helper changes only add declaration/metadata code digests."
+    }
+  },
+  "paper_rows_sha256": "27eed491cd188a3528b34633a8bf7b04c558862914cfea89990b24fc765f10ac",
+  "memo_sha256": "ddbc89dd5abeb402068f93eac2025d44ebd274088d216f274e0e72f6f94bf579",
+  "corrected_peak_profile_sha256": "af7ad12e7bf6cfa2736780addb4c05fe4a41ad6142d45dab287b82ae0686aaa0",
+  "profile_source_sha256": "c24b7970b3b1dbf2f141a88c6f33692067c6983b077c62ae6e32d5255bcb3c6d"
+}

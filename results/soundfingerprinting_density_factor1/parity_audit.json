@@ -1,0 +1,27 @@
+{
+  "factor1_scientific_fields_exactly_equal": true,
+  "prediction_count": 835,
+  "compared_fields": [
+    "source_id",
+    "role",
+    "reference_id",
+    "target_reference_id",
+    "score",
+    "offset_s",
+    "expected_reference_start_s",
+    "duration_s",
+    "correct_reference",
+    "localized_correct",
+    "query_fingerprint_count",
+    "library_similarity_score",
+    "query_match_starts_at_s",
+    "track_match_starts_at_s",
+    "coverage_s"
+  ],
+  "dense_reference_fingerprints": 1605108,
+  "hash_payload_bytes": 160510800,
+  "max_raw_confidence_difference": 0.0,
+  "canonical_confidence_precision": 12,
+  "old_path": "soundfingerprinting_native_medium/soundfingerprinting_5s.json",
+  "new_path": "soundfingerprinting_density_factor1/soundfingerprinting_5s.json"
+}

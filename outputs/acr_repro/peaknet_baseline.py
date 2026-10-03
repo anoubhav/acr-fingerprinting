@@ -182,8 +182,12 @@ class PeakNetSequenceIndex(NMFPSequenceIndex):
             for index in values:
                 track = int(np.searchsorted(self.starts, index, side="right") - 1)
                 factor = factors[track]
-                start = round(int(index) - row / factor)
-                ids = np.rint(start + np.arange(len(query)) / factor).astype(int)
+                # Reference clocks start at zero per track. Rounding global
+                # concatenated rows makes half-grid ties depend on unrelated
+                # preceding track lengths and can even change source identity.
+                local = int(index) - int(self.starts[track])
+                start = round(local - row / factor)
+                ids = np.rint(start + np.arange(len(query)) / factor).astype(int) + self.starts[track]
                 # Bound every candidate to one real track. The original script
                 # bounds only against the concatenated DB, allowing crossings.
                 if ids[0] < self.starts[track] or ids[-1] >= self.ends[track]:

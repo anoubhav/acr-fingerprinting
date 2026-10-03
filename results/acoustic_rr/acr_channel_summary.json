@@ -1,0 +1,2981 @@
+[
+  {
+    "result_path": "work/benchmarks/acoustic_rr/acr_channel_calibration/acr_gain_diagnostic_5s.json",
+    "result_sha256": "24ea1d780403587592f94b3a17dbdf779213c8c7dbc9e1ca19af09747ba855e3",
+    "method": "ACR-PCA fixed32-band gain diagnostic",
+    "factor": 8,
+    "matcher": {
+      "top_k": 5,
+      "tolerance_sec": 0.12,
+      "exact": true,
+      "query_stride": 1,
+      "threads": 1
+    },
+    "duration_s_requested": 5.0,
+    "protocol_sha256": "cf6644dff657a84a4d1aabd632c0ec5a7f538c4bf2b79d34a013901e3ca8ded8",
+    "closed_set": false,
+    "native_rankings_and_scores_unchanged": true,
+    "known": {
+      "n": 141,
+      "n_sources": 47,
+      "n_creators": 24,
+      "correct_reference": {
+        "successes": 34,
+        "rate": 0.24113475177304963
+      },
+      "localized_0_1_s": {
+        "successes": 18,
+        "rate": 0.1276595744680851
+      },
+      "localized_2_s": {
+        "successes": 25,
+        "rate": 0.1773049645390071
+      },
+      "accepted_correct": {
+        "successes": 11,
+        "rate": 0.07801418439716312
+      },
+      "accepted_localized_0_1_s": {
+        "successes": 9,
+        "rate": 0.06382978723404255
+      },
+      "accepted_localized_2_s": {
+        "successes": 10,
+        "rate": 0.07092198581560284
+      },
+      "accepted_target_mismatch": {
+        "successes": 2,
+        "rate": 0.014184397163120567
+      }
+    },
+    "known_source_cluster_ci": {
+      "correct_reference": {
+        "estimate": 0.24113475177304963,
+        "ci95": [
+          0.14184397163120568,
+          0.34769503546099195
+        ],
+        "n_queries": 141,
+        "n_source_clusters": 47,
+        "successes": 34
+      },
+      "localized_0_1_s": {
+        "estimate": 0.1276595744680851,
+        "ci95": [
+          0.06382978723404255,
+          0.19858156028368795
+        ],
+        "n_queries": 141,
+        "n_source_clusters": 47,
+        "successes": 18
+      },
+      "localized_2_s": {
+        "estimate": 0.1773049645390071,
+        "ci95": [
+          0.09219858156028368,
+          0.2695035460992908
+        ],
+        "n_queries": 141,
+        "n_source_clusters": 47,
+        "successes": 25
+      },
+      "accepted_correct": {
+        "estimate": 0.07801418439716312,
+        "ci95": [
+          0.03546099290780142,
+          0.1276595744680851
+        ],
+        "n_queries": 141,
+        "n_source_clusters": 47,
+        "successes": 11
+      },
+      "accepted_localized_0_1_s": {
+        "estimate": 0.06382978723404255,
+        "ci95": [
+          0.028368794326241134,
+          0.10638297872340426
+        ],
+        "n_queries": 141,
+        "n_source_clusters": 47,
+        "successes": 9
+      },
+      "accepted_localized_2_s": {
+        "estimate": 0.07092198581560284,
+        "ci95": [
+          0.028368794326241134,
+          0.12056737588652482
+        ],
+        "n_queries": 141,
+        "n_source_clusters": 47,
+        "successes": 10
+      },
+      "accepted_target_mismatch": {
+        "estimate": 0.014184397163120567,
+        "ci95": [
+          0.0,
+          0.03546099290780142
+        ],
+        "n_queries": 141,
+        "n_source_clusters": 47,
+        "successes": 2
+      }
+    },
+    "known_creator_cluster_ci": {
+      "correct_reference": {
+        "estimate": 0.24113475177304963,
+        "ci95": [
+          0.15147727272727274,
+          0.3333333333333333
+        ],
+        "n_queries": 141,
+        "n_source_clusters": 24,
+        "successes": 34
+      },
+      "localized_0_1_s": {
+        "estimate": 0.1276595744680851,
+        "ci95": [
+          0.06547619047619048,
+          0.20205099778270494
+        ],
+        "n_queries": 141,
+        "n_source_clusters": 24,
+        "successes": 18
+      },
+      "localized_2_s": {
+        "estimate": 0.1773049645390071,
+        "ci95": [
+          0.10254629629629629,
+          0.2539786967418546
+        ],
+        "n_queries": 141,
+        "n_source_clusters": 24,
+        "successes": 25
+      },
+      "accepted_correct": {
+        "estimate": 0.07801418439716312,
+        "ci95": [
+          0.03125,
+          0.1481725146198829
+        ],
+        "n_queries": 141,
+        "n_source_clusters": 24,
+        "successes": 11
+      },
+      "accepted_localized_0_1_s": {
+        "estimate": 0.06382978723404255,
+        "ci95": [
+          0.024691358024691357,
+          0.125
+        ],
+        "n_queries": 141,
+        "n_source_clusters": 24,
+        "successes": 9
+      },
+      "accepted_localized_2_s": {
+        "estimate": 0.07092198581560284,
+        "ci95": [
+          0.02775900900900901,
+          0.14037745879851127
+        ],
+        "n_queries": 141,
+        "n_source_clusters": 24,
+        "successes": 10
+      },
+      "accepted_target_mismatch": {
+        "estimate": 0.014184397163120567,
+        "ci95": [
+          0.0,
+          0.03922735760971049
+        ],
+        "n_queries": 141,
+        "n_source_clusters": 24,
+        "successes": 2
+      }
+    },
+    "known_source_session_crossed_ci": {
+      "correct_reference": {
+        "estimate": 0.24113475177304963,
+        "ci95": [
+          0.0,
+          0.5177020419902214
+        ],
+        "n_queries": 141,
+        "n_source_clusters": 47,
+        "n_montage_clusters": 3,
+        "successes": 34,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "localized_0_1_s": {
+        "estimate": 0.1276595744680851,
+        "ci95": [
+          0.0,
+          0.30018867924528286
+        ],
+        "n_queries": 141,
+        "n_source_clusters": 47,
+        "n_montage_clusters": 3,
+        "successes": 18,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "localized_2_s": {
+        "estimate": 0.1773049645390071,
+        "ci95": [
+          0.0,
+          0.4169354838709675
+        ],
+        "n_queries": 141,
+        "n_source_clusters": 47,
+        "n_montage_clusters": 3,
+        "successes": 25,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_correct": {
+        "estimate": 0.07801418439716312,
+        "ci95": [
+          0.0,
+          0.19179824561403497
+        ],
+        "n_queries": 141,
+        "n_source_clusters": 47,
+        "n_montage_clusters": 3,
+        "successes": 11,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_localized_0_1_s": {
+        "estimate": 0.06382978723404255,
+        "ci95": [
+          0.0,
+          0.16666666666666666
+        ],
+        "n_queries": 141,
+        "n_source_clusters": 47,
+        "n_montage_clusters": 3,
+        "successes": 9,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_localized_2_s": {
+        "estimate": 0.07092198581560284,
+        "ci95": [
+          0.0,
+          0.17689200680272107
+        ],
+        "n_queries": 141,
+        "n_source_clusters": 47,
+        "n_montage_clusters": 3,
+        "successes": 10,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_target_mismatch": {
+        "estimate": 0.014184397163120567,
+        "ci95": [
+          0.0,
+          0.049019607843137254
+        ],
+        "n_queries": 141,
+        "n_source_clusters": 47,
+        "n_montage_clusters": 3,
+        "successes": 2,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      }
+    },
+    "by_recording_session": {
+      "batch-001-036": {
+        "n": 57,
+        "n_sources": 19,
+        "n_creators": 11,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "batch-384-473-rerecord": {
+        "n": 75,
+        "n_sources": 25,
+        "n_creators": 17,
+        "correct_reference": {
+          "successes": 31,
+          "rate": 0.41333333333333333
+        },
+        "localized_0_1_s": {
+          "successes": 17,
+          "rate": 0.22666666666666666
+        },
+        "localized_2_s": {
+          "successes": 23,
+          "rate": 0.30666666666666664
+        },
+        "accepted_correct": {
+          "successes": 10,
+          "rate": 0.13333333333333333
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 8,
+          "rate": 0.10666666666666667
+        },
+        "accepted_localized_2_s": {
+          "successes": 9,
+          "rate": 0.12
+        },
+        "accepted_target_mismatch": {
+          "successes": 2,
+          "rate": 0.02666666666666667
+        }
+      },
+      "batch-extra-17-rerecord": {
+        "n": 9,
+        "n_sources": 3,
+        "n_creators": 3,
+        "correct_reference": {
+          "successes": 3,
+          "rate": 0.3333333333333333
+        },
+        "localized_0_1_s": {
+          "successes": 1,
+          "rate": 0.1111111111111111
+        },
+        "localized_2_s": {
+          "successes": 2,
+          "rate": 0.2222222222222222
+        },
+        "accepted_correct": {
+          "successes": 1,
+          "rate": 0.1111111111111111
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 1,
+          "rate": 0.1111111111111111
+        },
+        "accepted_localized_2_s": {
+          "successes": 1,
+          "rate": 0.1111111111111111
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      }
+    },
+    "by_creator": {
+      "eivissa salinas feat. dj hseres": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "el paso killers": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "equalypse": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "esther garcia": {
+        "n": 9,
+        "n_sources": 3,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 5,
+          "rate": 0.5555555555555556
+        },
+        "localized_0_1_s": {
+          "successes": 1,
+          "rate": 0.1111111111111111
+        },
+        "localized_2_s": {
+          "successes": 2,
+          "rate": 0.2222222222222222
+        },
+        "accepted_correct": {
+          "successes": 1,
+          "rate": 0.1111111111111111
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 1,
+          "rate": 0.1111111111111111
+        },
+        "accepted_localized_2_s": {
+          "successes": 1,
+          "rate": 0.1111111111111111
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "evgeny teilor": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "filuanddina": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "localized_0_1_s": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "localized_2_s": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "accepted_correct": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "accepted_localized_2_s": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "frenchlab (french laboratory of)": {
+        "n": 6,
+        "n_sources": 2,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 3,
+          "rate": 0.5
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 1,
+          "rate": 0.16666666666666666
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "gustavo crochenci": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "localized_0_1_s": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "localized_2_s": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "accepted_correct": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "accepted_localized_2_s": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jampy": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jonay": {
+        "n": 6,
+        "n_sources": 2,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "lorenzo's music": {
+        "n": 6,
+        "n_sources": 2,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 3,
+          "rate": 0.5
+        },
+        "localized_0_1_s": {
+          "successes": 2,
+          "rate": 0.3333333333333333
+        },
+        "localized_2_s": {
+          "successes": 2,
+          "rate": 0.3333333333333333
+        },
+        "accepted_correct": {
+          "successes": 1,
+          "rate": 0.16666666666666666
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 1,
+          "rate": 0.16666666666666666
+        },
+        "accepted_localized_2_s": {
+          "successes": 1,
+          "rate": 0.16666666666666666
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "lulo": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        }
+      },
+      "l\u00f6hstana david": {
+        "n": 27,
+        "n_sources": 9,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 7,
+          "rate": 0.25925925925925924
+        },
+        "localized_0_1_s": {
+          "successes": 4,
+          "rate": 0.14814814814814814
+        },
+        "localized_2_s": {
+          "successes": 6,
+          "rate": 0.2222222222222222
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "naturalbodyartist": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "oleg serkov": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "localized_0_1_s": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "localized_2_s": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "accepted_correct": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "accepted_localized_2_s": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "proyectot": {
+        "n": 12,
+        "n_sources": 4,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "rawboss": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "localized_0_1_s": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "localized_2_s": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "accepted_correct": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "accepted_localized_2_s": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "steven dunston": {
+        "n": 12,
+        "n_sources": 4,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 3,
+          "rate": 0.25
+        },
+        "localized_0_1_s": {
+          "successes": 2,
+          "rate": 0.16666666666666666
+        },
+        "localized_2_s": {
+          "successes": 3,
+          "rate": 0.25
+        },
+        "accepted_correct": {
+          "successes": 1,
+          "rate": 0.08333333333333333
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 1,
+          "rate": 0.08333333333333333
+        },
+        "accepted_localized_2_s": {
+          "successes": 1,
+          "rate": 0.08333333333333333
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "sundayers": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 3,
+          "rate": 1.0
+        },
+        "localized_0_1_s": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "localized_2_s": {
+          "successes": 3,
+          "rate": 1.0
+        },
+        "accepted_correct": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "accepted_localized_2_s": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "the verandas": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "the vow": {
+        "n": 12,
+        "n_sources": 4,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 2,
+          "rate": 0.16666666666666666
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 2,
+          "rate": 0.16666666666666666
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "ton in ton": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "townhouse woods": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "udo vismann": {
+        "n": 6,
+        "n_sources": 2,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 1,
+          "rate": 0.16666666666666666
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 1,
+          "rate": 0.16666666666666666
+        }
+      }
+    },
+    "by_source": {
+      "jamendo:1014963": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 3,
+          "rate": 1.0
+        },
+        "localized_0_1_s": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "localized_2_s": {
+          "successes": 3,
+          "rate": 1.0
+        },
+        "accepted_correct": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "accepted_localized_2_s": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:103892": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:1066198": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:1107251": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:1119024": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:1122012": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        }
+      },
+      "jamendo:1138689": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:1138697": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:1151403": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:1151409": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "localized_0_1_s": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "localized_2_s": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "accepted_correct": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "accepted_localized_2_s": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:1153922": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:1156054": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:1176656": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:1178762": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "localized_0_1_s": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "localized_2_s": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "accepted_correct": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "accepted_localized_2_s": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:1245184": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:1282564": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:1347915": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "localized_0_1_s": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "localized_2_s": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "accepted_correct": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "accepted_localized_2_s": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:1356349": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:1356871": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:1357117": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:1357128": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:145366": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:181440": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:181803": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:190781": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "localized_0_1_s": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "localized_2_s": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "accepted_correct": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "accepted_localized_2_s": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:347858": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:347879": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 3,
+          "rate": 1.0
+        },
+        "localized_0_1_s": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "localized_2_s": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "accepted_correct": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "accepted_localized_2_s": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:354778": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:357192": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:357314": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:357385": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:357387": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:373229": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:397582": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        }
+      },
+      "jamendo:461018": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "localized_0_1_s": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "localized_2_s": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "accepted_correct": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "accepted_localized_2_s": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:518603": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:6729": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 3,
+          "rate": 1.0
+        },
+        "localized_0_1_s": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "localized_2_s": {
+          "successes": 3,
+          "rate": 1.0
+        },
+        "accepted_correct": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "accepted_localized_2_s": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:6730": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:7247": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 3,
+          "rate": 1.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:7257": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:734510": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:7360": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:7363": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:76656": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "localized_0_1_s": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "localized_2_s": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:76660": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "localized_0_1_s": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "localized_2_s": {
+          "successes": 2,
+          "rate": 0.6666666666666666
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:785423": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      },
+      "jamendo:938065": {
+        "n": 3,
+        "n_sources": 1,
+        "n_creators": 1,
+        "correct_reference": {
+          "successes": 3,
+          "rate": 1.0
+        },
+        "localized_0_1_s": {
+          "successes": 1,
+          "rate": 0.3333333333333333
+        },
+        "localized_2_s": {
+          "successes": 3,
+          "rate": 1.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 0,
+          "rate": 0.0
+        }
+      }
+    },
+    "by_upstream_qc": {
+      "upstream_expected_rank_1": {
+        "n": 128,
+        "n_sources": 45,
+        "n_creators": 23,
+        "correct_reference": {
+          "successes": 34,
+          "rate": 0.265625
+        },
+        "localized_0_1_s": {
+          "successes": 18,
+          "rate": 0.140625
+        },
+        "localized_2_s": {
+          "successes": 25,
+          "rate": 0.1953125
+        },
+        "accepted_correct": {
+          "successes": 11,
+          "rate": 0.0859375
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 9,
+          "rate": 0.0703125
+        },
+        "accepted_localized_2_s": {
+          "successes": 10,
+          "rate": 0.078125
+        },
+        "accepted_target_mismatch": {
+          "successes": 1,
+          "rate": 0.0078125
+        }
+      },
+      "upstream_expected_rank_not_1": {
+        "n": 13,
+        "n_sources": 8,
+        "n_creators": 6,
+        "correct_reference": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_correct": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_localized_2_s": {
+          "successes": 0,
+          "rate": 0.0
+        },
+        "accepted_target_mismatch": {
+          "successes": 1,
+          "rate": 0.07692307692307693
+        }
+      }
+    },
+    "source_exposure_sensitivities": {
+      "exclude_all_fma_creator_title_matches": {
+        "n": 141,
+        "n_sources": 47,
+        "n_creators": 24,
+        "correct_reference": {
+          "successes": 34,
+          "rate": 0.24113475177304963
+        },
+        "localized_0_1_s": {
+          "successes": 18,
+          "rate": 0.1276595744680851
+        },
+        "localized_2_s": {
+          "successes": 25,
+          "rate": 0.1773049645390071
+        },
+        "accepted_correct": {
+          "successes": 11,
+          "rate": 0.07801418439716312
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 9,
+          "rate": 0.06382978723404255
+        },
+        "accepted_localized_2_s": {
+          "successes": 10,
+          "rate": 0.07092198581560284
+        },
+        "accepted_target_mismatch": {
+          "successes": 2,
+          "rate": 0.014184397163120567
+        }
+      },
+      "exclude_possible_nmfp_training_source_matches": {
+        "n": 141,
+        "n_sources": 47,
+        "n_creators": 24,
+        "correct_reference": {
+          "successes": 34,
+          "rate": 0.24113475177304963
+        },
+        "localized_0_1_s": {
+          "successes": 18,
+          "rate": 0.1276595744680851
+        },
+        "localized_2_s": {
+          "successes": 25,
+          "rate": 0.1773049645390071
+        },
+        "accepted_correct": {
+          "successes": 11,
+          "rate": 0.07801418439716312
+        },
+        "accepted_localized_0_1_s": {
+          "successes": 9,
+          "rate": 0.06382978723404255
+        },
+        "accepted_localized_2_s": {
+          "successes": 10,
+          "rate": 0.07092198581560284
+        },
+        "accepted_target_mismatch": {
+          "successes": 2,
+          "rate": 0.014184397163120567
+        }
+      }
+    },
+    "threshold": 0.024001980750265172,
+    "config": {
+      "sample_rate": 8000,
+      "n_fft": 1024,
+      "hop_length": 186,
+      "n_mels": 32,
+      "fmin": 315.0,
+      "fmax": 1960.0,
+      "window_frames": 32,
+      "stride_frames": 1,
+      "standardize": true,
+      "deltas": true,
+      "quantize_fp16": false,
+      "pca_dim": 32,
+      "spectrum_power": 1.0,
+      "epsilon": 1e-08,
+      "pad_audio": true,
+      "silence_std_threshold": 1e-06,
+      "silence_mean_threshold": 0.001
+    },
+    "stats": {
+      "fingerprints": 146503,
+      "payload_bytes": 18752384,
+      "metadata_bytes": 1758036,
+      "array_bytes": 20510420,
+      "content_lookup_bytes": 1848,
+      "search_float32_copy_bytes": 0,
+      "faiss_vector_copy_bytes": 18752384,
+      "norm_cache_bytes": 586012,
+      "reference_count": 231,
+      "reference_audio_duration_s": 27471.47149999992,
+      "vector_descriptor_sha256": "9c78eb91efe6c5987c88357de032f6adf1e9553a3776fc690572b764b320177d",
+      "empty_frozen_centroid_index_sha256": null
+    },
+    "offset_tolerances_s": [
+      0.1,
+      2.0
+    ],
+    "queries_excluded_by_qc": 0,
+    "timing_note": "Concurrent experimental jobs; no isolated acoustic timing claim",
+    "limited_capture_population": "One speaker laptop, one phone, four capture sessions; room labels unavailable",
+    "calibration_fpr_target": 0.01,
+    "calibration_unknown": {
+      "n": 627,
+      "false_accepts": 6
+    },
+    "unknown_test": {
+      "n": 168,
+      "n_sources": 56,
+      "n_creators": 37,
+      "false_accepts": 10,
+      "rate": 0.05952380952380952,
+      "wilson_query_interval": [
+        0.03265010509174169,
+        0.10609091226409445
+      ],
+      "source_cluster_ci": {
+        "estimate": 0.05952380952380952,
+        "ci95": [
+          0.023809523809523808,
+          0.10119047619047619
+        ],
+        "n_queries": 168,
+        "n_source_clusters": 56,
+        "successes": 10
+      },
+      "creator_cluster_ci": {
+        "estimate": 0.05952380952380952,
+        "ci95": [
+          0.0196078431372549,
+          0.10493827160493827
+        ],
+        "n_queries": 168,
+        "n_source_clusters": 37,
+        "successes": 10
+      },
+      "source_session_crossed_ci": {
+        "estimate": 0.05952380952380952,
+        "ci95": [
+          0.0,
+          0.16360062893081717
+        ],
+        "n_queries": 168,
+        "n_source_clusters": 56,
+        "n_montage_clusters": 3,
+        "successes": 10,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "source_event_sensitivity": {
+        "sources_with_any_false_accept": 9,
+        "n_sources": 56,
+        "event_definition": "At least one of a source's three query clips is accepted",
+        "wilson_source_event_interval": [
+          0.08692667607595139,
+          0.2780620666974952
+        ],
+        "zero_event_one_sided_95_iid_source_upper": null,
+        "interpretation": "Source-event sensitivity differs from query FPR; binomial intervals additionally assume independent sources despite shared capture sessions, and are not a device/room population guarantee"
+      }
+    },
+    "unknown_by_recording_session": {
+      "batch-001-036": {
+        "n": 24,
+        "false_accepts": 0
+      },
+      "batch-384-473-rerecord": {
+        "n": 102,
+        "false_accepts": 4
+      },
+      "batch-extra-17-rerecord": {
+        "n": 42,
+        "false_accepts": 6
+      }
+    },
+    "gate_note": "Newdomain transfercalibration only on627 declared acoustic unknowns; not a population/rare-FPR guarantee"
+  }
+]

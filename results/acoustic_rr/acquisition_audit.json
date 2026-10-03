@@ -1,0 +1,117 @@
+{
+  "dataset_doi": "10.5281/zenodo.22169646",
+  "version": "1.0.0",
+  "repository": "https://github.com/JihengLi/POLARIS",
+  "repository_revision": "fe8943897d3c723060d31485d83d042c9d6a3057",
+  "assets": [
+    {
+      "file": "CITATION.cff",
+      "sha256": "45e3f61ac8366ada7b133241b9762aab75b3eda0325038d206598c3d3e6c6940",
+      "zenodo_checksum": "md5:2cf6bef79946ee675a68dcf4cd4c3464",
+      "size_bytes": 396,
+      "cached": false
+    },
+    {
+      "file": "attribution.csv",
+      "sha256": "ff9fa4d0bc270589342ca1de0c10fc1fd4c9c62e7e4f224c31c3b71b11f4d5f5",
+      "zenodo_checksum": "md5:55e4f8cb95da2d77f25f04590a6dfbbd",
+      "size_bytes": 115569,
+      "cached": false
+    },
+    {
+      "file": "dataset_summary.json",
+      "sha256": "6a6e84b1930043e3582d57282edcb240837ff8577a380f4f7ef1bd0db43ae6a9",
+      "zenodo_checksum": "md5:1dc6a1ffb508b2988691ee2df6a9fc1b",
+      "size_bytes": 851,
+      "cached": false
+    },
+    {
+      "file": "dataset_config.json",
+      "sha256": "aec6eb31a9f09212f024489d1953af722f4fb529ff293bcb64206a30c1a9dd2b",
+      "zenodo_checksum": "md5:08ee1eb512bb4af94db228e9a7682fc1",
+      "size_bytes": 884,
+      "cached": false
+    },
+    {
+      "file": "SHA256SUMS",
+      "sha256": "4fe052f16e7e57855a62493362c0a14c5db4efb2517f5b774b085d5edf5b5fb1",
+      "zenodo_checksum": "md5:1316dab14c3d13f39f2dd6b79534aef5",
+      "size_bytes": 998,
+      "cached": false
+    },
+    {
+      "file": "reference_manifest.csv",
+      "sha256": "1843cf0c1d9aa658b5b1009f2eb21107c08f6bfd8f4ac75c552162eab78c1f27",
+      "zenodo_checksum": "md5:a21bf4176b4281e273b7d6737ba253ec",
+      "size_bytes": 64205,
+      "cached": false
+    },
+    {
+      "file": "DATASET_CARD.md",
+      "sha256": "daf7831de1e351c74f73ad3d3e1614fc4ea9732696caaad2eb78d80b79b7d041",
+      "zenodo_checksum": "md5:b8e21c76f1bdd1a7ab4c4611fb0a32f9",
+      "size_bytes": 4217,
+      "cached": false
+    },
+    {
+      "file": "README.md",
+      "sha256": "d7074fcdca9edf59237d6e73f769ba0d6ffc9be0a2cd4e64ae3bfd1a7ca5c1ad",
+      "zenodo_checksum": "md5:485eb8983e1cfd8535108003ff679a36",
+      "size_bytes": 2896,
+      "cached": false
+    },
+    {
+      "file": "exclusions.csv",
+      "sha256": "665d6db51ce4407a660378d9169e30433635fd10e3e16fef80206433d08819a6",
+      "zenodo_checksum": "md5:471d9b0d45257bdcb20eb6558b5a315d",
+      "size_bytes": 40820,
+      "cached": false
+    },
+    {
+      "file": "LICENSES.md",
+      "sha256": "e29aae134ba2ce507a4602a8d642035d4f099e8b33cd0083f506a10454b17c95",
+      "zenodo_checksum": "md5:6abe11d278d993c318e13ab3453f7ff6",
+      "size_bytes": 1950,
+      "cached": false
+    },
+    {
+      "file": "manifest.csv",
+      "sha256": "5e6c66cdfcf17aa98e085a0de9a545096f44183c65787608270644f82556e0e5",
+      "zenodo_checksum": "md5:b12fec59acc98821bb40b6cc240e8e3d",
+      "size_bytes": 1218389,
+      "cached": false
+    },
+    {
+      "file": "sdrr-v1.0-references.zip",
+      "sha256": "e3c33f1ab71080dfbac5f850324888fd4edba3d3de55cb223da8713233d7efdb",
+      "zenodo_checksum": "md5:5785fb9ae8024c8504205fc00ecffdf8",
+      "size_bytes": 2346873899,
+      "cached": false
+    },
+    {
+      "file": "sdrr-v1.0-queries.zip",
+      "sha256": "48c27ce1dbc0244d8461dd8ab17256d17afb3345041614c7f94a2e527776dbb5",
+      "zenodo_checksum": "md5:6b26a34376eaae09e446cf1a1e83e33b",
+      "size_bytes": 1060140686,
+      "cached": false
+    }
+  ],
+  "archives": [
+    {
+      "archive": "sdrr-v1.0-references.zip",
+      "members": 497,
+      "expanded_bytes": 2346818227,
+      "traversal_symlinks_encryption_duplicate_paths": "none"
+    },
+    {
+      "archive": "sdrr-v1.0-queries.zip",
+      "members": 1489,
+      "expanded_bytes": 1312532064,
+      "traversal_symlinks_encryption_duplicate_paths": "none"
+    }
+  ],
+  "individual_audio_sha256_count": 1984,
+  "audio_redistributed": false,
+  "metadata_license": "CC BY-SA 4.0; embedded source metadata retain their upstream terms",
+  "audio_license": "Per-track attribution.csv; no blanket license"
+}

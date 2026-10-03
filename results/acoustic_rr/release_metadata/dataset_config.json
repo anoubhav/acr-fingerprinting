@@ -1,0 +1,46 @@
+{
+  "schema": "songdescriber_phone_recording_v1",
+  "source_dataset": "SongDescriber",
+  "source_manifest_sha256": "fb853b0327394cfdbdc205f712fdb64df70e6fcd3bae3a9d3f1617d54b45ad70",
+  "shuffle_seed": 20260819,
+  "selection_seed": 20260819,
+  "clip_seconds": 10.0,
+  "query_offsets_seconds": [
+    3.0,
+    18.0,
+    33.0
+  ],
+  "marker_offsets_seconds": [
+    0.0,
+    15.0,
+    30.0,
+    45.0
+  ],
+  "markers": [
+    {
+      "name": "A",
+      "start_hz": 700.0,
+      "end_hz": 1800.0
+    },
+    {
+      "name": "B",
+      "start_hz": 2400.0,
+      "end_hz": 900.0
+    },
+    {
+      "name": "C",
+      "start_hz": 1100.0,
+      "end_hz": 2800.0
+    },
+    {
+      "name": "D",
+      "start_hz": 3200.0,
+      "end_hz": 1400.0
+    }
+  ],
+  "guard_seconds": 2.0,
+  "track_seconds": 46.0,
+  "playback_sample_rate_hz": 44100,
+  "target_rms_dbfs": -20.0,
+  "peak_ceiling_dbfs": -1.0
+}

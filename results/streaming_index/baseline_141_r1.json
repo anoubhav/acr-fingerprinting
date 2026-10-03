@@ -1,0 +1,1636 @@
+{
+  "variant": "baseline",
+  "replicate": 1,
+  "gallery_sources": 141,
+  "reference_audio_s": 33559.55987500001,
+  "reference_fingerprints": 178193,
+  "descriptor_sha256": "9271d50f3ba506d6219465f81d31d5b98bcf736ac27a23d36907c2d718e123bb",
+  "rss_before_enrollment_bytes": 57081856,
+  "rss_after_enrollment_gc_bytes": 441778176,
+  "rss_enrollment_delta_bytes": 384696320,
+  "process_peak_enrollment_rss_bytes": 441778176,
+  "peak_minus_before_bytes": 384696320,
+  "enrollment_wall_s": 1.262732209,
+  "enrollment_cpu_s": 1.239104,
+  "serialization_wall_s": 0.0547857090132311,
+  "serialized_index_bytes": 24304019,
+  "retained_metadata_bytes": 2139162,
+  "retained_python_vector_bytes": 22808704,
+  "retained_norm_cache_bytes": 712772,
+  "explicit_reference_bytes": 49964657,
+  "median_match_wall_ms": 2.767625,
+  "p95_match_wall_ms": 3.4408374999999998,
+  "queries": [
+    {
+      "query_id": "pexafb_hard_medium:chunk0209@5",
+      "source_id": "025283",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        1.709833,
+        1.737792,
+        1.925667,
+        1.67175,
+        1.662792
+      ],
+      "cpu_ms": [
+        2.572,
+        2.584,
+        2.767,
+        2.614,
+        2.513
+      ],
+      "median_wall_ms": 1.709833,
+      "median_cpu_ms": 2.584,
+      "hit": {
+        "content_id": "025283",
+        "votes": 8,
+        "vote_fraction": 0.1702127659574468,
+        "mean_distance": 8.888945579528809,
+        "offset_sec": 19.557000000000002,
+        "max_time_residual_sec": 0.120000000000001,
+        "score": 0.017212428219830204,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0612@5",
+      "source_id": "059129",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        2.720584,
+        2.593375,
+        2.57525,
+        2.669625,
+        2.7085
+      ],
+      "cpu_ms": [
+        3.616,
+        3.562,
+        3.483,
+        3.487,
+        3.571
+      ],
+      "median_wall_ms": 2.669625,
+      "median_cpu_ms": 3.562,
+      "hit": {
+        "content_id": "059129",
+        "votes": 47,
+        "vote_fraction": 1.0,
+        "mean_distance": 0.9403950572013855,
+        "offset_sec": 294.159,
+        "max_time_residual_sec": 0.09300000000001774,
+        "score": 0.5153589709934074,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0303@5",
+      "source_id": "059141",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        2.580375,
+        2.555,
+        2.345916,
+        2.535458,
+        2.629334
+      ],
+      "cpu_ms": [
+        3.638,
+        3.541,
+        3.425,
+        3.549,
+        3.642
+      ],
+      "median_wall_ms": 2.555,
+      "median_cpu_ms": 3.549,
+      "hit": {
+        "content_id": "059141",
+        "votes": 28,
+        "vote_fraction": 0.5957446808510638,
+        "mean_distance": 5.407229900360107,
+        "offset_sec": 107.694,
+        "max_time_residual_sec": 0.09300000000000352,
+        "score": 0.09298006940840081,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0397@5",
+      "source_id": "139958",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        2.856875,
+        2.943333,
+        2.937667,
+        2.873166,
+        2.471208
+      ],
+      "cpu_ms": [
+        3.61,
+        3.696,
+        3.667,
+        3.627,
+        3.175
+      ],
+      "median_wall_ms": 2.873166,
+      "median_cpu_ms": 3.627,
+      "hit": {
+        "content_id": "139958",
+        "votes": 37,
+        "vote_fraction": 0.7872340425531915,
+        "mean_distance": 7.194100856781006,
+        "offset_sec": 86.95500000000001,
+        "max_time_residual_sec": 0.09300000000001774,
+        "score": 0.09607326738011995,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0065@5",
+      "source_id": "005284",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        3.275291,
+        3.23,
+        2.969875,
+        3.25225,
+        3.144292
+      ],
+      "cpu_ms": [
+        4.289,
+        4.212,
+        3.933,
+        4.207,
+        4.185
+      ],
+      "median_wall_ms": 3.23,
+      "median_cpu_ms": 4.207,
+      "hit": {
+        "content_id": "005284",
+        "votes": 47,
+        "vote_fraction": 1.0,
+        "mean_distance": 1.2020859718322754,
+        "offset_sec": 71.61000000000001,
+        "max_time_residual_sec": 0.09300000000000352,
+        "score": 0.4541148768900864,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0391@5",
+      "source_id": "114246",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        3.176,
+        3.0725,
+        3.104458,
+        3.148834,
+        3.077042
+      ],
+      "cpu_ms": [
+        4.476,
+        4.323,
+        4.31,
+        4.325,
+        4.394
+      ],
+      "median_wall_ms": 3.104458,
+      "median_cpu_ms": 4.325,
+      "hit": {
+        "content_id": "114246",
+        "votes": 43,
+        "vote_fraction": 0.9148936170212766,
+        "mean_distance": 4.3273749351501465,
+        "offset_sec": 35.619,
+        "max_time_residual_sec": 0.09300000000000352,
+        "score": 0.1717344148212259,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0624@5",
+      "source_id": "010699",
+      "searched_fingerprints": 43,
+      "wall_ms": [
+        2.019542,
+        2.326833,
+        2.2605,
+        2.36775,
+        2.388625
+      ],
+      "cpu_ms": [
+        3.082,
+        3.344,
+        3.312,
+        3.388,
+        3.384
+      ],
+      "median_wall_ms": 2.326833,
+      "median_cpu_ms": 3.344,
+      "hit": {
+        "content_id": "010699",
+        "votes": 41,
+        "vote_fraction": 0.9534883720930233,
+        "mean_distance": 1.1800495386123657,
+        "offset_sec": 75.516,
+        "max_time_residual_sec": 0.09300000000000352,
+        "score": 0.4373700483429991,
+        "query_fingerprints": 43
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0796@5",
+      "source_id": "092158",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        2.498041,
+        2.532,
+        2.62075,
+        2.595125,
+        2.350458
+      ],
+      "cpu_ms": [
+        3.459,
+        3.443,
+        3.526,
+        3.6,
+        3.322
+      ],
+      "median_wall_ms": 2.532,
+      "median_cpu_ms": 3.459,
+      "hit": {
+        "content_id": "022793",
+        "votes": 5,
+        "vote_fraction": 0.10638297872340426,
+        "mean_distance": 5.3987226486206055,
+        "offset_sec": -2.139,
+        "max_time_residual_sec": 0.09300000000000042,
+        "score": 0.01662565867678881,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0230@5",
+      "source_id": "115762",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        2.40525,
+        2.317708,
+        2.375083,
+        2.528625,
+        2.387542
+      ],
+      "cpu_ms": [
+        3.216,
+        3.131,
+        3.162,
+        3.38,
+        3.195
+      ],
+      "median_wall_ms": 2.387542,
+      "median_cpu_ms": 3.195,
+      "hit": {
+        "content_id": "115762",
+        "votes": 23,
+        "vote_fraction": 0.48936170212765956,
+        "mean_distance": 8.09578800201416,
+        "offset_sec": 101.64900000000002,
+        "max_time_residual_sec": 0.09300000000001774,
+        "score": 0.053800913347946976,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0987@5",
+      "source_id": "133677",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        2.372875,
+        2.607375,
+        2.671917,
+        2.50725,
+        2.642333
+      ],
+      "cpu_ms": [
+        3.974,
+        4.167,
+        4.219,
+        4.14,
+        4.206
+      ],
+      "median_wall_ms": 2.607375,
+      "median_cpu_ms": 4.167,
+      "hit": {
+        "content_id": "137050",
+        "votes": 7,
+        "vote_fraction": 0.14893617021276595,
+        "mean_distance": 5.220343112945557,
+        "offset_sec": 184.233,
+        "max_time_residual_sec": 0.09300000000001774,
+        "score": 0.023943401112843002,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0565@5",
+      "source_id": "104648",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        2.824,
+        2.871959,
+        2.870917,
+        2.824291,
+        2.764
+      ],
+      "cpu_ms": [
+        4.03,
+        4.182,
+        4.107,
+        4.109,
+        3.922
+      ],
+      "median_wall_ms": 2.824291,
+      "median_cpu_ms": 4.107,
+      "hit": {
+        "content_id": "022473",
+        "votes": 5,
+        "vote_fraction": 0.10638297872340426,
+        "mean_distance": 13.182133674621582,
+        "offset_sec": 153.078,
+        "max_time_residual_sec": 0.09299999999998931,
+        "score": 0.007501197010557923,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0468@5",
+      "source_id": "147302",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        3.208292,
+        3.147708,
+        3.304,
+        2.805459,
+        3.208292
+      ],
+      "cpu_ms": [
+        4.203,
+        4.189,
+        4.335,
+        3.882,
+        4.284
+      ],
+      "median_wall_ms": 3.208292,
+      "median_cpu_ms": 4.203,
+      "hit": {
+        "content_id": "147302",
+        "votes": 47,
+        "vote_fraction": 1.0,
+        "mean_distance": 0.6515947580337524,
+        "offset_sec": 209.715,
+        "max_time_residual_sec": 0.09300000000001774,
+        "score": 0.6054754019627154,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0073@5",
+      "source_id": "041404",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        2.917333,
+        2.889375,
+        2.914625,
+        2.948125,
+        2.9875
+      ],
+      "cpu_ms": [
+        3.879,
+        3.789,
+        3.791,
+        3.826,
+        3.842
+      ],
+      "median_wall_ms": 2.917333,
+      "median_cpu_ms": 3.826,
+      "hit": {
+        "content_id": "041404",
+        "votes": 45,
+        "vote_fraction": 0.9574468085106383,
+        "mean_distance": 4.364586353302002,
+        "offset_sec": 25.389000000000003,
+        "max_time_residual_sec": 0.09299999999999997,
+        "score": 0.17847542111449322,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0848@5",
+      "source_id": "123373",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        3.493666,
+        3.069042,
+        3.589333,
+        3.4815,
+        3.402334
+      ],
+      "cpu_ms": [
+        4.216,
+        3.829,
+        4.319,
+        4.268,
+        4.108
+      ],
+      "median_wall_ms": 3.4815,
+      "median_cpu_ms": 4.216,
+      "hit": {
+        "content_id": "123373",
+        "votes": 47,
+        "vote_fraction": 1.0,
+        "mean_distance": 0.8105896711349487,
+        "offset_sec": 42.687,
+        "max_time_residual_sec": 0.09300000000000352,
+        "score": 0.552306254665178,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0030@5",
+      "source_id": "141295",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        2.4185,
+        2.56775,
+        2.455084,
+        2.453875,
+        2.190834
+      ],
+      "cpu_ms": [
+        3.747,
+        3.941,
+        3.796,
+        3.842,
+        3.59
+      ],
+      "median_wall_ms": 2.453875,
+      "median_cpu_ms": 3.796,
+      "hit": {
+        "content_id": "141295",
+        "votes": 47,
+        "vote_fraction": 1.0,
+        "mean_distance": 0.8245274424552917,
+        "offset_sec": 65.937,
+        "max_time_residual_sec": 0.09300000000000352,
+        "score": 0.5480871247703932,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0095@5",
+      "source_id": "144600",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        3.46325,
+        3.381958,
+        3.445916,
+        3.354958,
+        3.391333
+      ],
+      "cpu_ms": [
+        4.743,
+        4.703,
+        4.622,
+        4.562,
+        4.591
+      ],
+      "median_wall_ms": 3.391333,
+      "median_cpu_ms": 4.622,
+      "hit": {
+        "content_id": "144600",
+        "votes": 47,
+        "vote_fraction": 1.0,
+        "mean_distance": 0.2717777192592621,
+        "offset_sec": 18.6,
+        "max_time_residual_sec": 0.09299999999999997,
+        "score": 0.7863009273212012,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0568@5",
+      "source_id": "046339",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        3.46075,
+        3.517041,
+        3.4305,
+        3.465334,
+        3.07025
+      ],
+      "cpu_ms": [
+        4.794,
+        4.798,
+        4.705,
+        4.696,
+        4.307
+      ],
+      "median_wall_ms": 3.46075,
+      "median_cpu_ms": 4.705,
+      "hit": {
+        "content_id": "046339",
+        "votes": 45,
+        "vote_fraction": 0.9574468085106383,
+        "mean_distance": 1.6248838901519775,
+        "offset_sec": 62.496,
+        "max_time_residual_sec": 0.09300000000000352,
+        "score": 0.36475777542114574,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0963@5",
+      "source_id": "113225",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        2.06425,
+        1.851625,
+        1.863959,
+        1.943042,
+        2.189875
+      ],
+      "cpu_ms": [
+        2.999,
+        2.791,
+        2.834,
+        2.914,
+        3.148
+      ],
+      "median_wall_ms": 1.943042,
+      "median_cpu_ms": 2.914,
+      "hit": {
+        "content_id": "037978",
+        "votes": 6,
+        "vote_fraction": 0.1276595744680851,
+        "mean_distance": 13.754612922668457,
+        "offset_sec": 182.373,
+        "max_time_residual_sec": 0.09300000000001774,
+        "score": 0.008652180517182766,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0775@5",
+      "source_id": "011722",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        3.122667,
+        2.971125,
+        2.949042,
+        3.142584,
+        2.959625
+      ],
+      "cpu_ms": [
+        4.357,
+        4.118,
+        4.158,
+        4.264,
+        4.186
+      ],
+      "median_wall_ms": 2.971125,
+      "median_cpu_ms": 4.186,
+      "hit": {
+        "content_id": "011722",
+        "votes": 47,
+        "vote_fraction": 1.0,
+        "mean_distance": 1.0485126972198486,
+        "offset_sec": 277.88399999999996,
+        "max_time_residual_sec": 0.09300000000001774,
+        "score": 0.4881590440504255,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0130@5",
+      "source_id": "114489",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        2.387875,
+        2.513959,
+        2.5215,
+        2.381292,
+        2.238083
+      ],
+      "cpu_ms": [
+        3.25,
+        3.333,
+        3.36,
+        3.312,
+        3.124
+      ],
+      "median_wall_ms": 2.387875,
+      "median_cpu_ms": 3.312,
+      "hit": {
+        "content_id": "114489",
+        "votes": 41,
+        "vote_fraction": 0.8723404255319149,
+        "mean_distance": 1.3466581106185913,
+        "offset_sec": 5.022,
+        "max_time_residual_sec": 0.09300000000000175,
+        "score": 0.3717373321595456,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0999@5",
+      "source_id": "074914",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        2.49625,
+        2.529333,
+        2.481041,
+        2.482542,
+        2.522083
+      ],
+      "cpu_ms": [
+        3.141,
+        3.133,
+        3.069,
+        3.093,
+        3.097
+      ],
+      "median_wall_ms": 2.49625,
+      "median_cpu_ms": 3.097,
+      "hit": {
+        "content_id": "074914",
+        "votes": 35,
+        "vote_fraction": 0.7446808510638298,
+        "mean_distance": 17.645505905151367,
+        "offset_sec": 42.873,
+        "max_time_residual_sec": 0.09300000000000352,
+        "score": 0.03993889223773166,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0740@5",
+      "source_id": "135165",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        2.2945,
+        2.214792,
+        2.52025,
+        2.406958,
+        2.416416
+      ],
+      "cpu_ms": [
+        3.16,
+        3.149,
+        3.373,
+        3.246,
+        3.236
+      ],
+      "median_wall_ms": 2.406958,
+      "median_cpu_ms": 3.236,
+      "hit": {
+        "content_id": "135165",
+        "votes": 42,
+        "vote_fraction": 0.8936170212765957,
+        "mean_distance": 10.314863204956055,
+        "offset_sec": 102.672,
+        "max_time_residual_sec": 0.09300000000001774,
+        "score": 0.07897727131912474,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0132@5",
+      "source_id": "131151",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        2.33625,
+        2.724542,
+        2.852042,
+        2.7525,
+        2.757167
+      ],
+      "cpu_ms": [
+        3.108,
+        3.502,
+        3.68,
+        3.518,
+        3.537
+      ],
+      "median_wall_ms": 2.7525,
+      "median_cpu_ms": 3.518,
+      "hit": {
+        "content_id": "131151",
+        "votes": 28,
+        "vote_fraction": 0.5957446808510638,
+        "mean_distance": 7.281497478485107,
+        "offset_sec": 83.421,
+        "max_time_residual_sec": 0.09300000000000352,
+        "score": 0.07193683055495421,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0117@5",
+      "source_id": "122694",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        3.134125,
+        2.690625,
+        3.188458,
+        3.111958,
+        3.140167
+      ],
+      "cpu_ms": [
+        4.296,
+        3.832,
+        4.319,
+        4.232,
+        4.15
+      ],
+      "median_wall_ms": 3.134125,
+      "median_cpu_ms": 4.232,
+      "hit": {
+        "content_id": "122694",
+        "votes": 45,
+        "vote_fraction": 0.9574468085106383,
+        "mean_distance": 2.255758285522461,
+        "offset_sec": 269.421,
+        "max_time_residual_sec": 0.09300000000001774,
+        "score": 0.2940779764788325,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0219@5",
+      "source_id": "025151",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        2.3785,
+        2.361,
+        2.301334,
+        2.301625,
+        2.263042
+      ],
+      "cpu_ms": [
+        3.439,
+        3.407,
+        3.316,
+        3.331,
+        3.275
+      ],
+      "median_wall_ms": 2.301625,
+      "median_cpu_ms": 3.331,
+      "hit": {
+        "content_id": "025151",
+        "votes": 12,
+        "vote_fraction": 0.2553191489361702,
+        "mean_distance": 6.453641891479492,
+        "offset_sec": 25.947000000000003,
+        "max_time_residual_sec": 0.09300000000000352,
+        "score": 0.0342542816858473,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0606@5",
+      "source_id": "144016",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        2.752,
+        2.700208,
+        2.891791,
+        2.478167,
+        2.833
+      ],
+      "cpu_ms": [
+        3.524,
+        3.407,
+        3.608,
+        3.231,
+        3.588
+      ],
+      "median_wall_ms": 2.752,
+      "median_cpu_ms": 3.524,
+      "hit": {
+        "content_id": "144016",
+        "votes": 47,
+        "vote_fraction": 1.0,
+        "mean_distance": 0.8497868776321411,
+        "offset_sec": 164.424,
+        "max_time_residual_sec": 0.09300000000001774,
+        "score": 0.5406028186771825,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0980@5",
+      "source_id": "122716",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        2.832333,
+        2.700416,
+        2.78275,
+        2.535667,
+        2.973208
+      ],
+      "cpu_ms": [
+        3.73,
+        3.557,
+        3.656,
+        3.497,
+        3.809
+      ],
+      "median_wall_ms": 2.78275,
+      "median_cpu_ms": 3.656,
+      "hit": {
+        "content_id": "122716",
+        "votes": 35,
+        "vote_fraction": 0.7446808510638298,
+        "mean_distance": 4.717610836029053,
+        "offset_sec": 79.70100000000001,
+        "max_time_residual_sec": 0.09300000000000352,
+        "score": 0.13024336080575558,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0846@5",
+      "source_id": "037978",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        3.382125,
+        3.051583,
+        3.45775,
+        2.834125,
+        3.453708
+      ],
+      "cpu_ms": [
+        4.578,
+        4.255,
+        4.677,
+        4.009,
+        4.595
+      ],
+      "median_wall_ms": 3.382125,
+      "median_cpu_ms": 4.578,
+      "hit": {
+        "content_id": "037978",
+        "votes": 46,
+        "vote_fraction": 0.9787234042553191,
+        "mean_distance": 4.235897064208984,
+        "offset_sec": 92.16300000000001,
+        "max_time_residual_sec": 0.09300000000001774,
+        "score": 0.18692563895985992,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0010@5",
+      "source_id": "022473",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        3.2505,
+        3.203167,
+        3.440667,
+        3.251542,
+        3.490875
+      ],
+      "cpu_ms": [
+        4.566,
+        4.468,
+        4.805,
+        4.607,
+        4.768
+      ],
+      "median_wall_ms": 3.251542,
+      "median_cpu_ms": 4.607,
+      "hit": {
+        "content_id": "022473",
+        "votes": 44,
+        "vote_fraction": 0.9361702127659575,
+        "mean_distance": 1.4451922178268433,
+        "offset_sec": 110.949,
+        "max_time_residual_sec": 0.09300000000000352,
+        "score": 0.3828616032476889,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0229@5",
+      "source_id": "019604",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        3.016,
+        2.949375,
+        2.734208,
+        2.896375,
+        2.886958
+      ],
+      "cpu_ms": [
+        4.126,
+        4.036,
+        3.814,
+        3.947,
+        3.956
+      ],
+      "median_wall_ms": 2.896375,
+      "median_cpu_ms": 3.956,
+      "hit": {
+        "content_id": "019604",
+        "votes": 47,
+        "vote_fraction": 1.0,
+        "mean_distance": 0.5089031457901001,
+        "offset_sec": 96.906,
+        "max_time_residual_sec": 0.09300000000000352,
+        "score": 0.6627330606275424,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0575@5",
+      "source_id": "131072",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        2.261875,
+        2.304417,
+        2.283459,
+        2.031458,
+        2.282125
+      ],
+      "cpu_ms": [
+        3.54,
+        3.56,
+        3.518,
+        3.315,
+        3.494
+      ],
+      "median_wall_ms": 2.282125,
+      "median_cpu_ms": 3.518,
+      "hit": {
+        "content_id": "127192",
+        "votes": 8,
+        "vote_fraction": 0.1702127659574468,
+        "mean_distance": 2.4010658264160156,
+        "offset_sec": 130.293,
+        "max_time_residual_sec": 0.09300000000001774,
+        "score": 0.050046889606019204,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0196@5",
+      "source_id": "052675",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        3.069625,
+        3.131541,
+        3.062209,
+        3.05925,
+        3.080292
+      ],
+      "cpu_ms": [
+        4.269,
+        4.198,
+        4.294,
+        4.25,
+        4.183
+      ],
+      "median_wall_ms": 3.069625,
+      "median_cpu_ms": 4.25,
+      "hit": {
+        "content_id": "052675",
+        "votes": 47,
+        "vote_fraction": 1.0,
+        "mean_distance": 0.82884681224823,
+        "offset_sec": 136.71,
+        "max_time_residual_sec": 0.09300000000001774,
+        "score": 0.5467926527813909,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0920@5",
+      "source_id": "154932",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        3.34225,
+        3.2845,
+        3.2625,
+        3.343542,
+        3.293833
+      ],
+      "cpu_ms": [
+        4.508,
+        4.459,
+        4.424,
+        4.502,
+        4.517
+      ],
+      "median_wall_ms": 3.293833,
+      "median_cpu_ms": 4.502,
+      "hit": {
+        "content_id": "154932",
+        "votes": 47,
+        "vote_fraction": 1.0,
+        "mean_distance": 1.0306642055511475,
+        "offset_sec": 343.35599999999994,
+        "max_time_residual_sec": 0.09300000000001774,
+        "score": 0.49244971042791763,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0751@5",
+      "source_id": "114246",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        2.750125,
+        2.756583,
+        2.6585,
+        2.689792,
+        2.823959
+      ],
+      "cpu_ms": [
+        4.091,
+        4.052,
+        3.898,
+        3.914,
+        4.188
+      ],
+      "median_wall_ms": 2.750125,
+      "median_cpu_ms": 4.052,
+      "hit": {
+        "content_id": "114246",
+        "votes": 42,
+        "vote_fraction": 0.8936170212765957,
+        "mean_distance": 5.796252250671387,
+        "offset_sec": 236.77800000000002,
+        "max_time_residual_sec": 0.09300000000001774,
+        "score": 0.1314867353824775,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0430@5",
+      "source_id": "075211",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        2.168625,
+        2.405042,
+        2.425833,
+        2.325166,
+        2.494375
+      ],
+      "cpu_ms": [
+        3.327,
+        3.575,
+        3.523,
+        3.428,
+        3.712
+      ],
+      "median_wall_ms": 2.405042,
+      "median_cpu_ms": 3.523,
+      "hit": {
+        "content_id": "141295",
+        "votes": 5,
+        "vote_fraction": 0.10638297872340426,
+        "mean_distance": 19.729597091674805,
+        "offset_sec": 41.292,
+        "max_time_residual_sec": 0.09300000000000352,
+        "score": 0.005131936634027906,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0003@5",
+      "source_id": "111086",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        2.377542,
+        2.849709,
+        2.575959,
+        2.726625,
+        2.710834
+      ],
+      "cpu_ms": [
+        3.333,
+        3.827,
+        3.507,
+        3.612,
+        3.626
+      ],
+      "median_wall_ms": 2.710834,
+      "median_cpu_ms": 3.612,
+      "hit": {
+        "content_id": "111086",
+        "votes": 47,
+        "vote_fraction": 1.0,
+        "mean_distance": 1.4163074493408203,
+        "offset_sec": 40.548,
+        "max_time_residual_sec": 0.09300000000000352,
+        "score": 0.41385461948263436,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0413@5",
+      "source_id": "065664",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        2.588084,
+        2.638292,
+        2.672708,
+        2.637458,
+        2.723833
+      ],
+      "cpu_ms": [
+        3.747,
+        3.689,
+        3.701,
+        3.789,
+        3.799
+      ],
+      "median_wall_ms": 2.638292,
+      "median_cpu_ms": 3.747,
+      "hit": {
+        "content_id": "065664",
+        "votes": 47,
+        "vote_fraction": 1.0,
+        "mean_distance": 1.680566668510437,
+        "offset_sec": 68.448,
+        "max_time_residual_sec": 0.09300000000001774,
+        "score": 0.3730554482182268,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0956@5",
+      "source_id": "154773",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        2.540625,
+        2.4945,
+        2.474875,
+        2.435791,
+        2.468041
+      ],
+      "cpu_ms": [
+        4.177,
+        4.154,
+        4.083,
+        4.064,
+        4.075
+      ],
+      "median_wall_ms": 2.474875,
+      "median_cpu_ms": 4.083,
+      "hit": {
+        "content_id": "154773",
+        "votes": 46,
+        "vote_fraction": 0.9787234042553191,
+        "mean_distance": 0.7510802149772644,
+        "offset_sec": 487.97099999999995,
+        "max_time_residual_sec": 0.09300000000007458,
+        "score": 0.558925511169702,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0623@5",
+      "source_id": "143226",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        4.332708,
+        4.164,
+        4.38825,
+        4.214625,
+        4.290375
+      ],
+      "cpu_ms": [
+        5.758,
+        5.627,
+        5.861,
+        5.66,
+        5.725
+      ],
+      "median_wall_ms": 4.290375,
+      "median_cpu_ms": 5.725,
+      "hit": {
+        "content_id": "143226",
+        "votes": 47,
+        "vote_fraction": 1.0,
+        "mean_distance": 0.14762897789478302,
+        "offset_sec": 48.36,
+        "max_time_residual_sec": 0.09300000000000352,
+        "score": 0.8713617547671247,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0717@5",
+      "source_id": "020126",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        2.656541,
+        3.140167,
+        3.176,
+        2.6835,
+        3.371333
+      ],
+      "cpu_ms": [
+        3.221,
+        3.669,
+        3.735,
+        3.266,
+        3.931
+      ],
+      "median_wall_ms": 3.140167,
+      "median_cpu_ms": 3.669,
+      "hit": {
+        "content_id": "020126",
+        "votes": 47,
+        "vote_fraction": 1.0,
+        "mean_distance": 1.343953251838684,
+        "offset_sec": 25.854,
+        "max_time_residual_sec": 0.09300000000000352,
+        "score": 0.42662966900707716,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0266@5",
+      "source_id": "152563",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        3.423958,
+        3.423875,
+        3.379,
+        3.4165,
+        3.384958
+      ],
+      "cpu_ms": [
+        4.899,
+        4.884,
+        4.882,
+        4.862,
+        4.852
+      ],
+      "median_wall_ms": 3.4165,
+      "median_cpu_ms": 4.882,
+      "hit": {
+        "content_id": "152563",
+        "votes": 47,
+        "vote_fraction": 1.0,
+        "mean_distance": 1.0756372213363647,
+        "offset_sec": 93.65100000000001,
+        "max_time_residual_sec": 0.09300000000000352,
+        "score": 0.4817797588714306,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0985@5",
+      "source_id": "154932",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        2.666959,
+        2.246541,
+        2.692708,
+        2.593959,
+        2.404375
+      ],
+      "cpu_ms": [
+        3.695,
+        3.162,
+        3.599,
+        3.58,
+        3.299
+      ],
+      "median_wall_ms": 2.593959,
+      "median_cpu_ms": 3.58,
+      "hit": {
+        "content_id": "111110",
+        "votes": 3,
+        "vote_fraction": 0.06382978723404255,
+        "mean_distance": 9.797150611877441,
+        "offset_sec": 455.60699999999997,
+        "max_time_residual_sec": 0.09300000000001774,
+        "score": 0.0059117251882942505,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0750@5",
+      "source_id": "113798",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        2.457917,
+        2.492125,
+        2.421416,
+        2.491541,
+        2.524833
+      ],
+      "cpu_ms": [
+        3.885,
+        3.852,
+        3.744,
+        3.831,
+        3.808
+      ],
+      "median_wall_ms": 2.491541,
+      "median_cpu_ms": 3.831,
+      "hit": {
+        "content_id": "131080",
+        "votes": 7,
+        "vote_fraction": 0.14893617021276595,
+        "mean_distance": 2.7352073192596436,
+        "offset_sec": 28.179,
+        "max_time_residual_sec": 0.09299999999999997,
+        "score": 0.03987360204741905,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0393@5",
+      "source_id": "139194",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        3.273041,
+        2.761542,
+        3.340834,
+        3.327875,
+        3.190292
+      ],
+      "cpu_ms": [
+        4.499,
+        3.866,
+        4.396,
+        4.523,
+        4.291
+      ],
+      "median_wall_ms": 3.273041,
+      "median_cpu_ms": 4.396,
+      "hit": {
+        "content_id": "139194",
+        "votes": 47,
+        "vote_fraction": 1.0,
+        "mean_distance": 0.9505414962768555,
+        "offset_sec": 17.019000000000002,
+        "max_time_residual_sec": 0.09300000000000352,
+        "score": 0.5126781470216218,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0328@5",
+      "source_id": "096703",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        2.31725,
+        2.233333,
+        2.380291,
+        2.337708,
+        2.3875
+      ],
+      "cpu_ms": [
+        3.12,
+        3.064,
+        3.194,
+        3.221,
+        3.219
+      ],
+      "median_wall_ms": 2.337708,
+      "median_cpu_ms": 3.194,
+      "hit": {
+        "content_id": "096703",
+        "votes": 36,
+        "vote_fraction": 0.7659574468085106,
+        "mean_distance": 10.881328582763672,
+        "offset_sec": 80.63100000000001,
+        "max_time_residual_sec": 0.09300000000001774,
+        "score": 0.0644673229490253,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0727@5",
+      "source_id": "113025",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        2.948833,
+        2.969917,
+        2.934208,
+        2.9045,
+        2.5345
+      ],
+      "cpu_ms": [
+        3.888,
+        3.89,
+        3.816,
+        3.82,
+        3.426
+      ],
+      "median_wall_ms": 2.934208,
+      "median_cpu_ms": 3.82,
+      "hit": {
+        "content_id": "113025",
+        "votes": 46,
+        "vote_fraction": 0.9787234042553191,
+        "mean_distance": 1.2050480842590332,
+        "offset_sec": 194.649,
+        "max_time_residual_sec": 0.09300000000001774,
+        "score": 0.44385581032996,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0540@5",
+      "source_id": "115596",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        2.783542,
+        2.643583,
+        2.781959,
+        2.634792,
+        2.310584
+      ],
+      "cpu_ms": [
+        3.627,
+        3.513,
+        3.647,
+        3.439,
+        3.181
+      ],
+      "median_wall_ms": 2.643583,
+      "median_cpu_ms": 3.513,
+      "hit": {
+        "content_id": "115596",
+        "votes": 34,
+        "vote_fraction": 0.723404255319149,
+        "mean_distance": 6.161262512207031,
+        "offset_sec": 591.48,
+        "max_time_residual_sec": 0.09300000000007458,
+        "score": 0.10101630181634032,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0864@5",
+      "source_id": "142241",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        3.314375,
+        3.136625,
+        3.147667,
+        3.154375,
+        3.309958
+      ],
+      "cpu_ms": [
+        4.38,
+        4.231,
+        4.209,
+        4.227,
+        4.393
+      ],
+      "median_wall_ms": 3.154375,
+      "median_cpu_ms": 4.231,
+      "hit": {
+        "content_id": "142241",
+        "votes": 46,
+        "vote_fraction": 0.9787234042553191,
+        "mean_distance": 1.2425436973571777,
+        "offset_sec": 13.485,
+        "max_time_residual_sec": 0.09300000000000352,
+        "score": 0.43643448527167517,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0492@5",
+      "source_id": "003951",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        3.23225,
+        3.141958,
+        2.775708,
+        3.308458,
+        3.415084
+      ],
+      "cpu_ms": [
+        4.287,
+        4.213,
+        3.811,
+        4.452,
+        4.496
+      ],
+      "median_wall_ms": 3.23225,
+      "median_cpu_ms": 4.287,
+      "hit": {
+        "content_id": "003951",
+        "votes": 47,
+        "vote_fraction": 1.0,
+        "mean_distance": 1.6061797142028809,
+        "offset_sec": 65.658,
+        "max_time_residual_sec": 0.09300000000000352,
+        "score": 0.38370339334248765,
+        "query_fingerprints": 47
+      }
+    },
+    {
+      "query_id": "pexafb_hard_medium:chunk0889@5",
+      "source_id": "120056",
+      "searched_fingerprints": 47,
+      "wall_ms": [
+        3.243625,
+        3.32925,
+        2.846458,
+        2.850292,
+        3.371042
+      ],
+      "cpu_ms": [
+        4.046,
+        4.137,
+        3.71,
+        3.745,
+        4.212
+      ],
+      "median_wall_ms": 3.243625,
+      "median_cpu_ms": 4.046,
+      "hit": {
+        "content_id": "120056",
+        "votes": 47,
+        "vote_fraction": 1.0,
+        "mean_distance": 1.7601407766342163,
+        "offset_sec": 66.774,
+        "max_time_residual_sec": 0.09300000000001774,
+        "score": 0.36230036107775077,
+        "query_fingerprints": 47
+      }
+    }
+  ],
+  "configuration": {
+    "factor": 8,
+    "query_stride": 4,
+    "nlist": 512,
+    "nprobe": 16,
+    "threads": 4
+  },
+  "environment": {
+    "platform": "macOS-14.6.1-arm64-arm-64bit",
+    "numpy": "2.5.3",
+    "faiss": "1.15.1"
+  },
+  "enrollment_scope": "Cached feature reads, PCA projection, metadata and index population; frozen centroid training excluded.",
+  "query_scope": "Original-grid query thinning done before timing; matching includes ANN and the unchanged temporal vote rule.",
+  "other_process_cpu_activity": [
+    {
+      "pid": 9938,
+      "name": "replayd",
+      "cpu_s": 2.3598202880002646,
+      "single_core_percent": 91.64555723277641
+    },
+    {
+      "pid": 76871,
+      "name": "ChatGPT",
+      "cpu_s": 0.5604638719996728,
+      "single_core_percent": 21.766074357202804
+    },
+    {
+      "pid": 77009,
+      "name": "SkyComputerUseService",
+      "cpu_s": 0.5166858239990688,
+      "single_core_percent": 20.06591794106382
+    },
+    {
+      "pid": 76893,
+      "name": "Codex (Service)",
+      "cpu_s": 0.13788774400018156,
+      "single_core_percent": 5.3549836819038505
+    },
+    {
+      "pid": 76848,
+      "name": "Codex (Renderer)",
+      "cpu_s": 0.1350860800000646,
+      "single_core_percent": 5.246178761556586
+    },
+    {
+      "pid": 76941,
+      "name": "Codex (Renderer)",
+      "cpu_s": 0.12442009599999437,
+      "single_core_percent": 4.831956520950862
+    },
+    {
+      "pid": 28870,
+      "name": "Notion Helper",
+      "cpu_s": 0.09227468799997496,
+      "single_core_percent": 3.583563224386239
+    }
+  ],
+  "worker_total_wall_s": 2.574942375009414,
+  "metadata_accounting": "Per-row arrays, track boundaries when present, and UTF-8 content-ID lookup bytes; Python container overhead excluded.",
+  "derived_accounting_revision": "Include common UTF-8 lookup in both variants; timings, RSS, descriptors and decisions unchanged."
+}

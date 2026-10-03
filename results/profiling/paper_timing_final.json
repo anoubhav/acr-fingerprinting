@@ -1,0 +1,164 @@
+[
+  {
+    "key": "acr_compact",
+    "label": "ACR compact, IVF512/probe16, $k=8,q=4$",
+    "audio_sha256": "6babcce373d2715523dee8a850193c4eff6887a2218e1e55a41f223430511164",
+    "n_queries": 50,
+    "repeats": 5,
+    "aggregation": "Quantiles over50 per-query raw-repeat medians.",
+    "query_frames": 47.0,
+    "encoded_query_frames": 185.0,
+    "encoder": {
+      "p50": 1.6148755000000001,
+      "p95": 1.8517143999999999
+    },
+    "matching": {
+      "p50": 4.213749999999999,
+      "p95": 5.0119519
+    },
+    "pipeline": {
+      "p50": 5.7870415,
+      "p95": 6.772552199999999
+    },
+    "query_frames_range": [
+      43,
+      47
+    ],
+    "encoded_query_frames_range": [
+      171,
+      185
+    ]
+  },
+  {
+    "key": "audfprint",
+    "label": "Audfprint candidate floor1",
+    "audio_sha256": "6babcce373d2715523dee8a850193c4eff6887a2218e1e55a41f223430511164",
+    "n_queries": 50,
+    "repeats": 5,
+    "aggregation": "Quantiles over50 per-query raw-repeat medians.",
+    "query_frames": null,
+    "encoded_query_frames": null,
+    "encoder": {
+      "p50": 18.098312488291413,
+      "p95": 19.071474848897196
+    },
+    "matching": {
+      "p50": 3.8058125064708292,
+      "p95": 5.202725002891384
+    },
+    "pipeline": {
+      "p50": 21.714812522986904,
+      "p95": 23.76018507347908
+    }
+  },
+  {
+    "key": "soundfingerprinting",
+    "label": "Public MinHash native votes4",
+    "audio_sha256": "6babcce373d2715523dee8a850193c4eff6887a2218e1e55a41f223430511164",
+    "n_queries": 50,
+    "repeats": 5,
+    "aggregation": "Quantiles over50 per-query raw-repeat medians.",
+    "query_frames": null,
+    "encoded_query_frames": null,
+    "encoder": {
+      "p50": 2.4368499999999997,
+      "p95": 8.77906
+    },
+    "matching": {
+      "p50": 3.0117,
+      "p95": 7.59197
+    },
+    "pipeline": {
+      "p50": 5.231249999999999,
+      "p95": 15.818179999999996
+    }
+  },
+  {
+    "key": "nmfp_native",
+    "label": "NMFP native, IVF1024/probe16",
+    "audio_sha256": "6babcce373d2715523dee8a850193c4eff6887a2218e1e55a41f223430511164",
+    "n_queries": 50,
+    "repeats": 5,
+    "aggregation": "Quantiles over50 per-query raw-repeat medians.",
+    "query_frames": 9,
+    "encoded_query_frames": 9,
+    "encoder": {
+      "p50": 76.981729012914,
+      "p95": 78.25643994729035
+    },
+    "matching": {
+      "p50": 1.042167015839368,
+      "p95": 1.3712206709897146
+    },
+    "pipeline": {
+      "p50": 78.00716647761874,
+      "p95": 79.24601426057052
+    }
+  },
+  {
+    "key": "peak_native",
+    "label": "PeakNetFP native, IVF1024/probe16",
+    "audio_sha256": "6babcce373d2715523dee8a850193c4eff6887a2218e1e55a41f223430511164",
+    "n_queries": 50,
+    "repeats": 5,
+    "aggregation": "Quantiles over50 per-query raw-repeat medians.",
+    "query_frames": 9,
+    "encoded_query_frames": 9,
+    "encoder": {
+      "p50": 29.73074998590164,
+      "p95": 30.995035014348105
+    },
+    "matching": {
+      "p50": 3.3327079727314413,
+      "p95": 3.805495338747278
+    },
+    "pipeline": {
+      "p50": 33.09816651744768,
+      "p95": 34.584043436916545
+    }
+  },
+  {
+    "key": "nmfp_r2",
+    "label": "NMFP $r=q=2$, exact FlatIP",
+    "audio_sha256": "6babcce373d2715523dee8a850193c4eff6887a2218e1e55a41f223430511164",
+    "n_queries": 50,
+    "repeats": 5,
+    "aggregation": "Quantiles over50 per-query raw-repeat medians.",
+    "query_frames": 5,
+    "encoded_query_frames": 5,
+    "encoder": {
+      "p50": 52.76016649440862,
+      "p95": 53.93880640040152
+    },
+    "matching": {
+      "p50": 4.360874503618106,
+      "p95": 4.6862229850376025
+    },
+    "pipeline": {
+      "p50": 57.109770976239815,
+      "p95": 58.140460899448954
+    }
+  },
+  {
+    "key": "nmfp_r4",
+    "label": "NMFP $r=q=4$, exact FlatIP",
+    "audio_sha256": "6babcce373d2715523dee8a850193c4eff6887a2218e1e55a41f223430511164",
+    "n_queries": 50,
+    "repeats": 5,
+    "aggregation": "Quantiles over50 per-query raw-repeat medians.",
+    "query_frames": 3,
+    "encoded_query_frames": 3,
+    "encoder": {
+      "p50": 42.01402098988183,
+      "p95": 42.82355976756662
+    },
+    "matching": {
+      "p50": 1.4076245133765042,
+      "p95": 1.50276891363319
+    },
+    "pipeline": {
+      "p50": 43.37162501178682,
+      "p95": 44.25105799746234
+    }
+  }
+]

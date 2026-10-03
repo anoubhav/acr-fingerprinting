@@ -1,637 +1,635 @@
-[
-  {
-    "method": "PeakNetFP (native-IVF)",
-    "factor": 1,
-    "duration_s_requested": 5.0,
-    "threshold": 0.7009186148643495,
-    "threshold_target_calibration_fpr": 0.001,
-    "calibration_unknown": {
-      "accepted": 1,
-      "n": 1074
-    },
-    "calibration_known": {
-      "correct": 123,
-      "n": 147
-    },
-    "unknown_test": {
-      "false_accepts": 21,
-      "n": 4071,
-      "fpr": 0.005158437730287398,
-      "wilson_ci95": [
-        0.0033764871512430308,
-        0.007873388281692505
+{
+  "method": "PeakNetFP (native-IVF)",
+  "factor": 1,
+  "duration_s_requested": 5.0,
+  "threshold": 0.7009186148643495,
+  "threshold_target_calibration_fpr": 0.001,
+  "calibration_unknown": {
+    "accepted": 1,
+    "n": 1074
+  },
+  "calibration_known": {
+    "correct": 123,
+    "n": 147
+  },
+  "unknown_test": {
+    "false_accepts": 21,
+    "n": 4071,
+    "fpr": 0.005158437730287398,
+    "wilson_ci95": [
+      0.0033764871512430308,
+      0.007873388281692505
+    ],
+    "source_cluster_interval": {
+      "estimate": 0.005158437730287398,
+      "ci95": [
+        0.0031933185949398184,
+        0.0076148366494718745
       ],
-      "source_cluster_interval": {
-        "estimate": 0.005158437730287398,
-        "ci95": [
-          0.0031933185949398184,
-          0.0076148366494718745
-        ],
-        "n_queries": 4071,
-        "n_source_clusters": 4071,
-        "successes": 21
-      },
-      "n_source_clusters": 4071
+      "n_queries": 4071,
+      "n_source_clusters": 4071,
+      "successes": 21
     },
-    "unknown_test_populations": {
-      "additional_clean_FMA": {
-        "false_accepts": 20,
-        "n": 4000,
-        "wilson_ci95": [
-          0.0032391284674616835,
-          0.007710720389342788
-        ]
-      },
-      "official_distorted": {
-        "false_accepts": 1,
-        "n": 71,
-        "wilson_ci95": [
-          0.002490603270544213,
-          0.07556050520249005
-        ]
-      }
+    "n_source_clusters": 4071
+  },
+  "unknown_test_populations": {
+    "additional_clean_FMA": {
+      "false_accepts": 20,
+      "n": 4000,
+      "wilson_ci95": [
+        0.0032391284674616835,
+        0.007710720389342788
+      ]
     },
-    "test_known": {
-      "all": {
-        "correct_reference": {
-          "estimate": 0.848987108655617,
-          "ci95": [
-            0.818348623853211,
-            0.8779599271402551
-          ],
-          "n_queries": 543,
-          "n_source_clusters": 518,
-          "successes": 461
-        },
-        "localized_correct": {
-          "estimate": 0.7790055248618785,
-          "ci95": [
-            0.7416974169741697,
-            0.8127301918265221
-          ],
-          "n_queries": 543,
-          "n_source_clusters": 518,
-          "successes": 423
-        },
-        "accepted_correct": {
-          "estimate": 0.6187845303867403,
-          "ci95": [
-            0.5802902685477721,
-            0.65738746488946
-          ],
-          "n_queries": 543,
-          "n_source_clusters": 518,
-          "successes": 336
-        },
-        "accepted_localized": {
-          "estimate": 0.58195211786372,
-          "ci95": [
-            0.5414326625779309,
-            0.6222232360097324
-          ],
-          "n_queries": 543,
-          "n_source_clusters": 518,
-          "successes": 316
-        },
-        "accepted_wrong": {
-          "estimate": 0.001841620626151013,
-          "ci95": [
-            0.0,
-            0.00558659217877095
-          ],
-          "n_queries": 543,
-          "n_source_clusters": 518,
-          "successes": 1
-        }
-      },
-      "no_pitch_or_tempo": {
-        "correct_reference": {
-          "estimate": 0.9465116279069767,
-          "ci95": [
-            0.9234294231910646,
-            0.9656789666550252
-          ],
-          "n_queries": 430,
-          "n_source_clusters": 412,
-          "successes": 407
-        },
-        "localized_correct": {
-          "estimate": 0.8744186046511628,
-          "ci95": [
-            0.8418604651162791,
-            0.9039812646370023
-          ],
-          "n_queries": 430,
-          "n_source_clusters": 412,
-          "successes": 376
-        },
-        "accepted_correct": {
-          "estimate": 0.7069767441860465,
-          "ci95": [
-            0.6635939354411026,
-            0.7488374772264494
-          ],
-          "n_queries": 430,
-          "n_source_clusters": 412,
-          "successes": 304
-        },
-        "accepted_localized": {
-          "estimate": 0.6651162790697674,
-          "ci95": [
-            0.6200384122919335,
-            0.7065758871938327
-          ],
-          "n_queries": 430,
-          "n_source_clusters": 412,
-          "successes": 286
-        },
-        "accepted_wrong": {
-          "estimate": 0.002325581395348837,
-          "ci95": [
-            0.0,
-            0.007075471698113208
-          ],
-          "n_queries": 430,
-          "n_source_clusters": 412,
-          "successes": 1
-        }
-      },
-      "pitch_or_tempo": {
-        "correct_reference": {
-          "estimate": 0.4778761061946903,
-          "ci95": [
-            0.3893805309734513,
-            0.5714285714285714
-          ],
-          "n_queries": 113,
-          "n_source_clusters": 112,
-          "successes": 54
-        },
-        "localized_correct": {
-          "estimate": 0.415929203539823,
-          "ci95": [
-            0.3274336283185841,
-            0.5089285714285714
-          ],
-          "n_queries": 113,
-          "n_source_clusters": 112,
-          "successes": 47
-        },
-        "accepted_correct": {
-          "estimate": 0.2831858407079646,
-          "ci95": [
-            0.20353982300884957,
-            0.37168141592920356
-          ],
-          "n_queries": 113,
-          "n_source_clusters": 112,
-          "successes": 32
-        },
-        "accepted_localized": {
-          "estimate": 0.26548672566371684,
-          "ci95": [
-            0.18584070796460178,
-            0.3508771929824561
-          ],
-          "n_queries": 113,
-          "n_source_clusters": 112,
-          "successes": 30
-        },
-        "accepted_wrong": {
-          "estimate": 0.0,
-          "ci95": [
-            0.0,
-            0.0
-          ],
-          "n_queries": 113,
-          "n_source_clusters": 112,
-          "successes": 0
-        }
-      },
-      "no_overlap": {
-        "correct_reference": {
-          "estimate": 0.8409090909090909,
-          "ci95": [
-            0.8022598870056498,
-            0.8775015782828283
-          ],
-          "n_queries": 352,
-          "n_source_clusters": 345,
-          "successes": 296
-        },
-        "localized_correct": {
-          "estimate": 0.7670454545454546,
-          "ci95": [
-            0.7223796033994334,
-            0.8108977359861173
-          ],
-          "n_queries": 352,
-          "n_source_clusters": 345,
-          "successes": 270
-        },
-        "accepted_correct": {
-          "estimate": 0.6477272727272727,
-          "ci95": [
-            0.6,
-            0.698005698005698
-          ],
-          "n_queries": 352,
-          "n_source_clusters": 345,
-          "successes": 228
-        },
-        "accepted_localized": {
-          "estimate": 0.6051136363636364,
-          "ci95": [
-            0.5564815939002478,
-            0.65625
-          ],
-          "n_queries": 352,
-          "n_source_clusters": 345,
-          "successes": 213
-        },
-        "accepted_wrong": {
-          "estimate": 0.002840909090909091,
-          "ci95": [
-            0.0,
-            0.008595988538681949
-          ],
-          "n_queries": 352,
-          "n_source_clusters": 345,
-          "successes": 1
-        }
-      },
-      "overlap": {
-        "correct_reference": {
-          "estimate": 0.8638743455497382,
-          "ci95": [
-            0.8125,
-            0.91005291005291
-          ],
-          "n_queries": 191,
-          "n_source_clusters": 187,
-          "successes": 165
-        },
-        "localized_correct": {
-          "estimate": 0.8010471204188482,
-          "ci95": [
-            0.743455497382199,
-            0.8541666666666666
-          ],
-          "n_queries": 191,
-          "n_source_clusters": 187,
-          "successes": 153
-        },
-        "accepted_correct": {
-          "estimate": 0.5654450261780105,
-          "ci95": [
-            0.4947902960526316,
-            0.6321457116084224
-          ],
-          "n_queries": 191,
-          "n_source_clusters": 187,
-          "successes": 108
-        },
-        "accepted_localized": {
-          "estimate": 0.5392670157068062,
-          "ci95": [
-            0.46842105263157896,
-            0.6073298429319371
-          ],
-          "n_queries": 191,
-          "n_source_clusters": 187,
-          "successes": 103
-        },
-        "accepted_wrong": {
-          "estimate": 0.0,
-          "ci95": [
-            0.0,
-            0.0
-          ],
-          "n_queries": 191,
-          "n_source_clusters": 187,
-          "successes": 0
-        }
-      }
-    },
-    "test_known_crossed_ci": {
+    "official_distorted": {
+      "false_accepts": 1,
+      "n": 71,
+      "wilson_ci95": [
+        0.002490603270544213,
+        0.07556050520249005
+      ]
+    }
+  },
+  "test_known": {
+    "all": {
       "correct_reference": {
         "estimate": 0.848987108655617,
         "ci95": [
-          0.7933690256124074,
-          0.8966884632081614
+          0.818348623853211,
+          0.8779599271402551
         ],
         "n_queries": 543,
         "n_source_clusters": 518,
-        "n_montage_clusters": 207,
-        "successes": 461,
-        "resampling": "source IDs and montage IDs independently; product weights"
+        "successes": 461
       },
       "localized_correct": {
         "estimate": 0.7790055248618785,
         "ci95": [
-          0.7172014097673949,
-          0.8372513562386981
+          0.7416974169741697,
+          0.8127301918265221
         ],
         "n_queries": 543,
         "n_source_clusters": 518,
-        "n_montage_clusters": 207,
-        "successes": 423,
-        "resampling": "source IDs and montage IDs independently; product weights"
+        "successes": 423
       },
       "accepted_correct": {
         "estimate": 0.6187845303867403,
         "ci95": [
-          0.5479643527204503,
-          0.6872431955765289
+          0.5802902685477721,
+          0.65738746488946
         ],
         "n_queries": 543,
         "n_source_clusters": 518,
-        "n_montage_clusters": 207,
-        "successes": 336,
-        "resampling": "source IDs and montage IDs independently; product weights"
+        "successes": 336
       },
       "accepted_localized": {
         "estimate": 0.58195211786372,
         "ci95": [
-          0.5069502234381323,
-          0.652595835999147
+          0.5414326625779309,
+          0.6222232360097324
         ],
         "n_queries": 543,
         "n_source_clusters": 518,
-        "n_montage_clusters": 207,
-        "successes": 316,
-        "resampling": "source IDs and montage IDs independently; product weights"
+        "successes": 316
       },
       "accepted_wrong": {
         "estimate": 0.001841620626151013,
         "ci95": [
           0.0,
-          0.010734416099536548
+          0.00558659217877095
         ],
         "n_queries": 543,
         "n_source_clusters": 518,
-        "n_montage_clusters": 207,
-        "successes": 1,
-        "resampling": "source IDs and montage IDs independently; product weights"
+        "successes": 1
       }
     },
-    "latency_s": {
-      "median": 0.09867154207313433,
-      "p95": 0.14934722851612603,
-      "p99": 0.17805918420664968,
-      "note": "Observed pipeline latency; concurrent experimental jobs may contend"
+    "no_pitch_or_tempo": {
+      "correct_reference": {
+        "estimate": 0.9465116279069767,
+        "ci95": [
+          0.9234294231910646,
+          0.9656789666550252
+        ],
+        "n_queries": 430,
+        "n_source_clusters": 412,
+        "successes": 407
+      },
+      "localized_correct": {
+        "estimate": 0.8744186046511628,
+        "ci95": [
+          0.8418604651162791,
+          0.9039812646370023
+        ],
+        "n_queries": 430,
+        "n_source_clusters": 412,
+        "successes": 376
+      },
+      "accepted_correct": {
+        "estimate": 0.7069767441860465,
+        "ci95": [
+          0.6635939354411026,
+          0.7488374772264494
+        ],
+        "n_queries": 430,
+        "n_source_clusters": 412,
+        "successes": 304
+      },
+      "accepted_localized": {
+        "estimate": 0.6651162790697674,
+        "ci95": [
+          0.6200384122919335,
+          0.7065758871938327
+        ],
+        "n_queries": 430,
+        "n_source_clusters": 412,
+        "successes": 286
+      },
+      "accepted_wrong": {
+        "estimate": 0.002325581395348837,
+        "ci95": [
+          0.0,
+          0.007075471698113208
+        ],
+        "n_queries": 430,
+        "n_source_clusters": 412,
+        "successes": 1
+      }
     },
-    "stats": {
-      "reference_count": 659,
-      "fingerprints": 303360,
-      "reference_audio_duration_s": 152155.883875,
-      "embedding_bytes": 155320320,
-      "metadata_bytes": 14498,
-      "payload_bytes": 155334818,
-      "measured_payload_bytes_per_hour": 3675213.409817274,
-      "index_serialized_bytes": 158279819,
-      "resident_vector_bytes": 313614637,
-      "reference_extraction_work_s": 1926.8641973884078,
-      "index_build_s": 11.70087533298647,
-      "storage_note": "Logical full-density FP32 embeddings plus reconstructible regular-grid track metadata. Resident vector bytes estimate the FAISS serialized search structures and sequence-rerank copy; not measured process RSS or client model weights.",
-      "timing_note": "Extraction excludes shared decoding and warmed graph build; concurrent experimental jobs can contend. No smart-TV device claim."
+    "pitch_or_tempo": {
+      "correct_reference": {
+        "estimate": 0.4778761061946903,
+        "ci95": [
+          0.3893805309734513,
+          0.5714285714285714
+        ],
+        "n_queries": 113,
+        "n_source_clusters": 112,
+        "successes": 54
+      },
+      "localized_correct": {
+        "estimate": 0.415929203539823,
+        "ci95": [
+          0.3274336283185841,
+          0.5089285714285714
+        ],
+        "n_queries": 113,
+        "n_source_clusters": 112,
+        "successes": 47
+      },
+      "accepted_correct": {
+        "estimate": 0.2831858407079646,
+        "ci95": [
+          0.20353982300884957,
+          0.37168141592920356
+        ],
+        "n_queries": 113,
+        "n_source_clusters": 112,
+        "successes": 32
+      },
+      "accepted_localized": {
+        "estimate": 0.26548672566371684,
+        "ci95": [
+          0.18584070796460178,
+          0.3508771929824561
+        ],
+        "n_queries": 113,
+        "n_source_clusters": 112,
+        "successes": 30
+      },
+      "accepted_wrong": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n_queries": 113,
+        "n_source_clusters": 112,
+        "successes": 0
+      }
     },
-    "config": {
-      "method": "PeakNetFP",
-      "paper_url": "https://arxiv.org/abs/2506.21086",
-      "upstream_url": "https://github.com/guillemcortes/peaknetfp",
-      "upstream_commit": "d55071a644f20fd6448fb8ed33c0c115769fb7a5",
-      "upstream_tracked_files_unmodified": true,
-      "official_config_source": "config/peaknetfp.yaml",
-      "model_config_sha256": "470ef4c56f96306c760f0bc899654dc32870d39ab91a76f347fd13124420774e",
-      "official_model_config": {
-        "CHECKPOINT_NAME": "peaknetfp",
-        "DIR": {
-          "SOURCE_ROOT_DIR": "/datasets/neural-audio-fp-dataset/music/",
-          "MIX_ROOT_DIR": "",
-          "BG_ROOT_DIR": "",
-          "IR_ROOT_DIR": "",
-          "SPEECH_ROOT_DIR": "",
-          "OUTPUT_ROOT_DIR": "./logs/emb/",
-          "LOG_ROOT_DIR": "logs/"
-        },
-        "DATA_SEL": {
-          "TRAIN": "10k_icassp",
-          "TEST_DUMMY_DB": "100k_full_icassp",
-          "TEST_QUERY_DB": "unseen_icassp_stretch",
-          "REDUCE_ITEMS_P": 0
-        },
-        "PREPROCESSING": {
-          "NPEAKS": 256,
-          "PEAK_ORDERING": "amplitude_desc",
-          "PEAK_SAMPLING": "tile",
-          "NORM_COORDS": true,
-          "TIMEFREQ_RATIO": 0,
-          "USE_AMPLITUDE": true
-        },
-        "MODEL": {
-          "EMB_SZ": 128,
-          "ARCH": "pointnet2",
-          "DATA_TYPE": "peaks",
-          "FS": 8000,
-          "DUR": 1.0,
-          "HOP": 0.5,
-          "STFT_WIN": 1024,
-          "STFT_HOP": 256,
-          "F_MIN": 300.0,
-          "F_MAX": 4000.0,
-          "N_MELS": 256,
-          "NORM_MEL_AMPlITUDE": true
-        },
-        "NEURALFP": {
-          "BN": "layer_norm2d"
-        },
-        "POINTNET2": {
-          "GROUPING": "queryball",
-          "SAMPLING": "topn",
-          "LAYER1": {
-            "NPOINT": 200,
-            "RADIUS_LIST": [
-              0.1,
-              0.2,
-              0.3
+    "no_overlap": {
+      "correct_reference": {
+        "estimate": 0.8409090909090909,
+        "ci95": [
+          0.8022598870056498,
+          0.8775015782828283
+        ],
+        "n_queries": 352,
+        "n_source_clusters": 345,
+        "successes": 296
+      },
+      "localized_correct": {
+        "estimate": 0.7670454545454546,
+        "ci95": [
+          0.7223796033994334,
+          0.8108977359861173
+        ],
+        "n_queries": 352,
+        "n_source_clusters": 345,
+        "successes": 270
+      },
+      "accepted_correct": {
+        "estimate": 0.6477272727272727,
+        "ci95": [
+          0.6,
+          0.698005698005698
+        ],
+        "n_queries": 352,
+        "n_source_clusters": 345,
+        "successes": 228
+      },
+      "accepted_localized": {
+        "estimate": 0.6051136363636364,
+        "ci95": [
+          0.5564815939002478,
+          0.65625
+        ],
+        "n_queries": 352,
+        "n_source_clusters": 345,
+        "successes": 213
+      },
+      "accepted_wrong": {
+        "estimate": 0.002840909090909091,
+        "ci95": [
+          0.0,
+          0.008595988538681949
+        ],
+        "n_queries": 352,
+        "n_source_clusters": 345,
+        "successes": 1
+      }
+    },
+    "overlap": {
+      "correct_reference": {
+        "estimate": 0.8638743455497382,
+        "ci95": [
+          0.8125,
+          0.91005291005291
+        ],
+        "n_queries": 191,
+        "n_source_clusters": 187,
+        "successes": 165
+      },
+      "localized_correct": {
+        "estimate": 0.8010471204188482,
+        "ci95": [
+          0.743455497382199,
+          0.8541666666666666
+        ],
+        "n_queries": 191,
+        "n_source_clusters": 187,
+        "successes": 153
+      },
+      "accepted_correct": {
+        "estimate": 0.5654450261780105,
+        "ci95": [
+          0.4947902960526316,
+          0.6321457116084224
+        ],
+        "n_queries": 191,
+        "n_source_clusters": 187,
+        "successes": 108
+      },
+      "accepted_localized": {
+        "estimate": 0.5392670157068062,
+        "ci95": [
+          0.46842105263157896,
+          0.6073298429319371
+        ],
+        "n_queries": 191,
+        "n_source_clusters": 187,
+        "successes": 103
+      },
+      "accepted_wrong": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n_queries": 191,
+        "n_source_clusters": 187,
+        "successes": 0
+      }
+    }
+  },
+  "test_known_crossed_ci": {
+    "correct_reference": {
+      "estimate": 0.848987108655617,
+      "ci95": [
+        0.7933690256124074,
+        0.8966884632081614
+      ],
+      "n_queries": 543,
+      "n_source_clusters": 518,
+      "n_montage_clusters": 207,
+      "successes": 461,
+      "resampling": "source IDs and montage IDs independently; product weights"
+    },
+    "localized_correct": {
+      "estimate": 0.7790055248618785,
+      "ci95": [
+        0.7172014097673949,
+        0.8372513562386981
+      ],
+      "n_queries": 543,
+      "n_source_clusters": 518,
+      "n_montage_clusters": 207,
+      "successes": 423,
+      "resampling": "source IDs and montage IDs independently; product weights"
+    },
+    "accepted_correct": {
+      "estimate": 0.6187845303867403,
+      "ci95": [
+        0.5479643527204503,
+        0.6872431955765289
+      ],
+      "n_queries": 543,
+      "n_source_clusters": 518,
+      "n_montage_clusters": 207,
+      "successes": 336,
+      "resampling": "source IDs and montage IDs independently; product weights"
+    },
+    "accepted_localized": {
+      "estimate": 0.58195211786372,
+      "ci95": [
+        0.5069502234381323,
+        0.652595835999147
+      ],
+      "n_queries": 543,
+      "n_source_clusters": 518,
+      "n_montage_clusters": 207,
+      "successes": 316,
+      "resampling": "source IDs and montage IDs independently; product weights"
+    },
+    "accepted_wrong": {
+      "estimate": 0.001841620626151013,
+      "ci95": [
+        0.0,
+        0.010734416099536548
+      ],
+      "n_queries": 543,
+      "n_source_clusters": 518,
+      "n_montage_clusters": 207,
+      "successes": 1,
+      "resampling": "source IDs and montage IDs independently; product weights"
+    }
+  },
+  "latency_s": {
+    "median": 0.09867462399415672,
+    "p95": 0.14953818679787217,
+    "p99": 0.1779563250159845,
+    "note": "Observed pipeline latency; concurrent experimental jobs may contend"
+  },
+  "stats": {
+    "reference_count": 659,
+    "fingerprints": 303360,
+    "reference_audio_duration_s": 152155.883875,
+    "embedding_bytes": 155320320,
+    "metadata_bytes": 14498,
+    "payload_bytes": 155334818,
+    "measured_payload_bytes_per_hour": 3675213.409817274,
+    "index_serialized_bytes": 158279819,
+    "resident_vector_bytes": 313614637,
+    "reference_extraction_work_s": 1926.8641973884078,
+    "index_build_s": 10.861526917025913,
+    "storage_note": "Logical full-density FP32 embeddings plus reconstructible regular-grid track metadata. Resident vector bytes estimate the FAISS serialized search structures and sequence-rerank copy; not measured process RSS or client model weights.",
+    "timing_note": "Extraction excludes shared decoding and warmed graph build; concurrent experimental jobs can contend. No smart-TV device claim."
+  },
+  "config": {
+    "method": "PeakNetFP",
+    "paper_url": "https://arxiv.org/abs/2506.21086",
+    "upstream_url": "https://github.com/guillemcortes/peaknetfp",
+    "upstream_commit": "d55071a644f20fd6448fb8ed33c0c115769fb7a5",
+    "upstream_tracked_files_unmodified": true,
+    "official_config_source": "config/peaknetfp.yaml",
+    "model_config_sha256": "470ef4c56f96306c760f0bc899654dc32870d39ab91a76f347fd13124420774e",
+    "official_model_config": {
+      "CHECKPOINT_NAME": "peaknetfp",
+      "DIR": {
+        "SOURCE_ROOT_DIR": "/datasets/neural-audio-fp-dataset/music/",
+        "MIX_ROOT_DIR": "",
+        "BG_ROOT_DIR": "",
+        "IR_ROOT_DIR": "",
+        "SPEECH_ROOT_DIR": "",
+        "OUTPUT_ROOT_DIR": "./logs/emb/",
+        "LOG_ROOT_DIR": "logs/"
+      },
+      "DATA_SEL": {
+        "TRAIN": "10k_icassp",
+        "TEST_DUMMY_DB": "100k_full_icassp",
+        "TEST_QUERY_DB": "unseen_icassp_stretch",
+        "REDUCE_ITEMS_P": 0
+      },
+      "PREPROCESSING": {
+        "NPEAKS": 256,
+        "PEAK_ORDERING": "amplitude_desc",
+        "PEAK_SAMPLING": "tile",
+        "NORM_COORDS": true,
+        "TIMEFREQ_RATIO": 0,
+        "USE_AMPLITUDE": true
+      },
+      "MODEL": {
+        "EMB_SZ": 128,
+        "ARCH": "pointnet2",
+        "DATA_TYPE": "peaks",
+        "FS": 8000,
+        "DUR": 1.0,
+        "HOP": 0.5,
+        "STFT_WIN": 1024,
+        "STFT_HOP": 256,
+        "F_MIN": 300.0,
+        "F_MAX": 4000.0,
+        "N_MELS": 256,
+        "NORM_MEL_AMPlITUDE": true
+      },
+      "NEURALFP": {
+        "BN": "layer_norm2d"
+      },
+      "POINTNET2": {
+        "GROUPING": "queryball",
+        "SAMPLING": "topn",
+        "LAYER1": {
+          "NPOINT": 200,
+          "RADIUS_LIST": [
+            0.1,
+            0.2,
+            0.3
+          ],
+          "NSAMPLE_LIST": [
+            4,
+            8,
+            16
+          ],
+          "MLP": [
+            [
+              16,
+              16,
+              32
             ],
-            "NSAMPLE_LIST": [
-              4,
-              8,
-              16
+            [
+              32,
+              32,
+              64
             ],
-            "MLP": [
-              [
-                16,
-                16,
-                32
-              ],
-              [
-                32,
-                32,
-                64
-              ],
-              [
-                32,
-                48,
-                64
-              ]
+            [
+              32,
+              48,
+              64
             ]
-          },
-          "LAYER2": {
-            "NPOINT": 100,
-            "RADIUS_LIST": [
-              0.2,
-              0.3,
-              0.4
+          ]
+        },
+        "LAYER2": {
+          "NPOINT": 100,
+          "RADIUS_LIST": [
+            0.2,
+            0.3,
+            0.4
+          ],
+          "NSAMPLE_LIST": [
+            4,
+            8,
+            16
+          ],
+          "MLP": [
+            [
+              32,
+              32,
+              64
             ],
-            "NSAMPLE_LIST": [
-              4,
-              8,
-              16
+            [
+              64,
+              64,
+              128
             ],
-            "MLP": [
-              [
-                32,
-                32,
-                64
-              ],
-              [
-                64,
-                64,
-                128
-              ],
-              [
-                64,
-                64,
-                128
-              ]
+            [
+              64,
+              64,
+              128
             ]
-          },
-          "LAYER3": {
-            "MLP": [
-              128,
-              256
-            ]
-          }
+          ]
         },
-        "BSZ": {
-          "TR_BATCH_SZ": 240,
-          "TR_N_ANCHOR": 120,
-          "VAL_BATCH_SZ": 240,
-          "VAL_N_ANCHOR": 120,
-          "TS_BATCH_SZ": 125
-        },
-        "TRAIN": {
-          "SEED": 13,
-          "MAX_EPOCH": 100,
-          "OPTIMIZER": "Adam",
-          "LR": "1e-4",
-          "LR_SCHEDULE": "cos",
-          "CHECKPOINT_KEEP_N_HOUR": 1,
-          "TENSORBOARD": true,
-          "SAVE_IMG": true,
-          "MINI_TEST_IN_TRAIN": true,
-          "MIXED_PRECISION": false,
-          "VAL_SIZE": 500
-        },
-        "LOSS": {
-          "LOSS_MODE": "NTxent",
-          "TAU": 0.05
-        },
-        "TD_AUG": {
-          "TR_SNR": [
-            0,
-            10
-          ],
-          "TS_SNR": [
-            0,
-            10
-          ],
-          "VAL_SNR": [
-            0,
-            10
-          ],
-          "TR_SPEECH_AUG": false,
-          "TS_SPEECH_AUG": false,
-          "VAL_SPEECH_AUG": false,
-          "TR_BG_AUG": false,
-          "TS_BG_AUG": false,
-          "VAL_BG_AUG": false,
-          "TR_IR_AUG": false,
-          "TS_IR_AUG": false,
-          "VAL_IR_AUG": false,
-          "USE_SPECAUG": true,
-          "MELSPEC_STRETCH": true,
-          "TR_STRETCH_AUG": false,
-          "TS_STRETCH_AUG": false,
-          "VAL_STRETCH_AUG": false,
-          "MAX_STRETCH_AUG": 100
-        },
-        "SPEC_AUG": {
-          "SPECAUG_CHAIN": [
-            "cutout",
-            "horizontal"
-          ],
-          "SPECAUG_PROBS": 1.0,
-          "SPECAUG_N_HOLES": 1,
-          "SPECAUG_HOLE_FILL": "zeros"
-        },
-        "DEVICE": {
-          "CPU_N_WORKERS": 8,
-          "CPU_MAX_QUEUE": 20
+        "LAYER3": {
+          "MLP": [
+            128,
+            256
+          ]
         }
       },
-      "peak_function_source_sha256": "235f3d296870c7a2c14b4d5883300beb8d53e7b6b82f60ba767590230ba31aef",
-      "peak_functions_loaded_without_modification": true,
-      "checkpoint": "ckpt-100",
-      "checkpoint_files_sha256": {
-        "ckpt-100.data-00000-of-00001": "1141d4640481fe27c5ab8359224bccd1cddeaa10af39da8935bc44ceae879103",
-        "ckpt-100.index": "2b71caacd09f82ffb4452303b76418518c303817ac7d2d110c544da5ab540489"
+      "BSZ": {
+        "TR_BATCH_SZ": 240,
+        "TR_N_ANCHOR": 120,
+        "VAL_BATCH_SZ": 240,
+        "VAL_N_ANCHOR": 120,
+        "TS_BATCH_SZ": 125
       },
-      "model_archive_url": "https://zenodo.org/records/15782389/files/peaknetfp_checkpoints.tar.gz?download=1",
-      "model_archive_md5_expected": "df23e1556a206fd72bfa99d0724d241f",
-      "model_archive_md5_verified": true,
-      "restoration_assert_existing_objects_matched": true,
-      "model_parameter_count": 169296,
-      "embedding_dimension": 128,
-      "sample_rate": 8000,
-      "segment_duration_s": 1.0,
-      "hop_s": 0.5,
-      "inference_precision": "float32",
-      "batch_size": 125,
-      "query_batch_policy": "actual query frame count up to reference batch size; fixed padded reference batches",
-      "intra_op_threads": 4,
-      "inter_op_threads": 1,
-      "decode_backend": "FFmpeg mono8k float32 PCM; shared benchmark decoding",
-      "ffmpeg_version": "ffmpeg version 6.0 Copyright (c) 2000-2023 the FFmpeg developers",
-      "kapre_source_commit": "ae8f5077ec9071e5529992702885de03c3321941",
-      "kapre_reported_version": "0.3.7",
-      "packages": {
-        "numpy": "1.26.4",
-        "tensorflow": "2.16.2",
-        "tf-keras": "2.16.0",
-        "librosa": "0.11.0",
-        "kapre": "0.3.7",
-        "scipy": "1.17.1",
-        "pyyaml": "6.0.3"
+      "TRAIN": {
+        "SEED": 13,
+        "MAX_EPOCH": 100,
+        "OPTIMIZER": "Adam",
+        "LR": "1e-4",
+        "LR_SCHEDULE": "cos",
+        "CHECKPOINT_KEEP_N_HOUR": 1,
+        "TENSORBOARD": true,
+        "SAVE_IMG": true,
+        "MINI_TEST_IN_TRAIN": true,
+        "MIXED_PRECISION": false,
+        "VAL_SIZE": 500
       },
-      "platform": "macOS-14.6.1-arm64-arm-64bit",
-      "machine": "arm64",
-      "inference_runtime_change": "TF2.16.2 legacy Keras on Apple CPU; original Kapre0.3.7 source tag pinned, original model and peak functions unchanged"
+      "LOSS": {
+        "LOSS_MODE": "NTxent",
+        "TAU": 0.05
+      },
+      "TD_AUG": {
+        "TR_SNR": [
+          0,
+          10
+        ],
+        "TS_SNR": [
+          0,
+          10
+        ],
+        "VAL_SNR": [
+          0,
+          10
+        ],
+        "TR_SPEECH_AUG": false,
+        "TS_SPEECH_AUG": false,
+        "VAL_SPEECH_AUG": false,
+        "TR_BG_AUG": false,
+        "TS_BG_AUG": false,
+        "VAL_BG_AUG": false,
+        "TR_IR_AUG": false,
+        "TS_IR_AUG": false,
+        "VAL_IR_AUG": false,
+        "USE_SPECAUG": true,
+        "MELSPEC_STRETCH": true,
+        "TR_STRETCH_AUG": false,
+        "TS_STRETCH_AUG": false,
+        "VAL_STRETCH_AUG": false,
+        "MAX_STRETCH_AUG": 100
+      },
+      "SPEC_AUG": {
+        "SPECAUG_CHAIN": [
+          "cutout",
+          "horizontal"
+        ],
+        "SPECAUG_PROBS": 1.0,
+        "SPECAUG_N_HOLES": 1,
+        "SPECAUG_HOLE_FILL": "zeros"
+      },
+      "DEVICE": {
+        "CPU_N_WORKERS": 8,
+        "CPU_MAX_QUEUE": 20
+      }
     },
-    "matcher": {
-      "top_k": 20,
-      "exact": false,
-      "threads": 4,
-      "candidate_index": "ivf",
-      "ivf_nlist": 1024,
-      "ivf_nprobe": 16,
-      "index_training": "gallery-only clustering; no neural model training",
-      "score": "mean aligned cosine",
-      "time_scaling": "estimated candidate-specific",
-      "boundary_fix": "every complete in-track sequence including final track allowed"
-    }
+    "peak_function_source_sha256": "235f3d296870c7a2c14b4d5883300beb8d53e7b6b82f60ba767590230ba31aef",
+    "peak_functions_loaded_without_modification": true,
+    "checkpoint": "ckpt-100",
+    "checkpoint_files_sha256": {
+      "ckpt-100.data-00000-of-00001": "1141d4640481fe27c5ab8359224bccd1cddeaa10af39da8935bc44ceae879103",
+      "ckpt-100.index": "2b71caacd09f82ffb4452303b76418518c303817ac7d2d110c544da5ab540489"
+    },
+    "model_archive_url": "https://zenodo.org/records/15782389/files/peaknetfp_checkpoints.tar.gz?download=1",
+    "model_archive_md5_expected": "df23e1556a206fd72bfa99d0724d241f",
+    "model_archive_md5_verified": true,
+    "restoration_assert_existing_objects_matched": true,
+    "model_parameter_count": 169296,
+    "embedding_dimension": 128,
+    "sample_rate": 8000,
+    "segment_duration_s": 1.0,
+    "hop_s": 0.5,
+    "inference_precision": "float32",
+    "batch_size": 125,
+    "query_batch_policy": "actual query frame count up to reference batch size; fixed padded reference batches",
+    "intra_op_threads": 4,
+    "inter_op_threads": 1,
+    "decode_backend": "FFmpeg mono8k float32 PCM; shared benchmark decoding",
+    "ffmpeg_version": "ffmpeg version 6.0 Copyright (c) 2000-2023 the FFmpeg developers",
+    "kapre_source_commit": "ae8f5077ec9071e5529992702885de03c3321941",
+    "kapre_reported_version": "0.3.7",
+    "packages": {
+      "numpy": "1.26.4",
+      "tensorflow": "2.16.2",
+      "tf-keras": "2.16.0",
+      "librosa": "0.11.0",
+      "kapre": "0.3.7",
+      "scipy": "1.17.1",
+      "pyyaml": "6.0.3"
+    },
+    "platform": "macOS-14.6.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "inference_runtime_change": "TF2.16.2 legacy Keras on Apple CPU; original Kapre0.3.7 source tag pinned, original model and peak functions unchanged"
+  },
+  "matcher": {
+    "top_k": 20,
+    "exact": false,
+    "threads": 2,
+    "candidate_index": "ivf",
+    "ivf_nlist": 1024,
+    "ivf_nprobe": 16,
+    "index_training": "gallery-only clustering; no neural model training",
+    "score": "mean aligned cosine",
+    "time_scaling": "estimated candidate-specific",
+    "boundary_fix": "every complete in-track sequence including final track allowed"
   }
-]
+}

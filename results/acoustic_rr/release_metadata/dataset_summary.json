@@ -1,0 +1,33 @@
+{
+  "schema": "sdrr_release_summary_v1",
+  "version": "1.0.0",
+  "source_corpus": "Song Describer",
+  "source_track_count": 706,
+  "reference_count": 496,
+  "query_count": 1488,
+  "queries_per_reference": 3,
+  "query_duration_seconds": 10.0,
+  "query_sample_rate_hz": 44100,
+  "query_channels": 1,
+  "query_sample_width_bits": 16,
+  "license_family_counts": {
+    "CC BY": 37,
+    "CC BY-NC": 14,
+    "CC BY-NC-SA": 287,
+    "CC BY-SA": 150,
+    "Free Art License": 8
+  },
+  "exclusion_counts": {
+    "NoDerivatives": 209,
+    "insufficient_usable_audio": 1
+  },
+  "recording_session_query_counts": {
+    "batch-001-036": 81,
+    "batch-037-706": 1179,
+    "batch-384-473-rerecord": 177,
+    "batch-extra-17-rerecord": 51
+  },
+  "sha256": {
+    "source_songdescriber_manifest": "fb853b0327394cfdbdc205f712fdb64df70e6fcd3bae3a9d3f1617d54b45ad70"
+  }
+}

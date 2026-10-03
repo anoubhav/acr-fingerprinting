@@ -1,0 +1,156 @@
+{
+  "sdrr_reference_count": 496,
+  "fma_metadata_track_count": 106574,
+  "fma_metadata_sha256": "d9527a5297a65da31c5676484d5047c3e2b8a8060ce72a46e26158be736bf265",
+  "exact_normalized_creator_title_matches": [
+    {
+      "fma_id": "013556",
+      "fma_subset": "small",
+      "artist": "STEEP",
+      "title": "Let Me Go",
+      "sdrr_reference_ids": [
+        "438"
+      ]
+    },
+    {
+      "fma_id": "023037",
+      "fma_subset": "small",
+      "artist": "major Major",
+      "title": "Chinese Drop",
+      "sdrr_reference_ids": [
+        "151"
+      ]
+    },
+    {
+      "fma_id": "031869",
+      "fma_subset": "large",
+      "artist": "La Olla Express",
+      "title": "La Batalla",
+      "sdrr_reference_ids": [
+        "360"
+      ]
+    },
+    {
+      "fma_id": "043613",
+      "fma_subset": "medium",
+      "artist": "Lorenzo's Music",
+      "title": "Roulette",
+      "sdrr_reference_ids": [
+        "220"
+      ]
+    },
+    {
+      "fma_id": "052931",
+      "fma_subset": "large",
+      "artist": "Lorenzo's Music",
+      "title": "Roulette",
+      "sdrr_reference_ids": [
+        "220"
+      ]
+    },
+    {
+      "fma_id": "063259",
+      "fma_subset": "medium",
+      "artist": "Crete Boom",
+      "title": "The Spyin Blues",
+      "sdrr_reference_ids": [
+        "041"
+      ]
+    },
+    {
+      "fma_id": "063262",
+      "fma_subset": "large",
+      "artist": "Crete Boom",
+      "title": "Put up a Resistance",
+      "sdrr_reference_ids": [
+        "426"
+      ]
+    },
+    {
+      "fma_id": "063264",
+      "fma_subset": "medium",
+      "artist": "Crete Boom",
+      "title": "Going West",
+      "sdrr_reference_ids": [
+        "280"
+      ]
+    },
+    {
+      "fma_id": "070777",
+      "fma_subset": "large",
+      "artist": "Jahzzar",
+      "title": "I need",
+      "sdrr_reference_ids": [
+        "658"
+      ]
+    },
+    {
+      "fma_id": "070778",
+      "fma_subset": "large",
+      "artist": "Jahzzar",
+      "title": "Origin",
+      "sdrr_reference_ids": [
+        "059"
+      ]
+    },
+    {
+      "fma_id": "070779",
+      "fma_subset": "large",
+      "artist": "Jahzzar",
+      "title": "Circles",
+      "sdrr_reference_ids": [
+        "645"
+      ]
+    }
+  ],
+  "all_fma_title_matched_sdrr_ids": [
+    "041",
+    "059",
+    "151",
+    "220",
+    "280",
+    "360",
+    "426",
+    "438",
+    "645",
+    "658"
+  ],
+  "possible_nmfp_training_superset_sdrr_ids": [
+    "041",
+    "151",
+    "220",
+    "280",
+    "438"
+  ],
+  "original_pca_fit_id_title_matches": [],
+  "prior_pex_id_title_matches": [],
+  "prior_extra_unknown_id_title_matches": [
+    {
+      "source_id": "043613",
+      "role": "calibration_unknown",
+      "query_id": "fma_medium_unknown:043613"
+    },
+    {
+      "source_id": "023037",
+      "role": "test_unknown",
+      "query_id": "fma_medium_unknown:023037"
+    }
+  ],
+  "shared_normalized_creator_count": 11,
+  "shared_normalized_creators": [
+    "celestial aeon project",
+    "crete boom",
+    "evgeny teilor",
+    "jahzzar",
+    "jay martinez",
+    "la olla express",
+    "lorenzo's music",
+    "major major",
+    "march rosetta",
+    "pianochocolate",
+    "steep"
+  ],
+  "existing_pex_reference_encoded_sha256_matches": [],
+  "method": "NFKC+strip+casefold exact creator/title pair; separate publisher-verified byte SHA256 against PEX references",
+  "caution": "Different source namespaces or absent encoded-byte/title equality do not prove distinct compositions or absence of transformed-recording/pretraining exposure."
+}

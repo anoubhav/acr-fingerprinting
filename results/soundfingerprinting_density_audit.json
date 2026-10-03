@@ -1,0 +1,39 @@
+{
+  "factor1_parity_audit": "soundfingerprinting_density_factor1/parity_audit.json",
+  "controls": [
+    {
+      "factor": 2,
+      "result_sha256": "a5b7cc188edf51a0c2b4275a115abb9433d032c24f8cf85b10dc3e842a710405",
+      "predictions": 5835,
+      "dense_query_fingerprint_counts_exactly_equal_to_original": true,
+      "reference_cache_hits": 659,
+      "reference_audio_redecoded": false,
+      "reference_hashes_recomputed": false,
+      "original_sequences_times_signatures_duration_preserved": true,
+      "snapshot_factor_separated": true,
+      "native_threshold_votes": 4,
+      "confidence_precision": 12,
+      "reference_fingerprint_count": 802719,
+      "payload_bytes": 80271900,
+      "index_snapshot_bytes": 149943028,
+      "managed_live_index_delta_bytes": 794040232
+    },
+    {
+      "factor": 4,
+      "result_sha256": "2327dc743dd36466952a2dd98454f0419c7e3c12a863a092e2a591a629047d22",
+      "predictions": 5835,
+      "dense_query_fingerprint_counts_exactly_equal_to_original": true,
+      "reference_cache_hits": 659,
+      "reference_audio_redecoded": false,
+      "reference_hashes_recomputed": false,
+      "original_sequences_times_signatures_duration_preserved": true,
+      "snapshot_factor_separated": true,
+      "native_threshold_votes": 4,
+      "confidence_precision": 12,
+      "reference_fingerprint_count": 401511,
+      "payload_bytes": 40151100,
+      "index_snapshot_bytes": 75218260,
+      "managed_live_index_delta_bytes": 492246832
+    }
+  ]
+}

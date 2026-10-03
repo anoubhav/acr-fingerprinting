@@ -1,0 +1,31 @@
+{
+  "control": "uniform post-extraction density reduction of frozen public neural checkpoints",
+  "declared_reference_factors": [
+    2,
+    4
+  ],
+  "native_hop_s": 0.5,
+  "nmfp_query_policy": "same stride factor as references; unit-scale native aligned cosine",
+  "peaknet_query_policy": "retain dense query; native estimated physical stretch and nearest reference-grid alignment",
+  "candidate_retrieval": "exact CPU IndexFlatIP, top20 per query frame",
+  "gate": "existing calibration-only order statistic; original and extended negative populations separately",
+  "no_training": true,
+  "no_test_selected_parameters": true,
+  "no_oracle_tempo": true,
+  "timing_claims": false,
+  "protocol_sha256": "610c98add9592340a745cb1b9c9c2cf37a27567da204e713cfba45d8a27fe366",
+  "primary_protocol_sha256": "aae834db35736f2a1ff8e9ccb53fefcdb1140e5dd122502fbc65b93296b6b132",
+  "query_cache_index_sha256": "02c281b280aac7ff4332850736a14f223fbbb4a074e9551dfbaf193339594443",
+  "reference_cache_index_sha256": "84b6cebd5db69b99dd46f755295d1424ef1293cac3703b9849d7c6b9c47712d7",
+  "model": "NMFP-Triplet",
+  "factors_in_this_run": [
+    2,
+    4
+  ],
+  "declared_before_evaluation": true,
+  "code_sha256": {
+    "neural_density_controls.py": "84a05e3de3c2f10c0a32e4c6ea951d0339d55ad15ce43475613e543cc48dc2cd",
+    "neural_baseline.py": "dfd7ce5a011c68f1355c3b86fe1498a054a1e8e093e0ce038e09a7a46884cb0e",
+    "peaknet_baseline.py": "0fcaf9b63db8b54cb116e98954d5273dffb6382b4ef5d1aadae82ce65b93ef70"
+  }
+}

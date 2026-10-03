@@ -1,0 +1,2473 @@
+{
+  "version": "V2",
+  "files": {
+    "EXPERIMENTS.md": {
+      "source_path": "outputs/acr_repro/EXPERIMENTS.md",
+      "source_sha256": "4a2115726264f95b87ab2e9866b417d21cb5f9394d7572b8b402f04c138d19e5",
+      "export_sha256": "4a2115726264f95b87ab2e9866b417d21cb5f9394d7572b8b402f04c138d19e5",
+      "portable_path_export": false
+    },
+    "THIRD_PARTY.md": {
+      "source_path": "outputs/acr_repro/THIRD_PARTY.md",
+      "source_sha256": "37fb9f5735518956b51a7b7086966509edac9c7c7e9d74657d7e88a04b3ce16b",
+      "export_sha256": "37fb9f5735518956b51a7b7086966509edac9c7c7e9d74657d7e88a04b3ce16b",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/ACOUSTIC_RR_BASELINE.md": {
+      "source_path": "outputs/acr_repro/ACOUSTIC_RR_BASELINE.md",
+      "source_sha256": "2981f37fb5d43dfaabd87458a9d958af4ea507a50fa09ccf1695f54a2f789e06",
+      "export_sha256": "2981f37fb5d43dfaabd87458a9d958af4ea507a50fa09ccf1695f54a2f789e06",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/ALGORITHM.md": {
+      "source_path": "outputs/acr_repro/ALGORITHM.md",
+      "source_sha256": "75369f209c332ed5ca015291809a62f89b50916ac6c0479bb8dfd9cd55d7a6b4",
+      "export_sha256": "75369f209c332ed5ca015291809a62f89b50916ac6c0479bb8dfd9cd55d7a6b4",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/COMPACT_STORE.md": {
+      "source_path": "outputs/acr_repro/COMPACT_STORE.md",
+      "source_sha256": "8394a3be7e3b9aab61bfad46e8c0323bbb412ba52cbd4c7cf7bef6d97663caac",
+      "export_sha256": "8394a3be7e3b9aab61bfad46e8c0323bbb412ba52cbd4c7cf7bef6d97663caac",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/EXPERIMENTS.md": {
+      "source_path": "outputs/acr_repro/EXPERIMENTS.md",
+      "source_sha256": "4a2115726264f95b87ab2e9866b417d21cb5f9394d7572b8b402f04c138d19e5",
+      "export_sha256": "4a2115726264f95b87ab2e9866b417d21cb5f9394d7572b8b402f04c138d19e5",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/NEURAL_ACOUSTIC.md": {
+      "source_path": "outputs/acr_repro/NEURAL_ACOUSTIC.md",
+      "source_sha256": "ddbc89dd5abeb402068f93eac2025d44ebd274088d216f274e0e72f6f94bf579",
+      "export_sha256": "ddbc89dd5abeb402068f93eac2025d44ebd274088d216f274e0e72f6f94bf579",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/NEURAL_BASELINE.md": {
+      "source_path": "outputs/acr_repro/NEURAL_BASELINE.md",
+      "source_sha256": "463cb4560f418e9cd5995581ac74603bdfa33ce6d0aab34e88da1548344d76d2",
+      "export_sha256": "463cb4560f418e9cd5995581ac74603bdfa33ce6d0aab34e88da1548344d76d2",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/NEURAL_DENSITY_CONTROLS.md": {
+      "source_path": "outputs/acr_repro/NEURAL_DENSITY_CONTROLS.md",
+      "source_sha256": "09d0dd47099e9b5690a6446ace3787ef63b8133639286c1e84368a026c1f3e79",
+      "export_sha256": "09d0dd47099e9b5690a6446ace3787ef63b8133639286c1e84368a026c1f3e79",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/PEAKNET_BASELINE.md": {
+      "source_path": "outputs/acr_repro/PEAKNET_BASELINE.md",
+      "source_sha256": "cb407fe7484c01d6fc3aac41ff2344a2cd2b14821f5038346103b42b5909cb37",
+      "export_sha256": "cb407fe7484c01d6fc3aac41ff2344a2cd2b14821f5038346103b42b5909cb37",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/README.md": {
+      "source_path": "outputs/acr_repro/README.md",
+      "source_sha256": "50f7f664e53eb2cc52c1a634430b575c410613694bb658cb23b3fb475aa18507",
+      "export_sha256": "50f7f664e53eb2cc52c1a634430b575c410613694bb658cb23b3fb475aa18507",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/SDRR.md": {
+      "source_path": "outputs/acr_repro/SDRR.md",
+      "source_sha256": "73d927182b6bc0e548d73d53ee4ef7b9bc1ba9e2c85657e69e3b0b6c7eccb8d0",
+      "export_sha256": "73d927182b6bc0e548d73d53ee4ef7b9bc1ba9e2c85657e69e3b0b6c7eccb8d0",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/SOUNDFINGERPRINTING_BASELINE.md": {
+      "source_path": "outputs/acr_repro/SOUNDFINGERPRINTING_BASELINE.md",
+      "source_sha256": "acbf296315b3cbd330da9cc2783c45ebc8db0aed229daaa3ea51eb462ca26389",
+      "export_sha256": "acbf296315b3cbd330da9cc2783c45ebc8db0aed229daaa3ea51eb462ca26389",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/THIRD_PARTY.md": {
+      "source_path": "outputs/acr_repro/THIRD_PARTY.md",
+      "source_sha256": "37fb9f5735518956b51a7b7086966509edac9c7c7e9d74657d7e88a04b3ce16b",
+      "export_sha256": "37fb9f5735518956b51a7b7086966509edac9c7c7e9d74657d7e88a04b3ce16b",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/acoustic_rr_data.py": {
+      "source_path": "outputs/acr_repro/acoustic_rr_data.py",
+      "source_sha256": "071b6706a31ec116cd371438f1eb67d275d8696493c85fc64d43c91dd42029c6",
+      "export_sha256": "071b6706a31ec116cd371438f1eb67d275d8696493c85fc64d43c91dd42029c6",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/acr_fp.py": {
+      "source_path": "outputs/acr_repro/acr_fp.py",
+      "source_sha256": "a69f8ce8de84512c91fd243e8e7170e15a54fc254100f2c7a907c6571a8e08d8",
+      "export_sha256": "a69f8ce8de84512c91fd243e8e7170e15a54fc254100f2c7a907c6571a8e08d8",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/acr_source_unseen.py": {
+      "source_path": "outputs/acr_repro/acr_source_unseen.py",
+      "source_sha256": "17d47a58c1e5aec70f0ceeea183efd42779ff599d2f69a49a077d04fb885b2d1",
+      "export_sha256": "17d47a58c1e5aec70f0ceeea183efd42779ff599d2f69a49a077d04fb885b2d1",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/affine_match.py": {
+      "source_path": "outputs/acr_repro/affine_match.py",
+      "source_sha256": "f0d7b584952a3495f2653866092541cda4a83a93459f925222a5da0865b2466a",
+      "export_sha256": "f0d7b584952a3495f2653866092541cda4a83a93459f925222a5da0865b2466a",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/audfprint_baseline.py": {
+      "source_path": "outputs/acr_repro/audfprint_baseline.py",
+      "source_sha256": "41568086fee3ddda35fcf2af755c9a1999bfd471fbfe398badd49ba2a5d61098",
+      "export_sha256": "41568086fee3ddda35fcf2af755c9a1999bfd471fbfe398badd49ba2a5d61098",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/audit_neural_clean_source.py": {
+      "source_path": "outputs/acr_repro/audit_neural_clean_source.py",
+      "source_sha256": "76b90816b2c3d527d5a90385eb44ebb27c51797de2971cd48f9b255c0cfefce0",
+      "export_sha256": "76b90816b2c3d527d5a90385eb44ebb27c51797de2971cd48f9b255c0cfefce0",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/audit_unknown_matches.py": {
+      "source_path": "outputs/acr_repro/audit_unknown_matches.py",
+      "source_sha256": "1d56b1b53ac0618d02442439009e37d84adc2ec22fdbd0ad84d1ba685b156478",
+      "export_sha256": "1d56b1b53ac0618d02442439009e37d84adc2ec22fdbd0ad84d1ba685b156478",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/benchmark_audfprint_common.py": {
+      "source_path": "outputs/acr_repro/benchmark_audfprint_common.py",
+      "source_sha256": "01e307d573c5be2059cebb837ffab49410acb3659aa38637c7643a5c4e9ac597",
+      "export_sha256": "01e307d573c5be2059cebb837ffab49410acb3659aa38637c7643a5c4e9ac597",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/benchmark_data.py": {
+      "source_path": "outputs/acr_repro/benchmark_data.py",
+      "source_sha256": "aac1aff8049b451856f573db804b0ef685db994584fc0cca5d9ec16e8def2606",
+      "export_sha256": "aac1aff8049b451856f573db804b0ef685db994584fc0cca5d9ec16e8def2606",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/benchmark_extraction.py": {
+      "source_path": "outputs/acr_repro/benchmark_extraction.py",
+      "source_sha256": "7cbddbcbb450a9754cc85705048ee829ccc06482f4c7c5fe92179abc128630bb",
+      "export_sha256": "7cbddbcbb450a9754cc85705048ee829ccc06482f4c7c5fe92179abc128630bb",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/calibrate_sdrr_channel.py": {
+      "source_path": "outputs/acr_repro/calibrate_sdrr_channel.py",
+      "source_sha256": "d2df44023466365d07584f64f8ee4c31e26d7ccd7bc89e49812cb409ca18d1f5",
+      "export_sha256": "d2df44023466365d07584f64f8ee4c31e26d7ccd7bc89e49812cb409ca18d1f5",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/canonicalize_soundfingerprinting_scores.py": {
+      "source_path": "outputs/acr_repro/canonicalize_soundfingerprinting_scores.py",
+      "source_sha256": "1fcf248abc7978d045cc92818a7cfcc230568c762dc661b7bff8f332c4acbb86",
+      "export_sha256": "1fcf248abc7978d045cc92818a7cfcc230568c762dc661b7bff8f332c4acbb86",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/check_compact_full_parity.py": {
+      "source_path": "outputs/acr_repro/check_compact_full_parity.py",
+      "source_sha256": "c510020802d4d5613c1c9cb124d89588bb74ca97aa9a38a4a84d6dfef2995757",
+      "export_sha256": "c510020802d4d5613c1c9cb124d89588bb74ca97aa9a38a4a84d6dfef2995757",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/check_paper_numbers.py": {
+      "source_path": "outputs/acr_repro/check_paper_numbers.py",
+      "source_sha256": "63fd40747eb63af92631d938a83e477cffce2ef5683aaea2a18894c474b7c22f",
+      "export_sha256": "63fd40747eb63af92631d938a83e477cffce2ef5683aaea2a18894c474b7c22f",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/compact_streaming_index.py": {
+      "source_path": "outputs/acr_repro/compact_streaming_index.py",
+      "source_sha256": "3aac7bda34901d86d75db9ec287b263377a136ba0a45f2691d4b9df389739de8",
+      "export_sha256": "3aac7bda34901d86d75db9ec287b263377a136ba0a45f2691d4b9df389739de8",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/compare_neural_density.py": {
+      "source_path": "outputs/acr_repro/compare_neural_density.py",
+      "source_sha256": "b4907eba4c18fad6346cffe4507961f9326572c38bdb8ac917cb717fd6cc9686",
+      "export_sha256": "b4907eba4c18fad6346cffe4507961f9326572c38bdb8ac917cb717fd6cc9686",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/compare_reference_density.py": {
+      "source_path": "outputs/acr_repro/compare_reference_density.py",
+      "source_sha256": "3573fd1e855bcad2a0a86d6d954a11b7c44b1141297269f4e3eb5dfe76d49f93",
+      "export_sha256": "3573fd1e855bcad2a0a86d6d954a11b7c44b1141297269f4e3eb5dfe76d49f93",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/derive_matrix_summary.py": {
+      "source_path": "outputs/acr_repro/derive_matrix_summary.py",
+      "source_sha256": "a6a5c689ab0cbe27cc6c9ce8ba3a65c5c3d3d8459512ef16bd6ba7ed7cdbf06d",
+      "export_sha256": "a6a5c689ab0cbe27cc6c9ce8ba3a65c5c3d3d8459512ef16bd6ba7ed7cdbf06d",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/derive_profile_summary.py": {
+      "source_path": "outputs/acr_repro/derive_profile_summary.py",
+      "source_sha256": "eef4f70f8ce504ea87084f9a80ae388b7aa1e710e584a446128ee781673441c1",
+      "export_sha256": "eef4f70f8ce504ea87084f9a80ae388b7aa1e710e584a446128ee781673441c1",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/derive_v2_profile_summary.py": {
+      "source_path": "outputs/acr_repro/derive_v2_profile_summary.py",
+      "source_sha256": "f796e5d078d961da1b0c8aa2a72211600f62db367f401db3acb2136244ffe8f2",
+      "export_sha256": "f796e5d078d961da1b0c8aa2a72211600f62db367f401db3acb2136244ffe8f2",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/describe_roc.py": {
+      "source_path": "outputs/acr_repro/describe_roc.py",
+      "source_sha256": "1d7c7616173885802ba3a6987e000b8296b54c078c44d91134747c43ab5252fb",
+      "export_sha256": "1d7c7616173885802ba3a6987e000b8296b54c078c44d91134747c43ab5252fb",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/diagnose_temporal_geometry.py": {
+      "source_path": "outputs/acr_repro/diagnose_temporal_geometry.py",
+      "source_sha256": "c18e9902a68ca602cadd0e58d66de6a858fd16ca90ffbde634af8305f2d47ffe",
+      "export_sha256": "c18e9902a68ca602cadd0e58d66de6a858fd16ca90ffbde634af8305f2d47ffe",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/extended_unknown_protocol.py": {
+      "source_path": "outputs/acr_repro/extended_unknown_protocol.py",
+      "source_sha256": "0c2e610d527b644ccacbd0718412bdbd6f5f54b7cb919d078843ac4a9b66a1f3",
+      "export_sha256": "0c2e610d527b644ccacbd0718412bdbd6f5f54b7cb919d078843ac4a9b66a1f3",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/extra_unknown_data.py": {
+      "source_path": "outputs/acr_repro/extra_unknown_data.py",
+      "source_sha256": "d4fc36793c92b840de39064e0ed227ebc2b6b2476f85eff9830eea23114b3329",
+      "export_sha256": "d4fc36793c92b840de39064e0ed227ebc2b6b2476f85eff9830eea23114b3329",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/fetch_assets.py": {
+      "source_path": "outputs/acr_repro/fetch_assets.py",
+      "source_sha256": "69aa848fb36f69186fd0d3a8e259d4339034a856c7da57c3e5288c75095503bb",
+      "export_sha256": "69aa848fb36f69186fd0d3a8e259d4339034a856c7da57c3e5288c75095503bb",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/neural_baseline.py": {
+      "source_path": "outputs/acr_repro/neural_baseline.py",
+      "source_sha256": "dfd7ce5a011c68f1355c3b86fe1498a054a1e8e093e0ce038e09a7a46884cb0e",
+      "export_sha256": "dfd7ce5a011c68f1355c3b86fe1498a054a1e8e093e0ce038e09a7a46884cb0e",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/neural_density_controls.py": {
+      "source_path": "outputs/acr_repro/neural_density_controls.py",
+      "source_sha256": "84a05e3de3c2f10c0a32e4c6ea951d0339d55ad15ce43475613e543cc48dc2cd",
+      "export_sha256": "84a05e3de3c2f10c0a32e4c6ea951d0339d55ad15ce43475613e543cc48dc2cd",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/neural_source_sensitivity.py": {
+      "source_path": "outputs/acr_repro/neural_source_sensitivity.py",
+      "source_sha256": "64bdc2cdf38b15e30d27f559918e088c7745157ea2fa4f81eb2a336ea30cf6d0",
+      "export_sha256": "64bdc2cdf38b15e30d27f559918e088c7745157ea2fa4f81eb2a336ea30cf6d0",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/nmfp_overlap_audit.py": {
+      "source_path": "outputs/acr_repro/nmfp_overlap_audit.py",
+      "source_sha256": "65dcadd552732acc5b54162076ea4e407dde100bce8396fdd8b670ddf19d1d6b",
+      "export_sha256": "65dcadd552732acc5b54162076ea4e407dde100bce8396fdd8b670ddf19d1d6b",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/peaknet_baseline.py": {
+      "source_path": "outputs/acr_repro/peaknet_baseline.py",
+      "source_sha256": "0fcaf9b63db8b54cb116e98954d5273dffb6382b4ef5d1aadae82ce65b93ef70",
+      "export_sha256": "0fcaf9b63db8b54cb116e98954d5273dffb6382b4ef5d1aadae82ce65b93ef70",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/portable_manifest.py": {
+      "source_path": "outputs/acr_repro/portable_manifest.py",
+      "source_sha256": "e0aca8a50e1a1a9d0deb4ff4f7f8bc84102c4738cb345934a6114b6be4935116",
+      "export_sha256": "e0aca8a50e1a1a9d0deb4ff4f7f8bc84102c4738cb345934a6114b6be4935116",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/prepare_common_baseline_timing.py": {
+      "source_path": "outputs/acr_repro/prepare_common_baseline_timing.py",
+      "source_sha256": "95f6edbbcbc283e540573f565651e3717d412a98ef7a5397c289713f38903cb8",
+      "export_sha256": "95f6edbbcbc283e540573f565651e3717d412a98ef7a5397c289713f38903cb8",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/prepare_nmfp_extra.py": {
+      "source_path": "outputs/acr_repro/prepare_nmfp_extra.py",
+      "source_sha256": "d4c8d378d5d15b2963eed32533ab293381b00e6ded57986daf982e32e520e15f",
+      "export_sha256": "d4c8d378d5d15b2963eed32533ab293381b00e6ded57986daf982e32e520e15f",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/prepare_profiling_inputs.py": {
+      "source_path": "outputs/acr_repro/prepare_profiling_inputs.py",
+      "source_sha256": "b0b2de3f2674128d715b8fc98704b2ab196db3527939ce06bbb33455275cdfc3",
+      "export_sha256": "b0b2de3f2674128d715b8fc98704b2ab196db3527939ce06bbb33455275cdfc3",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/prepare_soundfingerprinting_pcm.py": {
+      "source_path": "outputs/acr_repro/prepare_soundfingerprinting_pcm.py",
+      "source_sha256": "21fd55241c41e11067ee7f17d29c529e7ed1716400784e8d9ebb4e4ff36dbd12",
+      "export_sha256": "21fd55241c41e11067ee7f17d29c529e7ed1716400784e8d9ebb4e4ff36dbd12",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/profile_common_acr.py": {
+      "source_path": "outputs/acr_repro/profile_common_acr.py",
+      "source_sha256": "758d2cc3cebd0c4e52431cfed30e02ba47f6a7c4f1a546895df9c8b105e6e3ea",
+      "export_sha256": "758d2cc3cebd0c4e52431cfed30e02ba47f6a7c4f1a546895df9c8b105e6e3ea",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/profile_common_compact_acr.py": {
+      "source_path": "outputs/acr_repro/profile_common_compact_acr.py",
+      "source_sha256": "d13620a0cee3f6ddb7b523bc2f23479d991e70f265d36dd7ed94c6ee4d15c736",
+      "export_sha256": "d13620a0cee3f6ddb7b523bc2f23479d991e70f265d36dd7ed94c6ee4d15c736",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/profile_neural_encoder.py": {
+      "source_path": "outputs/acr_repro/profile_neural_encoder.py",
+      "source_sha256": "c24b7970b3b1dbf2f141a88c6f33692067c6983b077c62ae6e32d5255bcb3c6d",
+      "export_sha256": "c24b7970b3b1dbf2f141a88c6f33692067c6983b077c62ae6e32d5255bcb3c6d",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/profile_neural_matching.py": {
+      "source_path": "outputs/acr_repro/profile_neural_matching.py",
+      "source_sha256": "959a67c83a5d2d31bee3058ec598c80d2147b4d6a3c9ed478d790575f2f5a3bc",
+      "export_sha256": "959a67c83a5d2d31bee3058ec598c80d2147b4d6a3c9ed478d790575f2f5a3bc",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/profile_nmfp_density.py": {
+      "source_path": "outputs/acr_repro/profile_nmfp_density.py",
+      "source_sha256": "142e19c83eb533f6575b9bcd65d2ca54318018e67b3403e7fa4d2b0ea4c00147",
+      "export_sha256": "142e19c83eb533f6575b9bcd65d2ca54318018e67b3403e7fa4d2b0ea4c00147",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/protocol.py": {
+      "source_path": "outputs/acr_repro/protocol.py",
+      "source_sha256": "af9bcc5ed4c49c3cb4c4e0b80779bc9163dcd3b876547e0970843b57cd1eae6b",
+      "export_sha256": "af9bcc5ed4c49c3cb4c4e0b80779bc9163dcd3b876547e0970843b57cd1eae6b",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/qa_sdrr_transfer.py": {
+      "source_path": "outputs/acr_repro/qa_sdrr_transfer.py",
+      "source_sha256": "9c5d58b8b6c2ea2e88ab4be9b18871d797357cfc23a4ff240b473ad3fde0c7cf",
+      "export_sha256": "9c5d58b8b6c2ea2e88ab4be9b18871d797357cfc23a4ff240b473ad3fde0c7cf",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/requirements-neural.txt": {
+      "source_path": "outputs/acr_repro/requirements-neural.txt",
+      "source_sha256": "358d72e340f45fe498f069f961717b7345a3df8350df5086df773be64b71a6bc",
+      "export_sha256": "358d72e340f45fe498f069f961717b7345a3df8350df5086df773be64b71a6bc",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/requirements-peaknet.txt": {
+      "source_path": "outputs/acr_repro/requirements-peaknet.txt",
+      "source_sha256": "61c06ea777bcf4b60cf890b5acf4e10e255936843c296743d3f18000f9c47597",
+      "export_sha256": "61c06ea777bcf4b60cf890b5acf4e10e255936843c296743d3f18000f9c47597",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/requirements.txt": {
+      "source_path": "outputs/acr_repro/requirements.txt",
+      "source_sha256": "d4778b10203661e075cef6cf59043db5ecaab634aa698e952451c15e68e68dab",
+      "export_sha256": "d4778b10203661e075cef6cf59043db5ecaab634aa698e952451c15e68e68dab",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/run_ablations.py": {
+      "source_path": "outputs/acr_repro/run_ablations.py",
+      "source_sha256": "2986cf9a1410bc51ee9de45d446f6c714dc1debb888f3cdf1d5de032e099e1f6",
+      "export_sha256": "2986cf9a1410bc51ee9de45d446f6c714dc1debb888f3cdf1d5de032e099e1f6",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/run_acr_protocol.py": {
+      "source_path": "outputs/acr_repro/run_acr_protocol.py",
+      "source_sha256": "a5fdd48fc6910247886ededdb65eb47c10a0828614c76def2b53357c35022901",
+      "export_sha256": "a5fdd48fc6910247886ededdb65eb47c10a0828614c76def2b53357c35022901",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/run_audfprint_protocol.py": {
+      "source_path": "outputs/acr_repro/run_audfprint_protocol.py",
+      "source_sha256": "f937993d4583bfed884e05a2daf99acff78ed11e00c9e1946b2ae44e2beb3c43",
+      "export_sha256": "f937993d4583bfed884e05a2daf99acff78ed11e00c9e1946b2ae44e2beb3c43",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/run_audfprint_variants.py": {
+      "source_path": "outputs/acr_repro/run_audfprint_variants.py",
+      "source_sha256": "35e66a50d0003be51203da2b63410e567553f78a82497e18f242a2ebca580b22",
+      "export_sha256": "35e66a50d0003be51203da2b63410e567553f78a82497e18f242a2ebca580b22",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/run_ivf_extended.py": {
+      "source_path": "outputs/acr_repro/run_ivf_extended.py",
+      "source_sha256": "ed7d2a5934d6a7c053a2f99564b0dfc0b0a856f531b92c1d3d258a185b9cc1e9",
+      "export_sha256": "ed7d2a5934d6a7c053a2f99564b0dfc0b0a856f531b92c1d3d258a185b9cc1e9",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/run_neural_acoustic.py": {
+      "source_path": "outputs/acr_repro/run_neural_acoustic.py",
+      "source_sha256": "8e9aad7f7e316deb36b6140911abb8cd490fe9cab21e450dd01862aac7bf3d8e",
+      "export_sha256": "8e9aad7f7e316deb36b6140911abb8cd490fe9cab21e450dd01862aac7bf3d8e",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/run_nmfp_protocol.py": {
+      "source_path": "outputs/acr_repro/run_nmfp_protocol.py",
+      "source_sha256": "705da067f62098dfd1e750eb93ac4730e23a7469e988873ff89d1544ae47599f",
+      "export_sha256": "705da067f62098dfd1e750eb93ac4730e23a7469e988873ff89d1544ae47599f",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/run_sdrr_frozen.py": {
+      "source_path": "outputs/acr_repro/run_sdrr_frozen.py",
+      "source_sha256": "3ba02e47d74af1e75c591e4e8e8c6a0d938fad33772b26acce9d5f36f57f218b",
+      "export_sha256": "3ba02e47d74af1e75c591e4e8e8c6a0d938fad33772b26acce9d5f36f57f218b",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/run_streaming_index_study.py": {
+      "source_path": "outputs/acr_repro/run_streaming_index_study.py",
+      "source_sha256": "f07eae9dda848e43c376964bd783a9c164bec9e23d48495c24da522f96d413da",
+      "export_sha256": "f07eae9dda848e43c376964bd783a9c164bec9e23d48495c24da522f96d413da",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/secondary_source_sensitivity.py": {
+      "source_path": "outputs/acr_repro/secondary_source_sensitivity.py",
+      "source_sha256": "ff16adb1d4e141c1887890ea50e67662994afe3a4ffb93de8926651a8ab38d7f",
+      "export_sha256": "ff16adb1d4e141c1887890ea50e67662994afe3a4ffb93de8926651a8ab38d7f",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/soundfingerprinting_bridge/Program.cs": {
+      "source_path": "outputs/acr_repro/soundfingerprinting_bridge/Program.cs",
+      "source_sha256": "7de2f3b9b37eda6d83f11e6a9b21b4906d047e906f8cc1b3cc8bc2ab5916b726",
+      "export_sha256": "7de2f3b9b37eda6d83f11e6a9b21b4906d047e906f8cc1b3cc8bc2ab5916b726",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/soundfingerprinting_bridge/SoundFingerprintingBridge.csproj": {
+      "source_path": "outputs/acr_repro/soundfingerprinting_bridge/SoundFingerprintingBridge.csproj",
+      "source_sha256": "ffbdd0949380f62f6d8d90f8bab1684103b7e69d307999dd2dd344a0b0110fe4",
+      "export_sha256": "ffbdd0949380f62f6d8d90f8bab1684103b7e69d307999dd2dd344a0b0110fe4",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/soundfingerprinting_bridge/packages.lock.json": {
+      "source_path": "outputs/acr_repro/soundfingerprinting_bridge/packages.lock.json",
+      "source_sha256": "701861025a78913f9f62b5c2a43752b38eec2fb5cb5d1a21687c2011eb1d101b",
+      "export_sha256": "8c5f21d103d6ec21fed7a2f6a5504cc4408095b0b6b3b37d1977391dbf752903",
+      "portable_path_export": true
+    },
+    "outputs/acr_repro/speech_benchmark.py": {
+      "source_path": "outputs/acr_repro/speech_benchmark.py",
+      "source_sha256": "b693c89d5c2c3fa07e07269181cf98308fb52d7cd90f5e48bee9f0a12353ff60",
+      "export_sha256": "b693c89d5c2c3fa07e07269181cf98308fb52d7cd90f5e48bee9f0a12353ff60",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/study_affine_calibration.py": {
+      "source_path": "outputs/acr_repro/study_affine_calibration.py",
+      "source_sha256": "675abc6419e7da9712391e096227d45a4ae76613b09f06095a28fddc1a78f111",
+      "export_sha256": "675abc6419e7da9712391e096227d45a4ae76613b09f06095a28fddc1a78f111",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/study_query_ivf.py": {
+      "source_path": "outputs/acr_repro/study_query_ivf.py",
+      "source_sha256": "33af7d41b5e098ec667bfc2d47d62471843b8d31ba3a16df7e387d4ef9e616c1",
+      "export_sha256": "33af7d41b5e098ec667bfc2d47d62471843b8d31ba3a16df7e387d4ef9e616c1",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/summarize_ablations.py": {
+      "source_path": "outputs/acr_repro/summarize_ablations.py",
+      "source_sha256": "f0e8ef36db3824448e35e65b7630e5dfb56d3d91d86e63687b98d97d7ccd5efc",
+      "export_sha256": "f0e8ef36db3824448e35e65b7630e5dfb56d3d91d86e63687b98d97d7ccd5efc",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/summarize_acoustic_rr.py": {
+      "source_path": "outputs/acr_repro/summarize_acoustic_rr.py",
+      "source_sha256": "c3341d9abed372f2a4a18ca50a60e49d2590c54ddfe075fe84d1c80a076941b0",
+      "export_sha256": "c3341d9abed372f2a4a18ca50a60e49d2590c54ddfe075fe84d1c80a076941b0",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/summarize_results.py": {
+      "source_path": "outputs/acr_repro/summarize_results.py",
+      "source_sha256": "11b402f23ef1bdf2842a0e1e41d75f4bff2898a1fd5386f7f81a483ff3d15642",
+      "export_sha256": "11b402f23ef1bdf2842a0e1e41d75f4bff2898a1fd5386f7f81a483ff3d15642",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/summarize_soundfingerprinting_density.py": {
+      "source_path": "outputs/acr_repro/summarize_soundfingerprinting_density.py",
+      "source_sha256": "cd0777ea461f15e347d08f830a633cee21c3f27a64196fbc85725b0b8313a88a",
+      "export_sha256": "cd0777ea461f15e347d08f830a633cee21c3f27a64196fbc85725b0b8313a88a",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/summarize_speech.py": {
+      "source_path": "outputs/acr_repro/summarize_speech.py",
+      "source_sha256": "a4340b56b3780799c6f257f56f38da9ed0cad56b4432f00f930ee9e33a289736",
+      "export_sha256": "a4340b56b3780799c6f257f56f38da9ed0cad56b4432f00f930ee9e33a289736",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/summarize_streaming_study.py": {
+      "source_path": "outputs/acr_repro/summarize_streaming_study.py",
+      "source_sha256": "37daf616ce9020410b912897123e6c0345e929b274661bbfee6752202704aed7",
+      "export_sha256": "37daf616ce9020410b912897123e6c0345e929b274661bbfee6752202704aed7",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/test_acr_fp.py": {
+      "source_path": "outputs/acr_repro/test_acr_fp.py",
+      "source_sha256": "41ad48f22a61fbf229d45c4b6d548e8d3614fcc238eea3ed9141579b03abac8f",
+      "export_sha256": "41ad48f22a61fbf229d45c4b6d548e8d3614fcc238eea3ed9141579b03abac8f",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/test_channel_gain.py": {
+      "source_path": "outputs/acr_repro/test_channel_gain.py",
+      "source_sha256": "bd9f5a727633767202cb4d4e3244c652dcc2f8ab05d9576bb35585b7bb02d9ce",
+      "export_sha256": "bd9f5a727633767202cb4d4e3244c652dcc2f8ab05d9576bb35585b7bb02d9ce",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/test_compact_streaming.py": {
+      "source_path": "outputs/acr_repro/test_compact_streaming.py",
+      "source_sha256": "458570d532f4f9668fa9f8f8c90013f9deaddb39724b90d08dc979998d43c959",
+      "export_sha256": "458570d532f4f9668fa9f8f8c90013f9deaddb39724b90d08dc979998d43c959",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/test_evaluation.py": {
+      "source_path": "outputs/acr_repro/test_evaluation.py",
+      "source_sha256": "8ef7f79af6980e6c907212a901c0504013e38d7487d9351168d59d76ea29a8ea",
+      "export_sha256": "8ef7f79af6980e6c907212a901c0504013e38d7487d9351168d59d76ea29a8ea",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/test_neural_acoustic.py": {
+      "source_path": "outputs/acr_repro/test_neural_acoustic.py",
+      "source_sha256": "f425dbd0d4ee1d92481de4664f7f3fa6092f382f62799dc0a3bdb881c96cc2ef",
+      "export_sha256": "f425dbd0d4ee1d92481de4664f7f3fa6092f382f62799dc0a3bdb881c96cc2ef",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/test_peaknet_sparse_clocks.py": {
+      "source_path": "outputs/acr_repro/test_peaknet_sparse_clocks.py",
+      "source_sha256": "0a35dabe833fa0ebac6f2cedba9e5c32cde8736ac39c5848be7f4576045bb5e0",
+      "export_sha256": "0a35dabe833fa0ebac6f2cedba9e5c32cde8736ac39c5848be7f4576045bb5e0",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/test_sdrr_summary.py": {
+      "source_path": "outputs/acr_repro/test_sdrr_summary.py",
+      "source_sha256": "b3b514d44aea10e8e8e9a9f9e86aec98170fefbbaed2c6b8b2c28f193a8b7795",
+      "export_sha256": "b3b514d44aea10e8e8e9a9f9e86aec98170fefbbaed2c6b8b2c28f193a8b7795",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/verify_neural_density.py": {
+      "source_path": "outputs/acr_repro/verify_neural_density.py",
+      "source_sha256": "6b2205393ad1832e0914bef111fd923ea508d29c0a26f9127a2660307d82f732",
+      "export_sha256": "6b2205393ad1832e0914bef111fd923ea508d29c0a26f9127a2660307d82f732",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/verify_v2_evidence.py": {
+      "source_path": "outputs/acr_repro/verify_v2_evidence.py",
+      "source_sha256": "dad808267b01aa1c5f67f635e2a82445e0d61f7ea02ac9bbdb74eb64d0916099",
+      "export_sha256": "dad808267b01aa1c5f67f635e2a82445e0d61f7ea02ac9bbdb74eb64d0916099",
+      "portable_path_export": false
+    },
+    "results/acoustic_rr/acquisition_audit.json": {
+      "source_path": "work/benchmarks/acoustic_rr/acquisition_audit.json",
+      "source_sha256": "9332408c18378020c216bd23a97db8ee4d10663ec54a6b84c57e581ac8985bf3",
+      "export_sha256": "9332408c18378020c216bd23a97db8ee4d10663ec54a6b84c57e581ac8985bf3",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/acr_channel_calibration/acr_gain_diagnostic_5s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/acr_channel_calibration/acr_gain_diagnostic_5s.json",
+      "source_sha256": "24ea1d780403587592f94b3a17dbdf779213c8c7dbc9e1ca19af09747ba855e3",
+      "export_sha256": "24ea1d780403587592f94b3a17dbdf779213c8c7dbc9e1ca19af09747ba855e3",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/acr_channel_calibration/freeze_chronology_audit.json": {
+      "source_path": "work/benchmarks/acoustic_rr/acr_channel_calibration/freeze_chronology_audit.json",
+      "source_sha256": "532d8c624bfc90d257354ee55d6002ffe5fb71777b46c877d1b373a5deb7949b",
+      "export_sha256": "532d8c624bfc90d257354ee55d6002ffe5fb71777b46c877d1b373a5deb7949b",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/acr_channel_calibration/frozen_gains.json": {
+      "source_path": "work/benchmarks/acoustic_rr/acr_channel_calibration/frozen_gains.json",
+      "source_sha256": "e7719df3744f89a917144383809f579352f08fe781ba78b3f353c4bef341ca49",
+      "export_sha256": "e7719df3744f89a917144383809f579352f08fe781ba78b3f353c4bef341ca49",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/acr_channel_calibration/frozen_gate_and_calibration.json": {
+      "source_path": "work/benchmarks/acoustic_rr/acr_channel_calibration/frozen_gate_and_calibration.json",
+      "source_sha256": "c2a91c84fb60cb6cb237967f5369d89bbd47b8d071dba12406ac9b6df3b69abb",
+      "export_sha256": "c2a91c84fb60cb6cb237967f5369d89bbd47b8d071dba12406ac9b6df3b69abb",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/acr_channel_calibration/plan.json": {
+      "source_path": "work/benchmarks/acoustic_rr/acr_channel_calibration/plan.json",
+      "source_sha256": "917ca5220f476429e24b6227b9bdf861815593a6ffbc31e24183b77e3e4d7bfa",
+      "export_sha256": "917ca5220f476429e24b6227b9bdf861815593a6ffbc31e24183b77e3e4d7bfa",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/acr_channel_paired_comparison.json": {
+      "source_path": "work/benchmarks/acoustic_rr/acr_channel_paired_comparison.json",
+      "source_sha256": "0c960f43e7076c86646a6d500c2ce51e05d05515b67502e961b35e3183a3cf6f",
+      "export_sha256": "0c960f43e7076c86646a6d500c2ce51e05d05515b67502e961b35e3183a3cf6f",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/acr_channel_summary.json": {
+      "source_path": "work/benchmarks/acoustic_rr/acr_channel_summary.json",
+      "source_sha256": "fe38ddb4d93b1f020691602776e9ef23fb65c723a00c927ad06dec694388ea1d",
+      "export_sha256": "fe38ddb4d93b1f020691602776e9ef23fb65c723a00c927ad06dec694388ea1d",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/acr_native/acr_exact_d1_qs1_5s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/acr_native/acr_exact_d1_qs1_5s.json",
+      "source_sha256": "8f734327bff3bc9605bb5f86483ac6b8177b0a47494117c544682ab566aa9584",
+      "export_sha256": "8f734327bff3bc9605bb5f86483ac6b8177b0a47494117c544682ab566aa9584",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/acr_native/acr_exact_d8_qs1_10s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/acr_native/acr_exact_d8_qs1_10s.json",
+      "source_sha256": "8ae8f596e2fa71b12424b2865b6bd02b82fc9eb1901227c563d8140993625400",
+      "export_sha256": "8ae8f596e2fa71b12424b2865b6bd02b82fc9eb1901227c563d8140993625400",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/acr_native/acr_exact_d8_qs1_5s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/acr_native/acr_exact_d8_qs1_5s.json",
+      "source_sha256": "e9fcb862e2078fc789996690c0baed6b2198e249915d7cd5dfecb35738e06ac1",
+      "export_sha256": "e9fcb862e2078fc789996690c0baed6b2198e249915d7cd5dfecb35738e06ac1",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/acr_native/acr_ivf_d8_qs4_10s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/acr_native/acr_ivf_d8_qs4_10s.json",
+      "source_sha256": "775fa0f25d9b7a5187b8a5bd78705f4ff917041d3c56649abcc0e48e35a46b83",
+      "export_sha256": "775fa0f25d9b7a5187b8a5bd78705f4ff917041d3c56649abcc0e48e35a46b83",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/acr_native/acr_ivf_d8_qs4_5s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/acr_native/acr_ivf_d8_qs4_5s.json",
+      "source_sha256": "d3dc7733d7a72510431e66865b76045ce95e8ec6cd35c9cbc7c01a730bdb6f61",
+      "export_sha256": "d3dc7733d7a72510431e66865b76045ce95e8ec6cd35c9cbc7c01a730bdb6f61",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/acr_native_summary.json": {
+      "source_path": "work/benchmarks/acoustic_rr/acr_native_summary.json",
+      "source_sha256": "ad6f49c41615a7801c379e7e022233d9daa5a8ad3d76d9b53f5af9348b4a3e20",
+      "export_sha256": "ad6f49c41615a7801c379e7e022233d9daa5a8ad3d76d9b53f5af9348b4a3e20",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/acr_protocol_integrity.json": {
+      "source_path": "work/benchmarks/acoustic_rr/acr_protocol_integrity.json",
+      "source_sha256": "4b475847216aa7469facfaffa7d2262494b4e1775a549ae820782d7a656bd915",
+      "export_sha256": "4b475847216aa7469facfaffa7d2262494b4e1775a549ae820782d7a656bd915",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/acr_result_provenance.json": {
+      "source_path": "work/benchmarks/acoustic_rr/acr_result_provenance.json",
+      "source_sha256": "dec34edfbfde638e652637e881981dfc4af3d8d4e88ef3e9226efc3764c70d5c",
+      "export_sha256": "dec34edfbfde638e652637e881981dfc4af3d8d4e88ef3e9226efc3764c70d5c",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/acr_session_open/acr_exact_d1_qs1_5s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/acr_session_open/acr_exact_d1_qs1_5s.json",
+      "source_sha256": "f1b707c12405ad132e28463cdf887d69bbf1140ce56eb036073edda6593614dc",
+      "export_sha256": "f1b707c12405ad132e28463cdf887d69bbf1140ce56eb036073edda6593614dc",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/acr_session_open/acr_exact_d8_qs1_5s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/acr_session_open/acr_exact_d8_qs1_5s.json",
+      "source_sha256": "7b996ba109719c6ca309c796de7b8e2feea1015e68551107afc965ef2f1ea2cb",
+      "export_sha256": "7b996ba109719c6ca309c796de7b8e2feea1015e68551107afc965ef2f1ea2cb",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/acr_session_open/acr_ivf_d8_qs4_5s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/acr_session_open/acr_ivf_d8_qs4_5s.json",
+      "source_sha256": "4a07e79d53fba203bd262895c27ad68f909ae98b3e10ab80eae6c66d452010f3",
+      "export_sha256": "4a07e79d53fba203bd262895c27ad68f909ae98b3e10ab80eae6c66d452010f3",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/acr_session_open/gate_exact_d1_qs1_5s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/acr_session_open/gate_exact_d1_qs1_5s.json",
+      "source_sha256": "be182d9fe95cd3e9bb98de405b6352222c33676728af0b45ca22deb0770f8559",
+      "export_sha256": "be182d9fe95cd3e9bb98de405b6352222c33676728af0b45ca22deb0770f8559",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/acr_session_open/gate_exact_d8_qs1_5s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/acr_session_open/gate_exact_d8_qs1_5s.json",
+      "source_sha256": "267e53317c2159e36a422f98bf971fc00342c878762229e576a9226bfce9173e",
+      "export_sha256": "267e53317c2159e36a422f98bf971fc00342c878762229e576a9226bfce9173e",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/acr_session_open/gate_ivf_d8_qs4_5s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/acr_session_open/gate_ivf_d8_qs4_5s.json",
+      "source_sha256": "37da47f84049863c831e46dc7e9ab4ba6764b83bbb47e83c994fac0519d895d4",
+      "export_sha256": "37da47f84049863c831e46dc7e9ab4ba6764b83bbb47e83c994fac0519d895d4",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/acr_session_open_summary.json": {
+      "source_path": "work/benchmarks/acoustic_rr/acr_session_open_summary.json",
+      "source_sha256": "f40fa304cd042c495d5ba64a911d5a732dcaaba99c11335a88c3df06a378675d",
+      "export_sha256": "f40fa304cd042c495d5ba64a911d5a732dcaaba99c11335a88c3df06a378675d",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/acr_transfer_integrity.json": {
+      "source_path": "work/benchmarks/acoustic_rr/acr_transfer_integrity.json",
+      "source_sha256": "dacb612c35968f21a7d9187e1913899b00857b3ceb6c9cd604798a73a6c93255",
+      "export_sha256": "dacb612c35968f21a7d9187e1913899b00857b3ceb6c9cd604798a73a6c93255",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/audfprint_candidate/audfprint_10s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/audfprint_candidate/audfprint_10s.json",
+      "source_sha256": "937066f52731341358105a45b0e2b07ad4e1d15d2d4b3a4e5585dd062b25adc2",
+      "export_sha256": "937066f52731341358105a45b0e2b07ad4e1d15d2d4b3a4e5585dd062b25adc2",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/audfprint_candidate/audfprint_5s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/audfprint_candidate/audfprint_5s.json",
+      "source_sha256": "91a3047dd617d8871968ffb72f88f1bea2ad9f970d64556e10d65aa275dd7333",
+      "export_sha256": "91a3047dd617d8871968ffb72f88f1bea2ad9f970d64556e10d65aa275dd7333",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/audfprint_native/audfprint_10s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/audfprint_native/audfprint_10s.json",
+      "source_sha256": "6a3dead7646260f6ec209ddefe24cc30a7217baedaba602f205a7abb59f26951",
+      "export_sha256": "6a3dead7646260f6ec209ddefe24cc30a7217baedaba602f205a7abb59f26951",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/audfprint_native/audfprint_5s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/audfprint_native/audfprint_5s.json",
+      "source_sha256": "4e79895e81ba14fb7993b027047f232b270588d90b3474db580425e2765464a9",
+      "export_sha256": "4e79895e81ba14fb7993b027047f232b270588d90b3474db580425e2765464a9",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/audfprint_session_candidate/audfprint_5s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/audfprint_session_candidate/audfprint_5s.json",
+      "source_sha256": "8df44f52ffd5ef11235b9108e8bf9453de898a1c11fcbaa0a7320276984b060c",
+      "export_sha256": "8df44f52ffd5ef11235b9108e8bf9453de898a1c11fcbaa0a7320276984b060c",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/audfprint_session_native/audfprint_5s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/audfprint_session_native/audfprint_5s.json",
+      "source_sha256": "55dfed956b5b8e2e319d77aae2bfdd4414b2893b97e3ac78ac5e6b12dbf172b5",
+      "export_sha256": "55dfed956b5b8e2e319d77aae2bfdd4414b2893b97e3ac78ac5e6b12dbf172b5",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/classical_native_summary.json": {
+      "source_path": "work/benchmarks/acoustic_rr/classical_native_summary.json",
+      "source_sha256": "a75f566c93dba5442c9958a162407560b6b781ce1fccc7ae5cab7d2ce3e319d8",
+      "export_sha256": "a75f566c93dba5442c9958a162407560b6b781ce1fccc7ae5cab7d2ce3e319d8",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/classical_session_summary.json": {
+      "source_path": "work/benchmarks/acoustic_rr/classical_session_summary.json",
+      "source_sha256": "d123556410e23e82bf24e4e037aba74296544b72d1debf0e1c22dd11a2469d69",
+      "export_sha256": "d123556410e23e82bf24e4e037aba74296544b72d1debf0e1c22dd11a2469d69",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/classical_validation_audit.json": {
+      "source_path": "work/benchmarks/acoustic_rr/classical_validation_audit.json",
+      "source_sha256": "393501f53bd2aa24fca3319f53ef0740b5c02be8572636df8373114911e34afd",
+      "export_sha256": "393501f53bd2aa24fca3319f53ef0740b5c02be8572636df8373114911e34afd",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/neural_cache_progress_qc.json": {
+      "source_path": "work/benchmarks/acoustic_rr/neural_cache_progress_qc.json",
+      "source_sha256": "8e2b971e38e67953da78de76e90c35bc58b637ec64907ebba26bc920a6ee5d05",
+      "export_sha256": "8e2b971e38e67953da78de76e90c35bc58b637ec64907ebba26bc920a6ee5d05",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/neural_origin_grid_audit.json": {
+      "source_path": "work/benchmarks/acoustic_rr/neural_origin_grid_audit.json",
+      "source_sha256": "9c48d9ec15c2f557773817783e8720bebbd42ce06d850f095979e1f665002eec",
+      "export_sha256": "9c48d9ec15c2f557773817783e8720bebbd42ce06d850f095979e1f665002eec",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/neural_reference_bounds_audit.json": {
+      "source_path": "work/benchmarks/acoustic_rr/neural_reference_bounds_audit.json",
+      "source_sha256": "b4f9b79090b8abe11bb827dd9fb0e798797406fbef42ba3e604c66715c770717",
+      "export_sha256": "b4f9b79090b8abe11bb827dd9fb0e798797406fbef42ba3e604c66715c770717",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/neural_result_provenance.json": {
+      "source_path": "work/benchmarks/acoustic_rr/neural_result_provenance.json",
+      "source_sha256": "1ee102ee3f6912bf50b80b798a2f7c3644e3a4fbfd4484336d16cc6790ab3779",
+      "export_sha256": "1ee102ee3f6912bf50b80b798a2f7c3644e3a4fbfd4484336d16cc6790ab3779",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/nmfp_clean_source_audit.json": {
+      "source_path": "work/benchmarks/acoustic_rr/nmfp_clean_source_audit.json",
+      "source_sha256": "fa504eacc236e87b445a45420b177b9c51d281f1dbaee564d0a863dd4746f7d6",
+      "export_sha256": "fa504eacc236e87b445a45420b177b9c51d281f1dbaee564d0a863dd4746f7d6",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/nmfp_results/declaration.json": {
+      "source_path": "work/benchmarks/acoustic_rr/nmfp_results/declaration.json",
+      "source_sha256": "92c64116e50558e46d9f62a772ed0e8fcdbd57d8e0839eac6e1acc6b1d6964d1",
+      "export_sha256": "92c64116e50558e46d9f62a772ed0e8fcdbd57d8e0839eac6e1acc6b1d6964d1",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/nmfp_results/nmfp_gate_r1_q1_5s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/nmfp_results/nmfp_gate_r1_q1_5s.json",
+      "source_sha256": "449370028f4c9a45f8385d3a2a6b820a38c92f96ac762c546d20345c6dcb1f90",
+      "export_sha256": "449370028f4c9a45f8385d3a2a6b820a38c92f96ac762c546d20345c6dcb1f90",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/nmfp_results/nmfp_gate_r2_q2_5s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/nmfp_results/nmfp_gate_r2_q2_5s.json",
+      "source_sha256": "071f528e9d11334f3ac6b0fe03ffde520991466eb7e18cc602f6e14e8a50149a",
+      "export_sha256": "071f528e9d11334f3ac6b0fe03ffde520991466eb7e18cc602f6e14e8a50149a",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/nmfp_results/nmfp_gate_r4_q4_5s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/nmfp_results/nmfp_gate_r4_q4_5s.json",
+      "source_sha256": "f89b9d502bc2952a37ded41101bdf4514f7c1dbbf69b1f2bb9867a987413c2cc",
+      "export_sha256": "f89b9d502bc2952a37ded41101bdf4514f7c1dbbf69b1f2bb9867a987413c2cc",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/nmfp_results/nmfp_native_r1_q1_10s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/nmfp_results/nmfp_native_r1_q1_10s.json",
+      "source_sha256": "dd9c043c2e77b951d5dc8d9142c33771a4bac9c12205000ec3653d733e934b6b",
+      "export_sha256": "dd9c043c2e77b951d5dc8d9142c33771a4bac9c12205000ec3653d733e934b6b",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/nmfp_results/nmfp_native_r1_q1_5s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/nmfp_results/nmfp_native_r1_q1_5s.json",
+      "source_sha256": "bb47393f9f02961a72a158787731496f97a398065222d6d8f0d38b39d293d74d",
+      "export_sha256": "bb47393f9f02961a72a158787731496f97a398065222d6d8f0d38b39d293d74d",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/nmfp_results/nmfp_native_r2_q2_5s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/nmfp_results/nmfp_native_r2_q2_5s.json",
+      "source_sha256": "58714a74d58d5d6f5e66a54fabdcede889742082ba4f4bfc67d56fa65fc119a2",
+      "export_sha256": "58714a74d58d5d6f5e66a54fabdcede889742082ba4f4bfc67d56fa65fc119a2",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/nmfp_results/nmfp_native_r4_q4_5s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/nmfp_results/nmfp_native_r4_q4_5s.json",
+      "source_sha256": "d22a776bbde01cb417074ccc2b21e151548179bba7779517081ae2b347ddbb18",
+      "export_sha256": "d22a776bbde01cb417074ccc2b21e151548179bba7779517081ae2b347ddbb18",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/nmfp_results/nmfp_session_open_r1_q1_5s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/nmfp_results/nmfp_session_open_r1_q1_5s.json",
+      "source_sha256": "27052f2b5fb049555638cc9b5f0fbe6fce3123eecb1639fc76cf24167eb8bee6",
+      "export_sha256": "27052f2b5fb049555638cc9b5f0fbe6fce3123eecb1639fc76cf24167eb8bee6",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/nmfp_results/nmfp_session_open_r2_q2_5s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/nmfp_results/nmfp_session_open_r2_q2_5s.json",
+      "source_sha256": "328a6df374910d7125b27315895d302d4962d4b22705600a9e510520ab914ee1",
+      "export_sha256": "328a6df374910d7125b27315895d302d4962d4b22705600a9e510520ab914ee1",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/nmfp_results/nmfp_session_open_r4_q4_5s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/nmfp_results/nmfp_session_open_r4_q4_5s.json",
+      "source_sha256": "79409fde0c9a13e4ad027911b1599e509915316b1afc26e88d9c6a67e0fad84c",
+      "export_sha256": "79409fde0c9a13e4ad027911b1599e509915316b1afc26e88d9c6a67e0fad84c",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/nmfp_results/summary.json": {
+      "source_path": "work/benchmarks/acoustic_rr/nmfp_results/summary.json",
+      "source_sha256": "e300bfd64147205e4442bf9aeabe70cece777f4abdae4ec67f40564b1fcd3584",
+      "export_sha256": "44df41265a936056839eeebc98bdfa78fddf6a1d4761aed7ee321545ec160807",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/peaknet_clean_source_audit.json": {
+      "source_path": "work/benchmarks/acoustic_rr/peaknet_clean_source_audit.json",
+      "source_sha256": "196dc3d37fec71071586d0749b049339ea2c1976d1b52aef1e0b1d36e8186be2",
+      "export_sha256": "196dc3d37fec71071586d0749b049339ea2c1976d1b52aef1e0b1d36e8186be2",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/peaknet_results/declaration.json": {
+      "source_path": "work/benchmarks/acoustic_rr/peaknet_results/declaration.json",
+      "source_sha256": "2ff5b5d37cfd8132b15ffda651362282997c103e365996184e1e5bbcdb6157f6",
+      "export_sha256": "2ff5b5d37cfd8132b15ffda651362282997c103e365996184e1e5bbcdb6157f6",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/peaknet_results/peaknet_gate_r1_q1_5s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/peaknet_results/peaknet_gate_r1_q1_5s.json",
+      "source_sha256": "f618f00f184fd6c59fad61492540a4d22549858596982a10c6becf7fbbaf8d50",
+      "export_sha256": "f618f00f184fd6c59fad61492540a4d22549858596982a10c6becf7fbbaf8d50",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/peaknet_results/peaknet_gate_r2_q1_5s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/peaknet_results/peaknet_gate_r2_q1_5s.json",
+      "source_sha256": "60a27c24f1a413f1a883f22b811dcedd81ec8051543a4ec8894d32b7f395ce5a",
+      "export_sha256": "60a27c24f1a413f1a883f22b811dcedd81ec8051543a4ec8894d32b7f395ce5a",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/peaknet_results/peaknet_gate_r4_q1_5s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/peaknet_results/peaknet_gate_r4_q1_5s.json",
+      "source_sha256": "4ec264c6c326dacc27d86420b78da0e88f2880d88894684c9e1fd5762d5d79cc",
+      "export_sha256": "4ec264c6c326dacc27d86420b78da0e88f2880d88894684c9e1fd5762d5d79cc",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/peaknet_results/peaknet_native_r1_q1_10s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/peaknet_results/peaknet_native_r1_q1_10s.json",
+      "source_sha256": "d6ca85dfaaccdb447089ada2a03ed0a701e7334c1aa23f0c198880e1346185d0",
+      "export_sha256": "d6ca85dfaaccdb447089ada2a03ed0a701e7334c1aa23f0c198880e1346185d0",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/peaknet_results/peaknet_native_r1_q1_5s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/peaknet_results/peaknet_native_r1_q1_5s.json",
+      "source_sha256": "79897cdf74bbc683730c70caa94312bb0b9de035dce7a5b791665e75adca8051",
+      "export_sha256": "79897cdf74bbc683730c70caa94312bb0b9de035dce7a5b791665e75adca8051",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/peaknet_results/peaknet_native_r2_q1_5s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/peaknet_results/peaknet_native_r2_q1_5s.json",
+      "source_sha256": "9c22cd6a3005716543c265f8005c04b1d16fa669521c81438b43593476f0937c",
+      "export_sha256": "9c22cd6a3005716543c265f8005c04b1d16fa669521c81438b43593476f0937c",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/peaknet_results/peaknet_native_r4_q1_5s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/peaknet_results/peaknet_native_r4_q1_5s.json",
+      "source_sha256": "2db757b52a15594611a90121d77a11ec4115ee5f437524c26749615007a49c22",
+      "export_sha256": "2db757b52a15594611a90121d77a11ec4115ee5f437524c26749615007a49c22",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/peaknet_results/peaknet_session_open_r1_q1_5s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/peaknet_results/peaknet_session_open_r1_q1_5s.json",
+      "source_sha256": "aa9b7e5e01f1cedd42ee4265fac899495ea54ef92da48aca4ef121c488e656fc",
+      "export_sha256": "aa9b7e5e01f1cedd42ee4265fac899495ea54ef92da48aca4ef121c488e656fc",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/peaknet_results/peaknet_session_open_r2_q1_5s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/peaknet_results/peaknet_session_open_r2_q1_5s.json",
+      "source_sha256": "47edecad85e3645bb46e5333672c2b10569f769aaa4695f44842473e6efe7dcd",
+      "export_sha256": "47edecad85e3645bb46e5333672c2b10569f769aaa4695f44842473e6efe7dcd",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/peaknet_results/peaknet_session_open_r4_q1_5s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/peaknet_results/peaknet_session_open_r4_q1_5s.json",
+      "source_sha256": "87a9b97700076fa035100b2b8d097ac27c8b66aeff5cc3244d69ad715a35bfe8",
+      "export_sha256": "87a9b97700076fa035100b2b8d097ac27c8b66aeff5cc3244d69ad715a35bfe8",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/peaknet_results/summary.json": {
+      "source_path": "work/benchmarks/acoustic_rr/peaknet_results/summary.json",
+      "source_sha256": "32a7c8b79d49bc4ddd6501d5ddfd917fda51e20722f86e95b37818e86f7b5caf",
+      "export_sha256": "e9dde0b5868534ab708a6f6c200e617cb6f33f8586ba40f752c8cc3cf729a60a",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/physical_bounds_audit.json": {
+      "source_path": "work/benchmarks/acoustic_rr/physical_bounds_audit.json",
+      "source_sha256": "55e8facc1764c687d5f0c75e1931505cab695a9be3d3c40fb0b4796aa6655d82",
+      "export_sha256": "55e8facc1764c687d5f0c75e1931505cab695a9be3d3c40fb0b4796aa6655d82",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/provenance.md": {
+      "source_path": "work/benchmarks/acoustic_rr/provenance.md",
+      "source_sha256": "88712ee11cda914d9cf2df145d8f33803dced307d7bd6ef8fb9c23da07e23cca",
+      "export_sha256": "88712ee11cda914d9cf2df145d8f33803dced307d7bd6ef8fb9c23da07e23cca",
+      "portable_path_export": false
+    },
+    "results/acoustic_rr/release_metadata/CITATION.cff": {
+      "source_path": "work/benchmarks/acoustic_rr/data/CITATION.cff",
+      "source_sha256": "45e3f61ac8366ada7b133241b9762aab75b3eda0325038d206598c3d3e6c6940",
+      "export_sha256": "45e3f61ac8366ada7b133241b9762aab75b3eda0325038d206598c3d3e6c6940",
+      "portable_path_export": false
+    },
+    "results/acoustic_rr/release_metadata/DATASET_CARD.md": {
+      "source_path": "work/benchmarks/acoustic_rr/data/DATASET_CARD.md",
+      "source_sha256": "daf7831de1e351c74f73ad3d3e1614fc4ea9732696caaad2eb78d80b79b7d041",
+      "export_sha256": "daf7831de1e351c74f73ad3d3e1614fc4ea9732696caaad2eb78d80b79b7d041",
+      "portable_path_export": false
+    },
+    "results/acoustic_rr/release_metadata/LICENSES.md": {
+      "source_path": "work/benchmarks/acoustic_rr/data/LICENSES.md",
+      "source_sha256": "e29aae134ba2ce507a4602a8d642035d4f099e8b33cd0083f506a10454b17c95",
+      "export_sha256": "e29aae134ba2ce507a4602a8d642035d4f099e8b33cd0083f506a10454b17c95",
+      "portable_path_export": false
+    },
+    "results/acoustic_rr/release_metadata/README.md": {
+      "source_path": "work/benchmarks/acoustic_rr/data/README.md",
+      "source_sha256": "d7074fcdca9edf59237d6e73f769ba0d6ffc9be0a2cd4e64ae3bfd1a7ca5c1ad",
+      "export_sha256": "d7074fcdca9edf59237d6e73f769ba0d6ffc9be0a2cd4e64ae3bfd1a7ca5c1ad",
+      "portable_path_export": false
+    },
+    "results/acoustic_rr/release_metadata/SHA256SUMS": {
+      "source_path": "work/benchmarks/acoustic_rr/data/SHA256SUMS",
+      "source_sha256": "4fe052f16e7e57855a62493362c0a14c5db4efb2517f5b774b085d5edf5b5fb1",
+      "export_sha256": "4fe052f16e7e57855a62493362c0a14c5db4efb2517f5b774b085d5edf5b5fb1",
+      "portable_path_export": false
+    },
+    "results/acoustic_rr/release_metadata/attribution.csv": {
+      "source_path": "work/benchmarks/acoustic_rr/data/attribution.csv",
+      "source_sha256": "ff9fa4d0bc270589342ca1de0c10fc1fd4c9c62e7e4f224c31c3b71b11f4d5f5",
+      "export_sha256": "ff9fa4d0bc270589342ca1de0c10fc1fd4c9c62e7e4f224c31c3b71b11f4d5f5",
+      "portable_path_export": false
+    },
+    "results/acoustic_rr/release_metadata/dataset_config.json": {
+      "source_path": "work/benchmarks/acoustic_rr/data/dataset_config.json",
+      "source_sha256": "aec6eb31a9f09212f024489d1953af722f4fb529ff293bcb64206a30c1a9dd2b",
+      "export_sha256": "aec6eb31a9f09212f024489d1953af722f4fb529ff293bcb64206a30c1a9dd2b",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/release_metadata/dataset_summary.json": {
+      "source_path": "work/benchmarks/acoustic_rr/data/dataset_summary.json",
+      "source_sha256": "6a6e84b1930043e3582d57282edcb240837ff8577a380f4f7ef1bd0db43ae6a9",
+      "export_sha256": "6a6e84b1930043e3582d57282edcb240837ff8577a380f4f7ef1bd0db43ae6a9",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/release_metadata/exclusions.csv": {
+      "source_path": "work/benchmarks/acoustic_rr/data/exclusions.csv",
+      "source_sha256": "665d6db51ce4407a660378d9169e30433635fd10e3e16fef80206433d08819a6",
+      "export_sha256": "665d6db51ce4407a660378d9169e30433635fd10e3e16fef80206433d08819a6",
+      "portable_path_export": false
+    },
+    "results/acoustic_rr/release_metadata/manifest.csv": {
+      "source_path": "work/benchmarks/acoustic_rr/data/manifest.csv",
+      "source_sha256": "5e6c66cdfcf17aa98e085a0de9a545096f44183c65787608270644f82556e0e5",
+      "export_sha256": "5e6c66cdfcf17aa98e085a0de9a545096f44183c65787608270644f82556e0e5",
+      "portable_path_export": false
+    },
+    "results/acoustic_rr/release_metadata/reference_manifest.csv": {
+      "source_path": "work/benchmarks/acoustic_rr/data/reference_manifest.csv",
+      "source_sha256": "1843cf0c1d9aa658b5b1009f2eb21107c08f6bfd8f4ac75c552162eab78c1f27",
+      "export_sha256": "1843cf0c1d9aa658b5b1009f2eb21107c08f6bfd8f4ac75c552162eab78c1f27",
+      "portable_path_export": false
+    },
+    "results/acoustic_rr/sdrr_native_protocol.json": {
+      "source_path": "work/benchmarks/acoustic_rr/sdrr_native_protocol.json",
+      "source_sha256": "64754a1f1374630c010a3e6e96465e3c09247382fe6b79c70bc818b5cbbc261a",
+      "export_sha256": "8e8bb93a84c194957386193b3ae6441f40a3da30c10afccb1fb95f4b3ed572a0",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/sdrr_session_open_protocol.json": {
+      "source_path": "work/benchmarks/acoustic_rr/sdrr_session_open_protocol.json",
+      "source_sha256": "cf6644dff657a84a4d1aabd632c0ec5a7f538c4bf2b79d34a013901e3ca8ded8",
+      "export_sha256": "fd75e9f6f4bdaaa67fa3d1ec71b7dacb21f81cea147e423c0338394cdcc41b46",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/soundfingerprinting_clean_control/soundfingerprinting_10s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/soundfingerprinting_clean_control/soundfingerprinting_10s.json",
+      "source_sha256": "40b4c71b7050555a0a40bde6efbcf722c9ea0522d17a08af6d7debbf025a83df",
+      "export_sha256": "37193d93a8b1b9286b0c75988680f96b019590404e2d8a1d41ce23495ae147e2",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/soundfingerprinting_clean_control/soundfingerprinting_5s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/soundfingerprinting_clean_control/soundfingerprinting_5s.json",
+      "source_sha256": "86b66beb98414418f914f8923d33851e6233082a5bd6dd182edf7eb720d1d810",
+      "export_sha256": "f0fe0d60e12389dd67d9ff9b4c0074b7055d9cd3d38fb0e7d49e030635f3a553",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/soundfingerprinting_clean_control_protocol.json": {
+      "source_path": "work/benchmarks/acoustic_rr/soundfingerprinting_clean_control_protocol.json",
+      "source_sha256": "94d4ed028d5fd03ee737bdf788f8d46463f4f561a98720a7a1908cbeb62980bf",
+      "export_sha256": "2f1071712e0acbed0863aae9e5a665e92f8bfb71aec0d2146849bc07838eb7eb",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/soundfingerprinting_native/soundfingerprinting_10s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/soundfingerprinting_native/soundfingerprinting_10s.json",
+      "source_sha256": "ce5983183543bd7af129ba673e258ff599d0ff879f982b2792444a18a64c6b43",
+      "export_sha256": "3556c5be9601e3db1f401c2ce6b99619c6dfce83dadc9db33670b358b03f4b54",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/soundfingerprinting_native/soundfingerprinting_5s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/soundfingerprinting_native/soundfingerprinting_5s.json",
+      "source_sha256": "4248fed62717c9021dc419ff0c7fd09133b7bafd3050db24724122a893740afa",
+      "export_sha256": "49d72a432d0bf178cc6b900f8292ff6eb4f960a1e2f64ea8dc83819f6fd8f4d0",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/soundfingerprinting_session_native/soundfingerprinting_5s.json": {
+      "source_path": "work/benchmarks/acoustic_rr/soundfingerprinting_session_native/soundfingerprinting_5s.json",
+      "source_sha256": "718d6f326c6f6124d374f37492f332b6dbbd0d69d6b9614c231562c41964e625",
+      "export_sha256": "72052b89cd2d08733e0dea969a82cc48181a247f99281473842ad02fa90f9d37",
+      "portable_path_export": true
+    },
+    "results/acoustic_rr/source_overlap_audit.json": {
+      "source_path": "work/benchmarks/acoustic_rr/source_overlap_audit.json",
+      "source_sha256": "e07e05036de2c460ebd811bb04eeb5cb05482ebb5c54f92997393a2c202f89e5",
+      "export_sha256": "e07e05036de2c460ebd811bb04eeb5cb05482ebb5c54f92997393a2c202f89e5",
+      "portable_path_export": true
+    },
+    "results/acr_ablations/fp16_roundtrip_d8_5s.json": {
+      "source_path": "work/benchmarks/acr_ablations/fp16_roundtrip_d8_5s.json",
+      "source_sha256": "c24f3ee0362c1f51197601f8ebda8828cb049d47b91f22924efa91f127328819",
+      "export_sha256": "c24f3ee0362c1f51197601f8ebda8828cb049d47b91f22924efa91f127328819",
+      "portable_path_export": true
+    },
+    "results/acr_ablations/fp16_roundtrip_pca_model.npz": {
+      "source_path": "work/benchmarks/acr_ablations/fp16_roundtrip_pca_model.npz",
+      "source_sha256": "756c672664bdcfd76354840114f2b83fc3d342c4cdc455dd14dbc49ea408b514",
+      "export_sha256": "756c672664bdcfd76354840114f2b83fc3d342c4cdc455dd14dbc49ea408b514",
+      "portable_path_export": false
+    },
+    "results/acr_ablations/no_deltas_d8_5s.json": {
+      "source_path": "work/benchmarks/acr_ablations/no_deltas_d8_5s.json",
+      "source_sha256": "bdd8b228c05a2e8d60c63435667623338651a51d3a6faa93f716fc0eb7c5273a",
+      "export_sha256": "bdd8b228c05a2e8d60c63435667623338651a51d3a6faa93f716fc0eb7c5273a",
+      "portable_path_export": true
+    },
+    "results/acr_ablations/no_deltas_pca_model.npz": {
+      "source_path": "work/benchmarks/acr_ablations/no_deltas_pca_model.npz",
+      "source_sha256": "f85a554543fec34fb7214ea24b1d5d1c762f639a4f9663730a3768b0d18104b7",
+      "export_sha256": "f85a554543fec34fb7214ea24b1d5d1c762f639a4f9663730a3768b0d18104b7",
+      "portable_path_export": false
+    },
+    "results/acr_ablations/no_pca_d8_5s.json": {
+      "source_path": "work/benchmarks/acr_ablations/no_pca_d8_5s.json",
+      "source_sha256": "642ad36ac6af1c0fb7a9b676e760e513e551230e3cbb106668701527709025e5",
+      "export_sha256": "642ad36ac6af1c0fb7a9b676e760e513e551230e3cbb106668701527709025e5",
+      "portable_path_export": true
+    },
+    "results/acr_ablations/no_pca_pca_model.npz": {
+      "source_path": "work/benchmarks/acr_ablations/no_pca_pca_model.npz",
+      "source_sha256": "a14588e39b7f8167ce6c1c5484079d49af244d193a08abcc9d9b3b4955aa359e",
+      "export_sha256": "a14588e39b7f8167ce6c1c5484079d49af244d193a08abcc9d9b3b4955aa359e",
+      "portable_path_export": false
+    },
+    "results/acr_ablations/no_standardization_d8_5s.json": {
+      "source_path": "work/benchmarks/acr_ablations/no_standardization_d8_5s.json",
+      "source_sha256": "4443aeea40b481f62c98d060ebeaec4d6d4f392e7fe5d7957c7bded6ae0b3f09",
+      "export_sha256": "4443aeea40b481f62c98d060ebeaec4d6d4f392e7fe5d7957c7bded6ae0b3f09",
+      "portable_path_export": true
+    },
+    "results/acr_ablations/no_standardization_pca_model.npz": {
+      "source_path": "work/benchmarks/acr_ablations/no_standardization_pca_model.npz",
+      "source_sha256": "2a0335c5a155e3406ef6c093826c05b67acc016f7566d86a856a26f58ef7e8d9",
+      "export_sha256": "2a0335c5a155e3406ef6c093826c05b67acc016f7566d86a856a26f58ef7e8d9",
+      "portable_path_export": false
+    },
+    "results/acr_ablations/pca16_d8_5s.json": {
+      "source_path": "work/benchmarks/acr_ablations/pca16_d8_5s.json",
+      "source_sha256": "52d5e4eff5e23f25ed1a3ef0a9af43d9cc60ae5b96d2d3bf0f281552a86a38e7",
+      "export_sha256": "52d5e4eff5e23f25ed1a3ef0a9af43d9cc60ae5b96d2d3bf0f281552a86a38e7",
+      "portable_path_export": true
+    },
+    "results/acr_ablations/pca16_pca_model.npz": {
+      "source_path": "work/benchmarks/acr_ablations/pca16_pca_model.npz",
+      "source_sha256": "4b4adc4f3ac3878fd7c6ef81b2e7c058fe958709425fb579b5a97a602673ed50",
+      "export_sha256": "4b4adc4f3ac3878fd7c6ef81b2e7c058fe958709425fb579b5a97a602673ed50",
+      "portable_path_export": false
+    },
+    "results/acr_ablations/stride2_d8_5s.json": {
+      "source_path": "work/benchmarks/acr_ablations/stride2_d8_5s.json",
+      "source_sha256": "7a4b5d6990496666391ccaae531eb9dff85a939c131a001e809fe52305e506db",
+      "export_sha256": "7a4b5d6990496666391ccaae531eb9dff85a939c131a001e809fe52305e506db",
+      "portable_path_export": true
+    },
+    "results/acr_ablations/stride2_pca_model.npz": {
+      "source_path": "work/benchmarks/acr_ablations/stride2_pca_model.npz",
+      "source_sha256": "770e2079bd588c72af4145a416ae31c1f96d304f29129f5fa63cce9b66b6036f",
+      "export_sha256": "770e2079bd588c72af4145a416ae31c1f96d304f29129f5fa63cce9b66b6036f",
+      "portable_path_export": false
+    },
+    "results/acr_ablations/window16_d8_5s.json": {
+      "source_path": "work/benchmarks/acr_ablations/window16_d8_5s.json",
+      "source_sha256": "99e4bf4ec0731b60925b854e7bfa6b4c5da0703f996831265adcae604a14be47",
+      "export_sha256": "99e4bf4ec0731b60925b854e7bfa6b4c5da0703f996831265adcae604a14be47",
+      "portable_path_export": true
+    },
+    "results/acr_ablations/window16_pca_model.npz": {
+      "source_path": "work/benchmarks/acr_ablations/window16_pca_model.npz",
+      "source_sha256": "eace37f6cb1811e13f12912cdbb60f8217b65a3c79e6cc42d7bb15f8965c6527",
+      "export_sha256": "eace37f6cb1811e13f12912cdbb60f8217b65a3c79e6cc42d7bb15f8965c6527",
+      "portable_path_export": false
+    },
+    "results/acr_ablations/window48_d8_5s.json": {
+      "source_path": "work/benchmarks/acr_ablations/window48_d8_5s.json",
+      "source_sha256": "4531d4fa80ff490975f224d2e3fed73a753c2c45d5f22f40f0c89670894153b5",
+      "export_sha256": "4531d4fa80ff490975f224d2e3fed73a753c2c45d5f22f40f0c89670894153b5",
+      "portable_path_export": true
+    },
+    "results/acr_ablations/window48_pca_model.npz": {
+      "source_path": "work/benchmarks/acr_ablations/window48_pca_model.npz",
+      "source_sha256": "80fe88d33c11dbfed9b30003c2020b51600f3671cab0dfc43c62261b82ffa1d2",
+      "export_sha256": "80fe88d33c11dbfed9b30003c2020b51600f3671cab0dfc43c62261b82ffa1d2",
+      "portable_path_export": false
+    },
+    "results/acr_ann_summary.json": {
+      "source_path": "work/benchmarks/acr_ann_summary.json",
+      "source_sha256": "e38e6a10ca1d6d11f2ae28bbcf6323c206e1e2c2cf2299d3c176002b1117eb09",
+      "export_sha256": "e38e6a10ca1d6d11f2ae28bbcf6323c206e1e2c2cf2299d3c176002b1117eb09",
+      "portable_path_export": true
+    },
+    "results/acr_default_official_from_extended/acr_d8_5s.json": {
+      "source_path": "work/benchmarks/acr_default_official_from_extended/acr_d8_5s.json",
+      "source_sha256": "64d2806daeeb47dc0bb54d1b0194b46482f623238250e91b87232fef5e068a10",
+      "export_sha256": "64d2806daeeb47dc0bb54d1b0194b46482f623238250e91b87232fef5e068a10",
+      "portable_path_export": true
+    },
+    "results/acr_extended/acr_d8_5s.json": {
+      "source_path": "work/benchmarks/acr_extended/acr_d8_5s.json",
+      "source_sha256": "77674de3e6f6195281f483286351a9f4a30730936331354fcf546c376e44289c",
+      "export_sha256": "77674de3e6f6195281f483286351a9f4a30730936331354fcf546c376e44289c",
+      "portable_path_export": true
+    },
+    "results/acr_extended/pca_model.npz": {
+      "source_path": "work/benchmarks/acr_extended/pca_model.npz",
+      "source_sha256": "7f946bdbfd27b48f01074b5369df24b8fdce391236fe212ee88be9f9ec980dcd",
+      "export_sha256": "7f946bdbfd27b48f01074b5369df24b8fdce391236fe212ee88be9f9ec980dcd",
+      "portable_path_export": false
+    },
+    "results/acr_extended/summary.json": {
+      "source_path": "work/benchmarks/acr_extended/summary.json",
+      "source_sha256": "b93a3691b3eba8a6064d2c24760cf0fb6e2a2bc66209a5bcf6aead58bd989427",
+      "export_sha256": "b93a3691b3eba8a6064d2c24760cf0fb6e2a2bc66209a5bcf6aead58bd989427",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_efficiency_study/acr_ivf_selected_5s.json": {
+      "source_path": "work/benchmarks/acr_ivf_efficiency_study/acr_ivf_selected_5s.json",
+      "source_sha256": "8fcca3f477bc37f881bed1eb5a9f1b83eecd2d8c4e4daf2b05c4dd7f578a2316",
+      "export_sha256": "8fcca3f477bc37f881bed1eb5a9f1b83eecd2d8c4e4daf2b05c4dd7f578a2316",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_efficiency_study/cal_qs16_np1.json": {
+      "source_path": "work/benchmarks/acr_ivf_efficiency_study/cal_qs16_np1.json",
+      "source_sha256": "703eb9791275d1db04c2fb7d3896f2702b8078ad00104773cf6fa47941e5cdd4",
+      "export_sha256": "703eb9791275d1db04c2fb7d3896f2702b8078ad00104773cf6fa47941e5cdd4",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_efficiency_study/cal_qs16_np16.json": {
+      "source_path": "work/benchmarks/acr_ivf_efficiency_study/cal_qs16_np16.json",
+      "source_sha256": "4d7b6931d645c0099c7c42c6c976364a000222c1825bd382210dd9e2181a2dec",
+      "export_sha256": "4d7b6931d645c0099c7c42c6c976364a000222c1825bd382210dd9e2181a2dec",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_efficiency_study/cal_qs16_np4.json": {
+      "source_path": "work/benchmarks/acr_ivf_efficiency_study/cal_qs16_np4.json",
+      "source_sha256": "e58ffb8ead5f4305987227d3195b03ae59efa1ddcd017b62cf8a013e0f7e1326",
+      "export_sha256": "e58ffb8ead5f4305987227d3195b03ae59efa1ddcd017b62cf8a013e0f7e1326",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_efficiency_study/cal_qs16_np64.json": {
+      "source_path": "work/benchmarks/acr_ivf_efficiency_study/cal_qs16_np64.json",
+      "source_sha256": "acc626e2958dd2c542bd6debb9968386870b15d31d620ae32698f376c69353f8",
+      "export_sha256": "acc626e2958dd2c542bd6debb9968386870b15d31d620ae32698f376c69353f8",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_efficiency_study/cal_qs1_np1.json": {
+      "source_path": "work/benchmarks/acr_ivf_efficiency_study/cal_qs1_np1.json",
+      "source_sha256": "f8b953230aacae570e2bcd9545643bfd3e7ed9da99fba27e17fe33fbc40f541e",
+      "export_sha256": "f8b953230aacae570e2bcd9545643bfd3e7ed9da99fba27e17fe33fbc40f541e",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_efficiency_study/cal_qs1_np16.json": {
+      "source_path": "work/benchmarks/acr_ivf_efficiency_study/cal_qs1_np16.json",
+      "source_sha256": "80a87eacbd54b8a346e8931e0e73fb92f6dbc33364a70a10e0239af6b1897d36",
+      "export_sha256": "80a87eacbd54b8a346e8931e0e73fb92f6dbc33364a70a10e0239af6b1897d36",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_efficiency_study/cal_qs1_np4.json": {
+      "source_path": "work/benchmarks/acr_ivf_efficiency_study/cal_qs1_np4.json",
+      "source_sha256": "53b4544c90a59a8ca541ac0a8476ac36166d65c682a82f6322a1d8c49cffe6bb",
+      "export_sha256": "53b4544c90a59a8ca541ac0a8476ac36166d65c682a82f6322a1d8c49cffe6bb",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_efficiency_study/cal_qs1_np64.json": {
+      "source_path": "work/benchmarks/acr_ivf_efficiency_study/cal_qs1_np64.json",
+      "source_sha256": "22c805d5c8eed05b2c31709867b61979852022390aa03cc16b25afb7d3a86836",
+      "export_sha256": "22c805d5c8eed05b2c31709867b61979852022390aa03cc16b25afb7d3a86836",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_efficiency_study/cal_qs2_np1.json": {
+      "source_path": "work/benchmarks/acr_ivf_efficiency_study/cal_qs2_np1.json",
+      "source_sha256": "2e6e2f5e0726e079a5fc5f374fa599366056b4919ba55dd2ed398835bd4ec8a1",
+      "export_sha256": "2e6e2f5e0726e079a5fc5f374fa599366056b4919ba55dd2ed398835bd4ec8a1",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_efficiency_study/cal_qs2_np16.json": {
+      "source_path": "work/benchmarks/acr_ivf_efficiency_study/cal_qs2_np16.json",
+      "source_sha256": "1b3f0cb83478e8cf44729c208d475e13693f077e60ab1561feba1a53dec2b1af",
+      "export_sha256": "1b3f0cb83478e8cf44729c208d475e13693f077e60ab1561feba1a53dec2b1af",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_efficiency_study/cal_qs2_np4.json": {
+      "source_path": "work/benchmarks/acr_ivf_efficiency_study/cal_qs2_np4.json",
+      "source_sha256": "9cf0f8b6efbec802890ee7d3e8d8d96a4a5dc1f7f773295065789a5a2b96e4c8",
+      "export_sha256": "9cf0f8b6efbec802890ee7d3e8d8d96a4a5dc1f7f773295065789a5a2b96e4c8",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_efficiency_study/cal_qs2_np64.json": {
+      "source_path": "work/benchmarks/acr_ivf_efficiency_study/cal_qs2_np64.json",
+      "source_sha256": "935db59ce11475188fbf43920a6ba28b527201687b798d69df2c92798c3e5830",
+      "export_sha256": "935db59ce11475188fbf43920a6ba28b527201687b798d69df2c92798c3e5830",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_efficiency_study/cal_qs4_np1.json": {
+      "source_path": "work/benchmarks/acr_ivf_efficiency_study/cal_qs4_np1.json",
+      "source_sha256": "a2611f4d0d7f2c3c5724078d8624d41831897c1f7b159564a3b86bd6ef691e42",
+      "export_sha256": "a2611f4d0d7f2c3c5724078d8624d41831897c1f7b159564a3b86bd6ef691e42",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_efficiency_study/cal_qs4_np16.json": {
+      "source_path": "work/benchmarks/acr_ivf_efficiency_study/cal_qs4_np16.json",
+      "source_sha256": "9b5203a3bd5c34c2bbb894dfa664985829ce7a2988e4efbba06d68a36e2a6d5e",
+      "export_sha256": "9b5203a3bd5c34c2bbb894dfa664985829ce7a2988e4efbba06d68a36e2a6d5e",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_efficiency_study/cal_qs4_np4.json": {
+      "source_path": "work/benchmarks/acr_ivf_efficiency_study/cal_qs4_np4.json",
+      "source_sha256": "5891f5b81bc2d243329e045674b83b0c2031d329a5e9f1a914468941fb88d914",
+      "export_sha256": "5891f5b81bc2d243329e045674b83b0c2031d329a5e9f1a914468941fb88d914",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_efficiency_study/cal_qs4_np64.json": {
+      "source_path": "work/benchmarks/acr_ivf_efficiency_study/cal_qs4_np64.json",
+      "source_sha256": "a6f1ae2d01ad181640723c57424b0438ed4bd307e94cdf9b9bb346fa58226d65",
+      "export_sha256": "a6f1ae2d01ad181640723c57424b0438ed4bd307e94cdf9b9bb346fa58226d65",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_efficiency_study/cal_qs8_np1.json": {
+      "source_path": "work/benchmarks/acr_ivf_efficiency_study/cal_qs8_np1.json",
+      "source_sha256": "e38357a2406ff6526e53c6669b9e45ff87d6c54e0793c9603dd1273f2f5e1575",
+      "export_sha256": "e38357a2406ff6526e53c6669b9e45ff87d6c54e0793c9603dd1273f2f5e1575",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_efficiency_study/cal_qs8_np16.json": {
+      "source_path": "work/benchmarks/acr_ivf_efficiency_study/cal_qs8_np16.json",
+      "source_sha256": "b54b509105c031e34d1dac1bec09821dcbdd62f3dc4f6ecee8e79a669ba748b2",
+      "export_sha256": "b54b509105c031e34d1dac1bec09821dcbdd62f3dc4f6ecee8e79a669ba748b2",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_efficiency_study/cal_qs8_np4.json": {
+      "source_path": "work/benchmarks/acr_ivf_efficiency_study/cal_qs8_np4.json",
+      "source_sha256": "53b5daedc3d91dcea08198ea9615240400735f2ab53dd13215c402affe003bce",
+      "export_sha256": "53b5daedc3d91dcea08198ea9615240400735f2ab53dd13215c402affe003bce",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_efficiency_study/cal_qs8_np64.json": {
+      "source_path": "work/benchmarks/acr_ivf_efficiency_study/cal_qs8_np64.json",
+      "source_sha256": "b100f0623c3faf9a0fc70a3f1ac83bf1bc4023287af0b10f768e998b60f00c19",
+      "export_sha256": "b100f0623c3faf9a0fc70a3f1ac83bf1bc4023287af0b10f768e998b60f00c19",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_efficiency_study/plan.json": {
+      "source_path": "work/benchmarks/acr_ivf_efficiency_study/plan.json",
+      "source_sha256": "1919255d865a1aed75276ce60b06c97da57229c876853aef8e496f8acb582a10",
+      "export_sha256": "1919255d865a1aed75276ce60b06c97da57229c876853aef8e496f8acb582a10",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_efficiency_study/selected_setting.json": {
+      "source_path": "work/benchmarks/acr_ivf_efficiency_study/selected_setting.json",
+      "source_sha256": "528db21d943a7a3490cb2d8fe966b5ebff7bb683ae3dd724190f92c81a49ff03",
+      "export_sha256": "528db21d943a7a3490cb2d8fe966b5ebff7bb683ae3dd724190f92c81a49ff03",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_extended/acr_ivf_qs1_extended_5s.json": {
+      "source_path": "work/benchmarks/acr_ivf_extended/acr_ivf_qs1_extended_5s.json",
+      "source_sha256": "11cec6d809e2d4270c6ebff53d14b79b394b6b4f9af7c9677348d880de74541e",
+      "export_sha256": "11cec6d809e2d4270c6ebff53d14b79b394b6b4f9af7c9677348d880de74541e",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_extended/acr_ivf_qs4_extended_5s.json": {
+      "source_path": "work/benchmarks/acr_ivf_extended/acr_ivf_qs4_extended_5s.json",
+      "source_sha256": "01e9f8f8bff769299ef167ee0729d09fbf80a91c1dcd8a163a3d79df5a9dedb0",
+      "export_sha256": "01e9f8f8bff769299ef167ee0729d09fbf80a91c1dcd8a163a3d79df5a9dedb0",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_extended/extended_operating_points.json": {
+      "source_path": "work/benchmarks/acr_ivf_extended/extended_operating_points.json",
+      "source_sha256": "120a561d3827e0b0f5a885505d80804218885d58ee494f841e04a214e8fe2dd6",
+      "export_sha256": "120a561d3827e0b0f5a885505d80804218885d58ee494f841e04a214e8fe2dd6",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_extended/plan.json": {
+      "source_path": "work/benchmarks/acr_ivf_extended/plan.json",
+      "source_sha256": "96836767f7d978c67db72ac24717713e66f01937b0062082d5b5a2441d52d736",
+      "export_sha256": "96836767f7d978c67db72ac24717713e66f01937b0062082d5b5a2441d52d736",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_extended/threshold_qs1.json": {
+      "source_path": "work/benchmarks/acr_ivf_extended/threshold_qs1.json",
+      "source_sha256": "6d6b24a593d52e2e6b8d3e495fb24277436cb3760d1e6ce9d790f2cc0ac46fe1",
+      "export_sha256": "6d6b24a593d52e2e6b8d3e495fb24277436cb3760d1e6ce9d790f2cc0ac46fe1",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_extended/threshold_qs4.json": {
+      "source_path": "work/benchmarks/acr_ivf_extended/threshold_qs4.json",
+      "source_sha256": "bfca22a30fe1d9b60e78d06977282631cdf9ad28ed40cd9233274d1c651c7d27",
+      "export_sha256": "bfca22a30fe1d9b60e78d06977282631cdf9ad28ed40cd9233274d1c651c7d27",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_study/acr_ivf_selected_5s.json": {
+      "source_path": "work/benchmarks/acr_ivf_study/acr_ivf_selected_5s.json",
+      "source_sha256": "d2c5ff225f66a0916df8d7b282edb641d54b86bcb872411df137f330f071d2cd",
+      "export_sha256": "d2c5ff225f66a0916df8d7b282edb641d54b86bcb872411df137f330f071d2cd",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_study/cal_qs16_np1.json": {
+      "source_path": "work/benchmarks/acr_ivf_study/cal_qs16_np1.json",
+      "source_sha256": "703eb9791275d1db04c2fb7d3896f2702b8078ad00104773cf6fa47941e5cdd4",
+      "export_sha256": "703eb9791275d1db04c2fb7d3896f2702b8078ad00104773cf6fa47941e5cdd4",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_study/cal_qs16_np16.json": {
+      "source_path": "work/benchmarks/acr_ivf_study/cal_qs16_np16.json",
+      "source_sha256": "4d7b6931d645c0099c7c42c6c976364a000222c1825bd382210dd9e2181a2dec",
+      "export_sha256": "4d7b6931d645c0099c7c42c6c976364a000222c1825bd382210dd9e2181a2dec",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_study/cal_qs16_np4.json": {
+      "source_path": "work/benchmarks/acr_ivf_study/cal_qs16_np4.json",
+      "source_sha256": "e58ffb8ead5f4305987227d3195b03ae59efa1ddcd017b62cf8a013e0f7e1326",
+      "export_sha256": "e58ffb8ead5f4305987227d3195b03ae59efa1ddcd017b62cf8a013e0f7e1326",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_study/cal_qs16_np64.json": {
+      "source_path": "work/benchmarks/acr_ivf_study/cal_qs16_np64.json",
+      "source_sha256": "acc626e2958dd2c542bd6debb9968386870b15d31d620ae32698f376c69353f8",
+      "export_sha256": "acc626e2958dd2c542bd6debb9968386870b15d31d620ae32698f376c69353f8",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_study/cal_qs1_np1.json": {
+      "source_path": "work/benchmarks/acr_ivf_study/cal_qs1_np1.json",
+      "source_sha256": "f8b953230aacae570e2bcd9545643bfd3e7ed9da99fba27e17fe33fbc40f541e",
+      "export_sha256": "f8b953230aacae570e2bcd9545643bfd3e7ed9da99fba27e17fe33fbc40f541e",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_study/cal_qs1_np16.json": {
+      "source_path": "work/benchmarks/acr_ivf_study/cal_qs1_np16.json",
+      "source_sha256": "80a87eacbd54b8a346e8931e0e73fb92f6dbc33364a70a10e0239af6b1897d36",
+      "export_sha256": "80a87eacbd54b8a346e8931e0e73fb92f6dbc33364a70a10e0239af6b1897d36",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_study/cal_qs1_np4.json": {
+      "source_path": "work/benchmarks/acr_ivf_study/cal_qs1_np4.json",
+      "source_sha256": "53b4544c90a59a8ca541ac0a8476ac36166d65c682a82f6322a1d8c49cffe6bb",
+      "export_sha256": "53b4544c90a59a8ca541ac0a8476ac36166d65c682a82f6322a1d8c49cffe6bb",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_study/cal_qs1_np64.json": {
+      "source_path": "work/benchmarks/acr_ivf_study/cal_qs1_np64.json",
+      "source_sha256": "22c805d5c8eed05b2c31709867b61979852022390aa03cc16b25afb7d3a86836",
+      "export_sha256": "22c805d5c8eed05b2c31709867b61979852022390aa03cc16b25afb7d3a86836",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_study/cal_qs2_np1.json": {
+      "source_path": "work/benchmarks/acr_ivf_study/cal_qs2_np1.json",
+      "source_sha256": "2e6e2f5e0726e079a5fc5f374fa599366056b4919ba55dd2ed398835bd4ec8a1",
+      "export_sha256": "2e6e2f5e0726e079a5fc5f374fa599366056b4919ba55dd2ed398835bd4ec8a1",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_study/cal_qs2_np16.json": {
+      "source_path": "work/benchmarks/acr_ivf_study/cal_qs2_np16.json",
+      "source_sha256": "1b3f0cb83478e8cf44729c208d475e13693f077e60ab1561feba1a53dec2b1af",
+      "export_sha256": "1b3f0cb83478e8cf44729c208d475e13693f077e60ab1561feba1a53dec2b1af",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_study/cal_qs2_np4.json": {
+      "source_path": "work/benchmarks/acr_ivf_study/cal_qs2_np4.json",
+      "source_sha256": "9cf0f8b6efbec802890ee7d3e8d8d96a4a5dc1f7f773295065789a5a2b96e4c8",
+      "export_sha256": "9cf0f8b6efbec802890ee7d3e8d8d96a4a5dc1f7f773295065789a5a2b96e4c8",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_study/cal_qs2_np64.json": {
+      "source_path": "work/benchmarks/acr_ivf_study/cal_qs2_np64.json",
+      "source_sha256": "935db59ce11475188fbf43920a6ba28b527201687b798d69df2c92798c3e5830",
+      "export_sha256": "935db59ce11475188fbf43920a6ba28b527201687b798d69df2c92798c3e5830",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_study/cal_qs4_np1.json": {
+      "source_path": "work/benchmarks/acr_ivf_study/cal_qs4_np1.json",
+      "source_sha256": "a2611f4d0d7f2c3c5724078d8624d41831897c1f7b159564a3b86bd6ef691e42",
+      "export_sha256": "a2611f4d0d7f2c3c5724078d8624d41831897c1f7b159564a3b86bd6ef691e42",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_study/cal_qs4_np16.json": {
+      "source_path": "work/benchmarks/acr_ivf_study/cal_qs4_np16.json",
+      "source_sha256": "9b5203a3bd5c34c2bbb894dfa664985829ce7a2988e4efbba06d68a36e2a6d5e",
+      "export_sha256": "9b5203a3bd5c34c2bbb894dfa664985829ce7a2988e4efbba06d68a36e2a6d5e",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_study/cal_qs4_np4.json": {
+      "source_path": "work/benchmarks/acr_ivf_study/cal_qs4_np4.json",
+      "source_sha256": "5891f5b81bc2d243329e045674b83b0c2031d329a5e9f1a914468941fb88d914",
+      "export_sha256": "5891f5b81bc2d243329e045674b83b0c2031d329a5e9f1a914468941fb88d914",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_study/cal_qs4_np64.json": {
+      "source_path": "work/benchmarks/acr_ivf_study/cal_qs4_np64.json",
+      "source_sha256": "a6f1ae2d01ad181640723c57424b0438ed4bd307e94cdf9b9bb346fa58226d65",
+      "export_sha256": "a6f1ae2d01ad181640723c57424b0438ed4bd307e94cdf9b9bb346fa58226d65",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_study/cal_qs8_np1.json": {
+      "source_path": "work/benchmarks/acr_ivf_study/cal_qs8_np1.json",
+      "source_sha256": "e38357a2406ff6526e53c6669b9e45ff87d6c54e0793c9603dd1273f2f5e1575",
+      "export_sha256": "e38357a2406ff6526e53c6669b9e45ff87d6c54e0793c9603dd1273f2f5e1575",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_study/cal_qs8_np16.json": {
+      "source_path": "work/benchmarks/acr_ivf_study/cal_qs8_np16.json",
+      "source_sha256": "b54b509105c031e34d1dac1bec09821dcbdd62f3dc4f6ecee8e79a669ba748b2",
+      "export_sha256": "b54b509105c031e34d1dac1bec09821dcbdd62f3dc4f6ecee8e79a669ba748b2",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_study/cal_qs8_np4.json": {
+      "source_path": "work/benchmarks/acr_ivf_study/cal_qs8_np4.json",
+      "source_sha256": "53b5daedc3d91dcea08198ea9615240400735f2ab53dd13215c402affe003bce",
+      "export_sha256": "53b5daedc3d91dcea08198ea9615240400735f2ab53dd13215c402affe003bce",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_study/cal_qs8_np64.json": {
+      "source_path": "work/benchmarks/acr_ivf_study/cal_qs8_np64.json",
+      "source_sha256": "b100f0623c3faf9a0fc70a3f1ac83bf1bc4023287af0b10f768e998b60f00c19",
+      "export_sha256": "b100f0623c3faf9a0fc70a3f1ac83bf1bc4023287af0b10f768e998b60f00c19",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_study/plan.json": {
+      "source_path": "work/benchmarks/acr_ivf_study/plan.json",
+      "source_sha256": "95c6c15f7a8d6ee3d1714398fe0b5e2e929149d0add9ef8f69516ac0881dde82",
+      "export_sha256": "95c6c15f7a8d6ee3d1714398fe0b5e2e929149d0add9ef8f69516ac0881dde82",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_study/selected_setting.json": {
+      "source_path": "work/benchmarks/acr_ivf_study/selected_setting.json",
+      "source_sha256": "e80f9f292d567a1464a4f7b78f054bc9fc22adbd01baea3349490dafe3f75e4c",
+      "export_sha256": "e80f9f292d567a1464a4f7b78f054bc9fc22adbd01baea3349490dafe3f75e4c",
+      "portable_path_export": true
+    },
+    "results/acr_ivf_study/trained_index_metadata.json": {
+      "source_path": "work/benchmarks/acr_ivf_study/trained_index_metadata.json",
+      "source_sha256": "230460154dbbb4abbe32401381d100eac38ed9ba82cce4150b956be688314e5d",
+      "export_sha256": "230460154dbbb4abbe32401381d100eac38ed9ba82cce4150b956be688314e5d",
+      "portable_path_export": true
+    },
+    "results/acr_medium/acr_d1_10s.json": {
+      "source_path": "work/benchmarks/acr_medium/acr_d1_10s.json",
+      "source_sha256": "818de926cd4e1d9b76a6ab598abe47e091858d743c51608d5f3d6877df4fb2cb",
+      "export_sha256": "818de926cd4e1d9b76a6ab598abe47e091858d743c51608d5f3d6877df4fb2cb",
+      "portable_path_export": true
+    },
+    "results/acr_medium/acr_d1_1s.json": {
+      "source_path": "work/benchmarks/acr_medium/acr_d1_1s.json",
+      "source_sha256": "22a167ad6fa36c2e1190976c93c408cf8d7998c5fd58c2947dd2f2967a01abf5",
+      "export_sha256": "22a167ad6fa36c2e1190976c93c408cf8d7998c5fd58c2947dd2f2967a01abf5",
+      "portable_path_export": true
+    },
+    "results/acr_medium/acr_d1_2s.json": {
+      "source_path": "work/benchmarks/acr_medium/acr_d1_2s.json",
+      "source_sha256": "730664dc97540652307b3d98dec26e1661d141a918e6e3809d43a4f8876ed67d",
+      "export_sha256": "730664dc97540652307b3d98dec26e1661d141a918e6e3809d43a4f8876ed67d",
+      "portable_path_export": true
+    },
+    "results/acr_medium/acr_d1_3s.json": {
+      "source_path": "work/benchmarks/acr_medium/acr_d1_3s.json",
+      "source_sha256": "7e018dfe5f97b7e660a102578b1fbc9ed8efd6a5966a1be22bb5273b5321179e",
+      "export_sha256": "7e018dfe5f97b7e660a102578b1fbc9ed8efd6a5966a1be22bb5273b5321179e",
+      "portable_path_export": true
+    },
+    "results/acr_medium/acr_d1_5s.json": {
+      "source_path": "work/benchmarks/acr_medium/acr_d1_5s.json",
+      "source_sha256": "a1b2c8a523ad09de963d5fd19074d58ececb1686026b7624f7834fce5a144379",
+      "export_sha256": "a1b2c8a523ad09de963d5fd19074d58ececb1686026b7624f7834fce5a144379",
+      "portable_path_export": true
+    },
+    "results/acr_medium/acr_d2_10s.json": {
+      "source_path": "work/benchmarks/acr_medium/acr_d2_10s.json",
+      "source_sha256": "988d346d86fbb72951ef7a3bade0e3a0dd1af2a10b490aade81fdb7928ef19e7",
+      "export_sha256": "988d346d86fbb72951ef7a3bade0e3a0dd1af2a10b490aade81fdb7928ef19e7",
+      "portable_path_export": true
+    },
+    "results/acr_medium/acr_d2_1s.json": {
+      "source_path": "work/benchmarks/acr_medium/acr_d2_1s.json",
+      "source_sha256": "665944395998cdc03db0e38b01253f100900cd24e5634984412df70a6df470d7",
+      "export_sha256": "665944395998cdc03db0e38b01253f100900cd24e5634984412df70a6df470d7",
+      "portable_path_export": true
+    },
+    "results/acr_medium/acr_d2_2s.json": {
+      "source_path": "work/benchmarks/acr_medium/acr_d2_2s.json",
+      "source_sha256": "5af03c629083e6bca7b819961e9998f107bc79a685128d78df3608910f1c763e",
+      "export_sha256": "5af03c629083e6bca7b819961e9998f107bc79a685128d78df3608910f1c763e",
+      "portable_path_export": true
+    },
+    "results/acr_medium/acr_d2_3s.json": {
+      "source_path": "work/benchmarks/acr_medium/acr_d2_3s.json",
+      "source_sha256": "739edf929a9acd53fe6dc58f3b349410ef65e207cddcbb1789f57015511c4a2e",
+      "export_sha256": "739edf929a9acd53fe6dc58f3b349410ef65e207cddcbb1789f57015511c4a2e",
+      "portable_path_export": true
+    },
+    "results/acr_medium/acr_d2_5s.json": {
+      "source_path": "work/benchmarks/acr_medium/acr_d2_5s.json",
+      "source_sha256": "5069b9d115f0ba36497d610329679e09bb7b921cd0509b96ac256027791c7565",
+      "export_sha256": "5069b9d115f0ba36497d610329679e09bb7b921cd0509b96ac256027791c7565",
+      "portable_path_export": true
+    },
+    "results/acr_medium/acr_d4_10s.json": {
+      "source_path": "work/benchmarks/acr_medium/acr_d4_10s.json",
+      "source_sha256": "80b2d6aaba2f0c6c59e45b1cc8fd6de9f0072abab7c3f404dbb21bdaee5d78c5",
+      "export_sha256": "80b2d6aaba2f0c6c59e45b1cc8fd6de9f0072abab7c3f404dbb21bdaee5d78c5",
+      "portable_path_export": true
+    },
+    "results/acr_medium/acr_d4_1s.json": {
+      "source_path": "work/benchmarks/acr_medium/acr_d4_1s.json",
+      "source_sha256": "4d2c67b8418eaf716039cbb6ae13b42aac9b2500d8634911149531dfaae1b7e0",
+      "export_sha256": "4d2c67b8418eaf716039cbb6ae13b42aac9b2500d8634911149531dfaae1b7e0",
+      "portable_path_export": true
+    },
+    "results/acr_medium/acr_d4_2s.json": {
+      "source_path": "work/benchmarks/acr_medium/acr_d4_2s.json",
+      "source_sha256": "a457d72334f03b278d133abb7ae9379a1cbeb9239e7a805bc75d0d6cd9ed73e0",
+      "export_sha256": "a457d72334f03b278d133abb7ae9379a1cbeb9239e7a805bc75d0d6cd9ed73e0",
+      "portable_path_export": true
+    },
+    "results/acr_medium/acr_d4_3s.json": {
+      "source_path": "work/benchmarks/acr_medium/acr_d4_3s.json",
+      "source_sha256": "084b809214badabefd969770d1ec1745054d2d1991cc6bd5c11b2a6db3ff2776",
+      "export_sha256": "084b809214badabefd969770d1ec1745054d2d1991cc6bd5c11b2a6db3ff2776",
+      "portable_path_export": true
+    },
+    "results/acr_medium/acr_d4_5s.json": {
+      "source_path": "work/benchmarks/acr_medium/acr_d4_5s.json",
+      "source_sha256": "07daba909954e6773a64dbcdd7e584e8dce9947cac231f26f941122fc0e4d7b8",
+      "export_sha256": "07daba909954e6773a64dbcdd7e584e8dce9947cac231f26f941122fc0e4d7b8",
+      "portable_path_export": true
+    },
+    "results/acr_medium/acr_d6_10s.json": {
+      "source_path": "work/benchmarks/acr_medium/acr_d6_10s.json",
+      "source_sha256": "aac328fed2624c7015abaa29f4a3b139e398c31ba451f2da1bf0714d1ee5fbb1",
+      "export_sha256": "aac328fed2624c7015abaa29f4a3b139e398c31ba451f2da1bf0714d1ee5fbb1",
+      "portable_path_export": true
+    },
+    "results/acr_medium/acr_d6_1s.json": {
+      "source_path": "work/benchmarks/acr_medium/acr_d6_1s.json",
+      "source_sha256": "7a8be40a5addd135db12e5c4830d080f2a2130aa9132d138634cf06e8fb886a7",
+      "export_sha256": "7a8be40a5addd135db12e5c4830d080f2a2130aa9132d138634cf06e8fb886a7",
+      "portable_path_export": true
+    },
+    "results/acr_medium/acr_d6_2s.json": {
+      "source_path": "work/benchmarks/acr_medium/acr_d6_2s.json",
+      "source_sha256": "96f1c8fcffdfa4e9d7d766a9b9bf96d71d5d5c79008654379c86c5a6496aaa44",
+      "export_sha256": "96f1c8fcffdfa4e9d7d766a9b9bf96d71d5d5c79008654379c86c5a6496aaa44",
+      "portable_path_export": true
+    },
+    "results/acr_medium/acr_d6_3s.json": {
+      "source_path": "work/benchmarks/acr_medium/acr_d6_3s.json",
+      "source_sha256": "6db95153458246669ea7cc3cff231c696827b6057c605148f217a3bace4b089d",
+      "export_sha256": "6db95153458246669ea7cc3cff231c696827b6057c605148f217a3bace4b089d",
+      "portable_path_export": true
+    },
+    "results/acr_medium/acr_d6_5s.json": {
+      "source_path": "work/benchmarks/acr_medium/acr_d6_5s.json",
+      "source_sha256": "bbcb17e59046dfeba8cb6aecf9a97f3a65412a0ee5bdd143b3f43f3f475d285b",
+      "export_sha256": "bbcb17e59046dfeba8cb6aecf9a97f3a65412a0ee5bdd143b3f43f3f475d285b",
+      "portable_path_export": true
+    },
+    "results/acr_medium/acr_d8_10s.json": {
+      "source_path": "work/benchmarks/acr_medium/acr_d8_10s.json",
+      "source_sha256": "240b028f9bf6db7d7e227f824477e0973c66ba0f855616922614ea10fe361c2d",
+      "export_sha256": "240b028f9bf6db7d7e227f824477e0973c66ba0f855616922614ea10fe361c2d",
+      "portable_path_export": true
+    },
+    "results/acr_medium/acr_d8_1s.json": {
+      "source_path": "work/benchmarks/acr_medium/acr_d8_1s.json",
+      "source_sha256": "098dff802a5127414c2b29102c1e7f4ae6c9caad888438cf90a18e7bd9c05fa9",
+      "export_sha256": "098dff802a5127414c2b29102c1e7f4ae6c9caad888438cf90a18e7bd9c05fa9",
+      "portable_path_export": true
+    },
+    "results/acr_medium/acr_d8_2s.json": {
+      "source_path": "work/benchmarks/acr_medium/acr_d8_2s.json",
+      "source_sha256": "71ecdddcacac3af97540a082e1971b14f7064088f28c2fcc6134832e1d57b38a",
+      "export_sha256": "71ecdddcacac3af97540a082e1971b14f7064088f28c2fcc6134832e1d57b38a",
+      "portable_path_export": true
+    },
+    "results/acr_medium/acr_d8_3s.json": {
+      "source_path": "work/benchmarks/acr_medium/acr_d8_3s.json",
+      "source_sha256": "ac48bfbff771711a40dc24e17f55a028ad39376d88d0eaeb178bd64fa54cfee0",
+      "export_sha256": "ac48bfbff771711a40dc24e17f55a028ad39376d88d0eaeb178bd64fa54cfee0",
+      "portable_path_export": true
+    },
+    "results/acr_medium/acr_d8_5s.json": {
+      "source_path": "work/benchmarks/acr_medium/acr_d8_5s.json",
+      "source_sha256": "0416178dff7526c354f7bc93290fdc4b5f42ebb05b083b7dae56b1a48a32cdb8",
+      "export_sha256": "0416178dff7526c354f7bc93290fdc4b5f42ebb05b083b7dae56b1a48a32cdb8",
+      "portable_path_export": true
+    },
+    "results/acr_medium/paired_density_counts.json": {
+      "source_path": "work/benchmarks/acr_medium/paired_density_counts.json",
+      "source_sha256": "3dbf1629fc09b92c0d03ed2a51e0a61c6b95db45751854ff8972c0d338004087",
+      "export_sha256": "3dbf1629fc09b92c0d03ed2a51e0a61c6b95db45751854ff8972c0d338004087",
+      "portable_path_export": true
+    },
+    "results/acr_medium/pca_model.npz": {
+      "source_path": "work/benchmarks/acr_medium/pca_model.npz",
+      "source_sha256": "7f946bdbfd27b48f01074b5369df24b8fdce391236fe212ee88be9f9ec980dcd",
+      "export_sha256": "7f946bdbfd27b48f01074b5369df24b8fdce391236fe212ee88be9f9ec980dcd",
+      "portable_path_export": false
+    },
+    "results/acr_source_unseen_comparison.json": {
+      "source_path": "work/benchmarks/acr_source_unseen_comparison.json",
+      "source_sha256": "5319a23ff33581a152e0c733b886c05d8ecee2564c5d3ff079a411e731cca035",
+      "export_sha256": "5319a23ff33581a152e0c733b886c05d8ecee2564c5d3ff079a411e731cca035",
+      "portable_path_export": true
+    },
+    "results/acr_speech/acr_d1_5s.json": {
+      "source_path": "work/benchmarks/acr_speech/acr_d1_5s.json",
+      "source_sha256": "95f3c99c6fadb2574eb3daa8a842b79082a2e2784fcefeb21f239c704dbcad5c",
+      "export_sha256": "95f3c99c6fadb2574eb3daa8a842b79082a2e2784fcefeb21f239c704dbcad5c",
+      "portable_path_export": true
+    },
+    "results/acr_speech/acr_d8_5s.json": {
+      "source_path": "work/benchmarks/acr_speech/acr_d8_5s.json",
+      "source_sha256": "fa535355c2337fcf0e8f06309086942651654f4344c4b1fe3a037b963c9a5dd5",
+      "export_sha256": "fa535355c2337fcf0e8f06309086942651654f4344c4b1fe3a037b963c9a5dd5",
+      "portable_path_export": true
+    },
+    "results/acr_speech/pca_model.npz": {
+      "source_path": "work/benchmarks/acr_speech/pca_model.npz",
+      "source_sha256": "47d63c460669838d1c279f8a799e515caa9eb11840a8ecb3d5b115a3b7c88107",
+      "export_sha256": "47d63c460669838d1c279f8a799e515caa9eb11840a8ecb3d5b115a3b7c88107",
+      "portable_path_export": false
+    },
+    "results/acr_temporal_geometry.json": {
+      "source_path": "work/benchmarks/acr_temporal_geometry.json",
+      "source_sha256": "eb7a0fa57d40ecdeb5f204e5b9c40623a6c72fa79f101c4166e7f5a6ee7c8fa8",
+      "export_sha256": "eb7a0fa57d40ecdeb5f204e5b9c40623a6c72fa79f101c4166e7f5a6ee7c8fa8",
+      "portable_path_export": true
+    },
+    "results/audfprint_calibrated_extended/audfprint_5s.json": {
+      "source_path": "work/benchmarks/audfprint_calibrated_extended/audfprint_5s.json",
+      "source_sha256": "e9d9b866eb0d9ca6ee00ceab1a0aea1171ab4d34ccc8dc47e897fdda74e95727",
+      "export_sha256": "e9d9b866eb0d9ca6ee00ceab1a0aea1171ab4d34ccc8dc47e897fdda74e95727",
+      "portable_path_export": true
+    },
+    "results/audfprint_calibrated_medium/audfprint_10s.json": {
+      "source_path": "work/benchmarks/audfprint_calibrated_medium/audfprint_10s.json",
+      "source_sha256": "36ec166d22235760e6eb5ed0a13c3a0fa650d92719d9fda49daa13fe709584e9",
+      "export_sha256": "36ec166d22235760e6eb5ed0a13c3a0fa650d92719d9fda49daa13fe709584e9",
+      "portable_path_export": true
+    },
+    "results/audfprint_calibrated_medium/audfprint_1s.json": {
+      "source_path": "work/benchmarks/audfprint_calibrated_medium/audfprint_1s.json",
+      "source_sha256": "cd2dab4df4c2a20ba90ae85493633fb3485500f91b8aa81a705af47cabbe47ef",
+      "export_sha256": "cd2dab4df4c2a20ba90ae85493633fb3485500f91b8aa81a705af47cabbe47ef",
+      "portable_path_export": true
+    },
+    "results/audfprint_calibrated_medium/audfprint_2s.json": {
+      "source_path": "work/benchmarks/audfprint_calibrated_medium/audfprint_2s.json",
+      "source_sha256": "6bbba9b7343a174fb8953780deeeef3140f6f599a2d06bc4be10f36b8c5ec8d9",
+      "export_sha256": "6bbba9b7343a174fb8953780deeeef3140f6f599a2d06bc4be10f36b8c5ec8d9",
+      "portable_path_export": true
+    },
+    "results/audfprint_calibrated_medium/audfprint_3s.json": {
+      "source_path": "work/benchmarks/audfprint_calibrated_medium/audfprint_3s.json",
+      "source_sha256": "7dfc68f07a650a5cb8f5d28dba14c4914f2ba467f6f08d0aa5613326eb2af7bc",
+      "export_sha256": "7dfc68f07a650a5cb8f5d28dba14c4914f2ba467f6f08d0aa5613326eb2af7bc",
+      "portable_path_export": true
+    },
+    "results/audfprint_calibrated_medium/audfprint_5s.json": {
+      "source_path": "work/benchmarks/audfprint_calibrated_medium/audfprint_5s.json",
+      "source_sha256": "850788e47a7889954504c7ce4e00b6bb12ae5ae7a089c64d3221bfe98c4e0c99",
+      "export_sha256": "850788e47a7889954504c7ce4e00b6bb12ae5ae7a089c64d3221bfe98c4e0c99",
+      "portable_path_export": true
+    },
+    "results/audfprint_calibrated_medium/summary_5s.json": {
+      "source_path": "work/benchmarks/audfprint_calibrated_medium/summary_5s.json",
+      "source_sha256": "59010f32eb7fc71836629428ed2ec301e4b685d6e4b9632d3044cf1c7601cbf2",
+      "export_sha256": "59010f32eb7fc71836629428ed2ec301e4b685d6e4b9632d3044cf1c7601cbf2",
+      "portable_path_export": true
+    },
+    "results/audfprint_calibrated_speech/audfprint_5s.json": {
+      "source_path": "work/benchmarks/audfprint_calibrated_speech/audfprint_5s.json",
+      "source_sha256": "ee1c84ec0f9eff1df8fea62e4e5ef071171085851fbb205e3f3709b4b36c3d94",
+      "export_sha256": "ee1c84ec0f9eff1df8fea62e4e5ef071171085851fbb205e3f3709b4b36c3d94",
+      "portable_path_export": true
+    },
+    "results/audfprint_extended/audfprint_5s.json": {
+      "source_path": "work/benchmarks/audfprint_extended/audfprint_5s.json",
+      "source_sha256": "e7fadae40c1c647f2db1df8432ded27c7291d3fcf355fde6c32be7d2721ddb1c",
+      "export_sha256": "e7fadae40c1c647f2db1df8432ded27c7291d3fcf355fde6c32be7d2721ddb1c",
+      "portable_path_export": true
+    },
+    "results/audfprint_extended/extended_operating_points.json": {
+      "source_path": "work/benchmarks/audfprint_extended/extended_operating_points.json",
+      "source_sha256": "ba737311cc3348828c6f9edafe0f79be2fa208d770495abc8db4d63bd02f0431",
+      "export_sha256": "ba737311cc3348828c6f9edafe0f79be2fa208d770495abc8db4d63bd02f0431",
+      "portable_path_export": true
+    },
+    "results/audfprint_medium/audfprint_10s.json": {
+      "source_path": "work/benchmarks/audfprint_medium/audfprint_10s.json",
+      "source_sha256": "bede48f8ba7f116080999ae43ea457b40dc24367bb5457deb9434ba92ce7488f",
+      "export_sha256": "bede48f8ba7f116080999ae43ea457b40dc24367bb5457deb9434ba92ce7488f",
+      "portable_path_export": true
+    },
+    "results/audfprint_medium/audfprint_1s.json": {
+      "source_path": "work/benchmarks/audfprint_medium/audfprint_1s.json",
+      "source_sha256": "c1753167e76c86e0cb04256a212409bfab7d5061a4ef90b91708d3f89e7ff8cd",
+      "export_sha256": "c1753167e76c86e0cb04256a212409bfab7d5061a4ef90b91708d3f89e7ff8cd",
+      "portable_path_export": true
+    },
+    "results/audfprint_medium/audfprint_2s.json": {
+      "source_path": "work/benchmarks/audfprint_medium/audfprint_2s.json",
+      "source_sha256": "7232cd09ebdf158ee25333f3b4728409cfc6ab8c9d5bee4d69a5592d6f882032",
+      "export_sha256": "7232cd09ebdf158ee25333f3b4728409cfc6ab8c9d5bee4d69a5592d6f882032",
+      "portable_path_export": true
+    },
+    "results/audfprint_medium/audfprint_3s.json": {
+      "source_path": "work/benchmarks/audfprint_medium/audfprint_3s.json",
+      "source_sha256": "7bd4399cbf09d0fbbc370479ca25c52cd62a329b5201331e99fc61102b5cd0ff",
+      "export_sha256": "7bd4399cbf09d0fbbc370479ca25c52cd62a329b5201331e99fc61102b5cd0ff",
+      "portable_path_export": true
+    },
+    "results/audfprint_medium/audfprint_5s.json": {
+      "source_path": "work/benchmarks/audfprint_medium/audfprint_5s.json",
+      "source_sha256": "454355d139e7a8e16e375f67b93497b730bded15605445771c8fbd4752733663",
+      "export_sha256": "454355d139e7a8e16e375f67b93497b730bded15605445771c8fbd4752733663",
+      "portable_path_export": true
+    },
+    "results/audfprint_medium/summary_1s.json": {
+      "source_path": "work/benchmarks/audfprint_medium/summary_1s.json",
+      "source_sha256": "cf733d06da199df5a295ad36fce968d02254efdf3d334caea9f4a7270b0dfb6f",
+      "export_sha256": "cf733d06da199df5a295ad36fce968d02254efdf3d334caea9f4a7270b0dfb6f",
+      "portable_path_export": true
+    },
+    "results/audfprint_medium/summary_5s.json": {
+      "source_path": "work/benchmarks/audfprint_medium/summary_5s.json",
+      "source_sha256": "501188815dcb8beb57fca5c21e328ea9ccbd70a3b6e67515cd2edee3fa95a670",
+      "export_sha256": "501188815dcb8beb57fca5c21e328ea9ccbd70a3b6e67515cd2edee3fa95a670",
+      "portable_path_export": true
+    },
+    "results/audfprint_medium/summary_all_variants.json": {
+      "source_path": "work/benchmarks/audfprint_medium/summary_all_variants.json",
+      "source_sha256": "fde70bb5b66190e7c1f495dae275e2c9db0a43de9577db27aa90f497daa771a2",
+      "export_sha256": "fde70bb5b66190e7c1f495dae275e2c9db0a43de9577db27aa90f497daa771a2",
+      "portable_path_export": true
+    },
+    "results/audfprint_medium/summary_both_1_2s.json": {
+      "source_path": "work/benchmarks/audfprint_medium/summary_both_1_2s.json",
+      "source_sha256": "b070d5d9875d141e576682daf941a4bbee65588007812d9f4ebf53699c98040e",
+      "export_sha256": "b070d5d9875d141e576682daf941a4bbee65588007812d9f4ebf53699c98040e",
+      "portable_path_export": true
+    },
+    "results/audfprint_medium/summary_both_3s.json": {
+      "source_path": "work/benchmarks/audfprint_medium/summary_both_3s.json",
+      "source_sha256": "b5dd8145774ee45b7e8721a38187384fd217684622c81d1dfd848abf7299e244",
+      "export_sha256": "b5dd8145774ee45b7e8721a38187384fd217684622c81d1dfd848abf7299e244",
+      "portable_path_export": true
+    },
+    "results/audfprint_medium/summary_both_5s.json": {
+      "source_path": "work/benchmarks/audfprint_medium/summary_both_5s.json",
+      "source_sha256": "f69e8df2c5cbc698a3723856e2287449f4ef75690e2f7602ccc5443dd1027b15",
+      "export_sha256": "f69e8df2c5cbc698a3723856e2287449f4ef75690e2f7602ccc5443dd1027b15",
+      "portable_path_export": true
+    },
+    "results/audfprint_speech/audfprint_5s.json": {
+      "source_path": "work/benchmarks/audfprint_speech/audfprint_5s.json",
+      "source_sha256": "632325f76675288d240b0e0c1a34f7484438ef6731c0443ecd60da0c1d4e1b5d",
+      "export_sha256": "632325f76675288d240b0e0c1a34f7484438ef6731c0443ecd60da0c1d4e1b5d",
+      "portable_path_export": true
+    },
+    "results/audfprint_speech/pooled_summary.json": {
+      "source_path": "work/benchmarks/audfprint_speech/pooled_summary.json",
+      "source_sha256": "b1bee0467d8495517f3e447df4a57950c161513700417d930c0b2bd79eb51896",
+      "export_sha256": "b1bee0467d8495517f3e447df4a57950c161513700417d930c0b2bd79eb51896",
+      "portable_path_export": true
+    },
+    "results/decode_audit.json": {
+      "source_path": "work/benchmarks/decode_audit.json",
+      "source_sha256": "8c68b87ce3d6e07a3ae5947ba6362f3914260e9657bf9fa5eed9afb6f85cd6e6",
+      "export_sha256": "bf263bcbe34d88828ee03ef8f47166fc4228ffcca63271f713121b3c9c7d111d",
+      "portable_path_export": true
+    },
+    "results/extended_unknown_protocol.json": {
+      "source_path": "work/benchmarks/extended_unknown_protocol.json",
+      "source_sha256": "610c98add9592340a745cb1b9c9c2cf37a27567da204e713cfba45d8a27fe366",
+      "export_sha256": "a6dbe6a59a55a4711e5126b2e4f8f6282292cee35d9f2560cb524888d46b555c",
+      "portable_path_export": true
+    },
+    "results/extra_unknown/audfprint_exact_byte_audit.json": {
+      "source_path": "work/benchmarks/extra_unknown/audfprint_exact_byte_audit.json",
+      "source_sha256": "bd1c5c5e98b59d09b34c79624d89d1295956de26902b0e37c336d35c3bb2bfc7",
+      "export_sha256": "bd1c5c5e98b59d09b34c79624d89d1295956de26902b0e37c336d35c3bb2bfc7",
+      "portable_path_export": true
+    },
+    "results/extra_unknown/audfprint_waveform_audit.json": {
+      "source_path": "work/benchmarks/extra_unknown/audfprint_waveform_audit.json",
+      "source_sha256": "33265e6d0f3bd9c953fa4b6fa2384209e8eea942bd4ee99c99aa37e40da90ed0",
+      "export_sha256": "33265e6d0f3bd9c953fa4b6fa2384209e8eea942bd4ee99c99aa37e40da90ed0",
+      "portable_path_export": true
+    },
+    "results/extra_unknown/soundfingerprinting_waveform_audit.json": {
+      "source_path": "work/benchmarks/extra_unknown/soundfingerprinting_waveform_audit.json",
+      "source_sha256": "486044f6adbdf728a48c365b4cc5dce2ecea9b20e8461d81a5e16c039b174ed9",
+      "export_sha256": "486044f6adbdf728a48c365b4cc5dce2ecea9b20e8461d81a5e16c039b174ed9",
+      "portable_path_export": true
+    },
+    "results/hard_medium_protocol.json": {
+      "source_path": "work/benchmarks/hard_medium_protocol.json",
+      "source_sha256": "aae834db35736f2a1ff8e9ccb53fefcdb1140e5dd122502fbc65b93296b6b132",
+      "export_sha256": "8ac7404f33205ea4dac2dbc943bc5c240123812074b4591d0a0bb8dc6c38dd3c",
+      "portable_path_export": true
+    },
+    "results/hard_small_protocol.json": {
+      "source_path": "work/benchmarks/hard_small_protocol.json",
+      "source_sha256": "e3a8c235f91d6f2ddab650c9ce667d37e07c1c7ce7a97ae4552a228ae19058e3",
+      "export_sha256": "8a5b289484863cbdf88e972a3d37038cc68efd40984668a804b325cac7fc6691",
+      "portable_path_export": true
+    },
+    "results/metal_parity_audit.json": {
+      "source_path": "work/benchmarks/metal_parity_audit.json",
+      "source_sha256": "bd59a959ae0a6a0dbf39685519612f5b297fde627f588f7e085aa2909add831c",
+      "export_sha256": "8fc23a8e4880d616178c9bb10c12692a067e86554657079ee85a208a19af7ce4",
+      "portable_path_export": true
+    },
+    "results/neural_density_controls/clock_compatibility_audit.json": {
+      "source_path": "work/benchmarks/neural_density_controls/clock_compatibility_audit.json",
+      "source_sha256": "f928a60e705c51e97ddc8d124a983c6872d9c8910aa60dad5751ab72ca15f30b",
+      "export_sha256": "f928a60e705c51e97ddc8d124a983c6872d9c8910aa60dad5751ab72ca15f30b",
+      "portable_path_export": true
+    },
+    "results/neural_density_controls/nmfp/declaration.json": {
+      "source_path": "work/benchmarks/neural_density_controls/nmfp/declaration.json",
+      "source_sha256": "00abbb8698737861ef48e050d919c1055da18c1c7d5736049b918dae8e279a29",
+      "export_sha256": "00abbb8698737861ef48e050d919c1055da18c1c7d5736049b918dae8e279a29",
+      "portable_path_export": true
+    },
+    "results/neural_density_controls/nmfp/nmfp_density_r2_q2_5s.json": {
+      "source_path": "work/benchmarks/neural_density_controls/nmfp/nmfp_density_r2_q2_5s.json",
+      "source_sha256": "d8085f4c79f17599ad637fcac4a4e251d200566e351ebc4f97e74470c59fff5a",
+      "export_sha256": "d8085f4c79f17599ad637fcac4a4e251d200566e351ebc4f97e74470c59fff5a",
+      "portable_path_export": true
+    },
+    "results/neural_density_controls/nmfp/nmfp_density_r4_q4_5s.json": {
+      "source_path": "work/benchmarks/neural_density_controls/nmfp/nmfp_density_r4_q4_5s.json",
+      "source_sha256": "ca920652b3c5225a5f967433b24c1d1941227da750ffa34d31861ce2237c254c",
+      "export_sha256": "ca920652b3c5225a5f967433b24c1d1941227da750ffa34d31861ce2237c254c",
+      "portable_path_export": true
+    },
+    "results/neural_density_controls/nmfp/summary.json": {
+      "source_path": "work/benchmarks/neural_density_controls/nmfp/summary.json",
+      "source_sha256": "c5ad91b734b8b39a5a8dfe977d8826a9f8f12770cd19b124004477b11cd06802",
+      "export_sha256": "0998d445a8bd028e55ff2478a319df413d89980da8b522f4df3830ae72a34378",
+      "portable_path_export": true
+    },
+    "results/neural_density_controls/paired_acr_neural_primary.json": {
+      "source_path": "work/benchmarks/neural_density_controls/paired_acr_neural_primary.json",
+      "source_sha256": "d2424d7e9a22eaebae125354d4ffdf8740efd9311447f41e1a791a1c500fa5cb",
+      "export_sha256": "d2424d7e9a22eaebae125354d4ffdf8740efd9311447f41e1a791a1c500fa5cb",
+      "portable_path_export": true
+    },
+    "results/neural_density_controls/paired_native_density_counts.json": {
+      "source_path": "work/benchmarks/neural_density_controls/paired_native_density_counts.json",
+      "source_sha256": "7c056163ef8e33f1c1c2e78e218904c7636825d0ce1da673bf00be1bd4db1124",
+      "export_sha256": "7c056163ef8e33f1c1c2e78e218904c7636825d0ce1da673bf00be1bd4db1124",
+      "portable_path_export": true
+    },
+    "results/neural_density_controls/parity.json": {
+      "source_path": "work/benchmarks/neural_density_controls/parity.json",
+      "source_sha256": "a4a49a24ed3364df627d17eb305ece49d7df1d339be628dda8ff30044ba9674f",
+      "export_sha256": "a4a49a24ed3364df627d17eb305ece49d7df1d339be628dda8ff30044ba9674f",
+      "portable_path_export": true
+    },
+    "results/neural_density_controls/peaknet/declaration.json": {
+      "source_path": "work/benchmarks/neural_density_controls/peaknet/declaration.json",
+      "source_sha256": "3a0ec9042b26e7816afdef2a6f439cb7ade59a267890bb1350e7239112eb4d5f",
+      "export_sha256": "3a0ec9042b26e7816afdef2a6f439cb7ade59a267890bb1350e7239112eb4d5f",
+      "portable_path_export": true
+    },
+    "results/neural_density_controls/peaknet/peaknet_density_r2_q1_5s.json": {
+      "source_path": "work/benchmarks/neural_density_controls/peaknet/peaknet_density_r2_q1_5s.json",
+      "source_sha256": "a4a656ce8c3c30d6dd851a9cd1700d59c39b5da86e3f99333eb27b0545143ad1",
+      "export_sha256": "a4a656ce8c3c30d6dd851a9cd1700d59c39b5da86e3f99333eb27b0545143ad1",
+      "portable_path_export": true
+    },
+    "results/neural_density_controls/peaknet/peaknet_density_r4_q1_5s.json": {
+      "source_path": "work/benchmarks/neural_density_controls/peaknet/peaknet_density_r4_q1_5s.json",
+      "source_sha256": "832b53b4cba1abe6c38d45ca59a7e6147d93aa2f6d04f712a763aaba3c37d0da",
+      "export_sha256": "832b53b4cba1abe6c38d45ca59a7e6147d93aa2f6d04f712a763aaba3c37d0da",
+      "portable_path_export": true
+    },
+    "results/neural_density_controls/peaknet/summary.json": {
+      "source_path": "work/benchmarks/neural_density_controls/peaknet/summary.json",
+      "source_sha256": "d6affe59d411284868c2fdb71210a737108e9d305b9d20096ade7a0d7b16f3cc",
+      "export_sha256": "d116cbf7c787a35e633a622142946a87c1a3ec26ec72edc6f5d5357873b75fe2",
+      "portable_path_export": true
+    },
+    "results/neural_density_controls/provenance.json": {
+      "source_path": "work/benchmarks/neural_density_controls/provenance.json",
+      "source_sha256": "653a00ad2549a928f68e9703d6bf6a97e024c9222b1aecd5c33345f6abb8cf39",
+      "export_sha256": "653a00ad2549a928f68e9703d6bf6a97e024c9222b1aecd5c33345f6abb8cf39",
+      "portable_path_export": true
+    },
+    "results/nmfp_extended_results/nmfp_native_5s.json": {
+      "source_path": "work/benchmarks/nmfp_extended_results/nmfp_native_5s.json",
+      "source_sha256": "5785930db4a20b93646afa988f0e57620703138edb163ec5e295f128f9f292a3",
+      "export_sha256": "5785930db4a20b93646afa988f0e57620703138edb163ec5e295f128f9f292a3",
+      "portable_path_export": true
+    },
+    "results/nmfp_extended_results/summary.json": {
+      "source_path": "work/benchmarks/nmfp_extended_results/summary.json",
+      "source_sha256": "c78fbedd1e44cadb558b18fa7fbc9eef70f2e36e77b79925506f640aacaeceeb",
+      "export_sha256": "c78fbedd1e44cadb558b18fa7fbc9eef70f2e36e77b79925506f640aacaeceeb",
+      "portable_path_export": true
+    },
+    "results/nmfp_ivf_extended_results/nmfp_native_ivf1024_p16_5s.json": {
+      "source_path": "work/benchmarks/nmfp_ivf_extended_results/nmfp_native_ivf1024_p16_5s.json",
+      "source_sha256": "80983ab416ad67e0a12587daea533df7eabf0e551891316615e56bf8b5716bf1",
+      "export_sha256": "80983ab416ad67e0a12587daea533df7eabf0e551891316615e56bf8b5716bf1",
+      "portable_path_export": true
+    },
+    "results/nmfp_ivf_extended_results/summary.json": {
+      "source_path": "work/benchmarks/nmfp_ivf_extended_results/summary.json",
+      "source_sha256": "19234c5621d8672d035e50579261e94da8aaa2d7cd03993ce086ecbf5acea83d",
+      "export_sha256": "19234c5621d8672d035e50579261e94da8aaa2d7cd03993ce086ecbf5acea83d",
+      "portable_path_export": true
+    },
+    "results/nmfp_ivf_results/nmfp_native_ivf1024_p16_5s.json": {
+      "source_path": "work/benchmarks/nmfp_ivf_results/nmfp_native_ivf1024_p16_5s.json",
+      "source_sha256": "b146853b86d2b0d3eb3f2e4d4b53fa447e00e5c1167c47983f1c53928cd56ce8",
+      "export_sha256": "b146853b86d2b0d3eb3f2e4d4b53fa447e00e5c1167c47983f1c53928cd56ce8",
+      "portable_path_export": true
+    },
+    "results/nmfp_ivf_results/summary_primary_5s.json": {
+      "source_path": "work/benchmarks/nmfp_ivf_results/summary_primary_5s.json",
+      "source_sha256": "fd68e10764784049b0952ce2d55259694184f0c8d9fc6081cb8be2cc346c2e37",
+      "export_sha256": "fd68e10764784049b0952ce2d55259694184f0c8d9fc6081cb8be2cc346c2e37",
+      "portable_path_export": true
+    },
+    "results/nmfp_results/nmfp_native_10s.json": {
+      "source_path": "work/benchmarks/nmfp_results/nmfp_native_10s.json",
+      "source_sha256": "0752a40a8b79b1e872203f236f8a0fb3608d3fe7109881bb013d692917dd3d4f",
+      "export_sha256": "0752a40a8b79b1e872203f236f8a0fb3608d3fe7109881bb013d692917dd3d4f",
+      "portable_path_export": true
+    },
+    "results/nmfp_results/nmfp_native_1s.json": {
+      "source_path": "work/benchmarks/nmfp_results/nmfp_native_1s.json",
+      "source_sha256": "734c6468a06fe942b21ff08ec5808d68c09cdb759a87a913dc8dff406b8deb2e",
+      "export_sha256": "734c6468a06fe942b21ff08ec5808d68c09cdb759a87a913dc8dff406b8deb2e",
+      "portable_path_export": true
+    },
+    "results/nmfp_results/nmfp_native_2s.json": {
+      "source_path": "work/benchmarks/nmfp_results/nmfp_native_2s.json",
+      "source_sha256": "07b7185d8c3f86bf32b05a56ddc7b165840ba6cd9abee983fcd9ff0b7c674649",
+      "export_sha256": "07b7185d8c3f86bf32b05a56ddc7b165840ba6cd9abee983fcd9ff0b7c674649",
+      "portable_path_export": true
+    },
+    "results/nmfp_results/nmfp_native_3s.json": {
+      "source_path": "work/benchmarks/nmfp_results/nmfp_native_3s.json",
+      "source_sha256": "7bb1378dd7d7a6d3fbe5597ac2556c5b4de350ff65e96f2d78f48d401547f122",
+      "export_sha256": "7bb1378dd7d7a6d3fbe5597ac2556c5b4de350ff65e96f2d78f48d401547f122",
+      "portable_path_export": true
+    },
+    "results/nmfp_results/nmfp_native_5s.json": {
+      "source_path": "work/benchmarks/nmfp_results/nmfp_native_5s.json",
+      "source_sha256": "4102afeb1eac302a2cf982b6f27e92a2e12c4aa10ace754f30a0f42561550c5b",
+      "export_sha256": "4102afeb1eac302a2cf982b6f27e92a2e12c4aa10ace754f30a0f42561550c5b",
+      "portable_path_export": true
+    },
+    "results/nmfp_results/source_unseen_5s.json": {
+      "source_path": "work/benchmarks/nmfp_results/source_unseen_5s.json",
+      "source_sha256": "129530e8a62c76a2d7e0901aa07aace9349962199fd75b6ecf3eebe09670755e",
+      "export_sha256": "129530e8a62c76a2d7e0901aa07aace9349962199fd75b6ecf3eebe09670755e",
+      "portable_path_export": true
+    },
+    "results/nmfp_results/summary_nmfp.json": {
+      "source_path": "work/benchmarks/nmfp_results/summary_nmfp.json",
+      "source_sha256": "a1a113a6f5fb41083f74d94ac68021a3586529c3360bde700d94a4fa59a8907a",
+      "export_sha256": "a1a113a6f5fb41083f74d94ac68021a3586529c3360bde700d94a4fa59a8907a",
+      "portable_path_export": true
+    },
+    "results/nmfp_results/summary_primary_5s.json": {
+      "source_path": "work/benchmarks/nmfp_results/summary_primary_5s.json",
+      "source_sha256": "f170ac5dead0f74509bc8456c648aaa1645d26ea7c4dd543ed50ce0f25bdd01d",
+      "export_sha256": "f170ac5dead0f74509bc8456c648aaa1645d26ea7c4dd543ed50ce0f25bdd01d",
+      "portable_path_export": true
+    },
+    "results/nmfp_speech_results/nmfp_native_5s.json": {
+      "source_path": "work/benchmarks/nmfp_speech_results/nmfp_native_5s.json",
+      "source_sha256": "ec4aec72e8ce52228a7bc273d76ba308523831e11d01781067f81e2fd209684c",
+      "export_sha256": "ec4aec72e8ce52228a7bc273d76ba308523831e11d01781067f81e2fd209684c",
+      "portable_path_export": true
+    },
+    "results/nmfp_speech_results/summary.json": {
+      "source_path": "work/benchmarks/nmfp_speech_results/summary.json",
+      "source_sha256": "35c83f28db26fc47043b63e7a91ea9b4dd74c5d3e556f2c4df1267889bdea4ca",
+      "export_sha256": "35c83f28db26fc47043b63e7a91ea9b4dd74c5d3e556f2c4df1267889bdea4ca",
+      "portable_path_export": true
+    },
+    "results/nmfp_training_overlap_audit.json": {
+      "source_path": "work/benchmarks/nmfp_training_overlap_audit.json",
+      "source_sha256": "787f7f27008c6a8ce632d27f259acb5d022cb0426a6c1e54a147d0c2943eae3a",
+      "export_sha256": "787f7f27008c6a8ce632d27f259acb5d022cb0426a6c1e54a147d0c2943eae3a",
+      "portable_path_export": true
+    },
+    "results/paper_matrix_counts.json": {
+      "source_path": "work/paper_matrix_counts.json",
+      "source_sha256": "8d67d891d09e1ce56002cab5237fbfe1744a8866286f383140141e026ac4490f",
+      "export_sha256": "8d67d891d09e1ce56002cab5237fbfe1744a8866286f383140141e026ac4490f",
+      "portable_path_export": true
+    },
+    "results/paper_numbers_v2.json": {
+      "source_path": "work/paper_numbers_v2.json",
+      "source_sha256": "d06caf0a75270fd16abf12bca43668d88c2a3376046917707cfd7a3566c0f36a",
+      "export_sha256": "d06caf0a75270fd16abf12bca43668d88c2a3376046917707cfd7a3566c0f36a",
+      "portable_path_export": true
+    },
+    "results/peaknet_extended_results/peaknet_native_5s.json": {
+      "source_path": "work/benchmarks/peaknet_extended_results/peaknet_native_5s.json",
+      "source_sha256": "6fab5b16817cc12d313af1eae77305e667bb203f03dd8ba4bc7c43260579d6cc",
+      "export_sha256": "6fab5b16817cc12d313af1eae77305e667bb203f03dd8ba4bc7c43260579d6cc",
+      "portable_path_export": true
+    },
+    "results/peaknet_extended_results/summary.json": {
+      "source_path": "work/benchmarks/peaknet_extended_results/summary.json",
+      "source_sha256": "fe558fe3c13594c1d195e974bf57f97536e1b5cd273a2a23fde14ffbf23cfb30",
+      "export_sha256": "fe558fe3c13594c1d195e974bf57f97536e1b5cd273a2a23fde14ffbf23cfb30",
+      "portable_path_export": true
+    },
+    "results/peaknet_ivf_extended_results/peaknet_native_ivf1024_p16_5s.json": {
+      "source_path": "work/benchmarks/peaknet_ivf_extended_results/peaknet_native_ivf1024_p16_5s.json",
+      "source_sha256": "7c22770a263e88c80a873c2b7cc87accb4891618a50e7da630d882b8f1624899",
+      "export_sha256": "7c22770a263e88c80a873c2b7cc87accb4891618a50e7da630d882b8f1624899",
+      "portable_path_export": true
+    },
+    "results/peaknet_ivf_extended_results/summary.json": {
+      "source_path": "work/benchmarks/peaknet_ivf_extended_results/summary.json",
+      "source_sha256": "0a3362009d7c723290d3dee35aafbdd726f5081157e18cd5405b3c3adcd6342b",
+      "export_sha256": "0a3362009d7c723290d3dee35aafbdd726f5081157e18cd5405b3c3adcd6342b",
+      "portable_path_export": true
+    },
+    "results/peaknet_ivf_extended_results/summary_primary_gate.json": {
+      "source_path": "work/benchmarks/peaknet_ivf_extended_results/summary_primary_gate.json",
+      "source_sha256": "be49eca1d73d33d1427965cde62fb3cf1fa7c07586a406983f1e81e3e68c003f",
+      "export_sha256": "be49eca1d73d33d1427965cde62fb3cf1fa7c07586a406983f1e81e3e68c003f",
+      "portable_path_export": true
+    },
+    "results/peaknet_primary_results/peaknet_native_5s.json": {
+      "source_path": "work/benchmarks/peaknet_primary_results/peaknet_native_5s.json",
+      "source_sha256": "5c91ac67485a7c65ad95ae9b802057b6702e78ca4cfa46d278d6f453c25f6aa0",
+      "export_sha256": "5c91ac67485a7c65ad95ae9b802057b6702e78ca4cfa46d278d6f453c25f6aa0",
+      "portable_path_export": true
+    },
+    "results/peaknet_primary_results/source_unseen_5s.json": {
+      "source_path": "work/benchmarks/peaknet_primary_results/source_unseen_5s.json",
+      "source_sha256": "91b6fe0e5b9f888b940bddb94e6a16be03fb424765763a66c7747eb3360c4cec",
+      "export_sha256": "91b6fe0e5b9f888b940bddb94e6a16be03fb424765763a66c7747eb3360c4cec",
+      "portable_path_export": true
+    },
+    "results/peaknet_primary_results/summary.json": {
+      "source_path": "work/benchmarks/peaknet_primary_results/summary.json",
+      "source_sha256": "b3d9f19d4e0563f8e1765d0091b44b0aaba2a3281e2050a1adc8e5e15605d602",
+      "export_sha256": "b3d9f19d4e0563f8e1765d0091b44b0aaba2a3281e2050a1adc8e5e15605d602",
+      "portable_path_export": true
+    },
+    "results/profiling/acr_compact/profile.json": {
+      "source_path": "work/profiling/acr_compact/profile.json",
+      "source_sha256": "d19fc88ceda0623e97f929ee5b1bde9ef9cabb0a113e7167a125678352126b90",
+      "export_sha256": "d19fc88ceda0623e97f929ee5b1bde9ef9cabb0a113e7167a125678352126b90",
+      "portable_path_export": true
+    },
+    "results/profiling/audfprint/profile.json": {
+      "source_path": "work/profiling/audfprint/profile.json",
+      "source_sha256": "0208672e51519f03d806ca68bf23f26f36b1d00c41139816cd248fa7095af41f",
+      "export_sha256": "0208672e51519f03d806ca68bf23f26f36b1d00c41139816cd248fa7095af41f",
+      "portable_path_export": true
+    },
+    "results/profiling/baseline_inputs/inputs.json": {
+      "source_path": "work/profiling/baseline_inputs/inputs.json",
+      "source_sha256": "cc191669d25f41a112e480d80dfc00d0cc95c75e5625084cb9f03d17235d504d",
+      "export_sha256": "952ee9c09a3e2b572961a7b1117b4c9e6f4702b86dfae4bed268a327a290c328",
+      "portable_path_export": true
+    },
+    "results/profiling/common_inputs/inputs.json": {
+      "source_path": "work/profiling/common_inputs/inputs.json",
+      "source_sha256": "be1a6cde2c533bf8c2383980234dc0aa9998cb6650c85ec8f23816a63cfaabc5",
+      "export_sha256": "d3df8abcedb94184b9b7273440276a08e66dbe2c67f0181cb2cd4321c45b81f6",
+      "portable_path_export": true
+    },
+    "results/profiling/nmfp/profile.json": {
+      "source_path": "work/profiling/nmfp/profile.json",
+      "source_sha256": "11a735a449a239180bc0affea292750bd93dd6d76279a1eed3a3b19a1404b13d",
+      "export_sha256": "06a5e52b02ff9a433a56d99d79102ea8781304d98819d7f97defd1185d85afde",
+      "portable_path_export": true
+    },
+    "results/profiling/nmfp_density/profile.json": {
+      "source_path": "work/profiling/nmfp_density/profile.json",
+      "source_sha256": "65b021509144d48d1e63c5356c47ca829d931c1946058ef80666297044f19c6a",
+      "export_sha256": "e5c635d9b4a673b641df942ee8028d0485f0758312c934884373670dc9109fb1",
+      "portable_path_export": true
+    },
+    "results/profiling/paper_timing_final.json": {
+      "source_path": "work/profiling/paper_timing_final.json",
+      "source_sha256": "a42b8e05fea362183502a03ccbc8eaf3c6e86dc1b07b067b28d6aa1a41609f31",
+      "export_sha256": "a42b8e05fea362183502a03ccbc8eaf3c6e86dc1b07b067b28d6aa1a41609f31",
+      "portable_path_export": true
+    },
+    "results/profiling/peaknet_corrected/profile.json": {
+      "source_path": "work/profiling/peaknet_corrected/profile.json",
+      "source_sha256": "af7ad12e7bf6cfa2736780addb4c05fe4a41ad6142d45dab287b82ae0686aaa0",
+      "export_sha256": "41127d0a7f217329db82a375d834d2f34683e106f2321112540057c22d75c471",
+      "portable_path_export": true
+    },
+    "results/profiling/soundfingerprinting/profile.json": {
+      "source_path": "work/profiling/soundfingerprinting/profile.json",
+      "source_sha256": "1fd1ced482c12ede3ebaf91ed8d0aee3a02b5680375d8d4c87a7f1d951b54b62",
+      "export_sha256": "1fd1ced482c12ede3ebaf91ed8d0aee3a02b5680375d8d4c87a7f1d951b54b62",
+      "portable_path_export": true
+    },
+    "results/secondary_source_sensitivity.json": {
+      "source_path": "work/benchmarks/secondary_source_sensitivity.json",
+      "source_sha256": "1c9844ead3081a7db4ec819e589d69d23088251719ac0a715dbd317830bc5e39",
+      "export_sha256": "1c9844ead3081a7db4ec819e589d69d23088251719ac0a715dbd317830bc5e39",
+      "portable_path_export": true
+    },
+    "results/soundfingerprinting_density_audit.json": {
+      "source_path": "work/benchmarks/soundfingerprinting_density_audit.json",
+      "source_sha256": "24e7627fdf7873d3d291a9e7ccc19504351ab861ab877fdc60afdd82c236497e",
+      "export_sha256": "24e7627fdf7873d3d291a9e7ccc19504351ab861ab877fdc60afdd82c236497e",
+      "portable_path_export": true
+    },
+    "results/soundfingerprinting_density_factor1/parity_audit.json": {
+      "source_path": "work/benchmarks/soundfingerprinting_density_factor1/parity_audit.json",
+      "source_sha256": "e789fffd584fdc98d69b8d9c9df76c41c035d96b9a7d799932b120c2073ca6d8",
+      "export_sha256": "e789fffd584fdc98d69b8d9c9df76c41c035d96b9a7d799932b120c2073ca6d8",
+      "portable_path_export": true
+    },
+    "results/soundfingerprinting_density_factor1/soundfingerprinting_5s.json": {
+      "source_path": "work/benchmarks/soundfingerprinting_density_factor1/soundfingerprinting_5s.json",
+      "source_sha256": "7fd9b5340b36e543672421328df81cdb18f2e708cc4a0f468d798f3cbfe77193",
+      "export_sha256": "68781bb36163ec26a35b012094aa7b18a12fb45d6f439c95c22fb01c78357897",
+      "portable_path_export": true
+    },
+    "results/soundfingerprinting_density_factor2/soundfingerprinting_5s.json": {
+      "source_path": "work/benchmarks/soundfingerprinting_density_factor2/soundfingerprinting_5s.json",
+      "source_sha256": "ca99324517917677049966fc501c895926a1d8992cf07d1d17cd86cc5ed1a75b",
+      "export_sha256": "ca99324517917677049966fc501c895926a1d8992cf07d1d17cd86cc5ed1a75b",
+      "portable_path_export": true
+    },
+    "results/soundfingerprinting_density_factor2_extended/soundfingerprinting_5s.json": {
+      "source_path": "work/benchmarks/soundfingerprinting_density_factor2_extended/soundfingerprinting_5s.json",
+      "source_sha256": "a5b7cc188edf51a0c2b4275a115abb9433d032c24f8cf85b10dc3e842a710405",
+      "export_sha256": "f6c4d33ee5f60ec7f0d71c5373a499d5b983a9b5c43aaf5036ea6ad6636cb855",
+      "portable_path_export": true
+    },
+    "results/soundfingerprinting_density_factor4/soundfingerprinting_5s.json": {
+      "source_path": "work/benchmarks/soundfingerprinting_density_factor4/soundfingerprinting_5s.json",
+      "source_sha256": "47e5646f11cf1eddcb7d1412b3f3d95b682536dc97ae011774184cfc9d229b17",
+      "export_sha256": "47e5646f11cf1eddcb7d1412b3f3d95b682536dc97ae011774184cfc9d229b17",
+      "portable_path_export": true
+    },
+    "results/soundfingerprinting_density_factor4_extended/soundfingerprinting_5s.json": {
+      "source_path": "work/benchmarks/soundfingerprinting_density_factor4_extended/soundfingerprinting_5s.json",
+      "source_sha256": "2327dc743dd36466952a2dd98454f0419c7e3c12a863a092e2a591a629047d22",
+      "export_sha256": "e20f5779c930128400c52c518ff95d168967be324461ee985a193aa4dcef5c3f",
+      "portable_path_export": true
+    },
+    "results/soundfingerprinting_density_summary.json": {
+      "source_path": "work/benchmarks/soundfingerprinting_density_summary.json",
+      "source_sha256": "51f5efd8ec863d24bf5c2ac2071cc4fd70599e55cbcb588a135bed2361bfe0ae",
+      "export_sha256": "51f5efd8ec863d24bf5c2ac2071cc4fd70599e55cbcb588a135bed2361bfe0ae",
+      "portable_path_export": true
+    },
+    "results/soundfingerprinting_native_extended/extended_operating_points.json": {
+      "source_path": "work/benchmarks/soundfingerprinting_native_extended/extended_operating_points.json",
+      "source_sha256": "44f4d02af8eee3dd467c92777a25a9e805ed8b58152fa5dc7c2be79d7b1f2560",
+      "export_sha256": "44f4d02af8eee3dd467c92777a25a9e805ed8b58152fa5dc7c2be79d7b1f2560",
+      "portable_path_export": true
+    },
+    "results/soundfingerprinting_native_extended/soundfingerprinting_5s.json": {
+      "source_path": "work/benchmarks/soundfingerprinting_native_extended/soundfingerprinting_5s.json",
+      "source_sha256": "20dc34b0ba956026db08244750344056d805508124c71560e59f090d6f69937b",
+      "export_sha256": "20dc34b0ba956026db08244750344056d805508124c71560e59f090d6f69937b",
+      "portable_path_export": true
+    },
+    "results/soundfingerprinting_native_medium/soundfingerprinting_10s.json": {
+      "source_path": "work/benchmarks/soundfingerprinting_native_medium/soundfingerprinting_10s.json",
+      "source_sha256": "a5f60b2ad34a9636be265cb61f49b01ec50f701e7844856669f98aa05e2c074e",
+      "export_sha256": "a5f60b2ad34a9636be265cb61f49b01ec50f701e7844856669f98aa05e2c074e",
+      "portable_path_export": true
+    },
+    "results/soundfingerprinting_native_medium/soundfingerprinting_2s.json": {
+      "source_path": "work/benchmarks/soundfingerprinting_native_medium/soundfingerprinting_2s.json",
+      "source_sha256": "0e2a3112ff85a1302043d33879a193e882ead09174407d2286c076ef2aa7506f",
+      "export_sha256": "0e2a3112ff85a1302043d33879a193e882ead09174407d2286c076ef2aa7506f",
+      "portable_path_export": true
+    },
+    "results/soundfingerprinting_native_medium/soundfingerprinting_3s.json": {
+      "source_path": "work/benchmarks/soundfingerprinting_native_medium/soundfingerprinting_3s.json",
+      "source_sha256": "38a7472c5d238bed53741b89c309be2edede4ca62c07eed5ca4f8fd1a267dc70",
+      "export_sha256": "38a7472c5d238bed53741b89c309be2edede4ca62c07eed5ca4f8fd1a267dc70",
+      "portable_path_export": true
+    },
+    "results/soundfingerprinting_native_medium/soundfingerprinting_5s.json": {
+      "source_path": "work/benchmarks/soundfingerprinting_native_medium/soundfingerprinting_5s.json",
+      "source_sha256": "5fb954fbb5c63767f565c1be11ef0f5ba1e8a8ca5e897a483edd2e9dc79ab632",
+      "export_sha256": "5fb954fbb5c63767f565c1be11ef0f5ba1e8a8ca5e897a483edd2e9dc79ab632",
+      "portable_path_export": true
+    },
+    "results/soundfingerprinting_native_medium/summary_5s.json": {
+      "source_path": "work/benchmarks/soundfingerprinting_native_medium/summary_5s.json",
+      "source_sha256": "2adf0963c77dab73ed3881715b3b1460d57baee87edf1b68ff84f6e5fc4aad65",
+      "export_sha256": "2adf0963c77dab73ed3881715b3b1460d57baee87edf1b68ff84f6e5fc4aad65",
+      "portable_path_export": true
+    },
+    "results/soundfingerprinting_speech/pooled_summary.json": {
+      "source_path": "work/benchmarks/soundfingerprinting_speech/pooled_summary.json",
+      "source_sha256": "8f30a38a4698b6044585df698f4eacd03fa4ff27e69826870bd981b5586893cb",
+      "export_sha256": "8f30a38a4698b6044585df698f4eacd03fa4ff27e69826870bd981b5586893cb",
+      "portable_path_export": true
+    },
+    "results/soundfingerprinting_speech/soundfingerprinting_5s.json": {
+      "source_path": "work/benchmarks/soundfingerprinting_speech/soundfingerprinting_5s.json",
+      "source_sha256": "fd26ee3741f16d269723784d2a23eb32a053ece1cdf2d127ce6059932f6d9f84",
+      "export_sha256": "fd26ee3741f16d269723784d2a23eb32a053ece1cdf2d127ce6059932f6d9f84",
+      "portable_path_export": true
+    },
+    "results/speech_protocol.json": {
+      "source_path": "work/benchmarks/speech_protocol.json",
+      "source_sha256": "227070d8f9a01b799831006488aa5f15af190114e738e9a9d1f691e7460be302",
+      "export_sha256": "e2d231360da4559bfa8a6644e1a31f8ab4e928b1e784b5270556e4caedd98c67",
+      "portable_path_export": true
+    },
+    "results/speech_summary_final.json": {
+      "source_path": "work/benchmarks/speech_summary_final.json",
+      "source_sha256": "67c5a8fc728d240757796a3817bcb48c125ea324de65594a893c51df5a763467",
+      "export_sha256": "67c5a8fc728d240757796a3817bcb48c125ea324de65594a893c51df5a763467",
+      "portable_path_export": true
+    },
+    "results/streaming_index/REPORT.md": {
+      "source_path": "work/revision2026/streaming_index/REPORT.md",
+      "source_sha256": "55f6a9dba462917e3dbbf954144e5b6099ed261c1a7002c8c5655031c2fb7304",
+      "export_sha256": "55f6a9dba462917e3dbbf954144e5b6099ed261c1a7002c8c5655031c2fb7304",
+      "portable_path_export": false
+    },
+    "results/streaming_index/baseline_141_r0.json": {
+      "source_path": "work/revision2026/streaming_index/baseline_141_r0.json",
+      "source_sha256": "76aff8d330abab6f2d05a91b77d9607092ccf536e771da7dc69340e507bd7180",
+      "export_sha256": "76aff8d330abab6f2d05a91b77d9607092ccf536e771da7dc69340e507bd7180",
+      "portable_path_export": true
+    },
+    "results/streaming_index/baseline_141_r1.json": {
+      "source_path": "work/revision2026/streaming_index/baseline_141_r1.json",
+      "source_sha256": "ab564084f8172d138ec0f4f44643cd329b54d9799f2f88656e80560280135d4c",
+      "export_sha256": "ab564084f8172d138ec0f4f44643cd329b54d9799f2f88656e80560280135d4c",
+      "portable_path_export": true
+    },
+    "results/streaming_index/baseline_141_r2.json": {
+      "source_path": "work/revision2026/streaming_index/baseline_141_r2.json",
+      "source_sha256": "29d5934cd300ffac212a256f18b33847a683f1f8558338deb080f6b13b0ef5cc",
+      "export_sha256": "29d5934cd300ffac212a256f18b33847a683f1f8558338deb080f6b13b0ef5cc",
+      "portable_path_export": true
+    },
+    "results/streaming_index/baseline_256_r0.json": {
+      "source_path": "work/revision2026/streaming_index/baseline_256_r0.json",
+      "source_sha256": "ee88b9c4a9bbfa9803cadf79cdaae10ab8219cc61a7c7f2ca9040adaa216d025",
+      "export_sha256": "ee88b9c4a9bbfa9803cadf79cdaae10ab8219cc61a7c7f2ca9040adaa216d025",
+      "portable_path_export": true
+    },
+    "results/streaming_index/baseline_256_r1.json": {
+      "source_path": "work/revision2026/streaming_index/baseline_256_r1.json",
+      "source_sha256": "9bc869d5ed0b2d33102dff76e03b7ddd51c3068a4d1c960b6bcaa15b6c76f1f7",
+      "export_sha256": "9bc869d5ed0b2d33102dff76e03b7ddd51c3068a4d1c960b6bcaa15b6c76f1f7",
+      "portable_path_export": true
+    },
+    "results/streaming_index/baseline_256_r2.json": {
+      "source_path": "work/revision2026/streaming_index/baseline_256_r2.json",
+      "source_sha256": "1d5a3820fc03b15f1cd1f22c5eac53813a89943fc0fc32239341d792bb82d6a5",
+      "export_sha256": "1d5a3820fc03b15f1cd1f22c5eac53813a89943fc0fc32239341d792bb82d6a5",
+      "portable_path_export": true
+    },
+    "results/streaming_index/baseline_512_r0.json": {
+      "source_path": "work/revision2026/streaming_index/baseline_512_r0.json",
+      "source_sha256": "ec2d641a9c124eff9a0d8b3b77a70cf42d86449491d8d2f9b407445eb80e7273",
+      "export_sha256": "ec2d641a9c124eff9a0d8b3b77a70cf42d86449491d8d2f9b407445eb80e7273",
+      "portable_path_export": true
+    },
+    "results/streaming_index/baseline_512_r1.json": {
+      "source_path": "work/revision2026/streaming_index/baseline_512_r1.json",
+      "source_sha256": "26cb4f9d6de22990cc3d963e51f39cda6361959052b82ed2008ce6da258e1155",
+      "export_sha256": "26cb4f9d6de22990cc3d963e51f39cda6361959052b82ed2008ce6da258e1155",
+      "portable_path_export": true
+    },
+    "results/streaming_index/baseline_512_r2.json": {
+      "source_path": "work/revision2026/streaming_index/baseline_512_r2.json",
+      "source_sha256": "95f65173925f8693dc71b53b4674a0d42d46196a755aac5521a39c00f40d6b2a",
+      "export_sha256": "95f65173925f8693dc71b53b4674a0d42d46196a755aac5521a39c00f40d6b2a",
+      "portable_path_export": true
+    },
+    "results/streaming_index/baseline_659_r0.json": {
+      "source_path": "work/revision2026/streaming_index/baseline_659_r0.json",
+      "source_sha256": "b9cc701f8520c792d9d68c81a0fe42db35347d2a376c1ea310e17c086351a264",
+      "export_sha256": "b9cc701f8520c792d9d68c81a0fe42db35347d2a376c1ea310e17c086351a264",
+      "portable_path_export": true
+    },
+    "results/streaming_index/baseline_659_r1.json": {
+      "source_path": "work/revision2026/streaming_index/baseline_659_r1.json",
+      "source_sha256": "cab31dd866ec8943d6af6759fa9cfcee5bbd12bd6232020f3f1c2e2faf3990a9",
+      "export_sha256": "cab31dd866ec8943d6af6759fa9cfcee5bbd12bd6232020f3f1c2e2faf3990a9",
+      "portable_path_export": true
+    },
+    "results/streaming_index/baseline_659_r2.json": {
+      "source_path": "work/revision2026/streaming_index/baseline_659_r2.json",
+      "source_sha256": "2016c13a1cc7fbd34ca722f744a0c49815556c244c9e84c7dc7c63a1ebde97d8",
+      "export_sha256": "2016c13a1cc7fbd34ca722f744a0c49815556c244c9e84c7dc7c63a1ebde97d8",
+      "portable_path_export": true
+    },
+    "results/streaming_index/compact_141_r0.json": {
+      "source_path": "work/revision2026/streaming_index/compact_141_r0.json",
+      "source_sha256": "29491b6afafe4375920f31f8cbe8e44304bcf9c55dd5aaceb833d86f5c62b2ab",
+      "export_sha256": "29491b6afafe4375920f31f8cbe8e44304bcf9c55dd5aaceb833d86f5c62b2ab",
+      "portable_path_export": true
+    },
+    "results/streaming_index/compact_141_r1.json": {
+      "source_path": "work/revision2026/streaming_index/compact_141_r1.json",
+      "source_sha256": "fddd882f779a1d92c1ac773e3a2f5024da23ae5248e2654c8f36026a6947d63f",
+      "export_sha256": "fddd882f779a1d92c1ac773e3a2f5024da23ae5248e2654c8f36026a6947d63f",
+      "portable_path_export": true
+    },
+    "results/streaming_index/compact_141_r2.json": {
+      "source_path": "work/revision2026/streaming_index/compact_141_r2.json",
+      "source_sha256": "5712093bac3261372a5a57b2eaa9bf7306e3282551c0ffbb38c4810fcd8d48fa",
+      "export_sha256": "5712093bac3261372a5a57b2eaa9bf7306e3282551c0ffbb38c4810fcd8d48fa",
+      "portable_path_export": true
+    },
+    "results/streaming_index/compact_256_r0.json": {
+      "source_path": "work/revision2026/streaming_index/compact_256_r0.json",
+      "source_sha256": "f320db49547da069f458f74db36341a506bdcbfad3285633b4625161be4c4482",
+      "export_sha256": "f320db49547da069f458f74db36341a506bdcbfad3285633b4625161be4c4482",
+      "portable_path_export": true
+    },
+    "results/streaming_index/compact_256_r1.json": {
+      "source_path": "work/revision2026/streaming_index/compact_256_r1.json",
+      "source_sha256": "ffe7e7fc79b1c83399bb6810a0510aced77b2939e92e8889fb54e4c56a3e7b35",
+      "export_sha256": "ffe7e7fc79b1c83399bb6810a0510aced77b2939e92e8889fb54e4c56a3e7b35",
+      "portable_path_export": true
+    },
+    "results/streaming_index/compact_256_r2.json": {
+      "source_path": "work/revision2026/streaming_index/compact_256_r2.json",
+      "source_sha256": "7c9bb5fe96f833a3115351c2b7bc7088bbd1c375f13d78fb5abe5d767a9fbdad",
+      "export_sha256": "7c9bb5fe96f833a3115351c2b7bc7088bbd1c375f13d78fb5abe5d767a9fbdad",
+      "portable_path_export": true
+    },
+    "results/streaming_index/compact_512_r0.json": {
+      "source_path": "work/revision2026/streaming_index/compact_512_r0.json",
+      "source_sha256": "bc4dabf81d8478a6c91ebcaf1a27aea102fadba248faf45243d2dc6d8c3a1b7f",
+      "export_sha256": "bc4dabf81d8478a6c91ebcaf1a27aea102fadba248faf45243d2dc6d8c3a1b7f",
+      "portable_path_export": true
+    },
+    "results/streaming_index/compact_512_r1.json": {
+      "source_path": "work/revision2026/streaming_index/compact_512_r1.json",
+      "source_sha256": "37e1c84b0460a13647dfbd7f0e696b09f4fdad705d4adb15e5d3a4703849d8a7",
+      "export_sha256": "37e1c84b0460a13647dfbd7f0e696b09f4fdad705d4adb15e5d3a4703849d8a7",
+      "portable_path_export": true
+    },
+    "results/streaming_index/compact_512_r2.json": {
+      "source_path": "work/revision2026/streaming_index/compact_512_r2.json",
+      "source_sha256": "be9cea76119f7f7b563491019ec9855b311ba944745f5b9fc9510828a0affab0",
+      "export_sha256": "be9cea76119f7f7b563491019ec9855b311ba944745f5b9fc9510828a0affab0",
+      "portable_path_export": true
+    },
+    "results/streaming_index/compact_659_r0.json": {
+      "source_path": "work/revision2026/streaming_index/compact_659_r0.json",
+      "source_sha256": "93e2c7e738d4590e811d50437fd9f386cba089a8cc0c2a82cc31baa0fcf021b4",
+      "export_sha256": "93e2c7e738d4590e811d50437fd9f386cba089a8cc0c2a82cc31baa0fcf021b4",
+      "portable_path_export": true
+    },
+    "results/streaming_index/compact_659_r1.json": {
+      "source_path": "work/revision2026/streaming_index/compact_659_r1.json",
+      "source_sha256": "848f64ad8c258fd21e06b1d69eff87ad133f89b2b56659fc879d478551dc0df0",
+      "export_sha256": "848f64ad8c258fd21e06b1d69eff87ad133f89b2b56659fc879d478551dc0df0",
+      "portable_path_export": true
+    },
+    "results/streaming_index/compact_659_r2.json": {
+      "source_path": "work/revision2026/streaming_index/compact_659_r2.json",
+      "source_sha256": "82f85366d582eb7482b6b5353e0ec8ed0012b563774ca069bd667ec74d5aae2d",
+      "export_sha256": "82f85366d582eb7482b6b5353e0ec8ed0012b563774ca069bd667ec74d5aae2d",
+      "portable_path_export": true
+    },
+    "results/streaming_index/full835_parity.json": {
+      "source_path": "work/revision2026/streaming_index/full835_parity.json",
+      "source_sha256": "cbe3dd06432f18c8eab15afeecc70b7ccf38ed66a230e0a3e78a704460bb1d73",
+      "export_sha256": "cbe3dd06432f18c8eab15afeecc70b7ccf38ed66a230e0a3e78a704460bb1d73",
+      "portable_path_export": true
+    },
+    "results/streaming_index/publication_summary.json": {
+      "source_path": "work/revision2026/streaming_index/publication_summary.json",
+      "source_sha256": "b35acb64426191c9998b81de7f931f8e04bf8ea58f13116f43ebbc73fb105f72",
+      "export_sha256": "b35acb64426191c9998b81de7f931f8e04bf8ea58f13116f43ebbc73fb105f72",
+      "portable_path_export": true
+    },
+    "results/streaming_index/streaming_store.pdf": {
+      "source_path": "work/revision2026/streaming_index/streaming_store.pdf",
+      "source_sha256": "f8885e8d450264b718f1429887fb57eac60487eba533c6cf8930ddddaede2d0d",
+      "export_sha256": "f8885e8d450264b718f1429887fb57eac60487eba533c6cf8930ddddaede2d0d",
+      "portable_path_export": false
+    },
+    "results/v2_evidence_summary.json": {
+      "source_path": "work/v2_evidence_summary.json",
+      "source_sha256": "7bc01dc6e9922317b4a377619cb2b43fddc21f9a0d67e99115d293ea76d628c9",
+      "export_sha256": "1f3b63b9a21af57602faec8932d39a279e3be2d19c9f28fda5a9ad044760d551",
+      "portable_path_export": true
+    }
+  },
+  "canonical_peak_only": true,
+  "excluded": [
+    "audio/PCM/embedding/raw-feature caches",
+    "indexes/snapshots/runtime binaries",
+    "private Drive files/TV captures",
+    "obsolete Peak v1 compatibility stats and old timing table"
+  ],
+  "hash_policy": "Original execution hashes remain provenance; export hashes bind path-sanitized JSON. Verifier maps recorded protocol hashes through this ledger."
+}

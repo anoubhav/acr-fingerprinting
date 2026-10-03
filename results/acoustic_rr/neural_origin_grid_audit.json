@@ -1,0 +1,57 @@
+{
+  "10s_hop0.5s": {
+    "queries": 1488,
+    "offset_quantization_error_histogram_s": {
+      "0.0": 1488
+    },
+    "queries_grid_origin_can_meet_0_1s": 1488,
+    "queries_grid_origin_can_meet_2s": 1488,
+    "depends_only_on_annotations_not_predictions": true
+  },
+  "10s_hop1s": {
+    "queries": 1488,
+    "offset_quantization_error_histogram_s": {
+      "0.0": 1488
+    },
+    "queries_grid_origin_can_meet_0_1s": 1488,
+    "queries_grid_origin_can_meet_2s": 1488,
+    "depends_only_on_annotations_not_predictions": true
+  },
+  "10s_hop2s": {
+    "queries": 1488,
+    "offset_quantization_error_histogram_s": {
+      "1.0": 736,
+      "0.0": 752
+    },
+    "queries_grid_origin_can_meet_0_1s": 752,
+    "queries_grid_origin_can_meet_2s": 1488,
+    "depends_only_on_annotations_not_predictions": true
+  },
+  "5s_hop0.5s": {
+    "queries": 1488,
+    "offset_quantization_error_histogram_s": {
+      "0.0": 1488
+    },
+    "queries_grid_origin_can_meet_0_1s": 1488,
+    "queries_grid_origin_can_meet_2s": 1488,
+    "depends_only_on_annotations_not_predictions": true
+  },
+  "5s_hop1s": {
+    "queries": 1488,
+    "offset_quantization_error_histogram_s": {
+      "0.5": 1488
+    },
+    "queries_grid_origin_can_meet_0_1s": 0,
+    "queries_grid_origin_can_meet_2s": 1488,
+    "depends_only_on_annotations_not_predictions": true
+  },
+  "5s_hop2s": {
+    "queries": 1488,
+    "offset_quantization_error_histogram_s": {
+      "0.5": 1488
+    },
+    "queries_grid_origin_can_meet_0_1s": 0,
+    "queries_grid_origin_can_meet_2s": 1488,
+    "depends_only_on_annotations_not_predictions": true
+  }
+}

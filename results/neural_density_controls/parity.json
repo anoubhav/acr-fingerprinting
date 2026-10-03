@@ -1,0 +1,112 @@
+{
+  "nmfp": {
+    "rows": 835,
+    "current_native_mismatches": [],
+    "historical_result_mismatches": [],
+    "max_score_error": 0.0,
+    "reference_cache_sha256": "84b6cebd5db69b99dd46f755295d1424ef1293cac3703b9849d7c6b9c47712d7",
+    "query_cache_sha256": "f6d2fbaba2c8c8216d9b8ad1d9622a2630576d277618a302a712219584dee516",
+    "historical_result_sha256": "4102afeb1eac302a2cf982b6f27e92a2e12c4aa10ace754f30a0f42561550c5b",
+    "current_result_sha256": "4102afeb1eac302a2cf982b6f27e92a2e12c4aa10ace754f30a0f42561550c5b",
+    "historical_deltas_expected_for_repaired_Peak_clock": false
+  },
+  "peaknet": {
+    "rows": 835,
+    "current_native_mismatches": [],
+    "historical_result_mismatches": [
+      "pexafb_hard_medium:chunk0189@5",
+      "pexafb_hard_medium:chunk0498@5",
+      "pexafb_hard_medium:chunk0923@5"
+    ],
+    "max_score_error": 0.0,
+    "reference_cache_sha256": "0165f93ab0a779f692cd221fa2cc3deb03c028c088009a197ad702f600216c8f",
+    "query_cache_sha256": "0165f93ab0a779f692cd221fa2cc3deb03c028c088009a197ad702f600216c8f",
+    "historical_result_sha256": "cc1dcdc53e04fc45678ffd546b1ebfa7fec130e61d33e9d3f3c2b5aaeed2549a",
+    "current_result_sha256": "5c91ac67485a7c65ad95ae9b802057b6702e78ca4cfa46d278d6f453c25f6aa0",
+    "historical_deltas_expected_for_repaired_Peak_clock": true
+  },
+  "clock_tests": [
+    {
+      "reference_hop_s": 0.5,
+      "query_hop_s": 0.5,
+      "physical_start_s": 10.0,
+      "actual_reference_time_scale": 0.75,
+      "estimated_reference_time_scale": 0.7112970711297072,
+      "matched_start_s": 10.0,
+      "note": "Nearest-grid aliasing need not recover exact scale; localization must use physical seconds."
+    },
+    {
+      "reference_hop_s": 0.5,
+      "query_hop_s": 0.5,
+      "physical_start_s": 10.0,
+      "actual_reference_time_scale": 1.0,
+      "estimated_reference_time_scale": 1.0,
+      "matched_start_s": 10.0,
+      "note": "Nearest-grid aliasing need not recover exact scale; localization must use physical seconds."
+    },
+    {
+      "reference_hop_s": 0.5,
+      "query_hop_s": 0.5,
+      "physical_start_s": 10.0,
+      "actual_reference_time_scale": 1.5,
+      "estimated_reference_time_scale": 1.4101846670397313,
+      "matched_start_s": 10.0,
+      "note": "Nearest-grid aliasing need not recover exact scale; localization must use physical seconds."
+    },
+    {
+      "reference_hop_s": 1.0,
+      "query_hop_s": 0.5,
+      "physical_start_s": 20.0,
+      "actual_reference_time_scale": 0.75,
+      "estimated_reference_time_scale": 0.8470588235294116,
+      "matched_start_s": 20.0,
+      "note": "Nearest-grid aliasing need not recover exact scale; localization must use physical seconds."
+    },
+    {
+      "reference_hop_s": 1.0,
+      "query_hop_s": 0.5,
+      "physical_start_s": 20.0,
+      "actual_reference_time_scale": 1.0,
+      "estimated_reference_time_scale": 1.1204819277108433,
+      "matched_start_s": 20.0,
+      "note": "Nearest-grid aliasing need not recover exact scale; localization must use physical seconds."
+    },
+    {
+      "reference_hop_s": 1.0,
+      "query_hop_s": 0.5,
+      "physical_start_s": 20.0,
+      "actual_reference_time_scale": 1.5,
+      "estimated_reference_time_scale": 1.4225941422594144,
+      "matched_start_s": 20.0,
+      "note": "Nearest-grid aliasing need not recover exact scale; localization must use physical seconds."
+    },
+    {
+      "reference_hop_s": 2.0,
+      "query_hop_s": 0.5,
+      "physical_start_s": 40.0,
+      "actual_reference_time_scale": 0.75,
+      "estimated_reference_time_scale": 1.0760233918128654,
+      "matched_start_s": 40.0,
+      "note": "Nearest-grid aliasing need not recover exact scale; localization must use physical seconds."
+    },
+    {
+      "reference_hop_s": 2.0,
+      "query_hop_s": 0.5,
+      "physical_start_s": 40.0,
+      "actual_reference_time_scale": 1.0,
+      "estimated_reference_time_scale": 1.3333333333333333,
+      "matched_start_s": 40.0,
+      "note": "Nearest-grid aliasing need not recover exact scale; localization must use physical seconds."
+    },
+    {
+      "reference_hop_s": 2.0,
+      "query_hop_s": 0.5,
+      "physical_start_s": 40.0,
+      "actual_reference_time_scale": 1.5,
+      "estimated_reference_time_scale": 1.6941176470588233,
+      "matched_start_s": 40.0,
+      "note": "Nearest-grid aliasing need not recover exact scale; localization must use physical seconds."
+    }
+  ],
+  "wrong_hop_rejected": true
+}

@@ -24,7 +24,16 @@ jobs:
           sudo apt-get install --no-install-recommends -y ffmpeg
       - name: Install core dependencies
         run: python -m pip install -r requirements-core.txt
-      - name: Run 15 meaningful implementation and evaluation tests
+      - name: Run implementation and evaluation tests
         run: python -m unittest discover -s outputs/acr_repro -p 'test_*.py'
+      - name: Verify synthetic acoustic crops, clocks and calibration gates
+        run: python outputs/acr_repro/test_neural_acoustic.py
+      - name: Verify canonical evidence and provenance without audio
+        run: python outputs/acr_repro/verify_v2_evidence.py --check results/v2_evidence_summary.json
+      - name: Recompute operating points, matrix and common-cohort timings
+        run: |
+          python outputs/acr_repro/check_paper_numbers.py --check results/paper_numbers_v2.json
+          python outputs/acr_repro/derive_matrix_summary.py --check
+          python outputs/acr_repro/derive_v2_profile_summary.py --check results/profiling/paper_timing_final.json
       - name: Check Python syntax
         run: python -m compileall -q outputs/acr_repro

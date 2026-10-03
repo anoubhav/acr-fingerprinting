@@ -1,0 +1,35 @@
+{
+  "created_utc": "2026-10-03",
+  "runner_files_sha256": {
+    "outputs/acr_repro/neural_density_controls.py": "84a05e3de3c2f10c0a32e4c6ea951d0339d55ad15ce43475613e543cc48dc2cd",
+    "outputs/acr_repro/verify_neural_density.py": "6b2205393ad1832e0914bef111fd923ea508d29c0a26f9127a2660307d82f732",
+    "outputs/acr_repro/compare_neural_density.py": "b4907eba4c18fad6346cffe4507961f9326572c38bdb8ac917cb717fd6cc9686",
+    "outputs/acr_repro/neural_baseline.py": "dfd7ce5a011c68f1355c3b86fe1498a054a1e8e093e0ce038e09a7a46884cb0e",
+    "outputs/acr_repro/peaknet_baseline.py": "0fcaf9b63db8b54cb116e98954d5273dffb6382b4ef5d1aadae82ce65b93ef70",
+    "outputs/acr_repro/test_peaknet_sparse_clocks.py": "0a35dabe833fa0ebac6f2cedba9e5c32cde8736ac39c5848be7f4576045bb5e0",
+    "outputs/acr_repro/profile_nmfp_density.py": "142e19c83eb533f6575b9bcd65d2ca54318018e67b3403e7fa4d2b0ea4c00147"
+  },
+  "result_files_sha256": {
+    "paired_native_density_counts.json": "7c056163ef8e33f1c1c2e78e218904c7636825d0ce1da673bf00be1bd4db1124",
+    "parity.json": "a4a49a24ed3364df627d17eb305ece49d7df1d339be628dda8ff30044ba9674f",
+    "paired_acr_neural_primary.json": "d2424d7e9a22eaebae125354d4ffdf8740efd9311447f41e1a791a1c500fa5cb",
+    "nmfp/summary.json": "c5ad91b734b8b39a5a8dfe977d8826a9f8f12770cd19b124004477b11cd06802",
+    "nmfp/nmfp_density_r2_q2_5s.json": "d8085f4c79f17599ad637fcac4a4e251d200566e351ebc4f97e74470c59fff5a",
+    "nmfp/nmfp_density_r4_q4_5s.json": "ca920652b3c5225a5f967433b24c1d1941227da750ffa34d31861ce2237c254c",
+    "nmfp/declaration.json": "00abbb8698737861ef48e050d919c1055da18c1c7d5736049b918dae8e279a29",
+    "peaknet/summary.json": "d6affe59d411284868c2fdb71210a737108e9d305b9d20096ade7a0d7b16f3cc",
+    "peaknet/peaknet_density_r2_q1_5s.json": "a4a656ce8c3c30d6dd851a9cd1700d59c39b5da86e3f99333eb27b0545143ad1",
+    "peaknet/declaration.json": "3a0ec9042b26e7816afdef2a6f439cb7ade59a267890bb1350e7239112eb4d5f",
+    "peaknet/peaknet_density_r4_q1_5s.json": "832b53b4cba1abe6c38d45ca59a7e6147d93aa2f6d04f712a763aaba3c37d0da"
+  },
+  "native_parity_report": "work/benchmarks/neural_density_controls/parity.json",
+  "no_test_driven_parameter_changes": true,
+  "no_model_inference_training_or_weight_changes": true,
+  "no_isolated_timing_claim": true,
+  "memo_sha256": "09d0dd47099e9b5690a6446ace3787ef63b8133639286c1e84368a026c1f3e79",
+  "evidence_only_update": "Added retained1s-window union coverage from physical timestamps after scoring; no prediction/gate/setting changed.",
+  "clock_repair_basis": "Independent synthetic catalog-order invariance; all PeakNative/sparse exact/IVF original/expanded/acoustic gates rerun; historical files under work/audit",
+  "actual_sparse_profile_sha256": "65b021509144d48d1e63c5356c47ca829d931c1946058ef80666297044f19c6a",
+  "paper_rows_sha256": "e61aaa588a6c495b2b2aa0eb903ff3e4ac5fead96cec9921e11f1078913fb4e1",
+  "documentation_only_revision": "Clarifies separate fresh sparse-inference timing and full prior-art review; no code/settings/predictions changed"
+}

@@ -1,0 +1,6894 @@
+{
+  "experiment": "Frozen ACR compact-store and streaming-enrollment conformance/scaling",
+  "settings": {
+    "reference_factor": 8,
+    "query_stride": 4,
+    "ivf_nlist": 512,
+    "nprobe": 16,
+    "faiss_threads": 4,
+    "gallery_sizes": [
+      141,
+      256,
+      512,
+      659
+    ],
+    "fresh_process_replicates": 3,
+    "order": "baseline/compact,compact/baseline,baseline/compact",
+    "query_count": 50,
+    "query_duration_s": 5,
+    "matcher_warmups_per_query": 2,
+    "matcher_repeats_per_query": 5,
+    "timing_aggregation": "Per-query repeat median, then cohort median/p95; median across three fresh processes."
+  },
+  "cohort": {
+    "selection_seed": "acr-memory-scaling-v1",
+    "all_calibration_known_sources_retained": true,
+    "unknown_sources_enrolled": false,
+    "test_outcomes_used_to_choose_settings": false,
+    "galleries": {
+      "141": [
+        {
+          "reference_id": "003951",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "003979",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "004080",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "005284",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "008644",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "009390",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "009416",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "009426",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "010699",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "010768",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "011347",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "011390",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "011722",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "016371",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "016378",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "019604",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "020126",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "020161",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "021134",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "022473",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "022793",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "025151",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "025283",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "030043",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "037978",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "038834",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "041404",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "041949",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "046157",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "046160",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "046339",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "050931",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "050992",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "052675",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "056185",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "059129",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "059141",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "060562",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "061899",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "064627",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "065664",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "065785",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "068549",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "070448",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "071291",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "074370",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "074914",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "074977",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "075211",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "075687",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "086589",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "092158",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "092181",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "092728",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "094714",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "096703",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "097037",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "104289",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "104648",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "105352",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "106546",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "106883",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "108356",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "111086",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "111110",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "112368",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "112373",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "112788",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "113025",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "113225",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "113798",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "114093",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "114246",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "114309",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "114489",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "115167",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "115504",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "115596",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "115675",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "115762",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "115865",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "115874",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "116272",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "116886",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "118055",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "120033",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "120056",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "122694",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "122716",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "123373",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "124887",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "125280",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "127192",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "129643",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "130859",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "131072",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "131080",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "131151",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "131166",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "131180",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "132347",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "132852",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "133372",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "133677",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "134245",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "135165",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "135215",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "136374",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "137050",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "139194",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "139958",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "141295",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "141454",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "142241",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "142475",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "143226",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "144016",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "144496",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "144600",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "145634",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "145926",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "146776",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "147205",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "147302",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "147954",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "148200",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "148211",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "148268",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "148478",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "148496",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "148654",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "149414",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "149501",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "149804",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "150431",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "151351",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "152563",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "154554",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "154773",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "154932",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "155302",
+          "role": "calibration_known"
+        }
+      ],
+      "256": [
+        {
+          "reference_id": "001881",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "003951",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "003979",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "004076",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "004080",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "005223",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "005284",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "007771",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "008633",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "008635",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "008644",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "008674",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "008738",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "009251",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "009390",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "009416",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "009426",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "010039",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "010699",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "010768",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "011347",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "011390",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "011553",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "011722",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "014029",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "015459",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "015769",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "016162",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "016371",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "016378",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "019296",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "019604",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "020074",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "020126",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "020154",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "020161",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "021134",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "022473",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "022793",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "022825",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "025151",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "025283",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "030043",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "034316",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "034318",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "034459",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "035534",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "035539",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "037978",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "038430",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "038569",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "038775",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "038784",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "038834",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "041404",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "041414",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "041949",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "042051",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "042377",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "043625",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "046157",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "046160",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "046339",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "047053",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "050931",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "050955",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "050992",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "052675",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "056185",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "057119",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "058540",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "058542",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "059129",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "059136",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "059141",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "059146",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "059503",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "060048",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "060562",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "060843",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "061107",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "061899",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "064627",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "064632",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "064864",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "065655",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "065664",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "065785",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "066485",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "068549",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "070448",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "071291",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "074370",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "074914",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "074977",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "075022",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "075197",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "075211",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "075219",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "075393",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "075687",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "075786",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "075936",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "075961",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "076020",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "080056",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "080582",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "082834",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "086589",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "092158",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "092181",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "092728",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "093949",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "094714",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "096703",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "097037",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "098577",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "103554",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "104289",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "104648",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "105352",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "106546",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "106883",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "108356",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "109250",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "111086",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "111110",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "112368",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "112373",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "112648",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "112659",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "112788",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "113025",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "113225",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "113798",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "113805",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "113846",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "114093",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "114230",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "114246",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "114309",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "114489",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "114723",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "114807",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "115167",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "115504",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "115596",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "115675",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "115762",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "115865",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "115874",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "116272",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "116739",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "116886",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "117122",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "117396",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "118055",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "120033",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "120056",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "122694",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "122716",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "122977",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "123373",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "123378",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "123972",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "124638",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "124800",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "124887",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "125280",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "125975",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "126223",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "126586",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "127175",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "127192",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "127255",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "129269",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "129643",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "129661",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "130290",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "130859",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "131072",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "131080",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "131151",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "131166",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "131180",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "131377",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "131965",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "132278",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "132347",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "132852",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "133354",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "133370",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "133372",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "133439",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "133677",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "134245",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "135165",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "135215",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "136374",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "136407",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "136494",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "137050",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "137406",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "137664",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "137955",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "138367",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "138769",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "139194",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "139695",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "139958",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "140670",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "140809",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "141295",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "141454",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "142241",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "142475",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "143226",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "143228",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "143314",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "143380",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "143934",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "144016",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "144496",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "144600",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "144753",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "145634",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "145926",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "146556",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "146776",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "147205",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "147302",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "147303",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "147954",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "148200",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "148211",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "148268",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "148478",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "148496",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "148654",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "149414",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "149501",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "149804",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "150431",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "151351",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "152563",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "153178",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "154430",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "154554",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "154697",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "154736",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "154773",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "154932",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "155063",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "155093",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "155096",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "155302",
+          "role": "calibration_known"
+        }
+      ],
+      "512": [
+        {
+          "reference_id": "001881",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "003852",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "003939",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "003951",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "003979",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "004011",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "004076",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "004079",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "004080",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "005223",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "005284",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "006790",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "007047",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "007771",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "007773",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "008633",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "008635",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "008639",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "008644",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "008647",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "008659",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "008674",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "008738",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "008840",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "009213",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "009237",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "009251",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "009367",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "009390",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "009416",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "009426",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "009845",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "010039",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "010693",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "010699",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "010700",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "010768",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "011347",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "011375",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "011390",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "011431",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "011553",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "011720",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "011722",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "012240",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "014027",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "014029",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "015459",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "015769",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "016162",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "016371",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "016378",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "017260",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "017994",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "018010",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "018623",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "019161",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "019296",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "019604",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "019605",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "020072",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "020074",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "020126",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "020154",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "020161",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "020165",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "021134",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "021138",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "022473",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "022793",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "022803",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "022808",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "022825",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "022841",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "024921",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "025151",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "025154",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "025283",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "030043",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "030117",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "030392",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "031128",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "031134",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "031150",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "032184",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "034316",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "034318",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "034459",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "034461",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "035534",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "035539",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "036534",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "037978",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "038430",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "038569",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "038775",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "038784",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "038834",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "039275",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "039584",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "040111",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "041399",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "041404",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "041414",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "041949",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "042044",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "042051",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "042377",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "042771",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "043091",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "043625",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "043685",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "044166",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "046157",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "046160",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "046338",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "046339",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "047053",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "047538",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "048034",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "050931",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "050946",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "050950",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "050955",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "050959",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "050992",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "052675",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "054305",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "056185",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "057119",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "057151",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "058212",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "058372",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "058540",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "058542",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "059129",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "059136",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "059141",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "059142",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "059146",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "059503",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "059545",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "060043",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "060048",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "060280",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "060282",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "060562",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "060843",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "061107",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "061169",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "061899",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "062427",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "063764",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "064627",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "064632",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "064845",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "064863",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "064864",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "065655",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "065664",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "065785",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "066485",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "068549",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "068838",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "069777",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "070417",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "070448",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "070455",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "070472",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "070880",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "071090",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "071096",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "071113",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "071286",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "071291",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "071395",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "071506",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "072501",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "074370",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "074750",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "074914",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "074977",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "075022",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "075197",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "075211",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "075219",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "075381",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "075393",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "075413",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "075687",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "075748",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "075786",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "075936",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "075953",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "075961",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "075966",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "075968",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "075990",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "076020",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "076082",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "076089",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "076658",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "079686",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "080056",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "080389",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "080582",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "082439",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "082834",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "083384",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "086156",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "086589",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "086595",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "087595",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "091623",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "092158",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "092181",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "092728",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "092872",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "093949",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "094714",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "095637",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "096703",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "097037",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "098573",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "098577",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "098583",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "098585",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "100756",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "101459",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "103551",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "103554",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "104278",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "104289",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "104643",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "104648",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "105352",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "105460",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "105616",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "105835",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "106234",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "106546",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "106883",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "107268",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "107273",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "108356",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "109250",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "111086",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "111110",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "111142",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "112198",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "112368",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "112373",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "112377",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "112633",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "112635",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "112647",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "112648",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "112659",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "112788",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "113025",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "113225",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "113393",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "113513",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "113798",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "113805",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "113830",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "113846",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "113971",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "114093",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "114220",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "114230",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "114246",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "114309",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "114489",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "114522",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "114544",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "114717",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "114723",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "114772",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "114775",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "114807",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "115110",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "115167",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "115336",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "115504",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "115596",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "115675",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "115687",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "115762",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "115817",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "115865",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "115874",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "116086",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "116094",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "116262",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "116272",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "116351",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "116692",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "116739",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "116881",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "116886",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "117105",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "117122",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "117308",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "117396",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "117432",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "118055",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "118395",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "118923",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "119553",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "119812",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "120033",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "120056",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "120900",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "121329",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "121609",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "121624",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "122643",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "122694",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "122716",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "122872",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "122977",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "123373",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "123378",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "123382",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "123676",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "123972",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "124148",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "124265",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "124638",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "124800",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "124887",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "124918",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "125280",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "125456",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "125975",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "125993",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "126223",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "126586",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "126754",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "127175",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "127192",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "127255",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "127262",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "127646",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "127936",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "128637",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "128705",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "129260",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "129269",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "129643",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "129661",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "129797",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "129961",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "130029",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "130290",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "130859",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "131050",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "131072",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "131080",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "131151",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "131166",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "131180",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "131377",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "131382",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "131807",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "131965",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "132246",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "132278",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "132347",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "132475",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "132841",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "132852",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "132992",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "133354",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "133370",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "133372",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "133439",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "133677",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "134245",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "134273",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "134303",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "134360",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "135165",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "135215",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "135710",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "135740",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "136030",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "136258",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "136269",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "136374",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "136407",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "136494",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "136701",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "136775",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "137050",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "137406",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "137412",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "137664",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "137794",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "137922",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "137955",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "138228",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "138367",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "138748",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "138769",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "139194",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "139208",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "139210",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "139213",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "139695",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "139958",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "139962",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "139964",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "140032",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "140036",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "140153",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "140266",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "140389",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "140661",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "140670",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "140809",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "140928",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "141289",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "141295",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "141454",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "141872",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "141874",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "141890",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "141896",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "142241",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "142324",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "142433",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "142475",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "142476",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "143056",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "143182",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "143226",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "143228",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "143314",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "143380",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "143781",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "143934",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "144016",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "144492",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "144496",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "144498",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "144587",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "144600",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "144753",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "144955",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "144960",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "145264",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "145266",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "145267",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "145464",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "145634",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "145677",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "145926",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "146556",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "146776",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "146972",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "147069",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "147205",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "147299",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "147302",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "147303",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "147409",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "147490",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "147954",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "148200",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "148211",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "148268",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "148274",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "148478",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "148496",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "148497",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "148654",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "148769",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "149062",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "149414",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "149427",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "149434",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "149501",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "149647",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "149685",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "149804",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "150431",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "151351",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "151358",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "151532",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "152534",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "152563",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "152611",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "152619",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "153178",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "154306",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "154376",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "154430",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "154442",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "154554",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "154697",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "154736",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "154773",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "154932",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "155063",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "155093",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "155096",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "155176",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "155298",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "155302",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "155303",
+          "role": "test_known"
+        }
+      ],
+      "659": [
+        {
+          "reference_id": "001881",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "003346",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "003852",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "003939",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "003951",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "003979",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "004011",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "004076",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "004079",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "004080",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "005148",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "005223",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "005284",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "006790",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "007047",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "007771",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "007773",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "008633",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "008635",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "008639",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "008644",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "008647",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "008659",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "008674",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "008738",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "008777",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "008840",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "009213",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "009237",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "009242",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "009251",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "009367",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "009390",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "009404",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "009416",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "009426",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "009845",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "010039",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "010693",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "010699",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "010700",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "010768",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "011347",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "011375",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "011390",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "011431",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "011553",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "011720",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "011722",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "012203",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "012240",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "012270",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "012833",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "014027",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "014029",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "014488",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "015459",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "015471",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "015769",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "016162",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "016371",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "016378",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "017260",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "017994",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "018010",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "018623",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "018873",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "019161",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "019296",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "019604",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "019605",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "020072",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "020074",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "020126",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "020154",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "020161",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "020165",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "021134",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "021135",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "021138",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "022473",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "022793",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "022803",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "022808",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "022825",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "022841",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "022845",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "024921",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "024987",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "025151",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "025154",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "025283",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "027129",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "030043",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "030117",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "030387",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "030392",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "031128",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "031134",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "031150",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "032179",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "032184",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "034316",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "034318",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "034459",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "034461",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "035534",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "035539",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "035985",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "036534",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "036694",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "036705",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "037978",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "038430",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "038569",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "038775",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "038784",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "038834",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "038881",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "039275",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "039584",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "040111",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "040116",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "041399",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "041404",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "041414",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "041949",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "042044",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "042051",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "042377",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "042771",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "042788",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "043091",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "043625",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "043685",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "044166",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "046157",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "046160",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "046338",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "046339",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "047053",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "047066",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "047538",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "048034",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "050931",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "050946",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "050950",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "050955",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "050959",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "050992",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "051003",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "051990",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "052675",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "054299",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "054305",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "055140",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "056059",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "056185",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "057119",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "057151",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "058212",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "058372",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "058540",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "058542",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "059116",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "059119",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "059129",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "059136",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "059141",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "059142",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "059146",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "059503",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "059545",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "060043",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "060048",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "060280",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "060282",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "060562",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "060843",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "061107",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "061143",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "061169",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "061899",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "062270",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "062427",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "063504",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "063764",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "064627",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "064630",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "064632",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "064845",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "064863",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "064864",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "065066",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "065655",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "065664",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "065781",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "065785",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "065788",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "066485",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "067479",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "068549",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "068838",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "069163",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "069777",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "070417",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "070418",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "070442",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "070448",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "070455",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "070472",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "070880",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "071090",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "071096",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "071112",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "071113",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "071286",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "071291",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "071293",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "071299",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "071395",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "071506",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "072501",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "073883",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "074370",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "074750",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "074914",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "074918",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "074977",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "075022",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "075197",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "075211",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "075219",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "075378",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "075381",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "075393",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "075413",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "075568",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "075687",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "075748",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "075786",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "075936",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "075953",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "075961",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "075966",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "075968",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "075990",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "076020",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "076082",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "076089",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "076658",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "079684",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "079686",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "079709",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "079862",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "079884",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "080056",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "080389",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "080582",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "082439",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "082834",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "083384",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "083713",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "083733",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "085409",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "086156",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "086477",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "086589",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "086595",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "086597",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "086660",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "087595",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "090278",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "091623",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "092158",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "092181",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "092728",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "092872",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "093949",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "094250",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "094354",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "094714",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "095637",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "096703",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "097037",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "097424",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "098573",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "098577",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "098583",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "098585",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "100533",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "100756",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "101459",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "103551",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "103554",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "104278",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "104289",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "104643",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "104648",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "105352",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "105460",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "105615",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "105616",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "105835",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "106234",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "106546",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "106549",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "106883",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "106884",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "107268",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "107269",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "107271",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "107273",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "107585",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "108356",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "109250",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "110783",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "111086",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "111110",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "111142",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "111332",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "112198",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "112368",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "112373",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "112377",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "112633",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "112635",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "112647",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "112648",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "112659",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "112788",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "113025",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "113225",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "113393",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "113451",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "113513",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "113798",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "113805",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "113830",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "113846",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "113971",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "114093",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "114216",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "114220",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "114230",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "114246",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "114309",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "114384",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "114447",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "114489",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "114494",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "114522",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "114544",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "114717",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "114723",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "114772",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "114775",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "114807",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "115110",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "115167",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "115336",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "115504",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "115515",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "115596",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "115675",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "115687",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "115762",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "115817",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "115865",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "115874",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "116086",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "116094",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "116262",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "116272",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "116351",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "116676",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "116690",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "116692",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "116739",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "116881",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "116886",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "117105",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "117122",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "117308",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "117396",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "117408",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "117414",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "117432",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "117463",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "118055",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "118385",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "118395",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "118513",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "118923",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "119553",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "119812",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "120033",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "120050",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "120052",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "120056",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "120900",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "120935",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "121205",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "121216",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "121328",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "121329",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "121609",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "121613",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "121624",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "121633",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "121769",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "121781",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "122643",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "122694",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "122716",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "122872",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "122977",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "123373",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "123378",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "123382",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "123676",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "123972",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "124105",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "124148",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "124152",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "124265",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "124638",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "124800",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "124887",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "124918",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "125280",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "125456",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "125799",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "125975",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "125993",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "126223",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "126586",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "126754",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "127175",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "127192",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "127255",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "127262",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "127646",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "127812",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "127936",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "128637",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "128640",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "128705",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "129019",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "129260",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "129269",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "129643",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "129661",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "129795",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "129797",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "129961",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "130029",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "130288",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "130290",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "130859",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "131050",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "131053",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "131072",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "131080",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "131151",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "131166",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "131180",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "131198",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "131377",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "131382",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "131807",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "131965",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "132159",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "132245",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "132246",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "132278",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "132347",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "132475",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "132649",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "132841",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "132852",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "132992",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "133347",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "133354",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "133370",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "133372",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "133439",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "133677",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "134245",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "134273",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "134284",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "134303",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "134360",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "135165",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "135215",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "135710",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "135713",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "135740",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "136030",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "136258",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "136269",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "136374",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "136398",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "136407",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "136494",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "136701",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "136775",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "136804",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "137050",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "137406",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "137412",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "137664",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "137696",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "137794",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "137922",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "137955",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "138228",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "138367",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "138748",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "138769",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "138779",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "139188",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "139194",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "139208",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "139210",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "139213",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "139640",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "139654",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "139687",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "139695",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "139702",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "139958",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "139961",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "139962",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "139964",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "139974",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "140032",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "140036",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "140153",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "140266",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "140389",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "140627",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "140661",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "140670",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "140809",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "140928",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "141289",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "141295",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "141302",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "141454",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "141583",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "141872",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "141874",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "141890",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "141896",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "142241",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "142324",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "142433",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "142475",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "142476",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "142597",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "142670",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "143056",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "143182",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "143226",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "143228",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "143230",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "143314",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "143380",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "143781",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "143934",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "143938",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "144016",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "144492",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "144496",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "144498",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "144587",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "144600",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "144729",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "144748",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "144753",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "144955",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "144960",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "144962",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "145264",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "145266",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "145267",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "145464",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "145634",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "145677",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "145679",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "145926",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "146556",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "146776",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "146972",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "147069",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "147205",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "147299",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "147302",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "147303",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "147409",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "147417",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "147490",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "147493",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "147954",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "148200",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "148211",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "148268",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "148274",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "148277",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "148278",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "148475",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "148478",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "148496",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "148497",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "148654",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "148769",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "149062",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "149414",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "149427",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "149434",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "149501",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "149647",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "149685",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "149804",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "150431",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "150498",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "150663",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "151351",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "151358",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "151409",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "151532",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "151864",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "152534",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "152535",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "152563",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "152569",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "152611",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "152619",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "153178",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "154306",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "154376",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "154430",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "154442",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "154554",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "154697",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "154715",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "154732",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "154736",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "154773",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "154932",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "155063",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "155090",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "155093",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "155096",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "155176",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "155298",
+          "role": "test_known"
+        },
+        {
+          "reference_id": "155302",
+          "role": "calibration_known"
+        },
+        {
+          "reference_id": "155303",
+          "role": "test_known"
+        }
+      ]
+    }
+  },
+  "provenance": {
+    "protocol_sha256": "aae834db35736f2a1ff8e9ccb53fefcdb1140e5dd122502fbc65b93296b6b132",
+    "model_sha256": "7f946bdbfd27b48f01074b5369df24b8fdce391236fe212ee88be9f9ec980dcd",
+    "frozen_index_sha256": "8e34c9cf54b4d9ff383898243566bbe19126b753ba26d9c3206150acd55d854f",
+    "code_sha256": {
+      "acr_fp.py": "c5ea45da344df6db7a77d2152bd8bf89e04151e51e57d6bac932307f8e180b63",
+      "run_ablations.py": "2986cf9a1410bc51ee9de45d446f6c714dc1debb888f3cdf1d5de032e099e1f6",
+      "study_query_ivf.py": "33af7d41b5e098ec667bfc2d47d62471843b8d31ba3a16df7e387d4ef9e616c1",
+      "compact_streaming_index.py": "9eb6b1e9ecf0f9dbc2945fd5b550ff3f862e6bc524d330c93aea7005f5f1ca7e",
+      "run_streaming_index_study.py": "edc3d0ae7f47991fd14e029fef77687ebf28ce1b3a1bf26ff62835efad261b05",
+      "check_compact_full_parity.py": "e53f45a91afb482e8fe701c165391c0c8310c83b88abd61337ae5a68180b59e8"
+    }
+  },
+  "measurements": [
+    {
+      "gallery_sources": 141,
+      "audio_hours": 9.322099965277781,
+      "reference_fingerprints": 178193,
+      "reference_descriptor_sha256": "9271d50f3ba506d6219465f81d31d5b98bcf736ac27a23d36907c2d718e123bb",
+      "descriptor_bytes_identical": true,
+      "calibration_query_count": 50,
+      "baseline": {
+        "explicit_reference_bytes": 49964657,
+        "serialized_index_bytes": 24304019,
+        "retained_metadata_bytes": 2139162,
+        "retained_python_vector_bytes": 22808704,
+        "retained_norm_cache_bytes": 712772,
+        "measurements": {
+          "rss_after_enrollment_gc_bytes": {
+            "values": [
+              432832512,
+              441778176,
+              431816704
+            ],
+            "median": 432832512.0
+          },
+          "rss_enrollment_delta_bytes": {
+            "values": [
+              374685696,
+              384696320,
+              375062528
+            ],
+            "median": 375062528.0
+          },
+          "process_peak_enrollment_rss_bytes": {
+            "values": [
+              432832512,
+              441778176,
+              431816704
+            ],
+            "median": 432832512.0
+          },
+          "enrollment_wall_s": {
+            "values": [
+              1.39571225,
+              1.262732209,
+              1.275484917
+            ],
+            "median": 1.275484917
+          },
+          "enrollment_cpu_s": {
+            "values": [
+              1.224656,
+              1.239104,
+              1.249596
+            ],
+            "median": 1.239104
+          },
+          "median_match_wall_ms": {
+            "values": [
+              2.787229,
+              2.767625,
+              2.796437
+            ],
+            "median": 2.787229
+          },
+          "p95_match_wall_ms": {
+            "values": [
+              3.4612605999999997,
+              3.4408374999999998,
+              3.49056905
+            ],
+            "median": 3.4612605999999997
+          }
+        }
+      },
+      "compact": {
+        "explicit_reference_bytes": 25018765,
+        "serialized_index_bytes": 24304019,
+        "retained_metadata_bytes": 714746,
+        "retained_python_vector_bytes": 0,
+        "retained_norm_cache_bytes": 0,
+        "measurements": {
+          "rss_after_enrollment_gc_bytes": {
+            "values": [
+              218464256,
+              209305600,
+              223903744
+            ],
+            "median": 218464256.0
+          },
+          "rss_enrollment_delta_bytes": {
+            "values": [
+              161087488,
+              152289280,
+              166608896
+            ],
+            "median": 161087488.0
+          },
+          "process_peak_enrollment_rss_bytes": {
+            "values": [
+              218464256,
+              209305600,
+              223903744
+            ],
+            "median": 218464256.0
+          },
+          "enrollment_wall_s": {
+            "values": [
+              1.153345583,
+              1.142602667,
+              1.149766042
+            ],
+            "median": 1.149766042
+          },
+          "enrollment_cpu_s": {
+            "values": [
+              1.288095,
+              1.275658,
+              1.28218
+            ],
+            "median": 1.28218
+          },
+          "median_match_wall_ms": {
+            "values": [
+              2.826479,
+              2.7836670000000003,
+              2.7646040000000003
+            ],
+            "median": 2.7836670000000003
+          },
+          "p95_match_wall_ms": {
+            "values": [
+              3.4871106,
+              3.5178480999999997,
+              3.4882939
+            ],
+            "median": 3.4882939
+          }
+        }
+      }
+    },
+    {
+      "gallery_sources": 256,
+      "audio_hours": 15.83861812500001,
+      "reference_fingerprints": 302050,
+      "reference_descriptor_sha256": "5809e1344c492d46121416b2a1199bc2ccb73db6fba3ec2bfca21da08433a7d0",
+      "descriptor_bytes_identical": true,
+      "calibration_query_count": 50,
+      "baseline": {
+        "explicit_reference_bytes": 84645307,
+        "serialized_index_bytes": 41148571,
+        "retained_metadata_bytes": 3626136,
+        "retained_python_vector_bytes": 38662400,
+        "retained_norm_cache_bytes": 1208200,
+        "measurements": {
+          "rss_after_enrollment_gc_bytes": {
+            "values": [
+              684556288,
+              670531584,
+              680919040
+            ],
+            "median": 680919040.0
+          },
+          "rss_enrollment_delta_bytes": {
+            "values": [
+              627294208,
+              613629952,
+              623493120
+            ],
+            "median": 623493120.0
+          },
+          "process_peak_enrollment_rss_bytes": {
+            "values": [
+              684556288,
+              670531584,
+              680919040
+            ],
+            "median": 680919040.0
+          },
+          "enrollment_wall_s": {
+            "values": [
+              2.181995083,
+              2.149428833,
+              2.117739917
+            ],
+            "median": 2.149428833
+          },
+          "enrollment_cpu_s": {
+            "values": [
+              2.080918,
+              2.127982,
+              2.094118
+            ],
+            "median": 2.094118
+          },
+          "median_match_wall_ms": {
+            "values": [
+              3.0710835000000003,
+              3.0477705,
+              3.1211455
+            ],
+            "median": 3.0710835000000003
+          },
+          "p95_match_wall_ms": {
+            "values": [
+              3.77848095,
+              3.7143542,
+              3.7803121999999996
+            ],
+            "median": 3.77848095
+          }
+        }
+      },
+      "compact": {
+        "explicit_reference_bytes": 42360355,
+        "serialized_index_bytes": 41148571,
+        "retained_metadata_bytes": 1211784,
+        "retained_python_vector_bytes": 0,
+        "retained_norm_cache_bytes": 0,
+        "measurements": {
+          "rss_after_enrollment_gc_bytes": {
+            "values": [
+              252002304,
+              246300672,
+              258490368
+            ],
+            "median": 252002304.0
+          },
+          "rss_enrollment_delta_bytes": {
+            "values": [
+              194330624,
+              189022208,
+              200933376
+            ],
+            "median": 194330624.0
+          },
+          "process_peak_enrollment_rss_bytes": {
+            "values": [
+              252002304,
+              246300672,
+              258490368
+            ],
+            "median": 252002304.0
+          },
+          "enrollment_wall_s": {
+            "values": [
+              1.936712583,
+              1.928158125,
+              1.94524725
+            ],
+            "median": 1.936712583
+          },
+          "enrollment_cpu_s": {
+            "values": [
+              2.20171,
+              2.197104,
+              2.212772
+            ],
+            "median": 2.20171
+          },
+          "median_match_wall_ms": {
+            "values": [
+              2.991542,
+              3.1361045,
+              3.1199995
+            ],
+            "median": 3.1199995
+          },
+          "p95_match_wall_ms": {
+            "values": [
+              3.7900751499999994,
+              3.8570890999999996,
+              3.8747206499999995
+            ],
+            "median": 3.8570890999999996
+          }
+        }
+      }
+    },
+    {
+      "gallery_sources": 512,
+      "audio_hours": 32.153880277777766,
+      "reference_fingerprints": 599949,
+      "reference_descriptor_sha256": "160180710ec515835645034e586c94667924972a076e6e17e7a987d36fb50a30",
+      "descriptor_bytes_identical": true,
+      "calibration_query_count": 50,
+      "baseline": {
+        "explicit_reference_bytes": 168058563,
+        "serialized_index_bytes": 81662835,
+        "retained_metadata_bytes": 7202460,
+        "retained_python_vector_bytes": 76793472,
+        "retained_norm_cache_bytes": 2399796,
+        "measurements": {
+          "rss_after_enrollment_gc_bytes": {
+            "values": [
+              1164836864,
+              1055342592,
+              1150074880
+            ],
+            "median": 1150074880.0
+          },
+          "rss_enrollment_delta_bytes": {
+            "values": [
+              1107771392,
+              997900288,
+              1091518464
+            ],
+            "median": 1091518464.0
+          },
+          "process_peak_enrollment_rss_bytes": {
+            "values": [
+              1164836864,
+              1189494784,
+              1150074880
+            ],
+            "median": 1164836864.0
+          },
+          "enrollment_wall_s": {
+            "values": [
+              4.320917916,
+              3.968937458,
+              4.217533084
+            ],
+            "median": 4.217533084
+          },
+          "enrollment_cpu_s": {
+            "values": [
+              4.140004,
+              3.967478,
+              4.166794
+            ],
+            "median": 4.140004
+          },
+          "median_match_wall_ms": {
+            "values": [
+              3.646209,
+              3.6166039999999997,
+              3.680396
+            ],
+            "median": 3.646209
+          },
+          "p95_match_wall_ms": {
+            "values": [
+              4.31572675,
+              4.3904038,
+              4.4765561
+            ],
+            "median": 4.3904038
+          }
+        }
+      },
+      "compact": {
+        "explicit_reference_bytes": 84069799,
+        "serialized_index_bytes": 81662835,
+        "retained_metadata_bytes": 2406964,
+        "retained_python_vector_bytes": 0,
+        "retained_norm_cache_bytes": 0,
+        "measurements": {
+          "rss_after_enrollment_gc_bytes": {
+            "values": [
+              318488576,
+              340246528,
+              313163776
+            ],
+            "median": 318488576.0
+          },
+          "rss_enrollment_delta_bytes": {
+            "values": [
+              261652480,
+              282935296,
+              255377408
+            ],
+            "median": 261652480.0
+          },
+          "process_peak_enrollment_rss_bytes": {
+            "values": [
+              318488576,
+              340246528,
+              313163776
+            ],
+            "median": 318488576.0
+          },
+          "enrollment_wall_s": {
+            "values": [
+              3.818196916,
+              3.878114375,
+              3.839169042
+            ],
+            "median": 3.839169042
+          },
+          "enrollment_cpu_s": {
+            "values": [
+              4.379553,
+              4.449529,
+              4.415458
+            ],
+            "median": 4.415458
+          },
+          "median_match_wall_ms": {
+            "values": [
+              3.816021,
+              3.8626880000000003,
+              3.791375
+            ],
+            "median": 3.816021
+          },
+          "p95_match_wall_ms": {
+            "values": [
+              4.585512799999999,
+              4.53983925,
+              4.56468125
+            ],
+            "median": 4.56468125
+          }
+        }
+      }
+    },
+    {
+      "gallery_sources": 659,
+      "audio_hours": 42.26552329861109,
+      "reference_fingerprints": 792973,
+      "reference_descriptor_sha256": "aced5bc722c4936e82dcd92e13e017ab9c3d18ac4e3d26d8d753c0ea83e4c14f",
+      "descriptor_bytes_identical": true,
+      "calibration_query_count": 50,
+      "baseline": {
+        "explicit_reference_bytes": 222106165,
+        "serialized_index_bytes": 107914099,
+        "retained_metadata_bytes": 9519630,
+        "retained_python_vector_bytes": 101500544,
+        "retained_norm_cache_bytes": 3171892,
+        "measurements": {
+          "rss_after_enrollment_gc_bytes": {
+            "values": [
+              1571946496,
+              1421099008,
+              1486831616
+            ],
+            "median": 1486831616.0
+          },
+          "rss_enrollment_delta_bytes": {
+            "values": [
+              1513816064,
+              1362968576,
+              1429422080
+            ],
+            "median": 1429422080.0
+          },
+          "process_peak_enrollment_rss_bytes": {
+            "values": [
+              1571946496,
+              1555218432,
+              1620967424
+            ],
+            "median": 1571946496.0
+          },
+          "enrollment_wall_s": {
+            "values": [
+              5.591885542,
+              5.190328333,
+              5.145988458
+            ],
+            "median": 5.190328333
+          },
+          "enrollment_cpu_s": {
+            "values": [
+              5.461706,
+              5.195084,
+              5.153698
+            ],
+            "median": 5.195084
+          },
+          "median_match_wall_ms": {
+            "values": [
+              3.9749165,
+              4.1203330000000005,
+              4.158771
+            ],
+            "median": 4.1203330000000005
+          },
+          "p95_match_wall_ms": {
+            "values": [
+              4.816415999999999,
+              4.9535769,
+              5.04954825
+            ],
+            "median": 4.9535769
+          }
+        }
+      },
+      "compact": {
+        "explicit_reference_bytes": 111095217,
+        "serialized_index_bytes": 107914099,
+        "retained_metadata_bytes": 3181118,
+        "retained_python_vector_bytes": 0,
+        "retained_norm_cache_bytes": 0,
+        "measurements": {
+          "rss_after_enrollment_gc_bytes": {
+            "values": [
+              419020800,
+              411975680,
+              422559744
+            ],
+            "median": 419020800.0
+          },
+          "rss_enrollment_delta_bytes": {
+            "values": [
+              361299968,
+              354779136,
+              364675072
+            ],
+            "median": 361299968.0
+          },
+          "process_peak_enrollment_rss_bytes": {
+            "values": [
+              419020800,
+              411975680,
+              422559744
+            ],
+            "median": 419020800.0
+          },
+          "enrollment_wall_s": {
+            "values": [
+              5.067285667,
+              5.040473375,
+              5.077076458
+            ],
+            "median": 5.067285667
+          },
+          "enrollment_cpu_s": {
+            "values": [
+              5.795633,
+              5.78892,
+              5.8225
+            ],
+            "median": 5.795633
+          },
+          "median_match_wall_ms": {
+            "values": [
+              4.217896,
+              4.2378540000000005,
+              4.1109375
+            ],
+            "median": 4.217896
+          },
+          "p95_match_wall_ms": {
+            "values": [
+              5.1613648,
+              5.1139874999999995,
+              5.0519545
+            ],
+            "median": 5.1139874999999995
+          }
+        }
+      }
+    }
+  ],
+  "full_cohort_conformance": {
+    "scope": "All original835 queries, unchanged factors8/querystride4/IVF512,nprobe16/top5/vote tolerance0.12; conformance only.",
+    "protocol_sha256": "aae834db35736f2a1ff8e9ccb53fefcdb1140e5dd122502fbc65b93296b6b132",
+    "historic_prediction_sha256": "8fcca3f477bc37f881bed1eb5a9f1b83eecd2d8c4e4daf2b05c4dd7f578a2316",
+    "all_top10_candidates_exactly_identical": true,
+    "all_frozen_top1_ids_scores_offsets_exactly_identical": true,
+    "all_original_threshold_decisions_identical": true,
+    "query_count": 835
+  },
+  "scope": {
+    "enrollment": "Cached raw feature reads, PCA projection, metadata, IVF population. Frozen centroid training and audio/frontend processing excluded.",
+    "rss": "macOS fresh-process RSS; peak from getrusage is bytes. Post-enrollment after Python GC; allocator-retained workspace remains part of process RSS.",
+    "logical_state": "Serialized IVF size plus explicitly retained reference arrays. This is logical explicit state, not a claim about FAISS list capacity or total allocated memory.",
+    "comparison": "Within this frozen ACR implementation only; not a compactness frontier against optimized neural/hash baselines.",
+    "latency": "ANN search plus unchanged temporal voting. Query encoding and thinning excluded. All foreground benchmark jobs held; stable desktop/recording activity logged in worker JSONs."
+  }
+}

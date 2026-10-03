@@ -1,0 +1,15 @@
+{
+  "dataset_doi": "10.5281/zenodo.22169646",
+  "decoder": "FFmpeg mono float32 8000Hz actual sample count",
+  "reference_count": 496,
+  "query_count": 1488,
+  "crop_endpoint_violations": 0,
+  "query_requested_duration_s": 10.0,
+  "decoded_query_frame_counts": {
+    "80000": 1488
+  },
+  "decoded_reference_duration_s_min": 33.891375,
+  "decoded_reference_duration_s_max": 119.994625,
+  "original_reference_bounds_preserved": true,
+  "annotations_clamped": 0
+}

@@ -1,0 +1,18 @@
+{
+  "gain_sha256": "c837e96af77ca185ecdf2c92816021c5fc042babae16983c8615a7c63fcb621f",
+  "threshold": 0.024001980750265172,
+  "calibration_unknown": 627,
+  "target": 0.01,
+  "calibration_false_accepts": 6,
+  "baseline_calibration_known": {
+    "raw_correct": 12,
+    "accepted_correct": 0
+  },
+  "corrected_calibration_known": {
+    "raw_correct": 58,
+    "accepted_correct": 6
+  },
+  "helpfulness_criterion_passed": true,
+  "heldout_queries_scored_before_freeze": 0,
+  "protocol_sha256": "cf6644dff657a84a4d1aabd632c0ec5a7f538c4bf2b79d34a013901e3ca8ded8"
+}

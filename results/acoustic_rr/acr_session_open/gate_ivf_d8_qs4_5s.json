@@ -1,0 +1,8 @@
+{
+  "threshold": 0.0249521472038442,
+  "target": 0.01,
+  "only_role": "calibration_unknown",
+  "calibration_unknown_queries": 627,
+  "heldout_queries_scored_before_gate": 0,
+  "threshold_model_or_setting_selected_from_test": false
+}

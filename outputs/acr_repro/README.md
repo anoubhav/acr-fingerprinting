@@ -1,6 +1,6 @@
 # Reproducible sparse ACR study
 
-This artifact contains the recovered-parameter ACR reconstruction, exact and IVF retrieval, calibrated summaries, public-data adapters, and pinned baseline bridges. It includes the paper and individual-query result files in the enclosing package. It does not redistribute proprietary notebooks, television recordings, or public music audio. The reconstruction is distinguished from the original production PCA transform and historical measurements throughout the paper.
+This artifact contains the recovered-parameter ACR reconstruction, exact and IVF retrieval, calibrated summaries, public-data adapters, and pinned baseline bridges. The research package includes a companion manuscript and individual-query results; the public code/results repository omits manuscript files. It does not redistribute proprietary notebooks, television recordings, or public music audio. The reconstruction is distinguished from the original production PCA transform and historical measurements throughout the paper.
 
 Keep the package layout: `outputs/acr_repro/`, `results/`, and a new `work/` directory for downloaded assets and caches. All commands below run from the package root. Use Python 3.12 and FFmpeg/FFprobe. The recorded run used Apple M2 Max, 12 CPU cores, 32 GiB RAM, FFmpeg 6.0, and FAISS 1.15.1. Exact-search accuracy does not require a GPU. The CPU comparisons use explicit FAISS CPU indexes; no GPU clone is used for reported operating points.
 
@@ -13,8 +13,9 @@ The `results/` directory contains complete predictions, split/crop protocols, su
 After installing the primary environment below, verify the manuscript operating-point summaries and common-cohort timing directly from the retained predictions and raw timing repeats. These checks need no audio or model weights:
 
 ```sh
-work/venv/bin/python outputs/acr_repro/check_paper_numbers.py --check results/paper_numbers.json
-work/venv/bin/python outputs/acr_repro/derive_profile_summary.py --check results/paper_timing.json
+work/venv/bin/python outputs/acr_repro/check_paper_numbers.py --check results/paper_numbers_v2.json
+work/venv/bin/python outputs/acr_repro/verify_v2_evidence.py --check results/v2_evidence_summary.json
+work/venv/bin/python outputs/acr_repro/derive_v2_profile_summary.py --check results/profiling/paper_timing_final.json
 ```
 
 The scripts discover the packaged `results/` layout by default and write recomputed evidence under `work/`. Their `--results`/`--profiles` and `--output` options also support another layout. `results/secondary_source_sensitivity.json` reports an additional admissibility analysis using actual five-second crop overlap with other annotated gallery sources; it preserves primary target labels and frozen thresholds.
@@ -86,3 +87,7 @@ work/venv/bin/python outputs/acr_repro/compare_reference_density.py --results re
 ```
 
 The latter reports unthresholded paired changes; equal aggregate candidate counts need not mean identical predictions.
+
+## V2 evidence
+
+The final V2 experiment/export guide is `EXPERIMENTS.md`; `THIRD_PARTY.md` records SD-RR metadata and audio license distinctions. New studies include neural/public-MinHash matched reference budgets, exact compact streaming-store conformance and fresh-process memory scaling, real speaker-to-phone transfer with all quality-control strata, an explicitly post-hoc calibration-only gain diagnostic, and current actual compact/sparse-model CPU profiles. The exported default checks use corrected canonical Peak records and V2 timings; old Peak compatibility outputs and old timing tables are not primary evidence. Audio-free verification distinguishes original execution SHA identities from portable export SHA identities.

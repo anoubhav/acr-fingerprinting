@@ -248,7 +248,9 @@ class Fingerprinter:
             if c.standardize:
                 delta = standardize_rows(delta, c.epsilon)
             features = np.concatenate([features, delta], axis=1)
-        # Transmitted representation in the paper precedes server-side PCA.
+        # Optional precision ablation of the complete pre-PCA feature rows.
+        # The documented SDK mode sends 32 raw band means, before these
+        # normalization/delta transforms; it does not send these 63-D rows.
         if c.quantize_fp16:
             if np.max(np.abs(features), initial=0) > np.finfo(np.float16).max:
                 raise ValueError("pre-PCA features overflow float16")
