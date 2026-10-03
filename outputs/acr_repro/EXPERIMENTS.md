@@ -1,4 +1,4 @@
-# V2 experiment and evidence guide
+# Experiment and evidence guide
 
 Keep the exported layout `outputs/acr_repro/`, `results/`, and a new `work/` directory. Commands run from this package root. Install the primary Python requirements and FFmpeg as described in the source README. TensorFlow/official NMFP weights, PyTorch/Essentia/official PeakNetFP weights, .NET/SoundFingerprinting and large public audio are separate reproduction dependencies, not prerequisites for inspecting retained numerical evidence.
 
@@ -11,9 +11,12 @@ work/venv/bin/python outputs/acr_repro/verify_v2_evidence.py --check results/v2_
 work/venv/bin/python outputs/acr_repro/check_paper_numbers.py --check results/paper_numbers_v2.json
 work/venv/bin/python outputs/acr_repro/derive_matrix_summary.py --check
 work/venv/bin/python outputs/acr_repro/derive_v2_profile_summary.py --check results/profiling/paper_timing_final.json
+work/venv/bin/python outputs/acr_repro/verify_v3_evidence.py
 ```
 
 The V2 verifier derives accuracy, localization and calibration gates from current canonical individual predictions, including corrected Peak rows. It checks protocol identities, complete cohorts, dense/sparse reference controls, all24 fresh-process streaming-store replicas, full835 ranking/decision conformance, calibrated32-band gain scope and actual cache-creation chronology, and seven current common-cohort timing rows. It retains original execution hashes while separately checking path-sanitized export bytes through EXPORT_PROVENANCE.json and SHA256SUMS.json. A changed filesystem path does not silently replace the recorded original protocol identity.
+
+The V3 verifier additionally rederives all four prescribed digital-input stress conditions, all eight original-frame reference phases, metadata-defined distortion strata across eight configurations, dense/sparse paired differences and actual replica ranges. Read `ADVERSARIAL_REVIEW.md` for the full protocol, commands, denominator and interpretation. These post-primary diagnostics preserve the frozen primary study and include increased wrong/unknown acceptance under capture-boundary stress and the poor pitch-altered stratum. The portable check does not decode PCM or reread original feature caches; separate retained execution audits record those stronger input checks.
 
 ## Frozen original music and speech studies
 

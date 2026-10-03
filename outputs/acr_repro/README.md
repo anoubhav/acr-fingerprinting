@@ -91,3 +91,7 @@ The latter reports unthresholded paired changes; equal aggregate candidate count
 ## V2 evidence
 
 The final V2 experiment/export guide is `EXPERIMENTS.md`; `THIRD_PARTY.md` records SD-RR metadata and audio license distinctions. New studies include neural/public-MinHash matched reference budgets, exact compact streaming-store conformance and fresh-process memory scaling, real speaker-to-phone transfer with all quality-control strata, an explicitly post-hoc calibration-only gain diagnostic, and current actual compact/sparse-model CPU profiles. The exported default checks use corrected canonical Peak records and V2 timings; old Peak compatibility outputs and old timing tables are not primary evidence. Audio-free verification distinguishes original execution SHA identities from portable export SHA identities.
+
+## Current review diagnostics
+
+`ADVERSARIAL_REVIEW.md` documents the four frozen digital-input stress conditions, all eight reference-grid residues and full-cohort metadata distortion strata. From the exported artifact or repository root, run `python outputs/acr_repro/verify_v3_evidence.py` to rederive their numerical evidence without audio or weights. The original experiments above remain the primary study.

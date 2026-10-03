@@ -1,0 +1,18 @@
+{
+  "query_count": 835,
+  "compared_fields": [
+    "reference_id",
+    "score",
+    "offset_s",
+    "correct_reference",
+    "localized_correct",
+    "query_fingerprints",
+    "vote_fraction",
+    "mean_squared_l2",
+    "accepted"
+  ],
+  "all835_exactly_equal": true,
+  "frozen_result_sha256": "8fcca3f477bc37f881bed1eb5a9f1b83eecd2d8c4e4daf2b05c4dd7f578a2316",
+  "plan_sha256": "85187040d2780b4a324cfe7bd706bc6b8e3d85bd8589934751cc0cc25c365cc1",
+  "completed_utc": "2026-10-03T15:32:38.165235+00:00"
+}

@@ -30,6 +30,8 @@ jobs:
         run: python outputs/acr_repro/test_neural_acoustic.py
       - name: Verify canonical evidence and provenance without audio
         run: python outputs/acr_repro/verify_v2_evidence.py --check results/v2_evidence_summary.json
+      - name: Verify all adversarial-review evidence without audio
+        run: python outputs/acr_repro/verify_v3_evidence.py
       - name: Recompute operating points, matrix and common-cohort timings
         run: |
           python outputs/acr_repro/check_paper_numbers.py --check results/paper_numbers_v2.json

@@ -1,0 +1,370 @@
+{
+  "status": "PASS",
+  "plan_sha256": "a9ee566272abbf1c3ddcdfc076e1a4e029de87f859b592b659c365f632ae959f",
+  "protocol_sha256": "aae834db35736f2a1ff8e9ccb53fefcdb1140e5dd122502fbc65b93296b6b132",
+  "phase_selected": false,
+  "all8_complete": true,
+  "no_primary_results_modified": true,
+  "queries_per_phase": 835,
+  "gallery_sources": 659,
+  "dense_baseline_sha256": "a1b2c8a523ad09de963d5fd19074d58ececb1686026b7624f7834fce5a144379",
+  "rows": [
+    {
+      "phase": 0,
+      "fingerprints": 792973,
+      "payload_MB_per_hour": 2.401497392635748,
+      "threshold": 0.0530928137101359,
+      "calibration_false_accepts": 0,
+      "candidate_correct": 446,
+      "candidate_localized": 428,
+      "accepted_correct": 405,
+      "accepted_localized": 397,
+      "accepted_target_mismatch": 2,
+      "unknown_accepts": 0,
+      "known_candidate_id_changes_vs_phase0": 0,
+      "all_candidate_id_changes_vs_phase0": 0,
+      "raw_paired_difference_vs_dense": {
+        "estimate": 0.0,
+        "ci95": [
+          -0.0164541354440806,
+          0.016559050772626916
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 0,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_paired_difference_vs_dense": {
+        "estimate": 0.0,
+        "ci95": [
+          -0.0176374633088414,
+          0.01927156406083392
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 0,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "result_sha256": "d76dfdf88bbc1076539c16100b612532b538e0139184bedeb52397205d8396bb"
+    },
+    {
+      "phase": 1,
+      "fingerprints": 792904,
+      "payload_MB_per_hour": 2.4012884279924473,
+      "threshold": 0.05340661972757201,
+      "calibration_false_accepts": 0,
+      "candidate_correct": 447,
+      "candidate_localized": 427,
+      "accepted_correct": 403,
+      "accepted_localized": 392,
+      "accepted_target_mismatch": 2,
+      "unknown_accepts": 1,
+      "known_candidate_id_changes_vs_phase0": 19,
+      "all_candidate_id_changes_vs_phase0": 53,
+      "raw_paired_difference_vs_dense": {
+        "estimate": 0.001841620626151013,
+        "ci95": [
+          -0.008375472751598664,
+          0.014656084656084634
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 1,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_paired_difference_vs_dense": {
+        "estimate": -0.003683241252302026,
+        "ci95": [
+          -0.01996191256885228,
+          0.012972222222222171
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": -2,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "result_sha256": "c5c685be0474560d6e156263ace06952d429ba4ccb7977bf62597f8fce20e23c"
+    },
+    {
+      "phase": 2,
+      "fingerprints": 792838,
+      "payload_MB_per_hour": 2.401088548768421,
+      "threshold": 0.05720945254939435,
+      "calibration_false_accepts": 0,
+      "candidate_correct": 446,
+      "candidate_localized": 428,
+      "accepted_correct": 400,
+      "accepted_localized": 390,
+      "accepted_target_mismatch": 2,
+      "unknown_accepts": 0,
+      "known_candidate_id_changes_vs_phase0": 35,
+      "all_candidate_id_changes_vs_phase0": 79,
+      "raw_paired_difference_vs_dense": {
+        "estimate": 0.0,
+        "ci95": [
+          -0.010366323965772258,
+          0.008404202818711739
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 0,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_paired_difference_vs_dense": {
+        "estimate": -0.009208103130755065,
+        "ci95": [
+          -0.027036908938188647,
+          0.005301534362540384
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": -5,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "result_sha256": "03c27cbe914f27ef2972c80b9b87b293d3e617213b9144a3608facc08ce32eb5"
+    },
+    {
+      "phase": 3,
+      "fingerprints": 792776,
+      "payload_MB_per_hour": 2.40090078343676,
+      "threshold": 0.05065587092853911,
+      "calibration_false_accepts": 0,
+      "candidate_correct": 446,
+      "candidate_localized": 427,
+      "accepted_correct": 406,
+      "accepted_localized": 395,
+      "accepted_target_mismatch": 4,
+      "unknown_accepts": 0,
+      "known_candidate_id_changes_vs_phase0": 35,
+      "all_candidate_id_changes_vs_phase0": 90,
+      "raw_paired_difference_vs_dense": {
+        "estimate": 0.0,
+        "ci95": [
+          -0.010366323965772258,
+          0.008404202818711739
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 0,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_paired_difference_vs_dense": {
+        "estimate": 0.001841620626151013,
+        "ci95": [
+          -0.014467201299892549,
+          0.020370370370370372
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 1,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "result_sha256": "c06704e8d24e9f30fa0b20f3c846c76a880f2ef8cb53beccb7587a87e5de3f5b"
+    },
+    {
+      "phase": 4,
+      "fingerprints": 792686,
+      "payload_MB_per_hour": 2.400628220858542,
+      "threshold": 0.05027767034561599,
+      "calibration_false_accepts": 0,
+      "candidate_correct": 447,
+      "candidate_localized": 424,
+      "accepted_correct": 410,
+      "accepted_localized": 395,
+      "accepted_target_mismatch": 4,
+      "unknown_accepts": 0,
+      "known_candidate_id_changes_vs_phase0": 39,
+      "all_candidate_id_changes_vs_phase0": 101,
+      "raw_paired_difference_vs_dense": {
+        "estimate": 0.001841620626151013,
+        "ci95": [
+          -0.00934979211826161,
+          0.013818037244138916
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 1,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_paired_difference_vs_dense": {
+        "estimate": 0.009208103130755065,
+        "ci95": [
+          -0.0038925885483151595,
+          0.028913413191363493
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 5,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "result_sha256": "d35a1582f3a867289fe56f085eb0c294ae7f6f2e2e98088e0667160524c340d2"
+    },
+    {
+      "phase": 5,
+      "fingerprints": 792604,
+      "payload_MB_per_hour": 2.4003798860650543,
+      "threshold": 0.05096676034552754,
+      "calibration_false_accepts": 0,
+      "candidate_correct": 449,
+      "candidate_localized": 428,
+      "accepted_correct": 403,
+      "accepted_localized": 392,
+      "accepted_target_mismatch": 5,
+      "unknown_accepts": 1,
+      "known_candidate_id_changes_vs_phase0": 35,
+      "all_candidate_id_changes_vs_phase0": 102,
+      "raw_paired_difference_vs_dense": {
+        "estimate": 0.0055248618784530384,
+        "ci95": [
+          0.0,
+          0.01940206957906072
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 3,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_paired_difference_vs_dense": {
+        "estimate": -0.003683241252302026,
+        "ci95": [
+          -0.022260353394159656,
+          0.015504628584330543
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": -2,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "result_sha256": "d2ae8c1393b2d0f2963ee40ab00928ed2ddd68b4e7e2616a22fcb7b8e80e9c99"
+    },
+    {
+      "phase": 6,
+      "fingerprints": 792543,
+      "payload_MB_per_hour": 2.4001951492064846,
+      "threshold": 0.051399115732137575,
+      "calibration_false_accepts": 0,
+      "candidate_correct": 448,
+      "candidate_localized": 429,
+      "accepted_correct": 403,
+      "accepted_localized": 395,
+      "accepted_target_mismatch": 5,
+      "unknown_accepts": 1,
+      "known_candidate_id_changes_vs_phase0": 31,
+      "all_candidate_id_changes_vs_phase0": 89,
+      "raw_paired_difference_vs_dense": {
+        "estimate": 0.003683241252302026,
+        "ci95": [
+          -0.00721017721017721,
+          0.017858742959549402
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 2,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_paired_difference_vs_dense": {
+        "estimate": -0.003683241252302026,
+        "ci95": [
+          -0.022260353394159656,
+          0.015504628584330543
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": -2,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "result_sha256": "3238046ac7e67131b79af78e35e87665561a8f086cdd3471f39604d5f7ac423e"
+    },
+    {
+      "phase": 7,
+      "fingerprints": 792492,
+      "payload_MB_per_hour": 2.4000406970788273,
+      "threshold": 0.05246892721722433,
+      "calibration_false_accepts": 0,
+      "candidate_correct": 445,
+      "candidate_localized": 426,
+      "accepted_correct": 405,
+      "accepted_localized": 394,
+      "accepted_target_mismatch": 5,
+      "unknown_accepts": 1,
+      "known_candidate_id_changes_vs_phase0": 21,
+      "all_candidate_id_changes_vs_phase0": 59,
+      "raw_paired_difference_vs_dense": {
+        "estimate": -0.001841620626151013,
+        "ci95": [
+          -0.01789069349922759,
+          0.012049407306645932
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": -1,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_paired_difference_vs_dense": {
+        "estimate": 0.0,
+        "ci95": [
+          -0.0176374633088414,
+          0.01927156406083392
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 0,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "result_sha256": "b5b6c5b51121d1225fb8d7ed4065661e8d645a15d86489db0d8daed748c2baeb"
+    }
+  ],
+  "phase_ranges": {
+    "candidate_correct": [
+      445,
+      449
+    ],
+    "candidate_localized": [
+      424,
+      429
+    ],
+    "accepted_correct": [
+      400,
+      410
+    ],
+    "accepted_localized": [
+      390,
+      397
+    ],
+    "accepted_target_mismatch": [
+      2,
+      5
+    ],
+    "unknown_accepts": [
+      0,
+      1
+    ],
+    "fingerprints": [
+      792492,
+      792973
+    ],
+    "payload_MB_per_hour": [
+      2.4000406970788273,
+      2.401497392635748
+    ]
+  },
+  "phase0_exact_conformance_all835": true,
+  "interpretation": "All-phase sensitivity with unchanged models/crops/query density/matcher. Per-phase independent calibration; all phases reported, none selected. Paired intervals condition on fixed PCA/representation/settings.",
+  "reference_residue_ledger_sha256": "60a206aedf166d7b39e0f0f32773aba7964a72bbc9249bb6f682a352c96793b8"
+}

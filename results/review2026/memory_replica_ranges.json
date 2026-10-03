@@ -1,0 +1,285 @@
+{
+  "scope": "Descriptive ranges of the actual three fresh-process trials, not confidence intervals",
+  "rows": [
+    {
+      "gallery_sources": 141,
+      "layout": "baseline",
+      "reference_audio_hours": 9.322099965277781,
+      "explicit_reference_MB": {
+        "median": 49.964657,
+        "min": 49.964657,
+        "max": 49.964657,
+        "replicates": [
+          49.964657,
+          49.964657,
+          49.964657
+        ]
+      },
+      "process_peak_enrollment_rss_MB": {
+        "median": 432.832512,
+        "min": 431.816704,
+        "max": 441.778176,
+        "replicates": [
+          432.832512,
+          441.778176,
+          431.816704
+        ]
+      },
+      "rss_after_enrollment_gc_MB": {
+        "median": 432.832512,
+        "min": 431.816704,
+        "max": 441.778176,
+        "replicates": [
+          432.832512,
+          441.778176,
+          431.816704
+        ]
+      }
+    },
+    {
+      "gallery_sources": 141,
+      "layout": "compact",
+      "reference_audio_hours": 9.322099965277781,
+      "explicit_reference_MB": {
+        "median": 25.018765,
+        "min": 25.018765,
+        "max": 25.018765,
+        "replicates": [
+          25.018765,
+          25.018765,
+          25.018765
+        ]
+      },
+      "process_peak_enrollment_rss_MB": {
+        "median": 218.464256,
+        "min": 209.3056,
+        "max": 223.903744,
+        "replicates": [
+          218.464256,
+          209.3056,
+          223.903744
+        ]
+      },
+      "rss_after_enrollment_gc_MB": {
+        "median": 218.464256,
+        "min": 209.3056,
+        "max": 223.903744,
+        "replicates": [
+          218.464256,
+          209.3056,
+          223.903744
+        ]
+      }
+    },
+    {
+      "gallery_sources": 256,
+      "layout": "baseline",
+      "reference_audio_hours": 15.83861812500001,
+      "explicit_reference_MB": {
+        "median": 84.645307,
+        "min": 84.645307,
+        "max": 84.645307,
+        "replicates": [
+          84.645307,
+          84.645307,
+          84.645307
+        ]
+      },
+      "process_peak_enrollment_rss_MB": {
+        "median": 680.91904,
+        "min": 670.531584,
+        "max": 684.556288,
+        "replicates": [
+          684.556288,
+          670.531584,
+          680.91904
+        ]
+      },
+      "rss_after_enrollment_gc_MB": {
+        "median": 680.91904,
+        "min": 670.531584,
+        "max": 684.556288,
+        "replicates": [
+          684.556288,
+          670.531584,
+          680.91904
+        ]
+      }
+    },
+    {
+      "gallery_sources": 256,
+      "layout": "compact",
+      "reference_audio_hours": 15.83861812500001,
+      "explicit_reference_MB": {
+        "median": 42.360355,
+        "min": 42.360355,
+        "max": 42.360355,
+        "replicates": [
+          42.360355,
+          42.360355,
+          42.360355
+        ]
+      },
+      "process_peak_enrollment_rss_MB": {
+        "median": 252.002304,
+        "min": 246.300672,
+        "max": 258.490368,
+        "replicates": [
+          252.002304,
+          246.300672,
+          258.490368
+        ]
+      },
+      "rss_after_enrollment_gc_MB": {
+        "median": 252.002304,
+        "min": 246.300672,
+        "max": 258.490368,
+        "replicates": [
+          252.002304,
+          246.300672,
+          258.490368
+        ]
+      }
+    },
+    {
+      "gallery_sources": 512,
+      "layout": "baseline",
+      "reference_audio_hours": 32.153880277777766,
+      "explicit_reference_MB": {
+        "median": 168.058563,
+        "min": 168.058563,
+        "max": 168.058563,
+        "replicates": [
+          168.058563,
+          168.058563,
+          168.058563
+        ]
+      },
+      "process_peak_enrollment_rss_MB": {
+        "median": 1164.836864,
+        "min": 1150.07488,
+        "max": 1189.494784,
+        "replicates": [
+          1164.836864,
+          1189.494784,
+          1150.07488
+        ]
+      },
+      "rss_after_enrollment_gc_MB": {
+        "median": 1150.07488,
+        "min": 1055.342592,
+        "max": 1164.836864,
+        "replicates": [
+          1164.836864,
+          1055.342592,
+          1150.07488
+        ]
+      }
+    },
+    {
+      "gallery_sources": 512,
+      "layout": "compact",
+      "reference_audio_hours": 32.153880277777766,
+      "explicit_reference_MB": {
+        "median": 84.069799,
+        "min": 84.069799,
+        "max": 84.069799,
+        "replicates": [
+          84.069799,
+          84.069799,
+          84.069799
+        ]
+      },
+      "process_peak_enrollment_rss_MB": {
+        "median": 318.488576,
+        "min": 313.163776,
+        "max": 340.246528,
+        "replicates": [
+          318.488576,
+          340.246528,
+          313.163776
+        ]
+      },
+      "rss_after_enrollment_gc_MB": {
+        "median": 318.488576,
+        "min": 313.163776,
+        "max": 340.246528,
+        "replicates": [
+          318.488576,
+          340.246528,
+          313.163776
+        ]
+      }
+    },
+    {
+      "gallery_sources": 659,
+      "layout": "baseline",
+      "reference_audio_hours": 42.26552329861109,
+      "explicit_reference_MB": {
+        "median": 222.106165,
+        "min": 222.106165,
+        "max": 222.106165,
+        "replicates": [
+          222.106165,
+          222.106165,
+          222.106165
+        ]
+      },
+      "process_peak_enrollment_rss_MB": {
+        "median": 1571.946496,
+        "min": 1555.218432,
+        "max": 1620.967424,
+        "replicates": [
+          1571.946496,
+          1555.218432,
+          1620.967424
+        ]
+      },
+      "rss_after_enrollment_gc_MB": {
+        "median": 1486.831616,
+        "min": 1421.099008,
+        "max": 1571.946496,
+        "replicates": [
+          1571.946496,
+          1421.099008,
+          1486.831616
+        ]
+      }
+    },
+    {
+      "gallery_sources": 659,
+      "layout": "compact",
+      "reference_audio_hours": 42.26552329861109,
+      "explicit_reference_MB": {
+        "median": 111.095217,
+        "min": 111.095217,
+        "max": 111.095217,
+        "replicates": [
+          111.095217,
+          111.095217,
+          111.095217
+        ]
+      },
+      "process_peak_enrollment_rss_MB": {
+        "median": 419.0208,
+        "min": 411.97568,
+        "max": 422.559744,
+        "replicates": [
+          419.0208,
+          411.97568,
+          422.559744
+        ]
+      },
+      "rss_after_enrollment_gc_MB": {
+        "median": 419.0208,
+        "min": 411.97568,
+        "max": 422.559744,
+        "replicates": [
+          419.0208,
+          411.97568,
+          422.559744
+        ]
+      }
+    }
+  ]
+}

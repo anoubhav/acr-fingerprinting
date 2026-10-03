@@ -1,10 +1,10 @@
 {
-  "version": "V2",
+  "version": "V3",
   "files": {
     "EXPERIMENTS.md": {
       "source_path": "outputs/acr_repro/EXPERIMENTS.md",
-      "source_sha256": "4a2115726264f95b87ab2e9866b417d21cb5f9394d7572b8b402f04c138d19e5",
-      "export_sha256": "4a2115726264f95b87ab2e9866b417d21cb5f9394d7572b8b402f04c138d19e5",
+      "source_sha256": "b546ff8b55c2e9bbbd1a0b4dbadc7267f840b34dd8e9b6b4aca4dfd508d24ce2",
+      "export_sha256": "b546ff8b55c2e9bbbd1a0b4dbadc7267f840b34dd8e9b6b4aca4dfd508d24ce2",
       "portable_path_export": false
     },
     "THIRD_PARTY.md": {
@@ -17,6 +17,12 @@
       "source_path": "outputs/acr_repro/ACOUSTIC_RR_BASELINE.md",
       "source_sha256": "2981f37fb5d43dfaabd87458a9d958af4ea507a50fa09ccf1695f54a2f789e06",
       "export_sha256": "2981f37fb5d43dfaabd87458a9d958af4ea507a50fa09ccf1695f54a2f789e06",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/ADVERSARIAL_REVIEW.md": {
+      "source_path": "outputs/acr_repro/ADVERSARIAL_REVIEW.md",
+      "source_sha256": "0e0a10d1483689b73a068ded49d9aaad1a0605e53fca598a787123c9b7eda8ba",
+      "export_sha256": "0e0a10d1483689b73a068ded49d9aaad1a0605e53fca598a787123c9b7eda8ba",
       "portable_path_export": false
     },
     "outputs/acr_repro/ALGORITHM.md": {
@@ -33,8 +39,8 @@
     },
     "outputs/acr_repro/EXPERIMENTS.md": {
       "source_path": "outputs/acr_repro/EXPERIMENTS.md",
-      "source_sha256": "4a2115726264f95b87ab2e9866b417d21cb5f9394d7572b8b402f04c138d19e5",
-      "export_sha256": "4a2115726264f95b87ab2e9866b417d21cb5f9394d7572b8b402f04c138d19e5",
+      "source_sha256": "b546ff8b55c2e9bbbd1a0b4dbadc7267f840b34dd8e9b6b4aca4dfd508d24ce2",
+      "export_sha256": "b546ff8b55c2e9bbbd1a0b4dbadc7267f840b34dd8e9b6b4aca4dfd508d24ce2",
       "portable_path_export": false
     },
     "outputs/acr_repro/NEURAL_ACOUSTIC.md": {
@@ -63,8 +69,8 @@
     },
     "outputs/acr_repro/README.md": {
       "source_path": "outputs/acr_repro/README.md",
-      "source_sha256": "50f7f664e53eb2cc52c1a634430b575c410613694bb658cb23b3fb475aa18507",
-      "export_sha256": "50f7f664e53eb2cc52c1a634430b575c410613694bb658cb23b3fb475aa18507",
+      "source_sha256": "0e2093d4fb04bc389edcaa25aedd9d12ed4b72ad9586c75018603451fb84bd31",
+      "export_sha256": "0e2093d4fb04bc389edcaa25aedd9d12ed4b72ad9586c75018603451fb84bd31",
       "portable_path_export": false
     },
     "outputs/acr_repro/SDRR.md": {
@@ -113,6 +119,12 @@
       "source_path": "outputs/acr_repro/audfprint_baseline.py",
       "source_sha256": "41568086fee3ddda35fcf2af755c9a1999bfd471fbfe398badd49ba2a5d61098",
       "export_sha256": "41568086fee3ddda35fcf2af755c9a1999bfd471fbfe398badd49ba2a5d61098",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/audit_acr_unknown_waveform.py": {
+      "source_path": "outputs/acr_repro/audit_acr_unknown_waveform.py",
+      "source_sha256": "ebbc94b05c21d8227e9b070da3359e057b57960e487eaee16b8b1493337e8303",
+      "export_sha256": "ebbc94b05c21d8227e9b070da3359e057b57960e487eaee16b8b1493337e8303",
       "portable_path_export": false
     },
     "outputs/acr_repro/audit_neural_clean_source.py": {
@@ -185,6 +197,12 @@
       "source_path": "outputs/acr_repro/compare_reference_density.py",
       "source_sha256": "3573fd1e855bcad2a0a86d6d954a11b7c44b1141297269f4e3eb5dfe76d49f93",
       "export_sha256": "3573fd1e855bcad2a0a86d6d954a11b7c44b1141297269f4e3eb5dfe76d49f93",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/derive_distortion_strata.py": {
+      "source_path": "outputs/acr_repro/derive_distortion_strata.py",
+      "source_sha256": "86943d6570c25afc8a8bbd6353a3443d75422408c7efcf4eaf919bbb12a423fb",
+      "export_sha256": "86943d6570c25afc8a8bbd6353a3443d75422408c7efcf4eaf919bbb12a423fb",
       "portable_path_export": false
     },
     "outputs/acr_repro/derive_matrix_summary.py": {
@@ -379,6 +397,12 @@
       "export_sha256": "35e66a50d0003be51203da2b63410e567553f78a82497e18f242a2ebca580b22",
       "portable_path_export": false
     },
+    "outputs/acr_repro/run_digital_boundary.py": {
+      "source_path": "outputs/acr_repro/run_digital_boundary.py",
+      "source_sha256": "c8475df8d97a3c9ea09fa34dfff6617d9c6caeaa49d23d31914b531fe86219ce",
+      "export_sha256": "c8475df8d97a3c9ea09fa34dfff6617d9c6caeaa49d23d31914b531fe86219ce",
+      "portable_path_export": false
+    },
     "outputs/acr_repro/run_ivf_extended.py": {
       "source_path": "outputs/acr_repro/run_ivf_extended.py",
       "source_sha256": "ed7d2a5934d6a7c053a2f99564b0dfc0b0a856f531b92c1d3d258a185b9cc1e9",
@@ -395,6 +419,12 @@
       "source_path": "outputs/acr_repro/run_nmfp_protocol.py",
       "source_sha256": "705da067f62098dfd1e750eb93ac4730e23a7469e988873ff89d1544ae47599f",
       "export_sha256": "705da067f62098dfd1e750eb93ac4730e23a7469e988873ff89d1544ae47599f",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/run_reference_phase.py": {
+      "source_path": "outputs/acr_repro/run_reference_phase.py",
+      "source_sha256": "17d18bf03cf0a923ec3d48ac5fc8a3475d4330277c0b782926c5dffac8a83e27",
+      "export_sha256": "17d18bf03cf0a923ec3d48ac5fc8a3475d4330277c0b782926c5dffac8a83e27",
       "portable_path_export": false
     },
     "outputs/acr_repro/run_sdrr_frozen.py": {
@@ -529,16 +559,40 @@
       "export_sha256": "b3b514d44aea10e8e8e9a9f9e86aec98170fefbbaed2c6b8b2c28f193a8b7795",
       "portable_path_export": false
     },
+    "outputs/acr_repro/verify_acr_unknown_waveform.py": {
+      "source_path": "outputs/acr_repro/verify_acr_unknown_waveform.py",
+      "source_sha256": "58d6087d320ca2865e70a1be7aa456132832ded06f7860053794b27ac62b8a43",
+      "export_sha256": "58d6087d320ca2865e70a1be7aa456132832ded06f7860053794b27ac62b8a43",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/verify_digital_boundary_execution.py": {
+      "source_path": "outputs/acr_repro/verify_digital_boundary_execution.py",
+      "source_sha256": "57e2364c44e89c2583184cac2802ccb600d92f696f2df191829aef23900efdad",
+      "export_sha256": "57e2364c44e89c2583184cac2802ccb600d92f696f2df191829aef23900efdad",
+      "portable_path_export": false
+    },
     "outputs/acr_repro/verify_neural_density.py": {
       "source_path": "outputs/acr_repro/verify_neural_density.py",
       "source_sha256": "6b2205393ad1832e0914bef111fd923ea508d29c0a26f9127a2660307d82f732",
       "export_sha256": "6b2205393ad1832e0914bef111fd923ea508d29c0a26f9127a2660307d82f732",
       "portable_path_export": false
     },
+    "outputs/acr_repro/verify_reference_phase_execution.py": {
+      "source_path": "outputs/acr_repro/verify_reference_phase_execution.py",
+      "source_sha256": "3575ae573cc35b95562138f5ee6bc2d57871d7810a2cb65da7890daa363bc1bd",
+      "export_sha256": "3575ae573cc35b95562138f5ee6bc2d57871d7810a2cb65da7890daa363bc1bd",
+      "portable_path_export": false
+    },
     "outputs/acr_repro/verify_v2_evidence.py": {
       "source_path": "outputs/acr_repro/verify_v2_evidence.py",
       "source_sha256": "dad808267b01aa1c5f67f635e2a82445e0d61f7ea02ac9bbdb74eb64d0916099",
       "export_sha256": "dad808267b01aa1c5f67f635e2a82445e0d61f7ea02ac9bbdb74eb64d0916099",
+      "portable_path_export": false
+    },
+    "outputs/acr_repro/verify_v3_evidence.py": {
+      "source_path": "outputs/acr_repro/verify_v3_evidence.py",
+      "source_sha256": "def38b87b2fee8ed16f4b5579c4071503373b6a398f28b319a346267b3d36ba9",
+      "export_sha256": "def38b87b2fee8ed16f4b5579c4071503373b6a398f28b319a346267b3d36ba9",
       "portable_path_export": false
     },
     "results/acoustic_rr/acquisition_audit.json": {
@@ -2167,6 +2221,198 @@
       "export_sha256": "1fd1ced482c12ede3ebaf91ed8d0aee3a02b5680375d8d4c87a7f1d951b54b62",
       "portable_path_export": true
     },
+    "results/review2026/digital_boundary/REPORT.md": {
+      "source_path": "work/review2026/digital_boundary/REPORT.md",
+      "source_sha256": "c19553e14e15d84488d1b6b11248a313b9659be60ca033e4da6b80fcc2f8caac",
+      "export_sha256": "c19553e14e15d84488d1b6b11248a313b9659be60ca033e4da6b80fcc2f8caac",
+      "portable_path_export": false
+    },
+    "results/review2026/digital_boundary/decision_switches.json": {
+      "source_path": "work/review2026/digital_boundary/results/decision_switches.json",
+      "source_sha256": "6a80e89e0b96396e3d7cf8d7da29cfb17617acdc1ca379a7880cb5372c6c8600",
+      "export_sha256": "6a80e89e0b96396e3d7cf8d7da29cfb17617acdc1ca379a7880cb5372c6c8600",
+      "portable_path_export": true
+    },
+    "results/review2026/digital_boundary/decoded_input_ledger.json": {
+      "source_path": "work/review2026/digital_boundary/results/decoded_input_ledger.json",
+      "source_sha256": "23f86a2e4837d9f2d1fc894032badcdf240878972ca1cc73a862232eb65c13bc",
+      "export_sha256": "83fed4c44cef810d6c645ca899f049633b0e7d2261b57f44647da98750e60f43",
+      "portable_path_export": true
+    },
+    "results/review2026/digital_boundary/leading_0p5s_5s.json": {
+      "source_path": "work/review2026/digital_boundary/results/leading_0p5s_5s.json",
+      "source_sha256": "5337223210ba9a831ab51f3538082a69760b893568e18c645b98ec79529a4eeb",
+      "export_sha256": "5337223210ba9a831ab51f3538082a69760b893568e18c645b98ec79529a4eeb",
+      "portable_path_export": true
+    },
+    "results/review2026/digital_boundary/leading_1s_5s.json": {
+      "source_path": "work/review2026/digital_boundary/results/leading_1s_5s.json",
+      "source_sha256": "3887dd63be2db3044f69955622887a014fff8a951f42735a147a47e9a08db197",
+      "export_sha256": "3887dd63be2db3044f69955622887a014fff8a951f42735a147a47e9a08db197",
+      "portable_path_export": true
+    },
+    "results/review2026/digital_boundary/plan.json": {
+      "source_path": "work/review2026/digital_boundary/results/plan.json",
+      "source_sha256": "85187040d2780b4a324cfe7bd706bc6b8e3d85bd8589934751cc0cc25c365cc1",
+      "export_sha256": "b749f79ac8e73f224793f382c1a8abed1c2c1247caaaada0d272fc9040df6089",
+      "portable_path_export": true
+    },
+    "results/review2026/digital_boundary/summary.json": {
+      "source_path": "work/review2026/digital_boundary/results/summary.json",
+      "source_sha256": "37c54c35e002ba7874bb7914cfb5a8e71f22061d165ca134f0d3eeb742f00aef",
+      "export_sha256": "37c54c35e002ba7874bb7914cfb5a8e71f22061d165ca134f0d3eeb742f00aef",
+      "portable_path_export": true
+    },
+    "results/review2026/digital_boundary/trim_1s_4s.json": {
+      "source_path": "work/review2026/digital_boundary/results/trim_1s_4s.json",
+      "source_sha256": "bfa54d64e3447962c310906eb4d6a102aae512c1ea84ee47a3b7c5af66bcf7b5",
+      "export_sha256": "bfa54d64e3447962c310906eb4d6a102aae512c1ea84ee47a3b7c5af66bcf7b5",
+      "portable_path_export": true
+    },
+    "results/review2026/digital_boundary/unchanged_5s.json": {
+      "source_path": "work/review2026/digital_boundary/results/unchanged_5s.json",
+      "source_sha256": "84e037b554bfde41392bd2fab52441e811bd5720428d471d6b53ac345a5a2374",
+      "export_sha256": "84e037b554bfde41392bd2fab52441e811bd5720428d471d6b53ac345a5a2374",
+      "portable_path_export": true
+    },
+    "results/review2026/digital_boundary/unchanged_parity.json": {
+      "source_path": "work/review2026/digital_boundary/results/unchanged_parity.json",
+      "source_sha256": "fed91f3f2659aef357825396b46e4aee821975256dc1db6a98d13705e11d28b0",
+      "export_sha256": "fed91f3f2659aef357825396b46e4aee821975256dc1db6a98d13705e11d28b0",
+      "portable_path_export": true
+    },
+    "results/review2026/digital_boundary/verification.json": {
+      "source_path": "work/review2026/digital_boundary/verification.json",
+      "source_sha256": "ca47bbf9d2786874704ffef6924f0de557b58e6ce10bf8faa4f6eddbedaf2b53",
+      "export_sha256": "ca47bbf9d2786874704ffef6924f0de557b58e6ce10bf8faa4f6eddbedaf2b53",
+      "portable_path_export": true
+    },
+    "results/review2026/distortion_diagnostic.md": {
+      "source_path": "work/review2026/distortion_diagnostic.md",
+      "source_sha256": "f2713055d5e1f649c643c5a6fefe929602ef4ddd6cafb495dfa7b500c3f48eb7",
+      "export_sha256": "f2713055d5e1f649c643c5a6fefe929602ef4ddd6cafb495dfa7b500c3f48eb7",
+      "portable_path_export": false
+    },
+    "results/review2026/distortion_strata.json": {
+      "source_path": "work/review2026/distortion_strata.json",
+      "source_sha256": "08a032bf692f6cdfdcb69dd2673676e5583f9eb352fda170e48bae632654b7c3",
+      "export_sha256": "08a032bf692f6cdfdcb69dd2673676e5583f9eb352fda170e48bae632654b7c3",
+      "portable_path_export": true
+    },
+    "results/review2026/memory_replica_ranges.json": {
+      "source_path": "work/review2026/memory_replica_ranges.json",
+      "source_sha256": "b6c259eb2d6b65ee95759ef80a53e8c04496395508ada76405d6160c0fe222ca",
+      "export_sha256": "b6c259eb2d6b65ee95759ef80a53e8c04496395508ada76405d6160c0fe222ca",
+      "portable_path_export": true
+    },
+    "results/review2026/paired_dense_sparse_review.json": {
+      "source_path": "work/review2026/paired_dense_sparse_review.json",
+      "source_sha256": "3d9081bd57694f02c597fe80d8408898cb056686df1f7432569aa883438e6a80",
+      "export_sha256": "3d9081bd57694f02c597fe80d8408898cb056686df1f7432569aa883438e6a80",
+      "portable_path_export": true
+    },
+    "results/review2026/reference_phase/REPORT.md": {
+      "source_path": "work/review2026/reference_phase/REPORT.md",
+      "source_sha256": "b01dc152229ea2f216496878000ab3fa74315a942a088c12a5cbac9e3706630d",
+      "export_sha256": "b01dc152229ea2f216496878000ab3fa74315a942a088c12a5cbac9e3706630d",
+      "portable_path_export": false
+    },
+    "results/review2026/reference_phase/phase_0_5s.json": {
+      "source_path": "work/review2026/reference_phase/results/phase_0_5s.json",
+      "source_sha256": "d76dfdf88bbc1076539c16100b612532b538e0139184bedeb52397205d8396bb",
+      "export_sha256": "d76dfdf88bbc1076539c16100b612532b538e0139184bedeb52397205d8396bb",
+      "portable_path_export": true
+    },
+    "results/review2026/reference_phase/phase_1_5s.json": {
+      "source_path": "work/review2026/reference_phase/results/phase_1_5s.json",
+      "source_sha256": "c5c685be0474560d6e156263ace06952d429ba4ccb7977bf62597f8fce20e23c",
+      "export_sha256": "c5c685be0474560d6e156263ace06952d429ba4ccb7977bf62597f8fce20e23c",
+      "portable_path_export": true
+    },
+    "results/review2026/reference_phase/phase_2_5s.json": {
+      "source_path": "work/review2026/reference_phase/results/phase_2_5s.json",
+      "source_sha256": "03c27cbe914f27ef2972c80b9b87b293d3e617213b9144a3608facc08ce32eb5",
+      "export_sha256": "03c27cbe914f27ef2972c80b9b87b293d3e617213b9144a3608facc08ce32eb5",
+      "portable_path_export": true
+    },
+    "results/review2026/reference_phase/phase_3_5s.json": {
+      "source_path": "work/review2026/reference_phase/results/phase_3_5s.json",
+      "source_sha256": "c06704e8d24e9f30fa0b20f3c846c76a880f2ef8cb53beccb7587a87e5de3f5b",
+      "export_sha256": "c06704e8d24e9f30fa0b20f3c846c76a880f2ef8cb53beccb7587a87e5de3f5b",
+      "portable_path_export": true
+    },
+    "results/review2026/reference_phase/phase_4_5s.json": {
+      "source_path": "work/review2026/reference_phase/results/phase_4_5s.json",
+      "source_sha256": "d35a1582f3a867289fe56f085eb0c294ae7f6f2e2e98088e0667160524c340d2",
+      "export_sha256": "d35a1582f3a867289fe56f085eb0c294ae7f6f2e2e98088e0667160524c340d2",
+      "portable_path_export": true
+    },
+    "results/review2026/reference_phase/phase_5_5s.json": {
+      "source_path": "work/review2026/reference_phase/results/phase_5_5s.json",
+      "source_sha256": "d2ae8c1393b2d0f2963ee40ab00928ed2ddd68b4e7e2616a22fcb7b8e80e9c99",
+      "export_sha256": "d2ae8c1393b2d0f2963ee40ab00928ed2ddd68b4e7e2616a22fcb7b8e80e9c99",
+      "portable_path_export": true
+    },
+    "results/review2026/reference_phase/phase_6_5s.json": {
+      "source_path": "work/review2026/reference_phase/results/phase_6_5s.json",
+      "source_sha256": "3238046ac7e67131b79af78e35e87665561a8f086cdd3471f39604d5f7ac423e",
+      "export_sha256": "3238046ac7e67131b79af78e35e87665561a8f086cdd3471f39604d5f7ac423e",
+      "portable_path_export": true
+    },
+    "results/review2026/reference_phase/phase_7_5s.json": {
+      "source_path": "work/review2026/reference_phase/results/phase_7_5s.json",
+      "source_sha256": "b5b6c5b51121d1225fb8d7ed4065661e8d645a15d86489db0d8daed748c2baeb",
+      "export_sha256": "b5b6c5b51121d1225fb8d7ed4065661e8d645a15d86489db0d8daed748c2baeb",
+      "portable_path_export": true
+    },
+    "results/review2026/reference_phase/plan.json": {
+      "source_path": "work/review2026/reference_phase/results/plan.json",
+      "source_sha256": "a9ee566272abbf1c3ddcdfc076e1a4e029de87f859b592b659c365f632ae959f",
+      "export_sha256": "71c25c49af8e4f4de65db13575a1d0a7b0787e459eb40b842dbbc0adfd50b714",
+      "portable_path_export": true
+    },
+    "results/review2026/reference_phase/reference_residue_counts.json": {
+      "source_path": "work/review2026/reference_phase/results/reference_residue_counts.json",
+      "source_sha256": "60a206aedf166d7b39e0f0f32773aba7964a72bbc9249bb6f682a352c96793b8",
+      "export_sha256": "60a206aedf166d7b39e0f0f32773aba7964a72bbc9249bb6f682a352c96793b8",
+      "portable_path_export": true
+    },
+    "results/review2026/reference_phase/strict_validation.json": {
+      "source_path": "work/review2026/reference_phase/results/strict_validation.json",
+      "source_sha256": "668a768f46e0c51d48dd8ab04e6d23f6ca3609d7bf9df39510537ba8e66409c5",
+      "export_sha256": "668a768f46e0c51d48dd8ab04e6d23f6ca3609d7bf9df39510537ba8e66409c5",
+      "portable_path_export": true
+    },
+    "results/review2026/reference_phase/summary.json": {
+      "source_path": "work/review2026/reference_phase/results/summary.json",
+      "source_sha256": "b5ae6d5b3df8f655711c28c90f284c7b6018f615e870065fe3795e4519a05743",
+      "export_sha256": "b5ae6d5b3df8f655711c28c90f284c7b6018f615e870065fe3795e4519a05743",
+      "portable_path_export": true
+    },
+    "results/review2026/unknown_waveform/REPORT.md": {
+      "source_path": "work/review2026/unknown_waveform/REPORT.md",
+      "source_sha256": "631decb351647c4ecc4fca9eee39795931db6dfa35c4207e8200a7971cbbd83e",
+      "export_sha256": "631decb351647c4ecc4fca9eee39795931db6dfa35c4207e8200a7971cbbd83e",
+      "portable_path_export": false
+    },
+    "results/review2026/unknown_waveform/plan.json": {
+      "source_path": "work/review2026/unknown_waveform/results/plan.json",
+      "source_sha256": "6ad83fae0426d7414a411d513f41fb4b7d36b9000d325e139ea071805710420e",
+      "export_sha256": "845ce15c9212d36b6b777c017fa5828bd19fe67e843a782fcc2a8c2abfa4b920",
+      "portable_path_export": true
+    },
+    "results/review2026/unknown_waveform/strict_validation.json": {
+      "source_path": "work/review2026/unknown_waveform/results/strict_validation.json",
+      "source_sha256": "7a0db3fa609fbe3e52701cb032ec7bfe6ea516463480283e0f3b92ffccbd18b6",
+      "export_sha256": "7a0db3fa609fbe3e52701cb032ec7bfe6ea516463480283e0f3b92ffccbd18b6",
+      "portable_path_export": true
+    },
+    "results/review2026/unknown_waveform/summary.json": {
+      "source_path": "work/review2026/unknown_waveform/results/summary.json",
+      "source_sha256": "73134b84301a617cf80af8a5d38aceb434f9d749322b0281310cb1f3ba66b3d7",
+      "export_sha256": "577fe6f6645ee42669d19b942136e8f263fb722e6dbe616a75d4010df2331f2d",
+      "portable_path_export": true
+    },
     "results/secondary_source_sensitivity.json": {
       "source_path": "work/benchmarks/secondary_source_sensitivity.json",
       "source_sha256": "1c9844ead3081a7db4ec819e589d69d23088251719ac0a715dbd317830bc5e39",
@@ -2467,7 +2713,9 @@
     "audio/PCM/embedding/raw-feature caches",
     "indexes/snapshots/runtime binaries",
     "private Drive files/TV captures",
-    "obsolete Peak v1 compatibility stats and old timing table"
+    "obsolete Peak v1 compatibility stats and old timing table",
+    "manuscript source/PDF and private review/Drive presentations"
   ],
-  "hash_policy": "Original execution hashes remain provenance; export hashes bind path-sanitized JSON. Verifier maps recorded protocol hashes through this ledger."
+  "hash_policy": "Original execution hashes remain provenance; export hashes bind path-sanitized JSON. Verifier maps recorded protocol hashes through this ledger.",
+  "public_release_scope": "Existing personal code/results repository; no new anonymous account/repository; standalone streaming figure retained."
 }

@@ -16,6 +16,10 @@ Matched density controls do not establish an ACR storage–quality frontier: NMF
 
 Real SD-RR speaker-to-phone recordings expose a transfer boundary. Frozen ACR identifies **72/1,488** ten-second recordings; **39/1,488** also meet the 0.1-second localization tolerance. Its separately labelled five-second session-open test identifies **19/141** known clips. A post-hoc query gain diagnostic, fitted only on calibration pairs, raises that to **34/141** and accepted correct matches from **3 to 11/141**, while accepting **10/168** unknown clips. This limited improvement is not robust acoustic recognition. The native closed-set study has no unknown-content population or invented false-accept rate; the open test contains only three held-out recording sessions.
 
+The added review diagnostics retain every prescribed condition and reference-grid phase. Synthetic leading silence or initial truncation keeps aggregate candidate counts close to the original result, while accepted wrong known IDs rise from 2 to 4–6 and observed unknown accepts can rise from 1 to 2/71. All eight factor8 reference residues produce 445–449 correct candidates and 400–410 accepted correct matches; no favorable phase is selected. A full 543-query annotation partition exposes only 5/78 candidate matches in the pitch-altered stratum, with other distortions allowed to co-occur. These are scoped diagnostics rather than replacement headline results or causal attack claims.
+
+Every one of the 16 previously accepted clean source-ID negatives in the expanded q4 test also receives the existing fixed waveform-overlap audit. Fifteen have complete five-second support; none reaches the 0.95 absolute-Pearson flag threshold, with maximum 0.153449. One unsupported reference crop is retained. The original 16/4000 count and labels stay unchanged, and absence of strong waveform overlap cannot prove distinct recording or composition identity. See [the review protocol and commands](outputs/acr_repro/ADVERSARIAL_REVIEW.md).
+
 Read [the experiment and evidence guide](EXPERIMENTS.md), [algorithm and parameter provenance](outputs/acr_repro/ALGORITHM.md), [compact store](outputs/acr_repro/COMPACT_STORE.md), and [SD-RR protocol](outputs/acr_repro/SDRR.md) for denominators, calibration scope, confidence intervals and limitations.
 
 ## Quick checks
@@ -34,6 +38,7 @@ The 27 unit tests and separate acoustic end-to-end oracle check frontend agreeme
 ```sh
 work/venv/bin/python outputs/acr_repro/verify_v2_evidence.py \
   --check results/v2_evidence_summary.json
+work/venv/bin/python outputs/acr_repro/verify_v3_evidence.py
 work/venv/bin/python outputs/acr_repro/check_paper_numbers.py \
   --check results/paper_numbers_v2.json
 work/venv/bin/python outputs/acr_repro/derive_matrix_summary.py --check
@@ -41,7 +46,7 @@ work/venv/bin/python outputs/acr_repro/derive_v2_profile_summary.py \
   --check results/profiling/paper_timing_final.json
 ```
 
-`SHA256SUMS.json` binds all released files except itself. `EXPORT_PROVENANCE.json` preserves original execution-byte hashes separately from hashes of path-sanitized exports. The numerical verifier checks both recorded protocol identities and exported bytes.
+`SHA256SUMS.json` binds all released files except itself. `EXPORT_PROVENANCE.json` preserves original execution-byte hashes separately from hashes of path-sanitized exports. The numerical verifiers check both recorded protocol identities and exported bytes. The V3 checker rederives every stress/phase prediction, all strata intervals and resource-replica ranges, and binds the complete frozen 16 waveform roster to the original gate and outcomes. It inspects retained audit evidence without claiming to decode audio or reread feature caches.
 
 ## Use the encoder
 
@@ -74,7 +79,7 @@ Use sufficiently long calibration audio to fit the requested PCA dimension. A re
 
 ## Reproduce experiments
 
-The [source experiment guide](outputs/acr_repro/README.md) covers public acquisition, source splitting, exact search, calibration-selected IVF/query sampling, the expanded absent-source study, speech perturbations and baseline execution. The [V2 guide](EXPERIMENTS.md) adds density controls, streaming enrollment, real acoustic recordings, the channel diagnostic and corrected clocks. Upstream revisions and checkpoint hashes are recorded. Keep the existing `outputs/acr_repro/` layout: script defaults locate the repository root from it.
+The [source experiment guide](outputs/acr_repro/README.md) covers public acquisition, source splitting, exact search, calibration-selected IVF/query sampling, the expanded absent-source study, speech perturbations and baseline execution. The [experiment guide](EXPERIMENTS.md) adds density controls, streaming enrollment, real acoustic recordings, the channel diagnostic and corrected clocks. Upstream revisions and checkpoint hashes are recorded. Keep the existing `outputs/acr_repro/` layout: script defaults locate the repository root from it.
 
 ```text
 outputs/acr_repro/    Encoder, evaluation scripts, baseline adapters, tests, guides

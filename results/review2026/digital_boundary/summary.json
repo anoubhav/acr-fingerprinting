@@ -1,0 +1,1440 @@
+{
+  "plan_sha256": "85187040d2780b4a324cfe7bd706bc6b8e3d85bd8589934751cc0cc25c365cc1",
+  "all4_conditions_complete": true,
+  "all835_fresh_unchanged_exact_parity": true,
+  "gate_retuned": false,
+  "rows": [
+    {
+      "condition": {
+        "name": "unchanged_5s",
+        "lead_s": 0.0,
+        "trim_s": 0.0,
+        "output_s": 5.0
+      },
+      "frozen_threshold": 0.05657886749843364,
+      "roles": {
+        "calibration_known": {
+          "n": 147,
+          "candidate_correct": 120,
+          "candidate_localized_2s": 115,
+          "accepted_correct": 109,
+          "accepted_localized_2s": 107,
+          "accepted_wrong_id": 2,
+          "accepted": 111,
+          "no_candidate": 0,
+          "empty_features": 0,
+          "diagnostic_0p1s_candidate": 25,
+          "diagnostic_0p1s_accepted": 24
+        },
+        "calibration_unknown": {
+          "n": 74,
+          "candidate_correct": 0,
+          "candidate_localized_2s": 0,
+          "accepted_correct": 0,
+          "accepted_localized_2s": 0,
+          "accepted_wrong_id": 0,
+          "accepted": 0,
+          "no_candidate": 0,
+          "empty_features": 0,
+          "diagnostic_0p1s_candidate": 0,
+          "diagnostic_0p1s_accepted": 0
+        },
+        "test_known": {
+          "n": 543,
+          "candidate_correct": 446,
+          "candidate_localized_2s": 429,
+          "accepted_correct": 401,
+          "accepted_localized_2s": 392,
+          "accepted_wrong_id": 2,
+          "accepted": 403,
+          "no_candidate": 0,
+          "empty_features": 0,
+          "diagnostic_0p1s_candidate": 74,
+          "diagnostic_0p1s_accepted": 70
+        },
+        "test_unknown": {
+          "n": 71,
+          "candidate_correct": 0,
+          "candidate_localized_2s": 0,
+          "accepted_correct": 0,
+          "accepted_localized_2s": 0,
+          "accepted_wrong_id": 1,
+          "accepted": 1,
+          "no_candidate": 0,
+          "empty_features": 0,
+          "diagnostic_0p1s_candidate": 0,
+          "diagnostic_0p1s_accepted": 0
+        }
+      },
+      "test_known_uncertainty": {
+        "correct_reference": {
+          "source_cluster": {
+            "estimate": 0.8213627992633518,
+            "ci95": [
+              0.7881040892193308,
+              0.8521949995959813
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "successes": 446
+          },
+          "source_montage_crossed": {
+            "estimate": 0.8213627992633518,
+            "ci95": [
+              0.7597600339933206,
+              0.8752170412039413
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "n_montage_clusters": 207,
+            "successes": 446,
+            "resampling": "source IDs and montage IDs independently; product weights"
+          }
+        },
+        "localized_correct": {
+          "source_cluster": {
+            "estimate": 0.7900552486187845,
+            "ci95": [
+              0.7554642026589238,
+              0.8234282645129698
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "successes": 429
+          },
+          "source_montage_crossed": {
+            "estimate": 0.7900552486187845,
+            "ci95": [
+              0.7246549378357823,
+              0.8487750064598605
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "n_montage_clusters": 207,
+            "successes": 429,
+            "resampling": "source IDs and montage IDs independently; product weights"
+          }
+        },
+        "accepted_correct": {
+          "source_cluster": {
+            "estimate": 0.7384898710865562,
+            "ci95": [
+              0.7,
+              0.7731588323342774
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "successes": 401
+          },
+          "source_montage_crossed": {
+            "estimate": 0.7384898710865562,
+            "ci95": [
+              0.6717119012264203,
+              0.7959594675636211
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "n_montage_clusters": 207,
+            "successes": 401,
+            "resampling": "source IDs and montage IDs independently; product weights"
+          }
+        },
+        "accepted_localized": {
+          "source_cluster": {
+            "estimate": 0.7219152854511971,
+            "ci95": [
+              0.6831400742115028,
+              0.7591240875912408
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "successes": 392
+          },
+          "source_montage_crossed": {
+            "estimate": 0.7219152854511971,
+            "ci95": [
+              0.6566215517646505,
+              0.7823799655927431
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "n_montage_clusters": 207,
+            "successes": 392,
+            "resampling": "source IDs and montage IDs independently; product weights"
+          }
+        },
+        "accepted_wrong": {
+          "source_cluster": {
+            "estimate": 0.003683241252302026,
+            "ci95": [
+              0.0,
+              0.009259259259259259
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "successes": 2
+          },
+          "source_montage_crossed": {
+            "estimate": 0.003683241252302026,
+            "ci95": [
+              0.0,
+              0.017241379310344827
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "n_montage_clusters": 207,
+            "successes": 2,
+            "resampling": "source IDs and montage IDs independently; product weights"
+          }
+        }
+      },
+      "paired_difference_vs_unchanged": {
+        "correct_reference": {
+          "source_cluster": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "successes": 0
+          },
+          "source_montage_crossed": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "n_montage_clusters": 207,
+            "successes": 0,
+            "resampling": "source IDs and montage IDs independently; product weights"
+          }
+        },
+        "localized_correct": {
+          "source_cluster": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "successes": 0
+          },
+          "source_montage_crossed": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "n_montage_clusters": 207,
+            "successes": 0,
+            "resampling": "source IDs and montage IDs independently; product weights"
+          }
+        },
+        "accepted_correct": {
+          "source_cluster": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "successes": 0
+          },
+          "source_montage_crossed": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "n_montage_clusters": 207,
+            "successes": 0,
+            "resampling": "source IDs and montage IDs independently; product weights"
+          }
+        },
+        "accepted_localized": {
+          "source_cluster": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "successes": 0
+          },
+          "source_montage_crossed": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "n_montage_clusters": 207,
+            "successes": 0,
+            "resampling": "source IDs and montage IDs independently; product weights"
+          }
+        },
+        "accepted_wrong": {
+          "source_cluster": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "successes": 0
+          },
+          "source_montage_crossed": {
+            "estimate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "n_montage_clusters": 207,
+            "successes": 0,
+            "resampling": "source IDs and montage IDs independently; product weights"
+          }
+        }
+      },
+      "unknown_false_accepts": {
+        "n": 71,
+        "false_accepts": 1,
+        "wilson_ci95": [
+          0.002490603270544213,
+          0.07556050520249005
+        ],
+        "source_cluster": {
+          "estimate": 0.014084507042253521,
+          "ci95": [
+            0.0,
+            0.04225352112676056
+          ],
+          "n_queries": 71,
+          "n_source_clusters": 71,
+          "successes": 1
+        },
+        "source_montage_crossed": {
+          "estimate": 0.014084507042253521,
+          "ci95": [
+            0.0,
+            0.07142857142857142
+          ],
+          "n_queries": 71,
+          "n_source_clusters": 71,
+          "n_montage_clusters": 59,
+          "successes": 1,
+          "resampling": "source IDs and montage IDs independently; product weights"
+        },
+        "paired_source_montage_crossed": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 71,
+          "n_source_clusters": 71,
+          "n_montage_clusters": 59,
+          "successes": 0,
+          "resampling": "source IDs and montage IDs independently; product weights"
+        }
+      },
+      "candidate_ids_changed_all835": 0,
+      "candidate_ids_changed_test_known": 0,
+      "query_fingerprints_test_known": {
+        "min": 26,
+        "median": 47.0,
+        "max": 47
+      },
+      "result_sha256": "84e037b554bfde41392bd2fab52441e811bd5720428d471d6b53ac345a5a2374"
+    },
+    {
+      "condition": {
+        "name": "leading_0p5s_5s",
+        "lead_s": 0.5,
+        "trim_s": 0.0,
+        "output_s": 5.0
+      },
+      "frozen_threshold": 0.05657886749843364,
+      "roles": {
+        "calibration_known": {
+          "n": 147,
+          "candidate_correct": 122,
+          "candidate_localized_2s": 118,
+          "accepted_correct": 109,
+          "accepted_localized_2s": 107,
+          "accepted_wrong_id": 3,
+          "accepted": 112,
+          "no_candidate": 0,
+          "empty_features": 0,
+          "diagnostic_0p1s_candidate": 21,
+          "diagnostic_0p1s_accepted": 19
+        },
+        "calibration_unknown": {
+          "n": 74,
+          "candidate_correct": 0,
+          "candidate_localized_2s": 0,
+          "accepted_correct": 0,
+          "accepted_localized_2s": 0,
+          "accepted_wrong_id": 1,
+          "accepted": 1,
+          "no_candidate": 0,
+          "empty_features": 0,
+          "diagnostic_0p1s_candidate": 0,
+          "diagnostic_0p1s_accepted": 0
+        },
+        "test_known": {
+          "n": 543,
+          "candidate_correct": 444,
+          "candidate_localized_2s": 423,
+          "accepted_correct": 400,
+          "accepted_localized_2s": 386,
+          "accepted_wrong_id": 4,
+          "accepted": 404,
+          "no_candidate": 0,
+          "empty_features": 0,
+          "diagnostic_0p1s_candidate": 75,
+          "diagnostic_0p1s_accepted": 71
+        },
+        "test_unknown": {
+          "n": 71,
+          "candidate_correct": 0,
+          "candidate_localized_2s": 0,
+          "accepted_correct": 0,
+          "accepted_localized_2s": 0,
+          "accepted_wrong_id": 1,
+          "accepted": 1,
+          "no_candidate": 0,
+          "empty_features": 0,
+          "diagnostic_0p1s_candidate": 0,
+          "diagnostic_0p1s_accepted": 0
+        }
+      },
+      "test_known_uncertainty": {
+        "correct_reference": {
+          "source_cluster": {
+            "estimate": 0.8176795580110497,
+            "ci95": [
+              0.7847802355497699,
+              0.8490977561458505
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "successes": 444
+          },
+          "source_montage_crossed": {
+            "estimate": 0.8176795580110497,
+            "ci95": [
+              0.7559274264888007,
+              0.8721146877031664
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "n_montage_clusters": 207,
+            "successes": 444,
+            "resampling": "source IDs and montage IDs independently; product weights"
+          }
+        },
+        "localized_correct": {
+          "source_cluster": {
+            "estimate": 0.7790055248618785,
+            "ci95": [
+              0.7449531957469179,
+              0.8128440366972477
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "successes": 423
+          },
+          "source_montage_crossed": {
+            "estimate": 0.7790055248618785,
+            "ci95": [
+              0.7152555066827437,
+              0.8385380971667048
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "n_montage_clusters": 207,
+            "successes": 423,
+            "resampling": "source IDs and montage IDs independently; product weights"
+          }
+        },
+        "accepted_correct": {
+          "source_cluster": {
+            "estimate": 0.7366482504604052,
+            "ci95": [
+              0.6983240223463687,
+              0.770949720670391
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "successes": 400
+          },
+          "source_montage_crossed": {
+            "estimate": 0.7366482504604052,
+            "ci95": [
+              0.6710727190064846,
+              0.7943374880914575
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "n_montage_clusters": 207,
+            "successes": 400,
+            "resampling": "source IDs and montage IDs independently; product weights"
+          }
+        },
+        "accepted_localized": {
+          "source_cluster": {
+            "estimate": 0.7108655616942909,
+            "ci95": [
+              0.6722524829298573,
+              0.7467995634528153
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "successes": 386
+          },
+          "source_montage_crossed": {
+            "estimate": 0.7108655616942909,
+            "ci95": [
+              0.6417531604824508,
+              0.7720594730825192
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "n_montage_clusters": 207,
+            "successes": 386,
+            "resampling": "source IDs and montage IDs independently; product weights"
+          }
+        },
+        "accepted_wrong": {
+          "source_cluster": {
+            "estimate": 0.007366482504604052,
+            "ci95": [
+              0.0018148820326678765,
+              0.014842300556586271
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "successes": 4
+          },
+          "source_montage_crossed": {
+            "estimate": 0.007366482504604052,
+            "ci95": [
+              0.0,
+              0.02329891788233682
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "n_montage_clusters": 207,
+            "successes": 4,
+            "resampling": "source IDs and montage IDs independently; product weights"
+          }
+        }
+      },
+      "paired_difference_vs_unchanged": {
+        "correct_reference": {
+          "source_cluster": {
+            "estimate": -0.003683241252302026,
+            "ci95": [
+              -0.014705882352941176,
+              0.007259858109222898
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "successes": -2
+          },
+          "source_montage_crossed": {
+            "estimate": -0.003683241252302026,
+            "ci95": [
+              -0.023012778897734648,
+              0.013889579191517556
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "n_montage_clusters": 207,
+            "successes": -2,
+            "resampling": "source IDs and montage IDs independently; product weights"
+          }
+        },
+        "localized_correct": {
+          "source_cluster": {
+            "estimate": -0.011049723756906077,
+            "ci95": [
+              -0.02411873840445269,
+              0.0018150473224704865
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "successes": -6
+          },
+          "source_montage_crossed": {
+            "estimate": -0.011049723756906077,
+            "ci95": [
+              -0.036366651590532185,
+              0.009380863039399626
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "n_montage_clusters": 207,
+            "successes": -6,
+            "resampling": "source IDs and montage IDs independently; product weights"
+          }
+        },
+        "accepted_correct": {
+          "source_cluster": {
+            "estimate": -0.001841620626151013,
+            "ci95": [
+              -0.007491340711328884,
+              0.0037105751391465678
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "successes": -1
+          },
+          "source_montage_crossed": {
+            "estimate": -0.001841620626151013,
+            "ci95": [
+              -0.014391753384950842,
+              0.009193308005020178
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "n_montage_clusters": 207,
+            "successes": -1,
+            "resampling": "source IDs and montage IDs independently; product weights"
+          }
+        },
+        "accepted_localized": {
+          "source_cluster": {
+            "estimate": -0.011049723756906077,
+            "ci95": [
+              -0.022058823529411766,
+              -0.001838235294117647
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "successes": -6
+          },
+          "source_montage_crossed": {
+            "estimate": -0.011049723756906077,
+            "ci95": [
+              -0.030245746691871456,
+              0.0038684719535783366
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "n_montage_clusters": 207,
+            "successes": -6,
+            "resampling": "source IDs and montage IDs independently; product weights"
+          }
+        },
+        "accepted_wrong": {
+          "source_cluster": {
+            "estimate": 0.003683241252302026,
+            "ci95": [
+              0.0,
+              0.00929411296407828
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "successes": 2
+          },
+          "source_montage_crossed": {
+            "estimate": 0.003683241252302026,
+            "ci95": [
+              0.0,
+              0.015932042970043997
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "n_montage_clusters": 207,
+            "successes": 2,
+            "resampling": "source IDs and montage IDs independently; product weights"
+          }
+        }
+      },
+      "unknown_false_accepts": {
+        "n": 71,
+        "false_accepts": 1,
+        "wilson_ci95": [
+          0.002490603270544213,
+          0.07556050520249005
+        ],
+        "source_cluster": {
+          "estimate": 0.014084507042253521,
+          "ci95": [
+            0.0,
+            0.04225352112676056
+          ],
+          "n_queries": 71,
+          "n_source_clusters": 71,
+          "successes": 1
+        },
+        "source_montage_crossed": {
+          "estimate": 0.014084507042253521,
+          "ci95": [
+            0.0,
+            0.07142857142857142
+          ],
+          "n_queries": 71,
+          "n_source_clusters": 71,
+          "n_montage_clusters": 59,
+          "successes": 1,
+          "resampling": "source IDs and montage IDs independently; product weights"
+        },
+        "paired_source_montage_crossed": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 71,
+          "n_source_clusters": 71,
+          "n_montage_clusters": 59,
+          "successes": 0,
+          "resampling": "source IDs and montage IDs independently; product weights"
+        }
+      },
+      "candidate_ids_changed_all835": 108,
+      "candidate_ids_changed_test_known": 41,
+      "query_fingerprints_test_known": {
+        "min": 26,
+        "median": 47.0,
+        "max": 47
+      },
+      "result_sha256": "5337223210ba9a831ab51f3538082a69760b893568e18c645b98ec79529a4eeb"
+    },
+    {
+      "condition": {
+        "name": "leading_1s_5s",
+        "lead_s": 1.0,
+        "trim_s": 0.0,
+        "output_s": 5.0
+      },
+      "frozen_threshold": 0.05657886749843364,
+      "roles": {
+        "calibration_known": {
+          "n": 147,
+          "candidate_correct": 120,
+          "candidate_localized_2s": 118,
+          "accepted_correct": 109,
+          "accepted_localized_2s": 108,
+          "accepted_wrong_id": 2,
+          "accepted": 111,
+          "no_candidate": 0,
+          "empty_features": 0,
+          "diagnostic_0p1s_candidate": 27,
+          "diagnostic_0p1s_accepted": 25
+        },
+        "calibration_unknown": {
+          "n": 74,
+          "candidate_correct": 0,
+          "candidate_localized_2s": 0,
+          "accepted_correct": 0,
+          "accepted_localized_2s": 0,
+          "accepted_wrong_id": 2,
+          "accepted": 2,
+          "no_candidate": 0,
+          "empty_features": 0,
+          "diagnostic_0p1s_candidate": 0,
+          "diagnostic_0p1s_accepted": 0
+        },
+        "test_known": {
+          "n": 543,
+          "candidate_correct": 442,
+          "candidate_localized_2s": 424,
+          "accepted_correct": 396,
+          "accepted_localized_2s": 388,
+          "accepted_wrong_id": 6,
+          "accepted": 402,
+          "no_candidate": 0,
+          "empty_features": 0,
+          "diagnostic_0p1s_candidate": 75,
+          "diagnostic_0p1s_accepted": 71
+        },
+        "test_unknown": {
+          "n": 71,
+          "candidate_correct": 0,
+          "candidate_localized_2s": 0,
+          "accepted_correct": 0,
+          "accepted_localized_2s": 0,
+          "accepted_wrong_id": 2,
+          "accepted": 2,
+          "no_candidate": 0,
+          "empty_features": 0,
+          "diagnostic_0p1s_candidate": 0,
+          "diagnostic_0p1s_accepted": 0
+        }
+      },
+      "test_known_uncertainty": {
+        "correct_reference": {
+          "source_cluster": {
+            "estimate": 0.8139963167587477,
+            "ci95": [
+              0.7802096985583225,
+              0.8454450516582344
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "successes": 442
+          },
+          "source_montage_crossed": {
+            "estimate": 0.8139963167587477,
+            "ci95": [
+              0.7525345176591438,
+              0.868071857977667
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "n_montage_clusters": 207,
+            "successes": 442,
+            "resampling": "source IDs and montage IDs independently; product weights"
+          }
+        },
+        "localized_correct": {
+          "source_cluster": {
+            "estimate": 0.7808471454880295,
+            "ci95": [
+              0.7463483222573265,
+              0.8153600315710653
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "successes": 424
+          },
+          "source_montage_crossed": {
+            "estimate": 0.7808471454880295,
+            "ci95": [
+              0.71646862379621,
+              0.8398416739642468
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "n_montage_clusters": 207,
+            "successes": 424,
+            "resampling": "source IDs and montage IDs independently; product weights"
+          }
+        },
+        "accepted_correct": {
+          "source_cluster": {
+            "estimate": 0.7292817679558011,
+            "ci95": [
+              0.6920288174558361,
+              0.7636388611388611
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "successes": 396
+          },
+          "source_montage_crossed": {
+            "estimate": 0.7292817679558011,
+            "ci95": [
+              0.664758913678065,
+              0.7900587693640992
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "n_montage_clusters": 207,
+            "successes": 396,
+            "resampling": "source IDs and montage IDs independently; product weights"
+          }
+        },
+        "accepted_localized": {
+          "source_cluster": {
+            "estimate": 0.714548802946593,
+            "ci95": [
+              0.6771096147877367,
+              0.7514019688903228
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "successes": 388
+          },
+          "source_montage_crossed": {
+            "estimate": 0.714548802946593,
+            "ci95": [
+              0.6474676936113549,
+              0.7743106617647059
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "n_montage_clusters": 207,
+            "successes": 388,
+            "resampling": "source IDs and montage IDs independently; product weights"
+          }
+        },
+        "accepted_wrong": {
+          "source_cluster": {
+            "estimate": 0.011049723756906077,
+            "ci95": [
+              0.003656307129798903,
+              0.020370370370370372
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "successes": 6
+          },
+          "source_montage_crossed": {
+            "estimate": 0.011049723756906077,
+            "ci95": [
+              0.0,
+              0.029729131156364913
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "n_montage_clusters": 207,
+            "successes": 6,
+            "resampling": "source IDs and montage IDs independently; product weights"
+          }
+        }
+      },
+      "paired_difference_vs_unchanged": {
+        "correct_reference": {
+          "source_cluster": {
+            "estimate": -0.007366482504604052,
+            "ci95": [
+              -0.018518518518518517,
+              0.0037243947858473
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "successes": -4
+          },
+          "source_montage_crossed": {
+            "estimate": -0.007366482504604052,
+            "ci95": [
+              -0.030192815552515195,
+              0.012801222154512808
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "n_montage_clusters": 207,
+            "successes": -4,
+            "resampling": "source IDs and montage IDs independently; product weights"
+          }
+        },
+        "localized_correct": {
+          "source_cluster": {
+            "estimate": -0.009208103130755065,
+            "ci95": [
+              -0.02359453885497443,
+              0.0055147058823529415
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "successes": -5
+          },
+          "source_montage_crossed": {
+            "estimate": -0.009208103130755065,
+            "ci95": [
+              -0.03626049445144844,
+              0.014011122376870369
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "n_montage_clusters": 207,
+            "successes": -5,
+            "resampling": "source IDs and montage IDs independently; product weights"
+          }
+        },
+        "accepted_correct": {
+          "source_cluster": {
+            "estimate": -0.009208103130755065,
+            "ci95": [
+              -0.020333658519887724,
+              0.001838235294117647
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "successes": -5
+          },
+          "source_montage_crossed": {
+            "estimate": -0.009208103130755065,
+            "ci95": [
+              -0.029963878090775158,
+              0.007407407407407408
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "n_montage_clusters": 207,
+            "successes": -5,
+            "resampling": "source IDs and montage IDs independently; product weights"
+          }
+        },
+        "accepted_localized": {
+          "source_cluster": {
+            "estimate": -0.007366482504604052,
+            "ci95": [
+              -0.020446096654275093,
+              0.00556612134546282
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "successes": -4
+          },
+          "source_montage_crossed": {
+            "estimate": -0.007366482504604052,
+            "ci95": [
+              -0.03276106896274888,
+              0.014954439252336443
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "n_montage_clusters": 207,
+            "successes": -4,
+            "resampling": "source IDs and montage IDs independently; product weights"
+          }
+        },
+        "accepted_wrong": {
+          "source_cluster": {
+            "estimate": 0.007366482504604052,
+            "ci95": [
+              0.0018248175182481751,
+              0.01627708367581784
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "successes": 4
+          },
+          "source_montage_crossed": {
+            "estimate": 0.007366482504604052,
+            "ci95": [
+              0.0,
+              0.02321421851598189
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "n_montage_clusters": 207,
+            "successes": 4,
+            "resampling": "source IDs and montage IDs independently; product weights"
+          }
+        }
+      },
+      "unknown_false_accepts": {
+        "n": 71,
+        "false_accepts": 2,
+        "wilson_ci95": [
+          0.007759263582683522,
+          0.0970150011664947
+        ],
+        "source_cluster": {
+          "estimate": 0.028169014084507043,
+          "ci95": [
+            0.0,
+            0.07042253521126761
+          ],
+          "n_queries": 71,
+          "n_source_clusters": 71,
+          "successes": 2
+        },
+        "source_montage_crossed": {
+          "estimate": 0.028169014084507043,
+          "ci95": [
+            0.0,
+            0.10811624877889935
+          ],
+          "n_queries": 71,
+          "n_source_clusters": 71,
+          "n_montage_clusters": 59,
+          "successes": 2,
+          "resampling": "source IDs and montage IDs independently; product weights"
+        },
+        "paired_source_montage_crossed": {
+          "estimate": 0.014084507042253521,
+          "ci95": [
+            0.0,
+            0.08823529411764706
+          ],
+          "n_queries": 71,
+          "n_source_clusters": 71,
+          "n_montage_clusters": 59,
+          "successes": 1,
+          "resampling": "source IDs and montage IDs independently; product weights"
+        }
+      },
+      "candidate_ids_changed_all835": 126,
+      "candidate_ids_changed_test_known": 52,
+      "query_fingerprints_test_known": {
+        "min": 22,
+        "median": 44.0,
+        "max": 44
+      },
+      "result_sha256": "3887dd63be2db3044f69955622887a014fff8a951f42735a147a47e9a08db197"
+    },
+    {
+      "condition": {
+        "name": "trim_1s_4s",
+        "lead_s": 0.0,
+        "trim_s": 1.0,
+        "output_s": 4.0
+      },
+      "frozen_threshold": 0.05657886749843364,
+      "roles": {
+        "calibration_known": {
+          "n": 147,
+          "candidate_correct": 119,
+          "candidate_localized_2s": 113,
+          "accepted_correct": 109,
+          "accepted_localized_2s": 106,
+          "accepted_wrong_id": 2,
+          "accepted": 111,
+          "no_candidate": 0,
+          "empty_features": 0,
+          "diagnostic_0p1s_candidate": 26,
+          "diagnostic_0p1s_accepted": 26
+        },
+        "calibration_unknown": {
+          "n": 74,
+          "candidate_correct": 0,
+          "candidate_localized_2s": 0,
+          "accepted_correct": 0,
+          "accepted_localized_2s": 0,
+          "accepted_wrong_id": 3,
+          "accepted": 3,
+          "no_candidate": 0,
+          "empty_features": 0,
+          "diagnostic_0p1s_candidate": 0,
+          "diagnostic_0p1s_accepted": 0
+        },
+        "test_known": {
+          "n": 543,
+          "candidate_correct": 444,
+          "candidate_localized_2s": 423,
+          "accepted_correct": 403,
+          "accepted_localized_2s": 392,
+          "accepted_wrong_id": 5,
+          "accepted": 408,
+          "no_candidate": 0,
+          "empty_features": 0,
+          "diagnostic_0p1s_candidate": 65,
+          "diagnostic_0p1s_accepted": 60
+        },
+        "test_unknown": {
+          "n": 71,
+          "candidate_correct": 0,
+          "candidate_localized_2s": 0,
+          "accepted_correct": 0,
+          "accepted_localized_2s": 0,
+          "accepted_wrong_id": 2,
+          "accepted": 2,
+          "no_candidate": 0,
+          "empty_features": 0,
+          "diagnostic_0p1s_candidate": 0,
+          "diagnostic_0p1s_accepted": 0
+        }
+      },
+      "test_known_uncertainty": {
+        "correct_reference": {
+          "source_cluster": {
+            "estimate": 0.8176795580110497,
+            "ci95": [
+              0.7838827838827839,
+              0.849444851812694
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "successes": 444
+          },
+          "source_montage_crossed": {
+            "estimate": 0.8176795580110497,
+            "ci95": [
+              0.75719908687994,
+              0.8726953801796082
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "n_montage_clusters": 207,
+            "successes": 444,
+            "resampling": "source IDs and montage IDs independently; product weights"
+          }
+        },
+        "localized_correct": {
+          "source_cluster": {
+            "estimate": 0.7790055248618785,
+            "ci95": [
+              0.7435897435897436,
+              0.812962962962963
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "successes": 423
+          },
+          "source_montage_crossed": {
+            "estimate": 0.7790055248618785,
+            "ci95": [
+              0.7150921167941364,
+              0.8352961780158649
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "n_montage_clusters": 207,
+            "successes": 423,
+            "resampling": "source IDs and montage IDs independently; product weights"
+          }
+        },
+        "accepted_correct": {
+          "source_cluster": {
+            "estimate": 0.7421731123388582,
+            "ci95": [
+              0.704458931430277,
+              0.7781885397412199
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "successes": 403
+          },
+          "source_montage_crossed": {
+            "estimate": 0.7421731123388582,
+            "ci95": [
+              0.6763066640637844,
+              0.8000085324232082
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "n_montage_clusters": 207,
+            "successes": 403,
+            "resampling": "source IDs and montage IDs independently; product weights"
+          }
+        },
+        "accepted_localized": {
+          "source_cluster": {
+            "estimate": 0.7219152854511971,
+            "ci95": [
+              0.6839186691312384,
+              0.7592651195499297
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "successes": 392
+          },
+          "source_montage_crossed": {
+            "estimate": 0.7219152854511971,
+            "ci95": [
+              0.6541338435552101,
+              0.7822315976933513
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "n_montage_clusters": 207,
+            "successes": 392,
+            "resampling": "source IDs and montage IDs independently; product weights"
+          }
+        },
+        "accepted_wrong": {
+          "source_cluster": {
+            "estimate": 0.009208103130755065,
+            "ci95": [
+              0.001838235294117647,
+              0.01838319927418481
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "successes": 5
+          },
+          "source_montage_crossed": {
+            "estimate": 0.009208103130755065,
+            "ci95": [
+              0.0,
+              0.026979632510208042
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "n_montage_clusters": 207,
+            "successes": 5,
+            "resampling": "source IDs and montage IDs independently; product weights"
+          }
+        }
+      },
+      "paired_difference_vs_unchanged": {
+        "correct_reference": {
+          "source_cluster": {
+            "estimate": -0.003683241252302026,
+            "ci95": [
+              -0.015010086191087475,
+              0.007380073800738007
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "successes": -2
+          },
+          "source_montage_crossed": {
+            "estimate": -0.003683241252302026,
+            "ci95": [
+              -0.025182655432074572,
+              0.01623133707977253
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "n_montage_clusters": 207,
+            "successes": -2,
+            "resampling": "source IDs and montage IDs independently; product weights"
+          }
+        },
+        "localized_correct": {
+          "source_cluster": {
+            "estimate": -0.011049723756906077,
+            "ci95": [
+              -0.025689253912574206,
+              0.001851851851851852
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "successes": -6
+          },
+          "source_montage_crossed": {
+            "estimate": -0.011049723756906077,
+            "ci95": [
+              -0.036402582529576163,
+              0.01089028393482292
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "n_montage_clusters": 207,
+            "successes": -6,
+            "resampling": "source IDs and montage IDs independently; product weights"
+          }
+        },
+        "accepted_correct": {
+          "source_cluster": {
+            "estimate": 0.003683241252302026,
+            "ci95": [
+              -0.007407407407407408,
+              0.014842300556586271
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "successes": 2
+          },
+          "source_montage_crossed": {
+            "estimate": 0.003683241252302026,
+            "ci95": [
+              -0.015987931362598323,
+              0.024299065420560748
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "n_montage_clusters": 207,
+            "successes": 2,
+            "resampling": "source IDs and montage IDs independently; product weights"
+          }
+        },
+        "accepted_localized": {
+          "source_cluster": {
+            "estimate": 0.0,
+            "ci95": [
+              -0.012797660900951578,
+              0.012867647058823529
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "successes": 0
+          },
+          "source_montage_crossed": {
+            "estimate": 0.0,
+            "ci95": [
+              -0.021705721657307633,
+              0.02264167378870554
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "n_montage_clusters": 207,
+            "successes": 0,
+            "resampling": "source IDs and montage IDs independently; product weights"
+          }
+        },
+        "accepted_wrong": {
+          "source_cluster": {
+            "estimate": 0.0055248618784530384,
+            "ci95": [
+              0.0,
+              0.012915129151291513
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "successes": 3
+          },
+          "source_montage_crossed": {
+            "estimate": 0.0055248618784530384,
+            "ci95": [
+              0.0,
+              0.020038261356030398
+            ],
+            "n_queries": 543,
+            "n_source_clusters": 518,
+            "n_montage_clusters": 207,
+            "successes": 3,
+            "resampling": "source IDs and montage IDs independently; product weights"
+          }
+        }
+      },
+      "unknown_false_accepts": {
+        "n": 71,
+        "false_accepts": 2,
+        "wilson_ci95": [
+          0.007759263582683522,
+          0.0970150011664947
+        ],
+        "source_cluster": {
+          "estimate": 0.028169014084507043,
+          "ci95": [
+            0.0,
+            0.07042253521126761
+          ],
+          "n_queries": 71,
+          "n_source_clusters": 71,
+          "successes": 2
+        },
+        "source_montage_crossed": {
+          "estimate": 0.028169014084507043,
+          "ci95": [
+            0.0,
+            0.1095932175075175
+          ],
+          "n_queries": 71,
+          "n_source_clusters": 71,
+          "n_montage_clusters": 59,
+          "successes": 2,
+          "resampling": "source IDs and montage IDs independently; product weights"
+        },
+        "paired_source_montage_crossed": {
+          "estimate": 0.014084507042253521,
+          "ci95": [
+            0.0,
+            0.08109487038058459
+          ],
+          "n_queries": 71,
+          "n_source_clusters": 71,
+          "n_montage_clusters": 59,
+          "successes": 1,
+          "resampling": "source IDs and montage IDs independently; product weights"
+        }
+      },
+      "candidate_ids_changed_all835": 109,
+      "candidate_ids_changed_test_known": 38,
+      "query_fingerprints_test_known": {
+        "min": 16,
+        "median": 36.0,
+        "max": 36
+      },
+      "result_sha256": "bfa54d64e3447962c310906eb4d6a102aae512c1ea84ee47a3b7c5af66bcf7b5"
+    }
+  ],
+  "completed_utc": "2026-10-03T15:35:07.938935+00:00",
+  "timing_claim": false,
+  "interpretation": "Post-hoc prespecified synthetic digital-input capture stress on public PEX audio. Not actual TV capture, deployment validation, production impact, or a new acoustic benchmark.",
+  "diagnostic_caveat": "Publisher segment boundaries have integer-second annotations;0.1s is annotation-agreement sensitivity, not measured synchronization accuracy."
+}

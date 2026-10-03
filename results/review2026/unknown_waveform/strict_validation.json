@@ -1,0 +1,137 @@
+{
+  "status": "PASS",
+  "plan_sha256": "6ad83fae0426d7414a411d513f41fb4b7d36b9000d325e139ea071805710420e",
+  "summary_sha256": "73134b84301a617cf80af8a5d38aceb434f9d749322b0281310cb1f3ba66b3d7",
+  "verified_original_clean_false_accepts": 16,
+  "criterion_unchanged": true,
+  "primary_count_and_labels_unchanged": true,
+  "independent_algorithm": "NumPyFFT for full lag maxima and rolling moments; direct centered dot-product Pearson at selected lag",
+  "maximum_direct_pearson_discrepancy": 1.9567680809018384e-15,
+  "rows": [
+    {
+      "query_id": "fma_medium_unknown:110623@5s",
+      "status": "measured",
+      "numpy_fft_maximum_absolute_pearson": 0.021096690795608816,
+      "numpy_fft_refined_offset_s": 321.554875,
+      "direct_peak_signed_pearson": 0.02109669079560882,
+      "independently_checked": true
+    },
+    {
+      "query_id": "fma_medium_unknown:046710@5s",
+      "status": "measured",
+      "numpy_fft_maximum_absolute_pearson": 0.07319713970043557,
+      "numpy_fft_refined_offset_s": 218.905125,
+      "direct_peak_signed_pearson": -0.07319713970043557,
+      "independently_checked": true
+    },
+    {
+      "query_id": "fma_medium_unknown:118922@5s",
+      "status": "measured",
+      "numpy_fft_maximum_absolute_pearson": 0.02745628005393137,
+      "numpy_fft_refined_offset_s": 186.062375,
+      "direct_peak_signed_pearson": 0.027456280053931366,
+      "independently_checked": true
+    },
+    {
+      "query_id": "fma_medium_unknown:073368@5s",
+      "status": "measured",
+      "numpy_fft_maximum_absolute_pearson": 0.04649650709299722,
+      "numpy_fft_refined_offset_s": 88.9385,
+      "direct_peak_signed_pearson": -0.046496507092997214,
+      "independently_checked": true
+    },
+    {
+      "query_id": "fma_medium_unknown:050972@5s",
+      "status": "measured",
+      "numpy_fft_maximum_absolute_pearson": 0.04235035705722306,
+      "numpy_fft_refined_offset_s": 17.896,
+      "direct_peak_signed_pearson": 0.04235035705722307,
+      "independently_checked": true
+    },
+    {
+      "query_id": "fma_medium_unknown:111146@5s",
+      "status": "measured",
+      "numpy_fft_maximum_absolute_pearson": 0.030718108974810292,
+      "numpy_fft_refined_offset_s": 379.6775,
+      "direct_peak_signed_pearson": 0.030718108974810292,
+      "independently_checked": true
+    },
+    {
+      "query_id": "fma_medium_unknown:107584@5s",
+      "status": "measured",
+      "numpy_fft_maximum_absolute_pearson": 0.043889204029617615,
+      "numpy_fft_refined_offset_s": 256.435625,
+      "direct_peak_signed_pearson": 0.043889204029617594,
+      "independently_checked": true
+    },
+    {
+      "query_id": "fma_medium_unknown:119970@5s",
+      "status": "insufficient_full_crop_support",
+      "independently_checked": true
+    },
+    {
+      "query_id": "fma_medium_unknown:056798@5s",
+      "status": "measured",
+      "numpy_fft_maximum_absolute_pearson": 0.07933648761018182,
+      "numpy_fft_refined_offset_s": 140.284875,
+      "direct_peak_signed_pearson": 0.0793364876101818,
+      "independently_checked": true
+    },
+    {
+      "query_id": "fma_medium_unknown:013537@5s",
+      "status": "measured",
+      "numpy_fft_maximum_absolute_pearson": 0.153449174668677,
+      "numpy_fft_refined_offset_s": 111.523625,
+      "direct_peak_signed_pearson": -0.153449174668677,
+      "independently_checked": true
+    },
+    {
+      "query_id": "fma_medium_unknown:048407@5s",
+      "status": "measured",
+      "numpy_fft_maximum_absolute_pearson": 0.0873549679428567,
+      "numpy_fft_refined_offset_s": 260.869375,
+      "direct_peak_signed_pearson": 0.08735496794285676,
+      "independently_checked": true
+    },
+    {
+      "query_id": "fma_medium_unknown:077401@5s",
+      "status": "measured",
+      "numpy_fft_maximum_absolute_pearson": 0.037487616718839524,
+      "numpy_fft_refined_offset_s": 49.470875,
+      "direct_peak_signed_pearson": 0.03748761671883952,
+      "independently_checked": true
+    },
+    {
+      "query_id": "fma_medium_unknown:033303@5s",
+      "status": "measured",
+      "numpy_fft_maximum_absolute_pearson": 0.0469785736364881,
+      "numpy_fft_refined_offset_s": 51.81075,
+      "direct_peak_signed_pearson": -0.046978573636488115,
+      "independently_checked": true
+    },
+    {
+      "query_id": "fma_medium_unknown:133561@5s",
+      "status": "measured",
+      "numpy_fft_maximum_absolute_pearson": 0.13319170897688165,
+      "numpy_fft_refined_offset_s": 88.873875,
+      "direct_peak_signed_pearson": -0.13319170897688176,
+      "independently_checked": true
+    },
+    {
+      "query_id": "fma_medium_unknown:110209@5s",
+      "status": "measured",
+      "numpy_fft_maximum_absolute_pearson": 0.08238291996804649,
+      "numpy_fft_refined_offset_s": 370.9335,
+      "direct_peak_signed_pearson": -0.08238291996804649,
+      "independently_checked": true
+    },
+    {
+      "query_id": "fma_medium_unknown:110635@5s",
+      "status": "measured",
+      "numpy_fft_maximum_absolute_pearson": 0.03932704167771551,
+      "numpy_fft_refined_offset_s": 76.9995,
+      "direct_peak_signed_pearson": -0.03932704167771551,
+      "independently_checked": true
+    }
+  ]
+}
