@@ -1,0 +1,79 @@
+{
+  "method": "PeakNetFP (native)",
+  "duration_s_requested": 5.0,
+  "threshold": 0.6623607873916627,
+  "threshold_held_fixed": true,
+  "interpretation": "A sensitivity analysis excluding the entire FMA_medium superset of documented PeakNetFP training audio. Membership in medium is possible exposure, not proof of exposure. FMA-large/full tracks outside medium are conservatively source-unseen under the documented training protocol.",
+  "training_source_statement": "https://github.com/guillemcortes/peaknetfp#train-and-validation",
+  "gallery_unchanged": true,
+  "test_known": {
+    "correct_reference": {
+      "estimate": 0.8508997429305912,
+      "ci95": [
+        0.8149052953688358,
+        0.8848190972268716
+      ],
+      "n_queries": 389,
+      "n_source_clusters": 368,
+      "successes": 331
+    },
+    "localized_correct": {
+      "estimate": 0.7789203084832905,
+      "ci95": [
+        0.736286132721899,
+        0.8186584672729195
+      ],
+      "n_queries": 389,
+      "n_source_clusters": 368,
+      "successes": 303
+    },
+    "accepted_correct": {
+      "estimate": 0.6889460154241646,
+      "ci95": [
+        0.6441460956346452,
+        0.7365830469416027
+      ],
+      "n_queries": 389,
+      "n_source_clusters": 368,
+      "successes": 268
+    },
+    "accepted_localized": {
+      "estimate": 0.6503856041131105,
+      "ci95": [
+        0.6036269430051814,
+        0.6997519083969466
+      ],
+      "n_queries": 389,
+      "n_source_clusters": 368,
+      "successes": 253
+    },
+    "accepted_wrong": {
+      "estimate": 0.002570694087403599,
+      "ci95": [
+        0.0,
+        0.007752440053018433
+      ],
+      "n_queries": 389,
+      "n_source_clusters": 368,
+      "successes": 1
+    }
+  },
+  "test_unknown": {
+    "false_accepts": 0,
+    "n": 54,
+    "wilson_ci95": [
+      0.0,
+      0.0664135880908964
+    ],
+    "source_cluster_interval": {
+      "estimate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "n_queries": 54,
+      "n_source_clusters": 54,
+      "successes": 0
+    }
+  }
+}

@@ -1,0 +1,637 @@
+[
+  {
+    "method": "PeakNetFP (native)",
+    "factor": 1,
+    "duration_s_requested": 5.0,
+    "threshold": 0.7009186148643495,
+    "threshold_target_calibration_fpr": 0.001,
+    "calibration_unknown": {
+      "accepted": 1,
+      "n": 1074
+    },
+    "calibration_known": {
+      "correct": 124,
+      "n": 147
+    },
+    "unknown_test": {
+      "false_accepts": 21,
+      "n": 4071,
+      "fpr": 0.005158437730287398,
+      "wilson_ci95": [
+        0.0033764871512430308,
+        0.007873388281692505
+      ],
+      "source_cluster_interval": {
+        "estimate": 0.005158437730287398,
+        "ci95": [
+          0.0031933185949398184,
+          0.0076148366494718745
+        ],
+        "n_queries": 4071,
+        "n_source_clusters": 4071,
+        "successes": 21
+      },
+      "n_source_clusters": 4071
+    },
+    "unknown_test_populations": {
+      "additional_clean_FMA": {
+        "false_accepts": 20,
+        "n": 4000,
+        "wilson_ci95": [
+          0.0032391284674616835,
+          0.007710720389342788
+        ]
+      },
+      "official_distorted": {
+        "false_accepts": 1,
+        "n": 71,
+        "wilson_ci95": [
+          0.002490603270544213,
+          0.07556050520249005
+        ]
+      }
+    },
+    "test_known": {
+      "all": {
+        "correct_reference": {
+          "estimate": 0.8416206261510129,
+          "ci95": [
+            0.8107581953235841,
+            0.8708487084870848
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 457
+        },
+        "localized_correct": {
+          "estimate": 0.7661141804788214,
+          "ci95": [
+            0.7297794117647058,
+            0.8007312614259597
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 416
+        },
+        "accepted_correct": {
+          "estimate": 0.6335174953959485,
+          "ci95": [
+            0.5947943184750693,
+            0.6728624535315985
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 344
+        },
+        "accepted_localized": {
+          "estimate": 0.5948434622467772,
+          "ci95": [
+            0.555335064250457,
+            0.6343727635644585
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 323
+        },
+        "accepted_wrong": {
+          "estimate": 0.001841620626151013,
+          "ci95": [
+            0.0,
+            0.00558659217877095
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 1
+        }
+      },
+      "no_pitch_or_tempo": {
+        "correct_reference": {
+          "estimate": 0.9395348837209302,
+          "ci95": [
+            0.9162790697674419,
+            0.9605568445475638
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 404
+        },
+        "localized_correct": {
+          "estimate": 0.8558139534883721,
+          "ci95": [
+            0.8229885057471265,
+            0.887102453430259
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 368
+        },
+        "accepted_correct": {
+          "estimate": 0.727906976744186,
+          "ci95": [
+            0.6853082549634274,
+            0.7694161019246408
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 313
+        },
+        "accepted_localized": {
+          "estimate": 0.6837209302325581,
+          "ci95": [
+            0.6405484512493719,
+            0.7247058823529412
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 294
+        },
+        "accepted_wrong": {
+          "estimate": 0.002325581395348837,
+          "ci95": [
+            0.0,
+            0.007075471698113208
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 1
+        }
+      },
+      "pitch_or_tempo": {
+        "correct_reference": {
+          "estimate": 0.4690265486725664,
+          "ci95": [
+            0.37713815789473687,
+            0.5625
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 53
+        },
+        "localized_correct": {
+          "estimate": 0.4247787610619469,
+          "ci95": [
+            0.336283185840708,
+            0.5175516917293234
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 48
+        },
+        "accepted_correct": {
+          "estimate": 0.2743362831858407,
+          "ci95": [
+            0.19469026548672566,
+            0.35714285714285715
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 31
+        },
+        "accepted_localized": {
+          "estimate": 0.25663716814159293,
+          "ci95": [
+            0.17699115044247787,
+            0.3391343167701863
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 29
+        },
+        "accepted_wrong": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 0
+        }
+      },
+      "no_overlap": {
+        "correct_reference": {
+          "estimate": 0.8352272727272727,
+          "ci95": [
+            0.7954545454545454,
+            0.8732565882400418
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 294
+        },
+        "localized_correct": {
+          "estimate": 0.7585227272727273,
+          "ci95": [
+            0.7122507122507122,
+            0.8034327651515151
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 267
+        },
+        "accepted_correct": {
+          "estimate": 0.6477272727272727,
+          "ci95": [
+            0.5988696517896168,
+            0.696974025974026
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 228
+        },
+        "accepted_localized": {
+          "estimate": 0.6022727272727273,
+          "ci95": [
+            0.5514285714285714,
+            0.6542883447996762
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 212
+        },
+        "accepted_wrong": {
+          "estimate": 0.002840909090909091,
+          "ci95": [
+            0.0,
+            0.008595988538681949
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 1
+        }
+      },
+      "overlap": {
+        "correct_reference": {
+          "estimate": 0.8534031413612565,
+          "ci95": [
+            0.8,
+            0.900536512870855
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 163
+        },
+        "localized_correct": {
+          "estimate": 0.7801047120418848,
+          "ci95": [
+            0.7216494845360825,
+            0.8333333333333334
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 149
+        },
+        "accepted_correct": {
+          "estimate": 0.6073298429319371,
+          "ci95": [
+            0.5368421052631579,
+            0.6736842105263158
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 116
+        },
+        "accepted_localized": {
+          "estimate": 0.581151832460733,
+          "ci95": [
+            0.5105263157894737,
+            0.6473759203708753
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 111
+        },
+        "accepted_wrong": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 0
+        }
+      }
+    },
+    "test_known_crossed_ci": {
+      "correct_reference": {
+        "estimate": 0.8416206261510129,
+        "ci95": [
+          0.7844566416593116,
+          0.8902184041933603
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 457,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "localized_correct": {
+        "estimate": 0.7661141804788214,
+        "ci95": [
+          0.7025067901923577,
+          0.8260074064775295
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 416,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_correct": {
+        "estimate": 0.6335174953959485,
+        "ci95": [
+          0.5636355605525216,
+          0.7003865327980542
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 344,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_localized": {
+        "estimate": 0.5948434622467772,
+        "ci95": [
+          0.5221520629442359,
+          0.6632474027690243
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 323,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_wrong": {
+        "estimate": 0.001841620626151013,
+        "ci95": [
+          0.0,
+          0.010734416099536548
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 1,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      }
+    },
+    "latency_s": {
+      "median": 0.11744945897953585,
+      "p95": 0.16926269983523523,
+      "p99": 0.19769900107639848,
+      "note": "Observed pipeline latency; concurrent experimental jobs may contend"
+    },
+    "stats": {
+      "reference_count": 659,
+      "fingerprints": 303360,
+      "reference_audio_duration_s": 152155.883875,
+      "embedding_bytes": 155320320,
+      "metadata_bytes": 14498,
+      "payload_bytes": 155334818,
+      "measured_payload_bytes_per_hour": 3675213.409817274,
+      "index_serialized_bytes": 155320365,
+      "resident_vector_bytes": 310655183,
+      "reference_extraction_work_s": 1926.8641973884078,
+      "index_build_s": 0.0339473329950124,
+      "storage_note": "Logical full-density FP32 embeddings plus reconstructible regular-grid track metadata. Resident vector bytes estimate the FAISS serialized search structures and sequence-rerank copy; not measured process RSS or client model weights.",
+      "timing_note": "Extraction excludes shared decoding and warmed graph build; concurrent experimental jobs can contend. No smart-TV device claim."
+    },
+    "config": {
+      "method": "PeakNetFP",
+      "paper_url": "https://arxiv.org/abs/2506.21086",
+      "upstream_url": "https://github.com/guillemcortes/peaknetfp",
+      "upstream_commit": "d55071a644f20fd6448fb8ed33c0c115769fb7a5",
+      "upstream_tracked_files_unmodified": true,
+      "official_config_source": "config/peaknetfp.yaml",
+      "model_config_sha256": "470ef4c56f96306c760f0bc899654dc32870d39ab91a76f347fd13124420774e",
+      "official_model_config": {
+        "CHECKPOINT_NAME": "peaknetfp",
+        "DIR": {
+          "SOURCE_ROOT_DIR": "/datasets/neural-audio-fp-dataset/music/",
+          "MIX_ROOT_DIR": "",
+          "BG_ROOT_DIR": "",
+          "IR_ROOT_DIR": "",
+          "SPEECH_ROOT_DIR": "",
+          "OUTPUT_ROOT_DIR": "./logs/emb/",
+          "LOG_ROOT_DIR": "logs/"
+        },
+        "DATA_SEL": {
+          "TRAIN": "10k_icassp",
+          "TEST_DUMMY_DB": "100k_full_icassp",
+          "TEST_QUERY_DB": "unseen_icassp_stretch",
+          "REDUCE_ITEMS_P": 0
+        },
+        "PREPROCESSING": {
+          "NPEAKS": 256,
+          "PEAK_ORDERING": "amplitude_desc",
+          "PEAK_SAMPLING": "tile",
+          "NORM_COORDS": true,
+          "TIMEFREQ_RATIO": 0,
+          "USE_AMPLITUDE": true
+        },
+        "MODEL": {
+          "EMB_SZ": 128,
+          "ARCH": "pointnet2",
+          "DATA_TYPE": "peaks",
+          "FS": 8000,
+          "DUR": 1.0,
+          "HOP": 0.5,
+          "STFT_WIN": 1024,
+          "STFT_HOP": 256,
+          "F_MIN": 300.0,
+          "F_MAX": 4000.0,
+          "N_MELS": 256,
+          "NORM_MEL_AMPlITUDE": true
+        },
+        "NEURALFP": {
+          "BN": "layer_norm2d"
+        },
+        "POINTNET2": {
+          "GROUPING": "queryball",
+          "SAMPLING": "topn",
+          "LAYER1": {
+            "NPOINT": 200,
+            "RADIUS_LIST": [
+              0.1,
+              0.2,
+              0.3
+            ],
+            "NSAMPLE_LIST": [
+              4,
+              8,
+              16
+            ],
+            "MLP": [
+              [
+                16,
+                16,
+                32
+              ],
+              [
+                32,
+                32,
+                64
+              ],
+              [
+                32,
+                48,
+                64
+              ]
+            ]
+          },
+          "LAYER2": {
+            "NPOINT": 100,
+            "RADIUS_LIST": [
+              0.2,
+              0.3,
+              0.4
+            ],
+            "NSAMPLE_LIST": [
+              4,
+              8,
+              16
+            ],
+            "MLP": [
+              [
+                32,
+                32,
+                64
+              ],
+              [
+                64,
+                64,
+                128
+              ],
+              [
+                64,
+                64,
+                128
+              ]
+            ]
+          },
+          "LAYER3": {
+            "MLP": [
+              128,
+              256
+            ]
+          }
+        },
+        "BSZ": {
+          "TR_BATCH_SZ": 240,
+          "TR_N_ANCHOR": 120,
+          "VAL_BATCH_SZ": 240,
+          "VAL_N_ANCHOR": 120,
+          "TS_BATCH_SZ": 125
+        },
+        "TRAIN": {
+          "SEED": 13,
+          "MAX_EPOCH": 100,
+          "OPTIMIZER": "Adam",
+          "LR": "1e-4",
+          "LR_SCHEDULE": "cos",
+          "CHECKPOINT_KEEP_N_HOUR": 1,
+          "TENSORBOARD": true,
+          "SAVE_IMG": true,
+          "MINI_TEST_IN_TRAIN": true,
+          "MIXED_PRECISION": false,
+          "VAL_SIZE": 500
+        },
+        "LOSS": {
+          "LOSS_MODE": "NTxent",
+          "TAU": 0.05
+        },
+        "TD_AUG": {
+          "TR_SNR": [
+            0,
+            10
+          ],
+          "TS_SNR": [
+            0,
+            10
+          ],
+          "VAL_SNR": [
+            0,
+            10
+          ],
+          "TR_SPEECH_AUG": false,
+          "TS_SPEECH_AUG": false,
+          "VAL_SPEECH_AUG": false,
+          "TR_BG_AUG": false,
+          "TS_BG_AUG": false,
+          "VAL_BG_AUG": false,
+          "TR_IR_AUG": false,
+          "TS_IR_AUG": false,
+          "VAL_IR_AUG": false,
+          "USE_SPECAUG": true,
+          "MELSPEC_STRETCH": true,
+          "TR_STRETCH_AUG": false,
+          "TS_STRETCH_AUG": false,
+          "VAL_STRETCH_AUG": false,
+          "MAX_STRETCH_AUG": 100
+        },
+        "SPEC_AUG": {
+          "SPECAUG_CHAIN": [
+            "cutout",
+            "horizontal"
+          ],
+          "SPECAUG_PROBS": 1.0,
+          "SPECAUG_N_HOLES": 1,
+          "SPECAUG_HOLE_FILL": "zeros"
+        },
+        "DEVICE": {
+          "CPU_N_WORKERS": 8,
+          "CPU_MAX_QUEUE": 20
+        }
+      },
+      "peak_function_source_sha256": "235f3d296870c7a2c14b4d5883300beb8d53e7b6b82f60ba767590230ba31aef",
+      "peak_functions_loaded_without_modification": true,
+      "checkpoint": "ckpt-100",
+      "checkpoint_files_sha256": {
+        "ckpt-100.data-00000-of-00001": "1141d4640481fe27c5ab8359224bccd1cddeaa10af39da8935bc44ceae879103",
+        "ckpt-100.index": "2b71caacd09f82ffb4452303b76418518c303817ac7d2d110c544da5ab540489"
+      },
+      "model_archive_url": "https://zenodo.org/records/15782389/files/peaknetfp_checkpoints.tar.gz?download=1",
+      "model_archive_md5_expected": "df23e1556a206fd72bfa99d0724d241f",
+      "model_archive_md5_verified": true,
+      "restoration_assert_existing_objects_matched": true,
+      "model_parameter_count": 169296,
+      "embedding_dimension": 128,
+      "sample_rate": 8000,
+      "segment_duration_s": 1.0,
+      "hop_s": 0.5,
+      "inference_precision": "float32",
+      "batch_size": 125,
+      "query_batch_policy": "actual query frame count up to reference batch size; fixed padded reference batches",
+      "intra_op_threads": 4,
+      "inter_op_threads": 1,
+      "decode_backend": "FFmpeg mono8k float32 PCM; shared benchmark decoding",
+      "ffmpeg_version": "ffmpeg version 6.0 Copyright (c) 2000-2023 the FFmpeg developers",
+      "kapre_source_commit": "ae8f5077ec9071e5529992702885de03c3321941",
+      "kapre_reported_version": "0.3.7",
+      "packages": {
+        "numpy": "1.26.4",
+        "tensorflow": "2.16.2",
+        "tf-keras": "2.16.0",
+        "librosa": "0.11.0",
+        "kapre": "0.3.7",
+        "scipy": "1.17.1",
+        "pyyaml": "6.0.3"
+      },
+      "platform": "macOS-14.6.1-arm64-arm-64bit",
+      "machine": "arm64",
+      "inference_runtime_change": "TF2.16.2 legacy Keras on Apple CPU; original Kapre0.3.7 source tag pinned, original model and peak functions unchanged"
+    },
+    "matcher": {
+      "top_k": 20,
+      "exact": true,
+      "threads": 4,
+      "candidate_index": "exact",
+      "ivf_nlist": null,
+      "ivf_nprobe": null,
+      "index_training": null,
+      "score": "mean aligned cosine",
+      "time_scaling": "estimated candidate-specific",
+      "boundary_fix": "every complete in-track sequence including final track allowed"
+    }
+  }
+]

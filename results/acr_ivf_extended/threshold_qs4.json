@@ -1,0 +1,9 @@
+{
+  "query_stride": 4,
+  "nprobe": 16,
+  "threshold": 0.11183752952047475,
+  "calibration_unknown_count": 1074,
+  "calibration_false_accepts": 1,
+  "empirical_far_target": 0.001,
+  "uses_extended_test_outcomes": false
+}

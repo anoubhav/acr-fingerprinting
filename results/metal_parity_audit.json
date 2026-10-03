@@ -1,0 +1,26 @@
+[
+  {
+    "query_id": "pexafb_hard_medium:chunk0003",
+    "frames": 32,
+    "ids_equal": true,
+    "max_distance_difference": 9.5367431640625e-07,
+    "cpu_s": 0.05958699999609962,
+    "metal_s": 0.04297595896059647
+  },
+  {
+    "query_id": "pexafb_hard_medium:chunk0006",
+    "frames": 32,
+    "ids_equal": true,
+    "max_distance_difference": 1.430511474609375e-06,
+    "cpu_s": 0.06765308399917558,
+    "metal_s": 0.021566250012256205
+  },
+  {
+    "query_id": "pexafb_hard_medium:chunk0007",
+    "frames": 32,
+    "ids_equal": true,
+    "max_distance_difference": 1.430511474609375e-06,
+    "cpu_s": 0.059161041979677975,
+    "metal_s": 0.021697500022128224
+  }
+]

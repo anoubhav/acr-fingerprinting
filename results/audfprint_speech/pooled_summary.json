@@ -1,0 +1,212 @@
+[
+  {
+    "method": "audfprint",
+    "threshold": 5e-324,
+    "calibration_false_accepts": 0,
+    "calibration_n": 1340,
+    "test_false_accepts": 0,
+    "test_n": 1320,
+    "test_known_raw_correct": 6740,
+    "test_known_accepted_correct": 6740,
+    "test_known_n": 6800,
+    "latency_ms_median": 27.907165960641578,
+    "stats": {
+      "index_build_wall_s": 1.4943808749667369,
+      "reference_extraction_work_s": 0.0,
+      "reference_count": 871,
+      "reference_hash_count": 170800,
+      "reference_audio_duration_s": 9892.274648526078,
+      "reference_cache_hits": 871,
+      "allocated_index_bytes": 423631672,
+      "bucket_overflow_count": 0,
+      "stored_posting_count": 170800
+    },
+    "conditions": [
+      {
+        "condition": "clean",
+        "raw_correct": 679,
+        "accepted_correct_pooled_threshold": 679,
+        "known_n": 680,
+        "false_accepts_pooled_threshold": 0,
+        "unknown_n": 132
+      },
+      {
+        "condition": "clipping_peak40pct",
+        "raw_correct": 680,
+        "accepted_correct_pooled_threshold": 680,
+        "known_n": 680,
+        "false_accepts_pooled_threshold": 0,
+        "unknown_n": 132
+      },
+      {
+        "condition": "eq_tilt_minus6db",
+        "raw_correct": 680,
+        "accepted_correct_pooled_threshold": 680,
+        "known_n": 680,
+        "false_accepts_pooled_threshold": 0,
+        "unknown_n": 132
+      },
+      {
+        "condition": "eq_tilt_plus6db",
+        "raw_correct": 680,
+        "accepted_correct_pooled_threshold": 680,
+        "known_n": 680,
+        "false_accepts_pooled_threshold": 0,
+        "unknown_n": 132
+      },
+      {
+        "condition": "gain_minus6db",
+        "raw_correct": 680,
+        "accepted_correct_pooled_threshold": 680,
+        "known_n": 680,
+        "false_accepts_pooled_threshold": 0,
+        "unknown_n": 132
+      },
+      {
+        "condition": "gain_plus6db",
+        "raw_correct": 680,
+        "accepted_correct_pooled_threshold": 680,
+        "known_n": 680,
+        "false_accepts_pooled_threshold": 0,
+        "unknown_n": 132
+      },
+      {
+        "condition": "mp3_32kbps",
+        "raw_correct": 677,
+        "accepted_correct_pooled_threshold": 677,
+        "known_n": 680,
+        "false_accepts_pooled_threshold": 0,
+        "unknown_n": 132
+      },
+      {
+        "condition": "packet_dropout10pct",
+        "raw_correct": 680,
+        "accepted_correct_pooled_threshold": 680,
+        "known_n": 680,
+        "false_accepts_pooled_threshold": 0,
+        "unknown_n": 132
+      },
+      {
+        "condition": "preemphasis_0p9",
+        "raw_correct": 680,
+        "accepted_correct_pooled_threshold": 680,
+        "known_n": 680,
+        "false_accepts_pooled_threshold": 0,
+        "unknown_n": 132
+      },
+      {
+        "condition": "white_noise_snr10db",
+        "raw_correct": 624,
+        "accepted_correct_pooled_threshold": 624,
+        "known_n": 680,
+        "false_accepts_pooled_threshold": 0,
+        "unknown_n": 132
+      }
+    ]
+  },
+  {
+    "method": "audfprint_calibrated",
+    "threshold": 4.000000000000001,
+    "calibration_false_accepts": 1,
+    "calibration_n": 1340,
+    "test_false_accepts": 2,
+    "test_n": 1320,
+    "test_known_raw_correct": 6795,
+    "test_known_accepted_correct": 6776,
+    "test_known_n": 6800,
+    "latency_ms_median": 27.9355839593336,
+    "stats": {
+      "index_build_wall_s": 1.4943808749667369,
+      "reference_extraction_work_s": 0.0,
+      "reference_count": 871,
+      "reference_hash_count": 170800,
+      "reference_audio_duration_s": 9892.274648526078,
+      "reference_cache_hits": 871,
+      "allocated_index_bytes": 423631672,
+      "bucket_overflow_count": 0,
+      "stored_posting_count": 170800
+    },
+    "conditions": [
+      {
+        "condition": "clean",
+        "raw_correct": 680,
+        "accepted_correct_pooled_threshold": 680,
+        "known_n": 680,
+        "false_accepts_pooled_threshold": 0,
+        "unknown_n": 132
+      },
+      {
+        "condition": "clipping_peak40pct",
+        "raw_correct": 680,
+        "accepted_correct_pooled_threshold": 680,
+        "known_n": 680,
+        "false_accepts_pooled_threshold": 0,
+        "unknown_n": 132
+      },
+      {
+        "condition": "eq_tilt_minus6db",
+        "raw_correct": 680,
+        "accepted_correct_pooled_threshold": 680,
+        "known_n": 680,
+        "false_accepts_pooled_threshold": 1,
+        "unknown_n": 132
+      },
+      {
+        "condition": "eq_tilt_plus6db",
+        "raw_correct": 680,
+        "accepted_correct_pooled_threshold": 680,
+        "known_n": 680,
+        "false_accepts_pooled_threshold": 0,
+        "unknown_n": 132
+      },
+      {
+        "condition": "gain_minus6db",
+        "raw_correct": 680,
+        "accepted_correct_pooled_threshold": 680,
+        "known_n": 680,
+        "false_accepts_pooled_threshold": 0,
+        "unknown_n": 132
+      },
+      {
+        "condition": "gain_plus6db",
+        "raw_correct": 680,
+        "accepted_correct_pooled_threshold": 680,
+        "known_n": 680,
+        "false_accepts_pooled_threshold": 0,
+        "unknown_n": 132
+      },
+      {
+        "condition": "mp3_32kbps",
+        "raw_correct": 679,
+        "accepted_correct_pooled_threshold": 679,
+        "known_n": 680,
+        "false_accepts_pooled_threshold": 1,
+        "unknown_n": 132
+      },
+      {
+        "condition": "packet_dropout10pct",
+        "raw_correct": 680,
+        "accepted_correct_pooled_threshold": 680,
+        "known_n": 680,
+        "false_accepts_pooled_threshold": 0,
+        "unknown_n": 132
+      },
+      {
+        "condition": "preemphasis_0p9",
+        "raw_correct": 680,
+        "accepted_correct_pooled_threshold": 680,
+        "known_n": 680,
+        "false_accepts_pooled_threshold": 0,
+        "unknown_n": 132
+      },
+      {
+        "condition": "white_noise_snr10db",
+        "raw_correct": 676,
+        "accepted_correct_pooled_threshold": 657,
+        "known_n": 680,
+        "false_accepts_pooled_threshold": 0,
+        "unknown_n": 132
+      }
+    ]
+  }
+]

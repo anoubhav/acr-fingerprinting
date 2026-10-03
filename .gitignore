@@ -1,0 +1,55 @@
+# Local research work, downloaded inputs and caches
+/work/
+**/.venv/
+**/venv/
+**/venv_*/
+**/datasets/
+**/data/
+**/models/
+**/cache/
+**/caches/
+**/*_cache/
+**/bin/
+**/obj/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+
+# Media, private notebook sources and manuscript artifacts
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.m4a
+*.aac
+*.mp4
+*.mov
+*.ipynb
+*.pdf
+*.tex
+
+# Download archives, large arrays/indexes and executable dependencies
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.npy
+*.npz
+*.faiss
+*.index
+*.pkl
+*.pickle
+*.dll
+*.dylib
+*.so
+*.exe
+*.bin
+*.ckpt*
+*.h5
+*.keras
+
+# Small public fitted PCA states are intentional reproducibility artifacts.
+!results/**/pca_model.npz
+!results/**/*_pca_model.npz

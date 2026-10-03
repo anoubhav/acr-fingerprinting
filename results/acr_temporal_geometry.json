@@ -1,0 +1,292 @@
+{
+  "diagnostic": "ACR-PCA32 temporal continuity on held-out calibration-known sources",
+  "sources": [
+    {
+      "reference_id": "003951",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "003979",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "004080",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "005284",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "008644",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "009390",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "009416",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "009426",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "010699",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "010768",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "011347",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "011390",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "011722",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "016371",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "016378",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "019604",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "020126",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "020161",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "021134",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "022473",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "022793",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "025151",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "025283",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "030043",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "037978",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "038834",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "041404",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "041949",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "046157",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "046160",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "046339",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "050931",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "050992",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "052675",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "056185",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "059129",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "059141",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "060562",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "061899",
+      "anchor_frames": 611
+    },
+    {
+      "reference_id": "064627",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "065664",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "065785",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "068549",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "070448",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "071291",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "074370",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "074914",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "074977",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "075211",
+      "anchor_frames": 1024
+    },
+    {
+      "reference_id": "075687",
+      "anchor_frames": 1024
+    }
+  ],
+  "seed": 20261002,
+  "distance": "Euclidean L2, not squared L2",
+  "same_content_offsets": [
+    {
+      "shift_frames": 1,
+      "shift_seconds": 0.02325,
+      "pairs": 50766,
+      "p10": 0.1318618208169937,
+      "median": 0.3435770273208618,
+      "p90": 0.759200245141983,
+      "p95": 0.9555505961179733
+    },
+    {
+      "shift_frames": 2,
+      "shift_seconds": 0.0465,
+      "pairs": 50752,
+      "p10": 0.25669133067131045,
+      "median": 0.6683584153652191,
+      "p90": 1.4586008548736573,
+      "p95": 1.8318404078483579
+    },
+    {
+      "shift_frames": 4,
+      "shift_seconds": 0.093,
+      "pairs": 50729,
+      "p10": 0.48142682313919066,
+      "median": 1.2522835731506348,
+      "p90": 2.664025926589966,
+      "p95": 3.324408721923828
+    },
+    {
+      "shift_frames": 6,
+      "shift_seconds": 0.1395,
+      "pairs": 50712,
+      "p10": 0.6893109261989594,
+      "median": 1.7770106196403503,
+      "p90": 3.699062466621399,
+      "p95": 4.541043019294738
+    },
+    {
+      "shift_frames": 8,
+      "shift_seconds": 0.186,
+      "pairs": 50693,
+      "p10": 0.8835721611976625,
+      "median": 2.2607147693634033,
+      "p90": 4.593710803985597,
+      "p95": 5.533467769622803
+    },
+    {
+      "shift_frames": 16,
+      "shift_seconds": 0.372,
+      "pairs": 50617,
+      "p10": 1.5773659229278565,
+      "median": 3.99222993850708,
+      "p90": 7.328553485870362,
+      "p95": 8.291157341003416
+    },
+    {
+      "shift_frames": 32,
+      "shift_seconds": 0.744,
+      "pairs": 50454,
+      "p10": 2.796791338920593,
+      "median": 6.581508159637451,
+      "p90": 9.990416431427002,
+      "p95": 10.719021606445313
+    },
+    {
+      "shift_frames": 64,
+      "shift_seconds": 1.488,
+      "pairs": 50146,
+      "p10": 3.541497826576233,
+      "median": 7.629191160202026,
+      "p90": 10.867247581481934,
+      "p95": 11.416806936264038
+    }
+  ],
+  "random_cross_content": {
+    "pairs": 50787,
+    "p10": 8.06355037689209,
+    "median": 10.436882972717285,
+    "p90": 11.963127517700196,
+    "p95": 12.271177864074707
+  },
+  "interpretation_limit": "Random cross-content distances are not closest-wrong-content margins. This descriptive diagnostic does not establish specificity or imply a recognition guarantee.",
+  "uses_test_queries_or_test_outcomes": false,
+  "protocol_sha256": "aae834db35736f2a1ff8e9ccb53fefcdb1140e5dd122502fbc65b93296b6b132",
+  "pca_model_sha256": "7f946bdbfd27b48f01074b5369df24b8fdce391236fe212ee88be9f9ec980dcd"
+}

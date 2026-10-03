@@ -1,0 +1,78 @@
+{
+  "method": "NMFP-Triplet (native)",
+  "duration_s_requested": 5.0,
+  "threshold": 0.5600935816764833,
+  "threshold_held_fixed": true,
+  "interpretation": "A sensitivity analysis excluding the entire FMA_medium superset of documented NMFP training audio. Membership in medium is possible exposure, not proof of exposure. FMA-large/full tracks outside medium are conservatively source-unseen under the documented training protocol.",
+  "gallery_unchanged": true,
+  "test_known": {
+    "correct_reference": {
+      "estimate": 0.87146529562982,
+      "ci95": [
+        0.8388746803069054,
+        0.9040430208823992
+      ],
+      "n_queries": 389,
+      "n_source_clusters": 368,
+      "successes": 339
+    },
+    "localized_correct": {
+      "estimate": 0.8354755784061697,
+      "ci95": [
+        0.7979274611398963,
+        0.8737113402061856
+      ],
+      "n_queries": 389,
+      "n_source_clusters": 368,
+      "successes": 325
+    },
+    "accepted_correct": {
+      "estimate": 0.8380462724935732,
+      "ci95": [
+        0.8014960272567023,
+        0.87374483913687
+      ],
+      "n_queries": 389,
+      "n_source_clusters": 368,
+      "successes": 326
+    },
+    "accepted_localized": {
+      "estimate": 0.8046272493573264,
+      "ci95": [
+        0.7646907993966817,
+        0.8441558441558441
+      ],
+      "n_queries": 389,
+      "n_source_clusters": 368,
+      "successes": 313
+    },
+    "accepted_wrong": {
+      "estimate": 0.002570694087403599,
+      "ci95": [
+        0.0,
+        0.007832898172323759
+      ],
+      "n_queries": 389,
+      "n_source_clusters": 368,
+      "successes": 1
+    }
+  },
+  "test_unknown": {
+    "false_accepts": 2,
+    "n": 54,
+    "wilson_ci95": [
+      0.01021636794844559,
+      0.12535176917275476
+    ],
+    "source_cluster_interval": {
+      "estimate": 0.037037037037037035,
+      "ci95": [
+        0.0,
+        0.09259259259259259
+      ],
+      "n_queries": 54,
+      "n_source_clusters": 54,
+      "successes": 2
+    }
+  }
+}

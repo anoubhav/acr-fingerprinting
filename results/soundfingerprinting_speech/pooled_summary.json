@@ -1,0 +1,190 @@
+[
+  {
+    "method": "SoundFingerprinting",
+    "score_precision_decimal_places": 12,
+    "threshold": 5e-324,
+    "calibration_false_accepts": 13,
+    "calibration_n": 1340,
+    "test_false_accepts": 17,
+    "test_n": 1320,
+    "test_known_raw_correct": 6800,
+    "test_known_accepted_correct": 6800,
+    "test_known_n": 6800,
+    "conditions": [
+      {
+        "condition": "clean",
+        "raw_correct": 680,
+        "accepted_correct_pooled_threshold": 680,
+        "known_n": 680,
+        "false_accepts_pooled_threshold": 2,
+        "unknown_n": 132
+      },
+      {
+        "condition": "clipping_peak40pct",
+        "raw_correct": 680,
+        "accepted_correct_pooled_threshold": 680,
+        "known_n": 680,
+        "false_accepts_pooled_threshold": 2,
+        "unknown_n": 132
+      },
+      {
+        "condition": "eq_tilt_minus6db",
+        "raw_correct": 680,
+        "accepted_correct_pooled_threshold": 680,
+        "known_n": 680,
+        "false_accepts_pooled_threshold": 2,
+        "unknown_n": 132
+      },
+      {
+        "condition": "eq_tilt_plus6db",
+        "raw_correct": 680,
+        "accepted_correct_pooled_threshold": 680,
+        "known_n": 680,
+        "false_accepts_pooled_threshold": 1,
+        "unknown_n": 132
+      },
+      {
+        "condition": "gain_minus6db",
+        "raw_correct": 680,
+        "accepted_correct_pooled_threshold": 680,
+        "known_n": 680,
+        "false_accepts_pooled_threshold": 2,
+        "unknown_n": 132
+      },
+      {
+        "condition": "gain_plus6db",
+        "raw_correct": 680,
+        "accepted_correct_pooled_threshold": 680,
+        "known_n": 680,
+        "false_accepts_pooled_threshold": 2,
+        "unknown_n": 132
+      },
+      {
+        "condition": "mp3_32kbps",
+        "raw_correct": 680,
+        "accepted_correct_pooled_threshold": 680,
+        "known_n": 680,
+        "false_accepts_pooled_threshold": 2,
+        "unknown_n": 132
+      },
+      {
+        "condition": "packet_dropout10pct",
+        "raw_correct": 680,
+        "accepted_correct_pooled_threshold": 680,
+        "known_n": 680,
+        "false_accepts_pooled_threshold": 2,
+        "unknown_n": 132
+      },
+      {
+        "condition": "preemphasis_0p9",
+        "raw_correct": 680,
+        "accepted_correct_pooled_threshold": 680,
+        "known_n": 680,
+        "false_accepts_pooled_threshold": 0,
+        "unknown_n": 132
+      },
+      {
+        "condition": "white_noise_snr10db",
+        "raw_correct": 680,
+        "accepted_correct_pooled_threshold": 680,
+        "known_n": 680,
+        "false_accepts_pooled_threshold": 2,
+        "unknown_n": 132
+      }
+    ]
+  },
+  {
+    "method": "SoundFingerprinting_calibrated",
+    "score_precision_decimal_places": 12,
+    "threshold": 0.9705508169480002,
+    "calibration_false_accepts": 13,
+    "calibration_n": 1340,
+    "test_false_accepts": 8,
+    "test_n": 1320,
+    "test_known_raw_correct": 5963,
+    "test_known_accepted_correct": 0,
+    "test_known_n": 6800,
+    "conditions": [
+      {
+        "condition": "clean",
+        "raw_correct": 602,
+        "accepted_correct_pooled_threshold": 0,
+        "known_n": 680,
+        "false_accepts_pooled_threshold": 0,
+        "unknown_n": 132
+      },
+      {
+        "condition": "clipping_peak40pct",
+        "raw_correct": 586,
+        "accepted_correct_pooled_threshold": 0,
+        "known_n": 680,
+        "false_accepts_pooled_threshold": 1,
+        "unknown_n": 132
+      },
+      {
+        "condition": "eq_tilt_minus6db",
+        "raw_correct": 583,
+        "accepted_correct_pooled_threshold": 0,
+        "known_n": 680,
+        "false_accepts_pooled_threshold": 3,
+        "unknown_n": 132
+      },
+      {
+        "condition": "eq_tilt_plus6db",
+        "raw_correct": 610,
+        "accepted_correct_pooled_threshold": 0,
+        "known_n": 680,
+        "false_accepts_pooled_threshold": 1,
+        "unknown_n": 132
+      },
+      {
+        "condition": "gain_minus6db",
+        "raw_correct": 602,
+        "accepted_correct_pooled_threshold": 0,
+        "known_n": 680,
+        "false_accepts_pooled_threshold": 0,
+        "unknown_n": 132
+      },
+      {
+        "condition": "gain_plus6db",
+        "raw_correct": 602,
+        "accepted_correct_pooled_threshold": 0,
+        "known_n": 680,
+        "false_accepts_pooled_threshold": 0,
+        "unknown_n": 132
+      },
+      {
+        "condition": "mp3_32kbps",
+        "raw_correct": 602,
+        "accepted_correct_pooled_threshold": 0,
+        "known_n": 680,
+        "false_accepts_pooled_threshold": 1,
+        "unknown_n": 132
+      },
+      {
+        "condition": "packet_dropout10pct",
+        "raw_correct": 574,
+        "accepted_correct_pooled_threshold": 0,
+        "known_n": 680,
+        "false_accepts_pooled_threshold": 1,
+        "unknown_n": 132
+      },
+      {
+        "condition": "preemphasis_0p9",
+        "raw_correct": 601,
+        "accepted_correct_pooled_threshold": 0,
+        "known_n": 680,
+        "false_accepts_pooled_threshold": 0,
+        "unknown_n": 132
+      },
+      {
+        "condition": "white_noise_snr10db",
+        "raw_correct": 601,
+        "accepted_correct_pooled_threshold": 0,
+        "known_n": 680,
+        "false_accepts_pooled_threshold": 1,
+        "unknown_n": 132
+      }
+    ]
+  }
+]

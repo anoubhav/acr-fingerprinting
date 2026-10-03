@@ -1,0 +1,520 @@
+{
+  "method": "NMFP-Triplet (native)",
+  "factor": 1,
+  "duration_s_requested": 5.0,
+  "threshold": 0.5600935816764833,
+  "threshold_target_calibration_fpr": 0.01,
+  "calibration_unknown": {
+    "accepted": 0,
+    "n": 74
+  },
+  "calibration_known": {
+    "correct": 126,
+    "n": 147
+  },
+  "unknown_test": {
+    "false_accepts": 2,
+    "n": 71,
+    "fpr": 0.028169014084507043,
+    "wilson_ci95": [
+      0.007759263582683522,
+      0.0970150011664947
+    ],
+    "source_cluster_interval": {
+      "estimate": 0.028169014084507043,
+      "ci95": [
+        0.0,
+        0.07042253521126761
+      ],
+      "n_queries": 71,
+      "n_source_clusters": 71,
+      "successes": 2
+    },
+    "n_source_clusters": 71
+  },
+  "unknown_test_populations": {
+    "official_distorted": {
+      "false_accepts": 2,
+      "n": 71,
+      "wilson_ci95": [
+        0.007759263582683522,
+        0.0970150011664947
+      ]
+    }
+  },
+  "test_known": {
+    "all": {
+      "correct_reference": {
+        "estimate": 0.858195211786372,
+        "ci95": [
+          0.8284671532846716,
+          0.8868657069478237
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "successes": 466
+      },
+      "localized_correct": {
+        "estimate": 0.8158379373848987,
+        "ci95": [
+          0.7823620736207362,
+          0.8471454880294659
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "successes": 443
+      },
+      "accepted_correct": {
+        "estimate": 0.8250460405156538,
+        "ci95": [
+          0.7914282644729572,
+          0.855822972462458
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "successes": 448
+      },
+      "accepted_localized": {
+        "estimate": 0.7882136279926335,
+        "ci95": [
+          0.7541469025225617,
+          0.8211678832116789
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "successes": 428
+      },
+      "accepted_wrong": {
+        "estimate": 0.001841620626151013,
+        "ci95": [
+          0.0,
+          0.0055658627087198514
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "successes": 1
+      }
+    },
+    "no_pitch_or_tempo": {
+      "correct_reference": {
+        "estimate": 0.9883720930232558,
+        "ci95": [
+          0.9769585253456221,
+          0.9976635514018691
+        ],
+        "n_queries": 430,
+        "n_source_clusters": 412,
+        "successes": 425
+      },
+      "localized_correct": {
+        "estimate": 0.9418604651162791,
+        "ci95": [
+          0.9196197114208853,
+          0.9629651013600204
+        ],
+        "n_queries": 430,
+        "n_source_clusters": 412,
+        "successes": 405
+      },
+      "accepted_correct": {
+        "estimate": 0.9627906976744186,
+        "ci95": [
+          0.9443155452436195,
+          0.9792159779057268
+        ],
+        "n_queries": 430,
+        "n_source_clusters": 412,
+        "successes": 414
+      },
+      "accepted_localized": {
+        "estimate": 0.9162790697674419,
+        "ci95": [
+          0.8899297423887588,
+          0.9415887850467289
+        ],
+        "n_queries": 430,
+        "n_source_clusters": 412,
+        "successes": 394
+      },
+      "accepted_wrong": {
+        "estimate": 0.002325581395348837,
+        "ci95": [
+          0.0,
+          0.007042253521126761
+        ],
+        "n_queries": 430,
+        "n_source_clusters": 412,
+        "successes": 1
+      }
+    },
+    "pitch_or_tempo": {
+      "correct_reference": {
+        "estimate": 0.36283185840707965,
+        "ci95": [
+          0.2743362831858407,
+          0.45132743362831856
+        ],
+        "n_queries": 113,
+        "n_source_clusters": 112,
+        "successes": 41
+      },
+      "localized_correct": {
+        "estimate": 0.336283185840708,
+        "ci95": [
+          0.25,
+          0.4247787610619469
+        ],
+        "n_queries": 113,
+        "n_source_clusters": 112,
+        "successes": 38
+      },
+      "accepted_correct": {
+        "estimate": 0.3008849557522124,
+        "ci95": [
+          0.22123893805309736,
+          0.3839794799498744
+        ],
+        "n_queries": 113,
+        "n_source_clusters": 112,
+        "successes": 34
+      },
+      "accepted_localized": {
+        "estimate": 0.3008849557522124,
+        "ci95": [
+          0.22123893805309736,
+          0.3839794799498744
+        ],
+        "n_queries": 113,
+        "n_source_clusters": 112,
+        "successes": 34
+      },
+      "accepted_wrong": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n_queries": 113,
+        "n_source_clusters": 112,
+        "successes": 0
+      }
+    },
+    "no_overlap": {
+      "correct_reference": {
+        "estimate": 0.8551136363636364,
+        "ci95": [
+          0.8176507936507936,
+          0.8901408450704226
+        ],
+        "n_queries": 352,
+        "n_source_clusters": 345,
+        "successes": 301
+      },
+      "localized_correct": {
+        "estimate": 0.8153409090909091,
+        "ci95": [
+          0.7727272727272727,
+          0.8538698045780883
+        ],
+        "n_queries": 352,
+        "n_source_clusters": 345,
+        "successes": 287
+      },
+      "accepted_correct": {
+        "estimate": 0.8267045454545454,
+        "ci95": [
+          0.7843081550802139,
+          0.8660968660968661
+        ],
+        "n_queries": 352,
+        "n_source_clusters": 345,
+        "successes": 291
+      },
+      "accepted_localized": {
+        "estimate": 0.7897727272727273,
+        "ci95": [
+          0.7457627118644068,
+          0.8314285714285714
+        ],
+        "n_queries": 352,
+        "n_source_clusters": 345,
+        "successes": 278
+      },
+      "accepted_wrong": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n_queries": 352,
+        "n_source_clusters": 345,
+        "successes": 0
+      }
+    },
+    "overlap": {
+      "correct_reference": {
+        "estimate": 0.8638743455497382,
+        "ci95": [
+          0.8144089525132204,
+          0.91005291005291
+        ],
+        "n_queries": 191,
+        "n_source_clusters": 187,
+        "successes": 165
+      },
+      "localized_correct": {
+        "estimate": 0.8167539267015707,
+        "ci95": [
+          0.7601829368110881,
+          0.8704961070627024
+        ],
+        "n_queries": 191,
+        "n_source_clusters": 187,
+        "successes": 156
+      },
+      "accepted_correct": {
+        "estimate": 0.8219895287958116,
+        "ci95": [
+          0.7671957671957672,
+          0.8736842105263158
+        ],
+        "n_queries": 191,
+        "n_source_clusters": 187,
+        "successes": 157
+      },
+      "accepted_localized": {
+        "estimate": 0.7853403141361257,
+        "ci95": [
+          0.7268041237113402,
+          0.8429319371727748
+        ],
+        "n_queries": 191,
+        "n_source_clusters": 187,
+        "successes": 150
+      },
+      "accepted_wrong": {
+        "estimate": 0.005235602094240838,
+        "ci95": [
+          0.0,
+          0.015957446808510637
+        ],
+        "n_queries": 191,
+        "n_source_clusters": 187,
+        "successes": 1
+      }
+    }
+  },
+  "test_known_crossed_ci": {
+    "correct_reference": {
+      "estimate": 0.858195211786372,
+      "ci95": [
+        0.8011829421875124,
+        0.9064628909117604
+      ],
+      "n_queries": 543,
+      "n_source_clusters": 518,
+      "n_montage_clusters": 207,
+      "successes": 466,
+      "resampling": "source IDs and montage IDs independently; product weights"
+    },
+    "localized_correct": {
+      "estimate": 0.8158379373848987,
+      "ci95": [
+        0.7544738142790857,
+        0.8686159569371249
+      ],
+      "n_queries": 543,
+      "n_source_clusters": 518,
+      "n_montage_clusters": 207,
+      "successes": 443,
+      "resampling": "source IDs and montage IDs independently; product weights"
+    },
+    "accepted_correct": {
+      "estimate": 0.8250460405156538,
+      "ci95": [
+        0.7662371363472997,
+        0.8757793572219064
+      ],
+      "n_queries": 543,
+      "n_source_clusters": 518,
+      "n_montage_clusters": 207,
+      "successes": 448,
+      "resampling": "source IDs and montage IDs independently; product weights"
+    },
+    "accepted_localized": {
+      "estimate": 0.7882136279926335,
+      "ci95": [
+        0.7258223889931208,
+        0.8456078358118603
+      ],
+      "n_queries": 543,
+      "n_source_clusters": 518,
+      "n_montage_clusters": 207,
+      "successes": 428,
+      "resampling": "source IDs and montage IDs independently; product weights"
+    },
+    "accepted_wrong": {
+      "estimate": 0.001841620626151013,
+      "ci95": [
+        0.0,
+        0.011030940795911702
+      ],
+      "n_queries": 543,
+      "n_source_clusters": 518,
+      "n_montage_clusters": 207,
+      "successes": 1,
+      "resampling": "source IDs and montage IDs independently; product weights"
+    }
+  },
+  "latency_s": {
+    "median": 0.20315845898585394,
+    "p95": 0.2795855494390707,
+    "p99": 0.3517529487807771,
+    "note": "Observed pipeline latency; concurrent experimental jobs may contend"
+  },
+  "stats": {
+    "reference_count": 659,
+    "fingerprints": 303360,
+    "reference_audio_duration_s": 152155.883875,
+    "embedding_bytes": 155320320,
+    "metadata_bytes": 14498,
+    "payload_bytes": 155334818,
+    "measured_payload_bytes_per_hour": 3675213.409817274,
+    "index_serialized_bytes": 155320365,
+    "resident_vector_bytes": 310655138,
+    "reference_extraction_work_s": 5593.795771823672,
+    "index_build_s": 0.027752500027418137,
+    "storage_note": "Logical full-density FP32 embeddings plus reconstructible regular-grid track metadata. Resident vector bytes include the exact FAISS copy and sequence-rerank copy; not measured process RSS or client model weights.",
+    "timing_note": "Extraction excludes shared decoding and warmed graph build; concurrent experimental jobs can contend. No smart-TV device claim."
+  },
+  "config": {
+    "method": "NMFP-Triplet",
+    "paper_url": "https://arxiv.org/abs/2506.22661",
+    "upstream_url": "https://github.com/raraz15/neural-music-fp",
+    "upstream_commit": "15c6f3bcdf6a6da1daddfe47a1ffa5a0d22deadc",
+    "upstream_tracked_files_unmodified": true,
+    "model_archive_url": "https://zenodo.org/records/15719945/files/nmfp-triplet.zip?download=1",
+    "model_archive_md5_expected": "ee8a3358fc5e5cdd09d6d2245d395021",
+    "model_archive_md5_verified": true,
+    "checkpoint": "ckpt-100",
+    "checkpoint_files_sha256": {
+      "ckpt-100.data-00000-of-00001": "650c3b2df3e8896bbf8c249856c077e8ff480b791931b48b47983e873ec974ea",
+      "ckpt-100.index": "c745068b4d198b6ad839fa0ca400be1e6ac9fa837befbc82473cbd8191f3a164"
+    },
+    "model_config_sha256": "5cc4cc470fc2efdd9df51b0dd14f56bfd301ccb2984f7ba5380f51804b724508",
+    "official_model_config": {
+      "MODEL": {
+        "ARCHITECTURE": {
+          "BN": "layer_norm2d",
+          "EMB_SZ": 128
+        },
+        "AUDIO": {
+          "FS": 8000,
+          "SEGMENT_DUR": 1.0
+        },
+        "INPUT": {
+          "F_MAX": 4000.0,
+          "F_MIN": 160.0,
+          "N_MELS": 256,
+          "SCALE": true,
+          "STFT_HOP": 256,
+          "STFT_WIN": 1024,
+          "DYNAMIC_RANGE": 80
+        },
+        "LOG_ROOT_DIR": "logs/nmfp/fma-nmfp_deg/",
+        "NAME": "nmfp-triplet"
+      },
+      "TIME": "2025-03-11_23-11-35",
+      "TRAIN": {
+        "AUDIO": {
+          "MAX_OFFSET_DUR_ANCHOR": 0.25,
+          "MAX_OFFSET_DUR_POS": 0.25,
+          "PAST_CONTEXT_DUR": 1.0,
+          "CHUNK_DUR": 30,
+          "SEGMENT_HOP_DUR": 0.5
+        },
+        "DEGRADATION": {
+          "SPEC": {
+            "CHAIN": [
+              "cutout",
+              "horizontal"
+            ],
+            "HOLE_FILL": "zeros",
+            "N_HOLES": 1,
+            "PROBS": 1.0
+          },
+          "TD": {
+            "BG": true,
+            "BG_ROOT": "../datasets/neural-music-fp-dataset/degradation/bg/dev/",
+            "BG_SNR": [
+              0,
+              10
+            ],
+            "MIR": true,
+            "MIR_ROOT": "../datasets/neural-music-fp-dataset/degradation/microphone_ir/dev/",
+            "PRE_MIR_AMP_RANGE": [
+              0.1,
+              1
+            ],
+            "PRE_RIR_AMP_RANGE": [
+              0.1,
+              1
+            ],
+            "RIR": true,
+            "RIR_ROOT": "../datasets/neural-music-fp-dataset/degradation/room_ir/dev/"
+          }
+        },
+        "LOSS": {
+          "LOSS_MODE": "triplet",
+          "MARGIN": 0.5,
+          "NEG_MODE": "semi-hard",
+          "POS_MODE": "hard",
+          "SQUARED": true
+        },
+        "LR": {
+          "ALPHA": "1e-6",
+          "INITIAL_RATE": "1e-4",
+          "SCHEDULE": "cos"
+        },
+        "MAX_EPOCH": 100,
+        "MIXED_PRECISION": true,
+        "MUSIC_DIR": "../datasets/neural-music-fp-dataset/music/dev/train/",
+        "N_ANCHORS": 512,
+        "N_POSITIVES_PER_ANCHOR": 2,
+        "OPTIMIZER": "Adam"
+      }
+    },
+    "restoration_assert_existing_objects_matched": true,
+    "inference_precision": "float32",
+    "published_training_mixed_precision": true,
+    "inference_runtime_change": "TensorFlow2.16.2/legacy Keras2.16 and Essentia1177 for Python3.12 Apple arm64; official modules and weights unchanged",
+    "decode_backend": "FFmpeg mono8k float32 PCM; shared benchmark decoding",
+    "ffmpeg_version": "ffmpeg version 6.0 Copyright (c) 2000-2023 the FFmpeg developers",
+    "embedding_dimension": 128,
+    "sample_rate": 8000,
+    "segment_duration_s": 1.0,
+    "hop_s": 0.5,
+    "batch_size": 256,
+    "intra_op_threads": 4,
+    "inter_op_threads": 1,
+    "packages": {
+      "numpy": "1.26.4",
+      "tensorflow": "2.16.2",
+      "tf-keras": "2.16.0",
+      "essentia": "2.1b6.dev1177",
+      "scipy": "1.17.1",
+      "soundfile": "0.14.0",
+      "pyyaml": "6.0.3"
+    },
+    "platform": "macOS-14.6.1-arm64-arm-64bit",
+    "machine": "arm64"
+  },
+  "matcher": {
+    "top_k": 20,
+    "exact": true,
+    "threads": 4,
+    "score": "mean aligned cosine",
+    "time_scaling": "unit only",
+    "boundary_fix": "every complete in-track sequence including final track allowed"
+  }
+}

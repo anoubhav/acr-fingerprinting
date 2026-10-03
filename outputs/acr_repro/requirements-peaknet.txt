@@ -1,0 +1,8 @@
+tensorflow==2.16.2
+tf-keras==2.16.0
+numpy==1.26.4
+scipy==1.17.1
+pyyaml==6.0.3
+soundfile==0.14.0
+librosa==0.11.0
+kapre @ git+https://github.com/keunwoochoi/kapre.git@ae8f5077ec9071e5529992702885de03c3321941

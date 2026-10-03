@@ -1,0 +1,9 @@
+# Main encoder, public-data adapters and the 15 quick tests.
+# Full recorded environment: outputs/acr_repro/requirements.txt
+numpy==2.5.3
+scipy==1.18.1
+librosa==1.0.0
+faiss-cpu==1.15.1
+soundfile==0.14.0
+threadpoolctl==3.7.0
+requests==2.34.2

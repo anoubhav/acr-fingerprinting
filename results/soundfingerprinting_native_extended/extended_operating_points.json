@@ -1,0 +1,30 @@
+[
+  {
+    "method": "SoundFingerprinting",
+    "score_precision_decimal_places": 12,
+    "target_calibration_fpr": 0.001,
+    "threshold": 0.2972423802610001,
+    "calibration_false_accepts": 1,
+    "calibration_n": 1074,
+    "test_known_accepted_correct": 378,
+    "test_known_n": 543,
+    "additional_clean_false_accepts": 3,
+    "additional_clean_test_n": 4000,
+    "official_noisy_false_accepts": 0,
+    "official_noisy_test_n": 71
+  },
+  {
+    "method": "SoundFingerprinting",
+    "score_precision_decimal_places": 12,
+    "target_calibration_fpr": 0.01,
+    "threshold": 0.2972423802610001,
+    "calibration_false_accepts": 1,
+    "calibration_n": 1074,
+    "test_known_accepted_correct": 378,
+    "test_known_n": 543,
+    "additional_clean_false_accepts": 3,
+    "additional_clean_test_n": 4000,
+    "official_noisy_false_accepts": 0,
+    "official_noisy_test_n": 71
+  }
+]

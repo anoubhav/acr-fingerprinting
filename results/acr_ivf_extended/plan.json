@@ -1,0 +1,17 @@
+{
+  "protocol_sha256": "610c98add9592340a745cb1b9c9c2cf37a27567da204e713cfba45d8a27fe366",
+  "original_protocol_sha256": "aae834db35736f2a1ff8e9ccb53fefcdb1140e5dd122502fbc65b93296b6b132",
+  "frozen_index_sha256": "8e34c9cf54b4d9ff383898243566bbe19126b753ba26d9c3206150acd55d854f",
+  "frozen_pca_sha256": "7f946bdbfd27b48f01074b5369df24b8fdce391236fe212ee88be9f9ec980dcd",
+  "reference_factor": 8,
+  "ivf_nlist": 512,
+  "nprobe": 16,
+  "query_strides": [
+    1,
+    4
+  ],
+  "threshold_calibration_role": "calibration_unknown",
+  "empirical_calibration_far_target": 0.001,
+  "configuration_selected_from_extended_test_outcomes": false,
+  "populations": "Additional clean FMA and official noisy PEX negatives reported separately"
+}

@@ -1,0 +1,28 @@
+{
+  "protocol_sha256": "aae834db35736f2a1ff8e9ccb53fefcdb1140e5dd122502fbc65b93296b6b132",
+  "query_strides": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "nprobes": [
+    1,
+    4,
+    16,
+    64
+  ],
+  "reference_factor": 8,
+  "nlist": 512,
+  "training_source_roles": [
+    "pca_fit"
+  ],
+  "training_samples_cap": 50000,
+  "training_seed": 20261002,
+  "niter": 20,
+  "query_duration_s": 5,
+  "selection": "calibration accepted-correct within 2 percentage points of maximum; favor fewer query rows then lower nprobe",
+  "selection_uses_test_outcomes": false,
+  "interpretation": "Server query/index configuration study. ANN approximation must not be attributed to fingerprint representation."
+}

@@ -1,0 +1,4042 @@
+[
+  {
+    "method": "audfprint",
+    "factor": 1,
+    "duration_s_requested": 1.0,
+    "threshold": 5e-324,
+    "threshold_target_calibration_fpr": 0.01,
+    "calibration_unknown": {
+      "accepted": 0,
+      "n": 74
+    },
+    "calibration_known": {
+      "correct": 3,
+      "n": 147
+    },
+    "unknown_test": {
+      "false_accepts": 0,
+      "n": 71,
+      "fpr": 0.0,
+      "wilson_ci95": [
+        0.0,
+        0.05132795219689034
+      ],
+      "source_cluster_interval": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n_queries": 71,
+        "n_source_clusters": 71,
+        "successes": 0
+      },
+      "n_source_clusters": 71
+    },
+    "unknown_test_populations": {
+      "official_distorted": {
+        "false_accepts": 0,
+        "n": 71,
+        "wilson_ci95": [
+          0.0,
+          0.05132795219689034
+        ]
+      }
+    },
+    "test_known": {
+      "all": {
+        "correct_reference": {
+          "estimate": 0.02578268876611418,
+          "ci95": [
+            0.013034776017112833,
+            0.04029488859764088
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 14
+        },
+        "localized_correct": {
+          "estimate": 0.01841620626151013,
+          "ci95": [
+            0.007366482504604052,
+            0.029852141163342158
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 10
+        },
+        "accepted_correct": {
+          "estimate": 0.02578268876611418,
+          "ci95": [
+            0.013034776017112833,
+            0.04029488859764088
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 14
+        },
+        "accepted_localized": {
+          "estimate": 0.01841620626151013,
+          "ci95": [
+            0.007366482504604052,
+            0.029852141163342158
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 10
+        },
+        "accepted_wrong": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 0
+        }
+      },
+      "no_pitch_or_tempo": {
+        "correct_reference": {
+          "estimate": 0.03255813953488372,
+          "ci95": [
+            0.01639344262295082,
+            0.049414678135405087
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 14
+        },
+        "localized_correct": {
+          "estimate": 0.023255813953488372,
+          "ci95": [
+            0.00936768149882904,
+            0.03764705882352941
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 10
+        },
+        "accepted_correct": {
+          "estimate": 0.03255813953488372,
+          "ci95": [
+            0.01639344262295082,
+            0.049414678135405087
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 14
+        },
+        "accepted_localized": {
+          "estimate": 0.023255813953488372,
+          "ci95": [
+            0.00936768149882904,
+            0.03764705882352941
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 10
+        },
+        "accepted_wrong": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 0
+        }
+      },
+      "pitch_or_tempo": {
+        "correct_reference": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 0
+        },
+        "localized_correct": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 0
+        },
+        "accepted_correct": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 0
+        },
+        "accepted_localized": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 0
+        },
+        "accepted_wrong": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 0
+        }
+      },
+      "no_overlap": {
+        "correct_reference": {
+          "estimate": 0.028409090909090908,
+          "ci95": [
+            0.011428571428571429,
+            0.045845272206303724
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 10
+        },
+        "localized_correct": {
+          "estimate": 0.022727272727272728,
+          "ci95": [
+            0.008522727272727272,
+            0.039886039886039885
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 8
+        },
+        "accepted_correct": {
+          "estimate": 0.028409090909090908,
+          "ci95": [
+            0.011428571428571429,
+            0.045845272206303724
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 10
+        },
+        "accepted_localized": {
+          "estimate": 0.022727272727272728,
+          "ci95": [
+            0.008522727272727272,
+            0.039886039886039885
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 8
+        },
+        "accepted_wrong": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 0
+        }
+      },
+      "overlap": {
+        "correct_reference": {
+          "estimate": 0.020942408376963352,
+          "ci95": [
+            0.005208333333333333,
+            0.041884816753926704
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 4
+        },
+        "localized_correct": {
+          "estimate": 0.010471204188481676,
+          "ci95": [
+            0.0,
+            0.02631578947368421
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 2
+        },
+        "accepted_correct": {
+          "estimate": 0.020942408376963352,
+          "ci95": [
+            0.005208333333333333,
+            0.041884816753926704
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 4
+        },
+        "accepted_localized": {
+          "estimate": 0.010471204188481676,
+          "ci95": [
+            0.0,
+            0.02631578947368421
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 2
+        },
+        "accepted_wrong": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 0
+        }
+      }
+    },
+    "test_known_crossed_ci": {
+      "correct_reference": {
+        "estimate": 0.02578268876611418,
+        "ci95": [
+          0.007271414506071546,
+          0.052254357160899205
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 14,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "localized_correct": {
+        "estimate": 0.01841620626151013,
+        "ci95": [
+          0.0035584033719492187,
+          0.04210961687306499
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 10,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_correct": {
+        "estimate": 0.02578268876611418,
+        "ci95": [
+          0.007271414506071546,
+          0.052254357160899205
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 14,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_localized": {
+        "estimate": 0.01841620626151013,
+        "ci95": [
+          0.0035584033719492187,
+          0.04210961687306499
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 10,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_wrong": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 0,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      }
+    },
+    "latency_s": {
+      "median": 0.011698251066263765,
+      "p95": 0.01653896631905809,
+      "p99": 0.021227938545634976,
+      "note": "Observed pipeline latency; concurrent experimental jobs may contend"
+    },
+    "stats": {
+      "index_build_wall_s": 6.193436792003922,
+      "reference_extraction_work_s": 0.0,
+      "reference_count": 659,
+      "reference_hash_count": 3239655,
+      "reference_audio_duration_s": 152155.86585034025,
+      "reference_cache_hits": 659,
+      "allocated_index_bytes": 423629976,
+      "bucket_overflow_count": 20847,
+      "stored_posting_count": 3218808
+    },
+    "config": {
+      "upstream_revision": "cb03ba99feafd41b8874307f0f4e808a6ce34362",
+      "density": 20.0,
+      "sample_rate": 11025,
+      "n_fft": 512,
+      "n_hop": 256,
+      "reference_shifts": 1,
+      "query_shifts": 4,
+      "match_window_frames": 2,
+      "min_count": 5,
+      "search_depth": 100,
+      "exact_count": false,
+      "hashbits": 20,
+      "bucketsize": 100,
+      "maxtimebits": 18,
+      "seed": 20261002
+    },
+    "matcher": null
+  },
+  {
+    "method": "audfprint_calibrated",
+    "factor": 1,
+    "duration_s_requested": 1.0,
+    "threshold": 3.0000000000000004,
+    "threshold_target_calibration_fpr": 0.01,
+    "calibration_unknown": {
+      "accepted": 0,
+      "n": 74
+    },
+    "calibration_known": {
+      "correct": 30,
+      "n": 147
+    },
+    "unknown_test": {
+      "false_accepts": 3,
+      "n": 71,
+      "fpr": 0.04225352112676056,
+      "wilson_ci95": [
+        0.014473260620475319,
+        0.11702416040484681
+      ],
+      "source_cluster_interval": {
+        "estimate": 0.04225352112676056,
+        "ci95": [
+          0.0,
+          0.09859154929577464
+        ],
+        "n_queries": 71,
+        "n_source_clusters": 71,
+        "successes": 3
+      },
+      "n_source_clusters": 71
+    },
+    "unknown_test_populations": {
+      "official_distorted": {
+        "false_accepts": 3,
+        "n": 71,
+        "wilson_ci95": [
+          0.014473260620475319,
+          0.11702416040484681
+        ]
+      }
+    },
+    "test_known": {
+      "all": {
+        "correct_reference": {
+          "estimate": 0.20441988950276244,
+          "ci95": [
+            0.17032967032967034,
+            0.2384515284048631
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 111
+        },
+        "localized_correct": {
+          "estimate": 0.143646408839779,
+          "ci95": [
+            0.11432959614634394,
+            0.17343173431734318
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 78
+        },
+        "accepted_correct": {
+          "estimate": 0.10313075506445672,
+          "ci95": [
+            0.07791847041847041,
+            0.12849490931908347
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 56
+        },
+        "accepted_localized": {
+          "estimate": 0.07734806629834254,
+          "ci95": [
+            0.05545286506469501,
+            0.10054844606946983
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 42
+        },
+        "accepted_wrong": {
+          "estimate": 0.029465930018416207,
+          "ci95": [
+            0.01633319853231279,
+            0.04436229205175601
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 16
+        }
+      },
+      "no_pitch_or_tempo": {
+        "correct_reference": {
+          "estimate": 0.2558139534883721,
+          "ci95": [
+            0.215905795190888,
+            0.2964834174969291
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 110
+        },
+        "localized_correct": {
+          "estimate": 0.1813953488372093,
+          "ci95": [
+            0.14685314685314685,
+            0.21889951446403055
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 78
+        },
+        "accepted_correct": {
+          "estimate": 0.13023255813953488,
+          "ci95": [
+            0.0988235294117647,
+            0.16198135874067932
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 56
+        },
+        "accepted_localized": {
+          "estimate": 0.09767441860465116,
+          "ci95": [
+            0.06992600422832981,
+            0.12702173617714985
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 42
+        },
+        "accepted_wrong": {
+          "estimate": 0.027906976744186046,
+          "ci95": [
+            0.013953488372093023,
+            0.04439512245835976
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 12
+        }
+      },
+      "pitch_or_tempo": {
+        "correct_reference": {
+          "estimate": 0.008849557522123894,
+          "ci95": [
+            0.0,
+            0.026785714285714284
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 1
+        },
+        "localized_correct": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 0
+        },
+        "accepted_correct": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 0
+        },
+        "accepted_localized": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 0
+        },
+        "accepted_wrong": {
+          "estimate": 0.035398230088495575,
+          "ci95": [
+            0.008770022883295195,
+            0.07142857142857142
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 4
+        }
+      },
+      "no_overlap": {
+        "correct_reference": {
+          "estimate": 0.2215909090909091,
+          "ci95": [
+            0.17947443181818182,
+            0.2643825523135867
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 78
+        },
+        "localized_correct": {
+          "estimate": 0.15625,
+          "ci95": [
+            0.11965811965811966,
+            0.1954674220963173
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 55
+        },
+        "accepted_correct": {
+          "estimate": 0.11647727272727272,
+          "ci95": [
+            0.08498583569405099,
+            0.1514456740442655
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 41
+        },
+        "accepted_localized": {
+          "estimate": 0.08806818181818182,
+          "ci95": [
+            0.059654865761009535,
+            0.11898016997167139
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 31
+        },
+        "accepted_wrong": {
+          "estimate": 0.028409090909090908,
+          "ci95": [
+            0.01155986073861838,
+            0.048295454545454544
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 10
+        }
+      },
+      "overlap": {
+        "correct_reference": {
+          "estimate": 0.17277486910994763,
+          "ci95": [
+            0.11977614961139897,
+            0.23036649214659685
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 33
+        },
+        "localized_correct": {
+          "estimate": 0.12041884816753927,
+          "ci95": [
+            0.07368421052631578,
+            0.1693346842283011
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 23
+        },
+        "accepted_correct": {
+          "estimate": 0.07853403141361257,
+          "ci95": [
+            0.042105263157894736,
+            0.11702127659574468
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 15
+        },
+        "accepted_localized": {
+          "estimate": 0.05759162303664921,
+          "ci95": [
+            0.02617801047120419,
+            0.09042553191489362
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 11
+        },
+        "accepted_wrong": {
+          "estimate": 0.031413612565445025,
+          "ci95": [
+            0.010362694300518135,
+            0.0582010582010582
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 6
+        }
+      }
+    },
+    "test_known_crossed_ci": {
+      "correct_reference": {
+        "estimate": 0.20441988950276244,
+        "ci95": [
+          0.148852090767539,
+          0.26589993106008375
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 111,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "localized_correct": {
+        "estimate": 0.143646408839779,
+        "ci95": [
+          0.09595607644388132,
+          0.1996460980036297
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 78,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_correct": {
+        "estimate": 0.10313075506445672,
+        "ci95": [
+          0.06340293065492571,
+          0.15135544635544634
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 56,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_localized": {
+        "estimate": 0.07734806629834254,
+        "ci95": [
+          0.04278000318072481,
+          0.12152951073805202
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 42,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_wrong": {
+        "estimate": 0.029465930018416207,
+        "ci95": [
+          0.00912325812873258,
+          0.06000093808630393
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 16,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      }
+    },
+    "latency_s": {
+      "median": 0.012470792047679424,
+      "p95": 0.01830412822309881,
+      "p99": 0.021830321010202176,
+      "note": "Observed pipeline latency; concurrent experimental jobs may contend"
+    },
+    "stats": {
+      "index_build_wall_s": 6.193436792003922,
+      "reference_extraction_work_s": 0.0,
+      "reference_count": 659,
+      "reference_hash_count": 3239655,
+      "reference_audio_duration_s": 152155.86585034025,
+      "reference_cache_hits": 659,
+      "allocated_index_bytes": 423629976,
+      "bucket_overflow_count": 20847,
+      "stored_posting_count": 3218808
+    },
+    "config": {
+      "upstream_revision": "cb03ba99feafd41b8874307f0f4e808a6ce34362",
+      "density": 20.0,
+      "sample_rate": 11025,
+      "n_fft": 512,
+      "n_hop": 256,
+      "reference_shifts": 1,
+      "query_shifts": 4,
+      "match_window_frames": 2,
+      "min_count": 1,
+      "search_depth": 100,
+      "exact_count": false,
+      "hashbits": 20,
+      "bucketsize": 100,
+      "maxtimebits": 18,
+      "seed": 20261002
+    },
+    "matcher": null
+  },
+  {
+    "method": "audfprint",
+    "factor": 1,
+    "duration_s_requested": 2.0,
+    "threshold": 5e-324,
+    "threshold_target_calibration_fpr": 0.01,
+    "calibration_unknown": {
+      "accepted": 0,
+      "n": 74
+    },
+    "calibration_known": {
+      "correct": 32,
+      "n": 147
+    },
+    "unknown_test": {
+      "false_accepts": 0,
+      "n": 71,
+      "fpr": 0.0,
+      "wilson_ci95": [
+        0.0,
+        0.05132795219689034
+      ],
+      "source_cluster_interval": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n_queries": 71,
+        "n_source_clusters": 71,
+        "successes": 0
+      },
+      "n_source_clusters": 71
+    },
+    "unknown_test_populations": {
+      "official_distorted": {
+        "false_accepts": 0,
+        "n": 71,
+        "wilson_ci95": [
+          0.0,
+          0.05132795219689034
+        ]
+      }
+    },
+    "test_known": {
+      "all": {
+        "correct_reference": {
+          "estimate": 0.22099447513812154,
+          "ci95": [
+            0.18518518518518517,
+            0.25693289893534627
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 120
+        },
+        "localized_correct": {
+          "estimate": 0.1841620626151013,
+          "ci95": [
+            0.15257352941176472,
+            0.21778812519644322
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 100
+        },
+        "accepted_correct": {
+          "estimate": 0.22099447513812154,
+          "ci95": [
+            0.18518518518518517,
+            0.25693289893534627
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 120
+        },
+        "accepted_localized": {
+          "estimate": 0.1841620626151013,
+          "ci95": [
+            0.15257352941176472,
+            0.21778812519644322
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 100
+        },
+        "accepted_wrong": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 0
+        }
+      },
+      "no_pitch_or_tempo": {
+        "correct_reference": {
+          "estimate": 0.27906976744186046,
+          "ci95": [
+            0.23584197568521503,
+            0.3240756704980843
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 120
+        },
+        "localized_correct": {
+          "estimate": 0.23255813953488372,
+          "ci95": [
+            0.19158017141134415,
+            0.276503858107384
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 100
+        },
+        "accepted_correct": {
+          "estimate": 0.27906976744186046,
+          "ci95": [
+            0.23584197568521503,
+            0.3240756704980843
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 120
+        },
+        "accepted_localized": {
+          "estimate": 0.23255813953488372,
+          "ci95": [
+            0.19158017141134415,
+            0.276503858107384
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 100
+        },
+        "accepted_wrong": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 0
+        }
+      },
+      "pitch_or_tempo": {
+        "correct_reference": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 0
+        },
+        "localized_correct": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 0
+        },
+        "accepted_correct": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 0
+        },
+        "accepted_localized": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 0
+        },
+        "accepted_wrong": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 0
+        }
+      },
+      "no_overlap": {
+        "correct_reference": {
+          "estimate": 0.2556818181818182,
+          "ci95": [
+            0.21185351089588378,
+            0.30200094161958563
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 90
+        },
+        "localized_correct": {
+          "estimate": 0.21306818181818182,
+          "ci95": [
+            0.17101263470828687,
+            0.2585227272727273
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 75
+        },
+        "accepted_correct": {
+          "estimate": 0.2556818181818182,
+          "ci95": [
+            0.21185351089588378,
+            0.30200094161958563
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 90
+        },
+        "accepted_localized": {
+          "estimate": 0.21306818181818182,
+          "ci95": [
+            0.17101263470828687,
+            0.2585227272727273
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 75
+        },
+        "accepted_wrong": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 0
+        }
+      },
+      "overlap": {
+        "correct_reference": {
+          "estimate": 0.15706806282722513,
+          "ci95": [
+            0.10526315789473684,
+            0.21052631578947367
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 30
+        },
+        "localized_correct": {
+          "estimate": 0.13089005235602094,
+          "ci95": [
+            0.08376963350785341,
+            0.18042333845141473
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 25
+        },
+        "accepted_correct": {
+          "estimate": 0.15706806282722513,
+          "ci95": [
+            0.10526315789473684,
+            0.21052631578947367
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 30
+        },
+        "accepted_localized": {
+          "estimate": 0.13089005235602094,
+          "ci95": [
+            0.08376963350785341,
+            0.18042333845141473
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 25
+        },
+        "accepted_wrong": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 0
+        }
+      }
+    },
+    "test_known_crossed_ci": {
+      "correct_reference": {
+        "estimate": 0.22099447513812154,
+        "ci95": [
+          0.1611605435422183,
+          0.2846909795457889
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 120,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "localized_correct": {
+        "estimate": 0.1841620626151013,
+        "ci95": [
+          0.13001290877796903,
+          0.24520031659604213
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 100,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_correct": {
+        "estimate": 0.22099447513812154,
+        "ci95": [
+          0.1611605435422183,
+          0.2846909795457889
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 120,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_localized": {
+        "estimate": 0.1841620626151013,
+        "ci95": [
+          0.13001290877796903,
+          0.24520031659604213
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 100,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_wrong": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 0,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      }
+    },
+    "latency_s": {
+      "median": 0.014910708065144718,
+      "p95": 0.02211224976344965,
+      "p99": 0.025473912006709766,
+      "note": "Observed pipeline latency; concurrent experimental jobs may contend"
+    },
+    "stats": {
+      "index_build_wall_s": 6.193436792003922,
+      "reference_extraction_work_s": 0.0,
+      "reference_count": 659,
+      "reference_hash_count": 3239655,
+      "reference_audio_duration_s": 152155.86585034025,
+      "reference_cache_hits": 659,
+      "allocated_index_bytes": 423629976,
+      "bucket_overflow_count": 20847,
+      "stored_posting_count": 3218808
+    },
+    "config": {
+      "upstream_revision": "cb03ba99feafd41b8874307f0f4e808a6ce34362",
+      "density": 20.0,
+      "sample_rate": 11025,
+      "n_fft": 512,
+      "n_hop": 256,
+      "reference_shifts": 1,
+      "query_shifts": 4,
+      "match_window_frames": 2,
+      "min_count": 5,
+      "search_depth": 100,
+      "exact_count": false,
+      "hashbits": 20,
+      "bucketsize": 100,
+      "maxtimebits": 18,
+      "seed": 20261002
+    },
+    "matcher": null
+  },
+  {
+    "method": "audfprint_calibrated",
+    "factor": 1,
+    "duration_s_requested": 2.0,
+    "threshold": 4.000000000000001,
+    "threshold_target_calibration_fpr": 0.01,
+    "calibration_unknown": {
+      "accepted": 0,
+      "n": 74
+    },
+    "calibration_known": {
+      "correct": 73,
+      "n": 147
+    },
+    "unknown_test": {
+      "false_accepts": 2,
+      "n": 71,
+      "fpr": 0.028169014084507043,
+      "wilson_ci95": [
+        0.007759263582683522,
+        0.0970150011664947
+      ],
+      "source_cluster_interval": {
+        "estimate": 0.028169014084507043,
+        "ci95": [
+          0.0,
+          0.07042253521126761
+        ],
+        "n_queries": 71,
+        "n_source_clusters": 71,
+        "successes": 2
+      },
+      "n_source_clusters": 71
+    },
+    "unknown_test_populations": {
+      "official_distorted": {
+        "false_accepts": 2,
+        "n": 71,
+        "wilson_ci95": [
+          0.007759263582683522,
+          0.0970150011664947
+        ]
+      }
+    },
+    "test_known": {
+      "all": {
+        "correct_reference": {
+          "estimate": 0.47882136279926335,
+          "ci95": [
+            0.43702271332105586,
+            0.5191991475350227
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 260
+        },
+        "localized_correct": {
+          "estimate": 0.37937384898710863,
+          "ci95": [
+            0.33828927567701284,
+            0.41959791499986204
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 206
+        },
+        "accepted_correct": {
+          "estimate": 0.3314917127071823,
+          "ci95": [
+            0.2915012116539076,
+            0.3695652173913043
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 180
+        },
+        "accepted_localized": {
+          "estimate": 0.27255985267034993,
+          "ci95": [
+            0.23615978957187342,
+            0.30841812496760923
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 148
+        },
+        "accepted_wrong": {
+          "estimate": 0.007366482504604052,
+          "ci95": [
+            0.0018281535648994515,
+            0.01642410827473011
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 4
+        }
+      },
+      "no_pitch_or_tempo": {
+        "correct_reference": {
+          "estimate": 0.6,
+          "ci95": [
+            0.5526932084309133,
+            0.6488433432899509
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 258
+        },
+        "localized_correct": {
+          "estimate": 0.47674418604651164,
+          "ci95": [
+            0.42689798133159407,
+            0.5229437806699381
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 205
+        },
+        "accepted_correct": {
+          "estimate": 0.4186046511627907,
+          "ci95": [
+            0.3686606196317691,
+            0.46977094099913863
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 180
+        },
+        "accepted_localized": {
+          "estimate": 0.34418604651162793,
+          "ci95": [
+            0.29629410215903107,
+            0.39170743100679173
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 148
+        },
+        "accepted_wrong": {
+          "estimate": 0.002325581395348837,
+          "ci95": [
+            0.0,
+            0.007058823529411765
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 1
+        }
+      },
+      "pitch_or_tempo": {
+        "correct_reference": {
+          "estimate": 0.017699115044247787,
+          "ci95": [
+            0.0,
+            0.04424778761061947
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 2
+        },
+        "localized_correct": {
+          "estimate": 0.008849557522123894,
+          "ci95": [
+            0.0,
+            0.026785714285714284
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 1
+        },
+        "accepted_correct": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 0
+        },
+        "accepted_localized": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 0
+        },
+        "accepted_wrong": {
+          "estimate": 0.02654867256637168,
+          "ci95": [
+            0.0,
+            0.06140350877192982
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 3
+        }
+      },
+      "no_overlap": {
+        "correct_reference": {
+          "estimate": 0.5085227272727273,
+          "ci95": [
+            0.45583412925819805,
+            0.5616181422304242
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 179
+        },
+        "localized_correct": {
+          "estimate": 0.39204545454545453,
+          "ci95": [
+            0.34088494720576873,
+            0.4438202247191011
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 138
+        },
+        "accepted_correct": {
+          "estimate": 0.36363636363636365,
+          "ci95": [
+            0.3142857142857143,
+            0.41595441595441596
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 128
+        },
+        "accepted_localized": {
+          "estimate": 0.29545454545454547,
+          "ci95": [
+            0.24788672204165163,
+            0.3457142857142857
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 104
+        },
+        "accepted_wrong": {
+          "estimate": 0.002840909090909091,
+          "ci95": [
+            0.0,
+            0.011235955056179775
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 1
+        }
+      },
+      "overlap": {
+        "correct_reference": {
+          "estimate": 0.42408376963350786,
+          "ci95": [
+            0.3541666666666667,
+            0.49479300902061857
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 81
+        },
+        "localized_correct": {
+          "estimate": 0.35602094240837695,
+          "ci95": [
+            0.2864583333333333,
+            0.42330050693925025
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 68
+        },
+        "accepted_correct": {
+          "estimate": 0.27225130890052357,
+          "ci95": [
+            0.21023560209424083,
+            0.3333769633507851
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 52
+        },
+        "accepted_localized": {
+          "estimate": 0.23036649214659685,
+          "ci95": [
+            0.17019025104131486,
+            0.2916666666666667
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 44
+        },
+        "accepted_wrong": {
+          "estimate": 0.015706806282722512,
+          "ci95": [
+            0.0,
+            0.03664921465968586
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 3
+        }
+      }
+    },
+    "test_known_crossed_ci": {
+      "correct_reference": {
+        "estimate": 0.47882136279926335,
+        "ci95": [
+          0.4056064547295665,
+          0.5526817816670176
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 260,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "localized_correct": {
+        "estimate": 0.37937384898710863,
+        "ci95": [
+          0.30842745003804717,
+          0.45316901652826597
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 206,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_correct": {
+        "estimate": 0.3314917127071823,
+        "ci95": [
+          0.26345964293095503,
+          0.40037084921066945
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 180,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_localized": {
+        "estimate": 0.27255985267034993,
+        "ci95": [
+          0.21013542731346804,
+          0.33926501294862577
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 148,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_wrong": {
+        "estimate": 0.007366482504604052,
+        "ci95": [
+          0.0,
+          0.02299135085922384
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 4,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      }
+    },
+    "latency_s": {
+      "median": 0.0163297500112094,
+      "p95": 0.023511503695044664,
+      "p99": 0.028135915787424918,
+      "note": "Observed pipeline latency; concurrent experimental jobs may contend"
+    },
+    "stats": {
+      "index_build_wall_s": 6.193436792003922,
+      "reference_extraction_work_s": 0.0,
+      "reference_count": 659,
+      "reference_hash_count": 3239655,
+      "reference_audio_duration_s": 152155.86585034025,
+      "reference_cache_hits": 659,
+      "allocated_index_bytes": 423629976,
+      "bucket_overflow_count": 20847,
+      "stored_posting_count": 3218808
+    },
+    "config": {
+      "upstream_revision": "cb03ba99feafd41b8874307f0f4e808a6ce34362",
+      "density": 20.0,
+      "sample_rate": 11025,
+      "n_fft": 512,
+      "n_hop": 256,
+      "reference_shifts": 1,
+      "query_shifts": 4,
+      "match_window_frames": 2,
+      "min_count": 1,
+      "search_depth": 100,
+      "exact_count": false,
+      "hashbits": 20,
+      "bucketsize": 100,
+      "maxtimebits": 18,
+      "seed": 20261002
+    },
+    "matcher": null
+  },
+  {
+    "method": "audfprint",
+    "factor": 1,
+    "duration_s_requested": 3.0,
+    "threshold": 5e-324,
+    "threshold_target_calibration_fpr": 0.01,
+    "calibration_unknown": {
+      "accepted": 0,
+      "n": 74
+    },
+    "calibration_known": {
+      "correct": 54,
+      "n": 147
+    },
+    "unknown_test": {
+      "false_accepts": 0,
+      "n": 71,
+      "fpr": 0.0,
+      "wilson_ci95": [
+        0.0,
+        0.05132795219689034
+      ],
+      "source_cluster_interval": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n_queries": 71,
+        "n_source_clusters": 71,
+        "successes": 0
+      },
+      "n_source_clusters": 71
+    },
+    "unknown_test_populations": {
+      "official_distorted": {
+        "false_accepts": 0,
+        "n": 71,
+        "wilson_ci95": [
+          0.0,
+          0.05132795219689034
+        ]
+      }
+    },
+    "test_known": {
+      "all": {
+        "correct_reference": {
+          "estimate": 0.44014732965009207,
+          "ci95": [
+            0.39888682745825604,
+            0.4808777754720896
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 239
+        },
+        "localized_correct": {
+          "estimate": 0.3775322283609576,
+          "ci95": [
+            0.3363966387514787,
+            0.41788321167883213
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 205
+        },
+        "accepted_correct": {
+          "estimate": 0.44014732965009207,
+          "ci95": [
+            0.39888682745825604,
+            0.4808777754720896
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 239
+        },
+        "accepted_localized": {
+          "estimate": 0.3775322283609576,
+          "ci95": [
+            0.3363966387514787,
+            0.41788321167883213
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 205
+        },
+        "accepted_wrong": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 0
+        }
+      },
+      "no_pitch_or_tempo": {
+        "correct_reference": {
+          "estimate": 0.5558139534883721,
+          "ci95": [
+            0.5057478136663638,
+            0.6047152560793371
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 239
+        },
+        "localized_correct": {
+          "estimate": 0.47674418604651164,
+          "ci95": [
+            0.425874829001368,
+            0.5264460252391286
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 205
+        },
+        "accepted_correct": {
+          "estimate": 0.5558139534883721,
+          "ci95": [
+            0.5057478136663638,
+            0.6047152560793371
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 239
+        },
+        "accepted_localized": {
+          "estimate": 0.47674418604651164,
+          "ci95": [
+            0.425874829001368,
+            0.5264460252391286
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 205
+        },
+        "accepted_wrong": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 0
+        }
+      },
+      "pitch_or_tempo": {
+        "correct_reference": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 0
+        },
+        "localized_correct": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 0
+        },
+        "accepted_correct": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 0
+        },
+        "accepted_localized": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 0
+        },
+        "accepted_wrong": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 0
+        }
+      },
+      "no_overlap": {
+        "correct_reference": {
+          "estimate": 0.48011363636363635,
+          "ci95": [
+            0.4257036124794745,
+            0.5327635327635327
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 169
+        },
+        "localized_correct": {
+          "estimate": 0.4034090909090909,
+          "ci95": [
+            0.3522727272727273,
+            0.45609683597334716
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 142
+        },
+        "accepted_correct": {
+          "estimate": 0.48011363636363635,
+          "ci95": [
+            0.4257036124794745,
+            0.5327635327635327
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 169
+        },
+        "accepted_localized": {
+          "estimate": 0.4034090909090909,
+          "ci95": [
+            0.3522727272727273,
+            0.45609683597334716
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 142
+        },
+        "accepted_wrong": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 0
+        }
+      },
+      "overlap": {
+        "correct_reference": {
+          "estimate": 0.36649214659685864,
+          "ci95": [
+            0.29842931937172773,
+            0.43523316062176165
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 70
+        },
+        "localized_correct": {
+          "estimate": 0.3298429319371728,
+          "ci95": [
+            0.265625,
+            0.4
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 63
+        },
+        "accepted_correct": {
+          "estimate": 0.36649214659685864,
+          "ci95": [
+            0.29842931937172773,
+            0.43523316062176165
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 70
+        },
+        "accepted_localized": {
+          "estimate": 0.3298429319371728,
+          "ci95": [
+            0.265625,
+            0.4
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 63
+        },
+        "accepted_wrong": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 0
+        }
+      }
+    },
+    "test_known_crossed_ci": {
+      "correct_reference": {
+        "estimate": 0.44014732965009207,
+        "ci95": [
+          0.3697265015717611,
+          0.5092495669854656
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 239,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "localized_correct": {
+        "estimate": 0.3775322283609576,
+        "ci95": [
+          0.3116665869980879,
+          0.44425382712676065
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 205,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_correct": {
+        "estimate": 0.44014732965009207,
+        "ci95": [
+          0.3697265015717611,
+          0.5092495669854656
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 239,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_localized": {
+        "estimate": 0.3775322283609576,
+        "ci95": [
+          0.3116665869980879,
+          0.44425382712676065
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 205,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_wrong": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 0,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      }
+    },
+    "latency_s": {
+      "median": 0.020125915994867682,
+      "p95": 0.039667537517379954,
+      "p99": 0.05199914222001103,
+      "note": "Observed pipeline latency; concurrent experimental jobs may contend"
+    },
+    "stats": {
+      "index_build_wall_s": 6.193436792003922,
+      "reference_extraction_work_s": 0.0,
+      "reference_count": 659,
+      "reference_hash_count": 3239655,
+      "reference_audio_duration_s": 152155.86585034025,
+      "reference_cache_hits": 659,
+      "allocated_index_bytes": 423629976,
+      "bucket_overflow_count": 20847,
+      "stored_posting_count": 3218808
+    },
+    "config": {
+      "upstream_revision": "cb03ba99feafd41b8874307f0f4e808a6ce34362",
+      "density": 20.0,
+      "sample_rate": 11025,
+      "n_fft": 512,
+      "n_hop": 256,
+      "reference_shifts": 1,
+      "query_shifts": 4,
+      "match_window_frames": 2,
+      "min_count": 5,
+      "search_depth": 100,
+      "exact_count": false,
+      "hashbits": 20,
+      "bucketsize": 100,
+      "maxtimebits": 18,
+      "seed": 20261002
+    },
+    "matcher": null
+  },
+  {
+    "method": "audfprint_calibrated",
+    "factor": 1,
+    "duration_s_requested": 3.0,
+    "threshold": 6.000000000000001,
+    "threshold_target_calibration_fpr": 0.01,
+    "calibration_unknown": {
+      "accepted": 0,
+      "n": 74
+    },
+    "calibration_known": {
+      "correct": 85,
+      "n": 147
+    },
+    "unknown_test": {
+      "false_accepts": 0,
+      "n": 71,
+      "fpr": 0.0,
+      "wilson_ci95": [
+        0.0,
+        0.05132795219689034
+      ],
+      "source_cluster_interval": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n_queries": 71,
+        "n_source_clusters": 71,
+        "successes": 0
+      },
+      "n_source_clusters": 71
+    },
+    "unknown_test_populations": {
+      "official_distorted": {
+        "false_accepts": 0,
+        "n": 71,
+        "wilson_ci95": [
+          0.0,
+          0.05132795219689034
+        ]
+      }
+    },
+    "test_known": {
+      "all": {
+        "correct_reference": {
+          "estimate": 0.6224677716390423,
+          "ci95": [
+            0.5807020360591789,
+            0.6618311688311688
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 338
+        },
+        "localized_correct": {
+          "estimate": 0.5156537753222836,
+          "ci95": [
+            0.4712430426716141,
+            0.5565910280195995
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 280
+        },
+        "accepted_correct": {
+          "estimate": 0.46408839779005523,
+          "ci95": [
+            0.42193308550185876,
+            0.5054565582019457
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 252
+        },
+        "accepted_localized": {
+          "estimate": 0.4014732965009208,
+          "ci95": [
+            0.3594854908792242,
+            0.44239048300150446
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 218
+        },
+        "accepted_wrong": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 0
+        }
+      },
+      "no_pitch_or_tempo": {
+        "correct_reference": {
+          "estimate": 0.7744186046511627,
+          "ci95": [
+            0.7330095038396602,
+            0.8149902954669405
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 333
+        },
+        "localized_correct": {
+          "estimate": 0.6441860465116279,
+          "ci95": [
+            0.5976744186046512,
+            0.6914196500205998
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 277
+        },
+        "accepted_correct": {
+          "estimate": 0.586046511627907,
+          "ci95": [
+            0.5364705882352941,
+            0.6329411764705882
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 252
+        },
+        "accepted_localized": {
+          "estimate": 0.5069767441860465,
+          "ci95": [
+            0.45727482678983833,
+            0.5571543778801843
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 218
+        },
+        "accepted_wrong": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 0
+        }
+      },
+      "pitch_or_tempo": {
+        "correct_reference": {
+          "estimate": 0.04424778761061947,
+          "ci95": [
+            0.008849557522123894,
+            0.08771929824561403
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 5
+        },
+        "localized_correct": {
+          "estimate": 0.02654867256637168,
+          "ci95": [
+            0.0,
+            0.061946902654867256
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 3
+        },
+        "accepted_correct": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 0
+        },
+        "accepted_localized": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 0
+        },
+        "accepted_wrong": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 0
+        }
+      },
+      "no_overlap": {
+        "correct_reference": {
+          "estimate": 0.6505681818181818,
+          "ci95": [
+            0.5994173694321439,
+            0.698005698005698
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 229
+        },
+        "localized_correct": {
+          "estimate": 0.5198863636363636,
+          "ci95": [
+            0.46875,
+            0.5730659025787965
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 183
+        },
+        "accepted_correct": {
+          "estimate": 0.5028409090909091,
+          "ci95": [
+            0.4472693032015066,
+            0.5552564214157975
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 177
+        },
+        "accepted_localized": {
+          "estimate": 0.42613636363636365,
+          "ci95": [
+            0.375,
+            0.47863247863247865
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 150
+        },
+        "accepted_wrong": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 0
+        }
+      },
+      "overlap": {
+        "correct_reference": {
+          "estimate": 0.5706806282722513,
+          "ci95": [
+            0.50247461928934,
+            0.643979057591623
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 109
+        },
+        "localized_correct": {
+          "estimate": 0.5078534031413613,
+          "ci95": [
+            0.43455497382198954,
+            0.582010582010582
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 97
+        },
+        "accepted_correct": {
+          "estimate": 0.39267015706806285,
+          "ci95": [
+            0.32642487046632124,
+            0.4663653400948074
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 75
+        },
+        "accepted_localized": {
+          "estimate": 0.35602094240837695,
+          "ci95": [
+            0.2894736842105263,
+            0.42408376963350786
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 68
+        },
+        "accepted_wrong": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 0
+        }
+      }
+    },
+    "test_known_crossed_ci": {
+      "correct_reference": {
+        "estimate": 0.6224677716390423,
+        "ci95": [
+          0.5476094983447926,
+          0.6914537147586356
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 338,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "localized_correct": {
+        "estimate": 0.5156537753222836,
+        "ci95": [
+          0.4433554651128957,
+          0.5840394512072578
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 280,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_correct": {
+        "estimate": 0.46408839779005523,
+        "ci95": [
+          0.3910780381485446,
+          0.5381819796544486
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 252,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_localized": {
+        "estimate": 0.4014732965009208,
+        "ci95": [
+          0.3333333333333333,
+          0.47187815083686224
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 218,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_wrong": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 0,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      }
+    },
+    "latency_s": {
+      "median": 0.021759415976703167,
+      "p95": 0.04204439652967265,
+      "p99": 0.055111999219516386,
+      "note": "Observed pipeline latency; concurrent experimental jobs may contend"
+    },
+    "stats": {
+      "index_build_wall_s": 6.193436792003922,
+      "reference_extraction_work_s": 0.0,
+      "reference_count": 659,
+      "reference_hash_count": 3239655,
+      "reference_audio_duration_s": 152155.86585034025,
+      "reference_cache_hits": 659,
+      "allocated_index_bytes": 423629976,
+      "bucket_overflow_count": 20847,
+      "stored_posting_count": 3218808
+    },
+    "config": {
+      "upstream_revision": "cb03ba99feafd41b8874307f0f4e808a6ce34362",
+      "density": 20.0,
+      "sample_rate": 11025,
+      "n_fft": 512,
+      "n_hop": 256,
+      "reference_shifts": 1,
+      "query_shifts": 4,
+      "match_window_frames": 2,
+      "min_count": 1,
+      "search_depth": 100,
+      "exact_count": false,
+      "hashbits": 20,
+      "bucketsize": 100,
+      "maxtimebits": 18,
+      "seed": 20261002
+    },
+    "matcher": null
+  },
+  {
+    "method": "audfprint",
+    "factor": 1,
+    "duration_s_requested": 5.0,
+    "threshold": 5e-324,
+    "threshold_target_calibration_fpr": 0.01,
+    "calibration_unknown": {
+      "accepted": 0,
+      "n": 74
+    },
+    "calibration_known": {
+      "correct": 82,
+      "n": 147
+    },
+    "unknown_test": {
+      "false_accepts": 0,
+      "n": 71,
+      "fpr": 0.0,
+      "wilson_ci95": [
+        0.0,
+        0.05132795219689034
+      ],
+      "source_cluster_interval": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n_queries": 71,
+        "n_source_clusters": 71,
+        "successes": 0
+      },
+      "n_source_clusters": 71
+    },
+    "unknown_test_populations": {
+      "official_distorted": {
+        "false_accepts": 0,
+        "n": 71,
+        "wilson_ci95": [
+          0.0,
+          0.05132795219689034
+        ]
+      }
+    },
+    "test_known": {
+      "all": {
+        "correct_reference": {
+          "estimate": 0.5948434622467772,
+          "ci95": [
+            0.5524718473568215,
+            0.6363678295873868
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 323
+        },
+        "localized_correct": {
+          "estimate": 0.5414364640883977,
+          "ci95": [
+            0.4981681602530311,
+            0.5825843987738563
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 294
+        },
+        "accepted_correct": {
+          "estimate": 0.5948434622467772,
+          "ci95": [
+            0.5524718473568215,
+            0.6363678295873868
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 323
+        },
+        "accepted_localized": {
+          "estimate": 0.5414364640883977,
+          "ci95": [
+            0.4981681602530311,
+            0.5825843987738563
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 294
+        },
+        "accepted_wrong": {
+          "estimate": 0.0055248618784530384,
+          "ci95": [
+            0.0,
+            0.01282051282051282
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 3
+        }
+      },
+      "no_pitch_or_tempo": {
+        "correct_reference": {
+          "estimate": 0.7488372093023256,
+          "ci95": [
+            0.7069737203804497,
+            0.7873955678278107
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 322
+        },
+        "localized_correct": {
+          "estimate": 0.6813953488372093,
+          "ci95": [
+            0.6342535936285937,
+            0.7247706422018348
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 293
+        },
+        "accepted_correct": {
+          "estimate": 0.7488372093023256,
+          "ci95": [
+            0.7069737203804497,
+            0.7873955678278107
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 322
+        },
+        "accepted_localized": {
+          "estimate": 0.6813953488372093,
+          "ci95": [
+            0.6342535936285937,
+            0.7247706422018348
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 293
+        },
+        "accepted_wrong": {
+          "estimate": 0.0069767441860465115,
+          "ci95": [
+            0.0,
+            0.016167217303908986
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 3
+        }
+      },
+      "pitch_or_tempo": {
+        "correct_reference": {
+          "estimate": 0.008849557522123894,
+          "ci95": [
+            0.0,
+            0.026785714285714284
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 1
+        },
+        "localized_correct": {
+          "estimate": 0.008849557522123894,
+          "ci95": [
+            0.0,
+            0.026785714285714284
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 1
+        },
+        "accepted_correct": {
+          "estimate": 0.008849557522123894,
+          "ci95": [
+            0.0,
+            0.026785714285714284
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 1
+        },
+        "accepted_localized": {
+          "estimate": 0.008849557522123894,
+          "ci95": [
+            0.0,
+            0.026785714285714284
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 1
+        },
+        "accepted_wrong": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 0
+        }
+      },
+      "no_overlap": {
+        "correct_reference": {
+          "estimate": 0.6278409090909091,
+          "ci95": [
+            0.5754878816493547,
+            0.6789772727272727
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 221
+        },
+        "localized_correct": {
+          "estimate": 0.5596590909090909,
+          "ci95": [
+            0.505713474025974,
+            0.6142968433832456
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 197
+        },
+        "accepted_correct": {
+          "estimate": 0.6278409090909091,
+          "ci95": [
+            0.5754878816493547,
+            0.6789772727272727
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 221
+        },
+        "accepted_localized": {
+          "estimate": 0.5596590909090909,
+          "ci95": [
+            0.505713474025974,
+            0.6142968433832456
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 197
+        },
+        "accepted_wrong": {
+          "estimate": 0.002840909090909091,
+          "ci95": [
+            0.0,
+            0.008645533141210375
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 1
+        }
+      },
+      "overlap": {
+        "correct_reference": {
+          "estimate": 0.5340314136125655,
+          "ci95": [
+            0.4631578947368421,
+            0.6031994047619046
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 102
+        },
+        "localized_correct": {
+          "estimate": 0.5078534031413613,
+          "ci95": [
+            0.4345376603230007,
+            0.5789473684210527
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 97
+        },
+        "accepted_correct": {
+          "estimate": 0.5340314136125655,
+          "ci95": [
+            0.4631578947368421,
+            0.6031994047619046
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 102
+        },
+        "accepted_localized": {
+          "estimate": 0.5078534031413613,
+          "ci95": [
+            0.4345376603230007,
+            0.5789473684210527
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 97
+        },
+        "accepted_wrong": {
+          "estimate": 0.010471204188481676,
+          "ci95": [
+            0.0,
+            0.02631578947368421
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 2
+        }
+      }
+    },
+    "test_known_crossed_ci": {
+      "correct_reference": {
+        "estimate": 0.5948434622467772,
+        "ci95": [
+          0.5213252255620534,
+          0.6614866480669589
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 323,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "localized_correct": {
+        "estimate": 0.5414364640883977,
+        "ci95": [
+          0.46603553797254343,
+          0.6111136226642556
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 294,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_correct": {
+        "estimate": 0.5948434622467772,
+        "ci95": [
+          0.5213252255620534,
+          0.6614866480669589
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 323,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_localized": {
+        "estimate": 0.5414364640883977,
+        "ci95": [
+          0.46603553797254343,
+          0.6111136226642556
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 294,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_wrong": {
+        "estimate": 0.0055248618784530384,
+        "ci95": [
+          0.0,
+          0.019400780808547794
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 3,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      }
+    },
+    "latency_s": {
+      "median": 0.030314958014059812,
+      "p95": 0.04175920442212372,
+      "p99": 0.05074959831079472,
+      "note": "Observed pipeline latency; concurrent experimental jobs may contend"
+    },
+    "stats": {
+      "index_build_wall_s": 6.193436792003922,
+      "reference_extraction_work_s": 0.0,
+      "reference_count": 659,
+      "reference_hash_count": 3239655,
+      "reference_audio_duration_s": 152155.86585034025,
+      "reference_cache_hits": 659,
+      "allocated_index_bytes": 423629976,
+      "bucket_overflow_count": 20847,
+      "stored_posting_count": 3218808
+    },
+    "config": {
+      "upstream_revision": "cb03ba99feafd41b8874307f0f4e808a6ce34362",
+      "density": 20.0,
+      "sample_rate": 11025,
+      "n_fft": 512,
+      "n_hop": 256,
+      "reference_shifts": 1,
+      "query_shifts": 4,
+      "match_window_frames": 2,
+      "min_count": 5,
+      "search_depth": 100,
+      "exact_count": false,
+      "hashbits": 20,
+      "bucketsize": 100,
+      "maxtimebits": 18,
+      "seed": 20261002
+    },
+    "matcher": null
+  },
+  {
+    "method": "audfprint_calibrated",
+    "factor": 1,
+    "duration_s_requested": 5.0,
+    "threshold": 6.000000000000001,
+    "threshold_target_calibration_fpr": 0.01,
+    "calibration_unknown": {
+      "accepted": 0,
+      "n": 74
+    },
+    "calibration_known": {
+      "correct": 105,
+      "n": 147
+    },
+    "unknown_test": {
+      "false_accepts": 1,
+      "n": 71,
+      "fpr": 0.014084507042253521,
+      "wilson_ci95": [
+        0.002490603270544213,
+        0.07556050520249005
+      ],
+      "source_cluster_interval": {
+        "estimate": 0.014084507042253521,
+        "ci95": [
+          0.0,
+          0.04225352112676056
+        ],
+        "n_queries": 71,
+        "n_source_clusters": 71,
+        "successes": 1
+      },
+      "n_source_clusters": 71
+    },
+    "unknown_test_populations": {
+      "official_distorted": {
+        "false_accepts": 1,
+        "n": 71,
+        "wilson_ci95": [
+          0.002490603270544213,
+          0.07556050520249005
+        ]
+      }
+    },
+    "test_known": {
+      "all": {
+        "correct_reference": {
+          "estimate": 0.712707182320442,
+          "ci95": [
+            0.6728272466565184,
+            0.7495543875685556
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 387
+        },
+        "localized_correct": {
+          "estimate": 0.6243093922651933,
+          "ci95": [
+            0.5821161074191088,
+            0.6660768300060496
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 339
+        },
+        "accepted_correct": {
+          "estimate": 0.6040515653775322,
+          "ci95": [
+            0.5614678899082569,
+            0.6439114391143912
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 328
+        },
+        "accepted_localized": {
+          "estimate": 0.5469613259668509,
+          "ci95": [
+            0.5045871559633027,
+            0.5876046138428828
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 297
+        },
+        "accepted_wrong": {
+          "estimate": 0.007366482504604052,
+          "ci95": [
+            0.0018281535648994515,
+            0.014842990254567522
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 4
+        }
+      },
+      "no_pitch_or_tempo": {
+        "correct_reference": {
+          "estimate": 0.8813953488372093,
+          "ci95": [
+            0.8488372093023255,
+            0.9113650932400933
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 379
+        },
+        "localized_correct": {
+          "estimate": 0.7767441860465116,
+          "ci95": [
+            0.7347335165728783,
+            0.8173357545797253
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 334
+        },
+        "accepted_correct": {
+          "estimate": 0.7604651162790698,
+          "ci95": [
+            0.7193284823058864,
+            0.8
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 327
+        },
+        "accepted_localized": {
+          "estimate": 0.6883720930232559,
+          "ci95": [
+            0.6425191039032436,
+            0.731041330970029
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 296
+        },
+        "accepted_wrong": {
+          "estimate": 0.0069767441860465115,
+          "ci95": [
+            0.0,
+            0.016167217303908986
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 3
+        }
+      },
+      "pitch_or_tempo": {
+        "correct_reference": {
+          "estimate": 0.07079646017699115,
+          "ci95": [
+            0.026785714285714284,
+            0.11869520748100498
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 8
+        },
+        "localized_correct": {
+          "estimate": 0.04424778761061947,
+          "ci95": [
+            0.008849557522123894,
+            0.08695652173913043
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 5
+        },
+        "accepted_correct": {
+          "estimate": 0.008849557522123894,
+          "ci95": [
+            0.0,
+            0.026785714285714284
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 1
+        },
+        "accepted_localized": {
+          "estimate": 0.008849557522123894,
+          "ci95": [
+            0.0,
+            0.026785714285714284
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 1
+        },
+        "accepted_wrong": {
+          "estimate": 0.008849557522123894,
+          "ci95": [
+            0.0,
+            0.026785714285714284
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 1
+        }
+      },
+      "no_overlap": {
+        "correct_reference": {
+          "estimate": 0.75,
+          "ci95": [
+            0.704015006385696,
+            0.7954545454545454
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 264
+        },
+        "localized_correct": {
+          "estimate": 0.6420454545454546,
+          "ci95": [
+            0.5926940282979608,
+            0.6942857142857143
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 226
+        },
+        "accepted_correct": {
+          "estimate": 0.6420454545454546,
+          "ci95": [
+            0.5902578796561605,
+            0.6942857142857143
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 226
+        },
+        "accepted_localized": {
+          "estimate": 0.5710227272727273,
+          "ci95": [
+            0.5184135977337111,
+            0.6257142857142857
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 201
+        },
+        "accepted_wrong": {
+          "estimate": 0.002840909090909091,
+          "ci95": [
+            0.0,
+            0.008645533141210375
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 1
+        }
+      },
+      "overlap": {
+        "correct_reference": {
+          "estimate": 0.643979057591623,
+          "ci95": [
+            0.5736650219298246,
+            0.7135416666666666
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 123
+        },
+        "localized_correct": {
+          "estimate": 0.5916230366492147,
+          "ci95": [
+            0.5208333333333334,
+            0.6631578947368421
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 113
+        },
+        "accepted_correct": {
+          "estimate": 0.5340314136125655,
+          "ci95": [
+            0.4630972719757509,
+            0.6030948289968908
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 102
+        },
+        "accepted_localized": {
+          "estimate": 0.5026178010471204,
+          "ci95": [
+            0.4308510638297872,
+            0.5729166666666666
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 96
+        },
+        "accepted_wrong": {
+          "estimate": 0.015706806282722512,
+          "ci95": [
+            0.0,
+            0.036458333333333336
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 3
+        }
+      }
+    },
+    "test_known_crossed_ci": {
+      "correct_reference": {
+        "estimate": 0.712707182320442,
+        "ci95": [
+          0.6456950664633856,
+          0.774451522486941
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 387,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "localized_correct": {
+        "estimate": 0.6243093922651933,
+        "ci95": [
+          0.5527920810135273,
+          0.6947172504525898
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 339,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_correct": {
+        "estimate": 0.6040515653775322,
+        "ci95": [
+          0.5305155589319577,
+          0.6703149183486529
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 328,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_localized": {
+        "estimate": 0.5469613259668509,
+        "ci95": [
+          0.4697227228047182,
+          0.6171886742234469
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 297,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_wrong": {
+        "estimate": 0.007366482504604052,
+        "ci95": [
+          0.0,
+          0.02329853670778556
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 4,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      }
+    },
+    "latency_s": {
+      "median": 0.031566001067403704,
+      "p95": 0.0434382660780102,
+      "p99": 0.05324180814903245,
+      "note": "Observed pipeline latency; concurrent experimental jobs may contend"
+    },
+    "stats": {
+      "index_build_wall_s": 6.193436792003922,
+      "reference_extraction_work_s": 0.0,
+      "reference_count": 659,
+      "reference_hash_count": 3239655,
+      "reference_audio_duration_s": 152155.86585034025,
+      "reference_cache_hits": 659,
+      "allocated_index_bytes": 423629976,
+      "bucket_overflow_count": 20847,
+      "stored_posting_count": 3218808
+    },
+    "config": {
+      "upstream_revision": "cb03ba99feafd41b8874307f0f4e808a6ce34362",
+      "density": 20.0,
+      "sample_rate": 11025,
+      "n_fft": 512,
+      "n_hop": 256,
+      "reference_shifts": 1,
+      "query_shifts": 4,
+      "match_window_frames": 2,
+      "min_count": 1,
+      "search_depth": 100,
+      "exact_count": false,
+      "hashbits": 20,
+      "bucketsize": 100,
+      "maxtimebits": 18,
+      "seed": 20261002
+    },
+    "matcher": null
+  },
+  {
+    "method": "audfprint",
+    "factor": 1,
+    "duration_s_requested": 10.0,
+    "threshold": 5e-324,
+    "threshold_target_calibration_fpr": 0.01,
+    "calibration_unknown": {
+      "accepted": 0,
+      "n": 74
+    },
+    "calibration_known": {
+      "correct": 96,
+      "n": 147
+    },
+    "unknown_test": {
+      "false_accepts": 3,
+      "n": 71,
+      "fpr": 0.04225352112676056,
+      "wilson_ci95": [
+        0.014473260620475319,
+        0.11702416040484681
+      ],
+      "source_cluster_interval": {
+        "estimate": 0.04225352112676056,
+        "ci95": [
+          0.0,
+          0.09859154929577464
+        ],
+        "n_queries": 71,
+        "n_source_clusters": 71,
+        "successes": 3
+      },
+      "n_source_clusters": 71
+    },
+    "unknown_test_populations": {
+      "official_distorted": {
+        "false_accepts": 3,
+        "n": 71,
+        "wilson_ci95": [
+          0.014473260620475319,
+          0.11702416040484681
+        ]
+      }
+    },
+    "test_known": {
+      "all": {
+        "correct_reference": {
+          "estimate": 0.6924493554327809,
+          "ci95": [
+            0.6524022442516867,
+            0.7299306437109911
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 376
+        },
+        "localized_correct": {
+          "estimate": 0.6537753222836096,
+          "ci95": [
+            0.6130810834198684,
+            0.6908752327746741
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 355
+        },
+        "accepted_correct": {
+          "estimate": 0.6924493554327809,
+          "ci95": [
+            0.6524022442516867,
+            0.7299306437109911
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 376
+        },
+        "accepted_localized": {
+          "estimate": 0.6537753222836096,
+          "ci95": [
+            0.6130810834198684,
+            0.6908752327746741
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 355
+        },
+        "accepted_wrong": {
+          "estimate": 0.014732965009208104,
+          "ci95": [
+            0.005524607978550536,
+            0.025547445255474453
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 8
+        }
+      },
+      "no_pitch_or_tempo": {
+        "correct_reference": {
+          "estimate": 0.8697674418604651,
+          "ci95": [
+            0.8363960845457158,
+            0.9014084507042254
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 374
+        },
+        "localized_correct": {
+          "estimate": 0.8209302325581396,
+          "ci95": [
+            0.783385069977812,
+            0.8561488891714077
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 353
+        },
+        "accepted_correct": {
+          "estimate": 0.8697674418604651,
+          "ci95": [
+            0.8363960845457158,
+            0.9014084507042254
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 374
+        },
+        "accepted_localized": {
+          "estimate": 0.8209302325581396,
+          "ci95": [
+            0.783385069977812,
+            0.8561488891714077
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 353
+        },
+        "accepted_wrong": {
+          "estimate": 0.009302325581395349,
+          "ci95": [
+            0.00220588235294118,
+            0.018912529550827423
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 4
+        }
+      },
+      "pitch_or_tempo": {
+        "correct_reference": {
+          "estimate": 0.017699115044247787,
+          "ci95": [
+            0.0,
+            0.044642857142857144
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 2
+        },
+        "localized_correct": {
+          "estimate": 0.017699115044247787,
+          "ci95": [
+            0.0,
+            0.044642857142857144
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 2
+        },
+        "accepted_correct": {
+          "estimate": 0.017699115044247787,
+          "ci95": [
+            0.0,
+            0.044642857142857144
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 2
+        },
+        "accepted_localized": {
+          "estimate": 0.017699115044247787,
+          "ci95": [
+            0.0,
+            0.044642857142857144
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 2
+        },
+        "accepted_wrong": {
+          "estimate": 0.035398230088495575,
+          "ci95": [
+            0.008771929824561403,
+            0.07142857142857142
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 4
+        }
+      },
+      "no_overlap": {
+        "correct_reference": {
+          "estimate": 0.7301136363636364,
+          "ci95": [
+            0.6809086629001883,
+            0.7755681818181818
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 257
+        },
+        "localized_correct": {
+          "estimate": 0.6846590909090909,
+          "ci95": [
+            0.6353276353276354,
+            0.733529022622304
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 241
+        },
+        "accepted_correct": {
+          "estimate": 0.7301136363636364,
+          "ci95": [
+            0.6809086629001883,
+            0.7755681818181818
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 257
+        },
+        "accepted_localized": {
+          "estimate": 0.6846590909090909,
+          "ci95": [
+            0.6353276353276354,
+            0.733529022622304
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 241
+        },
+        "accepted_wrong": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 0
+        }
+      },
+      "overlap": {
+        "correct_reference": {
+          "estimate": 0.6230366492146597,
+          "ci95": [
+            0.5544041450777202,
+            0.6878543083900225
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 119
+        },
+        "localized_correct": {
+          "estimate": 0.5968586387434555,
+          "ci95": [
+            0.5263089364035087,
+            0.6649214659685864
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 114
+        },
+        "accepted_correct": {
+          "estimate": 0.6230366492146597,
+          "ci95": [
+            0.5544041450777202,
+            0.6878543083900225
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 119
+        },
+        "accepted_localized": {
+          "estimate": 0.5968586387434555,
+          "ci95": [
+            0.5263089364035087,
+            0.6649214659685864
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 114
+        },
+        "accepted_wrong": {
+          "estimate": 0.041884816753926704,
+          "ci95": [
+            0.015625,
+            0.07330807384954527
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 8
+        }
+      }
+    },
+    "test_known_crossed_ci": {
+      "correct_reference": {
+        "estimate": 0.6924493554327809,
+        "ci95": [
+          0.6225022686025409,
+          0.7558362651046673
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 376,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "localized_correct": {
+        "estimate": 0.6537753222836096,
+        "ci95": [
+          0.5849403040362451,
+          0.7217096474953618
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 355,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_correct": {
+        "estimate": 0.6924493554327809,
+        "ci95": [
+          0.6225022686025409,
+          0.7558362651046673
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 376,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_localized": {
+        "estimate": 0.6537753222836096,
+        "ci95": [
+          0.5849403040362451,
+          0.7217096474953618
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 355,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_wrong": {
+        "estimate": 0.014732965009208104,
+        "ci95": [
+          0.0016419688282322538,
+          0.03832644143842494
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 8,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      }
+    },
+    "latency_s": {
+      "median": 0.05071858305018395,
+      "p95": 0.06673283855780025,
+      "p99": 0.07611098512774336,
+      "note": "Observed pipeline latency; concurrent experimental jobs may contend"
+    },
+    "stats": {
+      "index_build_wall_s": 6.193436792003922,
+      "reference_extraction_work_s": 0.0,
+      "reference_count": 659,
+      "reference_hash_count": 3239655,
+      "reference_audio_duration_s": 152155.86585034025,
+      "reference_cache_hits": 659,
+      "allocated_index_bytes": 423629976,
+      "bucket_overflow_count": 20847,
+      "stored_posting_count": 3218808
+    },
+    "config": {
+      "upstream_revision": "cb03ba99feafd41b8874307f0f4e808a6ce34362",
+      "density": 20.0,
+      "sample_rate": 11025,
+      "n_fft": 512,
+      "n_hop": 256,
+      "reference_shifts": 1,
+      "query_shifts": 4,
+      "match_window_frames": 2,
+      "min_count": 5,
+      "search_depth": 100,
+      "exact_count": false,
+      "hashbits": 20,
+      "bucketsize": 100,
+      "maxtimebits": 18,
+      "seed": 20261002
+    },
+    "matcher": null
+  },
+  {
+    "method": "audfprint_calibrated",
+    "factor": 1,
+    "duration_s_requested": 10.0,
+    "threshold": 6.000000000000001,
+    "threshold_target_calibration_fpr": 0.01,
+    "calibration_unknown": {
+      "accepted": 0,
+      "n": 74
+    },
+    "calibration_known": {
+      "correct": 105,
+      "n": 147
+    },
+    "unknown_test": {
+      "false_accepts": 5,
+      "n": 71,
+      "fpr": 0.07042253521126761,
+      "wilson_ci95": [
+        0.030453602439710924,
+        0.15449013113789908
+      ],
+      "source_cluster_interval": {
+        "estimate": 0.07042253521126761,
+        "ci95": [
+          0.014084507042253521,
+          0.1267605633802817
+        ],
+        "n_queries": 71,
+        "n_source_clusters": 71,
+        "successes": 5
+      },
+      "n_source_clusters": 71
+    },
+    "unknown_test_populations": {
+      "official_distorted": {
+        "false_accepts": 5,
+        "n": 71,
+        "wilson_ci95": [
+          0.030453602439710924,
+          0.15449013113789908
+        ]
+      }
+    },
+    "test_known": {
+      "all": {
+        "correct_reference": {
+          "estimate": 0.7458563535911602,
+          "ci95": [
+            0.7063115227712572,
+            0.7808528685205876
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 405
+        },
+        "localized_correct": {
+          "estimate": 0.6887661141804788,
+          "ci95": [
+            0.6492472509481841,
+            0.7260794027977044
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 374
+        },
+        "accepted_correct": {
+          "estimate": 0.7090239410681399,
+          "ci95": [
+            0.669144298053794,
+            0.7463339700405301
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 385
+        },
+        "accepted_localized": {
+          "estimate": 0.6629834254143646,
+          "ci95": [
+            0.6215709401593444,
+            0.7005589136095632
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 360
+        },
+        "accepted_wrong": {
+          "estimate": 0.020257826887661142,
+          "ci95": [
+            0.00922509225092251,
+            0.03296854521625163
+          ],
+          "n_queries": 543,
+          "n_source_clusters": 518,
+          "successes": 11
+        }
+      },
+      "no_pitch_or_tempo": {
+        "correct_reference": {
+          "estimate": 0.9116279069767442,
+          "ci95": [
+            0.883177570093458,
+            0.9382186295100466
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 392
+        },
+        "localized_correct": {
+          "estimate": 0.8534883720930233,
+          "ci95": [
+            0.8185888436394813,
+            0.8860531214590189
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 367
+        },
+        "accepted_correct": {
+          "estimate": 0.8837209302325582,
+          "ci95": [
+            0.8528718175958749,
+            0.9130434782608695
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 380
+        },
+        "accepted_localized": {
+          "estimate": 0.827906976744186,
+          "ci95": [
+            0.7907991886409736,
+            0.8623931937942183
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 356
+        },
+        "accepted_wrong": {
+          "estimate": 0.009302325581395349,
+          "ci95": [
+            0.00220588235294118,
+            0.018912529550827423
+          ],
+          "n_queries": 430,
+          "n_source_clusters": 412,
+          "successes": 4
+        }
+      },
+      "pitch_or_tempo": {
+        "correct_reference": {
+          "estimate": 0.11504424778761062,
+          "ci95": [
+            0.061946902654867256,
+            0.17699115044247787
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 13
+        },
+        "localized_correct": {
+          "estimate": 0.061946902654867256,
+          "ci95": [
+            0.017857142857142856,
+            0.10714285714285714
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 7
+        },
+        "accepted_correct": {
+          "estimate": 0.04424778761061947,
+          "ci95": [
+            0.008849557522123894,
+            0.08695652173913043
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 5
+        },
+        "accepted_localized": {
+          "estimate": 0.035398230088495575,
+          "ci95": [
+            0.008771929824561403,
+            0.07142857142857142
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 4
+        },
+        "accepted_wrong": {
+          "estimate": 0.061946902654867256,
+          "ci95": [
+            0.017857142857142856,
+            0.10714285714285714
+          ],
+          "n_queries": 113,
+          "n_source_clusters": 112,
+          "successes": 7
+        }
+      },
+      "no_overlap": {
+        "correct_reference": {
+          "estimate": 0.7869318181818182,
+          "ci95": [
+            0.7407380723663144,
+            0.8286618889849227
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 277
+        },
+        "localized_correct": {
+          "estimate": 0.71875,
+          "ci95": [
+            0.6704545454545454,
+            0.768361581920904
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 253
+        },
+        "accepted_correct": {
+          "estimate": 0.75,
+          "ci95": [
+            0.7014019750688035,
+            0.7942857142857143
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 264
+        },
+        "accepted_localized": {
+          "estimate": 0.6931818181818182,
+          "ci95": [
+            0.6438697318007663,
+            0.741605136436597
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 244
+        },
+        "accepted_wrong": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "n_queries": 352,
+          "n_source_clusters": 345,
+          "successes": 0
+        }
+      },
+      "overlap": {
+        "correct_reference": {
+          "estimate": 0.6701570680628273,
+          "ci95": [
+            0.604275289661319,
+            0.7329842931937173
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 128
+        },
+        "localized_correct": {
+          "estimate": 0.6335078534031413,
+          "ci95": [
+            0.5647668393782384,
+            0.7015706806282722
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 121
+        },
+        "accepted_correct": {
+          "estimate": 0.6335078534031413,
+          "ci95": [
+            0.5654450261780105,
+            0.6979166666666666
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 121
+        },
+        "accepted_localized": {
+          "estimate": 0.6073298429319371,
+          "ci95": [
+            0.5392670157068062,
+            0.6735751295336787
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 116
+        },
+        "accepted_wrong": {
+          "estimate": 0.05759162303664921,
+          "ci95": [
+            0.02631578947368421,
+            0.09375
+          ],
+          "n_queries": 191,
+          "n_source_clusters": 187,
+          "successes": 11
+        }
+      }
+    },
+    "test_known_crossed_ci": {
+      "correct_reference": {
+        "estimate": 0.7458563535911602,
+        "ci95": [
+          0.676320272572402,
+          0.8056174620302877
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 405,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "localized_correct": {
+        "estimate": 0.6887661141804788,
+        "ci95": [
+          0.6214112575268971,
+          0.7547022719398108
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 374,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_correct": {
+        "estimate": 0.7090239410681399,
+        "ci95": [
+          0.6402652871476721,
+          0.7716636753126447
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 385,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_localized": {
+        "estimate": 0.6629834254143646,
+        "ci95": [
+          0.5937853342462656,
+          0.7302265689935099
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 360,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      },
+      "accepted_wrong": {
+        "estimate": 0.020257826887661142,
+        "ci95": [
+          0.003676470588235294,
+          0.04624450966200338
+        ],
+        "n_queries": 543,
+        "n_source_clusters": 518,
+        "n_montage_clusters": 207,
+        "successes": 11,
+        "resampling": "source IDs and montage IDs independently; product weights"
+      }
+    },
+    "latency_s": {
+      "median": 0.05116708407877013,
+      "p95": 0.06713936232263222,
+      "p99": 0.07775804392062127,
+      "note": "Observed pipeline latency; concurrent experimental jobs may contend"
+    },
+    "stats": {
+      "index_build_wall_s": 6.193436792003922,
+      "reference_extraction_work_s": 0.0,
+      "reference_count": 659,
+      "reference_hash_count": 3239655,
+      "reference_audio_duration_s": 152155.86585034025,
+      "reference_cache_hits": 659,
+      "allocated_index_bytes": 423629976,
+      "bucket_overflow_count": 20847,
+      "stored_posting_count": 3218808
+    },
+    "config": {
+      "upstream_revision": "cb03ba99feafd41b8874307f0f4e808a6ce34362",
+      "density": 20.0,
+      "sample_rate": 11025,
+      "n_fft": 512,
+      "n_hop": 256,
+      "reference_shifts": 1,
+      "query_shifts": 4,
+      "match_window_frames": 2,
+      "min_count": 1,
+      "search_depth": 100,
+      "exact_count": false,
+      "hashbits": 20,
+      "bucketsize": 100,
+      "maxtimebits": 18,
+      "seed": 20261002
+    },
+    "matcher": null
+  }
+]

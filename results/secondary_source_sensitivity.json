@@ -1,0 +1,901 @@
+{
+  "primary_protocol_unchanged": true,
+  "prediction_ids_unchanged": true,
+  "thresholds_unchanged": true,
+  "sensitivity": "Identification of any source whose integer annotated interval overlaps the actual 5 s crop; localization is not relabeled",
+  "annotation_precision_note": "Interval annotations are integer seconds; overlap sensitivity retains their uncertainty",
+  "results": [
+    {
+      "result_path": "work/benchmarks/acr_default_official_from_extended/acr_d8_5s.json",
+      "method": "ACR-PCA",
+      "factor": 8,
+      "population": "official_original",
+      "calibration_fpr_target": 0.01,
+      "threshold_unchanged": 0.0530928137101359,
+      "calibration_unknown_n": 74,
+      "known_n": 543,
+      "raw_target_correct": 446,
+      "raw_annotated_source_admissible": 450,
+      "accepted_target_correct": 405,
+      "accepted_annotated_source_admissible": 407,
+      "accepted_target_mismatch": 2,
+      "accepted_mismatch_secondary_valid": 2,
+      "accepted_no_annotated_source": 0,
+      "cases": [
+        {
+          "query_id": "pexafb_hard_medium:chunk0279@5s",
+          "target_reference_id": "133347",
+          "predicted_reference_id": "139654",
+          "score": 0.26181615615222326,
+          "actual_crop_begin_s": 25.5,
+          "actual_crop_end_s": 30.5,
+          "annotated_secondary_overlap": [
+            {
+              "reference_id": "139654",
+              "overlap_duration_s": 3.5,
+              "annotation_query_begin_s": 16.0,
+              "effective_annotation_query_end_s": 29.0
+            },
+            {
+              "reference_id": "129661",
+              "overlap_duration_s": 1.5,
+              "annotation_query_begin_s": 29.0,
+              "effective_annotation_query_end_s": 59.1935
+            }
+          ],
+          "secondary_source_valid": true
+        },
+        {
+          "query_id": "pexafb_hard_medium:chunk0375@5s",
+          "target_reference_id": "011720",
+          "predicted_reference_id": "010039",
+          "score": 0.07389845872921715,
+          "actual_crop_begin_s": 65.162875,
+          "actual_crop_end_s": 70.162875,
+          "annotated_secondary_overlap": [
+            {
+              "reference_id": "010039",
+              "overlap_duration_s": 1.8371250000000003,
+              "annotation_query_begin_s": 38.0,
+              "effective_annotation_query_end_s": 67.0
+            }
+          ],
+          "secondary_source_valid": true
+        }
+      ]
+    },
+    {
+      "result_path": "work/benchmarks/acr_ivf_study/acr_ivf_selected_5s.json",
+      "method": "ACR-PCA (calibration-selected IVF/query stride)",
+      "factor": 8,
+      "population": "official_original",
+      "calibration_fpr_target": 0.01,
+      "threshold_unchanged": 0.0530928137101359,
+      "calibration_unknown_n": 74,
+      "known_n": 543,
+      "raw_target_correct": 445,
+      "raw_annotated_source_admissible": 449,
+      "accepted_target_correct": 404,
+      "accepted_annotated_source_admissible": 406,
+      "accepted_target_mismatch": 2,
+      "accepted_mismatch_secondary_valid": 2,
+      "accepted_no_annotated_source": 0,
+      "cases": [
+        {
+          "query_id": "pexafb_hard_medium:chunk0279@5s",
+          "target_reference_id": "133347",
+          "predicted_reference_id": "139654",
+          "score": 0.26181615615222326,
+          "actual_crop_begin_s": 25.5,
+          "actual_crop_end_s": 30.5,
+          "annotated_secondary_overlap": [
+            {
+              "reference_id": "139654",
+              "overlap_duration_s": 3.5,
+              "annotation_query_begin_s": 16.0,
+              "effective_annotation_query_end_s": 29.0
+            },
+            {
+              "reference_id": "129661",
+              "overlap_duration_s": 1.5,
+              "annotation_query_begin_s": 29.0,
+              "effective_annotation_query_end_s": 59.1935
+            }
+          ],
+          "secondary_source_valid": true
+        },
+        {
+          "query_id": "pexafb_hard_medium:chunk0375@5s",
+          "target_reference_id": "011720",
+          "predicted_reference_id": "010039",
+          "score": 0.07389845872921715,
+          "actual_crop_begin_s": 65.162875,
+          "actual_crop_end_s": 70.162875,
+          "annotated_secondary_overlap": [
+            {
+              "reference_id": "010039",
+              "overlap_duration_s": 1.8371250000000003,
+              "annotation_query_begin_s": 38.0,
+              "effective_annotation_query_end_s": 67.0
+            }
+          ],
+          "secondary_source_valid": true
+        }
+      ]
+    },
+    {
+      "result_path": "work/benchmarks/acr_ivf_efficiency_study/acr_ivf_selected_5s.json",
+      "method": "ACR-PCA (calibration-selected IVF/query stride)",
+      "factor": 8,
+      "population": "official_original",
+      "calibration_fpr_target": 0.01,
+      "threshold_unchanged": 0.05657886749843364,
+      "calibration_unknown_n": 74,
+      "known_n": 543,
+      "raw_target_correct": 446,
+      "raw_annotated_source_admissible": 450,
+      "accepted_target_correct": 401,
+      "accepted_annotated_source_admissible": 403,
+      "accepted_target_mismatch": 2,
+      "accepted_mismatch_secondary_valid": 2,
+      "accepted_no_annotated_source": 0,
+      "cases": [
+        {
+          "query_id": "pexafb_hard_medium:chunk0279@5s",
+          "target_reference_id": "133347",
+          "predicted_reference_id": "139654",
+          "score": 0.21136342629637325,
+          "actual_crop_begin_s": 25.5,
+          "actual_crop_end_s": 30.5,
+          "annotated_secondary_overlap": [
+            {
+              "reference_id": "139654",
+              "overlap_duration_s": 3.5,
+              "annotation_query_begin_s": 16.0,
+              "effective_annotation_query_end_s": 29.0
+            },
+            {
+              "reference_id": "129661",
+              "overlap_duration_s": 1.5,
+              "annotation_query_begin_s": 29.0,
+              "effective_annotation_query_end_s": 59.1935
+            }
+          ],
+          "secondary_source_valid": true
+        },
+        {
+          "query_id": "pexafb_hard_medium:chunk0375@5s",
+          "target_reference_id": "011720",
+          "predicted_reference_id": "010039",
+          "score": 0.07685360287968014,
+          "actual_crop_begin_s": 65.162875,
+          "actual_crop_end_s": 70.162875,
+          "annotated_secondary_overlap": [
+            {
+              "reference_id": "010039",
+              "overlap_duration_s": 1.8371250000000003,
+              "annotation_query_begin_s": 38.0,
+              "effective_annotation_query_end_s": 67.0
+            }
+          ],
+          "secondary_source_valid": true
+        }
+      ]
+    },
+    {
+      "result_path": "work/benchmarks/audfprint_medium/audfprint_5s.json",
+      "method": "audfprint",
+      "factor": 1,
+      "population": "official_original",
+      "calibration_fpr_target": 0.01,
+      "threshold_unchanged": 5e-324,
+      "calibration_unknown_n": 74,
+      "known_n": 543,
+      "raw_target_correct": 323,
+      "raw_annotated_source_admissible": 325,
+      "accepted_target_correct": 323,
+      "accepted_annotated_source_admissible": 325,
+      "accepted_target_mismatch": 3,
+      "accepted_mismatch_secondary_valid": 2,
+      "accepted_no_annotated_source": 1,
+      "cases": [
+        {
+          "query_id": "pexafb_hard_medium:chunk0160",
+          "target_reference_id": "135710",
+          "predicted_reference_id": "075393",
+          "score": 7.0,
+          "actual_crop_begin_s": 52.770250000000004,
+          "actual_crop_end_s": 57.770250000000004,
+          "annotated_secondary_overlap": [
+            {
+              "reference_id": "075393",
+              "overlap_duration_s": 2.2297499999999957,
+              "annotation_query_begin_s": 29.0,
+              "effective_annotation_query_end_s": 55.0
+            }
+          ],
+          "secondary_source_valid": true
+        },
+        {
+          "query_id": "pexafb_hard_medium:chunk0450",
+          "target_reference_id": "143056",
+          "predicted_reference_id": "147493",
+          "score": 12.0,
+          "actual_crop_begin_s": 49.0,
+          "actual_crop_end_s": 54.0,
+          "annotated_secondary_overlap": [],
+          "secondary_source_valid": false
+        },
+        {
+          "query_id": "pexafb_hard_medium:chunk0860",
+          "target_reference_id": "136407",
+          "predicted_reference_id": "098573",
+          "score": 9.0,
+          "actual_crop_begin_s": 25.0,
+          "actual_crop_end_s": 30.0,
+          "annotated_secondary_overlap": [
+            {
+              "reference_id": "149414",
+              "overlap_duration_s": 1.0,
+              "annotation_query_begin_s": 0.0,
+              "effective_annotation_query_end_s": 26.0
+            },
+            {
+              "reference_id": "098573",
+              "overlap_duration_s": 3.0,
+              "annotation_query_begin_s": 27.0,
+              "effective_annotation_query_end_s": 49.0
+            }
+          ],
+          "secondary_source_valid": true
+        }
+      ]
+    },
+    {
+      "result_path": "work/benchmarks/audfprint_calibrated_medium/audfprint_5s.json",
+      "method": "audfprint_calibrated",
+      "factor": 1,
+      "population": "official_original",
+      "calibration_fpr_target": 0.01,
+      "threshold_unchanged": 6.000000000000001,
+      "calibration_unknown_n": 74,
+      "known_n": 543,
+      "raw_target_correct": 387,
+      "raw_annotated_source_admissible": 391,
+      "accepted_target_correct": 328,
+      "accepted_annotated_source_admissible": 330,
+      "accepted_target_mismatch": 4,
+      "accepted_mismatch_secondary_valid": 2,
+      "accepted_no_annotated_source": 2,
+      "cases": [
+        {
+          "query_id": "pexafb_hard_medium:chunk0002",
+          "target_reference_id": "117408",
+          "predicted_reference_id": "130859",
+          "score": 8.0,
+          "actual_crop_begin_s": 56.5,
+          "actual_crop_end_s": 61.5,
+          "annotated_secondary_overlap": [],
+          "secondary_source_valid": false
+        },
+        {
+          "query_id": "pexafb_hard_medium:chunk0160",
+          "target_reference_id": "135710",
+          "predicted_reference_id": "075393",
+          "score": 7.0,
+          "actual_crop_begin_s": 52.770250000000004,
+          "actual_crop_end_s": 57.770250000000004,
+          "annotated_secondary_overlap": [
+            {
+              "reference_id": "075393",
+              "overlap_duration_s": 2.2297499999999957,
+              "annotation_query_begin_s": 29.0,
+              "effective_annotation_query_end_s": 55.0
+            }
+          ],
+          "secondary_source_valid": true
+        },
+        {
+          "query_id": "pexafb_hard_medium:chunk0450",
+          "target_reference_id": "143056",
+          "predicted_reference_id": "147493",
+          "score": 12.0,
+          "actual_crop_begin_s": 49.0,
+          "actual_crop_end_s": 54.0,
+          "annotated_secondary_overlap": [],
+          "secondary_source_valid": false
+        },
+        {
+          "query_id": "pexafb_hard_medium:chunk0860",
+          "target_reference_id": "136407",
+          "predicted_reference_id": "098573",
+          "score": 9.0,
+          "actual_crop_begin_s": 25.0,
+          "actual_crop_end_s": 30.0,
+          "annotated_secondary_overlap": [
+            {
+              "reference_id": "149414",
+              "overlap_duration_s": 1.0,
+              "annotation_query_begin_s": 0.0,
+              "effective_annotation_query_end_s": 26.0
+            },
+            {
+              "reference_id": "098573",
+              "overlap_duration_s": 3.0,
+              "annotation_query_begin_s": 27.0,
+              "effective_annotation_query_end_s": 49.0
+            }
+          ],
+          "secondary_source_valid": true
+        }
+      ]
+    },
+    {
+      "result_path": "work/benchmarks/soundfingerprinting_native_medium/soundfingerprinting_5s.json",
+      "method": "SoundFingerprinting",
+      "factor": 1,
+      "population": "official_original",
+      "calibration_fpr_target": 0.01,
+      "threshold_unchanged": 0.39809732614700005,
+      "calibration_unknown_n": 74,
+      "known_n": 543,
+      "raw_target_correct": 394,
+      "raw_annotated_source_admissible": 396,
+      "accepted_target_correct": 370,
+      "accepted_annotated_source_admissible": 372,
+      "accepted_target_mismatch": 2,
+      "accepted_mismatch_secondary_valid": 2,
+      "accepted_no_annotated_source": 0,
+      "cases": [
+        {
+          "query_id": "pexafb_hard_medium:chunk0279",
+          "target_reference_id": "133347",
+          "predicted_reference_id": "139654",
+          "score": 0.630176738716,
+          "actual_crop_begin_s": 25.5,
+          "actual_crop_end_s": 30.5,
+          "annotated_secondary_overlap": [
+            {
+              "reference_id": "139654",
+              "overlap_duration_s": 3.5,
+              "annotation_query_begin_s": 16.0,
+              "effective_annotation_query_end_s": 29.0
+            },
+            {
+              "reference_id": "129661",
+              "overlap_duration_s": 1.5,
+              "annotation_query_begin_s": 29.0,
+              "effective_annotation_query_end_s": 59.1935
+            }
+          ],
+          "secondary_source_valid": true
+        },
+        {
+          "query_id": "pexafb_hard_medium:chunk0375",
+          "target_reference_id": "011720",
+          "predicted_reference_id": "010039",
+          "score": 0.501596493285,
+          "actual_crop_begin_s": 65.162875,
+          "actual_crop_end_s": 70.162875,
+          "annotated_secondary_overlap": [
+            {
+              "reference_id": "010039",
+              "overlap_duration_s": 1.8371250000000003,
+              "annotation_query_begin_s": 38.0,
+              "effective_annotation_query_end_s": 67.0
+            }
+          ],
+          "secondary_source_valid": true
+        }
+      ]
+    },
+    {
+      "result_path": "work/benchmarks/nmfp_results/nmfp_native_5s.json",
+      "method": "NMFP-Triplet (native)",
+      "factor": 1,
+      "population": "official_original",
+      "calibration_fpr_target": 0.01,
+      "threshold_unchanged": 0.5600935816764833,
+      "calibration_unknown_n": 74,
+      "known_n": 543,
+      "raw_target_correct": 466,
+      "raw_annotated_source_admissible": 471,
+      "accepted_target_correct": 448,
+      "accepted_annotated_source_admissible": 449,
+      "accepted_target_mismatch": 1,
+      "accepted_mismatch_secondary_valid": 1,
+      "accepted_no_annotated_source": 0,
+      "cases": [
+        {
+          "query_id": "pexafb_hard_medium:chunk0279@5",
+          "target_reference_id": "133347",
+          "predicted_reference_id": "139654",
+          "score": 0.6741325259208679,
+          "actual_crop_begin_s": 25.5,
+          "actual_crop_end_s": 30.5,
+          "annotated_secondary_overlap": [
+            {
+              "reference_id": "139654",
+              "overlap_duration_s": 3.5,
+              "annotation_query_begin_s": 16.0,
+              "effective_annotation_query_end_s": 29.0
+            },
+            {
+              "reference_id": "129661",
+              "overlap_duration_s": 1.5,
+              "annotation_query_begin_s": 29.0,
+              "effective_annotation_query_end_s": 59.1935
+            }
+          ],
+          "secondary_source_valid": true
+        }
+      ]
+    },
+    {
+      "result_path": "work/benchmarks/nmfp_ivf_results/nmfp_native_ivf1024_p16_5s.json",
+      "method": "NMFP-Triplet (native-IVF)",
+      "factor": 1,
+      "population": "official_original",
+      "calibration_fpr_target": 0.01,
+      "threshold_unchanged": 0.5600935816764833,
+      "calibration_unknown_n": 74,
+      "known_n": 543,
+      "raw_target_correct": 465,
+      "raw_annotated_source_admissible": 470,
+      "accepted_target_correct": 448,
+      "accepted_annotated_source_admissible": 449,
+      "accepted_target_mismatch": 1,
+      "accepted_mismatch_secondary_valid": 1,
+      "accepted_no_annotated_source": 0,
+      "cases": [
+        {
+          "query_id": "pexafb_hard_medium:chunk0279@5",
+          "target_reference_id": "133347",
+          "predicted_reference_id": "139654",
+          "score": 0.6741325259208679,
+          "actual_crop_begin_s": 25.5,
+          "actual_crop_end_s": 30.5,
+          "annotated_secondary_overlap": [
+            {
+              "reference_id": "139654",
+              "overlap_duration_s": 3.5,
+              "annotation_query_begin_s": 16.0,
+              "effective_annotation_query_end_s": 29.0
+            },
+            {
+              "reference_id": "129661",
+              "overlap_duration_s": 1.5,
+              "annotation_query_begin_s": 29.0,
+              "effective_annotation_query_end_s": 59.1935
+            }
+          ],
+          "secondary_source_valid": true
+        }
+      ]
+    },
+    {
+      "result_path": "work/benchmarks/peaknet_primary_results/peaknet_native_5s.json",
+      "method": "PeakNetFP (native)",
+      "factor": 1,
+      "population": "official_original",
+      "calibration_fpr_target": 0.01,
+      "threshold_unchanged": 0.6623607873916627,
+      "calibration_unknown_n": 74,
+      "known_n": 543,
+      "raw_target_correct": 457,
+      "raw_annotated_source_admissible": 459,
+      "accepted_target_correct": 371,
+      "accepted_annotated_source_admissible": 371,
+      "accepted_target_mismatch": 2,
+      "accepted_mismatch_secondary_valid": 0,
+      "accepted_no_annotated_source": 2,
+      "cases": [
+        {
+          "query_id": "pexafb_hard_medium:chunk0081@5",
+          "target_reference_id": "004011",
+          "predicted_reference_id": "035985",
+          "score": 0.6985917091369629,
+          "actual_crop_begin_s": 139.8710625,
+          "actual_crop_end_s": 144.8710625,
+          "annotated_secondary_overlap": [],
+          "secondary_source_valid": false
+        },
+        {
+          "query_id": "pexafb_hard_medium:chunk0578@5",
+          "target_reference_id": "137922",
+          "predicted_reference_id": "127646",
+          "score": 0.7590495944023132,
+          "actual_crop_begin_s": 41.5,
+          "actual_crop_end_s": 46.5,
+          "annotated_secondary_overlap": [],
+          "secondary_source_valid": false
+        }
+      ]
+    },
+    {
+      "result_path": "work/benchmarks/acr_extended/acr_d8_5s.json",
+      "method": "ACR-PCA",
+      "factor": 8,
+      "population": "expanded_unknown",
+      "calibration_fpr_target": 0.001,
+      "threshold_unchanged": 0.10891007052025016,
+      "calibration_unknown_n": 1074,
+      "known_n": 543,
+      "raw_target_correct": 446,
+      "raw_annotated_source_admissible": 450,
+      "accepted_target_correct": 360,
+      "accepted_annotated_source_admissible": 361,
+      "accepted_target_mismatch": 1,
+      "accepted_mismatch_secondary_valid": 1,
+      "accepted_no_annotated_source": 0,
+      "cases": [
+        {
+          "query_id": "pexafb_hard_medium:chunk0279@5s",
+          "target_reference_id": "133347",
+          "predicted_reference_id": "139654",
+          "score": 0.26181615615222326,
+          "actual_crop_begin_s": 25.5,
+          "actual_crop_end_s": 30.5,
+          "annotated_secondary_overlap": [
+            {
+              "reference_id": "139654",
+              "overlap_duration_s": 3.5,
+              "annotation_query_begin_s": 16.0,
+              "effective_annotation_query_end_s": 29.0
+            },
+            {
+              "reference_id": "129661",
+              "overlap_duration_s": 1.5,
+              "annotation_query_begin_s": 29.0,
+              "effective_annotation_query_end_s": 59.1935
+            }
+          ],
+          "secondary_source_valid": true
+        }
+      ]
+    },
+    {
+      "result_path": "work/benchmarks/acr_ivf_extended/acr_ivf_qs1_extended_5s.json",
+      "method": "ACR-PCA IVF512 query-stride1",
+      "factor": 8,
+      "population": "expanded_unknown",
+      "calibration_fpr_target": 0.001,
+      "threshold_unchanged": 0.10891007052025016,
+      "calibration_unknown_n": 1074,
+      "known_n": 543,
+      "raw_target_correct": 445,
+      "raw_annotated_source_admissible": 449,
+      "accepted_target_correct": 360,
+      "accepted_annotated_source_admissible": 361,
+      "accepted_target_mismatch": 1,
+      "accepted_mismatch_secondary_valid": 1,
+      "accepted_no_annotated_source": 0,
+      "cases": [
+        {
+          "query_id": "pexafb_hard_medium:chunk0279@5s",
+          "target_reference_id": "133347",
+          "predicted_reference_id": "139654",
+          "score": 0.26181615615222326,
+          "actual_crop_begin_s": 25.5,
+          "actual_crop_end_s": 30.5,
+          "annotated_secondary_overlap": [
+            {
+              "reference_id": "139654",
+              "overlap_duration_s": 3.5,
+              "annotation_query_begin_s": 16.0,
+              "effective_annotation_query_end_s": 29.0
+            },
+            {
+              "reference_id": "129661",
+              "overlap_duration_s": 1.5,
+              "annotation_query_begin_s": 29.0,
+              "effective_annotation_query_end_s": 59.1935
+            }
+          ],
+          "secondary_source_valid": true
+        }
+      ]
+    },
+    {
+      "result_path": "work/benchmarks/acr_ivf_extended/acr_ivf_qs4_extended_5s.json",
+      "method": "ACR-PCA IVF512 query-stride4",
+      "factor": 8,
+      "population": "expanded_unknown",
+      "calibration_fpr_target": 0.001,
+      "threshold_unchanged": 0.11183752952047475,
+      "calibration_unknown_n": 1074,
+      "known_n": 543,
+      "raw_target_correct": 446,
+      "raw_annotated_source_admissible": 450,
+      "accepted_target_correct": 361,
+      "accepted_annotated_source_admissible": 362,
+      "accepted_target_mismatch": 1,
+      "accepted_mismatch_secondary_valid": 1,
+      "accepted_no_annotated_source": 0,
+      "cases": [
+        {
+          "query_id": "pexafb_hard_medium:chunk0279@5s",
+          "target_reference_id": "133347",
+          "predicted_reference_id": "139654",
+          "score": 0.21136342629637325,
+          "actual_crop_begin_s": 25.5,
+          "actual_crop_end_s": 30.5,
+          "annotated_secondary_overlap": [
+            {
+              "reference_id": "139654",
+              "overlap_duration_s": 3.5,
+              "annotation_query_begin_s": 16.0,
+              "effective_annotation_query_end_s": 29.0
+            },
+            {
+              "reference_id": "129661",
+              "overlap_duration_s": 1.5,
+              "annotation_query_begin_s": 29.0,
+              "effective_annotation_query_end_s": 59.1935
+            }
+          ],
+          "secondary_source_valid": true
+        }
+      ]
+    },
+    {
+      "result_path": "work/benchmarks/audfprint_extended/audfprint_5s.json",
+      "method": "audfprint",
+      "factor": 1,
+      "population": "expanded_unknown",
+      "calibration_fpr_target": 0.001,
+      "threshold_unchanged": 11.000000000000002,
+      "calibration_unknown_n": 1074,
+      "known_n": 543,
+      "raw_target_correct": 323,
+      "raw_annotated_source_admissible": 325,
+      "accepted_target_correct": 278,
+      "accepted_annotated_source_admissible": 278,
+      "accepted_target_mismatch": 1,
+      "accepted_mismatch_secondary_valid": 0,
+      "accepted_no_annotated_source": 1,
+      "cases": [
+        {
+          "query_id": "pexafb_hard_medium:chunk0450",
+          "target_reference_id": "143056",
+          "predicted_reference_id": "147493",
+          "score": 12.0,
+          "actual_crop_begin_s": 49.0,
+          "actual_crop_end_s": 54.0,
+          "annotated_secondary_overlap": [],
+          "secondary_source_valid": false
+        }
+      ]
+    },
+    {
+      "result_path": "work/benchmarks/audfprint_calibrated_extended/audfprint_5s.json",
+      "method": "audfprint_calibrated",
+      "factor": 1,
+      "population": "expanded_unknown",
+      "calibration_fpr_target": 0.001,
+      "threshold_unchanged": 11.000000000000002,
+      "calibration_unknown_n": 1074,
+      "known_n": 543,
+      "raw_target_correct": 387,
+      "raw_annotated_source_admissible": 391,
+      "accepted_target_correct": 278,
+      "accepted_annotated_source_admissible": 278,
+      "accepted_target_mismatch": 1,
+      "accepted_mismatch_secondary_valid": 0,
+      "accepted_no_annotated_source": 1,
+      "cases": [
+        {
+          "query_id": "pexafb_hard_medium:chunk0450",
+          "target_reference_id": "143056",
+          "predicted_reference_id": "147493",
+          "score": 12.0,
+          "actual_crop_begin_s": 49.0,
+          "actual_crop_end_s": 54.0,
+          "annotated_secondary_overlap": [],
+          "secondary_source_valid": false
+        }
+      ]
+    },
+    {
+      "result_path": "work/benchmarks/soundfingerprinting_native_extended/soundfingerprinting_5s.json",
+      "method": "SoundFingerprinting",
+      "factor": 1,
+      "population": "expanded_unknown",
+      "calibration_fpr_target": 0.001,
+      "threshold_unchanged": 0.2972423802610001,
+      "calibration_unknown_n": 1074,
+      "known_n": 543,
+      "raw_target_correct": 394,
+      "raw_annotated_source_admissible": 396,
+      "accepted_target_correct": 378,
+      "accepted_annotated_source_admissible": 380,
+      "accepted_target_mismatch": 2,
+      "accepted_mismatch_secondary_valid": 2,
+      "accepted_no_annotated_source": 0,
+      "cases": [
+        {
+          "query_id": "pexafb_hard_medium:chunk0279",
+          "target_reference_id": "133347",
+          "predicted_reference_id": "139654",
+          "score": 0.630176738716,
+          "actual_crop_begin_s": 25.5,
+          "actual_crop_end_s": 30.5,
+          "annotated_secondary_overlap": [
+            {
+              "reference_id": "139654",
+              "overlap_duration_s": 3.5,
+              "annotation_query_begin_s": 16.0,
+              "effective_annotation_query_end_s": 29.0
+            },
+            {
+              "reference_id": "129661",
+              "overlap_duration_s": 1.5,
+              "annotation_query_begin_s": 29.0,
+              "effective_annotation_query_end_s": 59.1935
+            }
+          ],
+          "secondary_source_valid": true
+        },
+        {
+          "query_id": "pexafb_hard_medium:chunk0375",
+          "target_reference_id": "011720",
+          "predicted_reference_id": "010039",
+          "score": 0.501596493285,
+          "actual_crop_begin_s": 65.162875,
+          "actual_crop_end_s": 70.162875,
+          "annotated_secondary_overlap": [
+            {
+              "reference_id": "010039",
+              "overlap_duration_s": 1.8371250000000003,
+              "annotation_query_begin_s": 38.0,
+              "effective_annotation_query_end_s": 67.0
+            }
+          ],
+          "secondary_source_valid": true
+        }
+      ]
+    },
+    {
+      "result_path": "work/benchmarks/nmfp_extended_results/nmfp_native_5s.json",
+      "method": "NMFP-Triplet (native)",
+      "factor": 1,
+      "population": "expanded_unknown",
+      "calibration_fpr_target": 0.001,
+      "threshold_unchanged": 0.5887172222137452,
+      "calibration_unknown_n": 1074,
+      "known_n": 543,
+      "raw_target_correct": 466,
+      "raw_annotated_source_admissible": 471,
+      "accepted_target_correct": 445,
+      "accepted_annotated_source_admissible": 446,
+      "accepted_target_mismatch": 1,
+      "accepted_mismatch_secondary_valid": 1,
+      "accepted_no_annotated_source": 0,
+      "cases": [
+        {
+          "query_id": "pexafb_hard_medium:chunk0279@5",
+          "target_reference_id": "133347",
+          "predicted_reference_id": "139654",
+          "score": 0.6741325259208679,
+          "actual_crop_begin_s": 25.5,
+          "actual_crop_end_s": 30.5,
+          "annotated_secondary_overlap": [
+            {
+              "reference_id": "139654",
+              "overlap_duration_s": 3.5,
+              "annotation_query_begin_s": 16.0,
+              "effective_annotation_query_end_s": 29.0
+            },
+            {
+              "reference_id": "129661",
+              "overlap_duration_s": 1.5,
+              "annotation_query_begin_s": 29.0,
+              "effective_annotation_query_end_s": 59.1935
+            }
+          ],
+          "secondary_source_valid": true
+        }
+      ]
+    },
+    {
+      "result_path": "work/benchmarks/nmfp_ivf_extended_results/nmfp_native_ivf1024_p16_5s.json",
+      "method": "NMFP-Triplet (native-IVF)",
+      "factor": 1,
+      "population": "expanded_unknown",
+      "calibration_fpr_target": 0.001,
+      "threshold_unchanged": 0.5887172222137452,
+      "calibration_unknown_n": 1074,
+      "known_n": 543,
+      "raw_target_correct": 465,
+      "raw_annotated_source_admissible": 470,
+      "accepted_target_correct": 445,
+      "accepted_annotated_source_admissible": 446,
+      "accepted_target_mismatch": 1,
+      "accepted_mismatch_secondary_valid": 1,
+      "accepted_no_annotated_source": 0,
+      "cases": [
+        {
+          "query_id": "pexafb_hard_medium:chunk0279@5",
+          "target_reference_id": "133347",
+          "predicted_reference_id": "139654",
+          "score": 0.6741325259208679,
+          "actual_crop_begin_s": 25.5,
+          "actual_crop_end_s": 30.5,
+          "annotated_secondary_overlap": [
+            {
+              "reference_id": "139654",
+              "overlap_duration_s": 3.5,
+              "annotation_query_begin_s": 16.0,
+              "effective_annotation_query_end_s": 29.0
+            },
+            {
+              "reference_id": "129661",
+              "overlap_duration_s": 1.5,
+              "annotation_query_begin_s": 29.0,
+              "effective_annotation_query_end_s": 59.1935
+            }
+          ],
+          "secondary_source_valid": true
+        }
+      ]
+    },
+    {
+      "result_path": "work/benchmarks/peaknet_extended_results/peaknet_native_5s.json",
+      "method": "PeakNetFP (native)",
+      "factor": 1,
+      "population": "expanded_unknown",
+      "calibration_fpr_target": 0.001,
+      "threshold_unchanged": 0.7009186148643495,
+      "calibration_unknown_n": 1074,
+      "known_n": 543,
+      "raw_target_correct": 457,
+      "raw_annotated_source_admissible": 459,
+      "accepted_target_correct": 344,
+      "accepted_annotated_source_admissible": 344,
+      "accepted_target_mismatch": 1,
+      "accepted_mismatch_secondary_valid": 0,
+      "accepted_no_annotated_source": 1,
+      "cases": [
+        {
+          "query_id": "pexafb_hard_medium:chunk0578@5",
+          "target_reference_id": "137922",
+          "predicted_reference_id": "127646",
+          "score": 0.7590495944023132,
+          "actual_crop_begin_s": 41.5,
+          "actual_crop_end_s": 46.5,
+          "annotated_secondary_overlap": [],
+          "secondary_source_valid": false
+        }
+      ]
+    },
+    {
+      "result_path": "work/benchmarks/peaknet_ivf_extended_results/peaknet_native_ivf1024_p16_5s.json",
+      "method": "PeakNetFP (native-IVF)",
+      "factor": 1,
+      "population": "expanded_unknown",
+      "calibration_fpr_target": 0.001,
+      "threshold_unchanged": 0.7009186148643495,
+      "calibration_unknown_n": 1074,
+      "known_n": 543,
+      "raw_target_correct": 461,
+      "raw_annotated_source_admissible": 463,
+      "accepted_target_correct": 336,
+      "accepted_annotated_source_admissible": 336,
+      "accepted_target_mismatch": 1,
+      "accepted_mismatch_secondary_valid": 0,
+      "accepted_no_annotated_source": 1,
+      "cases": [
+        {
+          "query_id": "pexafb_hard_medium:chunk0578@5",
+          "target_reference_id": "137922",
+          "predicted_reference_id": "127646",
+          "score": 0.7590495944023132,
+          "actual_crop_begin_s": 41.5,
+          "actual_crop_end_s": 46.5,
+          "annotated_secondary_overlap": [],
+          "secondary_source_valid": false
+        }
+      ]
+    }
+  ]
+}

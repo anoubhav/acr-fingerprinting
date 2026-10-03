@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "dependencies": {
+    "net10.0": {
+      "SoundFingerprinting": {
+        "type": "Direct",
+        "requested": "[15.14.1, 15.14.1]",
+        "resolved": "15.14.1",
+        "contentHash": "ulel7LPxsIfRvc4tw9Kd8iyZ+3XBlSFSSBegB5fp2CfMA/ukPPdujtXe2bIOZp0M8SynSbrVOnyqwMqc9tZjiQ==",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "10.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.0",
+          "protobuf-net": "2.4.6"
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces": {
+        "type": "Transitive",
+        "resolved": "10.0.0",
+        "contentHash": "vFuwSLj9QJBbNR0NeNO4YVASUbokxs+i/xbuu8B+Fs4FAZg5QaFa6eGrMaRqTzzNI5tAb97T7BhSxtLckFyiRA=="
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions": {
+        "type": "Transitive",
+        "resolved": "10.0.0",
+        "contentHash": "L3AdmZ1WOK4XXT5YFPEwyt0ep6l8lGIPs7F5OOBZc77Zqeo01Of7XXICy47628sdVl0v/owxYJTe86DTgFwKCA=="
+      },
+      "Microsoft.Extensions.Logging.Abstractions": {
+        "type": "Transitive",
+        "resolved": "10.0.0",
+        "contentHash": "FU/IfjDfwaMuKr414SSQNTIti/69bHEMb+QKrskRb26oVqpx3lNFXMjs/RC9ZUuhBhcwDM2BwOgoMw+PZ+beqQ==",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0"
+        }
+      },
+      "Microsoft.NETCore.Platforms": {
+        "type": "Transitive",
+        "resolved": "2.1.0",
+        "contentHash": "ok+RPAtESz/9MUXeIEz6Lv5XAGQsaNmEYXMsgVALj4D7kqC8gveKWXWXbufLySR2fWrwZf8smyN5RmHu0e4BHA=="
+      },
+      "protobuf-net": {
+        "type": "Transitive",
+        "resolved": "2.4.6",
+        "contentHash": "fDYwwGw9yCERTkIzxhmiGmD3i5nB5Pw4roZ9Pi+MPNbNiNbGAA9mVrSSbTjAMNQEBXtwK/HZ6btrO2YwYsVsMw==",
+        "dependencies": {
+          "System.ServiceModel.Primitives": "4.5.3"
+        }
+      },
+      "System.Private.ServiceModel": {
+        "type": "Transitive",
+        "resolved": "4.5.3",
+        "contentHash": "ancrQgJagx+yC4SZbuE+eShiEAUIF0E1d21TRSoy1C/rTwafAVcBr/fKibkq5TQzyy9uNil2tx2/iaUxsy0S9g==",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.1.0"
+        }
+      },
+      "System.ServiceModel.Primitives": {
+        "type": "Transitive",
+        "resolved": "4.5.3",
+        "contentHash": "Wc9Hgg4Cmqi416zvEgq2sW1YYCGuhwWzspDclJWlFZqY6EGhFUPZU+kVpl5z9kAgrSOQP7/Uiik+PtSQtmq+5A==",
+        "dependencies": {
+          "System.Private.ServiceModel": "4.5.3"
+        }
+      }
+    }
+  }
+}

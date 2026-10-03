@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "protocol_sha256": "aae834db35736f2a1ff8e9ccb53fefcdb1140e5dd122502fbc65b93296b6b132",
+  "comparison": "Exact ACR reference density factor 1 versus factor 8",
+  "population": "Frozen test_known queries; primary-source correctness",
+  "note": "Unthresholded candidate statistics only. Separately calibrated acceptance gates are not applied.",
+  "durations": {
+    "1s": {
+      "known_queries": 543,
+      "candidate_id_changes": 44,
+      "dense_only_correct": 4,
+      "sparse_only_correct": 3,
+      "both_correct": 410,
+      "neither_correct": 126,
+      "dense_candidate_correct": 414,
+      "sparse_candidate_correct": 413
+    },
+    "2s": {
+      "known_queries": 543,
+      "candidate_id_changes": 51,
+      "dense_only_correct": 1,
+      "sparse_only_correct": 2,
+      "both_correct": 427,
+      "neither_correct": 113,
+      "dense_candidate_correct": 428,
+      "sparse_candidate_correct": 429
+    },
+    "3s": {
+      "known_queries": 543,
+      "candidate_id_changes": 60,
+      "dense_only_correct": 4,
+      "sparse_only_correct": 3,
+      "both_correct": 437,
+      "neither_correct": 99,
+      "dense_candidate_correct": 441,
+      "sparse_candidate_correct": 440
+    },
+    "5s": {
+      "known_queries": 543,
+      "candidate_id_changes": 49,
+      "dense_only_correct": 3,
+      "sparse_only_correct": 3,
+      "both_correct": 443,
+      "neither_correct": 94,
+      "dense_candidate_correct": 446,
+      "sparse_candidate_correct": 446
+    },
+    "10s": {
+      "known_queries": 543,
+      "candidate_id_changes": 38,
+      "dense_only_correct": 3,
+      "sparse_only_correct": 2,
+      "both_correct": 445,
+      "neither_correct": 93,
+      "dense_candidate_correct": 448,
+      "sparse_candidate_correct": 447
+    }
+  }
+}

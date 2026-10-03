@@ -1,0 +1,165 @@
+{
+  "rows": [
+    {
+      "query_stride": 1,
+      "nprobe": 16,
+      "threshold": 0.10891007052025016,
+      "calibration_unknown": 1074,
+      "calibration_false_accepts": 1,
+      "test_known": 543,
+      "top1_correct": 445,
+      "localized_correct": 428,
+      "accepted_correct": 360,
+      "accepted_correct_rate": 0.6629834254143646,
+      "accepted_correct_content_cluster_ci": {
+        "cluster_key": "source_id",
+        "clusters": 518,
+        "repeats": 2000,
+        "estimate": 0.6629834254143646,
+        "percentile95_ci": [
+          0.6217700084304214,
+          0.7014658848614072
+        ]
+      },
+      "accepted_correct_queryfile_cluster_ci": {
+        "cluster_key": "source_query_id",
+        "clusters": 207,
+        "repeats": 2000,
+        "estimate": 0.6629834254143646,
+        "percentile95_ci": [
+          0.625,
+          0.7014665942422595
+        ]
+      },
+      "accepted_incorrect_known": 1,
+      "test_unknown": 4071,
+      "test_unknown_false_accepts": 14,
+      "pooled_far": 0.0034389584868582657,
+      "pooled_far_wilson95": [
+        0.0020496663222637213,
+        0.005764492619249897
+      ],
+      "negative_strata": [
+        {
+          "population": "additional_clean_FMA",
+          "queries": 4000,
+          "sources": 4000,
+          "false_accepts": 14,
+          "far": 0.0035,
+          "far_wilson95": [
+            0.002086067159781169,
+            0.0058666600268924085
+          ]
+        },
+        {
+          "population": "official_distorted",
+          "queries": 71,
+          "sources": 71,
+          "false_accepts": 0,
+          "far": 0.0,
+          "far_wilson95": [
+            0,
+            0.05132795219689034
+          ]
+        }
+      ],
+      "median_matching_ms": 93.1131670367904,
+      "p95_matching_ms": 184.68787118326867,
+      "median_query_fingerprints": 185.0,
+      "measured_payload_bytes_per_hour": 2401497.392635748,
+      "protocol_sha256": "610c98add9592340a745cb1b9c9c2cf37a27567da204e713cfba45d8a27fe366"
+    },
+    {
+      "query_stride": 4,
+      "nprobe": 16,
+      "threshold": 0.11183752952047475,
+      "calibration_unknown": 1074,
+      "calibration_false_accepts": 1,
+      "test_known": 543,
+      "top1_correct": 446,
+      "localized_correct": 429,
+      "accepted_correct": 361,
+      "accepted_correct_rate": 0.6648250460405156,
+      "accepted_correct_content_cluster_ci": {
+        "cluster_key": "source_id",
+        "clusters": 518,
+        "repeats": 2000,
+        "estimate": 0.6648250460405156,
+        "percentile95_ci": [
+          0.6245419543281997,
+          0.7040473704227608
+        ]
+      },
+      "accepted_correct_queryfile_cluster_ci": {
+        "cluster_key": "source_query_id",
+        "clusters": 207,
+        "repeats": 2000,
+        "estimate": 0.6648250460405156,
+        "percentile95_ci": [
+          0.627519273031709,
+          0.7025016288365704
+        ]
+      },
+      "accepted_incorrect_known": 1,
+      "test_unknown": 4071,
+      "test_unknown_false_accepts": 16,
+      "pooled_far": 0.003930238270695161,
+      "pooled_far_wilson95": [
+        0.0024207063327562994,
+        0.006375085892020724
+      ],
+      "negative_strata": [
+        {
+          "population": "additional_clean_FMA",
+          "queries": 4000,
+          "sources": 4000,
+          "false_accepts": 16,
+          "far": 0.004,
+          "far_wilson95": [
+            0.002463699107435128,
+            0.006488068635948746
+          ]
+        },
+        {
+          "population": "official_distorted",
+          "queries": 71,
+          "sources": 71,
+          "false_accepts": 0,
+          "far": 0.0,
+          "far_wilson95": [
+            0,
+            0.05132795219689034
+          ]
+        }
+      ],
+      "median_matching_ms": 12.198125012218952,
+      "p95_matching_ms": 68.33385032368822,
+      "median_query_fingerprints": 47.0,
+      "measured_payload_bytes_per_hour": 2401497.392635748,
+      "protocol_sha256": "610c98add9592340a745cb1b9c9c2cf37a27567da204e713cfba45d8a27fe366"
+    }
+  ],
+  "paired_efficiency_minus_accuracy_content_cluster_ci": {
+    "cluster_key": "source_id",
+    "clusters": 518,
+    "repeats": 2000,
+    "estimate": 0.001841620626151013,
+    "percentile95_ci": [
+      0.0,
+      0.00558659217877095
+    ]
+  },
+  "paired_efficiency_minus_accuracy_queryfile_cluster_ci": {
+    "cluster_key": "source_query_id",
+    "clusters": 207,
+    "repeats": 2000,
+    "estimate": 0.001841620626151013,
+    "percentile95_ci": [
+      0.0,
+      0.00576950867052023
+    ]
+  },
+  "paired_gained": 1,
+  "paired_lost": 0,
+  "interpretation": "Thresholds fit only on 1,074 unknown-calibration queries at empirical 0.1% target; clean/noisy populations differ and are stratified; recording IDs do not guarantee artist/composition independence. Original official 835 results remain separate."
+}

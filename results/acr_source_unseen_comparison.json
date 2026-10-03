@@ -1,0 +1,600 @@
+{
+  "interpretation": "A sensitivity analysis excluding the entire FMA_medium superset of documented NMFP training audio. Membership in medium is possible exposure, not proof of exposure. FMA-large/full tracks outside medium are conservatively source-unseen under the documented training protocol.",
+  "gallery_unchanged": true,
+  "thresholds_fit_on_full_original_calibration_then_held_fixed": true,
+  "known_source_unseen_queries": 389,
+  "rows": [
+    {
+      "method": "ACR exact d8",
+      "threshold": 0.0530928137101359,
+      "threshold_held_fixed": true,
+      "test_known": {
+        "correct_reference": {
+          "estimate": 0.8329048843187661,
+          "ci95": [
+            0.7958524119371811,
+            0.8699037569573284
+          ],
+          "n_queries": 389,
+          "n_source_clusters": 368,
+          "successes": 324
+        },
+        "localized_correct": {
+          "estimate": 0.8097686375321337,
+          "ci95": [
+            0.7696154981307798,
+            0.84817157700642
+          ],
+          "n_queries": 389,
+          "n_source_clusters": 368,
+          "successes": 315
+        },
+        "accepted_correct": {
+          "estimate": 0.7557840616966581,
+          "ci95": [
+            0.7119922077922077,
+            0.7979910360145962
+          ],
+          "n_queries": 389,
+          "n_source_clusters": 368,
+          "successes": 294
+        },
+        "accepted_localized": {
+          "estimate": 0.7480719794344473,
+          "ci95": [
+            0.703409891858147,
+            0.7912371134020618
+          ],
+          "n_queries": 389,
+          "n_source_clusters": 368,
+          "successes": 291
+        },
+        "accepted_wrong": {
+          "estimate": 0.002570694087403599,
+          "ci95": [
+            0.0,
+            0.007832898172323759
+          ],
+          "n_queries": 389,
+          "n_source_clusters": 368,
+          "successes": 1
+        }
+      },
+      "test_known_crossed_ci": {
+        "correct_reference": {
+          "estimate": 0.8329048843187661,
+          "ci95": [
+            0.7603145621116023,
+            0.8926848885110835
+          ],
+          "n_queries": 389,
+          "n_source_clusters": 368,
+          "n_montage_clusters": 185,
+          "successes": 324,
+          "resampling": "source IDs and montage IDs independently; product weights"
+        },
+        "accepted_correct": {
+          "estimate": 0.7557840616966581,
+          "ci95": [
+            0.6778323032198174,
+            0.8282847127996381
+          ],
+          "n_queries": 389,
+          "n_source_clusters": 368,
+          "n_montage_clusters": 185,
+          "successes": 294,
+          "resampling": "source IDs and montage IDs independently; product weights"
+        }
+      },
+      "test_unknown": {
+        "n": 54,
+        "false_accepts": 0,
+        "far_wilson95": [
+          0.0,
+          0.0664135880908964
+        ]
+      }
+    },
+    {
+      "method": "ACR IVF qstride4",
+      "threshold": 0.05657886749843364,
+      "threshold_held_fixed": true,
+      "test_known": {
+        "correct_reference": {
+          "estimate": 0.8329048843187661,
+          "ci95": [
+            0.7954545454545454,
+            0.8697943239795918
+          ],
+          "n_queries": 389,
+          "n_source_clusters": 368,
+          "successes": 324
+        },
+        "localized_correct": {
+          "estimate": 0.8123393316195373,
+          "ci95": [
+            0.7728459530026109,
+            0.8509066227254726
+          ],
+          "n_queries": 389,
+          "n_source_clusters": 368,
+          "successes": 316
+        },
+        "accepted_correct": {
+          "estimate": 0.7455012853470437,
+          "ci95": [
+            0.7017927640207755,
+            0.789876582278481
+          ],
+          "n_queries": 389,
+          "n_source_clusters": 368,
+          "successes": 290
+        },
+        "accepted_localized": {
+          "estimate": 0.7377892030848329,
+          "ci95": [
+            0.692703286498708,
+            0.7831632653061225
+          ],
+          "n_queries": 389,
+          "n_source_clusters": 368,
+          "successes": 287
+        },
+        "accepted_wrong": {
+          "estimate": 0.002570694087403599,
+          "ci95": [
+            0.0,
+            0.007832898172323759
+          ],
+          "n_queries": 389,
+          "n_source_clusters": 368,
+          "successes": 1
+        }
+      },
+      "test_known_crossed_ci": {
+        "correct_reference": {
+          "estimate": 0.8329048843187661,
+          "ci95": [
+            0.7634947618652735,
+            0.892197546779171
+          ],
+          "n_queries": 389,
+          "n_source_clusters": 368,
+          "n_montage_clusters": 185,
+          "successes": 324,
+          "resampling": "source IDs and montage IDs independently; product weights"
+        },
+        "accepted_correct": {
+          "estimate": 0.7455012853470437,
+          "ci95": [
+            0.6683924805374021,
+            0.8198499039882852
+          ],
+          "n_queries": 389,
+          "n_source_clusters": 368,
+          "n_montage_clusters": 185,
+          "successes": 290,
+          "resampling": "source IDs and montage IDs independently; product weights"
+        }
+      },
+      "test_unknown": {
+        "n": 54,
+        "false_accepts": 1,
+        "far_wilson95": [
+          0.003276487718229061,
+          0.09771437488781931
+        ]
+      }
+    },
+    {
+      "method": "NMFP native",
+      "threshold": 0.5600935816764833,
+      "threshold_held_fixed": true,
+      "test_known": {
+        "correct_reference": {
+          "estimate": 0.87146529562982,
+          "ci95": [
+            0.8388746803069054,
+            0.9040430208823992
+          ],
+          "n_queries": 389,
+          "n_source_clusters": 368,
+          "successes": 339
+        },
+        "localized_correct": {
+          "estimate": 0.8354755784061697,
+          "ci95": [
+            0.7979274611398963,
+            0.8737113402061856
+          ],
+          "n_queries": 389,
+          "n_source_clusters": 368,
+          "successes": 325
+        },
+        "accepted_correct": {
+          "estimate": 0.8380462724935732,
+          "ci95": [
+            0.8014960272567023,
+            0.87374483913687
+          ],
+          "n_queries": 389,
+          "n_source_clusters": 368,
+          "successes": 326
+        },
+        "accepted_localized": {
+          "estimate": 0.8046272493573264,
+          "ci95": [
+            0.7646907993966817,
+            0.8441558441558441
+          ],
+          "n_queries": 389,
+          "n_source_clusters": 368,
+          "successes": 313
+        },
+        "accepted_wrong": {
+          "estimate": 0.002570694087403599,
+          "ci95": [
+            0.0,
+            0.007832898172323759
+          ],
+          "n_queries": 389,
+          "n_source_clusters": 368,
+          "successes": 1
+        }
+      },
+      "test_known_crossed_ci": {
+        "correct_reference": {
+          "estimate": 0.87146529562982,
+          "ci95": [
+            0.8084527583322327,
+            0.9252625354464262
+          ],
+          "n_queries": 389,
+          "n_source_clusters": 368,
+          "n_montage_clusters": 185,
+          "successes": 339,
+          "resampling": "source IDs and montage IDs independently; product weights"
+        },
+        "accepted_correct": {
+          "estimate": 0.8380462724935732,
+          "ci95": [
+            0.7715837644249901,
+            0.8964769595495629
+          ],
+          "n_queries": 389,
+          "n_source_clusters": 368,
+          "n_montage_clusters": 185,
+          "successes": 326,
+          "resampling": "source IDs and montage IDs independently; product weights"
+        }
+      },
+      "test_unknown": {
+        "n": 54,
+        "false_accepts": 2,
+        "far_wilson95": [
+          0.01021636794844559,
+          0.12535176917275476
+        ]
+      }
+    },
+    {
+      "method": "PeakNet native",
+      "threshold": 0.6623607873916627,
+      "threshold_held_fixed": true,
+      "test_known": {
+        "correct_reference": {
+          "estimate": 0.8508997429305912,
+          "ci95": [
+            0.8149052953688358,
+            0.8848190972268716
+          ],
+          "n_queries": 389,
+          "n_source_clusters": 368,
+          "successes": 331
+        },
+        "localized_correct": {
+          "estimate": 0.7789203084832905,
+          "ci95": [
+            0.736286132721899,
+            0.8186584672729195
+          ],
+          "n_queries": 389,
+          "n_source_clusters": 368,
+          "successes": 303
+        },
+        "accepted_correct": {
+          "estimate": 0.6889460154241646,
+          "ci95": [
+            0.6441460956346452,
+            0.7365830469416027
+          ],
+          "n_queries": 389,
+          "n_source_clusters": 368,
+          "successes": 268
+        },
+        "accepted_localized": {
+          "estimate": 0.6503856041131105,
+          "ci95": [
+            0.6036269430051814,
+            0.6997519083969466
+          ],
+          "n_queries": 389,
+          "n_source_clusters": 368,
+          "successes": 253
+        },
+        "accepted_wrong": {
+          "estimate": 0.002570694087403599,
+          "ci95": [
+            0.0,
+            0.007752440053018433
+          ],
+          "n_queries": 389,
+          "n_source_clusters": 368,
+          "successes": 1
+        }
+      },
+      "test_known_crossed_ci": {
+        "correct_reference": {
+          "estimate": 0.8508997429305912,
+          "ci95": [
+            0.7849986559139785,
+            0.9093443609022556
+          ],
+          "n_queries": 389,
+          "n_source_clusters": 368,
+          "n_montage_clusters": 185,
+          "successes": 331,
+          "resampling": "source IDs and montage IDs independently; product weights"
+        },
+        "accepted_correct": {
+          "estimate": 0.6889460154241646,
+          "ci95": [
+            0.6061302887364208,
+            0.7620455292325158
+          ],
+          "n_queries": 389,
+          "n_source_clusters": 368,
+          "n_montage_clusters": 185,
+          "successes": 268,
+          "resampling": "source IDs and montage IDs independently; product weights"
+        }
+      },
+      "test_unknown": {
+        "n": 54,
+        "false_accepts": 0,
+        "far_wilson95": [
+          0.0,
+          0.0664135880908964
+        ]
+      }
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "difference": "ACR exact d8 minus NMFP native",
+      "metric": "correct_reference",
+      "paired_wins": 1,
+      "paired_losses": 16,
+      "crossed_cluster_ci": {
+        "estimate": -0.038560411311053984,
+        "ci95": [
+          -0.07881930081851114,
+          -0.0078094951923077085
+        ],
+        "n_queries": 389,
+        "n_source_clusters": 368,
+        "n_montage_clusters": 185,
+        "resampling": "source IDs and montage IDs independently; product weights",
+        "net_success_difference": -15
+      },
+      "source_cluster_ci": {
+        "estimate": -0.038560411311053984,
+        "ci95": [
+          -0.059133603023720796,
+          -0.018229166666666668
+        ],
+        "n_queries": 389,
+        "n_source_clusters": 368,
+        "net_success_difference": -15
+      }
+    },
+    {
+      "difference": "ACR exact d8 minus NMFP native",
+      "metric": "accepted_correct",
+      "paired_wins": 5,
+      "paired_losses": 37,
+      "crossed_cluster_ci": {
+        "estimate": -0.08226221079691516,
+        "ci95": [
+          -0.14093307835391977,
+          -0.03132752365128346
+        ],
+        "n_queries": 389,
+        "n_source_clusters": 368,
+        "n_montage_clusters": 185,
+        "resampling": "source IDs and montage IDs independently; product weights",
+        "net_success_difference": -32
+      },
+      "source_cluster_ci": {
+        "estimate": -0.08226221079691516,
+        "ci95": [
+          -0.11539203084832905,
+          -0.04947595373376625
+        ],
+        "n_queries": 389,
+        "n_source_clusters": 368,
+        "net_success_difference": -32
+      }
+    },
+    {
+      "difference": "ACR exact d8 minus PeakNet native",
+      "metric": "correct_reference",
+      "paired_wins": 10,
+      "paired_losses": 17,
+      "crossed_cluster_ci": {
+        "estimate": -0.017994858611825194,
+        "ci95": [
+          -0.06451821288655497,
+          0.026765131797812168
+        ],
+        "n_queries": 389,
+        "n_source_clusters": 368,
+        "n_montage_clusters": 185,
+        "resampling": "source IDs and montage IDs independently; product weights",
+        "net_success_difference": -7
+      },
+      "source_cluster_ci": {
+        "estimate": -0.017994858611825194,
+        "ci95": [
+          -0.04415584415584416,
+          0.007732458243426834
+        ],
+        "n_queries": 389,
+        "n_source_clusters": 368,
+        "net_success_difference": -7
+      }
+    },
+    {
+      "difference": "ACR exact d8 minus PeakNet native",
+      "metric": "accepted_correct",
+      "paired_wins": 40,
+      "paired_losses": 14,
+      "crossed_cluster_ci": {
+        "estimate": 0.06683804627249357,
+        "ci95": [
+          0.00799893899204244,
+          0.13239051418439715
+        ],
+        "n_queries": 389,
+        "n_source_clusters": 368,
+        "n_montage_clusters": 185,
+        "resampling": "source IDs and montage IDs independently; product weights",
+        "net_success_difference": 26
+      },
+      "source_cluster_ci": {
+        "estimate": 0.06683804627249357,
+        "ci95": [
+          0.03061029755413616,
+          0.10416666666666667
+        ],
+        "n_queries": 389,
+        "n_source_clusters": 368,
+        "net_success_difference": 26
+      }
+    },
+    {
+      "difference": "ACR IVF qstride4 minus NMFP native",
+      "metric": "correct_reference",
+      "paired_wins": 1,
+      "paired_losses": 16,
+      "crossed_cluster_ci": {
+        "estimate": -0.038560411311053984,
+        "ci95": [
+          -0.07936813186813187,
+          -0.007591630455318363
+        ],
+        "n_queries": 389,
+        "n_source_clusters": 368,
+        "n_montage_clusters": 185,
+        "resampling": "source IDs and montage IDs independently; product weights",
+        "net_success_difference": -15
+      },
+      "source_cluster_ci": {
+        "estimate": -0.038560411311053984,
+        "ci95": [
+          -0.061381074168797956,
+          -0.017994858611825194
+        ],
+        "n_queries": 389,
+        "n_source_clusters": 368,
+        "net_success_difference": -15
+      }
+    },
+    {
+      "difference": "ACR IVF qstride4 minus NMFP native",
+      "metric": "accepted_correct",
+      "paired_wins": 4,
+      "paired_losses": 40,
+      "crossed_cluster_ci": {
+        "estimate": -0.09254498714652956,
+        "ci95": [
+          -0.15325673024891776,
+          -0.041024590163934435
+        ],
+        "n_queries": 389,
+        "n_source_clusters": 368,
+        "n_montage_clusters": 185,
+        "resampling": "source IDs and montage IDs independently; product weights",
+        "net_success_difference": -36
+      },
+      "source_cluster_ci": {
+        "estimate": -0.09254498714652956,
+        "ci95": [
+          -0.12661583931602952,
+          -0.0595816430359749
+        ],
+        "n_queries": 389,
+        "n_source_clusters": 368,
+        "net_success_difference": -36
+      }
+    },
+    {
+      "difference": "ACR IVF qstride4 minus PeakNet native",
+      "metric": "correct_reference",
+      "paired_wins": 12,
+      "paired_losses": 19,
+      "crossed_cluster_ci": {
+        "estimate": -0.017994858611825194,
+        "ci95": [
+          -0.0683098520982805,
+          0.030458790250707163
+        ],
+        "n_queries": 389,
+        "n_source_clusters": 368,
+        "n_montage_clusters": 185,
+        "resampling": "source IDs and montage IDs independently; product weights",
+        "net_success_difference": -7
+      },
+      "source_cluster_ci": {
+        "estimate": -0.017994858611825194,
+        "ci95": [
+          -0.046511627906976744,
+          0.010284104873690565
+        ],
+        "n_queries": 389,
+        "n_source_clusters": 368,
+        "net_success_difference": -7
+      }
+    },
+    {
+      "difference": "ACR IVF qstride4 minus PeakNet native",
+      "metric": "accepted_correct",
+      "paired_wins": 39,
+      "paired_losses": 17,
+      "crossed_cluster_ci": {
+        "estimate": 0.056555269922879174,
+        "ci95": [
+          -0.002998355583443319,
+          0.12575249017703088
+        ],
+        "n_queries": 389,
+        "n_source_clusters": 368,
+        "n_montage_clusters": 185,
+        "resampling": "source IDs and montage IDs independently; product weights",
+        "net_success_difference": 22
+      },
+      "source_cluster_ci": {
+        "estimate": 0.056555269922879174,
+        "ci95": [
+          0.01808785529715762,
+          0.09586114662539529
+        ],
+        "n_queries": 389,
+        "n_source_clusters": 368,
+        "net_success_difference": 22
+      }
+    }
+  ],
+  "protocol_sha256": "aae834db35736f2a1ff8e9ccb53fefcdb1140e5dd122502fbc65b93296b6b132",
+  "warning": "Confidence intervals describe this adapted sample. Exclusion from FMA_medium does not prove artist/composition independence."
+}

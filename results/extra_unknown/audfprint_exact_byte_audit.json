@@ -1,0 +1,7 @@
+{
+  "additional_source_count": 5000,
+  "compared_reference_files": 1052,
+  "exact_encoded_file_copy_count": 0,
+  "copies": [],
+  "limitation": "Different encodings or30s excerpts cannot be excluded by whole-file byte hashes; high-confidence matches need aligned waveform audit."
+}

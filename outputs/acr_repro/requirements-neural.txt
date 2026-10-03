@@ -1,0 +1,9 @@
+# Tested Apple arm64 Python3.12 inference runtime. TF legacy Keras is required
+# for loading the official TF2 checkpoint object graph unchanged.
+tensorflow==2.16.2
+tf-keras==2.16.0
+essentia==2.1b6.dev1177
+numpy==1.26.4
+scipy==1.17.1
+pyyaml==6.0.3
+soundfile==0.14.0
